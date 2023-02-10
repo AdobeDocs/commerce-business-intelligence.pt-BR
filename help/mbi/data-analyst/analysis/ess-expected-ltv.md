@@ -2,9 +2,9 @@
 title: Análise do valor vitalício (LTV) esperado (básico)
 description: Saiba como criar análises para entender o valor da vida útil de seus clientes atuais e prever como o valor da vida útil aumentará com mais pedidos.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ Depois que a métrica tiver sido criada, é possível **criar um painel** ao faz
 * Será aqui que criaremos e adicionaremos todos os relatórios.
 
 ## Criação de relatórios
-
-* Caso ainda não tenha feito, faça check-out [este vídeo](https://fast.wistia.net/embed/iframe/24zz7wmjrt) sobre o uso do **[!UICONTROL Visual Report Builder] para criar gráficos, tabelas e valores escalares.
 
 >[!NOTE]
 >

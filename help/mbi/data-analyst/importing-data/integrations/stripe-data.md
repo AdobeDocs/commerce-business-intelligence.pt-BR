@@ -2,9 +2,9 @@
 title: Dados de distribuição esperados
 description: Explore as principais tabelas de dados que você pode importar do Stripe para [!DNL MBI].
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Neste artigo, exploramos as principais tabelas de dados que podem ser importadas
 
 | **Nome da tabela** | **Descrição** |
 |-----|-----|
-| [`Customers`](https://stripe.com/docs/api/curl#customer_object) | Os objetos do cliente permitem que você execute encargos recorrentes e rastreie vários encargos que estão associados ao mesmo cliente. |
-| [`Charges`](https://stripe.com/docs/api/curl#charge_object) | Esta tabela contém informações sobre encargos para cartões de crédito e débito, incluindo valor, moeda, status, ID do cliente e muito mais. |
-| [`Coupons`](https://stripe.com/docs/api/curl#coupon_object) | Esta tabela contém informações sobre um desconto por porcentagem ou quantia de desconto que pode ser aplicado a um cliente. Observe que os cupons se aplicam apenas às faturas; não se aplicam a taxas pontuais. |
-| [`Invoices`](https://stripe.com/docs/api/curl#invoice_object) | Esta tabela contém informações sobre NFFs, incluindo valor devido, assinaturas, itens de NFF, quaisquer ajustes de pro rata automáticos e muito mais. |
-| [`Plans`](https://stripe.com/docs/api/curl#plan_object) | Esta tabela contém as informações de preços para diferentes produtos e níveis de recursos do site. Por exemplo, você pode ter um plano de US$ 10 por mês para recursos básicos e um plano de US$ 20 por mês para recursos premium. |
-| [`Subscriptions`](https://stripe.com/docs/api/curl#subscription_object) | Esta tabela contém os detalhes dos planos de assinatura aos quais seus clientes pertencem. Os atributos incluem ID do cliente, status, cancelado/encerrado em datas, porcentagem de imposto, informações de avaliação e muito mais. |
-| [`Events`](https://stripe.com/docs/api/curl#event_object) | Os eventos informam sobre algo interessante que acabou de acontecer em uma conta. [Quando um evento interessante ocorre](https://stripe.com/docs/api/curl#event_types), um novo objeto de evento é criado. Por exemplo, quando uma cobrança é bem-sucedida `charge.succeeded` é criado; ou, quando não for possível pagar uma fatura `invoice.payment\_failed` é criado. |
+| [`Customers`](https://stripe.com/docs/sources/customers) | Os objetos do cliente permitem que você execute encargos recorrentes e rastreie vários encargos que estão associados ao mesmo cliente. |
+| [`Charges`](https://stripe.com/docs/payments/payment-intents/migration/charges) | Esta tabela contém informações sobre encargos para cartões de crédito e débito, incluindo valor, moeda, status, ID do cliente e muito mais. |
+| [`Coupons`](https://stripe.com/docs/api/coupons/object) | Esta tabela contém informações sobre um desconto por porcentagem ou quantia de desconto que pode ser aplicado a um cliente. Observe que os cupons se aplicam apenas às faturas; não se aplicam a taxas pontuais. |
+| [`Invoices`](https://stripe.com/docs/billing/migration/invoice-states) | Esta tabela contém informações sobre NFFs, incluindo valor devido, assinaturas, itens de NFF, quaisquer ajustes de pro rata automáticos e muito mais. |
+| [`Plans`](https://stripe.com/docs/api/plans/object) | Esta tabela contém as informações de preços para diferentes produtos e níveis de recursos do site. Por exemplo, você pode ter um plano de US$ 10 por mês para recursos básicos e um plano de US$ 20 por mês para recursos premium. |
+| [`Subscriptions`](https://stripe.com/docs/api/subscriptions/object) | Esta tabela contém os detalhes dos planos de assinatura aos quais seus clientes pertencem. Os atributos incluem ID do cliente, status, cancelado/encerrado em datas, porcentagem de imposto, informações de avaliação e muito mais. |
+| [`Events`](https://stripe.com/docs/development/dashboard/events) | Os eventos informam sobre algo interessante que acabou de acontecer em uma conta. [Quando um evento interessante ocorre](https://stripe.com/docs/api/events/types), um novo objeto de evento é criado. Por exemplo, quando uma cobrança é bem-sucedida `charge.succeeded` é criado; ou, quando não for possível pagar uma fatura `invoice.payment\_failed` é criado. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -34,4 +34,4 @@ Neste artigo, exploramos as principais tabelas de dados que podem ser importadas
 ## Relacionadas:
 
 * [Conexão [!DNL Stripe]](../integrations/stripe.md)
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

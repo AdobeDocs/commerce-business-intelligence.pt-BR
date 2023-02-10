@@ -2,9 +2,9 @@
 title: Conectar QuickBooks
 description: Saiba como as finanças de sua empresa agora podem acompanhar seus dados de vendas e marketing, permitindo que você mantenha as guias de suas despesas com rapidez e facilidade, identifique os gastos excessivos e muito mais.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ Depois de clicar **[!UICONTROL Connect to Quickbooks]**, faça logon em seu [!DN
 ## Relacionado
 
 * [Esperado [!DNL QuickBooks] dados](../integrations/quickbooks-data.md)
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,9 +2,9 @@
 title: Criar uma análise de coorte qualitativa
 description: Saiba o que é um coorte qualitativo, por que você pode estar interessado em criar essa análise e como criá-la em [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ No entanto, se você quiser analisar o comportamento de coorte de vários segmen
 
 Criação de um `qualitative cohort` no relatório `Report Builder` envolve nossa equipe de analistas criando alguns [colunas calculadas avançadas](../data-warehouse-mgr/creating-calculated-columns.md) nas tabelas necessárias.
 
-Para criá-los, envie uma [tíquete de suporte](../../guide-overview.md) (e consulte este artigo!). Veja o que precisamos saber:
+Para criá-los, envie uma [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (e consulte este artigo!). Veja o que precisamos saber:
 
 * O `metric` você deseja executar a análise de coorte com e qual tabela ela usa (exemplo: `Revenue`, criado na `orders` tabela).
 

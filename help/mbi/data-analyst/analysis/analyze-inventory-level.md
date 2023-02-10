@@ -2,16 +2,16 @@
 title: Analisando níveis de inventário
 description: Saiba como analisar níveis de inventário.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Analisar níveis de inventário
 
-Este tópico demonstra como configurar um painel que fornecerá insights do inventário atual. Este tópico contém instruções para os clientes sobre a arquitetura herdada ou a nova arquitetura. Você está na arquitetura herdada se não tiver a variável **[!UICONTROL Data Warehouse Views]** sob a **[!UICONTROL Manage Data]** ). Se você estiver na arquitetura herdada, envie um [nova solicitação de suporte](../../guide-overview.md) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** depois de acessar a seção designada no _Colunas calculadas_ instruções abaixo.
+Este tópico demonstra como configurar um painel que fornecerá insights do inventário atual. Este tópico contém instruções para os clientes sobre a arquitetura herdada ou a nova arquitetura. Você está na arquitetura herdada se não tiver a variável **[!UICONTROL Data Warehouse Views]** sob a **[!UICONTROL Manage Data]** ). Se você estiver na arquitetura herdada, envie um [nova solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** depois de acessar a seção designada no _Colunas calculadas_ instruções abaixo.
 
 ## Colunas a serem rastreadas:
 
@@ -240,4 +240,4 @@ Este tópico demonstra como configurar um painel que fornecerá insights do inve
       [!UICONTROL Chart type]: `Table`
 
 
-Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](../../guide-overview.md).
+Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

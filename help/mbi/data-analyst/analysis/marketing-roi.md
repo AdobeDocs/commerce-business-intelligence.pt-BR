@@ -2,9 +2,9 @@
 title: ROI de marketing
 description: Saiba como configurar um painel que rastreará sua análise de canal, incluindo o ROI na agregação e por campanha.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -295,7 +295,7 @@ Colunas a serem criadas
 
    [!UICONTROL Chart Type]: `Table`
 
-Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](../../guide-overview.md).
+Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Relacionado
 

@@ -39,9 +39,9 @@ Você pode [download](../../assets/454-calendar.csv) a `.csv` versão do calend�
 
 * **sales\_order** tabela
    * `INPUT` `created\_at` (aaaa-mm-dd 00:00:00)
-      * [!UICONTROL Column type]: - `Same table > Calculation`
-      * [!UICONTROL Inputs]: - `created\_at`
-      * [!UICONTROL Datatype]: - `Datetime`
+      * [!UICONTROL Column type]: – `Same table > Calculation`
+      * [!UICONTROL Inputs]: – `created\_at`
+      * [!UICONTROL Datatype]: – `Datetime`
       * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
 * **Calendário fiscal** tabela de upload de arquivo

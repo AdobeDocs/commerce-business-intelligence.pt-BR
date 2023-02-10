@@ -2,16 +2,16 @@
 title: Exportar dados brutos
 description: Saiba como exportar registros de seu [!DNL MBI] Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # Exportar dados brutos
 
-Com exportações de dados brutos, é possível exportar registros de [!DNL MBI] Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudar você [discrepâncias de dados do ponto de extremidade](https://support.magento.com/hc/en-us/articles/360016730631).
+Com exportações de dados brutos, é possível exportar registros de [!DNL MBI] Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudar você [discrepâncias de dados do ponto de extremidade](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 As exportações de dados brutos fornecem acesso a colunas e dimensões adicionais geradas por meio da desnormalização e pré-agregação de métricas relevantes. Por exemplo, `User's first order date` é uma dimensão que pode ser exportada para cada usuário no [!DNL MBI], embora possa não estar disponível no seu banco de dados.
 

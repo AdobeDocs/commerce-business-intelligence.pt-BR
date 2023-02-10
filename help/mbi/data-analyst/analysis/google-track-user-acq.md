@@ -2,10 +2,10 @@
 title: Google Analytics - Rastrear a visão geral dos dados da fonte de aquisição do usuário
 description: Saiba como segmentar seus dados por fonte de aquisição do usuário.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -87,13 +87,12 @@ O resultado será algo assim:
 | google | 294 |
 | direct | 156 |
 | referência | 55 |
-| other | 16º |
+| other | 16 |
 
 Isso é interessante, mas de uso limitado. O que nós realmente gostaríamos de saber é a taxa de crescimento desses números ao longo do tempo, a quantidade de receita gerada por cada fonte de aquisição, uma [análise de coorte](http://cohortanalysis.com/) de usuários provenientes de cada fonte e a probabilidade de um usuário de um desses canais retornar como cliente no futuro. As consultas necessárias para fazer essas análises são complexas - por isso criamos [!DNL MBI]. Munidos dessas informações, podemos determinar nossos canais de aquisição mais rentáveis e concentrar nosso tempo de marketing e dinheiro de acordo.
 
 ### Relacionado
 
-* **[Rastrear dados do dispositivo do usuário, do navegador e do SO no seu banco de dados](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[Descubra as fontes e os canais de aquisição mais valiosos](../analysis/most-value-source-channel.md)**
 * **[Conecte seu [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)**
 * **[Aumente o ROI em suas campanhas publicitárias](../analysis/roi-ad-camp.md)**

@@ -2,9 +2,9 @@
 title: Entender e criar análises básicas
 description: Saiba como entender e criar análises básicas.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Se alguns desses cálculos não existirem no banco de dados, qualquer usuário a
 
 **Você aceita pedidos de hóspedes?**
 
-*Em caso afirmativo, essa tabela pode não conter todos os clientes. Entre em contato com nosso [equipe de suporte](https://support.magento.com/hc/en-us/articles/360016503692) para garantir que as análises do cliente incluam todos os clientes.*
+*Em caso afirmativo, essa tabela pode não conter todos os clientes. Entre em contato com nosso [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para garantir que as análises do cliente incluam todos os clientes.*
 
 *Não tem certeza se aceita pedidos de convidado? Consulte [este tópico](../data-warehouse-mgr/guest-orders.md) para saber mais!*
 
@@ -58,7 +58,7 @@ Nesta tabela, cada linha representa uma ordem. As colunas nesta tabela contêm i
 * **[!UICONTROL Created_at]**: A data em que o pedido foi criado ou colocado.
 * **[!UICONTROL Customer_email]**: O endereço de e-mail do cliente que fez o pedido. Esse também pode ser o identificador exclusivo do cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: Uma cópia da coluna com o mesmo nome em seu `Customers` tabela.
-* **[!UICONTROL Customer's order number]**: O número do pedido sequencial do cliente associado ao pedido. Por exemplo, se a linha que você está procurando for o primeiro pedido de um cliente, essa coluna será &quot;1&quot;; mas, se este foi o 15º pedido do cliente, esta coluna mostra &quot;15&quot; para este pedido. Se essa dimensão não existir em sua `Customers` mesa, pergunte a nossa [equipe de suporte](https://support.magento.com/hc/en-us/articles/360016503692) para ajudá-lo a criá-lo.
+* **[!UICONTROL Customer's order number]**: O número do pedido sequencial do cliente associado ao pedido. Por exemplo, se a linha que você está procurando for o primeiro pedido de um cliente, essa coluna será &quot;1&quot;; mas, se este foi o 15º pedido do cliente, esta coluna mostra &quot;15&quot; para este pedido. Se essa dimensão não existir em sua `Customers` mesa, pergunte a nossa [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para ajudá-lo a criá-lo.
 * **[!UICONTROL Customer's order number (previous-current)]**: Uma concatenação de dois valores na variável **[!UICONTROL Customer's order number]** coluna. Ele é usado em um relatório de amostra abaixo para exibir o tempo decorrido entre dois pedidos. Por exemplo, o tempo entre a data do primeiro pedido de um cliente e a data do segundo pedido é representado como &quot;1-2&quot; com este cálculo.
 * **[!UICONTROL Coupon_code]**: Mostra quais cupom foram usados em cada pedido.
 * **[!UICONTROL Seconds since previous order]**: O tempo (em segundos) entre as ordens de um cliente.
@@ -86,7 +86,7 @@ Essa tabela é usada para gerenciar suas informações de assinatura, como ID da
 
 ## Tabela de gastos de marketing
 
-Ao analisar seus gastos com marketing, você pode incluir [!DNL Facebook], [!DNL Google AdWords]ou outras fontes em suas análises. Se você tiver várias fontes de gastos com marketing, entre em contato com nossa [Equipe de serviços](https://business.adobe.com/products/magento/fully-managed-service.html) para obter ajuda na configuração de uma tabela consolidada para suas campanhas de marketing.
+Ao analisar seus gastos com marketing, você pode incluir [!DNL Facebook], [!DNL Google AdWords]ou outras fontes em suas análises. Se você tiver várias fontes de gastos com marketing, entre em contato com nossa [Equipe da Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) para obter ajuda na configuração de uma tabela consolidada para suas campanhas de marketing.
 
 **Dimension**
 
@@ -535,7 +535,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
 
 >[!NOTE]
 >
->Você pode nomear a fórmula como &quot;ROI&quot; e Ocultar todas as métricas. Além disso, você pode ajustar os filtros nas métricas para analisar fontes e mídias alternativas. Além disso, confira [este artigo](../analysis/roi-ad-camp.md) para obter mais detalhes sobre CAC, LTV e ROI.
+>Você pode nomear a fórmula como &quot;ROI&quot; e Ocultar todas as métricas. Além disso, você pode ajustar os filtros nas métricas para analisar fontes e mídias alternativas. Além disso, confira [este tópico](../analysis/roi-ad-camp.md) para obter mais detalhes sobre CAC, LTV e ROI.
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

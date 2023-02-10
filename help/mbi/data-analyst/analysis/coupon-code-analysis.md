@@ -2,9 +2,9 @@
 title: Desempenho do cupom
 description: Saiba mais sobre como analisar o desempenho do seu cupom.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Colunas a serem criadas independentemente da política de pedidos de convidado:
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: caso em que `A` é nulo então `No coupon` else `Coupon` end
 
 
@@ -44,7 +44,7 @@ Colunas a serem criadas independentemente da política de pedidos de convidado:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
    * [!UICONTROL Datatype]: String
-   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
+   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
 
 
 * **Número de pedidos com este cupom**
@@ -80,20 +80,20 @@ Colunas adicionais a serem criadas se os pedidos de convidado NÃO forem suporta
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **caso em que A=&#39;Coupon&#39; então &#39;Coupon acquisition customer customer&#39; ou &#39;Non coupon acquisition customer customer customer&#39; termina**
    * **Porcentagem de pedidos de clientes com cupom**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]: `Decimal`
+      * [!UICONTROL Datatype]:: `Decimal`
       * [!UICONTROL Calculation]: **caso em que A é nulo ou B é nulo ou B=0 então null ou o restante A/B termina**
    * **Uso do cupom do cliente**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **caso em que A é nulo então nulo quando A=0 então &#39;Nunca usou cupom&#39; quando A&lt;0.5 então &#39;Maioritariamente preço completo&#39; quando A=0.5 então &#39;50/50&#39; quando A=1 então &#39;Cupons somente&#39; quando A>0.5 então &#39;Maioritariamente cupom&#39; mais &#39;Indefinido&#39; termina**
 
 
@@ -127,7 +127,7 @@ Colunas adicionais a serem criadas se os pedidos de convidado NÃO forem suporta
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **caso em que A=&#39;Coupon&#39; então &#39;Coupon acquisition customer customer&#39; ou &#39;Non coupon acquisition customer customer customer&#39; termina**
 
 
@@ -136,7 +136,7 @@ Colunas adicionais a serem criadas se os pedidos de convidado NÃO forem suporta
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]: `Decimal`
+   * [!UICONTROL Datatype]:: `Decimal`
    * [!UICONTROL Calculation]: **caso em que A é nulo ou B é nulo ou B=0 então null ou o restante A/B termina**
 
 
@@ -144,7 +144,7 @@ Colunas adicionais a serem criadas se os pedidos de convidado NÃO forem suporta
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **caso em que A é nulo então nulo quando A=0 então &#39;Nunca usou cupom&#39; quando A&lt;0.5 então &#39;Maioritariamente preço completo&#39; quando A=0.5 então &#39;50/50&#39; quando A=1 então &#39;Cupons somente&#39; quando A>0.5 então &#39;Maioritariamente cupom&#39; mais &#39;Indefinido&#39; termina**
 
 
@@ -512,4 +512,4 @@ Colunas adicionais a serem criadas se os pedidos de convidado NÃO forem suporta
 
 Depois de compilar todos os relatórios, você pode organizá-los no painel como desejar. O resultado final pode parecer com a imagem na parte superior da página.
 
-Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](../../guide-overview.md).
+Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

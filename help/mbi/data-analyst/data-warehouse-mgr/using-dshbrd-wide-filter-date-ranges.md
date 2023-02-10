@@ -2,9 +2,9 @@
 title: Filtragem ampla do painel
 description: Saiba como fazer edições em massa de todos os relatórios em um painel específico.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para analisar o desempenho de uma loja específica, clique no ícone lojas no ca
 
 >[!NOTE]
 >
->Um filtro de loja está ativado ou desativado para um todo [!DNL MBI] conta. Se um painel contém relatórios que não são afetados pelo filtro, como relatórios que não são criados em nenhum dado do Commerce, esses relatórios não são atualizados quando o filtro de loja é aplicado. Você pode [entrar em contato com o suporte](../../guide-overview.md) se você achar que um relatório deve ser atualizado com base na seleção de loja ou se achar que o filtro de armazenamento da conta está desabilitado por engano.
+>Um filtro de loja está ativado ou desativado para um todo [!DNL MBI] conta. Se um painel contém relatórios que não são afetados pelo filtro, como relatórios que não são criados em nenhum dado do Commerce, esses relatórios não são atualizados quando o filtro de loja é aplicado. Você pode [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se você achar que um relatório deve ser atualizado com base na seleção de loja ou se achar que o filtro de armazenamento da conta está desabilitado por engano.
 
 Ao selecionar uma loja na `Store Filter`, o filtro retém a seleção ao navegar entre os painéis. A retenção da seleção permite que você veja os dados da loja selecionada em todos os lugares, até que você selecione `All Stores`.
 

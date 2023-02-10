@@ -2,9 +2,9 @@
 title: Conectar Faixa
 description: Saiba como gerenciar e acompanhar os dados de pagamento e fatura de sua empresa.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Depois de clicar **[!UICONTROL Connect with Stripe]**, uma página de solicitaç
 Se você for um pouco mais experiente em tecnologia, a variável [[!DNL Stripe] Documentação da API](https://stripe.com/docs/api) pode ser um recurso útil para saber mais sobre como [!DNL Stripe] é integrado ao [!DNL MBI].
 
 * [Esperado [!DNL Stripe] dados](../integrations/stripe-data.md)
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

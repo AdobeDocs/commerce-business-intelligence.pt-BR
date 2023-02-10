@@ -2,9 +2,9 @@
 title: Conectar Salesforce
 description: Saiba como os dados do Salesforce habilitam uma variedade de análises, desde pontuação e otimização, até atingir suas metas por oportunidades convertidas.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ Pronto! Após a validação das credenciais, [!DNL Salesforce] a configuração 
 Se você for um pouco mais experiente em tecnologia, a variável [[!DNL Salesforce] Documentação da API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) pode ser um recurso útil para saber mais sobre como o Salesforce está integrado ao [!DNL MBI].
 
 * [Esperado [!DNL Salesforce] dados](../integrations/salesforce-data.md)
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

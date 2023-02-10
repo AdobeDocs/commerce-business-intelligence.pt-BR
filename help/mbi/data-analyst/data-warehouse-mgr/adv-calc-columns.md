@@ -2,10 +2,10 @@
 title: Tipos de Colunas Calculadas Avançadas
 description: Saiba mais sobre as noções básicas para a maioria dos casos de uso de coluna — mas talvez você queira colunas calculadas que sejam um pouco mais complexas do que o Gerenciador de Datas Warehouse pode criar.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 4%
 
 ---
 
@@ -119,8 +119,8 @@ Veja um exemplo:
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
-| `1` | 2015-01-01 00:00:00 | 30º | 33,57 |
-| `2` | 2015-01-02 00:00:00 | 50º | 55,93 |
+| `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -159,7 +159,7 @@ Para criar esse tipo de coluna calculada, precisamos saber:
 
 Não se preocupe. Só porque não está listado aqui não significa que não seja possível. Nossa equipe de analistas de Datas Warehouse tem você abordado.
 
-Para definir uma nova coluna calculada, [enviar um tíquete de suporte](../../guide-overview.md) com detalhes sobre exatamente o que você gostaria de criar.
+Para definir uma nova coluna calculada, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) com detalhes sobre exatamente o que você gostaria de criar.
 
 ## Documentação relacionada
 

@@ -2,7 +2,7 @@
 title: Nomear relatórios e elementos no MBI
 description: Conheça as práticas recomendadas para nomear relatórios e elementos no [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -101,4 +101,4 @@ Receita (enviado\_at) Receita (criada\_at)
 
 ## Quebra de linha {#wrapup}
 
-Estabelecer estilo e convenções de nomenclatura antecipadamente ajudará a configurar o sucesso em [!DNL MBI] conta. Lembre-se dos três Cs: clareza, coerência e credibilidade.
+Estabelecer estilo e convenções de nomenclatura antecipadamente ajudará a configurar o sucesso em [!DNL MBI] conta. Lembre-se dos três C&#39;s: clareza, coerência e credibilidade.

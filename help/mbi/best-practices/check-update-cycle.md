@@ -2,9 +2,9 @@
 title: Verificando o status do ciclo de atualização
 description: Saiba como verificar o status do ciclo de atualização.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Ao efetuar logon no [!DNL MBI] no painel, há várias maneiras de verificar o st
 
 ## Por que devo verificar o status do ciclo de atualização?
 
-A verificação do ciclo de atualização de status é útil quando você está auditando os dados em seu [!DNL MBI] conta. Se você visualizar [resultados que não atendem às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, vendas diárias em [!DNL MBI] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou em sua [[!DNL Google] receita de comércio eletrônico](https://support.magento.com/hc/en-us/articles/360016505232) você pode verificar o último ponto de dados para ver se o problema será resolvido assim que uma atualização for concluída.
+A verificação do ciclo de atualização de status é útil quando você está auditando os dados em seu [!DNL MBI] conta. Se você visualizar [resultados que não atendem às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, vendas diárias em [!DNL MBI] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou em sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) você pode verificar o último ponto de dados para ver se o problema será resolvido assim que uma atualização for concluída.
 
 ## [!UICONTROL Read-Only] e [!UICONTROL Standard]** Usuários
 

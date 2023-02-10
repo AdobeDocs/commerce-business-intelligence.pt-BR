@@ -5,7 +5,7 @@ exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -56,11 +56,11 @@ Vejamos de perto um dos exemplos mencionados anteriormente neste artigo: consoli
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | eee | 60º | 2017-05-05 00:00:00 | 2000 | 10,2 |
-| 2 | ggg | 40º | 2017-05-23 00:00:00 | 900 | 4,6 |
-| 3 | aaa | 22º | 2017-06-12 00:00:00 | 400 | 2,5 |
-| 4 | eee | 350 | 2017-06-30 00:00:00 | 14500 | 35º |
-| 5 | fff | 280 | 2017-07-10 00:00:00 | 10200 | 28,5 |
+| 1 | eee | 60 | 2017-05-05 00:00:00 | 2000 | 10.2 |
+| 2 | ggg | 40 | 2017-05-23 00:00:00 | 900 | 4.6 |
+| 3 | aaa | 22 | 2017-06-12 00:00:00 | 400 | 2.5 |
+| 4 | eee | 350 | 2017-06-30 00:00:00 | 14500 | 35 |
+| 5 | fff | 280 | 2017-07-10 00:00:00 | 10200 | 28.5 |
 
 `Ad source: Facebook`
 
@@ -70,11 +70,11 @@ Vejamos de perto um dos exemplos mencionados anteriormente neste artigo: consoli
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | aaa | 25. | 2017-05-01 00:00:00 | 1200 | 5 |
-| 2 | ddd | 12º | 2017-05-15 00:00:00 | 800 | 2,5 |
-| 3 | aaa | 40º | 2017-05-22 00:00:00 | 2000 | 7 |
-| 4 | aaa | 110º | 2017-06-08 00:00:00 | 6000 | 10º |
-| 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2. |
+| 1 | aaa | 25 | 2017-05-01 00:00:00 | 1200 | 5 |
+| 2 | ddd | 12 | 2017-05-15 00:00:00 | 800 | 2.5 |
+| 3 | aaa | 40 | 2017-05-22 00:00:00 | 2000 | 7 |
+| 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
+| 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
 Para criar uma única tabela de gastos com anúncios contendo ambos [!DNL Facebook] e [!DNL AdWords] campanhas, precisaremos gravar uma consulta SQL e usar o `UNION ALL` . A `UNION ALL` é usada com mais frequência para combinar várias queries SQL distintas enquanto anexa os resultados de cada query a uma única saída.
 
@@ -118,16 +118,16 @@ Salvar a consulta acima como uma `Data Warehouse View` criará uma nova tabela c
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
-| **1** | [!DNL Facebook] | 2017-05-01 00:00:00 | aaa | 5 | 1200 | 25. |
-| **1** | [!DNL Google AdWords] | 2017-05-05 00:00:00 | eee | 10,2 | 2000 | 60º |
-| **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | ddd | 2,5 | 800 | 12º |
-| **2** | [!DNL Google AdWords] | 2017-05-23 00:00:00 | ggg | 4,6 | 900 | 40º |
-| **3** | [!DNL Facebook] | 2017-05-22 00:00:00 | aaa | 7 | 2000 | 40º |
-| **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | aaa | 2,5 | 400 | 22º |
-| **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | aaa | 10º | 6000 | 110º |
-| **4** | [!DNL Google AdWords] | 2017-06-30 00:00:00 | eee | 35º | 14500 | 350 |
-| **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2. | 300 | 5 |
-| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28,5 | 10200 | 280 |
+| **1** | [!DNL Facebook] | 2017-05-01 00:00:00 | aaa | 5 | 1200 | 25 |
+| **1** | [!DNL Google AdWords] | 2017-05-05 00:00:00 | eee | 10.2 | 2000 | 60 |
+| **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | ddd | 2.5 | 800 | 12 |
+| **2** | [!DNL Google AdWords] | 2017-05-23 00:00:00 | ggg | 4.6 | 900 | 40 |
+| **3** | [!DNL Facebook] | 2017-05-22 00:00:00 | aaa | 7 | 2000 | 40 |
+| **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | aaa | 2.5 | 400 | 22 |
+| **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | aaa | 10 | 6000 | 110 |
+| **4** | [!DNL Google AdWords] | 2017-06-30 00:00:00 | eee | 35 | 14500 | 350 |
+| **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
+| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
 Em vez de criar um conjunto separado de métricas de marketing para cada fonte de publicidade, agora é possível criar apenas um conjunto de métricas usando a tabela acima para capturar todos os seus anúncios.
 

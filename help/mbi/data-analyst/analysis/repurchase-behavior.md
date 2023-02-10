@@ -2,10 +2,10 @@
 title: Análise do comportamento de recompra do cliente
 description: Saiba como analisar o comportamento de recompra do cliente.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ Lembrando as métricas acima, vamos observar um exemplo envolvendo produtos de c
 
 | **Nome do produto** | **Probabilidade de ordem repetida** | **Número médio de ordens por vida** | **Receita vitalícia média** | **Tempo médio para a ordem seguinte** |
 |-----|-----|-----|-----|-----|
-| Derramador de café de xícara única | 94,98% | 7,92 | US$ 549,82 | 57,01 dias |
-| Cápsulas de café | 93,82% | 8,68 | US$ 479,98 | 63,48 dias |
-| Feijão | 41,92% | 6,07 | 99,82 $ | 27,31 dias |
+| Derramador de café de xícara única | 94.98% | 7.92 | $549.82 | 57,01 dias |
+| Cápsulas de café | 93.82% | 8.68 | $479.98 | 63,48 dias |
+| Feijão | 41.92% | 6.07 | $99.82 | 27,31 dias |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ Além de analisar o comportamento de recompra dos clientes, você também pode c
 
 Depois de identificar por que o churn está acontecendo, você pode usar a análise para criar um `reactivation` campanha. Com esses dados, você pode identificar os usuários que ficaram inativos, quanto tempo passou desde a última visita, qual foi a última compra e assim por diante. Isso permitirá que você tome decisões acionáveis que levarão seus clientes a retornarem.
 
-Para obter ajuda com a análise, [entrar em contato com o suporte](../../guide-overview.md).
+Para obter ajuda com a análise, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

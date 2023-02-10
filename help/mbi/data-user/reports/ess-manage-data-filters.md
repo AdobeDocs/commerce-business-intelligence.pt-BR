@@ -2,9 +2,9 @@
 title: Criar conjuntos de filtros para métricas
 description: Saiba como criar Conjuntos de filtros salvos e aplicá-los às métricas.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Se você tiver várias métricas em [!DNL MBI] que precisam ser filtrados de maneira semelhante (por exemplo, filtrar pedidos de teste), você pode criar Conjuntos de filtros salvos e aplicá-los às métricas. Isso economiza tempo, pois não é necessário adicionar filtros individuais ao criar ou editar uma métrica.
 
-Veja nossa [vídeo de treinamento](https://support.magento.com/hc/en-us/articles/360016730151) para saber mais.
+Veja nossa [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) para saber mais.
 
 >[!NOTE]
 >

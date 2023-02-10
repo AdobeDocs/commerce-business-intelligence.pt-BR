@@ -2,10 +2,10 @@
 title: Análise do impacto do cupom
 description: Saiba como analisar o impacto do cupom na aquisição e retenção de clientes.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 0%
+source-wordcount: '1392'
+ht-degree: 2%
 
 ---
 
@@ -46,8 +46,8 @@ Vamos analisar alguns dados de amostra para a aquisição de cupom versus métri
 
 | **Aquisição de clientes** | **Número de novos clientes** | **Receita média da vida útil** | **Número de pedidos repetidos** | **Número de pedidos repetidos com cupom** | **% de ordens repetidas com cupão** |
 |-----|-----|-----|-----|-----|-----|
-| Cupom | 1 206 | US$ 356,91 | 2 570 | 1 248 | 48,56% |
-| Sem cupom | 11 561 | US$ 498,30 | 20 145 | 3 251 | 16,14% |
+| Cupom | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
+| Sem cupom | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -109,9 +109,9 @@ Agora, vamos ver um exemplo envolvendo três cupons diferentes usados para a pri
 
 | **Cupom** | **Pedidos pela primeira vez (FTO)** | **Receitas brutas provenientes da FTO** | **Descontos aplicados à FTO** | **Receitas líquidas provenientes da FTO** | **Valor médio de pedido para FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25% de desconto em US$ 100 ou mais** | 56º | 8.531,04 $ | US$ 2.132,76 | US$ 6.398,28 | US$152,34 |
-| **US$ 10 de desconto** | 87 | US$ 3.707,07 | US$ 426,10 | US$ 3.280,97 | US$ 42,61 |
-| **20% de desconto** | 145 | US$ 10.975,05 | US$ 2.195,01 | 8.780,04 $ | 75,69 $ |
+| **25% de desconto em US$ 100 ou mais** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **US$ 10 de desconto** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20% de desconto** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -137,9 +137,9 @@ Agora que olhamos para as próprias ordens, vamos dar uma olhada nos clientes qu
 
 | **Cupom do primeiro pedido do cliente** | **Número de clientes** | **Número médio de ordens por vida** | **Receita média da vida útil** |
 |-----|-----|-----|-----|
-| **25% de desconto em US$ 100 ou mais** | 56º | 2,8 | US$ 554,54 |
-| **US$ 10 de desconto** | 87 | 1,9 | US$ 115,50 |
-| **20% de desconto** | 145 | 1,3 | US$ 103,75 |
+| **25% de desconto em US$ 100 ou mais** | 56 | 2.8 | $554.54 |
+| **US$ 10 de desconto** | 87 | 1.9 | $115.50 |
+| **20% de desconto** | 145 | 1.3 | $103.75 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -149,4 +149,4 @@ O maior número de clientes foi adquirido através do cupom de &quot;20% de desc
 
 ## Quebra de linha {#wrapup}
 
-Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para os cupons serem usados? E quanto a encontrar o valor ideal de desconto - que valor estimula compradores repetidos, valor médio de pedido mais alto e receita vitalícia mais alta? Para obter ajuda com esses tipos de perguntas, [entrar em contato com o suporte](../../guide-overview.md).
+Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para os cupons serem usados? E quanto a encontrar o valor ideal de desconto - que valor estimula compradores repetidos, valor médio de pedido mais alto e receita vitalícia mais alta? Para obter ajuda com esses tipos de perguntas, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

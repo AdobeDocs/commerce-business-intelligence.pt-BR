@@ -2,9 +2,9 @@
 title: Conectar anúncios do Facebook
 description: Saiba como analisar os dados de gastos com publicidade e ver se o seu dinheiro está sendo gasto de maneira eficaz.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Você seguirá uma série de etapas para permitir [!DNL MBI] para acessar dados 
 
 ## o que vem a seguir? {#next}
 
-Certifique-se de que você esteja rastreando [!DNL Facebook] campanhas em [!DNL Google Analytics] de acordo com este [tutorial](https://www.facebook.com/business/google-analytics). Isso garantirá que a `utm\_campaign` em [!DNL Google Analytics] for preenchido corretamente para o [!DNL Facebook] campanhas.
+Certifique-se de que você esteja rastreando [!DNL Facebook] campanhas em [!DNL Google Analytics]. Isso garantirá que a `utm\_campaign` em [!DNL Google Analytics] for preenchido corretamente para o [!DNL Facebook] campanhas.
 
 ## Relacionado
 
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Conecte seu [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Rastrear origem de referência do pedido via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no seu banco de dados](../../analysis/google-track-user-acq.md)

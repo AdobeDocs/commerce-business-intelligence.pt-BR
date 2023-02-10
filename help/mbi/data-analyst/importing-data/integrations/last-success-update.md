@@ -2,9 +2,9 @@
 title: Entender os resultados entre o Database e o SQL Editor
 description: Saiba mais sobre como entender os resultados entre o banco de dados e o editor SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ O último ponto de dados para uma integração específica é determinado pela v
 Para verificar a atualização dos dados do *tabelas específicas*, recomendamos criar um [Relatório SQL](../../dev-reports/sql-rpt-bldr.md) que executa um `MAX(timestamp)` na tabela mais importante da sua conta. Comparação desse carimbo de data e hora com a `Last Data Point` indicará se o problema afetou a conta inteira ou um subconjunto das tabelas. Recomendamos fazer isso para três a quatro tabelas importantes e de uso comum.
 
 - Se a variável `MAX(timestamp)` são mais recentes que `Last Data Point Received`, significa que um subconjunto das tabelas foi afetado, mas o ciclo de atualização geral da conta é estável.
-- Se a variável `MAX(timestamp)` são iguais a ou anteriores `Last Data Point Received`, significa que o ciclo de atualização da conta foi afetado. Nesta situação, [enviar um tíquete de suporte](../../../guide-overview.md).
+- Se a variável `MAX(timestamp)` são iguais a ou anteriores `Last Data Point Received`, significa que o ciclo de atualização da conta foi afetado. Nesta situação, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

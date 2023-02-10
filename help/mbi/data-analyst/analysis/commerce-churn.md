@@ -5,7 +5,7 @@ exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -102,9 +102,9 @@ Abaixo estão alguns meses comuns > segunda conversões, mas o google fornece ou
 
 | **Months** | **Seconds** |
 |---|---|
-| 3 | 7 776 000 |
-| 6 | 15 552 000 |
-| 9 | 23.328.000 |
-| 12º | 31 104 000 |
+| 3 | 7,776,000 |
+| 6 | 15,552,000 |
+| 9 | 23,328,000 |
+| 12 | 31,104,000 |
 
 Depois de compilar todos os relatórios, você pode organizá-los no painel como desejar. O resultado final pode parecer com o painel de amostra acima.

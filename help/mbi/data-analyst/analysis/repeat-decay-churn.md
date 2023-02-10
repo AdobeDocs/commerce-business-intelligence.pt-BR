@@ -2,9 +2,9 @@
 title: Analisando Declínio de Probabilidade de Repetição e Churn
 description: Saiba e entenda como o tempo decorrido entre os pedidos e quando é esperado que os clientes churn.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Depois de criar a análise acima e determinar um limite de rotatividade, você p
 
 Se você oferecer mais de um produto, provavelmente se perguntará como os clientes que compram um produto específico se comportam de forma diferente ao longo do tempo em comparação com outros clientes. Quer saber mais? Consulte este tutorial para explorar o comportamento de compra em tempo real de coortes de clientes com base em produtos específicos que eles compraram.
 
-Esta prática recomendada é fornecida pelo [!DNL MBI] Data Analysis Services (DAS). Aguardamos com expectativa a resposta a qualquer uma de suas perguntas comerciais específicas! [Entre em contato com o suporte](../../guide-overview.md) para obter mais informações.
+Esta prática recomendada é fornecida pelo [!DNL MBI] Data Analysis Services (DAS). Aguardamos com expectativa a resposta a qualquer uma de suas perguntas comerciais específicas! [Entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter mais informações.
 
 ### Relacionado
 

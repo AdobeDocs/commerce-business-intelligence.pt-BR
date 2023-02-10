@@ -2,9 +2,9 @@
 title: Connect Google Commerce
 description: Saiba mais sobre seus canais de referência mais valiosos.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Para identificar um site específico [!DNL Google Analytics] ID do perfil:
 ## Relacionadas:
 
 * [Esperado [!DNL Google ECommerce] dados](../integrations/google-ecommerce-data.md)
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Configuração [!DNL Google ECommerce] tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../../analysis/most-value-source-channel.md)
 * [Aumente o ROI em suas campanhas publicitárias](../../analysis/roi-ad-camp.md)

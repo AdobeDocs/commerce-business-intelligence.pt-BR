@@ -2,9 +2,9 @@
 title: Conectando o MySQL via túnel SSH
 description: Saiba como conectar o MySQL via túnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -120,4 +120,4 @@ Pronto! Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a 
 
 ## Relacionadas:
 
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

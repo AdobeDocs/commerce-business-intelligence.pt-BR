@@ -2,9 +2,9 @@
 title: Otimizando Suas Consultas SQL
 description: Saiba como otimizar suas consultas SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 O Report Builder SQL permite consultar e iterar essas consultas a qualquer momento. Isso é útil quando você precisa modificar uma consulta sem ter que aguardar a conclusão de um ciclo de atualização antes de perceber uma coluna ou relatório que você criou precisa ser atualizado.
 
-Antes da execução de um query, [[!DNL MBI] estima seu custo](https://support.magento.com/hc/en-us/articles/360016730391). O custo leva em consideração a duração e o número de recursos necessários para executar um query. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder nossos limites, a consulta não será executada. Elaboramos uma lista de recomendações para consultar seu data warehouse, o que garantirá que você esteja gravando as consultas mais simplificadas possíveis.
+Antes da execução de um query, [[!DNL MBI] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). O custo leva em consideração a duração e o número de recursos necessários para executar um query. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder nossos limites, a consulta não será executada. Elaboramos uma lista de recomendações para consultar seu data warehouse, o que garantirá que você esteja gravando as consultas mais simplificadas possíveis.
 
 ## Usar SELECIONAR ou Selecionar todas as colunas
 

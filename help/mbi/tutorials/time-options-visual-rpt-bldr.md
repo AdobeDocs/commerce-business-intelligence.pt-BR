@@ -2,9 +2,9 @@
 title: Usar opções de tempo no Visual Report Builder
 description: Saiba como analisar os dados em seu relatório de um período específico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Agora podemos ver o impacto que cada mês teve no ano passado:
 
 ## Comparação da mesma métrica em intervalos de tempo diferentes {#difftimerange}
 
-Esse exemplo usa uma dimensão personalizada chamada `Day number of the month`. Se quiser criar esse relatório e ainda não tiver essa dimensão na Data Warehouse, [entrar em contato com o suporte](../guide-overview.md) para obter assistência.
+Esse exemplo usa uma dimensão personalizada chamada `Day number of the month`. Se quiser criar esse relatório e ainda não tiver essa dimensão na Data Warehouse, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter assistência.
 
 Os dois exemplos mais comuns nesta categoria são (1) comparação das métricas de crescimento (receita ano a ano ou mês a mês) e (2) melhor compreensão das tendências recentes de vendas de itens ou inventário.
 
@@ -143,4 +143,3 @@ Este exemplo demonstra que os níveis atuais de inventário estavam bem localiza
 
 Como seus clientes se comportam de forma diferente ao longo do tempo, é possível observar as variações nos dados ao realizar análises. Definir opções de tempo personalizadas permite que você crie análises complexas rapidamente, permitindo decisões orientadas por dados que afetam tendências históricas.
 
-Veja nossa [vídeo de treinamento](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) para saber mais.

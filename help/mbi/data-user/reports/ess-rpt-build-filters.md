@@ -2,9 +2,9 @@
 title: Filtros
 description: Saiba como usar filtros.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Um ou mais filtros podem ser adicionados para limitar os dados usados para produ
 >
 >Um relatório pode ter no máximo 3.500 pontos de dados. Para reduzir o número de pontos de dados, use um filtro para reduzir a quantidade de dados usada para gerar o relatório.
 
-O MBI inclui uma seleção de filtros que você pode usar &quot;prontos para uso&quot; ou modificar para atender às suas necessidades. Não há limite para o número de filtros que podem ser criados.
+O MBI inclui uma seleção de filtros que você pode usar &quot;prontos para uso (OOTB)&quot; ou modificar para atender às suas necessidades. Não há limite para o número de filtros que podem ser criados.
 
 ## Para adicionar um filtro:
 

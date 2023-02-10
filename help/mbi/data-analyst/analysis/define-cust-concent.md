@@ -2,9 +2,9 @@
 title: Definir concentração do cliente
 description: Saiba como configurar um painel que ajudará a medir como a receita total é distribuída entre a base de clientes.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -31,49 +31,49 @@ Colunas a serem criadas
 
 * `Sales_flat_order/customer_entity` tabela
 * (entrada) `reference`
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `entity_id`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `entity_id`
 * [!UICONTROL Calculation]: - **caso em que A é nulo, então null else 1 end**
-* [!UICONTROL Datatype]: - `Integer`
+* [!UICONTROL Datatype]: – `Integer`
 
 * `Customer concentration` tabela (este é o arquivo que você acabou de carregar com o número `1`)
 * Número de clientes
-* [!UICONTROL Column type]: - `Many to One > Count Distinct`
+* [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * Caminho - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` OU `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * Coluna selecionada - `sales_flat_order.customer_email` OU `customer_entity.entity_id`
 
 * `customer_entity` tabela
 * Número de clientes
-* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * Caminho - `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * Coluna selecionada - `Number of customers`
 
 * (entrada) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: - `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * Proprietário do evento - `Number of customers`
 * Classificação do evento - `Customer's lifetime revenue`
 
 * Percentil de receita do cliente
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: - **caso em que A é nulo, depois null else (A/B)* 100 final **
-* [!UICONTROL Datatype]: - `Decimal`
+* [!UICONTROL Datatype]: – `Decimal`
 
 * `Sales_flat_order` tabela
 * Número de clientes
-* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
 * Caminho - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * Coluna selecionada - `Number of customers`
 
 * (entrada) Classificação por receita vitalícia do cliente
-* [!UICONTROL Column type]: - `Same table > Event Number`
+* [!UICONTROL Column type]: – `Same table > Event Number`
 * Proprietário do evento - `Number of customers`
 * Classificação do evento - `Customer's lifetime revenue`
 * Filtro - `Customer's order number = 1`
 
 * Percentil de receita do cliente
-* [!UICONTROL Column type]: - `Same table > Calculation`
-* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Column type]: – `Same table > Calculation`
+* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: - **caso em que A é nulo, depois null else (A/B)* 100 final **
 * [!UICONTROL Datatype]: - `Decimal`
 
@@ -158,4 +158,4 @@ Colunas a serem criadas
 
 Depois de compilar todos os relatórios, você pode organizá-los no painel como desejar. O resultado final pode parecer com o painel de amostra acima.
 
-Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](../../guide-overview.md).
+Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

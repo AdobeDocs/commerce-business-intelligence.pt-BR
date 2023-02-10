@@ -2,9 +2,9 @@
 title: Trabalhar com o SQL Report Builder
 description: Saiba como auditar dados e métricas usando o Report Builder SQL para que você possa comparar os resultados com os dados do banco de dados local.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Você também pode gravar queries personalizados e exportar os resultados para c
 
 ### Ainda tropeçadas?
 
-Se encontrar uma discrepância após a auditoria de seus dados, consulte o [Entrando em contato com o suporte: Discrepâncias de dados](https://support.magento.com/hc/en-us/articles/360016505312) artigo de suporte para obter mais informações sobre o que fazer em seguida.
+Se encontrar uma discrepância após a auditoria de seus dados, consulte o [Entrando em contato com o suporte: Discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) artigo de suporte para obter mais informações sobre o que fazer em seguida.

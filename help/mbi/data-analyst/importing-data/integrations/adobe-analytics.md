@@ -2,9 +2,9 @@
 title: Conectar o Adobe Analytics
 description: Saiba como reunir o foco completo de jornada do cliente do [!DNL Adobe Analytics] e o foco do eCommerce no qual você depende [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O [!DNL Adobe Analytics] integração para [!DNL MBI] permite que você reúna o
 
 Mais especificamente, a variável [!DNL Adobe Analytics] integração para [!DNL MBI] O oferece funcionalidade para que os comerciantes comecem a combinar seus conjuntos de dados do Commerce e do Analytics .
 - Crie uma conexão do [!DNL Adobe Analytics] conta em [!DNL MBI].
-- Selecione até 25 métricas e dimensões de 1 conjunto de relatórios para replicar em seu [!DNL MBI] data warehouse.
+- Selecione até 25 métricas e dimensões de um conjunto de relatórios para replicar em seu [!DNL MBI] data warehouse.
 - Usar todos os padrões [!DNL MBI] funcionalidade para transformar, associar e gerar relatórios sobre [!DNL Adobe Analytics] dados.
 
 ## Pré-requisitos de conexão

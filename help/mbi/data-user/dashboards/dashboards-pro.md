@@ -2,9 +2,9 @@
 title: Painéis prontos para uso
 description: Saiba mais sobre painéis prontos para uso para fornecer informações sobre sua empresa.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2245'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O acesso a esses painéis depende do tipo de conta e do nível de acesso. Caso não visualize esses painéis, entre em contato com [suporte](../../guide-overview.md).
+>O acesso a esses painéis depende do tipo de conta e do nível de acesso. Caso não visualize esses painéis, entre em contato com [suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Disponibilidade do relatório
 
@@ -64,7 +64,7 @@ O painel Clientes (sem check-out de convidado permitido) fornece informações s
 | Número de clientes - Pedidos vitalícios | Para um determinado número de pedidos colocados na vida útil de um cliente, o número de clientes que fizeram esses pedidos e a porcentagem de toda a base de clientes que esse número representa. |
 | Clientes únicos que compraram entre 3 e 6 meses atrás | Clientes que fizeram sua primeira compra e compraram somente entre três e seis meses atrás. |
 | Média de LTV por Primeiro Pedido | Compara a receita média cumulativa do ciclo de vida do cliente em todos os coortes. Os coortes são definidos pelo mês em que um cliente fez a compra pela primeira vez. Por exemplo, um coorte de janeiro de 2020 mostra a LTV média cumulativa para clientes cuja primeira compra foi em janeiro de 2020. |
-| Primeiros 30 dias do cliente vs Receita vitalícia | Comparação da receita média dos clientes nos 30 dias após a primeira compra com relação à vida inteira. Cada bolha corresponde a uma região de entrega, e o tamanho de cada bolha representa o número de clientes adquiridos dessa região. |
+| Primeiros 30 dias do cliente vs Receita vitalícia | Comparação da receita média dos clientes nos 30 dias após a primeira compra com relação à vida inteira. Cada bolha corresponde a uma região de entrega e o tamanho de cada bolha representa o número de clientes adquiridos dessa região. |
 
 ## Resumo executivo (check-out de convidado permitido)
 

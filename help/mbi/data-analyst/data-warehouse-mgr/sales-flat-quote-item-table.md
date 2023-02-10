@@ -2,16 +2,16 @@
 title: tabela quote_item
 description: Saiba como trabalhar com a tabela quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # Tabela quote_item
 
-O `quote_item` tabela (`sales_flat_quote_item` on [!DNL Magento] 1) contém registros de todos os itens adicionados a um carrinho de compras, independentemente de o carrinho ter sido abandonado ou convertido em uma compra. Cada linha representa um item do carrinho. Devido ao tamanho potencial desta tabela, recomendamos que você exclua registros periodicamente se determinados critérios forem atendidos, como se houvesse algum carrinho não convertido com mais de 60 dias.
+O `quote_item` tabela (`sales_flat_quote_item` no M1) 1) contém registros de cada item adicionado a um carrinho de compras, independentemente de o carrinho ter sido abandonado ou convertido em uma compra. Cada linha representa um item do carrinho. Devido ao tamanho potencial desta tabela, recomendamos que você exclua registros periodicamente se determinados critérios forem atendidos, como se houvesse algum carrinho não convertido com mais de 60 dias.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ O `quote_item` tabela (`sales_flat_quote_item` on [!DNL Magento] 1) contém reg
 
 `quote_item`
 
-* Associar-se a `quote_item` para criar novas colunas que associem detalhes do SKU pai configurável ou do pacote ao produto simples. Observe que será necessário [entrar em contato com o suporte](../../guide-overview.md) para obter assistência na configuração desses cálculos, se estiver criando no gerenciador de Datas Warehouse.
+* Associar-se a `quote_item` para criar novas colunas que associem detalhes do SKU pai configurável ou do pacote ao produto simples. Observe que será necessário [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter assistência na configuração desses cálculos, se estiver criando no gerenciador de Datas Warehouse.
    * Caminho: `quote_item.parent_item_id` (muitos) => `quote_item.item_id` (1)
 
 `store`

@@ -2,9 +2,9 @@
 title: Fórmulas na Report Builder
 description: Saiba como as fórmulas podem ser usadas no Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ Em nosso exemplo, usamos o `Stacked Columns` para exibir os resultados por mês.
 
 Você notou nos exemplos acima que a fórmula `timestamp`, `groupings`, `perspectives`e `filters` são herdadas de suas métricas de entrada? Lembre-se de que as fórmulas podem ser aproveitadas para usar `perspectives` e [opções de hora independente](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, assim como as métricas podem.
 
-Se tiver dúvidas adicionais sobre o uso de fórmulas na `Report Builder`, [entrar em contato com o suporte](../../guide-overview.md).
+Se tiver dúvidas adicionais sobre o uso de fórmulas na `Report Builder`, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

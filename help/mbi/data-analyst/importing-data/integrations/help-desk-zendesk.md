@@ -2,9 +2,9 @@
 title: Relatórios do Help Desk para o Zendesk
 description: Saiba mais sobre seus canais de referência mais valiosos.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Isso só está disponível para clientes que estão no `Pro` planejar e usar a nova arquitetura. Você está no [nova arquitetura](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) se você tiver o `Data Warehouse Views` seção disponível após a seleção `Manage Data` na barra de ferramentas principal.
+>Isso só está disponível para clientes que estão no `Pro` planejar e usar a nova arquitetura. Você está na nova arquitetura se tiver a variável `Data Warehouse Views` seção disponível após a seleção `Manage Data` na barra de ferramentas principal.
 
 Consolidação do [!DNL Zendesk] os dados com seu banco de dados transacional são uma excelente maneira de entender melhor como seus clientes interagem com suas equipes de vendas ou de sucesso do cliente e que tipo de cliente está utilizando sua plataforma de suporte. Neste artigo, demonstramos como configurar um painel para obter relatórios granulares sobre o [!DNL Zendesk] desempenho e vinculação aos clientes transacionais.
 
@@ -196,7 +196,7 @@ Antes de começar, você desejará se conectar [[!DNL Zendesk]](../integrations/
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** tabela
@@ -221,7 +221,7 @@ Antes de começar, você desejará se conectar [[!DNL Zendesk]](../integrations/
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** tabela
    * Selecione uma definição: `Joined Column`

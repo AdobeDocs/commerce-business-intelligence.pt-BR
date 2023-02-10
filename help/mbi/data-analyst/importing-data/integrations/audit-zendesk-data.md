@@ -2,9 +2,9 @@
 title: Auditar dados do Zendesk
 description: Saiba mais sobre as etapas para exportar seus dados do Zendesk.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Encontrou algo estranho em seu [[!DNL Zendesk] dados](../integrations/exp-zendes
 
 ## Ativação da exportação de dados
 
-A exportação de dados não está atualmente ativada para todos [!DNL Zendesk] contas. Para ativar esse recurso, [enviar um tíquete de suporte](../../../guide-overview.md), mencionando seu [!DNL Zendesk] nome do subdomínio.
+A exportação de dados não está atualmente ativada para todos [!DNL Zendesk] contas. Para ativar esse recurso, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), mencionando seu [!DNL Zendesk] nome do subdomínio.
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ Após habilitar a exportação de dados, somente os administradores de um domín
 
    Este link de download é válido por pelo menos três dias.
 
-Esse processo cria um arquivo XML contendo todas as informações armazenadas no [!DNL Zendesk] , incluindo dados de tíquete (com comentários), dados do usuário e dados da conta. Neste ponto, você pode [enviar um tíquete de suporte](../../../guide-overview.md) (anexe este arquivo!) para que possamos examinar seus dados mais de perto. Se o arquivo for muito grande, compartilhe-o com a variável [!DNL MBI] equipe via [!DNL Dropbox] ou [!DNL Google Drive].
+Esse processo cria um arquivo XML contendo todas as informações armazenadas no [!DNL Zendesk] , incluindo dados de tíquete (com comentários), dados do usuário e dados da conta. Neste ponto, você pode [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (anexe este arquivo!) para que possamos examinar seus dados mais de perto. Se o arquivo for muito grande, compartilhe-o com a variável [!DNL MBI] equipe via [!DNL Dropbox] ou [!DNL Google Drive].
 
-Para obter mais informações sobre [!DNL Zendesk] exportações de arquivos, consulte o oficial [[!DNL Zendesk] exportar documentação](https://support.zendesk.com/entries/23002207-Exporting-data-to-a-CSV-or-XML-file-Plus-and-Enterprise-).
+Para obter mais informações sobre [!DNL Zendesk] exportações de arquivos, consulte o oficial [[!DNL Zendesk] exportar documentação](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

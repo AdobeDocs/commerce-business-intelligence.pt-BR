@@ -2,9 +2,9 @@
 title: Ativar [!DNL MBI] Conta para assinaturas no local
 description: Saiba mais sobre como ativar seu [!DNL MBI] para Assinaturas no local.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Para ativar [!DNL MBI] para assinaturas no local, primeiro crie um [!DNL MBI] co
 
 1. Crie seu [!DNL MBI] Conta.
 
-   - Ir para [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - Vá para o seu [Logon da conta do Adobe Commerce](https://account.magento.com/customer/account/login)
 
    - Ir para **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -25,7 +25,7 @@ Para ativar [!DNL MBI] para assinaturas no local, primeiro crie um [!DNL MBI] co
 
    ![](../assets/create-account-2.png)
 
-   - Vá para a caixa de entrada e verifique seu endereço de email. Se você não recebeu um email, [entrar em contato com o suporte](../guide-overview.md).
+   - Vá para a caixa de entrada e verifique seu endereço de email. Se você não recebeu um email, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
    - Crie sua senha.
 

@@ -2,9 +2,9 @@
 title: tabela sales_order
 description: Saiba como trabalhar com a tabela sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Esta tabela inclui todas as ordens de clientes, independentemente de essa ordem 
 | `customer_group_id` | Chave externa associada à `customer_group` tabela. Associar-se a `customer_group.customer_group_id` para determinar o grupo de clientes associado ao pedido |
 | `customer_id` | `Foreign key` associada à `customer_entity` , se o cliente estiver registrado. Associar-se a `customer_entity.entity_id` para determinar os atributos do cliente associados ao pedido. Se o pedido foi colocado por meio do check-out do convidado, este campo será `NULL` |
 | `entity_id` (PK) | Identificador exclusivo para a tabela e normalmente usado em associações a outras tabelas na instância do Commerce |
-| `increment_id` | Identificador exclusivo de um pedido, geralmente chamado de `order_id` no Magento. O `increment_id` é usada com mais frequência para associações a fontes externas, como [!DNL Google Ecommerce] |
+| `increment_id` | Identificador exclusivo de um pedido, geralmente chamado de `order_id` no Adobe Commerce. O `increment_id` é usada com mais frequência para associações a fontes externas, como [!DNL Google Ecommerce] |
 | `shipping_address_id` | Chave externa associada à `sales_order_address` tabela. Associar-se a `sales_order_address.entity_id` para determinar os detalhes do endereço de entrega associado ao pedido |
 | `status` | Status do pedido. Pode retornar valores como &quot;concluído&quot;, &quot;processamento&quot;, &quot;cancelado&quot;, &quot;reembolsado&quot;, bem como quaisquer status personalizados implementados na instância do Commerce. Sujeito a alterações à medida que o pedido é processado |
 | `store_id` | `Foreign key` associada à `store` tabela. Associar-se a `store`.`store_id` para determinar qual visualização da loja de comércio está associada ao pedido |

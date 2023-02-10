@@ -2,9 +2,9 @@
 title: Conectar Google Analytics Warehouse
 description: Saiba como os visitantes usam seu site, qual conteúdo é atraente, onde os visitantes saem e muito mais.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Com o [!DNL Google Analytics Live] integração, por outro lado, a cada [!DNL Go
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] é um `Premium` Integração. [Entre em contato com o suporte](../../../guide-overview.md) se você tiver interesse em adicionar essa integração à sua assinatura.
+>[!DNL Google Analytics Warehoused] é um `Premium` Integração. [Entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se você tiver interesse em adicionar essa integração à sua assinatura.
 
 1. Vá para o `Connections` página abaixo **[!UICONTROL Admin** > **Integrations]**.
 1. Clique em **[!UICONTROL Add a Add Integration]**, localizado no lado direito da tela.
@@ -61,8 +61,7 @@ Para identificar um site específico [!DNL Google Analytics] ID do perfil:
 
 ## Documentação relacionada
 
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Conexão [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análise da atividade do site e das taxas de conversão do cliente](../../analysis/web-act-cust-conversion.md)
 * [Rastrear dados de aquisição do usuário usando [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)
-* [Rastrear os dados do dispositivo e do navegador do usuário usando [!DNL Google Analytics] cookies](https://support.magento.com/hc/en-us/articles/360016732911)

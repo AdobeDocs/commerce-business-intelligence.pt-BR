@@ -2,9 +2,9 @@
 title: Usar Upload de Arquivo
 description: Saiba como colocar todos os seus dados em um único data warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Vamos usar campanhas de publicidade como exemplo. Se você estiver executando ca
 ## Restrições e requisitos {#require}
 
 1. **O único formato compatível para uploads de arquivo é `CSV` ou`comma separated values`**. Se você estiver trabalhando no Excel, poderá usar a função Salvar como para salvar o arquivo no `.csv` formato.
-1. **`CSV`os arquivos devem usar`UTF-8 encoding`**. Na maior parte do tempo, não se trata de uma questão. Se encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`os arquivos devem usar`UTF-8 encoding`**. Na maior parte do tempo, não se trata de uma questão. Se encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **Os arquivos não podem ter mais de 100 MB**. Se o arquivo for maior que isso, separe a tabela em partes e salve-a como arquivos individuais. Você pode usar Anexar os dados após o carregamento do arquivo inicial.
 1. **Todas as tabelas devem ter uma`primary key`**. Deve haver pelo menos uma coluna na tabela que possa ser usada como `primary key`ou um identificador exclusivo para cada linha da tabela. Qualquer coluna designada como `primary key` can *never* ser nulo. A `primary key` pode ser tão simples quanto adicionar uma coluna que dê um número a cada linha, ou duas colunas podem ser concatenadas para criar uma coluna de valores únicos (por exemplo, `campaign name` e `date`).
 

@@ -2,9 +2,9 @@
 title: Analisando pedidos retornados
 description: Saiba como configurar um painel que forneça uma análise detalhada dos retornos de sua loja.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -248,4 +248,4 @@ Colunas a serem criadas
 
 Depois de compilar todos os relatórios, você pode organizá-los no painel como desejar. O resultado pode ser semelhante ao painel de amostra acima.
 
-Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver a equipe de Serviços Profissionais, [entrar em contato com o suporte](../../guide-overview.md).
+Se tiver dúvidas ao criar essa análise ou quiser envolver a equipe de Serviços Profissionais, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

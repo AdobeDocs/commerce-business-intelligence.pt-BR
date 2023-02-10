@@ -2,9 +2,9 @@
 title: Painéis incluídos
 description: Saiba como verificar a integridade de métricas essenciais, como receita vitalícia do usuário, número de compras repetidas e muito mais, criando assim uma base sólida para exploração futura.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Como parte de nossos serviços, oferecemos comércio eletrônico e `SaaS` Pacote
 >
 >A disponibilidade de alguns painéis depende do conjunto de dados.
 
-Em caso de dúvidas ou de interesse em adicionar um pacote à sua conta, envie um [tíquete de suporte](../../guide-overview.md) para obter ajuda.
+Em caso de dúvidas ou de interesse em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter ajuda.
 
 ## Visão geral executiva
 

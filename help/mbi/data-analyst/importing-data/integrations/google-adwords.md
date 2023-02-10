@@ -2,9 +2,9 @@
 title: Conexão de palavras-chave do Google
 description: Saiba como medir o ROI da campanha, casando-se com seu custo de publicidade e o valor da vida útil do cliente (CLV) dos usuários adquiridos de suas campanhas.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ Você pode ter vários sites conectados a um único [!DNL Google Analytics] , id
 
 ## Relacionado
 
-* [Reautenticação de integrações](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Rastrear origem de referência do pedido via [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no seu banco de dados](../../analysis/google-track-user-acq.md)
-* [Rastrear dados do dispositivo do usuário, do navegador e do SO no seu banco de dados](https://support.magento.com/hc/en-us/articles/360016732911)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../../analysis/most-value-source-channel.md)
 * [Aumente o ROI em suas campanhas publicitárias](../../analysis/roi-ad-camp.md)
 * [Como [!DNL Google Analytics] A atribuição de UTM funciona?](../../analysis/utm-attributes.md)

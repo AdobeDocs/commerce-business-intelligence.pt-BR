@@ -29,7 +29,7 @@ Essas permissões permitem que os usuários executem determinadas ações ou ace
 | **Criar resumos por email** | ✔ | ✔ |  |
 | **Criar/editar/compartilhar painéis** | ✔ | ✔ |  |
 | **Exibir painéis** | ✔ | ✔ | ✔ |
-| **Criar/editar/excluir relatórios visuais** | ✔ | * |  |
+| **Criar/editar/excluir relatórios visuais** | ✔ | ✔* |  |
 | **Criar/editar/excluir relatórios SQL** | ✔ |  |  |
 | **Clonar painéis** | ✔ |  |  |
 | **Adicionar/gerenciar integrações** | ✔ |  |  |
@@ -41,7 +41,7 @@ Essas permissões permitem que os usuários executem determinadas ações ou ace
 | **Criar lista de relatórios dependentes** | ✔ |  |  |
 | **Resumo do sistema de acesso** | ✔ |  |  |
 | **Acessar configurações de Fuso horário** | ✔ |  |  |
-| **Faturamento de acesso** | ✔ | * |  |
+| **Faturamento de acesso** | ✔ | ✔** |  |
 | **Entre em contato com o suporte** | ✔ | ✔ | ✔ |
 
 {style=&quot;table-layout:auto&quot;}

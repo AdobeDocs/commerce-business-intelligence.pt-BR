@@ -2,16 +2,16 @@
 title: tabela sales_order_item
 description: Saiba como trabalhar com a tabela sales_order_item.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` Tabela
 
-O `sales_order_item` tabela (`sales_flat_order_item` on [!DNL Magento] 1) contém registros de todos os produtos que foram comprados em um pedido. Cada linha representa uma `sku` incluído em um pedido. A quantidade de unidades que foram compradas para um `sku` é mais frequentemente representada pela variável `qty_ordered` campo.
+O `sales_order_item` tabela (`sales_flat_order_item` no M1 1) contém registros de todos os produtos que foram comprados em um pedido. Cada linha representa uma `sku` incluído em um pedido. A quantidade de unidades que foram compradas para um `sku` é mais frequentemente representada pela variável `qty_ordered` campo.
 
 ## Tipos de produto
 
@@ -82,7 +82,7 @@ Por conseguinte, é possível apresentar relatórios sobre as vendas de produtos
 
 `sales_order_item`
 
-* Associar-se a `sales_order_item` para criar novas colunas que associem detalhes do SKU pai configurável ou do pacote ao produto simples. Observe que será necessário [entrar em contato com o suporte](../../guide-overview.md) para obter assistência na configuração desses cálculos, se estiver criando no gerenciador de Datas Warehouse.
+* Associar-se a `sales_order_item` para criar novas colunas que associem detalhes do SKU pai configurável ou do pacote ao produto simples. Observe que será necessário [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter assistência na configuração desses cálculos, se estiver criando no gerenciador de Datas Warehouse.
    * Caminho: `sales_order_item.parent_item_id` (muitos) => `sales_order_item.item_id` (1)
 
 `store`

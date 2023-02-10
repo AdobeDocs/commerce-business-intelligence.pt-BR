@@ -2,9 +2,9 @@
 title: Importar dados de gastos do Bing Ad
 description: Saiba como importar dados de gastos com publicidade do Bing para o [!DNL MBI] para análise.
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ Para exportar os dados do Bing Ads, será necessário ter o Editor do Bing Ads i
 1. No `Save As` , clique na pasta onde deseja salvar o arquivo de exportação.
 1. No `File name` escolha um nome para a exportação de arquivo.
 1. Clique em **[!UICONTROL Save]**.
-1. Após o download do arquivo,  [entrar em contato com o suporte](../../../guide-overview.md)e realizaremos um primeiro upload em seu nome e configuraremos as dimensões de back-end necessárias.
+1. Após o download do arquivo,  [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)e realizaremos um primeiro upload em seu nome e configuraremos as dimensões de back-end necessárias.
