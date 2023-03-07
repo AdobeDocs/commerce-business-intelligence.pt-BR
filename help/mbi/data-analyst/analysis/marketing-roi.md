@@ -1,10 +1,10 @@
 ---
 title: ROI de marketing
-description: Saiba como configurar um painel que rastreará sua análise de canal, incluindo o ROI na agregação e por campanha.
+description: Saiba como configurar um painel que acompanhe sua análise de canal, incluindo o ROI agregado e por campanha.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -13,30 +13,30 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este artigo contém instruções para clientes que utilizam a arquitetura original e a nova arquitetura. Você está no [nova arquitetura](../../administrator/account-management/new-architecture.md) se você tiver a seção &quot;Visualizações de Data Warehouse&quot; disponível depois de selecionar &quot;Gerenciar dados&quot; na barra de ferramentas principal.
+>Este artigo contém instruções para clientes que estão usando a arquitetura original e a nova arquitetura. Você está no [nova arquitetura](../../administrator/account-management/new-architecture.md) se você tiver a seção &quot;Data Warehouse Views&quot; disponível após selecionar &quot;Manage Data&quot; (Gerenciar dados) na barra de ferramentas principal.
 
-Se você estiver gastando dinheiro em publicidade on-line, inevitavelmente vai querer acompanhar seu retorno sobre esse gasto e tomar decisões orientadas por dados sobre outros investimentos. Neste artigo, demonstramos como configurar um painel que rastreará sua análise de canal, incluindo o ROI na agregação e por campanha.
+Se você está gastando dinheiro em publicidade on-line, você quer monitorar seu retorno sobre esses gastos e tomar decisões orientadas por dados sobre investimentos adicionais. Este artigo demonstra como configurar um painel que rastreie sua análise de canal, incluindo o ROI agregado e por campanha.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-Antes de começar, você deseja se conectar [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)e [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) , bem como trazer outros dados de gastos com anúncios online. Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
+Antes de começar, você deseja conectar seu [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md), e [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) contas e trazer dados adicionais de gastos com anúncios online. Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Tabelas Consolidadas
 
-**Arquitetura original:** Para reunir os gastos de várias fontes (como [!DNL Facebook Ads] ou [!DNL Google Adwords]), recomendamos criar uma **tabela consolidada** de todos os gastos com anúncios. Você precisará de um analista para concluir esta etapa para você. Se ainda não tiver, [arquivar uma solicitação de suporte](../../guide-overview.md) com o assunto `[MARKETING ROI ANALYSIS]`e um analista criará essa tabela.
+**Arquitetura original:** Para reunir seus gastos de várias fontes (como [!DNL Facebook Ads] ou [!DNL Google Adwords]), o Adobe recomenda a criação de um **tabela consolidada** de todo o seu investimento em anúncios. Você precisa de um analista para concluir esta etapa para você. Caso contrário, [arquivar uma solicitação de suporte](../../guide-overview.md) com o assunto `[MARKETING ROI ANALYSIS]`, e um analista cria essa tabela.
 
-**Nova arquitetura:** Você pode seguir o exemplo estabelecido em [esta biblioteca de análise](../../data-analyst/data-warehouse-mgr/create-dw-views.md) tópico. Tabelas consolidadas agora são conhecidas como Exibições de Data Warehouse na nova arquitetura.
+**Nova arquitetura:** Você pode seguir o exemplo em [esta Biblioteca de análise](../../data-analyst/data-warehouse-mgr/create-dw-views.md) tópico. As Tabelas consolidadas agora são conhecidas como Exibições do Data Warehouse na nova arquitetura.
 
 ## Colunas calculadas
 
-Colunas a serem criadas
+Colunas para criar
 
 * **`Consolidated Digital Ad Spend`** tabela
-* **`Campaign name`** será criado por um analista como parte de **[ANÁLISE DE ROI DE MARKETING]** ticket
+* **`Campaign name`** O é criado por um analista como parte de sua **[ANÁLISE DE ROI DE MARKETING]** tíquete
 
 >[!NOTE]
 >
->Consulte acima para ver as novas diferenças de arquitetura.
+>Veja acima as novas diferenças na arquitetura.
 
 **Arquiteturas originais e novas:**
 
@@ -54,15 +54,15 @@ Colunas a serem criadas
       * Selecione um [!UICONTROL column]: `campaign`
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
    * **`Order's GA medium`**
-      * Selecione uma definição: Coluna unida
+      * Selecione uma definição: Coluna Associada
       * Selecione um [!UICONTROL table]: `ecommerce####`
       * Selecione um [!UICONTROL column]: `medium`
-      * [!UICONTROL Path]: sales_apartamento_order.incestment_id = ecommerce####.transactionId
+      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce####.transactionId
    * **`Order's GA source`**
-      * Selecione uma definição: Coluna unida
+      * Selecione uma definição: Coluna Associada
       * Selecione um [!UICONTROL table]: `ecommerce####`
       * Selecione um [!UICONTROL column]: `source`
-      * [!UICONTROL Path]: sales_apartamento_order.incestment_id = ecommerce####.transactionId ^
+      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce####.transactionId ^
 
 
 
@@ -81,7 +81,7 @@ Colunas a serem criadas
    * Selecione uma definição: `Max`
    * Selecione um [!UICONTROL table]: `sales_flat_order`
    * Selecione um [!UICONTROL column]: `Order's GA source`
-   * [!UICONTROL Path]: sales_plain_order.customer_id = customer_entity.entity_id
+   * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
    * [!UICONTROL Filter]:
       * `Orders we count`
       * `Customer's order number = 1`
@@ -103,7 +103,7 @@ Colunas a serem criadas
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
-   * Selecione uma definição: Coluna unida
+   * Selecione uma definição: Coluna Associada
    * Selecione um [!UICONTROL table]: `customer_entity`
    * Selecione um [!UICONTROL column]: `Customer's first order GA source`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
@@ -118,32 +118,32 @@ Colunas a serem criadas
 
 * **Gasto com anúncios**
 * No **`Consolidated Digital Ad Spend`** tabela
-* Essa métrica executa um **Soma**
-* No **`adCost`** column
-* Solicitado pela **`date`** timestamp
+* Essa métrica executa uma **Sum**
+* No **`adCost`** coluna
+* Ordenado por **`date`** carimbo de data e hora
 
 * **Impressões do anúncio**
 * No **`Consolidated Digital Ad Spend`** tabela
-* Essa métrica executa um **Soma**
-* No **`Impressions`** column
-* Solicitado pela **`Month`** timestamp
+* Essa métrica executa uma **Sum**
+* No **`Impressions`** coluna
+* Ordenado por **`Month`** carimbo de data e hora
 
-* **Cliques no anúncio**
+* **Cliques de anúncio**
 * No **`Consolidated Digital Ad Spend`** tabela
-* Essa métrica executa um **Soma**
-* No **`adClicks`** column
-* Solicitado pela **`Month`** timestamp
+* Essa métrica executa uma **Sum**
+* No **`adClicks`** coluna
+* Ordenado por **`Month`** carimbo de data e hora
 
 >[!NOTE]
 >
->Certifique-se de [adicionar todas as novas colunas como dimensões às métricas](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
+>Verifique se [adicionar todas as novas colunas como dimensões às métricas](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
 
 ## Relatórios
 
-* **Despesa com anúncios (o tempo todo)**
-   * [!UICONTROL Metric]: Gasto com anúncio
+* **Gasto com anúncio (todo o tempo)**
+   * [!UICONTROL Metric]: Gasto com anúncios
 
-* Métrica `A`: Gasto com anúncio
+* Métrica `A`: Gasto com anúncios
 * [!UICONTROL Time period]: `All time`
 * 
    [!UICONTROL Intervalo]: `None`
@@ -151,7 +151,7 @@ Colunas a serem criadas
 
    [!UICONTROL Chart Type]: `Scalar`
 
-* **Aquisições de anúncios de clientes (o tempo todo)**
+* **Aquisições de clientes de publicidade (todo o tempo)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -169,7 +169,7 @@ Colunas a serem criadas
    [!UICONTROL Chart Type]: `Scalar`
 
 * **ROI do anúncio**
-   * [!UICONTROL Metric]: Gasto com anúncio
+   * [!UICONTROL Metric]: Gasto com anúncios
 
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filters]:
@@ -178,7 +178,7 @@ Colunas a serem criadas
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica do filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
-   * [!UICONTROL Metric]: Receita média da vida útil
+   * [!UICONTROL Metric]: Receita média vitalícia
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -203,7 +203,7 @@ Colunas a serem criadas
 
    [!UICONTROL Chart Type]: `Scalar`
 
-* **Pedidos por meio de gás**
+* **Pedidos por meio de ga**
    * 
 
       [!UICONTROL Métrica]: `Orders`
@@ -216,7 +216,7 @@ Colunas a serem criadas
 
    [!UICONTROL Chart Type]: `Area`
 
-* **ROI do anúncio por campanha**
+* **ROI de anúncio por campanha**
    * [!UICONTROL Metric]: `Ad Spend`
 
    * [!UICONTROL Metric]:`New customers`
@@ -226,14 +226,14 @@ Colunas a serem criadas
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica do filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
-   * [!UICONTROL Metric]: Receita média da vida útil
+   * [!UICONTROL Metric]: Receita média vitalícia
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * Lógica do filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
-   * [!UICONTROL Metric]: Número médio de ordens por vida
+   * [!UICONTROL Metric]: número médio de ordens vitalícias
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -290,14 +290,14 @@ Colunas a serem criadas
 * 
    [!UICONTROL Intervalo]: `None`
 * 
-   [!UICONTROL Agrupar por]: `campaign` (Use a campanha &quot;Primeiro pedido do cliente&quot; para métricas de tabela de gastos não relacionados a anúncios)
+   [!UICONTROL Agrupar por]: `campaign` (Usar a campanha &quot;Primeiro pedido do cliente&quot; para métricas de tabela de gastos sem anúncios)
 * 
 
    [!UICONTROL Chart Type]: `Table`
 
-Se você tiver dúvidas ao criar essa análise ou simplesmente quiser envolver nossa equipe de serviços profissionais, [entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
-### Relacionado
+### Relacionados
 
-* [Práticas recomendadas para marcação de UTM no [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
-* [Como [!DNL Google Analytics] A atribuição de UTM funciona?](../analysis/utm-attributes.md)
+* [Práticas recomendadas para marcação UTM no [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [Como o [!DNL Google Analytics] A atribuição UTM funciona?](../analysis/utm-attributes.md)

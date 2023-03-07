@@ -1,15 +1,15 @@
 ---
-title: Conectar QuickBooks
-description: Saiba como as finanças de sua empresa agora podem acompanhar seus dados de vendas e marketing, permitindo que você mantenha as guias de suas despesas com rapidez e facilidade, identifique os gastos excessivos e muito mais.
+title: Conectar o QuickBooks
+description: Saiba como suas finanças comerciais agora podem acompanhar seus dados de vendas e marketing, permitindo que você mantenha controle sobre suas despesas de maneira rápida e fácil, identifique gastos excessivos e muito mais.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
-# Connect [!DNL QuickBooks]
+# Conectar [!DNL QuickBooks]
 
 >[!NOTE]
 >
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 ![](../../../assets/Quickbooks.png)
 
-Com o [!DNL QuickBooks] integração, suas finanças empresariais podem agora acompanhar seus dados de vendas e marketing, permitindo que você mantenha as guias de suas despesas com rapidez e facilidade, identifique gastos excessivos e muito mais.
+Com o [!DNL QuickBooks] integração, suas finanças comerciais agora podem conviver com seus dados de vendas e marketing, permitindo que você mantenha controle sobre suas despesas de maneira rápida e fácil, identifique gastos excessivos e muito mais.
 
-## Adicionar [!DNL QuickBooks] como uma fonte de dados em [!DNL MBI]
+## Adicionar [!DNL QuickBooks] como fonte de dados no [!DNL MBI]
 
-1. Vá para o `Integrations` página abaixo **[!UICONTROL Manage Data** > **Data Sources]**.
-1. Clique em **[!UICONTROL Add Integration]**, localizado no lado direito do ecrã acima da `Data Sources` tabela.
-1. Clique no botão `QuickBooks` ícone .
+1. Vá para a `Integrations` página abaixo **[!UICONTROL Manage Data** > **Data Sources]**.
+1. Clique em **[!UICONTROL Add Integration]**, localizado no lado direito da tela acima da `Data Sources` tabela.
+1. Clique em `QuickBooks` ícone.
 1. Clique em **[!UICONTROL Connect to Quickbooks]**.
 
-## Subvenção [!DNL MBI] acesso ao seu [!DNL QuickBooks] dados
+## Conceder [!DNL MBI] acesso ao seu [!DNL QuickBooks] dados
 
-Depois de clicar **[!UICONTROL Connect to Quickbooks]**, faça logon em seu [!DNL Intuit] e autorizar a conexão:
+Depois de clicar em **[!UICONTROL Connect to Quickbooks]**, faça logon no [!DNL Intuit] e autorize a conexão:
 
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
-1. No `Search for a company` selecione sua empresa na lista suspensa.
-1. Clique em **[!UICONTROL Next]**. Você é redirecionado para [!DNL MBI] e *Conexão bem-sucedida!* será exibida na parte superior da tela.
+1. No `Search for a company` selecione sua empresa.
+1. Clique em **[!UICONTROL Next]**. Você será redirecionado para [!DNL MBI] e uma *Conexão bem sucedida!* é exibida na parte superior da tela.
 
-## Relacionado
+## Relacionados
 
 * [Esperado [!DNL QuickBooks] dados](../integrations/quickbooks-data.md)
 * [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

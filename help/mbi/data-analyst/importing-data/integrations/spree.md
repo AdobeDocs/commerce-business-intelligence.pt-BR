@@ -1,19 +1,19 @@
 ---
-title: Connect Spree
-description: Saiba como sua empresa está se saindo ou como encontrar suas fontes e canais de aquisição mais valiosos.
+title: Conectar planilha
+description: Saiba como observar o desempenho de sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos.
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
 
-# Connect [!DNL Spree]
+# Conectar [!DNL Spree]
 
-Quer ver o desempenho de sua empresa ou encontrar suas fontes e canais de aquisição mais valiosos? Conectar seu [!DNL Spree] para [!DNL MBI] permitirá que você responda a essas perguntas e muito mais.
+Quer ver o desempenho da sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos? Conectar o [!DNL Spree] dados para [!DNL MBI] O permite responder a essas perguntas e muito mais.
 
-O [!DNL Spree] o banco de dados é baseado em `PostgreSQL`, você pode conectá-lo ao [!DNL MBI] usando o [as mesmas etapas que você faria para um `Postgres` conexão](../integrations/postgresql.md).
+A variável [!DNL Spree] o banco de dados é baseado em `PostgreSQL`, você pode conectá-lo a [!DNL MBI] usando o [as mesmas etapas que você seguiria para um `Postgres` conexão](../integrations/postgresql.md).
 
 ## Documentação relacionada
 

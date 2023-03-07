@@ -1,15 +1,15 @@
 ---
-title: Exportar dados do gráfico
-description: Saiba como visualizar os dados por trás de um gráfico.
+title: Exportar Dados do Gráfico
+description: Saiba como visualizar os dados atrás de um gráfico.
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
-# Exportar dados do gráfico
+# Exportar Dados do Gráfico
 
 Se quiser exibir os dados atrás de um gráfico, clique no ícone de engrenagem no canto superior direito de qualquer gráfico.
 
@@ -20,6 +20,6 @@ Selecione:
 - `Full Excel Export`
 - `Raw Export`
 
-Também é possível definir a variável [tabela e colunas que você deseja incluir na exportação](../../tutorials/export-raw-data.md).
+Você também pode definir a variável [tabela e colunas que deseja incluir na exportação](../../tutorials/export-raw-data.md).
 
-Se você precisar incluir um gráfico em uma apresentação ou documento, poderá exportar o gráfico como uma imagem no formato PNG, PDF ou SVG, clicando no ícone de engrenagem no canto superior direito de qualquer gráfico. Selecione o `Enlarge` na lista suspensa e clique em **[!UICONTROL Download]** para concluir a exportação.
+Se você precisar incluir um gráfico em uma apresentação ou documento, poderá exportar o gráfico como uma imagem no formato PNG, PDF ou SVG. Clique no ícone de engrenagem no canto superior direito de qualquer gráfico. Selecione o `Enlarge` na lista suspensa e, em seguida, clique em **[!UICONTROL Download]** para concluir a exportação.

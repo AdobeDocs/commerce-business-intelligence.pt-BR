@@ -1,49 +1,49 @@
 ---
-title: Pedidos de convidado
-description: Saiba mais sobre o impacto que os pedidos de convidado têm em seus dados e quais opções você tem para contabilizar corretamente os pedidos de convidado em seus [!DNL MBI] data warehouse.
+title: Pedidos de convidados
+description: Saiba mais sobre o impacto que os pedidos de convidado têm nos seus dados e quais opções você tem para contabilizar corretamente os pedidos de convidado em seus [!DNL MBI] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
 
-# Pedidos de convidado
+# Pedidos de convidados
 
-Ao revisar seus pedidos, se você perceber que muitos `customer\_id` são nulos ou não têm um valor para unir de volta à `customers` tabela, isso geralmente indica que sua loja permite pedidos de convidado. Isso significa que a variável `customers` provavelmente não inclui todos os seus clientes.
+Ao revisar seus pedidos, se você notar que muitos `customer\_id` valores são nulos ou não têm um valor para se associar de volta à `customers` tabela, isso indica que sua loja permite pedidos de convidados. Isso significa que o seu `customers` A tabela provavelmente não inclui todos os seus clientes.
 
-Neste tópico, discutimos o impacto que os pedidos de convidado têm em seus dados e quais opções você tem para considerar corretamente os pedidos de convidado em seu [!DNL MBI] data warehouse.
+Este tópico discute o impacto que os pedidos de convidados têm nos seus dados e quais opções você tem para contabilizar corretamente os pedidos de convidados em seus [!DNL MBI] Data Warehouse.
 
-## Impacto dos pedidos de convidado nos dados
+## Impacto dos pedidos de convidados nos dados
 
-No banco de dados de comércio típico, há um `orders` tabela que une a um `customers` tabela. Cada linha no `orders` a tabela tem um `customer\_id` coluna que é exclusiva a uma linha na `customers` tabela.
+No banco de dados de comércio típico, há uma variável `orders` tabela que se associa a um `customers` tabela. Todas as linhas no `orders` a tabela tem um `customer\_id` que é exclusiva de uma linha no `customers` tabela.
 
-* **Se todos os clientes estiverem registrados** e pedidos de hóspedes não são permitidos, isso significa que cada registro no `orders` tem um valor na variável `customer\_id` coluna. Como resultado, cada pedido é associado ao `customers` tabela. Você pode ver isso na imagem abaixo.
+* **Se todos os clientes estiverem registrados** e as encomendas de convidados não são permitidas, isso significa que cada registro no `orders` a tabela tem um valor no `customer\_id` coluna. Como resultado, cada pedido se junta de volta ao `customers` tabela. Você pode ver isso na imagem abaixo.
 
    ![](../../assets/guest-orders-4.png)
 
-* **Se os pedidos de convidado forem permitidos**, isso significa que alguns pedidos não têm um valor na variável `customer\_id` coluna. Somente clientes registrados recebem um valor para a variável `customer\_id` na coluna `orders` tabela. Os clientes que não estiverem registrados receberão uma `NULL` (ou em branco) para essa coluna. Como resultado, nem todos os registros de pedido terão registros correspondentes na variável `customers` tabela.
+* **Se as ordens do convidado forem permitidas**, isso significa que alguns pedidos não têm um valor no `customer\_id` coluna. Somente clientes registrados recebem um valor para a variável `customer\_id` coluna na `orders` tabela. Os clientes que não estão registrados recebem uma `NULL` (ou em branco) para esta coluna. Como resultado, nem todos os registros de pedido têm registros correspondentes no `customers` tabela.
 
    >[!NOTE]
    >
-   >Para identificar o indivíduo exclusivo que fez o pedido, precisa haver outro atributo de usuário exclusivo ao lado `customer\_id` anexado a um pedido. Normalmente, o endereço de email do cliente é usado.
+   >Para identificar o indivíduo único que fez o pedido, precisa haver outro atributo de usuário único ao lado `customer\_id` a um pedido. Normalmente, o endereço de email do cliente é usado.
 
-## Como contabilizar pedidos de convidado na configuração do data warehouse
+## Como contabilizar ordens de convidado na configuração do Data Warehouse
 
-Normalmente, o Engenheiro de Vendas que implementa sua conta levará os pedidos de convidado em consideração ao criar a base do data warehouse.
+Normalmente, o engenheiro de vendas que implementa sua conta leva em consideração os pedidos de convidados ao criar a base da sua Data Warehouse.
 
-A melhor maneira de contabilizar pedidos de convidado é basear todas as métricas no nível do cliente na `orders` tabela. Essa configuração usará uma ID exclusiva do cliente que todos os clientes possuem, incluindo convidados (normalmente, o email do cliente é usado). Isso ignora os dados de registro do `customers` tabela. Com essa opção, somente os clientes que fizeram pelo menos uma compra serão incluídos nos relatórios no nível do cliente. Usuários registrados que ainda não fizeram uma compra não serão incluídos. Com essa opção, seu `New customer` será baseada na data do primeiro pedido do cliente na variável `orders` tabela.
+A melhor maneira de considerar os pedidos de convidados é basear todas as métricas de nível do cliente no `orders` tabela. Essa configuração usa uma ID de cliente exclusiva que todos os clientes têm, incluindo convidados (normalmente o email do cliente é usado). Isso ignora os dados de registro do `customers` tabela. Com essa opção, somente os clientes que tiverem feito pelo menos uma compra serão incluídos nos relatórios no nível do cliente. Os usuários registrados que ainda não fizeram uma compra não são incluídos. Com essa opção, seu `New customer` métrica é baseada na primeira data de pedido do cliente no `orders` tabela.
 
-Você pode notar que a variável `Customers we count` o filtro definido nesse tipo de configuração tem um filtro para `Customer's order number = 1`. Vamos pensar no porquê disso.
+Você pode notar que a variável `Customers we count` o filtro definido neste tipo de configuração tem um filtro para `Customer's order number = 1`. Pensem no porquê disso acontecer.
 
 ![](../../assets/guest-orders-filter-set.png)
 
-Em uma situação sem pedidos de convidado, cada cliente existe como uma linha única na tabela do cliente (consulte a Imagem 1). Uma métrica como `New customers` O pode simplesmente contar a id desta tabela com base em `created\_at` data para entender Novos clientes com base na data de registro.
+Em uma situação sem pedidos de convidado, cada cliente existe como uma linha exclusiva na tabela de clientes (consulte a Imagem 1). Uma métrica, como `New customers` pode simplesmente contar a id desta tabela com base em `created\_at` data para entender os Novos clientes com base na data de registro.
 
-Em uma configuração de pedidos de convidado, onde todas as métricas do cliente se baseiam na variável `orders` tabela para considerar pedidos de convidado, você precisa garantir que `not counting customers twice`. Se contar a id da tabela de pedidos, você estará contando cada pedido. Se, em vez disso, você contar a id no `orders` tabela e use um filtro, `Customer's order number = 1`, você contará cada cliente único `only one time`. Isso é aplicável para todas as métricas no nível do cliente, como `Customer's lifetime revenue` ou `Customer's lifetime number of orders`.
+Em uma configuração de pedidos de convidado em que todas as métricas do cliente são baseadas no `orders` para contabilizar os pedidos de convidados, é necessário garantir que você esteja `not counting customers twice`. Se você contar a id da tabela de pedidos, estará contando cada pedido. Se, em vez disso, você contar a ID na variável `orders` tabela e usar um filtro, `Customer's order number = 1`, você contará cada cliente único `only one time`. Isso é aplicável para todas as métricas no nível do cliente, como `Customer's lifetime revenue` ou `Customer's lifetime number of orders`.
 
-Na Imagem 2 acima, você pode ver que há um valor nulo `customer\_ids` no `orders` tabela. Se usarmos a variável `customer\_email` para identificar clientes únicos, é possível observar que `erin@test.com` fez três (3) pedidos. Portanto, podemos criar um `New customers` na sua métrica `orders` tabela com base nas seguintes condições:
+Na Imagem 2 acima, você pode ver que há valores nulos `customer\_ids` no `orders` tabela. Se você usar o `customer\_email` para identificar clientes únicos, você pode ver que `erin@test.com` A fez três (3) pedidos. Portanto, você pode criar um `New customers` métrica em seu `orders` tabela com base nas seguintes condições:
 
 * `Operation table = orders`
 * `Operation column = id`

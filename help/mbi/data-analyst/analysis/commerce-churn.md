@@ -1,25 +1,25 @@
 ---
-title: Churn de comércio
-description: Saiba como gerar e analisar sua taxa de churn do Commerce.
+title: Churn do comércio
+description: Saiba como gerar e analisar a taxa de churn do Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 2%
 
 ---
 
-# Taxa de abandono
+# Taxa de churn
 
-Neste tópico, demonstramos como calcular um valor de **taxa de churn** para seu **clientes comerciais**. Ao contrário de SaaS ou empresas tradicionais de assinatura, os clientes comerciais normalmente não têm um **&quot;evento churn&quot;** para mostrar que eles não devem mais contar para seus clientes ativos. Por esse motivo, as instruções abaixo permitem definir um cliente como &quot;encurtado&quot; com base em um determinado período de tempo decorrido desde o último pedido.
+Este tópico demonstra como calcular uma **taxa de churn** para seu **clientes comerciais**. Ao contrário do SaaS ou de empresas de assinatura tradicionais, os clientes de comércio normalmente não têm um **&quot;evento de churn&quot;** para mostrar que eles não devem mais contar para seus clientes ativos. Por esse motivo, as instruções abaixo permitem definir um cliente como &quot;rotativo&quot; com base em uma determinada quantidade de tempo decorrido desde o último pedido.
 
 ![](../../assets/Churn_rate_image.png)
 
-Muitos clientes desejam obter assistência para começar a conceber o que **período** eles devem usar com base em seus dados. Se desejar usar o comportamento histórico do cliente para definir isso **intervalo de tempo de churn**, você pode querer se familiarizar com o [definindo churn](../analysis/define-cust-churn.md) artigo 10. o Em seguida, você pode usar os resultados na fórmula para a taxa de churn nas instruções abaixo.
+Muitos clientes desejam assistência para começar a conceituar o que **período** devem utilizar com base nos seus dados. Se você quiser usar o comportamento histórico do cliente para definir isso, **período de churn**, você pode querer se familiarizar com o [definindo churn](../analysis/define-cust-churn.md) artigo. Em seguida, você pode usar os resultados na fórmula para taxa de churn nas instruções abaixo.
 
 ## Colunas calculadas
 
-Colunas a serem criadas
+Colunas para criar
 
 * **`customer_entity`** tabela
 * **`Customer's last order date`**
@@ -35,50 +35,50 @@ Colunas a serem criadas
 
 >[!NOTE]
 >
->Certifique-se de [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
+>Verifique se [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
 
 ## Métricas
 
-* **Novos clientes (por data do primeiro pedido)**
-   * Clientes que contamos
+* **Novos clientes (por data da primeira ordem)**
+   * Clientes que são contados
 
 >[!NOTE]
 >
->Essa métrica pode já existir em sua conta.
+>Essa métrica pode existir em sua conta.
 
 * No **`customer_entity`** tabela
-* Essa métrica executa um **Contagem**
-* No **`entity_id`** column
-* Solicitado pela **`Customer's first order date`** timestamp
+* Essa métrica executa uma **Contagem**
+* No **`entity_id`** coluna
+* Ordenado por **`Customer's first order date`** carimbo de data e hora
 * [!UICONTROL Filter]:
 
 * **Novos clientes (por data do último pedido)**
-   * Clientes que contamos
+   * Clientes que são contados
 
 >[!NOTE]
 >
->Essa métrica pode já existir em sua conta.
+>Essa métrica pode existir em sua conta.
 
 * No **`customer_entity`** tabela
-* Essa métrica executa um **Contagem**
-* No **`entity_id`** column
-* Solicitado pela **`Customer's last order date`** timestamp
+* Essa métrica executa uma **Contagem**
+* No **`entity_id`** coluna
+* Ordenado por **`Customer's last order date`** carimbo de data e hora
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->Certifique-se de [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
+>Verifique se [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
 
 ## Relatórios
 
-* **Taxa de abandono**
-   * [!UICONTROL Metric]: Novos clientes (por data do primeiro pedido)
+* **Taxa de churn**
+   * [!UICONTROL Metric]: Novos clientes (por data de primeiro pedido)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
       [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Segundos desde a última data do pedido do cliente >= [Seu corte autodefinido para clientes com rotatividade ]**`^`**
+   * Segundos desde a última data de pedido do cliente >= [Seu limite autodefinido para clientes com churn ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
@@ -98,13 +98,13 @@ Colunas a serem criadas
 * *`Group by`:`Customer's order number`*
 * *`Chart Type`:`Column`*
 
-Abaixo estão alguns meses comuns > segunda conversões, mas o google fornece outros valores, incluindo semana > segundos de conversão para quaisquer valores personalizados que você esteja procurando.
+Abaixo estão alguns meses comuns > segundas conversões, mas o google fornece outros valores, incluindo semana > segundos de conversões para quaisquer valores personalizados que você possa estar procurando.
 
-| **Months** | **Seconds** |
+| **meses** | **Segundos** |
 |---|---|
 | 3 | 7,776,000 |
 | 6 | 15,552,000 |
 | 9 | 23,328,000 |
 | 12 | 31,104,000 |
 
-Depois de compilar todos os relatórios, você pode organizá-los no painel como desejar. O resultado final pode parecer com o painel de amostra acima.
+Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima.

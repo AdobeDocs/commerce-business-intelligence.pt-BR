@@ -2,16 +2,16 @@
 title: Ativar o [!DNL MBI] Conta para Assinaturas no Local
 description: Saiba como ativar o [!DNL MBI] conta para Assinaturas no Local.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # Ativar o [!DNL MBI] Conta para Assinaturas no Local
 
-Para ativar [!DNL MBI] para assinaturas no local, primeiro crie um [!DNL MBI] conta e, em seguida, conectar [!DNL MBI] ao banco de dados do Commerce. Para obter informações sobre a ativação no `Cloud Starter` projetos, consulte [Ativar o [!DNL MBI] Conta para `Cloud Starter` Assinaturas](../getting-started/cloud-activation.md).
+Para ativar [!DNL MBI] para assinaturas no local, primeiro crie uma [!DNL MBI] conta e, em seguida, conectar [!DNL MBI] ao banco de dados do Commerce. Para obter informações sobre a ativação no `Cloud Starter` projetos, consulte [Ativar o [!DNL MBI] Conta para `Cloud Starter` Assinaturas](../getting-started/cloud-activation.md).
 
 1. Crie seu [!DNL MBI] Conta.
 
@@ -31,7 +31,7 @@ Para ativar [!DNL MBI] para assinaturas no local, primeiro crie um [!DNL MBI] co
 
    ![](../assets/create-account-4.png)
 
-   - Depois de criar sua conta, você tem a opção de adicionar usuários à nova conta. Agora é possível adicionar administradores técnicos para executar as etapas a seguir.
+   - Depois de criar sua conta, você pode adicionar usuários à nova conta. Agora é possível adicionar administradores técnicos para executar as etapas a seguir.
 
    ![](../assets/create-account-5.png)
 

@@ -1,25 +1,31 @@
 ---
 title: Armazenamento de dados no Commerce
-description: Saiba como os dados são gerados, o que exatamente faz com que uma nova linha seja inserida em uma das Tabelas de comércio principal e como ações são executadas, como fazer uma compra ou criar uma conta registrada no banco de dados do Commerce.
+description: Saiba como os dados são gerados, o que faz com que uma nova linha seja inserida e como as ações são registradas no banco de dados do Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '937'
 ht-degree: 3%
 
 ---
 
 # Armazenamento de dados em [!DNL Adobe Commerce]
 
-A plataforma Adobe Commerce registra e organiza uma grande variedade de dados comerciais valiosos em centenas de tabelas. Neste tópico, você aprenderá como esses dados são gerados, o que exatamente faz com que uma nova linha seja inserida em uma das [Tabelas de comércio principal](../data-warehouse-mgr/common-mage-tables.md)e como as ações são, como fazer uma compra ou criar uma conta registrada no banco de dados do Commerce. Para explicar esses conceitos, consulte o seguinte exemplo:
+A plataforma Adobe Commerce registra e organiza uma grande variedade de dados comerciais valiosos em centenas de tabelas. Este tópico descreve:
 
-`Clothes4U` é um varejista de roupas com presença online e de tijolo e argamassa. Ele usa o Magento Open Source por trás de seu site para coletar e organizar dados.
+* como esses dados são gerados
+* o que exatamente faz com que uma nova linha seja inserida em uma das [Tabelas principais do Commerce](../data-warehouse-mgr/common-mage-tables.md)
+* como ações como fazer uma compra ou criar uma conta são registradas no banco de dados do Commerce
+
+Para explicar esses conceitos, consulte o seguinte exemplo:
+
+`Clothes4U` A é uma varejista de roupas com presença on-line e física. Ele usa o Magento Open Source por trás de seu site para coletar e organizar dados.
 
 ## `catalog\_product\_entity`
 
-Em 22 de setembro, e `Clothes4U` O está acumulando três novos itens na linha de outono: `Throwback Bellbottoms`, `Straight Leg Jeans`e `V-Neck T-Shirts`. A `Clothes4U` funcionário abre o Administrador de comércio, clica em **[!UICONTROL Add Product]** e insere todas as informações para `Throwback Bellbottoms`.
+É 22 de setembro e `Clothes4U` O está lançando três novos itens para sua linha de outono: `Throwback Bellbottoms`, `Straight Leg Jeans`, e `V-Neck T-Shirts`. A `Clothes4U` funcionário abrir o Administrador do Commerce, cliques em **[!UICONTROL Add Product]** e insere todas as informações para `Throwback Bellbottoms`.
 
-Satisfeito com todas as configurações de `Throwback Bellbottoms`, o funcionário clica em **[!UICONTROL Save]**, que insere a primeira linha abaixo no `catalog_product_entity` tabela. O funcionário repete o processo, criando outro novo produto do Commerce para `Straight Leg Jeans`e, em seguida, um terço por `V-Neck T-Shirt`, inserindo a segunda e a terceira linhas abaixo no `catalog_product_entity` tabela:
+Satisfeito com todas as configurações para `Throwback Bellbottoms`, o funcionário clica **[!UICONTROL Save]**, que insere a primeira linha abaixo na `catalog_product_entity` tabela. O funcionário repete o processo, criando outro produto do Commerce para `Straight Leg Jeans`e, em seguida, um terceiro para `V-Neck T-Shirt`, inserindo a segunda e a terceira linhas abaixo na `catalog_product_entity` tabela:
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
@@ -27,63 +33,63 @@ Satisfeito com todas as configurações de `Throwback Bellbottoms`, o funcionár
 | 206 | 4 | 8 | Pants11 | 2016/09/22 09:18:17 |
 | 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
-* `entity_id` - Essa é a chave primária do `catalog_product_entity` tabela, o que significa que cada linha da tabela deve ter uma tabela diferente `entity_id`. Cada `entity_id` nesta tabela só pode ser associada a um produto, e cada produto só pode ser associado a um `entity_id`
-   * A linha superior da tabela acima, `entity_id` = 205, é a nova linha criada para &quot;Bandejas de Retorno&quot;. Onde `entity_id` = 205 aparece na plataforma Commerce, ele se refere ao produto &quot;Throwback Bellbotfs&quot;
-* `entity_type_id` - O Commerce tem várias categorias de objetos (como clientes, endereços e produtos para nomear alguns) e essa coluna é usada para indicar a categoria na qual essa linha específica se enquadra.
-   * Este é o `catalog_product_entity` tabela, cada linha tem o mesmo tipo de entidade: produto. No Adobe Commerce, a variável `entity_type_id` para o produto é 4, por isso os três novos produtos criados retornam 4 para essa coluna.
-* `attribute_set_id` - Os conjuntos de atributos são usados para identificar produtos que têm os mesmos descritores.
-   * As duas primeiras linhas da tabela são as `Throwback Bellbottoms` e `Straight Leg Jeans` produtos, ambos com calças. Esses produtos teriam os mesmos descritores (por exemplo, nome, inseto, cintura) e, portanto, teriam os mesmos descritores `attribute_set_id`. O terceiro ponto, `V-Neck T-Shirt` tem um `attribute_set_id` porque não teria os mesmos descritores que as calças; as camisas não têm cinturas ou feixes.
-* `sku` - Esses são valores únicos atribuídos a cada produto pelo usuário ao criar um novo produto no Adobe Commerce.
-* `created_at` - Essa coluna retorna o carimbo de data e hora de quando cada produto foi criado
+* `entity_id` - Essa é a chave primária do `catalog_product_entity` tabela, o que significa que cada linha da tabela deve ter uma `entity_id`. Each `entity_id` nesta tabela só pode ser associado a um produto, e cada produto só pode ser associado a um `entity_id`
+   * A linha superior da tabela acima, `entity_id` = 205, é a nova linha criada para &quot;Throwback Bellbottom&quot;. Onde quer que `entity_id` = 205 aparece na plataforma Commerce, se refere ao produto &quot;Throwback Bellbottoms&quot;
+* `entity_type_id` - O Commerce tem várias categorias de objetos (como clientes, endereços e produtos, para citar algumas), e essa coluna é usada para indicar a categoria na qual essa linha específica se enquadra.
+   * Sendo este o `catalog_product_entity` cada linha tem o mesmo tipo de entidade: produto. No Adobe Commerce, a variável `entity_type_id` para produto é 4, por isso todos os três novos produtos criados retornam 4 para esta coluna.
+* `attribute_set_id` - Os conjuntos de atributos são usados para identificar produtos que têm o mesmo tipo de descritores.
+   * As duas primeiras linhas da tabela são a `Throwback Bellbottoms` e `Straight Leg Jeans` produtos, sendo que ambos são calças. Esses produtos teriam os mesmos descritores (por exemplo, nome, inseto, cintura) e, portanto, teriam os mesmos `attribute_set_id`. O terceiro item, `V-Neck T-Shirt` tem uma diferente `attribute_set_id` porque não teria os mesmos descritores que as calças; camisas não têm cintura ou insetos.
+* `sku` - São valores exclusivos atribuídos a cada produto pelo usuário ao criar um produto no Adobe Commerce.
+* `created_at` - Essa coluna retorna a marca de data e hora de quando cada produto foi criado
 
 ## `customer\_entity`
 
-Pouco depois da adição dos três novos produtos, um novo cliente, `Sammy Customer`, visitas `Clothes4U`O site do pela primeira vez. Since `Clothes4U` não permite pedidos de convidado, `Sammy Customer` deve primeiro criar uma conta no site. Ela insere suas credenciais e clica em enviar, resultando na seguinte nova entrada no [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+Logo após a adição dos três novos produtos, um novo cliente, `Sammy Customer`, visitas `Clothes4U`Site do pela primeira vez. Desde `Clothes4U` não permite ordens de convidados, `Sammy Customer` O deve primeiro criar uma conta no site. O cliente digita as credenciais necessárias e clica em enviar, resultando na seguinte nova entrada na [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|
 | `214` | `1` | `sammy.customer@gmail.com` | `2016/09/23 15:27:12` |
 
-* `entity_id` - Tal como a tabela anterior, `entity_id` é a chave primária do `customer_entity` tabela.
-   * When `Sammy Customer` criou sua conta e a linha acima foi gravada no `customer_entity` mesa, ela foi atribuída `entity_id` = 214. Em todas as tabelas, o cliente identificou como `entity_id` = 214 sempre se refere ao usuário Sammy Customer
-* `entity_type_id` - Esta coluna identifica o tipo de entidade que está sendo listado nesta tabela e funciona da mesma forma que na `catalog_product_entity` tabela
-   * Cada linha no `customer_entity` será um cliente e o Commerce definirá clientes como `entity_type_id` 1 por padrão
-* `email` - esse campo é preenchido pelo email inserido por um novo cliente ao fazer a conta
+* `entity_id` - Assim como a mesa anterior, `entity_id` é a chave primária do `customer_entity` tabela.
+   * Quando `Sammy Customer` criou uma conta e a linha acima foi gravada na `customer_entity` tabela, o cliente foi atribuído `entity_id` = 214 Em todas as tabelas, o cliente identificou como `entity_id` = 214 sempre se refere ao usuário Sammy Customer
+* `entity_type_id` - Essa coluna identifica que tipo de entidade está sendo listado nessa tabela e funciona da mesma maneira que na `catalog_product_entity` tabela
+   * Todas as linhas no `customer_entity` A tabela é um cliente e o Commerce define os clientes como `entity_type_id` 1 por padrão
+* `email` - esse campo é preenchido pelo email que um novo cliente insere ao fazer sua conta
 * `created_at` - Essa coluna retorna o carimbo de data e hora de quando cada usuário ingressou
 
 ## `sales\_flat\_order (or Sales\_order` se você tiver o Commerce 2.0 ou posterior)
 
-Com a criação da conta concluída, `Sammy Customer` O está pronto para começar a comprar. Enquanto ela navega pelo site, ela adiciona dois pares da variável `Throwback Bellbottoms` e um `V-Neck T-Shirt` ao carrinho dela. Satisfeita com suas seleções, ela passa para o check-out e envia seu pedido, criando a seguinte entrada no [tabela de ordens fixas de vendas](../data-warehouse-mgr/sales-flat-order-table.md):
+Com a criação da conta concluída, `Sammy Customer` O está pronto para começar a fazer uma compra. No site, o cliente adiciona dois pares do `Throwback Bellbottoms` e um `V-Neck T-Shirt` ao carrinho. Satisfeito com as seleções, o cliente passa para o check-out e envia o pedido, criando a seguinte entrada no [tabela de ordem simples de venda](../data-warehouse-mgr/sales-flat-order-table.md):
 
 | **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` - esta é a chave primária do `sales_flat_order` tabela.
-   * Quando o Cliente Sammy fez este pedido e a linha acima foi gravada no `sales_flat_order` tabela, a ordem foi atribuída `entity_id` = 227.
-* `customer_id` - Esta coluna é o identificador exclusivo do cliente que fez este pedido específico
-   * O `customer_id` associado a este pedido é o 214, que é o do Sammy Customer `entity_id` no `customer_entity` tabela.
-* `subtotal` - Esta coluna é o valor total cobrado a um cliente pelo pedido
-   * Os 2 pares de &quot;Bellbotories&quot; e &quot;T-Shirt do Pescoço V&quot; custam $94,85 dólares no total
+   * Quando Sammy Customer fez este pedido e a linha acima foi gravada na `sales_flat_order` tabela, o pedido foi atribuído `entity_id` = 227
+* `customer_id` - Essa coluna é o identificador exclusivo do cliente que fez esse pedido específico
+   * A variável `customer_id` associado a este pedido é 214, que é do Sammy Customer `entity_id` no `customer_entity` tabela.
+* `subtotal` - Essa coluna é o valor total cobrado de um cliente pelo pedido
+   * Os dois pares de &quot;Throwback Bellbottom&quot; e &quot;V-Neck T-Shirt&quot; custam US $ 94,85 no total
 * `created_at` - Essa coluna retorna o carimbo de data e hora de quando cada pedido foi criado
 
 ## `sales\_flat\_order\_item ( or Sales\_order\_item` se você tiver o Commerce 2.0 ou posterior)
 
-Além da única linha na `Sales\_flat\_order` tabela, quando `Sammy Customer` envia seu pedido, uma linha para cada item único nessa ordem é inserida na variável [`sales\_flat\_order\_item` tabela](../data-warehouse-mgr/sales-flat-order-item-table.md):
+Além da única linha no `Sales\_flat\_order` tabela, quando `Sammy Customer` envia a ordem, uma linha para cada item único nessa ordem é inserida na [`sales\_flat\_order\_item` tabela](../data-warehouse-mgr/sales-flat-order-item-table.md):
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|
 | 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39.95 |
 | 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
-* `item_id` - Esta coluna é a chave primária do `sales_flat_order_item` tabela
-   * `Sammy Customer`O pedido da criou duas linhas nesta tabela porque o pedido dela continha dois produtos distintos
+* `item_id` - Essa coluna é a chave primária do `sales_flat_order_item` tabela
+   * `Sammy Customer`O pedido de criou duas linhas nesta tabela porque o pedido continha dois produtos distintos
 * `name` - Esta coluna é o nome do produto
-* `product_id` - Esta coluna é o identificador exclusivo do produto a que esta linha se refere
-   * A primeira linha acima tem `product_id` = 205 porque `Throwback Bellbottoms` ter um `entity_id` de 2005 sobre a `catalog_product_entity` tabela
-* `order_id` - Esta coluna é o `entity_id` da ordem que contém esses itens de ordem específicos
-   * Ambas as linhas acima têm `order_id` = 227 porque ambos fazem parte da ordem colocada por `Sammy Customer`, que `entity_id` = 227 no `sales_flat_order` tabela
-* `qty_ordered` - Esta coluna é o número de unidades do produto incluídas nesta ordem específica
-   * `Sammy Customer`A ordem do contém 2 pares de `Throwback Bellbottoms`
-* `price` - Esta coluna é o preço de uma única unidade do item de ordem
-   * O `subtotal` from `Sammy Customer`na ordem de `sales_flat_order` tabela era 94,85, que é a soma de 2 pares de `Throwback Bellbottoms` a US$ 39,95 cada e 1 `V-Neck T-Shirt` a US$ 14,95.
+* `product_id` - Esta coluna é o identificador exclusivo do produto ao qual esta linha se refere
+   * A primeira linha acima tem `product_id` = 205 porque `Throwback Bellbottoms` ter um `entity_id` de 205 sobre o `catalog_product_entity` tabela
+* `order_id` - Esta coluna é a `entity_id` do pedido que contém esses itens de pedido específicos
+   * Ambas as linhas acima têm `order_id` = 227 porque ambos fazem parte do pedido feito por `Sammy Customer`, que `entity_id` = 227 no `sales_flat_order` tabela
+* `qty_ordered` - Esta coluna indica o número de unidades do produto incluídas neste pedido específico
+   * `Sammy Customer`A ordem de continha dois pares de `Throwback Bellbottoms`
+* `price` - Essa coluna é o preço de uma única unidade do item do pedido
+   * A variável `subtotal` de `Sammy Customer`A ordem do no `sales_flat_order` tabela era de 94,85, que é a soma de dois pares de `Throwback Bellbottoms` US$ 39,95 cada e 1 `V-Neck T-Shirt` US$ 14,95.

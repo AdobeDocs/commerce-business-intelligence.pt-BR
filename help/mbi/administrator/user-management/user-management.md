@@ -1,21 +1,21 @@
 ---
 title: Gerenciamento de usuários e permissões
-description: Saiba como gerenciar seu [!DNL MBI] usuários.
+description: Saiba como gerenciar o seu [!DNL MBI] usuários.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Gerenciar permissões do usuário
 
-O MBI deve ser uma única fonte de verdade em toda a organização. Cada usuário terá seu próprio conjunto de painéis que pode [compartilhar com outros usuários](../../data-user/dashboards/share-dashboard-with-users.md).
+A MBI deve ser uma única fonte de verdade em toda a organização. Cada usuário tem seu próprio conjunto de painéis que pode [compartilhar com outros usuários](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## Níveis de permissão do usuário
 
-Em [!DNL MBI], há três níveis de permissão gerais que se aplicam aos usuários, que são selecionados quando uma conta é criada:
+Entrada [!DNL MBI], há três níveis de permissão gerais que se aplicam aos usuários, que são selecionados quando uma conta é criada:
 
 * `Admin`
 * `Standard`
@@ -26,50 +26,50 @@ Essas permissões permitem que os usuários executem determinadas ações ou ace
 |  | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
 | **Criar/gerenciar usuários** | ✔ |  |  |
-| **Criar resumos por email** | ✔ | ✔ |  |
+| **Criar resumos de email** | ✔ | ✔ |  |
 | **Criar/editar/compartilhar painéis** | ✔ | ✔ |  |
 | **Exibir painéis** | ✔ | ✔ | ✔ |
 | **Criar/editar/excluir relatórios visuais** | ✔ | ✔* |  |
 | **Criar/editar/excluir relatórios SQL** | ✔ |  |  |
 | **Clonar painéis** | ✔ |  |  |
 | **Adicionar/gerenciar integrações** | ✔ |  |  |
-| **Acesse o Gerenciador de Datas Warehouse** | ✔ |  |  |
-| **Sincronizar/não sincronizar tabelas e colunas** | ✔ |  |  |
+| **Acessar o Gerenciador de Datas Warehouse** | ✔ |  |  |
+| **Sincronizar/dessincronizar tabelas e colunas** | ✔ |  |  |
 | **Criar/editar métricas** | ✔ |  |  |
 | **Criar/editar conjuntos de filtros** | ✔ |  |  |
 | **Criar/editar colunas calculadas** | ✔ |  |  |
 | **Criar lista de relatórios dependentes** | ✔ |  |  |
 | **Resumo do sistema de acesso** | ✔ |  |  |
-| **Acessar configurações de Fuso horário** | ✔ |  |  |
+| **Configurações do fuso horário de acesso** | ✔ |  |  |
 | **Faturamento de acesso** | ✔ | ✔** |  |
-| **Entre em contato com o suporte** | ✔ | ✔ | ✔ |
+| **Entrar em contato com o suporte** | ✔ | ✔ | ✔ |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!NOTE]
 >
->_É possível limitar uma **[!UICONTROL Standard]**do usuário [acesso a métricas específicas](../../administrator/user-management/restrict-metric-access.md)._
+>_É possível limitar um **[!UICONTROL Standard]**do usuário [acesso a métricas específicas](../../administrator/user-management/restrict-metric-access.md)._
 >
->**[!UICONTROL Standard] _Os usuários do podem acessar Faturamento com uma configuração de permissão adicional._
+>**[!UICONTROL Standard] _Os usuários do podem acessar o Faturamento com uma configuração de permissão adicional._
 >
->**[!UICONTROL Read-Only]** os usuários podem somente _exibir_ painéis que foram compartilhados com eles; eles não podem criar ou editar nada no [!DNL MBI], e também não podem procurar e adicionar novos painéis à conta deles. Recomendamos que você compartilhe um conjunto específico de painéis com **[!UICONTROL Read-Only]** usuários que você ou outro membro de sua equipe mantém. Não clone um conjunto de painéis para eles.
+>**[!UICONTROL Read-Only]** os usuários só podem _exibir_ painéis que foram compartilhados com eles; eles não podem criar ou editar nada em [!DNL MBI], nem podem pesquisar e adicionar novos painéis à sua conta. A Adobe recomenda que você compartilhe um conjunto específico de painéis com o **[!UICONTROL Read-Only]** usuários que você ou outro membro de sua equipe mantém. Não clone um conjunto de painéis para eles.
 
-## Permissões adicionais: Faturamento e técnico {#billingtech}
+## Permissões adicionais: faturamento e técnicas {#billingtech}
 
-Além dos níveis de permissão geral, existem também duas outras designações de usuários - `Billing` e `Technical`. Estas denominações destinam-se a ser utilizadas em conjunto com os níveis de permissão geral.
+Além dos níveis de permissão gerais, há duas outras designações de usuário: `Billing` e `Technical`. Essas designações devem ser usadas com os níveis de permissão gerais.
 
 ### Faturamento
 
-`Billing` os usuários têm acesso à página de faturamento e podem alterar as informações de pagamento. Além disso, elas também podem ser contatadas por nossas equipes para perguntas de faturamento.
+`Billing` os usuários têm acesso à página de faturamento e podem alterar as informações de pagamento. Além disso, eles também podem ser contatados pelo Adobe para perguntas sobre faturamento.
 
-`Admin` os usuários têm acesso à guia Faturamento por padrão, mas os usuários do Standard também podem obter acesso se tiverem a variável `Billing` caixa de seleção selecionada em seu perfil.
+`Admin` Os usuários do têm acesso à `Billing` por padrão, mas `Standard` os usuários também podem obter acesso se tiverem o `Billing` caixa de seleção marcada no perfil.
 
 ![faturamento](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
-### Técnica
+### Técnico
 
-`Technical` Os usuários do não têm permissões específicas a eles. Essa configuração marca apenas um contato técnico em sua organização. Esses usuários podem ser contatados por nossas equipes para dúvidas técnicas.
+`Technical` os usuários do não têm permissões específicas para eles; essa configuração apenas marca um contato técnico em sua organização. Esses usuários podem ser contatados pelo Adobe para perguntas técnicas.
 
-`Admin` os usuários podem adicionar novos usuários à conta clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** e seguir os prompts. Depois que o usuário é criado em [!DNL MBI], a pessoa sortuda que você está convidando receberá por email instruções sobre como concluir o processo de configuração da conta.
+`Admin` usuários podem adicionar novos usuários às suas contas clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** e seguindo as instruções. Depois que o usuário for criado em [!DNL MBI], a pessoa de sorte que você está convidando receberá instruções por email sobre como concluir o processo de configuração da conta.
 
-A qualquer momento, `Admins` pode exibir todos os usuários em sua conta clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Esta página exibe as permissões do usuário e as métricas e painéis aos quais ele tem acesso.
+A qualquer momento, `Admins` pode exibir todos os usuários em sua conta clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Esta página exibe as permissões do usuário e quais métricas e painéis podem ser acessados.

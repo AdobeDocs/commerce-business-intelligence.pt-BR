@@ -1,17 +1,17 @@
 ---
-title: Excluir permanentemente um gráfico
-description: Saiba como excluir permanentemente um gráfico.
+title: Excluir um gráfico permanentemente
+description: Saiba como excluir um gráfico permanentemente.
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
-# Excluir permanentemente um gráfico
+# Excluir um gráfico permanentemente
 
-Mesmo se você [remover um gráfico do painel](../../data-user/dashboards/remove-charts-dashboard.md), ele ainda existe em seu [!DNL MBI] conta.
+Mesmo que você [remover um gráfico do painel](../../data-user/dashboards/remove-charts-dashboard.md), ele ainda existe no seu [!DNL MBI] conta.
 
 Para excluir permanentemente um gráfico:
 
@@ -19,15 +19,15 @@ Para excluir permanentemente um gráfico:
 
 1. Clique em **[!UICONTROL Charts]**.
 
-1. Os gráficos que você tem a capacidade de excluir (com base nas permissões do usuário e na propriedade do gráfico) serão exibidos no lado direito da tela.
+1. Os gráficos que você pode excluir (com base nas permissões do usuário e na propriedade do gráfico) são exibidos no lado direito da tela.
 
-1. Clique na caixa de seleção ao lado da linha do gráfico que deseja excluir.
+1. Clique na caixa de seleção ao lado da linha do gráfico que você deseja excluir.
 
 1. Clique em **[!UICONTROL Delete Selected]**.
 
    >[!NOTE]
    >
-   >Se o gráfico estiver sendo usado em um painel ou resumo de email, uma notificação será exibida. Para continuar, é necessário confirmar a exclusão e clicar em **[!UICONTROL Force Deletion]**.
+   >Se o gráfico estiver sendo usado em um painel ou resumo de email, uma notificação será exibida. Para continuar, confirme a exclusão e clique em **[!UICONTROL Force Deletion]**.
 
 Exemplo:
 

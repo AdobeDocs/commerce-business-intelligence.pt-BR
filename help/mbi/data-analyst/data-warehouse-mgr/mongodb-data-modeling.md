@@ -1,25 +1,25 @@
 ---
 title: Modelagem de dados do MongoDB
-description: Saiba como evitar padrões de dados que colocam um problema.
+description: Saiba como evitar padrões de dados que representam um problema.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 # [!DNL MongoDB] Modelagem de dados
 
-When [!DNL MBI] puxa [!DNL MongoDB] , esses dados são traduzidos em um modelo relacional.
+Quando [!DNL MBI] extrai [!DNL MongoDB] dados, esses dados são convertidos em um modelo relacional.
 
-As más notícias: Embora a maioria dos padrões de dados não constitua um problema, há alguns, devido à tradução para um modelo relacional, [!DNL MBI] não suporta.
+A má notícia: embora a maioria dos padrões de dados não represente um problema, há alguns que, devido à tradução para um modelo relacional, [!DNL MBI] não oferece suporte a.
 
 A boa notícia: Todos esses padrões podem ser evitados.
 
-## Matrizes subaninhadas {#subnested}
+## Matrizes Subaninhadas {#subnested}
 
-Se sua coleção se parece com o exemplo abaixo, [!DNL MBI] só replicará os dados na matriz de itens. Os dados da matriz de subitens não serão transferidos.
+Se sua coleção for semelhante ao exemplo abaixo, [!DNL MBI] replica somente os dados na matriz de itens. Os dados da matriz de subitens não são extraídos.
 
 ```bash
     {
@@ -39,9 +39,9 @@ Se sua coleção se parece com o exemplo abaixo, [!DNL MBI] só replicará os da
     }
 ```
 
-## Chaves de objeto de variável {#varobjectkeys}
+## Chaves de objeto variável {#varobjectkeys}
 
-Coleções que incluem objetos com chaves de objeto variáveis não são replicadas em [!DNL MBI]. Por exemplo:
+As coleções que incluem objetos com chaves de objeto variáveis não são replicadas no [!DNL MBI]. Por exemplo:
 
 ```bash
     {
@@ -54,7 +54,7 @@ Coleções que incluem objetos com chaves de objeto variáveis não são replica
     }
 ```
 
-Isso geralmente ocorre onde um objeto está sendo usado e uma matriz seria mais apropriada. Agora, retrabalharemos o exemplo acima:
+Isso geralmente ocorre onde um objeto está sendo usado e uma matriz seria mais apropriada. Agora, retrabalhe o exemplo acima:
 
 ```bash
     {

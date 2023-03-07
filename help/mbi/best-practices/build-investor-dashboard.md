@@ -1,19 +1,19 @@
 ---
-title: Criar um painel para investidores
+title: Criação de um painel para os investidores
 description: Saiba como criar um painel para investidores.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Criar painel do investidor
+# Criar Painel do investidor
 
-Muitos de nossos clientes estão trabalhando com investidores e precisam compartilhar informações da plataforma com eles, mas os painéis criados para tomar decisões comerciais diárias podem não ser o que um investidor está procurando. Aqui abordamos algumas práticas recomendadas para criar um painel abrangente, mas simples, ideal para compartilhar com investidores ativos e potenciais.
+Muitos clientes trabalham com investidores e precisam compartilhar informações da plataforma, mas os painéis criados para tomar decisões comerciais diárias podem não ser o que um investidor está procurando. Abaixo, descreve algumas práticas recomendadas para criar um painel abrangente, mas simples, ideal para compartilhar com investidores ativos e potenciais.
 
-Aqui está o que você precisa criar relatórios para seu painel de investidores:
+Veja o que é necessário para criar relatórios para seu painel de investidores:
 
 ## Relatórios escalares
 
@@ -23,17 +23,17 @@ Aqui está o que você precisa criar relatórios para seu painel de investidores
 * **[!UICONTROL AOV]**
 * **[!UICONTROL Items sold]**
 
-## Relatórios visuais
+## Relatórios Visuais
 
 * **[!UICONTROL Revenue by quarter]**
    * Métrica - Receita
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * Métrica - Receita da primeira ordem
-   * Filtro - O número do pedido do usuário é igual a 1
-   * Métrica 2 - Repetir receita da ordem
+   * Métrica - Receita de pedido pela primeira vez
+   * Filtro - O número de ordem do usuário é igual a 1
+   * Métrica 2 - Repetir receita de ordem
       * Filtro - O número do pedido do usuário é maior que 1
    * Desmarque a caixa para Vários eixos Y
-   * Alterar para um gráfico de Coluna empilhada
+   * Transformar em um gráfico de Colunas Empilhadas
 * **[!UICONTROL AOV by quarter]**
    * Métrica 1 - Receita
       * Ocultar esta métrica
@@ -45,34 +45,34 @@ Aqui está o que você precisa criar relatórios para seu painel de investidores
    * Métrica - Receita
    * Agrupar por cliente `utm_source`
 * **[!UICONTROL Revenue from top 10 products]**
-   * Métrica - receita do produto
+   * Métrica - Receita do produto
       * Ocultar o gráfico
-      * Agrupar pelo nome do produto. Selecione todos os produtos.
-      * Defina o intervalo de tempo como All-Time (Todas as horas)
-      * Defina o intervalo de tempo como Nenhum
-      * Em &quot;Mostrar de cima/baixo&quot;, mostrar apenas os 10 principais classificados por lucro do produto
+      * Agrupar por nome do produto. Selecione todos os produtos.
+      * Definir o intervalo de tempo como All-Time
+      * Definir o intervalo de tempo como Nenhum
+      * Em &quot;Mostrar superior/inferior&quot;, mostrar apenas os 10 principais classificados por Lucro do produto
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
    * Métrica - Compradores distintos
       * Perspectiva - Cumulativa
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sessões
 
-Com um [!DNL Google Analytics] , você pode incluir relatórios sobre:
+Com um [!DNL Google Analytics] integração, é possível incluir relatórios sobre:
 
 * Visitas ao site
 * Índice de conversão
 
-Com o [Serviços de enriquecimento de dados de comércio](https://business.adobe.com/products/magento/magento-commerce.html), você pode incluir relatórios sobre:
+Com o [Serviços de enriquecimento de dados do Commerce](https://business.adobe.com/products/magento/magento-commerce.html), é possível incluir relatórios sobre:
 
-* Clientes únicos por estado/região, idade, gênero.
+* Clientes únicos por estado/região, idade, sexo.
 
 ## Outras dicas
 
-* Use um [convenção de nomenclatura](../best-practices/naming-elements.md)
+* Use um método claro e conciso [convenção de nomenclatura](../best-practices/naming-elements.md)
 * Compartilhar o painel com usuários investidores
 * Ou envie-o via **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* Crie apenas um painel. Isso facilitará a manutenção do conteúdo e você saberá exatamente o que seus investidores estão vendo.
+* Crie apenas um painel. Isso facilita a manutenção do conteúdo e você sabe exatamente o que seus investidores estão vendo.
 
-Organize seus relatórios com cuidado e preste atenção nos detalhes. Depois de concluído, o painel será semelhante ao abaixo:
+Organize seus relatórios cuidadosamente e preste atenção aos detalhes. Uma vez concluído, o painel será semelhante ao mostrado abaixo:
 
 ![](../../mbi/assets/investor-dboard-example.png)

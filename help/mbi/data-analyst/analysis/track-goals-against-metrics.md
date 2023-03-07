@@ -1,57 +1,57 @@
 ---
-title: Rastreamento de metas em relação a métricas
-description: Saiba como configurar um painel que ajudará você a rastrear suas metas comerciais em relação aos dados reais, incluindo receita, novos usuários registrados e pedidos ao longo do tempo.
+title: Rastrear metas em relação a métricas
+description: Saiba como configurar um painel que ajudará você a controlar suas metas comerciais em relação aos dados reais, incluindo a receita, os novos usuários registrados e os pedidos ao longo do tempo.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
-# Rastreamento de metas em relação às métricas de desempenho
+# Rastreamento De Metas Em Relação Às Métricas De Desempenho
 
-Uma grande maioria de nossos clientes geralmente gostaria de rastrear seus **objetivos de negócios**, mas não percebam que isso é possível em [!DNL MBI]. Neste artigo, demonstramos como configurar um painel que ajudará você a rastrear suas metas comerciais em relação aos dados reais, incluindo receita, novos usuários registrados e pedidos ao longo do tempo. Também mostramos como comparar o desempenho ano após ano, tudo em um painel como este:
+A maioria dos clientes gostaria de rastrear seus **metas de negócios**, mas não percebam que isso é possível em [!DNL MBI]. Este artigo demonstra como configurar um painel que ajudará você a controlar suas metas de negócios em relação aos dados reais, incluindo a receita, os novos usuários registrados e os pedidos ao longo do tempo. Você também aprenderá a comparar o desempenho ano a ano, tudo em um painel como este:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Antes de começar, você quer se familiarizar com nossas [carregador de arquivos](../importing-data/connecting-data/using-file-uploader.md) e certifique-se de ter definido suas metas de negócios por um determinado período.
+Antes de começar, você deseja se familiarizar com o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e certifique-se de ter definido suas metas comerciais para um determinado período.
 
 ## Introdução
 
-Primeiro, será necessário fazer upload de um arquivo contendo metas específicas diárias/mensais/trimestrais para sua empresa.
+Primeiro, faça upload de um arquivo contendo metas diárias/mensais/trimestrais específicas para sua empresa.
 
-Você pode usar o [carregador de arquivos](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo. Os alvos mais comuns que nossos clientes rastreiam [!DNL MBI] incluir Pedidos, Receita e Novas contas registradas.
+Você pode usar o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo. Os alvos mais comuns que os clientes rastreiam [!DNL MBI] inclui Pedidos, Receita e Novas contas registradas.
 
 ![](../../assets/Goals-_Excel.png)
 
 ## Métricas
 
-É necessário criar uma nova métrica para cada target. Por exemplo, se você fizer upload das metas de receita e pedidos mensais, será necessário criar duas novas métricas:
+Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos destinos mensais de receita e pedidos, será necessário criar duas novas métricas:
 
-* **Objetivo de receita mensal**
+* **Meta de receita mensal**
 * No **`Monthly goals`** tabela
-* Essa métrica executa um **Soma**
-* No **`Revenue target`** column
-* Solicitado pela **`Month`** timestamp
+* Essa métrica executa uma **Sum**
+* No **`Revenue target`** coluna
+* Ordenado por **`Month`** carimbo de data e hora
 
-* **Objetivo das ordens mensais**
+* **Público alvo de pedidos mensal**
 * No **`Monthly goals`** tabela
-* Essa métrica executa um **Soma**
-* No **`Orders target`** column
-* Solicitado pela **`Month`** timestamp
+* Essa métrica executa uma **Sum**
+* No **`Orders target`** coluna
+* Ordenado por **`Month`** carimbo de data e hora
 
-* **Objetivo para novas contas registradas mensais**
+* **Público alvo mensal de novas contas registradas**
 * No **`Monthly goals`** tabela
-* Essa métrica executa um **Soma**
-* No **`New registered accounts target`** column
-* Solicitado pela **`Month`** timestamp
+* Essa métrica executa uma **Sum**
+* No **`New registered accounts target`** coluna
+* Ordenado por **`Month`** carimbo de data e hora
 
 ## Relatórios
 
-Como sempre, é útil ter uma combinação de valores estáticos e gráficos visuais ao analisar seus destinos. Abaixo estão três exemplos de relatórios para começar a rastrear o desempenho da receita.
+Como sempre, é útil ter uma combinação de valores estáticos e gráficos visuais ao analisar suas metas. Abaixo estão três relatórios de exemplo para começar a rastrear o desempenho da receita.
 
-* **Receita restante para atingir o target**
+* **Receita restante para atingir o objetivo**
 * Métrica `A`: `Revenue`
 * 
 
@@ -67,7 +67,7 @@ Como sempre, é útil ter uma combinação de valores estáticos e gráficos vis
 
    [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]: (Qualquer período relevante que você desejar)
+* [!UICONTROL Time period]: (qualquer período relevante que você desejar)
 * 
    [!UICONTROL Interval]: `Month`
 * 
@@ -95,12 +95,12 @@ Como sempre, é útil ter uma combinação de valores estáticos e gráficos vis
 
    [!UICONTROL Format]: `Currency`
 
-* Desligar `Multiple Y-Axes`
-* [!UICONTROL Time period]: (Qualquer período relevante que você desejar)*
+* Desativar `Multiple Y-Axes`
+* [!UICONTROL Time period]: (qualquer período relevante que você desejar)*
 * 
    [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
-Após concluir os relatórios acima para alvos de receita, você pode criar relatórios idênticos para metas em pedidos, contas registradas ou quaisquer outros valores incluídos no upload de arquivo de metas.
+Depois de concluir os relatórios acima para metas de receita, você pode criar relatórios idênticos para metas sobre pedidos, contas registradas ou quaisquer outros valores incluídos no upload do arquivo de metas.
 
-Depois de compilar todos os relatórios, você pode organizá-los no painel como desejar. O resultado final pode parecer com a imagem na parte superior desta página.
+Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode parecer com a imagem na parte superior desta página.

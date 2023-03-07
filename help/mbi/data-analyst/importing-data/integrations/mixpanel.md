@@ -1,15 +1,15 @@
 ---
-title: Conectar painel misto
-description: Saiba como analisar como os usuários navegam e utilizam seus sites e aplicativos.
+title: Conectar Mixpanel
+description: Saiba como analisar como os usuários navegam e usam seus sites e aplicativos.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
 
-# Connect [!DNL Mixpanel]
+# Conectar [!DNL Mixpanel]
 
 >[!NOTE]
 >
@@ -17,46 +17,46 @@ ht-degree: 0%
 
 ![](../../../assets/Mixpanel_logo.png)
 
-Com [!DNL Mixpanel], é possível analisar como os usuários navegam e utilizam seus sites e aplicativos. Analisar os dados de comportamento do usuário leva a decisões mais inteligentes de design e desenvolvimento, o que significa um produto melhor em geral. Conexão [!DNL Mixpanel] para [!DNL MBI] permite analisar como seus usuários se comportam e como esse comportamento se traduz na receita.
+Com [!DNL Mixpanel], você pode analisar como os usuários navegam e usam seus sites e aplicativos. Analisar de perto os dados de comportamento do usuário leva a decisões de design e desenvolvimento mais inteligentes, o que significa um produto melhor em geral. Conectando [!DNL Mixpanel] para [!DNL MBI] O permite analisar como seus usuários se comportam e como esse comportamento se traduz na receita.
 
-Conectar seu [!DNL Mixpanel] para [!DNL MBI] um processo simples em três etapas:
+Conectar o [!DNL Mixpanel] dados para [!DNL MBI] um processo simples de três etapas:
 
-1. [Abra o [!DNL Mixpanel] página credenciais em [!DNL MBI]](#stepone)
+1. [Abra o [!DNL Mixpanel] página de credenciais em [!DNL MBI]](#stepone)
 1. [Recupere seu [!DNL Mixpanel] Credenciais da API](#steptwo)
 1. [Insira seu [!DNL Mixpanel] Credenciais da API no MBI](#stepthree)
 
-Para concluir esse processo, você precisará abrir duas janelas ou guias do navegador - uma para [!DNL MBI], o outro para o seu [!DNL Mixpanel] conta.
+Para concluir esse processo, é necessário abrir duas janelas ou guias do navegador - uma para [!DNL MBI], o outro para o [!DNL Mixpanel] conta.
 
 ## Abrir o [!DNL Mixpanel] página credenciais {#stepone}
 
-Vamos começar:
+Introdução:
 
-1. Vá para o `Connections` página abaixo **[!DNL Manage Data** > **Connections]**.
-1. Clique em **[!UICONTROL Add a New Source]**, localizado no lado direito do ecrã acima da `Data Sources` tabela.
-1. Clique no botão [!DNL Mixpanel] e a página de credenciais será aberta.
+1. Vá para a `Connections` página abaixo **[!DNL Manage Data** > **Connections]**.
+1. Clique em **[!UICONTROL Add a New Source]**, localizado no lado direito da tela acima da `Data Sources` tabela.
+1. Clique em [!DNL Mixpanel] e a página de credenciais será aberta.
 
-Deixe essa página aberta por enquanto e alterne para a janela do navegador com seu [!DNL Mixpanel] conta.
+Deixe esta página aberta por enquanto e alterne para a janela do navegador com [!DNL Mixpanel] conta.
 
-## Recuperar seu [!DNL Mixpanel] Credenciais da API {#steptwo}
+## Recuperação de [!DNL Mixpanel] Credenciais da API {#steptwo}
 
-Se você não tiver feito logon no [!DNL Mixpanel] ainda assim, faça isso e faça o seguinte:
+Se você não tiver feito logon na [!DNL Mixpanel] conta ainda, faça isso e faça o seguinte:
 
 1. Clique em **[!UICONTROL Account]** no canto superior direito.
 1. Na caixa de diálogo exibida, clique em **[!UICONTROL Projects]**.
-1. As credenciais da API exibirão:
+1. Suas credenciais de API são exibidas:
 
-![Recuperar credenciais da API do Mixpanel](../../../assets/Mixpanel_API_creds.png)
+![Recuperação de credenciais da API do Mixpanel](../../../assets/Mixpanel_API_creds.png)
 
-Mantenha isto aberto - precisamos que termine isto.
+Mantenha isso aberto - você precisa encerrá-lo.
 
 ## Inserir seu [!DNL Mixpanel] Credenciais da API em [!DNL MBI] {#stepthree}
 
-1. Copie o `API Key` e `Secret` na [!DNL Mixpanel] página credenciais em [!DNL MBI].
+1. Copie o `API Key` e `Secret` no [!DNL Mixpanel] página de credenciais em [!DNL MBI].
 1. Clique em **[!UICONTROL Connect to Mixpanel]** para concluir a configuração.
 
-Pronto! Se a conexão for bem-sucedida, uma _Sucesso!_ será exibida na parte superior da página.
+Pronto! Se a conexão for bem-sucedida, uma variável _Sucesso!_ é exibida na parte superior da página.
 
-### Relacionado
+### Relacionados
 
 * [Esperado [!DNL Mixpanel] dados](../integrations/mixpanel-data.md)
 * [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -1,42 +1,42 @@
 ---
 title: Formatação e importação de dados de comércio eletrônico
-description: Saiba mais sobre os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
+description: Conheça os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
-# Formatação e importação de dados
+# Formatação e Importação de Dados
 
-Se você estiver usando uma integração que atualmente não é compatível com [!DNL MBI], você ainda pode usar o [Recurso de upload de arquivo](using-file-uploader.md) para obter seus dados no data warehouse. Neste artigo, abordamos os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
+Se você estiver usando uma integração não compatível com o [!DNL MBI], você ainda poderá usar o [Recurso de carregamento de arquivo](using-file-uploader.md) para inserir seus dados na Data Warehouse. Este artigo aborda os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
 
 ## `Orders` tabela
 
-O `orders` deve conter uma linha para cada transação realizada pela empresa. As colunas em potencial incluem:
+A variável `orders` A tabela deve conter uma linha para cada transação que a empresa realizou. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|
-| `Order ID` | A ID do pedido deve ser exclusiva para cada linha da tabela. Além disso, essa normalmente é a chave primária para a tabela. |
+| `Order ID` | A ID do pedido deve ser exclusiva para cada linha na tabela. Além disso, geralmente é a chave primária da tabela. |
 | `Customer` | O cliente que fez o pedido. |
-| `Order total` | O total do pedido. Pode ser uma coluna baseada em cálculo, na qual os valores em outras colunas, como subtotal e frete, compõem o total dessa coluna. |
+| `Order total` | O total do pedido. Pode ser uma coluna baseada em cálculo, em que os valores em outras colunas — como subtotal e envio — compõem o total dessa coluna. |
 | `Currency` | A moeda em que o pedido foi pago. Inclua, se relevante. |
-| ` Order status` | O status do pedido, como `In Progress`, `Refunded`ou `Complete`. O valor dessa coluna provavelmente será alterado (se não estiver concluído). Dados novos e atualizados podem ser importados usando o [Recurso Anexar dados](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) no `File Uploads` página. |
-| `Acquisition/marketing channel` | O canal de aquisição ou marketing do qual o cliente que fez o pedido foi encaminhado. |
+| ` Order status` | O status do pedido, como `In Progress`, `Refunded`ou `Complete`. O valor dessa coluna é alterado (se não estiver completo). Dados novos e atualizados podem ser importados usando o [Recurso Acrescentar Dados](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) no `File Uploads` página. |
+| `Acquisition/marketing channel` | A aquisição ou canal de marketing do qual o cliente que fez o pedido foi referenciado. |
 | `Order datetime` | A data e a hora em que o pedido foi criado. |
-| `Order updated at` | A data e a hora em que a última modificação no registro do pedido foi feita. |
+| `Order updated at` | A data e a hora em que a última modificação no registro de pedido foi feita. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Order detail/items` tabela {#itemstable}
 
-O `order_detail / items` tabela deve conter uma linha para cada item distinto em cada ordem. As colunas em potencial incluem:
+A variável `order_detail / items` a tabela deve conter uma linha para cada item distinto em cada ordem. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|
-| `Order item ID` | A ID do item de pedido deve ser exclusiva para cada linha da tabela. Além disso, normalmente é a variável `primary key` para a tabela. |
+| `Order item ID` | A ID do item do pedido deve ser exclusiva para cada linha da tabela. Além disso, geralmente é o `primary key` para a tabela. |
 | `Order ID` | A ID do pedido. |
 | `Product ID` | A ID do produto. |
 | `Product name` | O nome do produto. |
@@ -45,25 +45,25 @@ O `order_detail / items` tabela deve conter uma linha para cada item distinto em
 
 ## `Customers` tabela {#customerstable}
 
-O `customers` deve conter uma linha para cada conta de cliente. As colunas em potencial incluem:
+A variável `customers` A tabela deve conter uma linha para cada conta de cliente. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|
-| `Customer ID` | A ID do cliente deve ser exclusiva para cada linha da tabela. Além disso, essa normalmente é a chave primária para a tabela. |
+| `Customer ID` | A ID do cliente deve ser exclusiva para cada linha na tabela. Além disso, geralmente é a chave primária da tabela. |
 | `Customer created at` | A data e a hora em que a conta do cliente foi criada. |
 | `Customer modified at` | A data e a hora em que a conta do cliente foi modificada pela última vez. |
-| `Acquisition/marketing channel source` | O canal de aquisição ou marketing do qual o cliente foi referenciado. |
+| `Acquisition/marketing channel source` | A aquisição ou canal de marketing do qual o cliente foi encaminhado. |
 | `Demographic info` | Informações demográficas, como faixa etária e gênero, podem ser usadas para segmentar seus relatórios. |
-| `Acquisition/marketing channel` | O canal de aquisição ou marketing do qual o cliente que fez o pedido foi encaminhado. |
+| `Acquisition/marketing channel` | A aquisição ou canal de marketing do qual o cliente que fez o pedido foi referenciado. |
 
 ## `Subscription payments` tabela
 
-O `subscriptions` deve conter uma linha para cada pagamento de assinatura. As colunas em potencial incluem:
+A variável `subscriptions` A tabela deve conter uma linha para cada pagamento de assinatura. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|
-| `Subscription ID` | A ID da assinatura deve ser exclusiva para cada linha da tabela. Além disso, essa normalmente é a chave primária para a tabela. |
+| `Subscription ID` | A ID da assinatura deve ser exclusiva para cada linha na tabela. Além disso, geralmente é a chave primária da tabela. |
 | `Customer ID` | A ID do cliente que fez o pagamento. |
-| `Payment amount` | A quantia do pagamento da assinatura. |
-| `Start date` | A data e hora de início do período coberto pelo pagamento. |
-| `End date` | A data e hora de término do período coberto pelo pagamento. |
+| `Payment amount` | O valor do pagamento da assinatura. |
+| `Start date` | A data/hora inicial do período coberto pelo pagamento. |
+| `End date` | A data/hora final do período coberto pelo pagamento. |

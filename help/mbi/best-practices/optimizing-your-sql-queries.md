@@ -1,102 +1,102 @@
 ---
-title: Otimizando Suas Consultas SQL
-description: Saiba como otimizar suas consultas SQL.
+title: Otimização das consultas SQL
+description: Saiba como otimizar suas consultas de SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
-# Otimizar suas consultas SQL
+# Otimizar suas consultas de SQL
 
-O Report Builder SQL permite consultar e iterar essas consultas a qualquer momento. Isso é útil quando você precisa modificar uma consulta sem ter que aguardar a conclusão de um ciclo de atualização antes de perceber uma coluna ou relatório que você criou precisa ser atualizado.
+O Report Builder SQL permite consultar e iterar nessas consultas a qualquer momento. Isso é útil quando você precisa modificar uma consulta sem ter que esperar o término de um ciclo de atualização antes de perceber que uma coluna ou relatório criado precisa ser atualizado.
 
-Antes da execução de um query, [[!DNL MBI] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). O custo leva em consideração a duração e o número de recursos necessários para executar um query. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder nossos limites, a consulta não será executada. Elaboramos uma lista de recomendações para consultar seu data warehouse, o que garantirá que você esteja gravando as consultas mais simplificadas possíveis.
+Antes da execução de uma consulta, [[!DNL MBI] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). O custo considera o tempo e o número de recursos necessários para executar uma consulta. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder os limites do MBI, a consulta falhará. Para consultar sua Data Warehouse, o que garante que você esteja escrevendo as consultas mais simplificadas possíveis, a Adobe recomenda o seguinte.
 
-## Usar SELECIONAR ou Selecionar todas as colunas
+## Utilização de SELECIONAR ou Seleção de Todas as Colunas
 
-A seleção de todas as colunas não resulta em uma consulta oportuna e facilmente executada. Queries que usam `SELECT *` pode levar algum tempo para ser executado, especialmente se a tabela tiver um grande número de colunas.
+Selecionar todas as colunas não possibilita uma consulta oportuna e facilmente executada. Consultas que usam `SELECT *` O pode levar bastante tempo para ser executado, especialmente se a tabela tiver muitas colunas.
 
-Por isso, recomendamos que você evite usar `SELECT *` sempre que possível e inclua apenas as colunas necessárias:
+Por isso, a Adobe recomenda que você evite usar `SELECT *` sempre que possível e inclua apenas as colunas necessárias:
 
-| **Em vez disso..** | **Experimente isto!** |
+| **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
 | ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Usando associações externas completas
+## Uso de Junções Externas Completas
 
-As associações externas selecionam a totalidade das duas tabelas que estão sendo unidas, o que aumentará o custo computacional do query. Isso significa que a consulta levará mais tempo para ser executada e terá mais probabilidade de falhar, pois pode demorar mais do que o limite de execução para retornar os resultados.
+Junções externas selecionam a totalidade das duas tabelas sendo unidas, o que aumenta o custo computacional da consulta. Isso significa que sua consulta demora mais para ser executada e tem mais probabilidade de falha, pois pode levar mais tempo do que o limite de execução para retornar os resultados.
 
-Em vez de usar esse tipo de junção, considere usar uma junção interna ou esquerda. As associações internas retornam resultados somente onde tAqui está uma correspondência em colunas entre tabelas (por exemplo, `order_id` existe em ambos os `customers` e `orders` quadro); as associações à esquerda retornarão todos os resultados da tabela à esquerda (primeira) juntamente com os resultados correspondentes na tabela à direita (segunda).
+Em vez de usar esse tipo de junção, considere usar uma junção interna ou esquerda. As junções internas retornam resultados somente quando há uma correspondência de colunas entre tabelas (por exemplo, `order_id` existe em uma `customers` e `orders` tabela). As junções à esquerda retornam todos os resultados da tabela à esquerda (primeira) juntamente com os resultados correspondentes na tabela à direita (segunda).
 
-Veja como podemos reescrever uma consulta COMPLETA OUTER JOIN:
+Veja como você pode reescrever uma consulta FULL OUTER JOIN:
 
-| **Em vez disso..** | **Experimente isto!** |
+| **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
 | ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Como você pode ver, essas consultas são idênticas de todas as maneiras, exceto pelo tipo de JOIN que usam.
+Essas consultas são idênticas em todos os aspectos, exceto pelo tipo de JOIN que usam.
 
-## Usando várias associações
+## Uso de Várias Associações
 
-Embora você possa incluir várias associações em seu query, lembre-se de que isso pode aumentar o custo do query. Para não atingir o limite de custo, recomendamos evitar várias associações, quando possível.
+Embora você possa incluir várias associações em sua consulta, lembre-se de que isso pode aumentar o custo da consulta. Para evitar atingir o limite de custo, a Adobe recomenda evitar várias associações sempre que possível.
 
-## Uso de filtros
+## Utilização de filtros
 
-Use filtros sempre que possível. `WHERE` e `HAVING` as cláusulas filtrarão seus resultados e fornecerão apenas os dados que você realmente deseja.
+Use filtros sempre que possível. `WHERE` e `HAVING` As cláusulas filtram seus resultados e fornecem apenas os dados que você realmente deseja.
 
 ## Uso de Filtros em Cláusulas JOIN
 
-Se estiver usando um filtro ao executar uma junção, certifique-se de aplicá-lo às duas tabelas na junção. Mesmo que seja redundante, isso reduzirá o custo computacional do query e agilizará o tempo de execução.
+Se estiver usando um filtro ao executar uma associação, certifique-se de aplicá-lo a ambas as tabelas na associação. Mesmo que seja redundante, isso reduz o custo computacional do query e reduz o tempo de execução.
 
-| **Em vez disso..** | **Experimente isto!** |
+| **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
 | ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Uso de operadores
 
-Ao gravar queries, considere usar os operadores &quot;menos caros&quot; possível. Cada query tem um custo computacional, que é determinado pelas funções, operadores e filtros que compõem a query. Alguns operadores exigem menos esforço computacional, o que os torna menos caros que outros operadores.
+Ao gravar consultas, considere usar os operadores &quot;mais baratos&quot; possíveis. Cada consulta tem um custo computacional, que é determinado pelas funções, operadores e filtros que compõem a consulta. Alguns operadores exigem menos esforço computacional, o que os torna mais baratos do que outros operadores.
 
-Os operadores de comparação (>, &lt;, = e assim por diante) são os menos caros, seguidos de [SIM. Operadores SIMILAR TO e POSIX](https://www.postgresql.org/docs/9.5/functions-matching.html) que são os operadores mais caros.
+Os operadores de comparação (>, &lt;, = e assim por diante) são os mais baratos, seguidos por [COMO. Operadores SIMILAR TO e POSIX](https://www.postgresql.org/docs/9.5/functions-matching.html) que são os operadores mais caros.
 
-## Uso de EXISTENTES Versus EM
+## Uso de EXISTS versus IN
 
-Usando `EXISTS` versus `IN` depende do tipo de resultados que você está tentando retornar. Se você estiver interessado em apenas um valor, use a variável `EXISTS` cláusula em vez de `IN`. `IN` é usada juntamente com listas de valores separados por vírgula, o que aumentará o custo computacional do query.
+Usar `EXISTS` versus `IN` depende do tipo de resultados que você está tentando retornar. Se você estiver interessado apenas em um único valor, use o `EXISTS` em vez de `IN`. `IN` é usado com listas de valores separados por vírgula, o que aumenta o custo computacional da consulta.
 
-When `IN` queries forem executados, o sistema deverá primeiro processar o subquery (a variável `IN` ), em seguida, toda a consulta com base na relação especificada no `IN` instrução. `EXISTS` O é muito mais eficiente porque a consulta não precisa ser executada várias vezes - um valor true/false é retornado ao verificar a relação especificada na query.
+Quando `IN` consultas são executadas, o sistema deve primeiro processar a subconsulta (a variável `IN` ), então toda a consulta com base na relação especificada na variável `IN` declaração. `EXISTS` é muito mais eficiente porque a consulta não precisa ser executada várias vezes; um valor true/false é retornado ao verificar a relação especificada na consulta.
 
-Para simplificar: o sistema não precisa processar tanto ao usar `EXISTS`.
+Simplificando: o sistema não precisa processar tanto ao usar `EXISTS`.
 
-| **Em vez disso..** | **Experimente isto!** |
+| **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
 | ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Usando ORDEM POR
+## Usando ORDER BY
 
-`ORDER BY` é uma função cara no SQL e pode aumentar significativamente o custo de um query. Se você receber uma mensagem de erro informando que o custo EXPLAIN do seu query é muito alto, tente eliminar qualquer `ORDER BY`é de sua consulta, a menos que seja absolutamente necessário.
+`ORDER BY` é uma função cara no SQL e pode aumentar significativamente o custo de um query. Se você receber uma mensagem de erro dizendo que o custo EXPLICAR do seu query é muito alto, tente eliminar qualquer `ORDER BY`s da sua consulta, a menos que necessário.
 
-Isto não quer dizer que `ORDER BY` não pode ser usado - apenas que só deve ser usado quando necessário.
+Isso não quer dizer que `ORDER BY` não pode ser usado, apenas deve ser usado quando necessário.
 
 ## Usando GROUP BY e ORDER BY
 
-Embora possa haver algumas situações em que essa abordagem não esteja em conformidade com o que você está tentando fazer, a regra geral é que se você estiver usando uma `GROUP BY` e `ORDER BY`, você deve colocar as colunas em ambas as cláusulas na mesma ordem. Por exemplo:
+Pode haver algumas situações em que essa abordagem não esteja em conformidade com o que você está tentando fazer. A regra geral é que, se você estiver usando um `GROUP BY` e `ORDER BY`, você deve colocar as colunas em ambas as cláusulas na mesma ordem. Por exemplo:
 
-| **Em vez disso..** | **Experimente isto!** |
+| **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
 | ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Quebra de linha
+## Encapsulamento
 
-A melhor maneira de aprender a escrever SQL - e fazê-lo com eficiência - é por tentativa e erro. Para descobrir o que funciona melhor para você, tente recriar alguns relatórios usando apenas o editor SQL.
+A melhor maneira de aprender a escrever SQL - e fazê-lo com eficiência - é por meio de tentativa e erro. Para descobrir o que funciona melhor para você, tente recriar alguns relatórios usando apenas o editor SQL.

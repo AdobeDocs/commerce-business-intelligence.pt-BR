@@ -1,48 +1,48 @@
 ---
-title: Conecte o PostgreSQL via túnel SSH
-description: Saiba como conectar o banco de dados PostgreSQL ao [!DNL MBI] através de um túnel SSH.
+title: Conectar o PostgreSQL via Túnel SSH
+description: Saiba como conectar seu banco de dados PostgreSQL ao [!DNL MBI] via túnel SSH.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
-# Connect `PostgreSQL` via `SSH` Túnel
+# Conectar `PostgreSQL` via `SSH` Túnel
 
-Para conectar seu `PostgreSQL` banco de dados para [!DNL MBI] via `SSH tunnel`, você (ou sua equipe, se você não for um técnico) precisará fazer algumas coisas:
+Para conectar seu `PostgreSQL` banco de dados para [!DNL MBI] por meio de um `SSH tunnel`, você (ou sua equipe, se não for um técnico) deve fazer algumas coisas:
 
-1. [Recupere o [!DNL MBI] chave pública](#retrieve)
-1. [Permitir acesso ao [!DNL MBI] Endereço IP](#allowlist)
-1. [Crie um usuário Linux para [!DNL MBI] ](#linux)
-1. [Crie um usuário do Postgres para [!DNL MBI] ](#postgres)
-1. [Inserir a conexão e as informações do usuário no MBI](#finish)
+1. [Recuperar o [!DNL MBI] chave pública](#retrieve)
+1. [Permitir acesso à [!DNL MBI] Endereço IP](#allowlist)
+1. [Criar um Linux](#linux)
+1. [Criar um usuário Postgres para [!DNL MBI] ](#postgres)
+1. [Insira as informações de conexão e usuário no MBI](#finish)
 
-Não é tão complicado como pode parecer. Comece já.
+Não é tão complicado quanto poderia parecer. Comece já.
 
 ## Recuperação de [!DNL MBI] `public key` {#retrieve}
 
-O `public key` é usada para autorizar a variável [!DNL MBI] Usuário do Linux. Na próxima seção, criaremos o usuário e importaremos a chave.
+A variável `public key` é usado para autorizar a [!DNL MBI] Usuário do Linux®. Na próxima seção, você criará o usuário e importará a chave.
 
 1. Ir para **[!UICONTROL Manage Data** > **Connections]** e clique em **[!UICONTROL Add a Data Source]**.
-1. Clique no botão `PostgreSQL` ícone .
-1. Depois que a variável `PostgreSQL credentials` será aberta, defina a variável `Encrypted` alternar para `Yes`. Isso exibirá a variável `SSH` formulário de configuração.
-1. O `public key` está localizado abaixo deste formulário.
+1. Clique em `PostgreSQL` ícone.
+1. Depois que a variável `PostgreSQL credentials` for aberta, defina o `Encrypted` alternar para `Yes`. Isso exibe o `SSH` formulário de configuração.
+1. A variável `public key` O está localizado abaixo deste formulário.
 
-Deixe essa página aberta em todo o tutorial; será necessário tê-la na próxima seção e no final.
+Deixe esta página aberta durante todo o tutorial - você precisará dela na próxima seção e no final.
 
-Se você estiver um pouco perdido, é assim que você navega [!DNL MBI] para recuperar a chave:
+Se você está um pouco perdido, esta é a forma de navegar [!DNL MBI] para recuperar a chave:
 
-![Recuperação da chave pública RJMetrics](../../../assets/get-mbi-public-key.gif)
+![Recuperando a chave pública de RJMetrics](../../../assets/get-mbi-public-key.gif)
 
-## Permitir acesso ao [!DNL MBI] Endereço IP {#allowlist}
+## Permitir acesso à [!DNL MBI] Endereço IP {#allowlist}
 
-Para que a conexão seja bem-sucedida, é necessário configurar o firewall para permitir o acesso do endereço IP. é `54.88.76.97/32`, mas também está no `PostgreSQL` credenciais. Veja a caixa azul no GIF acima? Pronto!
+Para que a conexão seja bem-sucedida, você deve configurar o firewall para permitir o acesso pelo seu endereço IP. É necessário `54.88.76.97/32`, mas também está no `PostgreSQL` página de credenciais. Vê a caixa azul no GIF acima? Pronto!
 
 ## Criação de um `Linux` usuário para [!DNL MBI] {#linux}
 
-Pode ser uma máquina de produção ou secundária, desde que contenha dados em tempo real (ou atualizados com frequência). Você pode [restringir este usuário](../../../administrator/account-management/restrict-db-access.md) da maneira que desejar, desde que mantenha o direito de se conectar ao servidor PostgreSQL.
+Pode ser uma máquina de produção ou secundária, desde que contenha dados em tempo real (ou atualizados com frequência). Você pode [restringir este usuário](../../../administrator/account-management/restrict-db-access.md) de qualquer maneira que desejar, desde que ele mantenha o direito de se conectar ao servidor PostgreSQL.
 
 1. Para adicionar o novo usuário, execute os seguintes comandos como root em seu `Linux` servidor:
 
@@ -52,9 +52,9 @@ Pode ser uma máquina de produção ou secundária, desde que contenha dados em 
         mkdir /home/rjmetric/.ssh
 ```
 
-1. Lembre-se do `public key` recuperamos na primeira seção? Para garantir que o usuário tenha acesso ao banco de dados, precisamos importar a chave para `authorized\_keys`.
+1. Lembre-se do `public key` você recuperou na primeira seção? Para garantir que o usuário tenha acesso ao banco de dados, é necessário importar a chave para o `authorized\_keys`.
 
-   Copie a chave inteira no `authorized\_keys` como segue:
+   Copie toda a chave na `authorized\_keys` do seguinte modo:
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
@@ -70,39 +70,39 @@ Pode ser uma máquina de produção ou secundária, desde que contenha dados em 
 
 >[!IMPORTANT]
 >
->Se a variável `sshd\_config` o arquivo associado ao servidor não está definido como a opção padrão, somente determinados usuários terão acesso ao servidor - isso impedirá uma conexão bem-sucedida com o [!DNL MBI]. Nesses casos, é necessário executar um comando como `AllowUsers` para permitir o acesso do usuário rjmetric ao servidor.
+>Se a variável `sshd\_config` o arquivo associado ao servidor não está definido como a opção padrão, somente determinados usuários têm acesso ao servidor - isso impede uma conexão bem-sucedida com o [!DNL MBI]. Nesses casos, é necessário executar um comando como `AllowUsers` para permitir que o usuário rjmetric acesse o servidor.
 
-## Criação de um [!DNL MBI] Usuário do Postgres {#postgres}
+## Criação de um [!DNL MBI] Usuário Postgres {#postgres}
 
-Sua organização pode exigir um processo diferente, mas a maneira mais simples de criar esse usuário é executar a seguinte query quando conectado aos Postgres como um usuário com o direito de conceder privilégios. O usuário também deve ser o proprietário do schema que [!DNL MBI] está sendo concedido acesso ao .
+Sua organização pode exigir um processo diferente, mas a maneira mais simples de criar esse usuário é executar a seguinte consulta quando conectado ao Postgres como usuário com o direito de conceder privilégios. O usuário também deve ser o proprietário do esquema que [!DNL MBI] está recebendo acesso ao.
 
 ```sql
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
 ```
 
-Substituir `secure password` com sua própria senha segura, que pode ser diferente da senha SSH. Além disso, certifique-se de substituir `database name` e `schema name` com os nomes apropriados no banco de dados.
+Substituir `secure password` com sua própria senha segura, que pode ser diferente da senha SSH. Além disso, substitua `database name` e `schema name` com os nomes apropriados em seu banco de dados.
 
 Se quiser conectar vários bancos de dados ou esquemas, repita esse processo conforme necessário.
 
-## Inserir a conexão e as informações do usuário em [!DNL MBI] {#finish}
+## Inserção das informações de conexão e usuário em [!DNL MBI] {#finish}
 
-Para fechar os itens, precisamos inserir a conexão e as informações do usuário em [!DNL MBI]. Você deixou a página de credenciais PostgreSQL aberta? Caso contrário, acesse **[!UICONTROL Manage Data > Connections]** e clique em **[!UICONTROL Add a Data Source]**, em seguida, o ícone PostgreSQL. Não se esqueça de definir a variável `Encrypted` alternar para `Yes`.
+Para finalizar, você precisa inserir a conexão e as informações do usuário em [!DNL MBI]. Você deixou a página de credenciais do PostgreSQL aberta? Caso contrário, acesse **[!UICONTROL Manage Data > Connections]** e clique em **[!UICONTROL Add a Data Source]**, depois o ícone PostgreSQL. Não se esqueça de definir o `Encrypted` alternar para `Yes`.
 
-Insira as seguintes informações nesta página, começando pela seção Conexão do Banco de Dados:
+Insira as seguintes informações nesta página, começando com a seção Conexão de Banco de Dados:
 
-* `Username`: O nome de usuário de RJMetrics Postgres (deve ser rjmetric)
-* `Password`: A senha dos Postgres RJMetrics
-* `Port`: Porta PostgreSQL em seu servidor (5432 por padrão)
+* `Username`: O nome de usuário Postgres de RJMetrics (deve ser rjmetric)
+* `Password`: a senha Postgres do RJMetrics
+* `Port`: Porta PostgreSQL no servidor (5432 por padrão)
 * `Host`: 127.0.0.1
 
 Em `SSH Connection`:
 
-* `Remote Address`: O endereço IP ou o nome do host do servidor no qual vamos SSH
-* `Username`: Nosso nome de logon SSH (deve ser rjmetric)
-* `SSH Port`: Porta SSH em seu servidor (22 por padrão)
+* `Remote Address`: O endereço IP ou o nome de host do servidor no qual você executará o SSH
+* `Username`: seu nome de logon SSH (deve ser rjmetric)
+* `SSH Port`: Porta SSH no servidor (22 por padrão)
 
 Pronto! Quando terminar, clique em **Salvar e testar** para concluir a configuração.
 
-### Relacionado
+### Relacionados
 
 * [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

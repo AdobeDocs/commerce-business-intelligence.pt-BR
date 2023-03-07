@@ -2,28 +2,28 @@
 title: Dados de Google Analytics esperados
 description: Saiba como interagir com suas métricas do Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Esperado [!DNL Google Analytics] dados
 
-Depois de conectar um [!DNL Google Analytics] integração, você pode interagir com [!DNL Google Analytics] métricas *imediatamente no`Visual Report Builder`*. Ao inserir o `Visual Report Builder`, se você clicar em **[!UICONTROL Add a Metric]**, uma série de métricas do [!DNL Google Analytics] os perfis serão exibidos em uma lista suspensa imediatamente abaixo das métricas no data warehouse.
+Depois de conectar um [!DNL Google Analytics] integração, você pode interagir com o seu [!DNL Google Analytics] métricas *imediatamente no`Visual Report Builder`*. Ao inserir a variável `Visual Report Builder`, se você clicar em **[!UICONTROL Add a Metric]**, uma série de métricas do [!DNL Google Analytics] O perfil do aparece em uma lista suspensa imediatamente abaixo das métricas na Data Warehouse.
 
-O [!DNL Google Analytics] integração é *live* — isso significa que a variável `Report Builder` solicita dados de [!DNL Google Analytics] *imediatamente* ao adicionar uma métrica ao seu relatório. Também significa que as métricas que você pode acessar são definidas exatamente como estão no [!DNL Google Analytics]e que esses valores não são *depósito* em seu [!DNL MBI] conta — exibida apenas visualmente em seus relatórios.
+A variável [!DNL Google Analytics] a integração está *live* — isso significa que a variável `Report Builder` solicita dados de [!DNL Google Analytics] *imediatamente* ao adicionar uma métrica ao seu relatório. Também significa que as métricas que você pode acessar são definidas exatamente como estão [!DNL Google Analytics]e que esses valores não são *em depósito* no seu [!DNL MBI] conta — exibida apenas visualmente em seus relatórios.
 
-[!DNL Google Analytics] integrações em [!DNL MBI] utilizar a [!DNL Google Analytics] [API dos Relatórios principais](https://developers.google.com/analytics/devguides/reporting/core/v3/)e suportam as seguintes métricas e dimensões.
+[!DNL Google Analytics] integrações no [!DNL MBI] use o [!DNL Google Analytics] [API de relatórios principais](https://developers.google.com/analytics/devguides/reporting/core/v3/)e oferecem suporte às seguintes métricas e dimensões.
 
 >[!NOTE]
 >
->Para evitar resultados inesperados ou sem sentido, confirme se todas as dimensões usadas são compatíveis com as métricas usadas na `Report Builder`. Você pode verificar [here](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>Para evitar resultados inesperados ou absurdos, confirme se as dimensões usadas são compatíveis com uma ou mais métricas usadas na `Report Builder`. Você pode verificar [aqui](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Métricas suportadas
 
-| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome / Fórmula |
+| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome/Fórmula |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -73,11 +73,11 @@ O [!DNL Google Analytics] integração é *live* — isso significa que a variá
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Dimension compatíveis
 
-| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome / Fórmula | Agrupável? |
+| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome/Fórmula | Agrupável? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -142,4 +142,4 @@ O [!DNL Google Analytics] integração é *live* — isso significa que a variá
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

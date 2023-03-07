@@ -1,23 +1,23 @@
 ---
-title: Usando a coluna calculada Diferença de data
-description: Saiba mais sobre a finalidade e os usos da coluna calculada Diferença de data .
+title: Usando a Coluna Calculada de Diferença de Data
+description: Saiba mais sobre a finalidade e os usos da coluna calculada Diferença de datas.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
 
-# Diferença de data da coluna calculada
+# Coluna Calculada de Diferença de Data
 
-Este tópico descreve a finalidade e os usos do `Date Difference` coluna calculada disponível na **[!DNL Manage Data > Data Warehouse]** página. Abaixo está uma explicação do que ele faz, seguida de um exemplo, e os mecanismos de criação.
+Este tópico descreve o objetivo e os usos da `Date Difference` coluna calculada disponível no **[!DNL Manage Data > Data Warehouse]** página. Abaixo está uma explicação do que ele faz, seguido por um exemplo, e os mecanismos para criá-lo.
 
 **Explicação**
 
-O `Date Difference` tipo de coluna: encontra o tempo entre dois eventos pertencentes a um único registro, com base nos carimbos de data e hora do evento. O valor bruto calculado nessa coluna é em segundos, mas será convertido automaticamente em minutos, horas, dias e assim por diante para exibição nos relatórios. No entanto, quando usado como filtro/grupo pelo , você desejará usar o valor em segundos.
+A variável `Date Difference` tipo de coluna: encontra o tempo entre dois eventos pertencentes a um único registro, com base nos carimbos de data e hora do evento. O valor bruto calculado nessa coluna está em segundos, mas é convertido automaticamente em minutos, horas, dias e assim por diante, para exibição em relatórios. No entanto, quando usado como um filtro/grupo por, você deseja usar o valor em segundos.
 
-A `date difference` coluna calculada poderia ser usada para criar uma métrica que calcula o tempo médio ou mediano entre dois eventos, como o tempo médio entre o registro do cliente e seus primeiros pedidos.
+A `date difference` a coluna calculada pode ser usada para criar uma métrica que calcula o tempo médio ou mediano entre dois eventos, como o tempo médio entre o registro do cliente e seus primeiros pedidos.
 
 **Exemplo**
 
@@ -26,26 +26,26 @@ A `date difference` coluna calculada poderia ser usada para criar uma métrica q
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 
-No exemplo acima, a variável `Date Difference` é a `Seconds between timestamp_2 and timestamp_1` coluna. Ele executa o cálculo `timestamp_2 minus timestamp_1`.
+No exemplo acima, a variável `Date Difference` coluna é a `Seconds between timestamp_2 and timestamp_1` coluna. Ele executa o cálculo `timestamp_2 minus timestamp_1`.
 
 **Mecânica**
 
-As etapas a seguir descrevem como criar um `Date Difference` coluna.
+As etapas a seguir descrevem como criar uma `Date Difference` coluna.
 
-1. Navegue até o **[!DNL Manage Data > Data Warehouse]** página.
-1. Navegue até a tabela na qual deseja criar essa coluna.
+1. Navegue até a **[!DNL Manage Data > Data Warehouse]** página.
+1. Navegue até a tabela em que deseja criar essa coluna.
 1. Clique em **[!UICONTROL Create a Column]** e configure sua coluna da seguinte maneira:
    * Selecionar `Column Definition Type` > `Same Table`
    * Selecionar `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
-   * Selecionar `Ending DATETIME` coluna > Escolha o campo datetime final, que normalmente é o evento que ocorre mais tarde
-   * Selecionar `Starting DATETIME` column** > Escolha o campo datetime inicial, que normalmente é o evento que ocorre anteriormente
+   * Selecionar `Ending DATETIME` coluna > Escolha o campo de data e hora de término, que normalmente é o evento que ocorre mais tarde
+   * Selecionar `Starting DATETIME` coluna** > Escolha o campo de data e hora inicial, que normalmente é o evento que ocorre mais cedo
 
 1. Forneça um nome para a coluna e clique em **[!UICONTROL Save]**.
-1. A coluna estará disponível para uso *imediatamente*.
+1. A coluna está disponível para uso *imediatamente*.
 
-Como exemplo, o exemplo a seguir é configurado para calcular a variável `Seconds between order date and customer's creation date`:
+Como exemplo, o exemplo a seguir é configurado para calcular o `Seconds between order date and customer's creation date`:
 
 ![](../../assets/date_diff.png)

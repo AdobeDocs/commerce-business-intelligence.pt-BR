@@ -1,33 +1,37 @@
 ---
-title: Recenticidade, Frequência, Análise Monetária (RFM)
-description: Saiba como configurar um painel que permitirá segmentar seus clientes de acordo com sua recenticidade, frequência e classificações monetárias.
+title: Recenticidade, frequência, análise monetária (RFM)
+description: Saiba como configurar um painel que permita segmentar os clientes de acordo com sua recenticidade, frequência e classificação monetária.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Análise RFM
 
-Neste artigo, demonstramos como configurar um painel que permitirá segmentar seus clientes por suas classificações monetárias, de frequência e de recenticidade. A análise RFM é uma técnica de marketing que leva os comportamentos do cliente em consideração para ajudar a determinar a segmentação para alcance geral. Tem em conta três aspectos: Recenticidade no momento em que um cliente comprou em sua loja, Frequência na frequência com que ele compra de você e Monetário no quanto o cliente gasta.
+Este artigo demonstra como configurar um painel que permite segmentar os clientes por recenticidade, frequência e classificações monetárias. A análise RFM é uma técnica de marketing que considera os comportamentos do cliente para ajudar você a determinar a segmentação para alcance geral. São três os aspectos em causa:
+
+* Recenticidade na recente compra de um cliente em sua loja
+* Frequência na frequência com que eles compram de você
+* Valor monetário em quanto o cliente gasta
 
 ![](../../assets/blobid0.png)
 
-A análise RFM só poderá ser configurada se você tiver a variável [!DNL MBI] Pro plan sobre a nova arquitetura (por exemplo, se você tiver a opção &quot;Visualizações de Data Warehouse&quot; no menu &quot;Gerenciar dados&quot;). Essas colunas podem ser criadas na página &quot;Gerenciar dados > Data Warehouse&quot;. Abaixo são fornecidas instruções detalhadas.
+A análise RFM só poderá ser configurada se você tiver o [!DNL MBI] Plano Pro na nova arquitetura (por exemplo, se você tiver a opção &quot;Data Warehouse visualizações&quot; no menu &quot;Gerenciar dados&quot;). Essas colunas podem ser criadas na página &quot;Gerenciar dados > Data Warehouse&quot;. As instruções detalhadas são fornecidas abaixo.
 
 ## Introdução
 
-Primeiro, será necessário carregar um arquivo contendo apenas uma chave primária com o valor de um. Isso permitirá a criação de algumas colunas calculadas necessárias para a análise.
+Primeiro, é necessário carregar um arquivo contendo apenas uma chave primária com o valor um. Isso permite a criação de algumas colunas calculadas necessárias para a análise.
 
-Você pode aproveitar isso [artigo do centro de ajuda](../importing-data/connecting-data/using-file-uploader.md) bem como a imagem abaixo para formatar o arquivo.
+Você pode usar este [artigo da central de ajuda](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo.
 
 ## Colunas calculadas
 
-Outra distinção é feita se sua empresa permite pedidos de convidado. Nesse caso, você pode ignorar todas as etapas da variável `customer_entity` tabela. Se os pedidos de convidado não forem permitidos, ignore todas as etapas para a variável `sales_flat_order` tabela.
+Uma outra distinção é feita se sua empresa permite pedidos de hóspedes. Em caso afirmativo, você pode ignorar todas as etapas da `customer_entity` tabela. Se as ordens do convidado não forem permitidas, ignore todas as etapas da `sales_flat_order` tabela.
 
-Colunas a serem criadas
+Colunas para criar
 
 * **`Sales_flat_order/customer_entity`** tabela
 * `Customer's last order date`
@@ -38,7 +42,7 @@ Colunas a serem criadas
 
 * 
 
-       Segundos desde a data do último pedido do cliente
+       Segundos desde a última data de pedido do cliente
    * [!UICONTROL Column type]: - &quot;Mesma tabela > Idade
 * Selecionado [!UICONTROL column]: `Customer's last order date`
 
@@ -51,7 +55,7 @@ Colunas a serem criadas
 
    [!UICONTROL Tipo de dados]: `Integer`
 
-* **Referência da contagem** tabela (este é o arquivo que você acabou de carregar com o número &quot;1&quot;)
+* **Referência de contagem** tabela (este é o arquivo que você carregou com o número &quot;1&quot;)
 * Número de clientes
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` OU `customer_entity.(input)reference > Count Reference`. `Primary Key`
@@ -60,7 +64,7 @@ Colunas a serem criadas
 * **Customer_entity** tabela
 * Número de clientes
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity`.Referência > Concentração do cliente. `Primary Key`
+* [!UICONTROL Path]: `customer_entity`.(input) referência > Concentração de clientes. `Primary Key`
 * Selecionado [!UICONTROL column]: `Number of customers`
 
 * (entrada) `Ranking by customer lifetime revenue`
@@ -84,16 +88,16 @@ Colunas a serem criadas
 
    [!UICONTROL Tipo de dados]: `Integer`
 
-* (entrada) Classificação por número de ordens por vida do cliente
+* (entrada) Classificação por número de ordens vitalícias do cliente
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's lifetime number of orders`
 
-* Classificação por número de ordens por vida do cliente
+* Classificação por número de ordens vitalícias do cliente
 * 
    [!UICONTROL Tipo de coluna]: – "Mesma tabela > Cálculo"
-* [!UICONTROL Inputs]: - **(entrada) Classificação por número de ordens por vida do cliente**, **Número de clientes**
-* [!UICONTROL Calculation]: - **caso em que A é nulo, então um outro nulo (B-(A-1)) termina**
+* [!UICONTROL Inputs]: - **(entrada) Classificação por número de ordens vitalícias do cliente**, **Número de clientes**
+* [!UICONTROL Calculation]: - **caso quando A é nulo, então nulo else (B-(A-1)) end**
 * [!UICONTROL Datatype]: - Número inteiro
 
 * Pontuação de frequência do cliente (por percentis)
@@ -104,7 +108,7 @@ Colunas a serem criadas
 
    [!UICONTROL Tipo de dados]: `Integer`
 
-* Classificação por segundos desde a última data do pedido do cliente
+* Classificação por segundos desde a última data de pedido do cliente
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Seconds since customer's last order date`
@@ -125,7 +129,7 @@ Colunas a serem criadas
 
    [!UICONTROL Tipo de dados]: String
 
-* **Referência da contagem** tabela
+* **Referência de contagem** tabela
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` OU `customer_entity.(input)reference > Customer Concentration.Primary Key`
@@ -170,13 +174,13 @@ Colunas a serem criadas
 
 >[!NOTE]
 >
->Os percentis usados são até mesmo divisões de clientes (por exemplo, intervalos de 20% para retornar de 1 a 5). Se você tiver uma maneira personalizada de pesar, informe o analista quando enviar o tíquete.
+>Os percentis usados são até mesmo divisões de clientes (por exemplo, intervalos de 20% para retornar 1-5). Se você tiver uma maneira personalizada de ponderar isso, informe ao analista quando enviar o ticket.
 
 ## Métricas
 
 Nenhuma métrica nova!
 
-**Observação**: Certifique-se de [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
+**Nota**: certifique-se de [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
 
 ## Relatórios
 
@@ -196,7 +200,7 @@ Nenhuma métrica nova!
 
    [!UICONTROL Chart type]: `Table`
 
-* **Clientes com 5 pontuação de recenticidade**
+* **Clientes com pontuação de cinco recenticidades**
 * Métrica `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -214,7 +218,7 @@ Nenhuma métrica nova!
 
    [!UICONTROL Chart type]: `Table`
 
-* **Clientes com 1 pontuação de recenticidade**
+* **Clientes com uma pontuação de recenticidade**
 * Métrica `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -232,4 +236,4 @@ Nenhuma métrica nova!
 
    [!UICONTROL Chart type]: `Table`
 
-Depois de compilar todos os relatórios, você pode organizá-los no painel como desejar. O resultado final pode parecer com o painel de amostra acima, mas as três tabelas geradas são apenas exemplos dos tipos de segmentação de cliente que você pode executar.
+Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima, mas as três tabelas geradas são apenas exemplos dos tipos de segmentação de clientes que você pode executar.

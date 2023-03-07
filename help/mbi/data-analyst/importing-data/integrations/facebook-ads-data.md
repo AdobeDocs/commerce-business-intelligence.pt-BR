@@ -1,10 +1,10 @@
 ---
-title: Dados de anúncios do Facebook esperados
-description: Saiba uma breve visão geral das tabelas que recomendamos que você sincronize com seu data warehouse
+title: Dados esperados do Facebook Ads
+description: Saiba mais sobre uma breve visão geral das tabelas recomendadas para sincronização com a Data Warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -13,29 +13,29 @@ ht-degree: 0%
 
 ![](../../../assets/Facebook_Logo.png)
 
-Depois de [conectou seu [!DNL Facebook Ads] account](../integrations/facebook-ads.md), você pode usar o [Gerenciador de Datas Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear facilmente os campos de dados relevantes para análise.
+Depois de ter [conectou o [!DNL Facebook Ads] account](../integrations/facebook-ads.md), você pode usar o [Gerenciador de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes para análise.
 
-Neste artigo, fornecemos uma breve visão geral das tabelas que recomendamos que você sincronize com seu data warehouse. Esta não é uma lista completa, pois há alguns subquadros. Estamos apenas a destacar as principais tabelas.
+Este artigo fornece uma breve visão geral das tabelas que a Adobe recomenda sincronizar com a Data Warehouse. Esta não é uma lista completa, pois existem algumas subtabelas. Ele apenas destaca as tabelas principais.
 
-## Tabelas de campanha de publicidade principal
+## Tabelas de campanha de publicidade principais
 
-Essas tabelas contêm dados sobre os componentes principais de campanha publicitária.
+Essas tabelas contêm dados sobre os componentes principais dos anúncios.
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
-Esta tabela é a tabela principal de campanhas em uma [!DNL Facebook Ads] conta. As colunas incluem `campaign id`, `name`, `status (active/paused)`, `objective`.
+Esta tabela é a tabela principal das campanhas em uma [!DNL Facebook Ads] conta. As colunas incluem `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-Os registros desta tabela são a tabela principal de [!DNL Facebook Ads] Define em um [!DNL Facebook Ads] conta. As colunas incluem o anúncio `Campaign id/name` o Conjunto de anúncios pertence a, o orçamento, o tipo de lance, o agendamento e as informações de direcionamento do público-alvo.
+Este registro de tabela é a tabela principal de [!DNL Facebook Ads] Conjuntos em um [!DNL Facebook Ads] conta. As colunas incluem o anúncio `Campaign id/name` o Conjunto de anúncios pertence a, o orçamento, tipo de oferta, programação e informações de direcionamento de público-alvo.
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-Esta tabela registra todos os anúncios em uma [!DNL Facebook Ads] conta. As colunas incluem as informações do anúncio, incluindo o Conjunto de anúncios e a Campanha de publicidade à qual pertence, o lance do anúncio, o direcionamento do anúncio e a referência para anúncios específicos (imagem/texto) usados pelo anúncio.
+Esta tabela registra todos os anúncios em um [!DNL Facebook Ads] conta. As colunas incluem as informações do anúncio, incluindo o Conjunto de anúncios e a Campanha publicitária à qual ele pertence, o lance do anúncio, o direcionamento do anúncio e a referência ao criativo específico (imagem/texto) que o anúncio usa.
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-Esta tabela registra todas as criações usadas em [!DNL Facebook Ads]. Isso inclui nome criativo, descrição e urls de imagem relevantes, quando apropriado.
+Esta tabela registra criações usadas em [!DNL Facebook Ads]. A seção Criativos inclui nome criativo, descrição e urls de imagem relevantes, quando apropriado.
 
 ## Tabelas de campanha segmentadas
 
@@ -43,21 +43,21 @@ As tabelas a seguir contêm uma entrada para cada combinação de campanha/conju
 
 ### `facebook _ads insights_ (account-id)`
 
-Esta tabela inclui uma entrada para cada combinação de campanha/conjunto/anúncio para cada dia, juntamente com estatísticas que incluem impressões, cliques, custo, cpc, cpm, cpp, ctr, alcance, alcance social e gasto.
+Esta tabela inclui uma entrada para cada combinação de campanha/conjunto/anúncio para cada dia, juntamente com estatísticas, incluindo impressões, cliques, custo, cpc, cpm, cpp, ctr, alcance, alcance social e gasto.
 
 ### `facebook _ads insights_ (account-id)_~\_actions`
 
-Esta é uma subtabela da variável `facebook_ads_insights_{account_id}` tabela. Inclui dados de conversão para ações que acontecem com base em campanhas diferentes.
+Esta é uma subtabela de `facebook_ads_insights_{account_id}` tabela. Ele inclui dados de conversão para ações que ocorrem com base em campanhas diferentes.
 
 ### `facebook _ads insights country_ (account-id)`
 
-Esta tabela inclui as mesmas informações que o `facebook_ads_insights_{account_id}` e a segmenta por país.
+Esta tabela inclui as mesmas informações que a variável `facebook_ads_insights_{account_id}` tabela e a segmenta por país.
 
 ### `facebook ads insights age and gender (account-id)`
 
-Esta tabela inclui as mesmas informações que o `facebook_ads_insights_{account_id}` e a segmenta por idade e sexo.
+Esta tabela inclui as mesmas informações que a variável `facebook_ads_insights_{account_id}` tabela e a segmenta por idade e gênero.
 
-## Relacionado
+## Relacionados
 
-* [Conexão [!DNL Facebook Ads]](../integrations/facebook-ads.md)
+* [Conectando [!DNL Facebook Ads]](../integrations/facebook-ads.md)
 * [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

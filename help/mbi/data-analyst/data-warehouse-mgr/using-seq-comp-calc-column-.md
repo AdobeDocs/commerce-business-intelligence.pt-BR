@@ -1,25 +1,25 @@
 ---
-title: Comparação sequencial coluna calculada
+title: Coluna Calculada de Comparação Sequencial
 description: Saiba mais sobre a finalidade e os usos da coluna calculada Comparação sequencial.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
 
 ---
 
-# Comparação sequencial coluna calculada
+# Coluna Calculada de Comparação Sequencial
 
-Este tópico descreve a finalidade e os usos do `Sequential Comparison` coluna calculada disponível na **[!DNL Manage Data > Data Warehouse]** página. Abaixo está uma explicação do que ele faz, seguida de um exemplo, e os mecanismos de criação.
+Este tópico descreve o objetivo e os usos da `Sequential Comparison` coluna calculada disponível no **[!DNL Manage Data > Data Warehouse]** página. Abaixo está uma explicação do que ele faz, seguido por um exemplo, e os mecanismos para criá-lo.
 
 **Explicação**
 
-O `Sequential Comparison` tipo de coluna: encontra a diferença entre eventos consecutivos. O tipo mais comum de `Sequential Comparison` é a `Seconds since previous order` coluna. Há três entradas necessárias para esta coluna:
+A variável `Sequential Comparison` tipo de coluna: encontra a diferença entre eventos consecutivos. O tipo mais comum de `Sequential Comparison` coluna é a `Seconds since previous order` coluna. Há três entradas necessárias para esta coluna:
 
-1. `Event Owner`: Essa entrada determina a entidade para a qual as linhas são agrupadas. Por exemplo, no `Seconds since previous order` , o proprietário do evento é o cliente, pois queremos encontrar o número de segundos desde a ordem anterior do mesmo cliente.
-1. `Event Date`: Essa entrada impõe a sequência de eventos. No caso de `Seconds since previous order`, a coluna que contém o carimbo de data e hora da ordem deve ser a `Event Date`. Essa entrada sempre é um carimbo de data e hora.
-1. `Value to Compare`: Essa entrada é o valor real a ser comparado. Ele subtrai o valor da linha anterior do valor da linha atual. Assim, uma coluna que localiza a diferença de tempo entre ordens sucessivas de um cliente é chamada `Seconds since previous order`. Essa entrada não precisa ser um carimbo de data e hora. Um exemplo sem carimbo de data e hora é encontrar a diferença no valor da ordem entre pedidos sucessivos de um cliente.
+1. `Event Owner`: essa entrada determina a entidade para a qual as linhas são agrupadas. Por exemplo, na variável `Seconds since previous order` , o proprietário do evento é o cliente, porque você deseja localizar o número de segundos desde a ordem anterior do mesmo cliente.
+1. `Event Date`: essa entrada impõe a sequência de eventos. No caso de `Seconds since previous order`, a coluna que contém o carimbo de data e hora do pedido deve ser a `Event Date`. Essa entrada é sempre um carimbo de data e hora.
+1. `Value to Compare`: essa entrada é o valor real a ser comparado. Ele subtrai o valor da linha anterior do valor da linha atual. Assim, uma coluna que encontra a diferença de tempo entre pedidos sucessivos de um cliente é chamada `Seconds since previous order`. Essa entrada não precisa ser um carimbo de data e hora. Um exemplo sem carimbo de data e hora é encontrar a diferença no valor do pedido entre pedidos sucessivos de um cliente.
 
 **Exemplo**
 
@@ -31,25 +31,25 @@ O `Sequential Comparison` tipo de coluna: encontra a diferença entre eventos co
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
 | **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
-No exemplo acima, `Seconds since owner's previous event` é `Sequential Comparison` coluna calculada. Para o `owner_id = A`, primeiro identifica uma sequência com base no `timestamp` e, em seguida, subtrai o evento anterior `timestamp` no carimbo de data e hora do evento atual. Na terceira linha do quadro - a segunda linha de `owner_id A` - o valor de `Seconds since owner's previous event` é o número de segundos entre &#39;2015-01-01 02:00&#39; e &#39;2015-01-01 00:00:00&#39;. Essa diferença é igual a 2 horas = 7200 segundos.
+No exemplo acima, `Seconds since owner's previous event` é o `Sequential Comparison` coluna calculada. Para o `owner_id = A`, primeiro identifica uma sequência com base no parâmetro `timestamp` e, em seguida, subtrai o evento anterior `timestamp` do carimbo de data e hora do evento atual. Na terceira linha da tabela - a segunda linha para `owner_id A` - o valor de `Seconds since owner's previous event` é o número de segundos entre &#39;2015-01-01 02:00&#39; e &#39;2015-01-01 00:00:00&#39;. Essa diferença é igual a duas horas = 7200 segundos.
 
 Para esse tipo de coluna calculada, a linha correspondente ao primeiro evento do proprietário tem um `NULL` valor.
 
 **Mecânica**
 
-Para criar um **Número do evento** coluna:
+Para criar uma **Número do evento** coluna:
 
-1. Navegue até o **[!DNL Manage Data** > **Data Warehouse]** página.
-1. Navegue até a tabela na qual deseja criar essa coluna.
+1. Navegue até a **[!DNL Manage Data** > **Data Warehouse]** página.
+1. Navegue até a tabela em que deseja criar essa coluna.
 1. Clique em **[!UICONTROL Create New Column]** na parte superior direita da tela.
-1. Selecionar `Same Table` como `Definition Type` (se as colunas que deseja comparar não estiverem na mesma tabela, talvez seja necessário relocá-las).
-1. Selecionar `SEQUENTIAL_COMPARISON` como `Column Definition Equation`.
+1. Selecionar `Same Table` como o `Definition Type` (se as colunas que você deseja comparar não estiverem na mesma tabela, talvez seja necessário realocá-las).
+1. Selecionar `SEQUENTIAL_COMPARISON` como o `Column Definition Equation`.
 1. Escolha as entradas, conforme explicado acima:
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. Filtros também podem ser adicionados para excluir linhas da consideração. As linhas excluídas terão um valor NULL para essa coluna.
+1. Também é possível adicionar filtros para excluir linhas de serem consideradas. As linhas excluídas têm um valor NULL para essa coluna.
 1. Forneça um nome para a coluna na parte superior da página e clique em **[!UICONTROL Save]**.
-1. A coluna estará disponível para uso *imediatamente*.
+1. A coluna está disponível para uso *imediatamente*.
 
-![SEC](../../assets/SEC_new.png)
+![S](../../assets/SEC_new.png)

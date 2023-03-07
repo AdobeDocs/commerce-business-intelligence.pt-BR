@@ -1,21 +1,21 @@
 ---
-title: Conectar pré-loja
+title: Conectar PrestaShop
 description: Saiba como conectar dados do PrestaShop ao [!DNL MBI].
 exl-id: b6f240c0-9461-4015-a56a-64e8e67392fa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '85'
 ht-degree: 0%
 
 ---
 
-# Connect `PrestaShop`
+# Conectar `PrestaShop`
 
 ![](../../../assets/Prestashop-logo.png)
 
-Quer ver o desempenho de sua empresa ou encontrar suas fontes e canais de aquisição mais valiosos? Conectar seu `PrestaShop` para [!DNL MBI] permitirá que você responda a essas perguntas e muito mais.
+Quer ver o desempenho da sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos? Conectar o `PrestaShop` dados para [!DNL MBI] O permite responder a essas perguntas e muito mais.
 
-O `PrestaShop` o banco de dados é baseado em `MySQL`, você pode conectá-lo ao [!DNL MBI] através de [conexão direta](../integrations/mysql-via-a-direct-connection.md), [`cPanel`](../integrations/mysql-via-cpanel.md)ou [via `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Nós nos importamos com seus dados, então recomendamos usar o `SSH` , já que é o mais seguro.
+A variável `PrestaShop` o banco de dados é baseado em `MySQL`, você pode conectá-lo a [!DNL MBI] por meio de uma [conexão direta](../integrations/mysql-via-a-direct-connection.md), [`cPanel`](../integrations/mysql-via-cpanel.md)ou [por meio de um `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). O Adobe recomenda o uso de `SSH` método, pois é o mais seguro.
 
 ## Documentação relacionada
 
