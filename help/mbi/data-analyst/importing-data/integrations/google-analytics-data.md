@@ -2,28 +2,34 @@
 title: Dados de Google Analytics esperados
 description: Saiba como interagir com suas métricas do Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 0e9d30155432a29cf67d29a10646a2971ea0382f
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Esperado [!DNL Google Analytics] dados
 
-Depois de conectar um [!DNL Google Analytics] integração, você pode interagir com o seu [!DNL Google Analytics] métricas *imediatamente no`Visual Report Builder`*. Ao inserir a variável `Visual Report Builder`, se você clicar em **[!UICONTROL Add a Metric]**, uma série de métricas do [!DNL Google Analytics] O perfil do aparece em uma lista suspensa imediatamente abaixo das métricas na Data Warehouse.
+Depois de conectar um [!DNL Google Analytics] integração, você pode interagir com [!DNL Google Analytics] métricas *imediatamente no`Visual Report Builder`*. Ao inserir o `Visual Report Builder`, se você clicar em **[!UICONTROL Add a Metric]**, uma série de métricas do [!DNL Google Analytics] O perfil do é exibido em uma lista suspensa, imediatamente abaixo das métricas na sua Data Warehouse.
 
-A variável [!DNL Google Analytics] a integração está *live* — isso significa que a variável `Report Builder` solicita dados de [!DNL Google Analytics] *imediatamente* ao adicionar uma métrica ao seu relatório. Também significa que as métricas que você pode acessar são definidas exatamente como estão [!DNL Google Analytics]e que esses valores não são *em depósito* no seu [!DNL MBI] conta — exibida apenas visualmente em seus relatórios.
+O [!DNL Google Analytics] integração é *live* — isso significa que a variável `Report Builder` solicita dados de [!DNL Google Analytics] *imediatamente* ao adicionar uma métrica ao seu relatório. Também significa que as métricas que você pode acessar são definidas exatamente como estão no [!DNL Google Analytics]e que esses valores não são *depósito* em seu [!DNL MBI] conta - exibida apenas visualmente em seus relatórios.
 
-[!DNL Google Analytics] integrações no [!DNL MBI] use o [!DNL Google Analytics] [API de relatórios principais](https://developers.google.com/analytics/devguides/reporting/core/v3/)e oferecem suporte às seguintes métricas e dimensões.
++++Métricas e Dimension compatíveis (Google Analytics 3 ou Universal Analytics)
 
 >[!NOTE]
 >
->Para evitar resultados inesperados ou absurdos, confirme se as dimensões usadas são compatíveis com uma ou mais métricas usadas na `Report Builder`. Você pode verificar [aqui](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>Em 1º de julho de 2023, o Universal Analytics padrão ([!DNL Google Analytics] 3) as propriedades não processarão mais os dados. Você poderá ver seus relatórios do Universal Analytics por um período de tempo após 1º de julho de 2023. No entanto, novos dados só fluirão para [!DNL Google Analytics] 4 propriedades.
+
+[!DNL Google Analytics] integrações em [!DNL MBI] use o [!DNL Google Analytics] [API dos Relatórios principais](https://developers.google.com/analytics/devguides/reporting/core/v3/)e suportam as seguintes métricas e dimensões.
+
+>[!NOTE]
+>
+>Para evitar resultados inesperados ou sem sentido, confirme se todas as dimensões usadas são compatíveis com uma ou mais métricas usadas na `Report Builder`. Você pode verificar [here](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Métricas suportadas
 
-| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome/Fórmula |
+| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome / Fórmula |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -77,7 +83,7 @@ A variável [!DNL Google Analytics] a integração está *live* — isso signifi
 
 ## Dimension compatíveis
 
-| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome/Fórmula | Agrupável? |
+| [!DNL MBI] Nome de exibição | [!DNL Google Analytics] Nome / Fórmula | Agrupável? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -143,3 +149,17 @@ A variável [!DNL Google Analytics] a integração está *live* — isso signifi
 | `Year` | `ga:year` | `No` |
 
 {style="table-layout:auto"}
+
++++
+
++++Métricas e Dimension compatíveis (Google Analytics 4)
+
+[!DNL Google Analytics] integrações em [!DNL MBI] use o [!DNL Google Analytics] [API de dados v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+
+>[!NOTE]
+>
+> O MBI não suporta as seguintes dimensões: `cohort`, `cohortNthDay`, `cohortNthMonth`e `cohortNthWeek`.
+>
+>Para evitar resultados inesperados ou sem sentido, confirme se todas as dimensões usadas são compatíveis com uma ou mais métricas usadas na `Visual Report Builder`. Você pode verificar o [Gerenciador de Dimension e Métricas do GA4](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+
++++

@@ -1,36 +1,36 @@
 ---
-title: Acessar o [!DNL MBI] Conta
-description: Saiba mais sobre como fazer logon no seu [!DNL MBI] conta.
+title: Acesse seu [!DNL MBI] Conta
+description: Saiba mais sobre como fazer logon no [!DNL MBI] conta.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 7f168ff545a68e5ee9ec2f80928a653fd6a1370b
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Acessar o ativado [!DNL MBI] account
+# Acessar as [!DNL MBI] account
 
-Depois de ativar o [!DNL MBI] contabilizar para [no local](../getting-started/onpremise-activation.md) ou [nuvem](../getting-started/cloud-activation.md) e tiver trabalhado com a sua equipe de conta do Adobe para finalizar as etapas de configuração, agora é possível entrar em sua conta.
+Depois de ativar o [!DNL MBI] seja para [no local ou na nuvem](../getting-started/onpremise-activation.md) e trabalhou com a Equipe da conta do Adobe para finalizar as etapas de configuração, agora é possível fazer logon em sua conta.
 
-Você pode entrar com seu [!DNL Adobe ID] ou usando seu [!DNL MBI] endereço de e-mail e senha.
+Você pode fazer logon com sua [!DNL Adobe ID] ou usando a [!DNL MBI] endereço de email e senha.
 
-![fazer logon](../assets/sign-in.png)
+![logon](../assets/sign-in.png)
 
-## Entrar usando seu [!DNL Adobe ID]
+## Faça logon usando a [!DNL Adobe ID]
 
 1. Clique em **[!UICONTROL Sign in with Adobe ID]**.
 
    ![logon na adobe](../assets/sign-in-adobe.png)
 
-1. Insira o endereço de email que você usou ao criar sua [!DNL MBI] conta. Se você ainda não tiver uma conta Adobe, clique em **[!UICONTROL Create an account]** e insira suas informações. Lembre-se de usar o endereço de email usado ao criar o [!DNL MBI] conta. O endereço de email é a chave necessária para acessar a conta Adobe.
+1. Insira o endereço de email usado ao criar o [!DNL MBI] conta. Se você ainda não tiver uma conta Adobe, clique em **[!UICONTROL Create an account]** e insira suas informações. Lembre-se de usar o endereço de email usado ao criar seu [!DNL MBI] conta. O endereço de email é a chave que você precisa para acessar sua conta do Adobe.
 
 >[!NOTE]
 >
->Se você fizer logon usando sua [!DNL Adobe ID], você não poderá alterar o [!DNL MBI] senha do perfil.
+>Se você fizer logon usando sua [!DNL Adobe ID], não é possível alterar a [!DNL MBI] senha do perfil.
 
-## Entrar usando seu nome de usuário e senha
+## Fazer logon usando seu nome de usuário e senha
 
-Insira seu endereço de email e senha e clique em **[!UICONTROL Sign In]**.
+Digite seu endereço de email e senha e clique em **[!UICONTROL Sign In]**.
 
 Agora você tem acesso ao [!DNL MBI].
