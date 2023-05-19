@@ -2,9 +2,9 @@
 title: Solicite dados usando o recurso Mostrar superior/inferior
 description: Saiba como ordenar seus dados usando o recurso Mostrar superior/inferior.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Esse tipo de classificação e ordem de dados pode ser feito em relatórios que 
 
 ## Como faço para usá-lo? {#how}
 
-Depois de clicar na guia **[!UICONTROL Show Top/Bottom link]**, uma janela será exibida, onde você poderá definir os parâmetros de exibição e classificação. O número na caixa de texto pode ser um número inteiro (como `5`ou `ALL`. Em seguida, você pode optar por classificar o relatório pela métrica OU pelo agrupamento.
+Clique em **[!UICONTROL Show Top/Bottom link]** para definir os parâmetros de exibição e classificação. O número na caixa de texto pode ser um número inteiro (como `5`ou `ALL`. Em seguida, você pode optar por classificar o relatório pela métrica OU pelo agrupamento.
 
 Por exemplo, se você quiser exibir as cinco fontes de referência que geraram mais receita, esta é a maneira como você faz isso:
 

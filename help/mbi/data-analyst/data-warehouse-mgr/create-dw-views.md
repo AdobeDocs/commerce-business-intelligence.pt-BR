@@ -2,9 +2,9 @@
 title: Criar e usar visualizações do Data Warehouse
 description: Saiba mais sobre um método de criação de novas tabelas armazenadas modificando uma tabela existente ou unindo ou consolidando várias tabelas usando SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1071'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,7 @@ Aqui, é possível criar uma visualização seguindo as instruções de exemplo 
 1. Se estiver observando uma view existente, clique em **[!UICONTROL New Data Warehouse View]** para abrir uma janela de consulta em branco. Se uma janela de query em branco já estiver aberta, continue para a próxima etapa.
 1. Nomeie a exibição digitando o `View Name` campo. O nome fornecido aqui determina o nome de exibição da exibição na Data Warehouse. `View names` são limitados a letras minúsculas, números e sublinhados (_). Todos os outros caracteres são proibidos.
 1. Insira sua consulta na janela intitulada `Select Query`, utilizando a sintaxe PostgreSQL padrão.
+
    >[!NOTE]
    >
    >Sua consulta deve fazer referência a nomes de coluna específicos. A utilização dos `*`caractere para selecionar todas as colunas não é permitido.
@@ -76,7 +77,7 @@ Veja um dos exemplos mencionados anteriormente neste artigo: consolidação [!DN
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-Para criar uma única tabela de gastos com anúncios contendo [!DNL Facebook] e [!DNL AdWords] campanhas, você deve escrever uma consulta SQL e usar o método `UNION ALL` função. A `UNION ALL` é usada com mais frequência para combinar várias consultas SQL distintas, ao anexar os resultados de cada consulta a uma única saída.
+Para criar uma única tabela de gastos com anúncios contendo [!DNL Facebook] e [!DNL Google AdWords] campanhas, você deve escrever uma consulta SQL e usar o método `UNION ALL` função. A `UNION ALL` é usada com mais frequência para combinar várias consultas SQL distintas, ao anexar os resultados de cada consulta a uma única saída.
 
 Há alguns requisitos para uma `UNION` que vale a pena mencionar, conforme descrito no PostgreSQL [documentação](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -129,11 +130,11 @@ Salvando a consulta acima como um `Data Warehouse View` cria uma tabela com ambo
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
 | **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
-Em vez de criar um conjunto separado de métricas de marketing para cada fonte de anúncio, agora é possível criar um único conjunto de métricas usando a tabela acima para capturar todos os seus anúncios.
+Em vez de criar um conjunto separado de métricas de marketing para cada fonte de anúncio, você pode criar um único conjunto de métricas usando a tabela acima para capturar todos os seus anúncios.
 
 **Procurando ajuda adicional?**
 
-Gravação de SQL e criação `Data Warehouse Views` O não está incluído no Suporte técnico da. No entanto, a equipe de Serviços oferece assistência na criação de visualizações. A equipe de suporte pode ajudar em tudo, desde migrar um banco de dados herdado por um novo banco de dados até criar uma única Exibição do Data Warehouse para fins de análise específica.
+Gravação de SQL e criação `Data Warehouse Views` O não está incluído no Suporte técnico da. No entanto, a [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) O oferece assistência para a criação de exibições. A equipe de suporte pode ajudar em tudo, desde migrar um banco de dados herdado por um novo banco de dados até criar uma única Exibição do Data Warehouse para fins de análise específica.
 
 Normalmente, a criação de um novo `Data Warehouse View` para fins de consolidação de 2 a 3 tabelas estruturadas de forma semelhante, são necessárias cinco horas de serviço, o que se traduz em aproximadamente US$ 1.250 de trabalho. No entanto, abaixo estão alguns fatores comuns que podem aumentar o investimento esperado necessário:
 

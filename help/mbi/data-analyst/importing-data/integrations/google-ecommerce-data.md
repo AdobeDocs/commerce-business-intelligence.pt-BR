@@ -2,7 +2,7 @@
 title: Esperado[!DNL Google ECommerce]dados
 description: Saiba quais tipos de dados são compartilhados com o Google ECommerce.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Esperado[!DNL Google ECommerce] dados
 
-Depois que o [!DNL Google ECommerce] a conta foi conectada com sucesso [!DNL MBI], o sistema começará a importar dados para uma tabela denominada `ecommerce`. Esta tabela registra uma linha de dados para cada transação. Isso inclui as seguintes colunas de dados no nível do pedido:
+Depois que o [!DNL Google ECommerce] a conta foi conectada com sucesso [!DNL Commerce Intelligence], o sistema começará a importar dados para uma tabela denominada `ecommerce`. Esta tabela registra uma linha de dados para cada transação. Isso inclui as seguintes colunas de dados no nível do pedido:
 
 | Nome da coluna | Descrição |
 |-----|-----|

@@ -2,7 +2,7 @@
 title: Pesquisar painéis
 description: Saiba como usar o recurso Pesquisa global para procurar painéis e como pesquisar painéis de propriedade de outros usuários.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Pesquisar um painel
 
-Este artigo mostra como usar a variável [`Global Search` recurso](#global) para procurar painéis e como pesquisar [painéis de propriedade de outros usuários](#other).
+Este tópico mostra como usar a variável [[!DNL Global Search] recurso](#global) para procurar painéis e como pesquisar [painéis de propriedade de outros usuários](#other).
 
 ## Pesquisa global {#global}
 
-A variável `Global Search` permite procurar e selecionar painéis para visualização.
+A variável [!DNL Global Search] permite procurar e selecionar painéis para visualização.
 
 * *Para visualizar uma lista de seus painéis existentes*, clique no painel.
 

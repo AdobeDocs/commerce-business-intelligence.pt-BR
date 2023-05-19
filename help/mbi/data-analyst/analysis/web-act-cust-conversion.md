@@ -2,22 +2,22 @@
 title: Análise da atividade do site e taxas de conversão do cliente
 description: Saiba como configurar um painel que rastreará a atividade do site, incluindo exibições de página, sessões e usuários, e o índice de conversão do cliente ao longo do tempo.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
 # Análise da atividade do site
 
-[!DNL MBI] O permite integrar facilmente seus dados de custo de publicidade ao restante dos dados. Isso não apenas permite que você entenda a atividade do site, mas também permite que você obtenha a porcentagem de visitantes do site que se tornam um usuário registrado ou fazem uma compra.
+[!DNL Adobe Commerce Intelligence] O permite integrar facilmente seus dados de custo de publicidade ao restante dos dados. Isso não apenas permite que você entenda a atividade do site, mas também permite que você obtenha a porcentagem de visitantes do site que se tornam um usuário registrado ou fazem uma compra.
 
-Este artigo demonstra como configurar um painel que rastreará as atividades do site, incluindo exibições de página, sessões e usuários, e a taxa de conversão do cliente ao longo do tempo.
+Este tópico demonstra como configurar um painel que rastreará as atividades do site, incluindo exibições de página, sessões e usuários, e a taxa de conversão do cliente ao longo do tempo.
 
 ## Pré-requisitos
 
-**Importar seus dados de custo de publicidade** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) para [!DNL MBI] - isso sincroniza automaticamente o [!DNL AdWords] gastos em MBI.
+**Importar seus dados de custo de publicidade** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) para [!DNL Adobe Commerce Intelligence] - isso sincroniza automaticamente o [!DNL AdWords] gastar no Commerce Intelligence.
 
 **Rastrear dados do canal de aquisição de usuários** - Para amarrar o seu [!DNL Google AdWords] dados para pedidos específicos no banco de dados, é necessário [rastrear aquisição de usuários](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Isso permite conectar cada pedido a uma fonte e um meio utm.
 
@@ -103,4 +103,4 @@ Essa coleção de relatórios é criada usando o seguinte:
 
 Agora que você tem acesso aos dados em seu tráfego da Web e taxas de conversão, pode começar a explorar esses dados para impulsionar decisões de negócios, como Quais sites são melhores para direcionar tráfego para o seu site? ou quais de suas campanhas são mais eficazes para conquistar clientes com o alto valor vitalício?
 
-À medida que ajusta os gastos com anúncios e a estratégia de marketing, você pode continuar a acompanhar os resultados em [!DNL MBI], iterando neste painel para atender às prioridades em evolução da sua empresa.
+À medida que ajusta os gastos com anúncios e a estratégia de marketing, você pode continuar a acompanhar os resultados em [!DNL Commerce Intelligence], iterando neste painel para atender às prioridades em evolução da sua empresa.

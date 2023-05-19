@@ -2,16 +2,16 @@
 title: Análise do impacto do cupom
 description: Saiba como analisar o impacto do cupom na aquisição e retenção de clientes.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1359'
 ht-degree: 2%
 
 ---
 
 # Impacto do cupom
 
-Analisar como os clientes usam seus cupons pode fornecer informações significativas sobre sua empresa. Especificamente, analisar como adquirir e reter clientes por meio de cupons. Este artigo explora análises que podem ajudar você a responder aos seguintes tipos de perguntas:
+Analisar como os clientes usam seus cupons pode fornecer informações significativas sobre sua empresa. Especificamente, analisar como adquirir e reter clientes por meio de cupons. Este tópico explora análises que podem ajudá-lo a responder aos seguintes tipos de perguntas:
 
 * Quantos clientes você está adquirindo através de cupons?
 * Os clientes adquiridos com cupons têm mais probabilidade de fazer compras repetidas do que os clientes não adquiridos por meio de cupons?
@@ -69,7 +69,7 @@ O número de ordens repetidas para aquisições que não são de cupom é muito 
 
 Da mesma forma, o número de ordens repetidas feitas com um cupom é maior para aquisições que não são de cupom.
 
-## #Percent de pedidos repetidos com cupom
+## Porcentagem de ordens repetidas com cupom
 
 Os clientes não adquiridos com cupom têm uma porcentagem muito menor de pedidos repetidos com um cupom aplicado do que os clientes adquiridos com cupom. Assim, para os clientes adquiridos com cupão, quase metade das ordens repetidas tem um cupão aplicado. Neste exemplo, os clientes de cupom adquiridos tendem a fazer compras repetidas com cupons.
 
@@ -149,4 +149,4 @@ O maior número de clientes foi adquirido por meio do cupom com &quot;20% de des
 
 ## Encapsulamento {#wrapup}
 
-Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda com esses tipos de perguntas, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda com esses tipos de perguntas, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

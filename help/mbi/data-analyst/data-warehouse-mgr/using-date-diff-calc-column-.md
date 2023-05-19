@@ -2,7 +2,7 @@
 title: Usando a Coluna Calculada de Diferença de Data
 description: Saiba mais sobre a finalidade e os usos da coluna calculada Diferença de datas.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
@@ -15,7 +15,7 @@ Este tópico descreve o objetivo e os usos da `Date Difference` coluna calculada
 
 **Explicação**
 
-A variável `Date Difference` tipo de coluna: encontra o tempo entre dois eventos pertencentes a um único registro, com base nos carimbos de data e hora do evento. O valor bruto calculado nessa coluna está em segundos, mas é convertido automaticamente em minutos, horas, dias e assim por diante, para exibição em relatórios. No entanto, quando usado como um filtro/grupo por, você deseja usar o valor em segundos.
+A variável `Date Difference` o tipo de coluna calcula o tempo entre dois eventos pertencentes a um único registro, com base nos carimbos de data e hora do evento. O valor bruto calculado nessa coluna está em segundos, mas é convertido automaticamente em minutos, horas, dias e assim por diante, para exibição em relatórios. No entanto, quando usado como um filtro/grupo por, você deseja usar o valor em segundos.
 
 A `date difference` a coluna calculada pode ser usada para criar uma métrica que calcula o tempo médio ou mediano entre dois eventos, como o tempo médio entre o registro do cliente e seus primeiros pedidos.
 

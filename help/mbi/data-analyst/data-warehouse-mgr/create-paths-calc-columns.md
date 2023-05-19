@@ -2,9 +2,9 @@
 title: Criar ou excluir caminhos para colunas calculadas
 description: Saiba como definir um caminho que descreva como a tabela em que você está criando uma coluna está relacionada à tabela da qual você está obtendo informações.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Quando [criação de colunas calculadas](../data-warehouse-mgr/creating-calculat
 1. Como as tabelas em seus bancos de dados se relacionam
 1. As chaves primária e estrangeira que definem esta relação
 
-Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste artigo. Uma visão geral desses conceitos se você estiver se sentindo um pouco inseguro, mas talvez queira perguntar a um especialista técnico em sua organização ou entrar em contato com a equipe de suporte do Adobe.
+Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode solicitar um especialista técnico em sua organização ou entrar em contato com o [Equipe de serviços profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Atualizadores de relacionamentos de tabela e tipos de chave {#refresher}
 
@@ -36,7 +36,7 @@ As tabelas podem ser relacionadas entre si de uma das três formas a seguir:
 
 {style="table-layout:auto"}
 
-Uma vez que a relação entre duas tabelas é entendida, ela pode ser usada para determinar qual caminho deve ser criado para trazer informações de uma tabela para outra. A próxima etapa requer o conhecimento das chaves primária e estrangeira que facilitam uma relação com a tabela.
+Quando uma relação entre duas tabelas é entendida, ela pode ser usada para determinar qual caminho deve ser criado para trazer informações de uma tabela para outra. A próxima etapa requer o conhecimento das chaves primária e estrangeira que facilitam uma relação com a tabela.
 
 ### Chaves primárias e estrangeiras {#keys}
 
@@ -59,7 +59,7 @@ Agora, você pode criar o caminho.
 1. Clique em **[!UICONTROL Data > Data Warehouse]**.
 1. Na lista da tabela, clique na tabela na qual deseja criar a coluna. Neste exemplo, é o `customers` tabela.
 1. O esquema de tabela é exibido. Clique em **[!UICONTROL Create New Column]**.
-1. Nomeie a coluna - por exemplo, `Customer's orders`.
+1. Dê um nome à coluna, por exemplo, `Customer's orders`.
 1. Selecione a definição da coluna. Confira o [Guia da coluna calculada](../data-warehouse-mgr/creating-calculated-columns.md) para uma folha de características útil.
 1. No [!UICONTROL Select table and column] , clique na guia **[!UICONTROL Create new path]** opção.
 
@@ -75,20 +75,23 @@ Agora, você pode criar o caminho.
 
 ### Limitações da criação de caminhos {#limits}
 
-* **[!DNL MBI]não é possível adivinhar relações de chave primária/estrangeira**. Você não deseja introduzir dados incorretos em sua conta, portanto, a criação de caminhos deve ser feita manualmente.
-* **Atualmente, os caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, em seguida, à tabela de &quot;destino final&quot;, ou (2) consultar a equipe do Adobe para encontrar a melhor abordagem para suas metas.
+* **[!DNL Commerce Intelligence]não é possível adivinhar relações de chave primária/estrangeira**. Você não deseja introduzir dados incorretos em sua conta, portanto, a criação de caminhos deve ser feita manualmente.
+
+* **Atualmente, os caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Então, pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, em seguida, à tabela &quot;destino final&quot;, ou (2) consultar com o [Equipe de serviços profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para encontrar a melhor abordagem para suas metas.
+
 * **Uma coluna só pode ser a referência de chave estrangeira para UM caminho de cada vez**. Por exemplo, se `order_items.order_id` aponta para `orders.id`, depois `order_items.order_id` não pode apontar para outra coisa.
+
 * **`Many-to-many`tecnicamente podem ser criados, mas geralmente produzem dados ruins porque nenhum dos lados é verdadeiro `one-to-many` chave estrangeira**. A melhor maneira de abordar esses caminhos sempre depende da análise específica desejada. Consulte a equipe de analistas do RJ para descobrir a melhor solução.
 
 Se você for impedido de criar uma coluna calculada devido a uma ou mais limitações acima, entre em contato com o suporte com uma descrição da coluna em que você está
 
 ## Excluir um Caminho de Coluna Calculada {#delete}
 
-Criou um caminho incorreto na Data Warehouse? Ou talvez você esteja fazendo uma pequena limpeza de primavera e queira arrumar? Se precisar excluir um caminho da sua conta, você poderá [enviar um tíquete para os analistas de suporte do Adobe](../../guide-overview.md). **Certifique-se de incluir o nome do caminho!**
+Criou um caminho incorreto na Data Warehouse? Ou talvez você esteja fazendo uma pequena limpeza de primavera e queira arrumar? Se precisar excluir um caminho da sua conta, você poderá [enviar um tíquete para os analistas de suporte do Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Certifique-se de incluir o nome do caminho!**
 
 ## Encapsulamento {#wrapup}
 
-Agora que você está familiarizado com a criação de caminhos para colunas calculadas na sua Data Warehouse. Se não tiver certeza sobre um caminho específico, lembre-se de que você sempre pode clicar em **[!UICONTROL Support]** no seu [!DNL MBI] conta para obter assistência.
+Agora que você está familiarizado com a criação de caminhos para colunas calculadas na sua Data Warehouse. Se não tiver certeza sobre um caminho específico, lembre-se de que você sempre pode clicar em **[!UICONTROL Support]** no seu [!DNL Commerce Intelligence] conta para obter assistência.
 
 ## Relacionados
 

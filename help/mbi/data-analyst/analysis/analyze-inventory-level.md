@@ -2,16 +2,16 @@
 title: Analisando Níveis de Inventário
 description: Saiba como analisar níveis de inventário.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Analisar Níveis de Inventário
 
-Este tópico demonstra como configurar um painel que fornece informações sobre o inventário atual. Este tópico contém instruções para clientes sobre a arquitetura antiga ou a nova arquitetura. Você está na arquitetura herdada se não tem o **[!UICONTROL Data Warehouse Views]** opção no campo **[!UICONTROL Manage Data]** menu ). Se você estiver na arquitetura herdada, envie um [nova solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** depois de alcançar a seção designada no _Colunas calculadas_ instruções abaixo.
+Este tópico demonstra como configurar um painel que fornece informações sobre o inventário atual e contém instruções para clientes sobre a arquitetura herdada ou a nova arquitetura. Você está na arquitetura herdada se não tem o **[!UICONTROL Data Warehouse Views]** opção no campo **[!UICONTROL Manage Data]** menu. Se você estiver na arquitetura herdada, envie um [nova solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** depois de alcançar a seção designada no _Colunas calculadas_ instruções abaixo.
 
 ## Colunas a rastrear:
 
@@ -29,7 +29,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
 
 ## Colunas calculadas:
 
-### Nova arquitetura
++++ Nova arquitetura
 
 * **[!UICONTROL catalog_product_entity]** tabela:
    * **`Product's most recent order date`**
@@ -118,7 +118,8 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
 
 
 
-### Arquitetura herdada
++++
++++ Arquitetura herdada
 
 * **[!UICONTROL catalog_product_entity]** tabela:
    * **`Product's most recent order date`**
@@ -189,6 +190,8 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
 
 
 
++++
+
 ## Métricas
 
 ### Instruções de métricas
@@ -240,4 +243,4 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
       [!UICONTROL Chart type]: `Table`
 
 
-Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

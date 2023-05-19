@@ -2,9 +2,9 @@
 title: Gerenciador de Data Warehouse
 description: Saiba como gerenciar configurações de sincronização de tabela e coluna, detalhar um esquema de tabela e criar colunas calculadas para usar em relatórios.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Exige [Permissões de administrador](../../administrator/user-management/user-management.md)
 
-O Gerenciador de Datas Warehouse, acessado ao clicar em **[!UICONTROL Manage Data > Data Warehouse]** na barra lateral, é o portal para o seu [!DNL MBI] Data Warehouse. Usando o Gerenciador de Data Warehouse, você pode gerenciar configurações de sincronização de tabela e coluna, detalhar um esquema de tabela e criar colunas calculadas para usar em relatórios.
+O Gerenciador de Datas Warehouse, acessado ao clicar em **[!UICONTROL Manage Data > Data Warehouse]**, é o portal para o seu [!DNL Adobe Commerce Intelligence] Data Warehouse. Usando o Gerenciador de Data Warehouse, você pode gerenciar configurações de sincronização de tabela e coluna, detalhar um esquema de tabela e criar colunas calculadas para usar em relatórios.
 
-Este artigo abrange:
+Este tópico abrange:
 
 * [Aprendendo o seu caminho](#learning)
 * [Sincronização de tabelas e colunas](#syncing)
@@ -39,7 +39,7 @@ A variável `Synced Tables` A opção mostra todas as tabelas que já foram adic
 Não veja a tabela que você está procurando na `All Tables` lista? Há algumas razões possíveis para isso:
 
 * A fonte de dados ainda não foi adicionada
-* A fonte de dados é um banco de [!DNL MBI] que você criou não tem acesso. Nesse caso, você ou o administrador do banco de dados deve conceder acesso.
+* A fonte de dados é um banco de [!DNL Commerce Intelligence] que você criou não tem acesso. Nesse caso, você ou o administrador do banco de dados deve conceder acesso.
 * A fonte de dados ou tabela foi adicionada recentemente e ainda não foi sincronizada
 
 ## Sincronização de tabelas e colunas {#syncing}
@@ -61,7 +61,7 @@ O Gerenciador de Datas Warehouse não só oferece a capacidade de visualizar e g
    Se você estiver sincronizando uma tabela que vem diretamente do seu banco de dados, é possível que `Primary Keys` não podem ser indicadas. Nesse caso, entre em contato com o administrador do banco de dados para solicitar que uma ou mais chaves primárias sejam adicionadas à tabela.
 1. Quando terminar, clique no botão ![botão](../../assets/button.png) botão.
 
-A *Sucesso!* será exibida e o status será alterado para `Pending` para as colunas selecionadas. Depois que a próxima atualização completa for concluída, as tabelas e colunas recém-sincronizadas estarão disponíveis para uso nos relatórios. Você também pode definir novas [métodos de replicação](./cfg-replication-methods.md) após a sincronização inicial.
+A *Sucesso!* será exibida e o status será alterado para `Pending` para as colunas selecionadas. Depois que a próxima atualização completa for concluída, as tabelas e colunas recém-sincronizadas estarão disponíveis para uso nos relatórios. Você também pode definir novos [métodos de replicação](./cfg-replication-methods.md) após a sincronização inicial.
 
 Aqui está uma rápida visão de todo o processo:
 
@@ -119,6 +119,6 @@ Quando estiver pronto para usar suas novas colunas nos relatórios, [primeiro vo
 
 ## Encapsulamento
 
-Este tutorial abordou muito material. Até agora, você deve ter uma sólida compreensão do que é um banco de dados, como os dados são organizados, como as tabelas se relacionam entre si e o que você pode fazer com o Gerenciador de Datas Warehouse.
+Este artigo cobriu um monte de material. Até agora, você deve ter uma sólida compreensão do que é um banco de dados, como os dados são organizados, como as tabelas se relacionam entre si e o que você pode fazer com o Gerenciador de Datas Warehouse.
 
-Excelente! Teste seu novo conhecimento através da [criação de uma coluna calculada](../data-warehouse-mgr/creating-calculated-columns.md) ou [fazer alguns relatórios interessantes](../../tutorials/using-visual-report-builder.md).
+Teste seu conhecimento testando o [criação de uma coluna calculada](../data-warehouse-mgr/creating-calculated-columns.md) ou [fazer alguns relatórios interessantes](../../tutorials/using-visual-report-builder.md).

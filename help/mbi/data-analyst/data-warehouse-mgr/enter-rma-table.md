@@ -2,20 +2,20 @@
 title: Tabela enterprise_rma
 description: Saiba como analisar informações sobre uma solicitação de retorno específica.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Tabela enterprise_rma
 
-Cada linha no `enterprise_rma` tabela (geralmente chamada de `magento_rma` no Commerce 2.x, mas o nome pode ser personalizado) contém informações sobre uma solicitação de devolução específica.
+Cada linha no `enterprise_rma` tabela (geralmente chamada de `magento_rma` no Adobe Commerce 2.x, mas o nome pode ser personalizado) contém informações sobre uma solicitação de retorno específica.
 
 >[!NOTE]
 >
->Essa tabela só vem como padrão com sua conta do Commerce se você for um `Enterprise Edition` ou `Enterprise Cloud Edition` cliente.
+>Essa tabela só vem como padrão com sua conta da Adobe Commerce se você for um `Enterprise Edition` ou `Enterprise Cloud Edition` cliente.
 
 ## Colunas Nativas Comuns
 

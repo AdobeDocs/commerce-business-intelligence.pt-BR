@@ -1,25 +1,25 @@
 ---
-title: Armazenamento de dados no Commerce
-description: Saiba como os dados são gerados, o que faz com que uma nova linha seja inserida e como as ações são registradas no banco de dados do Commerce.
+title: Armazenamento de dados no Adobe Commerce
+description: Saiba como os dados são gerados, o que causa a inserção de uma nova linha e como as ações são registradas no banco de dados do Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
 
 # Armazenamento de dados em [!DNL Adobe Commerce]
 
-A plataforma Adobe Commerce registra e organiza uma grande variedade de dados comerciais valiosos em centenas de tabelas. Este tópico descreve:
+A variável [!DNL Adobe Commerce] A platform registra e organiza uma grande variedade de dados comerciais valiosos em centenas de tabelas. Este tópico descreve:
 
 * como esses dados são gerados
-* o que exatamente faz com que uma nova linha seja inserida em uma das [Tabelas principais do Commerce](../data-warehouse-mgr/common-mage-tables.md)
-* como ações como fazer uma compra ou criar uma conta são registradas no banco de dados do Commerce
+* o que faz com que uma nova linha seja inserida em uma das [Tabelas principais do Commerce](../data-warehouse-mgr/common-mage-tables.md)
+* como ações como fazer uma compra ou criar uma conta são registradas na [!DNL Adobe Commerce] banco de dados
 
-Para explicar esses conceitos, consulte o seguinte exemplo:
+Para discutir esses conceitos, consulte o seguinte exemplo:
 
-`Clothes4U` A é uma varejista de roupas com presença on-line e física. Ele usa o Magento Open Source por trás de seu site para coletar e organizar dados.
+`Clothes4U` A é uma varejista de roupas com presença on-line e de tijolo e argamassa. Usa [!DNL Magento Open Source] por trás de seu site para coletar e organizar dados.
 
 ## `catalog\_product\_entity`
 
@@ -57,7 +57,7 @@ Logo após a adição dos três novos produtos, um novo cliente, `Sammy Customer
 * `email` - esse campo é preenchido pelo email que um novo cliente insere ao fazer sua conta
 * `created_at` - Essa coluna retorna o carimbo de data e hora de quando cada usuário ingressou
 
-## `sales\_flat\_order (or Sales\_order` se você tiver o Commerce 2.0 ou posterior)
+## `sales\_flat\_order (or Sales\_order` se você tiver [!DNL Adobe Commerce 2.x]
 
 Com a criação da conta concluída, `Sammy Customer` O está pronto para começar a fazer uma compra. No site, o cliente adiciona dois pares do `Throwback Bellbottoms` e um `V-Neck T-Shirt` ao carrinho. Satisfeito com as seleções, o cliente passa para o check-out e envia o pedido, criando a seguinte entrada no [tabela de ordem simples de venda](../data-warehouse-mgr/sales-flat-order-table.md):
 
@@ -73,7 +73,9 @@ Com a criação da conta concluída, `Sammy Customer` O está pronto para começ
    * Os dois pares de &quot;Throwback Bellbottom&quot; e &quot;V-Neck T-Shirt&quot; custam US $ 94,85 no total
 * `created_at` - Essa coluna retorna o carimbo de data e hora de quando cada pedido foi criado
 
-## `sales\_flat\_order\_item ( or Sales\_order\_item` se você tiver o Commerce 2.0 ou posterior)
+## `sales\_flat\_order\_item ( or Sales\_order\_item`
+
+(se você tiver o Commerce 2.0 ou posterior)
 
 Além da única linha no `Sales\_flat\_order` tabela, quando `Sammy Customer` envia a ordem, uma linha para cada item único nessa ordem é inserida na [`sales\_flat\_order\_item` tabela](../data-warehouse-mgr/sales-flat-order-item-table.md):
 

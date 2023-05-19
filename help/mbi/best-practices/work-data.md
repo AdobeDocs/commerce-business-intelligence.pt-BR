@@ -2,15 +2,15 @@
 title: Trabalhar com dados
 description: Saiba mais sobre as práticas recomendadas para organizar e trabalhar com esses dados.
 exl-id: cd898aa0-afec-481a-b800-d156d57aba85
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---
 
 # Trabalhar com dados
 
-O MBI permite importar dados de várias fontes. Nesta seção, conheça as práticas recomendadas para organizar e trabalhar com esses dados.
+[!DNL Adobe Commerce Intelligence] permite importar dados de várias fontes. Nesta seção, conheça as práticas recomendadas para organizar e trabalhar com esses dados.
 
-Você aprenderá a otimizar seu banco de dados e queries SQL; como verificar o status do ciclo de atualização e como reduzir o tempo do ciclo de atualização.
+Você aprenderá a otimizar seu banco de dados e suas consultas de SQL, a verificar o status do ciclo de atualização e a reduzir o tempo do ciclo de atualização.

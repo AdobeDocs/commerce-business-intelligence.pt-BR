@@ -2,16 +2,16 @@
 title: Atribuição de Google Analytics e UTM
 description: Saiba mais sobre o processo de atribuição da origem de Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Atribuição de Google Analytics e UTM
+# [!DNL Google Analytics] e atribuição UTM
 
-É essencial [rastrear a fonte de aquisição do usuário](../../data-analyst/analysis/google-track-user-acq.md) para [identificar as campanhas de publicidade com melhor desempenho](../../data-analyst/analysis/most-value-source-channel.md). Este artigo explora o processo de atribuição da origem de Google Analytics. Em outras palavras, que parte da informação é registrada quando.
+É essencial [rastrear a fonte de aquisição do usuário](../../data-analyst/analysis/google-track-user-acq.md) para [identificar as campanhas de publicidade com melhor desempenho](../../data-analyst/analysis/most-value-source-channel.md). Este tópico explora a [!DNL Google Analytics] processo de atribuição de origem. Em outras palavras, que parte da informação é registrada quando.
 
 ## O que é atribuição?
 
@@ -31,11 +31,11 @@ Quando os parâmetros UTM são especificados no URL, eles são analisados e colo
 
 A atribuição de último clique é o modelo de atribuição mais comum empregado por [!DNL Google Analytics]. Neste caso, o [!DNL Google Analytics] O cookie representa os parâmetros de UTM da fonte mais recente antes do evento de conversão e isso é [registrado no banco de dados](../../data-analyst/analysis/google-track-user-acq.md). A variável [!DNL Google Analytics] O cookie do substituirá os parâmetros UTM anteriores somente se o usuário clicar em um novo URL que contenha um novo conjunto de parâmetros UTM.
 
-Por exemplo, considere um usuário que visita um site pela primeira vez por meio do [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *pesquisa paga*, depois retorna via *pesquisa orgânica*, e finalmente volta para a *site diretamente* ou por meio de um *link do email* **sem parâmetros UTM** antes do evento de conversão. Neste exemplo, a variável [!DNL Google Analytics] cookie diz que a fonte do usuário é orgânica, pois representa a última fonte antes da conversão. A variável *caminho* do usuário antes que o evento de conversão final seja ignorado. Se, em vez disso, o usuário visitou o site por meio de um link de email com UTM, a variável [!DNL Google Analytics] O cookie diria que a origem é &quot;email&quot;. Portanto, se houver parâmetros UTM existentes no cookie e o usuário entrar por meio direto, a variável [!DNL Google Analytics] cookie mostra os parâmetros UTM em vez de &quot;direto&quot;.
+Por exemplo, considere um usuário que visita um site pela primeira vez por meio do [!DNL Google Analytics] *pesquisa paga*, depois retorna via *pesquisa orgânica*, e finalmente volta para a *site diretamente* ou por meio de um *link do email* **sem parâmetros UTM** antes do evento de conversão. Neste exemplo, a variável [!DNL Google Analytics] cookie diz que a fonte do usuário é orgânica, pois representa a última fonte antes da conversão. A variável *caminho* do usuário antes que o evento de conversão final seja ignorado. Se, em vez disso, o usuário visitou o site por meio de um link de email com UTM, a variável [!DNL Google Analytics] O cookie diria que a origem é &quot;email&quot;. Portanto, se houver parâmetros UTM existentes no cookie e o usuário entrar por meio direto, a variável [!DNL Google Analytics] cookie mostra os parâmetros UTM em vez de &quot;direto&quot;.
 
 >[!NOTE]
 >
->Do usuário específico [!DNL Google Analytics] Os parâmetros de cookie são apagados quando o cookie [expira em](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage), ou quando um usuário limpa os cookies no navegador.*)
+>Do usuário específico [!DNL Google Analytics] Os parâmetros de cookie são apagados quando o cookie [expira em](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)ou quando um usuário limpa os cookies no navegador.*
 
 ### Atribuição de primeiro clique
 
@@ -45,10 +45,10 @@ Algumas ferramentas de atribuição pagas permitem capturar a &quot;pilha de pan
 
 [!DNL Google Analytics] O tem alguma funcionalidade robusta na interface da Web que permite executar quatro modelos de atribuição diferentes:
 
-* primeiro clique
-* último clique
-* linear (divide a receita igualmente entre todas as fontes no caminho)
-* ponderado (atribuição personalizada)
+1. primeiro clique
+1. último clique
+1. linear (divide a receita igualmente entre todas as fontes no caminho)
+1. ponderado (atribuição personalizada)
 
 Agora que você entende qual é o modelo de atribuição para cada micro ou macroconversão, a questão se torna &quot;O que você faz com a totalidade das conversões de um usuário?&quot;.  Por exemplo, verifique os UTMs registrados com base na lógica do último clique do GA:
 

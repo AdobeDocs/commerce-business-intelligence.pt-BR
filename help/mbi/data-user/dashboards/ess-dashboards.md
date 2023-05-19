@@ -2,7 +2,7 @@
 title: Painéis
 description: Saiba como criar e trabalhar com um painel.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Painéis
 
-[!DNL MBI] Os painéis fornecem uma visão rápida do desempenho da sua loja e das atividades de vendas. Painéis individuais podem ser compartilhados com outros usuários e organizados em grupos lógicos. Você também pode definir diferentes níveis de permissão para outros usuários.
+[!DNL Adobe Commerce Intelligence] Os painéis fornecem uma visão rápida do desempenho da sua loja e das atividades de vendas. Painéis individuais podem ser compartilhados com outros usuários e organizados em grupos lógicos. Você também pode definir diferentes níveis de permissão para outros usuários.
 
 É fácil criar um relatório, adicioná-lo a um painel e exportar os dados para o Excel. Os gráficos e relatórios podem ser redimensionados e arrastados para a posição no painel.
 
@@ -76,7 +76,7 @@ Entrada **[!DNL Manage Data** > **Dashboards]**, é possível gerenciar permiss�
 
 ### Compartilhamento de seus painéis {#sharingdash}
 
-Para realmente dimensionar [!DNL MBI] em toda a sua organização e fornecer insights valiosos, o Adobe incentiva você a compartilhar painéis que criar com outros membros da equipe. *Você pode compartilhar seus painéis* clicando no link `Share Dashboard` na parte superior da página.
+Para realmente dimensionar [!DNL Commerce Intelligence] em toda a sua organização e fornecer insights valiosos, o Adobe incentiva você a compartilhar painéis que criar com outros membros da equipe. *Você pode compartilhar seus painéis* clicando no link `Share Dashboard` na parte superior da página.
 
 Ao compartilhar um painel, você pode atribuir permissões em sua organização OU individualmente, o que significa que decide quem pode visualizar e editar seus relatórios.
 
@@ -113,7 +113,7 @@ Ao compartilhar um painel, você pode atribuir permissões em sua organização 
 
    **`Default`**
 
-   1. Para tornar esse painel o padrão para o seu [!DNL MBI] conta, clique em **[!UICONTROL Make Default]**.
+   1. Para tornar esse painel o padrão para o seu [!DNL Commerce Intelligence] conta, clique em **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

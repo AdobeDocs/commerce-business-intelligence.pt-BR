@@ -2,9 +2,9 @@
 title: Tipos de Colunas Calculadas
 description: Saiba como criar colunas para aumentar e otimizar seus dados para análise.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 No prazo de [Gerenciador de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), você pode criar colunas para aumentar e otimizar seus dados para análise. [Esta funcionalidade](../data-warehouse-mgr/creating-calculated-columns.md) pode ser acessado selecionando qualquer tabela no Gerenciador de Datas Warehouse e clicando em **[!UICONTROL Create New Column]**.
 
-Este artigo descreve os tipos de colunas que você pode criar com o Gerenciador de Datas Warehouse. Abrange igualmente a descrição, uma apresentação visual dessa coluna e uma [mapa de referência](#map) de todas as entradas necessárias para criar uma coluna. Há três maneiras de criar colunas calculadas:
+Este tópico descreve os tipos de colunas que você pode criar com o Gerenciador de Datas Warehouse. Abrange igualmente a descrição, uma apresentação visual dessa coluna e uma [mapa de referência](#map) de todas as entradas necessárias para criar uma coluna. Há três maneiras de criar colunas calculadas:
 
-* [Mesmas colunas calculadas da tabela](#sametable)
-* [Colunas calculadas de um para muitos](#onetomany)
-* [Colunas calculadas de muitos para um](#manytoone)
+1. [Mesmas colunas calculadas da tabela](#sametable)
+1. [Colunas calculadas de um para muitos](#onetomany)
+1. [Colunas calculadas de muitos para um](#manytoone)
 
 ## Mesmas colunas calculadas da tabela {#sametable}
 
@@ -85,13 +85,13 @@ Isso pode ser usado para criar dimensões de nível de cliente, como `Customer's
 
 ### Existe {#exists}
 
-Uma coluna calculada existe é um teste binário que determina a presença de um registro em muitos lados. Em outras palavras, a nova coluna retorna um valor `1` se o caminho conectar pelo menos uma linha em cada tabela, e `0` se nenhuma conexão puder ser feita.
+Uma coluna calculada é um teste binário que determina a presença de um registro em vários lados. Em outras palavras, a nova coluna retorna um valor `1` se o caminho conectar pelo menos uma linha em cada tabela, e `0` se nenhuma conexão puder ser feita.
 
 Esse tipo de dimensão pode determinar, por exemplo, se um cliente comprou um produto específico. Uso de uma associação entre um `customers` tabela e `orders` tabela, um filtro para um produto específico, uma dimensão `Customer has purchased Product X?` pode ser criado.
 
 ## Mapa de referência prático {#map}
 
-Se você estiver tendo problemas para lembrar o que são todas as entradas ao criar uma coluna calculada, tente manter esse mapa de referência disponível ao criar:
+Se você estiver tendo problemas para lembrar o que são todas as entradas ao criar uma coluna calculada, mantenha esse mapa de referência disponível quando estiver criando:
 
 ![](../../assets/merged_reference_map.png)
 
@@ -99,7 +99,7 @@ Se você estiver tendo problemas para lembrar o que são todas as entradas ao cr
 
 Em sua busca para analisar e responder perguntas sobre sua empresa, você pode se deparar com uma situação em que não é possível criar a coluna exata desejada.
 
-Para garantir um retorno rápido, a Adobe recomenda verificar o [Tipos de Coluna Calculados Avançados](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) guia para ver que tipo de colunas a equipe de suporte do Adobe pode criar. Esse artigo também aborda as informações necessárias para criar a coluna; inclua-a na solicitação.
+Para garantir um retorno rápido, a Adobe recomenda verificar o [Tipos de Coluna Calculados Avançados](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) guia para ver que tipo de colunas a equipe de suporte do Adobe pode criar. Esse tópico também aborda as informações necessárias para criar a coluna; inclua-a na solicitação.
 
 ## Documentação relacionada
 

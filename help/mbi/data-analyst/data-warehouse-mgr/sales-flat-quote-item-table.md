@@ -2,16 +2,16 @@
 title: tabela quote_item
 description: Saiba como trabalhar com a tabela quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # Tabela quote_item
 
-A variável `quote_item` tabela (`sales_flat_quote_item` em M1) 1) contém registros em cada item adicionado a um carrinho de compras, independentemente de o carrinho ter sido abandonado ou convertido em uma compra. Cada linha representa um item do carrinho. Devido ao tamanho potencial dessa tabela, a Adobe recomenda que você exclua periodicamente os registros se determinados critérios forem atendidos, como se houver algum carrinho não convertido com mais de 60 dias.
+A variável `quote_item` tabela (`sales_flat_quote_item` em M1) contém registros em cada item adicionado a um carrinho de compras, independentemente de o carrinho ter sido abandonado ou convertido em uma compra. Cada linha representa um item do carrinho. Devido ao tamanho potencial dessa tabela, a Adobe recomenda que você exclua periodicamente os registros se determinados critérios forem atendidos, como se houver algum carrinho não convertido com mais de 60 dias.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ A variável `quote_item` tabela (`sales_flat_quote_item` em M1) 1) contém regi
 | **Nome da coluna** | **Descrição** |
 |---|---|
 | `base_price` | Preço de uma unidade individual de um produto no momento em que o item foi adicionado ao carrinho, após [regras de preço de catálogo, descontos hierárquicos e preços especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) são aplicados e antes da aplicação de impostos, descontos de remessa ou carrinho. Isso é representado na moeda base do armazenamento. |
-| `created_at` | Carimbo de data e hora de criação do item do carrinho, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL MBI], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL MBI] que difere do fuso horário do seu banco de dados |
+| `created_at` | Carimbo de data e hora de criação do item do carrinho, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL Commerce Intelligence], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL Commerce Intelligence] que difere do fuso horário do seu banco de dados |
 | `item_id` PK) | Identificador exclusivo da tabela |
 | `name` | Nome do texto do item do pedido |
 | `parent_item_id` | `Foreign key` que relaciona um produto simples ao seu pacote principal ou produto configurável. Associar-se a `quote_item.item_id` para determinar os atributos do produto principal associados ao produto simples. Para itens do carrinho principal (ou seja, tipos de produto agrupados ou configuráveis), a variável `parent_item_id` é `NULL` |
@@ -70,7 +70,7 @@ A variável `quote_item` tabela (`sales_flat_quote_item` em M1) 1) contém regi
 
 `quote_item`
 
-* Associar-se a `quote_item` para criar colunas que associam detalhes do SKU pai configurável ou pacote ao produto simples. [Entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter assistência na configuração desses cálculos, caso esteja criando no gerenciador de Datas Warehouse.
+* Associar-se a `quote_item` para criar colunas que associam detalhes do SKU pai configurável ou pacote ao produto simples. [Entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter assistência na configuração desses cálculos, caso esteja criando no gerenciador de Datas Warehouse.
    * Caminho: `quote_item.parent_item_id` (muitos) => `quote_item.item_id` (um)
 
 `store`

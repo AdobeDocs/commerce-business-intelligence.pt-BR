@@ -2,7 +2,7 @@
 title: Adicionar Gráficos aos Painéis
 description: Saiba como adicionar gráficos aos painéis usando a função Adicionar relatório.
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adicionar Gráficos aos Painéis
 
-Os gráficos existentes podem ser adicionados aos painéis usando o `Add Report` localizada na área superior direita da tela. O mesmo gráfico pode ser adicionado a vários painéis, o que significa que, se o gráfico for editado, todos os painéis com esse gráfico refletirão a alteração.
+Os gráficos existentes podem ser adicionados aos painéis usando o [!UICONTROL Add Report] localizada na área superior direita da tela. O mesmo gráfico pode ser adicionado a vários painéis, o que significa que, se o gráfico for editado, todos os painéis com esse gráfico refletirão a alteração.
 
 >[!NOTE]
 >

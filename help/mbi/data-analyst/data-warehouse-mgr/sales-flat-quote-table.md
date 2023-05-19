@@ -2,7 +2,7 @@
 title: Tabela de cotações
 description: Saiba como trabalhar com a tabela de cotações.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ A variável `quote` tabela (`sales_flat_quote` em M1) contém registros em cada 
 | `base_currency_code` | Moeda para todos os valores capturados em `base_*` campos (ou seja, `base_grand_total`, `base_subtotal`e assim por diante). Normalmente, isso reflete a moeda padrão da loja de Comércio |
 | `base_grand_total` | Preço final cotado para o cliente do carrinho, depois que todos os impostos, frete e descontos são aplicados. Embora o cálculo preciso seja personalizável, em geral, a `base_grand_total` é calculado como `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | Valor bruto de mercadoria de todos os itens incluídos no carrinho. Impostos, frete, descontos e assim por diante não estão incluídos |
-| `created_at` | Carimbo de data e hora de criação do carrinho, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL MBI], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL MBI] que difere do fuso horário do seu banco de dados |
+| `created_at` | Carimbo de data e hora de criação do carrinho, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL Commerce Intelligence], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL Commerce Intelligence] que difere do fuso horário do seu banco de dados |
 | `customer_email` | Endereço de email do cliente que criou o carrinho |
 | `customer_id` | `Foreign key` associado à `customer_entity` tabela, se o cliente estiver registrado. Associar-se a `customer_entity.entity_id` para determinar os atributos do cliente associados ao usuário que criou o carrinho. Se o carrinho foi criado por meio do check-out do convidado, esse campo é `NULL` |
 | `entity_id` PK) | Identificador exclusivo da tabela e geralmente usado em associações com outras tabelas na instância do Commerce |

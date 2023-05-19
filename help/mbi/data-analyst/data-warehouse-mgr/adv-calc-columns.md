@@ -2,16 +2,16 @@
 title: Tipos de Coluna Calculados Avançados
 description: Aprenda as noções básicas para a maioria dos casos de coluna de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Gerenciador de Datas Warehouse pode criar.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # Tipos de Coluna Calculados Avançados
 
-Muitas análises que você pode tentar criar, envolvem o uso de um **nova coluna** que você deseja `group by` ou `filter by`. A variável [Criação de Colunas Calculadas](../data-warehouse-mgr/creating-calculated-columns.md) Este tutorial aborda as noções básicas da maioria dos casos de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Gerenciador de Datas Warehouse pode criar.
+Muitas análises que você pode criar envolvem o uso de um **nova coluna** que você deseja `group by` ou `filter by`. A variável [Criação de Colunas Calculadas](../data-warehouse-mgr/creating-calculated-columns.md) Este tutorial aborda as noções básicas da maioria dos casos de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Gerenciador de Datas Warehouse pode criar.
 {: #top}
 
 Esses tipos de colunas podem ser criados pela equipe de Adobe dos analistas do Data Warehouse. Para definir uma nova coluna calculada, forneça as seguintes informações:
@@ -159,7 +159,7 @@ Para criar esse tipo de coluna calculada, você precisa saber:
 
 Não se preocupe. Só porque não está listado aqui não significa que não seja possível. A equipe Adobe de analistas do Data Warehouse pode ajudar.
 
-Para definir uma nova coluna calculada, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) com detalhes sobre exatamente o que você gostaria de criar.
+Para definir uma nova coluna calculada, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com detalhes sobre exatamente o que você gostaria de criar.
 
 ## Documentação relacionada
 

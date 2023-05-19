@@ -2,7 +2,7 @@
 title: Entender e avaliar as relações de tabela
 description: Saiba como entender quantas ocorrências possíveis em uma tabela podem pertencer a uma entidade em outra.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Entender relacionamentos é vital para manter a integridade dos dados, pois isso
 
 Há três tipos de relações que podem existir entre duas tabelas:
 
-* [&quot;um para um&quot;](#onetoone)
-* [&quot;de um para muitos&quot;](#onetomany)
-* [`muitos para muitos`](#manytomany)
+1. [&quot;um para um&quot;](#onetoone)
+1. [&quot;de um para muitos&quot;](#onetomany)
+1. [`muitos para muitos`](#manytomany)
 
 ### `One-to-One` {#onetoone}
 
-Em um `one-to-one` relacionamento, um registro na Tabela `B` pertence a apenas um registro na Tabela `A`. E um recorde na tabela `A` pertence a apenas um registro na Tabela `B`.
+Em um `one-to-one` relacionamento, um registro na tabela `B` pertence a apenas um registro na tabela `A`. E um recorde na tabela `A` pertence a apenas um registro na Tabela `B`.
 
 Por exemplo, no relacionamento entre pessoas e números de carteira de motorista, uma pessoa pode ter apenas um número de carteira de motorista, e um número de carteira de motorista pertence a apenas uma pessoa.
 
@@ -33,13 +33,13 @@ Por exemplo, no relacionamento entre pessoas e números de carteira de motorista
 
 ### `One-to-Many` {#onetomany}
 
-Em um `one-to-many` relacionamento, um registro na Tabela `A` pode pertencer a vários registros na Tabela `B`. Pense na relação entre `orders` e `items` - um pedido pode conter muitos itens, mas um item pertence a um único pedido. Neste caso, o `orders` a tabela é um lado e o `items` a mesa é o lado muitos.
+Em um `one-to-many` relacionamento, um registro na tabela `A` pode pertencer a vários registros na tabela `B`. Pense na relação entre `orders` e `items` - um pedido pode conter muitos itens, mas um item pertence a um único pedido. Neste caso, o `orders` a tabela é um lado e o `items` a mesa é o lado muitos.
 
 ![](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
-Em um `many-to-many` relacionamento, um registro na Tabela `B` pode pertencer a vários registros na Tabela `A`. E vice-versa, um registro na Tabela `A` pode pertencer a vários registros na Tabela `B`.
+Em um `many-to-many` relacionamento, um registro na tabela `B` pode pertencer a vários registros na tabela `A`. E vice-versa, um recorde na tabela `A` pode pertencer a vários registros na tabela `B`.
 
 Pense na relação entre **products** e **categorias**: um produto pode pertencer a muitas categorias, e uma categoria pode conter muitos produtos.
 
@@ -60,6 +60,7 @@ Por exemplo, ao pensar em usuários e pedidos, considere tudo o que é possível
 Para usar este método:
 
 1. Identifique a entidade que está sendo descrita em cada tabela. **Dica: geralmente é um substantivo**. Por exemplo, a variável `user` e `orders` As tabelas descrevem explicitamente usuários e pedidos.
+
 1. Identifique um ou mais verbos que descrevam como essas entidades interagem. Por exemplo, ao comparar usuários a pedidos, os usuários &quot;fazem&quot; pedidos. Indo na outra direção, os pedidos &quot;pertencem&quot; aos usuários.
 
 Esse tipo de estrutura pode ser aplicado a qualquer par de tabelas na Data Warehouse. Isso permite identificar facilmente o tipo de relação e qual tabela está em um lado e qual tabela está em vários lados.

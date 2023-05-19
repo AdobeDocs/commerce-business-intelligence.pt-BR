@@ -2,26 +2,26 @@
 title: Rastrear metas em relação a métricas
 description: Saiba como configurar um painel que ajudará você a controlar suas metas comerciais em relação aos dados reais, incluindo a receita, os novos usuários registrados e os pedidos ao longo do tempo.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Rastreamento De Metas Em Relação Às Métricas De Desempenho
 
-A maioria dos clientes gostaria de rastrear seus **metas de negócios**, mas não percebam que isso é possível em [!DNL MBI]. Este artigo demonstra como configurar um painel que ajudará você a controlar suas metas de negócios em relação aos dados reais, incluindo a receita, os novos usuários registrados e os pedidos ao longo do tempo. Você também aprenderá a comparar o desempenho ano a ano, tudo em um painel como este:
+A maioria dos clientes gostaria de rastrear seus **metas de negócios**, mas não percebam que isso é possível em [!DNL Adobe Commerce Intelligence]. Este tópico demonstra como configurar um painel que ajudará você a controlar suas metas de negócios em relação aos dados reais, incluindo receita, novos usuários registrados e pedidos ao longo do tempo. Você também aprenderá a comparar o desempenho ano a ano, tudo em um painel como este:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Antes de começar, você deseja se familiarizar com o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e certifique-se de ter definido suas metas comerciais para um determinado período.
+Antes de começar, você deve revisar o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e certifique-se de ter definido suas metas comerciais para um determinado período.
 
 ## Introdução
 
 Primeiro, faça upload de um arquivo contendo metas diárias/mensais/trimestrais específicas para sua empresa.
 
-Você pode usar o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo. Os alvos mais comuns que os clientes rastreiam [!DNL MBI] inclui Pedidos, Receita e Novas contas registradas.
+Você pode usar o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo. Os alvos mais comuns que os clientes rastreiam [!DNL Commerce Intelligence] inclui Pedidos, Receita e Novas contas registradas.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -49,7 +49,7 @@ Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos 
 
 ## Relatórios
 
-Como sempre, é útil ter uma combinação de valores estáticos e gráficos visuais ao analisar suas metas. Abaixo estão três relatórios de exemplo para começar a rastrear o desempenho da receita.
+É útil ter uma combinação de valores estáticos e gráficos visuais ao analisar suas metas. Abaixo estão três relatórios de exemplo para começar a rastrear o desempenho da receita.
 
 * **Receita restante para atingir o objetivo**
 * Métrica `A`: `Revenue`

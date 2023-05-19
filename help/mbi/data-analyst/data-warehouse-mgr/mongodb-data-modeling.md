@@ -2,24 +2,24 @@
 title: Modelagem de dados do MongoDB
 description: Saiba como evitar padrões de dados que representam um problema.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
 # [!DNL MongoDB] Modelagem de dados
 
-Quando [!DNL MBI] extrai [!DNL MongoDB] dados, esses dados são convertidos em um modelo relacional.
+Quando [!DNL Adobe Commerce Intelligence] extrai [!DNL MongoDB] dados, esses dados são convertidos em um modelo relacional.
 
-A má notícia: embora a maioria dos padrões de dados não represente um problema, há alguns que, devido à tradução para um modelo relacional, [!DNL MBI] não oferece suporte a.
+A má notícia: embora a maioria dos padrões de dados não represente um problema, há algumas que não são compatíveis com o [!DNL Commerce Intelligence], devido à tradução para um modelo relacional.
 
 A boa notícia: Todos esses padrões podem ser evitados.
 
 ## Matrizes Subaninhadas {#subnested}
 
-Se sua coleção for semelhante ao exemplo abaixo, [!DNL MBI] replica somente os dados na matriz de itens. Os dados da matriz de subitens não são extraídos.
+Se sua coleção for semelhante ao exemplo abaixo, [!DNL Commerce Intelligence] replica somente os dados na matriz de itens. Os dados da matriz de subitens não são extraídos.
 
 ```bash
     {
@@ -41,7 +41,7 @@ Se sua coleção for semelhante ao exemplo abaixo, [!DNL MBI] replica somente os
 
 ## Chaves de objeto variável {#varobjectkeys}
 
-As coleções que incluem objetos com chaves de objeto variáveis não são replicadas no [!DNL MBI]. Por exemplo:
+As coleções que incluem objetos com chaves de objeto variáveis não são replicadas no [!DNL Commerce Intelligence]. Por exemplo:
 
 ```bash
     {

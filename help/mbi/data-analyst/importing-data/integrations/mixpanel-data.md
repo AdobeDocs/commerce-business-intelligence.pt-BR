@@ -1,10 +1,10 @@
 ---
 title: Dados esperados do Mixpanel
-description: Explore as principais tabelas de dados que você pode importar do Mixpanel para o [!DNL MBI] conta.
+description: Explore as principais tabelas de dados que você pode importar do Mixpanel para o [!DNL Commerce Intelligence] conta.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Depois [você conectou o [!DNL Mixpanel] account](../integrations/mixpanel.md), você pode usar o [Gerenciador de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes para análise.
 
-Este artigo explora as principais tabelas de dados que podem ser importadas do [!DNL Mixpanel] no seu [!DNL MBI] conta. As tabelas a seguir serão criadas na Data Warehouse após a conexão do Mixpanel. Para exibir todos os campos disponíveis para rastreamento, clique nos links na coluna de nome da tabela.
+Este tópico explora as principais tabelas de dados das quais você pode importar [!DNL Mixpanel] no seu [!DNL Commerce Intelligence] conta. As tabelas a seguir serão criadas na Data Warehouse após a conexão [!DNL Mixpanel]. Para exibir todos os campos disponíveis para rastreamento, clique nos links na coluna de nome da tabela.
 
 >[!NOTE]
 >
->Devido às limitações do [!DNL Mixpanel] API, dados históricos - dados com mais de sete (7) dias a partir da data de conexão até [!DNL MBI] - não é replicado.
+>Devido às limitações do [!DNL Mixpanel] API, dados históricos - dados com mais de sete (7) dias a partir da data de conexão até [!DNL Commerce Intelligence] - não é replicado.
 
 | **Nome da tabela** | **Descrição** |
 |-----|-----|
@@ -30,4 +30,4 @@ Este artigo explora as principais tabelas de dados que podem ser importadas do [
 ## Documentação relacionada
 
 * [Conectando [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

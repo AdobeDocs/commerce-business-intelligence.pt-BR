@@ -2,9 +2,9 @@
 title: Análise do código do cupom (básica)
 description: Saiba mais sobre o desempenho do cupom de sua empresa é uma maneira interessante de segmentar seus pedidos e entender melhor os hábitos do cliente.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Compreender o desempenho do cupom de sua empresa é uma maneira interessante de segmentar seus pedidos e entender melhor os hábitos do cliente.
 
-Este artigo documenta as etapas necessárias para criar essa análise e entender como os clientes de cupom adquiridos se comportam, vê tendências e rastreia o uso individual do código de cupom.
+Este tópico documenta as etapas necessárias para criar essa análise para entender como os clientes de cupom adquiridos se saem, ver tendências e rastrear o uso individual do código do cupom.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -21,7 +21,7 @@ Este artigo documenta as etapas necessárias para criar essa análise e entender
 
 Primeiro, uma observação sobre como os códigos de cupom são rastreados. Se um cliente aplicou um cupom a um pedido, acontecem três coisas:
 
-* Um desconto é refletido na `base_grand_total` quantidade (seu `Revenue` métrica no MBI)
+* Um desconto é refletido na `base_grand_total` quantidade (seu `Revenue` métrica no Commerce Intelligence)
 * O código do cupom é armazenado na variável `coupon_code` campo. Se esse campo for NULL (vazio), a ordem não terá um cupom associado a ela.
 * O valor com desconto é armazenado em `base_discount_amount`. Dependendo da sua configuração, esse valor pode parecer negativo ou positivo.
 

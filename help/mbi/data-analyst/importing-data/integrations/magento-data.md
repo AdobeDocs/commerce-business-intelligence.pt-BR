@@ -1,19 +1,19 @@
 ---
 title: Dados de comércio esperados
-description: Explorar as principais tabelas de dados que os usuários do Commerce importam para o MBI
+description: Explore as principais tabelas de dados que os usuários do Commerce importam para o Commerce Intelligence
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
-# Dados de comércio esperados
+# Esperado [!DNL Adobe Commerce] Dados
 
-Depois de ter [conectou sua loja do Commerce](../../../data-analyst/importing-data/integrations/magento.md), você pode usar o Gerenciador de Datas Warehouse para rastrear facilmente campos de dados relevantes do banco de dados do Commerce para análise.
+Depois de ter [conectou o [!DNL Adobe Commerce] loja](../../../data-analyst/importing-data/integrations/magento.md), você pode usar o Gerenciador de Datas Warehouse para rastrear facilmente campos de dados relevantes do banco de dados do Commerce para análise.
 
-Este artigo explora as principais tabelas de dados que os usuários do Commerce importam para o [!DNL MBI].
+Este tópico explora as principais tabelas de dados que os usuários do Commerce importam para o [!DNL Commerce Intelligence].
 
 | **Nome da tabela** | **Descrição** |
 |-----|-----|
@@ -28,4 +28,4 @@ Este artigo explora as principais tabelas de dados que os usuários do Commerce 
 ## Relacionados
 
 * [Conectando [!DNL Adobe Commerce]](../integrations/magento.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

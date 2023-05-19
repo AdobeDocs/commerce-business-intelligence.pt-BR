@@ -2,16 +2,16 @@
 title: Usar o Report Builder visual
 description: Saiba como analisar os dados em seu relatório por um período específico.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Use o `Visual Report Builder`
+# Use o [!DNL Visual Report Builder]
 
-A variável [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) O permite explorar visualmente seus dados para obter insights e ajudar a impulsionar as decisões de negócios. Este tutorial o guiará pelo processo de criação de um relatório básico.
+A variável [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) O permite explorar visualmente seus dados para obter insights e ajudar a impulsionar as decisões de negócios. Este tutorial o guiará pelo processo de criação de um relatório básico.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ A variável [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.
 
 Para começar a criar um relatório, clique em **[!UICONTROL Report Builder]** na barra lateral ou **[!UICONTROL Add Report]** na parte superior de qualquer painel. Quando a variável `Report Builder` for exibida, clique no link **[!UICONTROL Visual Report Builder]** opção.
 
-Para editar um relatório criado na `Visual Report Builder`, clique no ícone de engrenagem (Opções) no canto superior direito de qualquer gráfico e clique em **[!UICONTROL Edit]**.
+Para editar um relatório criado na [!DNL Visual Report Builder], clique no ícone de engrenagem (Opções) no canto superior direito de qualquer gráfico e clique em **[!UICONTROL Edit]**.
 
 ## Etapa 2: Adição de métricas
 
@@ -45,7 +45,7 @@ Para zerar em um período de tempo específico, é possível definir o período 
 
 Ao definir um intervalo de datas específico para o período, verifique se a data de início está no início do intervalo e a data de término está no final do intervalo.
 
-Por exemplo, definir um período de tempo de `January 1st to March 1st` e escolhendo um `monthly` o intervalo aparece `March` como um ponto de dados, mas ignorar todos os dias no `March` exceto `March 1`. Nesse caso, você deve tornar seus `Time Period` de `January 1 to March 31`.
+Por exemplo, definir um período de tempo de `January 1st` para `March 1st` e escolhendo um `monthly` o intervalo aparece `March` como um ponto de dados, mas ignorar todos os dias no `March` exceto `March 1`. Nesse caso, você deve tornar seus `Time Period` de `January 1 to March 31`.
 
 ## Etapa 5: `Group by` / `Segmenting the Analysis` {#groupby}
 

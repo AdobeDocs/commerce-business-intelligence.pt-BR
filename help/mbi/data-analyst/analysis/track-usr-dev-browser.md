@@ -2,16 +2,16 @@
 title: Google Analytics - Rastrear o dispositivo do usuário e os dados do navegador no banco de dados
 description: Saiba quantos usuários estão realmente fazendo logon por dispositivos móveis e como isso afeta o valor vitalício desses usuários.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Google Analytics] Rastreamento
 
-Com [!UICONTROL Google Analytics] você pode [salvar informações de origem de referência](../analysis/google-track-user-acq.md) para entender de onde vêm seus usuários mais valiosos. Neste tópico, você aprenderá sobre a plataforma (por exemplo, dispositivo ou navegador) em que seus usuários estão trabalhando. Com isso, você poderá entender quantos usuários estão realmente fazendo logon por dispositivos móveis e como isso afeta o valor vitalício desses usuários.
+Com [!UICONTROL Google Analytics] você pode [salvar informações de origem de referência](../analysis/google-track-user-acq.md) para entender de onde vêm seus usuários mais valiosos. Este tópico discute a plataforma (por exemplo, dispositivo ou navegador) em que seus usuários estão trabalhando. Com isso, você poderá entender quantos usuários estão realmente fazendo logon por dispositivos móveis e como isso afeta o valor vitalício desses usuários.
 
 ## Salvamento dos dados do dispositivo do usuário e do navegador
 
@@ -30,7 +30,7 @@ Essas informações podem ser acessadas pelo servidor sempre que uma solicitaç�
 
 ### Quando você deve registrar esses dados?
 
-O Adobe recomenda adicionar um novo campo chamado `Platform` ou `User-Agent` ao seu `Customers` e `Orders` tabelas de banco de dados para armazenar essas informações sempre que um usuário for criado ou um pedido for feito. Se você estiver usando um banco de dados SQL, esse campo deverá ser um `VARCHAR(255)`. 
+[!DNL Adobe] A recomenda adicionar um novo campo chamado `Platform` ou `User-Agent` ao seu `Customers` e `Orders` tabelas de banco de dados para armazenar essas informações sempre que um usuário for criado ou um pedido for feito. Se você estiver usando um banco de dados SQL, esse campo deverá ser um `VARCHAR(255)`. 
 
 >[!NOTE]
 >

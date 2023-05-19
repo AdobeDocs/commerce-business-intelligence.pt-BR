@@ -2,9 +2,9 @@
 title: Limite de frete gratuito
 description: Saiba como configurar um painel que rastreie o desempenho do seu limite de frete gratuito.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este artigo contém instruções para clientes que estão usando a arquitetura original e a nova arquitetura. Você está na nova arquitetura se tiver a seção &quot;Data Warehouse exibições&quot; disponível após selecionar &quot;Gerenciar dados&quot; na barra de ferramentas principal.
+>Este tópico contém instruções para clientes que estão usando a arquitetura original e a nova arquitetura. Você está na nova arquitetura se tiver o `Data Warehouse Views` seção disponível após selecionar `Manage Data` na barra de ferramentas principal.
 
-Este artigo demonstra como configurar um painel que controle o desempenho do limite de frete gratuito. Esse painel, mostrado abaixo, é uma ótima maneira de testar dois limites de frete gratuito A/B. Por exemplo, sua empresa pode não ter certeza se você deve oferecer frete gratuito a US$ 50 ou US$ 100. Você deve executar um teste A/B de dois subconjuntos aleatórios de seus clientes e executar a análise em [!DNL MBI].
+Este tópico demonstra como configurar um painel que acompanha o desempenho do limite de frete gratuito. Esse painel, mostrado abaixo, é uma ótima maneira de testar dois limites de frete gratuito A/B. Por exemplo, sua empresa pode não ter certeza se você deve oferecer frete gratuito a US$ 50 ou US$ 100. Você deve executar um teste A/B de dois subconjuntos aleatórios de seus clientes e executar a análise em [!DNL Commerce Intelligence].
 
 Antes de começar, você deseja identificar dois períodos separados nos quais havia valores diferentes para o limite de frete gratuito da sua loja.
 

@@ -2,7 +2,7 @@
 title: Exibição de painéis em várias telas
 description: Saiba como exibir seus painéis no escritório.
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Exibir Painéis no escritório
 
-Para [!DNL MBI] para os usuários interessados em exibir seus painéis e relatórios nas telas do escritório, há várias opções de hardware que podem habilitar facilmente essa configuração.
+Para [!DNL Commerce Intelligence] para os usuários interessados em exibir seus painéis e relatórios nas telas do escritório, há várias opções de hardware que podem habilitar facilmente essa configuração.
 
 Esta é a lista recomendada de itens necessários para a opção:
 

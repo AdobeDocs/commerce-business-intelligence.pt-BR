@@ -2,7 +2,7 @@
 title: Análise do valor vitalício esperado (LTV) (básico)
 description: Saiba como criar análises para entender o valor vitalício dos clientes atuais e prever como esse valor aumenta com mais pedidos.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Prever o valor vitalício dos clientes à medida que fazem mais pedidos é um dos aspectos mais importantes de qualquer negócio de qualquer porte.
 
-Estas são as etapas para criar análises para entender o valor vitalício dos clientes atuais e prever como esse valor aumenta com mais pedidos:
+Abaixo estão as etapas para criar análises para entender o valor vitalício de seus clientes atuais e prever como o valor vitalício aumenta com mais pedidos.
 
 ![valor vitalício esperado](../../assets/expected_ltv_720.png)
 

@@ -2,16 +2,16 @@
 title: Entender e criar análises básicas
 description: Saiba como entender e criar análises básicas.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
 
 # Analytics básico
 
-Depois de conhecer o [!DNL MBI] e tiver uma compreensão básica da ferramenta, você desejará começar a criar relatórios. Uma das perguntas mais comuns que você pode ter é &quot;O que eu devo estar olhando?&quot;
+Depois de conhecer o [!DNL Adobe Commerce Intelligence] e tiver uma compreensão básica da ferramenta, você desejará começar a criar relatórios. Uma das perguntas mais comuns que você pode ter é &quot;O que eu devo estar olhando?&quot;
 
 As informações abaixo descrevem algumas das métricas e relatórios comuns que podem ser importantes. Alguns desses relatórios existem em sua conta, portanto, analise as métricas e os relatórios que existem em sua conta para evitar a criação de duplicatas.
 
@@ -44,7 +44,7 @@ Se alguns desses cálculos não existirem no banco de dados, qualquer usuário a
 
 **Você aceita ordens de convidados?**
 
-*Em caso afirmativo, essa tabela pode não conter todos os clientes. Entre em contato com [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para garantir que suas análises de clientes incluam todos os clientes.*
+*Em caso afirmativo, essa tabela pode não conter todos os clientes. Entre em contato com [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para garantir que suas análises de clientes incluam todos os clientes.*
 
 *Não tem certeza se você aceita ordens de convidados? Consulte [este tópico](../data-warehouse-mgr/guest-orders.md) para saber mais!*
 
@@ -58,7 +58,7 @@ Nessa tabela, cada linha representa uma ordem. As colunas nessa tabela contêm i
 * **[!UICONTROL Created_at]**: a data em que o pedido foi criado ou feito.
 * **[!UICONTROL Customer_email]**: o endereço de email do cliente que fez o pedido. Esse também pode ser o identificador exclusivo do cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: uma cópia da coluna com o mesmo nome na `Customers` tabela.
-* **[!UICONTROL Customer's order number]**: o número de ordem sequencial do cliente associado à ordem. Por exemplo, se a linha que você está observando for a primeira ordem de um cliente, essa coluna será &quot;1&quot;; mas, se essa for a 15ª ordem do cliente, essa coluna mostrará &quot;15&quot; para essa ordem. Se essa dimensão não existir no seu `Customers` tabela, pergunte à [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para ajudá-lo a criá-lo.
+* **[!UICONTROL Customer's order number]**: o número de ordem sequencial do cliente associado à ordem. Por exemplo, se a linha que você está observando for a primeira ordem de um cliente, essa coluna será &quot;1&quot;; mas, se essa for a 15ª ordem do cliente, essa coluna mostrará &quot;15&quot; para essa ordem. Se essa dimensão não existir no seu `Customers` tabela, pergunte à [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para ajudá-lo a criá-lo.
 * **[!UICONTROL Customer's order number (previous-current)]**: uma concatenação de dois valores no **[!UICONTROL Customer's order number]** coluna. Ele é usado em um relatório de amostra abaixo para exibir o tempo decorrido entre dois pedidos. Por exemplo, o tempo entre a data de primeiro pedido de um cliente e a data de segundo pedido é representado como &quot;1-2&quot; com esse cálculo.
 * **[!UICONTROL Coupon_code]**: mostra quais cupons foram usados em cada pedido.
 * **[!UICONTROL Seconds since previous order]**: o tempo (em segundos) entre os pedidos de um cliente.
@@ -323,7 +323,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
 
 >[!NOTE]
 >
->Desmarque a opção `Multiple Y-Axes box` e `Hide` todas as métricas
+>Desmarque a `Multiple Y-Axes box` e `Hide` todas as métricas
 
 ![Produtos encomendados 2](../../assets/products_ordered_pic2.png)<!--{: width="929"}-->
 
@@ -370,7 +370,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
 
 >[!NOTE]
 >
->Desmarque a opção `Multiple Y-Axes` caixa.
+>Desmarque a `Multiple Y-Axes` caixa.
 
 ![Tempo entre pedidos](../../assets/time_bw_orders_pic.png)<!--{: width="929"}-->
 

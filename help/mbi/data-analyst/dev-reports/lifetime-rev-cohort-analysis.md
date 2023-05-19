@@ -1,17 +1,17 @@
 ---
 title: Análise de coorte de receita vitalícia
-description: Explore o poder do [!DNL MBI] análise de coorte.
+description: Explore o potencial da análise de coorte de inteligência do Commerce.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` Análise
+# [!DNL Lifetime Revenue Cohort] Análise
 
-Há várias maneiras de examinar seus dados no [!DNL MBI], e você sabe que interpretação e compreensão são tão importantes quanto cálculo e visualização. Este artigo explora o poder do [!DNL MBI] `cohort` análise.
+Há várias maneiras de examinar seus dados no [!DNL Adobe Commerce Intelligence], e você sabe que interpretação e compreensão são tão importantes quanto cálculo e visualização. Este tópico explora o poder do [!DNL Commerce Intelligence] `cohort` análise.
 
 ## O que faz `lifetime revenue cohort` meio de análise?
 

@@ -1,27 +1,27 @@
 ---
-title: Gerenciamento de usuários e permissões
-description: Saiba como gerenciar o seu [!DNL MBI] usuários.
+title: Gerenciamento de usuários e permissões do Adobe Commerce
+description: Saiba como gerenciar os usuários do Commerce Intelligence.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # Gerenciar permissões do usuário
 
-A MBI deve ser uma única fonte de verdade em toda a organização. Cada usuário tem seu próprio conjunto de painéis que pode [compartilhar com outros usuários](../../data-user/dashboards/share-dashboard-with-users.md).
+[!DNL Adobe Commerce Intelligence] O deve ser uma única fonte de verdade em toda a organização. Cada usuário tem seu próprio conjunto de painéis que pode [compartilhar com outros usuários](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## Níveis de permissão do usuário
 
-Entrada [!DNL MBI], há três níveis de permissão gerais que se aplicam aos usuários, que são selecionados quando uma conta é criada:
+Entrada [!DNL Commerce Intelligence], há três níveis de permissão gerais que se aplicam aos usuários, que são selecionados quando uma conta é criada:
 
 * `Admin`
 * `Standard`
 * `Read-Only`
 
-Essas permissões permitem que os usuários executem determinadas ações ou acessem partes específicas do [!DNL MBI]. Esta é uma tabela do que cada nível de permissão pode fazer no MBI:
+Essas permissões permitem que os usuários executem determinadas ações ou acessem partes específicas do [!DNL Commerce Intelligence]. Esta é uma tabela do que cada nível de permissão pode fazer no [!DNL Commerce Intelligence]:
 
 |  | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
@@ -52,7 +52,7 @@ Essas permissões permitem que os usuários executem determinadas ações ou ace
 >
 >**[!UICONTROL Standard] _Os usuários do podem acessar o Faturamento com uma configuração de permissão adicional._
 >
->**[!UICONTROL Read-Only]** os usuários só podem _exibir_ painéis que foram compartilhados com eles; eles não podem criar ou editar nada em [!DNL MBI], nem podem pesquisar e adicionar novos painéis à sua conta. A Adobe recomenda que você compartilhe um conjunto específico de painéis com o **[!UICONTROL Read-Only]** usuários que você ou outro membro de sua equipe mantém. Não clone um conjunto de painéis para eles.
+>**[!UICONTROL Read-Only]** os usuários só podem _exibir_ painéis que foram compartilhados com eles; eles não podem criar ou editar nada em [!DNL Commerce Intelligence], nem podem pesquisar e adicionar novos painéis à sua conta. A Adobe recomenda que você compartilhe um conjunto específico de painéis com o **[!UICONTROL Read-Only]** usuários que você ou outro membro de sua equipe mantém. Não clone um conjunto de painéis para eles.
 
 ## Permissões adicionais: faturamento e técnicas {#billingtech}
 
@@ -70,6 +70,6 @@ Além dos níveis de permissão gerais, há duas outras designações de usuári
 
 `Technical` os usuários do não têm permissões específicas para eles; essa configuração apenas marca um contato técnico em sua organização. Esses usuários podem ser contatados pelo Adobe para perguntas técnicas.
 
-`Admin` usuários podem adicionar novos usuários às suas contas clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** e seguindo as instruções. Depois que o usuário for criado em [!DNL MBI], a pessoa de sorte que você está convidando receberá instruções por email sobre como concluir o processo de configuração da conta.
+`Admin` usuários podem adicionar novos usuários às suas contas clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** e seguindo as instruções. Depois que o usuário for criado em [!DNL Commerce Intelligence], a pessoa de sorte que você está convidando receberá instruções por email sobre como concluir o processo de configuração da conta.
 
 A qualquer momento, `Admins` pode exibir todos os usuários em sua conta clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Esta página exibe as permissões do usuário e quais métricas e painéis podem ser acessados.

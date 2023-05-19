@@ -2,16 +2,16 @@
 title: Compartilhar painéis com outros usuários
 description: Saiba como compartilhar painéis com outros usuários.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # Compartilhar painéis com outros usuários
 
-O compartilhamento de painéis é uma ótima maneira de manter sua equipe informada e incentivar discussões colaborativas. Ao criar e compartilhar um painel central, você pode fornecer à sua equipe as informações necessárias, mantendo o controle. [Adobe recomenda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que você concedeu `Edit` direitos para selecionar alguns para minimizar as alterações acidentais.
+O compartilhamento de painéis é uma ótima maneira de manter sua equipe informada e incentivar discussões colaborativas. Ao criar e compartilhar um painel central, você pode fornecer à sua equipe as informações necessárias, mantendo o controle. [[!DNL Adobe] recomenda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que você concedeu `Edit` direitos para selecionar alguns para minimizar as alterações acidentais.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ O compartilhamento de painéis é uma ótima maneira de manter sua equipe inform
 
 1. Clique em **[!UICONTROL Share Dashboard]** na parte superior da tela.
 
-   Uma lista de todos os usuários em seu [!DNL MBI] a conta será exibida.
+   Uma lista de todos os usuários em seu [!DNL Commerce Intelligence] a conta será exibida.
 
 1. Para selecionar um usuário com o qual compartilhar o painel, marque a caixa à esquerda do nome.
 

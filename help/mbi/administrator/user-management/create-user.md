@@ -1,15 +1,15 @@
 ---
-title: Adicionar/Editar um novo usuário
-description: Saiba como adicionar um novo [!DNL MBI] e como atualizar seu nome de usuário ou senha.
+title: Adicionar um novo usuário do Adobe Commerce Intelligence
+description: Saiba como adicionar um novo [!DNL Commerce Intelligence] e como atualizar seu nome de usuário ou senha.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# Adicionar um usuário
+# Adicionar um novo [!DNL Adobe Commercer Intelligence] usuário
 
 1. Clique no nome da sua empresa no canto superior direito e selecione **[!UICONTROL Invite User]** na lista suspensa.
 1. Insira o nome de usuário e o email.
@@ -30,12 +30,12 @@ O novo usuário recebe um email com detalhes de logon e senha.
 
 ## Atualizar seu endereço de email ou senha
 
-Você pode atualizar seu endereço de email e/ou senha clicando no nome da sua empresa no canto superior direito e, em seguida, clique em Clique **[!UICONTROL Edit Profile]**.
+Você pode atualizar seu endereço de email e/ou senha clicando no nome da sua empresa no canto superior direito e, em seguida, clique em **[!UICONTROL Edit Profile]**.
 
 ## Reenviar o convite
 
-Se precisar reenviar o convite para o novo usuário, no [página de logon](https://dashboard.rjmetrics.com/v2/session/create), clique em **[!UICONTROL Forgot?]**, insira o endereço de email do novo usuário e clique em **[!UICONTROL Reset Password]**. Isso reenvia o convite e permite que o usuário faça logon.
+Se precisar reenviar o convite, no [página de logon](https://dashboard.rjmetrics.com/v2/session/create), clique em **[!UICONTROL Forgot?]**, insira o endereço de email do novo usuário e clique em **[!UICONTROL Reset Password]**. Isso reenvia o convite e permite que o usuário faça logon.
 
 >[!IMPORTANT]
 >
->Cada conta tem um número contratado de licenças ou vagas. Se você atingir seu limite ou quiser saber mais, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+>Cada conta tem um número contratado de licenças ou vagas. Se você atingir seu limite ou quiser saber mais, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

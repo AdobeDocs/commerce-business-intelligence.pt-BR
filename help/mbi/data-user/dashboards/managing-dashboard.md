@@ -2,9 +2,9 @@
 title: Gerenciar painéis
 description: Saiba como gerenciar permissões de usuário para seus painéis, excluir painéis que não são mais necessários e definir um painel padrão.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Exige [Permissões de administrador](../../administrator/user-management/user-management.md).
 
-Entrada **[!DNL Manage Data** > **Dashboards]**, é possível gerenciar permissões de usuário para seus painéis, excluir painéis que não são mais necessários e definir um painel padrão. Abrangido neste artigo:
+Entrada **[!DNL Manage Data** > **Dashboards]**, é possível gerenciar permissões de usuário para seus painéis, excluir painéis que não são mais necessários e definir um painel padrão. Este tópico abrange:
 
 1. [Renomear painéis](#rename)
 
@@ -35,7 +35,7 @@ Para renomear um painel:
 
 ## Gerenciar permissões do usuário {#userperm}
 
-Existem três níveis de acesso no [!DNL MBI] para painéis - `View`, `Edit`, e `None`.
+Existem três níveis de acesso no [!DNL Commerce Intelligence] para painéis - `View`, `Edit`, e `None`.
 
 * `View` permite que os usuários selecionados visualizem o painel, mas não o editem. Os usuários também podem redimensionar gráficos, exportar dados e copiar os gráficos em seus próprios painéis usando a função Salvar como se tiverem permissões Padrão ou de Administrador.
 

@@ -2,9 +2,9 @@
 title: tabela customer_entity
 description: Saiba como acessar registros de todas as contas registradas.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 A variável `customer_entity` a tabela contém registros de todas as contas registradas. Uma conta é considerada registrada se eles se inscreverem em uma conta, independentemente de concluírem uma compra. Cada linha corresponde a uma conta registrada exclusiva, conforme identificado pelo `entity_id`.
 
-Esta tabela não contém registros de clientes que fazem um pedido por meio do check-out do convidado. Se a loja aceitar o check-out do convidado, [saiba como contabilizar](../data-warehouse-mgr/guest-orders.md) para esses clientes.
+Esta tabela não contém registros de clientes que fazem um pedido por meio do check-out do convidado. Se a loja aceitar o check-out do convidado, consulte [como contabilizar pedidos de convidados](../data-warehouse-mgr/guest-orders.md) para essas ordens.
 
 ## Colunas comuns
 
 | **Nome da coluna** | **Descrição** |
 |---|---|
-| `created_at` | Carimbo de data e hora correspondente à data de registro da conta, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL MBI], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL MBI] que difere do fuso horário do seu banco de dados |
+| `created_at` | Carimbo de data e hora correspondente à data de registro da conta, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL Commerce Intelligence], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL Commerce Intelligence] que difere do fuso horário do seu banco de dados |
 | `email` | Endereço de email associado à conta |
 | `entity_id` PK) | Identificador exclusivo da tabela, geralmente usado em associações com a `customer_id` em outras tabelas na instância |
 | `group_id` | Chave estrangeira associada à `customer_group` tabela. Associar-se a `customer_group.customer_group_id` para determinar o grupo de clientes associado à conta registrada |

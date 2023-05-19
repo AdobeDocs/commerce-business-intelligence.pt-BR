@@ -2,9 +2,9 @@
 title: Build[!DNL Google ECommerce]dimensões
 description: Saiba como criar dimensões que vinculam seus dados de comércio eletrônico aos seus pedidos e dados de clientes.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 >
 >Exige [Permissões de administrador](../../administrator/user-management/user-management.md).
 
-Agora que você terminou [conectar seu[!DNL Google ECommerce]account](../../data-analyst/importing-data/integrations/google-ecommerce.md), o que você pode fazer com esses dados no [!DNL MBI]? Este artigo orienta você na criação de dimensões que vinculam os dados de comércio eletrônico aos seus pedidos e dados do cliente.
+Agora que você terminou [conectar seu[!DNL Google ECommerce] account](../../data-analyst/importing-data/integrations/google-ecommerce.md), o que você pode fazer com esses dados no [!DNL Commerce Intelligence]? Este tópico aborda a criação de dimensões que vinculam os dados de comércio eletrônico aos seus pedidos e aos dados do cliente.
 
-As dimensões cobertas oferecem a capacidade de criar análises que [responda a perguntas vitais sobre seus canais e campanhas de marketing](../../data-analyst/analysis/most-value-source-channel.md). Que porcentagem da receita vem de cada origem? Como o valor vitalício dos clientes adquiridos da Facebook se compara ao dos de [!DNL Google]?
+As dimensões cobertas oferecem a capacidade de criar análises que [responda a perguntas vitais sobre seus canais e campanhas de marketing](../../data-analyst/analysis/most-value-source-channel.md). Que porcentagem da receita vem de cada origem? Como funciona o valor vitalício de [!DNL Facebook] os clientes adquiridos se comparam aos de [!DNL Google]?
 
 ## Pré-requisitos e visão geral
 
-Para criar as dimensões neste artigo, você precisa de uma [!DNL Google ECommerce] tabela, um `orders` tabela e um `customers` tabela. Essas tabelas devem ser [sincronizado com a sua Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) antes que as dimensões possam ser criadas. As tabelas sincronizadas são exibidas na variável `Synced Tables` seção do `Data Warehouse Manager`.
+Para criar as dimensões neste tópico, você precisa de um [!DNL Google ECommerce] tabela, um `orders` tabela e um `customers` tabela. Essas tabelas devem ser [sincronizado com a sua Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) antes que as dimensões possam ser criadas. As tabelas sincronizadas são exibidas na variável `Synced Tables` seção do `Data Warehouse Manager`.
 
 Veja a seguir como sincronizar tabelas e colunas se precisar de uma atualização:
 
@@ -121,12 +121,12 @@ Conclua ingressando no `Customer's first order's` médio e `campaign` dimensões
 
 Você terminou de criar as dimensões, o que significa que agora é possível criar análises poderosas que rastreiam o desempenho de seus vários canais e campanhas. Lembre-se de que a variável **novas colunas não estarão disponíveis até que a próxima atualização seja concluída**.
 
-Algumas das dimensões mais populares são abordadas neste artigo, mas o céu é o limite - tente criar o seu próprio ou sinta-se livre para nos enviar um ping se quiser ajuda com a exploração de outras opções. 
+Algumas das dimensões mais populares são abordadas neste tópico, mas o céu é o limite - tente criar o seu próprio ou sinta-se à vontade para nos enviar um ping se quiser ajuda para explorar outras opções. 
 
-### Estou preso! O que é diferente? {#stuck}
+### Observações adicionais
 
-**`Orders`tabela #1:** Ao criar a variável `Order's [!DNL Google Analytics]` médio e `campaign` dimensões, a diferença são as colunas selecionadas na etapa 12. Neste exemplo, a coluna foi `Source`.
+**`Orders`tabela #1**: ao criar o `Order's [!DNL Google Analytics]` médio e `campaign` dimensões, a diferença são as colunas selecionadas na etapa 12. Neste exemplo, a coluna foi `Source`.
 
-**`Customers`tabela:** Ao criar a variável `Customer's first order's [!DNL Google Analytics]` médio e `campaign` dimensões, a diferença são as colunas selecionadas na etapa 5. Neste exemplo, a coluna foi `Order's [!DNL Google Analytics]` origem.
+**`Customers`tabela**: ao criar o `Customer's first order's [!DNL Google Analytics]` médio e `campaign` dimensões, a diferença são as colunas selecionadas na etapa 5. Neste exemplo, a coluna foi `Order's [!DNL Google Analytics]` origem.
 
-**`Orders`tabela #2:** Ao ingressar no `Customer's first order's [!DNL Google Analytics]` médio e `campaign` colunas para o `orders` , a diferença são as colunas selecionadas na etapa 5. Neste exemplo, a coluna foi `Customer's first order's [!DNL Google Analytics]` origem.
+**`Orders`tabela #2**: ao ingressar no `Customer's first order's [!DNL Google Analytics]` médio e `campaign` colunas para o `orders` , a diferença são as colunas selecionadas na etapa 5. Neste exemplo, a coluna foi `Customer's first order's [!DNL Google Analytics]` origem.

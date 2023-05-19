@@ -2,24 +2,22 @@
 title: Análise do uso do cupom
 description: Saiba como analisar o uso de cupons na aquisição e retenção de clientes.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
 
 # Uso do cupom
 
-Você já se perguntou como a oferta de cupons afeta seus negócios? Quer saber quais cupons estão ajudando ou prejudicando o desempenho? Este artigo explora análises que fornecem uma boa imagem do uso de cupom de seus clientes respondendo a estas perguntas:
+Você já se perguntou como a oferta de cupons afeta seus negócios? Quer saber quais cupons estão ajudando ou prejudicando o desempenho? Este tópico explora análises que fornecem uma boa imagem do uso de cupom dos clientes respondendo a estas perguntas:
 
 * Quantos clientes estão usando cupons?
 * Quantos cupons estão sendo usados?
 * Qual é sua receita antes e depois da aplicação dos cupons?
 * Qual é o valor médio de pedido antes e depois da aplicação dos cupons?
 * Que tipo de clientes você está atraindo com cupons?
-
-Vamos começar!
 
 ## Métricas recomendadas {#metrics}
 
@@ -109,7 +107,7 @@ Para a receita média por vida útil, é possível ver que a receita média por 
 
 ## O que mais posso analisar? {#otheranalyses}
 
-As análises mencionadas neste artigo podem fornecer informações valiosas sobre como seus clientes usam seus cupons, mas há uma variedade de outras análises que permitem aprofundar um pouco mais.
+As análises mencionadas neste tópico podem fornecer informações valiosas sobre como seus clientes usam seus cupons, mas há uma variedade de outras análises que permitem obter informações um pouco mais detalhadas.
 
 **Você poderia analisar as aquisições de clientes com base em cupons.**
 

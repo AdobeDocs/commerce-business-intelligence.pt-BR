@@ -2,16 +2,16 @@
 title: Dados esperados do Salesforce
 description: Saiba mais sobre objetos compatíveis e não compatíveis nos dados do Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # Esperado [!DNL Salesforce] dados
 
-[Depois que a variável [!DNL Salesforce] configuração concluída](../integrations/salesforce.md), uma tabela para cada consultável [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - nomeado `sf_/\{sobject-name}` - é criado na Data Warehouse.
+Depois que a variável [[!DNL Salesforce] configuração](../integrations/salesforce.md) estiver concluído, uma tabela para cada consulta [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - nomeado `sf_/\{sobject-name}` - é criado na Data Warehouse.
 
 >[!NOTE]
 >
@@ -48,4 +48,4 @@ Atualmente, [!DNL Salesforce] No momento, o não expõe os seguintes objetos na 
 ## Relacionados:
 
 * [Conectando [!DNL Salesforce]](../integrations/salesforce.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

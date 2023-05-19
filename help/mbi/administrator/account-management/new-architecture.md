@@ -2,16 +2,16 @@
 title: Nova arquitetura
 description: Saiba mais sobre os benefícios de migrar para a nova arquitetura.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # Nova arquitetura
 
-As equipes de produtos e engenharia da MBI têm se concentrado em fazer as melhorias mais abrangentes e solicitadas possíveis para o ano passado. O Adobe tem o prazer de anunciar a disponibilidade de um novo [!DNL MBI] que torna essas melhorias uma realidade.
+[!DNL Adobe Commerce Intelligence] As equipes de produtos e engenharia se concentraram em fazer as melhorias mais abrangentes e solicitadas possíveis no último ano. O Adobe tem o prazer de anunciar a disponibilidade de um novo [!DNL Commerce Intelligence] que torna essas melhorias uma realidade.
 
 ## Benefícios da nova arquitetura
 
@@ -25,7 +25,7 @@ As principais diferenças estão listadas acima, mas a principal alteração é 
 
 ### Migrando para a nova arquitetura
 
-Como as contas são fundamentalmente criadas de forma diferente, não há um processo automático para migrar sua Data Warehouse ou relatórios para uma nova conta de arquitetura. A migração para a nova arquitetura requer uma reimplementação da conta existente.
+Como as contas são fundamentalmente criadas de forma diferente, não há um processo automático para migrar sua Data Warehouse ou relatórios para uma nova conta de arquitetura. A migração para a nova arquitetura requer a reimplementação da conta existente.
 
 ### Custo para migrar para a nova arquitetura
 
@@ -43,7 +43,7 @@ Quando estiver concluído, você saberá quais dados precisam ser sincronizados 
 
 ### Obtendo ajuda
 
-A variável [!DNL MBI] A equipe de serviços pode realizar a reimplementação por um custo extra. Entre em contato com [Equipe da conta Adobe](../../guide-overview.md) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar ao criar na nova conta
+A variável [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) O pode executar a reimplementação por um custo extra. Entre em contato com [Equipe da conta Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar ao criar na nova conta
 
 ### Permanecendo com a arquitetura existente
 

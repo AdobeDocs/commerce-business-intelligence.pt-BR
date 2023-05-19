@@ -2,7 +2,7 @@
 title: Relatório de Probabilidade de Repetição de Pedido
 description: Saiba e entenda o Relatório de Probabilidade de Ordem de Repetição.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Quando é o `Incremental Event Probability` perspectiva disponível?
 
-A variável `incremental event probability` a perspectiva só está disponível quando os filtros usam dimensões iguais para todas as ordens (por exemplo, `gender`, do usuário `age` ou do usuário `source`)
+A variável `incremental event probability` a perspectiva só está disponível quando os filtros usam dimensões iguais para todas as ordens (por exemplo, `gender`, do usuário `age` ou do usuário `source`).
 
 Isso ocorre porque essa perspectiva depende de uma dimensão chamada `User's order number` para segmentação, que numera as compras de um usuário (por exemplo, 1º, 2º e 3º pedidos de John).
 
@@ -23,7 +23,7 @@ Se você adicionou um filtro que usa uma dimensão que não é igual para todas 
 
 Em certos casos, você pode ser capaz de transformar um `order-specific` dimensão em uma `user-specific` dimensão a ser adicionada como filtro na variável `Repeat Order Probability` gráfico. Nesses casos, você retorna o atributo da ordem da primeira ordem de um usuário ou da ordem mais recente (por exemplo, nome da região da primeira ordem do usuário).
 
-Se quiser criar essa nova dimensão, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se quiser criar essa nova dimensão, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Comparando a probabilidade de repetição de ordens com atributos diferentes
 
@@ -33,7 +33,7 @@ Os números que compõem esse gráfico podem ser exportados para Excel para calc
 
 ### Exemplo:
 
-|  |  |
+| Categoria | Valor |
 |---|---|
 | Número de clientes que fizeram uma compra em sua vida | `90` |
 | Número de clientes que fizeram duas compras durante sua vida | `30` |

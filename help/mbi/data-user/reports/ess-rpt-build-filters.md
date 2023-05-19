@@ -2,9 +2,9 @@
 title: Filtros
 description: Saiba como usar filtros.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Um ou mais filtros podem ser adicionados para limitar os dados usados para produ
 >
 >Um relatório pode ter no máximo 3.500 pontos de dados. Para reduzir o número de pontos de dados, use um filtro para reduzir a quantidade de dados usada para gerar o relatório.
 
-O MBI inclui uma seleção de filtros que você pode usar &quot;prontos para uso (OOTB)&quot; ou modificar para atender às suas necessidades. Não há limite para o número de filtros que você pode criar.
+[!DNL Adobe Commerce Intelligence] O inclui uma seleção de filtros que podem ser usados &quot;prontos para uso (OOTB)&quot; ou modificados para atender às suas necessidades. Não há limite para o número de filtros que você pode criar.
 
 ## Para adicionar um filtro:
 

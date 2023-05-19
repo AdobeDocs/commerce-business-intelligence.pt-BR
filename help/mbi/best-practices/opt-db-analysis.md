@@ -2,16 +2,16 @@
 title: Otimização do Banco de Dados para Análise
 description: Saiba como otimizar seu banco de dados para análise.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Otimizar seu banco de dados
 
-O principal benefício de usar um banco de dados operacional para business intelligence é que nada precisa ser criado ou modificado para coletar dados. Informações valiosas já existem; tudo o que você precisa fazer é desbloqueá-las.
+A principal vantagem de usar um banco de dados operacional para [!DNL Adobe Commerce Intelligence] é que nada precisa ser criado ou modificado para coletar dados. Informações valiosas já estão disponíveis - você só precisa desbloqueá-las.
 
 Este tópico contém algumas recomendações para ajudá-lo a otimizar seu banco de dados para análise e desenhar insights acionáveis a partir de dados brutos.
 
@@ -51,16 +51,16 @@ Muitas empresas se concentram apenas em encontrar canais que forneçam novos usu
 
 ### Definir uma chave primária
 
-A [chave primária](https://en.wikipedia.org/wiki/Unique_key) é uma coluna (ou conjunto de colunas) inalterável que produz valores únicos em uma tabela. As chaves primárias são incrivelmente importantes, pois garantem que suas tabelas sejam replicadas corretamente em [!DNL MBI].
+A [chave primária](https://en.wikipedia.org/wiki/Unique_key) é uma coluna (ou conjunto de colunas) inalterável que produz valores únicos em uma tabela. As chaves primárias são incrivelmente importantes, pois garantem que suas tabelas sejam replicadas corretamente em [!DNL Commerce Intelligence].
 
 Ao criar chaves primárias, use um tipo de dados de número inteiro para a coluna que aumenta automaticamente. O Adobe recomenda evitar o uso de várias chaves primárias de coluna, quando possível.
 
-Se a tabela for uma visualização SQL, adicione uma coluna que possa agir como uma chave primária. [!DNL MBI] O pode identificar automaticamente essa coluna como uma chave primária.
+Se a tabela for uma visualização SQL, adicione uma coluna que possa agir como uma chave primária. [!DNL Commerce Intelligence] O pode identificar automaticamente essa coluna como uma chave primária.
 
 ### Atribuir um Tipo de Dados à Coluna de Dados
 
-Se uma coluna de dados não tiver um [tipo de dados](https://en.wikipedia.org/wiki/Data_type), [!DNL MBI] adivinha qual tipo de dados usar. Se o sistema adivinhar incorretamente, talvez você não possa realizar as análises relevantes até que a equipe de suporte do Adobe ajuste a coluna para o tipo de dados correto. Por exemplo, se uma coluna de data for adivinhada como um tipo de dados numérico, você poderá analisar a tendência ao longo do tempo usando essa dimensão de data.
+Se uma coluna de dados não tiver um [tipo de dados](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] adivinha qual tipo de dados usar. Se o sistema adivinhar incorretamente, talvez você não possa realizar as análises relevantes até que a equipe de suporte do Adobe ajuste a coluna para o tipo de dados correto. Por exemplo, se uma coluna de data for adivinhada como um tipo de dados numérico, você poderá analisar a tendência ao longo do tempo usando essa dimensão de data.
 
 ### Adicionar prefixos às tabelas de dados se você tiver vários bancos de dados
 
-Se você tiver mais de um banco de dados conectado ao [!DNL MBI], o Adobe recomenda adicionar prefixos às tabelas para evitar confusão. Os prefixos ajudam a lembrar de onde as métricas ou dimensões de dados são originadas.
+Se você tiver mais de um banco de dados conectado ao [!DNL Commerce Intelligence], o Adobe recomenda adicionar prefixos às tabelas para evitar confusão. Os prefixos ajudam a lembrar de onde as métricas ou dimensões de dados são originadas.

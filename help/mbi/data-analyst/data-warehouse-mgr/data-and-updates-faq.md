@@ -2,9 +2,9 @@
 title: Informações de Dados e Atualizações
 description: Saiba como verificar o status do ciclo de atualização.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Por que meus dados foram alterados? {#datachange}
 
-Os valores do gráfico podem mudar durante o dia devido aos novos dados que estão sendo sincronizados com sua Data Warehouse. Além disso, os valores para colunas de dados existentes podem mudar devido a [recheques](../data-warehouse-mgr/cfg-data-rechecks.md). Uma nova verificação é um processo que busca valores alterados em colunas de dados - por exemplo, um status de pedido que muda de `open` para `shipped`.
+Os valores do gráfico podem mudar durante o dia devido aos novos dados que estão sendo sincronizados com sua Data Warehouse. Além disso, os valores para colunas de dados existentes podem mudar devido a [recheques](../data-warehouse-mgr/cfg-data-rechecks.md). Uma nova verificação é um processo que busca valores alterados em colunas de dados, como um status de pedido movendo de `open` para `shipped`.
 
-Há algumas maneiras diferentes [para verificar o status do ciclo de atualização](../../best-practices/check-update-cycle.md), dependendo do tipo de permissões de usuário que você tem.
+Há algumas maneiras diferentes [para verificar o status do ciclo de atualização](../../best-practices/check-update-cycle.md), dependendo das configurações de permissões do usuário.
 
 ## Qual é a diferença entre uma atualização regular e forçada? {#regularforcedupdates}
 
-As atualizações regulares são **programado** enquanto as atualizações forçadas são **processos manuais iniciados por você**. Se você tiver horas de blecaute - ou um período em que [!DNL MBI] não deve atualizar seus dados - forçar uma atualização inicia um ciclo que não respeita as limitações do período de blecaute.
+As atualizações regulares são **programado** enquanto as atualizações forçadas são **processos manuais iniciados por você**. Se você tiver horas de blecaute (ou um período em que [!DNL Commerce Intelligence] não deve atualizar seus dados), forçar uma atualização inicia um ciclo que não respeita as limitações do período de blecaute.
 
 ## Por que o ciclo de atualização leva muito tempo? {#updatecycletime}
 
@@ -38,8 +38,8 @@ Se uma atualização estiver em andamento, há um link no `Connections` página 
 
 ## Por que[!DNL Google ECommerce]dados diferentes do meu banco de dados? {#ecommdatabase}
 
-Discrepâncias entre [!DNL Google Analytics] e seu banco de dados pode surgir por vários motivos. O rastreamento não está ativado corretamente, os usuários que visitam de forma incógnita e os eventos de clique que não estão funcionando corretamente são apenas alguns exemplos. Se sua receita e seus pedidos não parecerem corretos, [usar este artigo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) para diagnosticar o problema.
+Discrepâncias entre [!DNL Google Analytics] e seu banco de dados pode surgir por vários motivos. O rastreamento não está ativado corretamente, os usuários que visitam de forma incógnita e os eventos de clique que não estão funcionando corretamente são apenas alguns exemplos. Se sua receita e seus pedidos não parecerem corretos, [consulte este tópico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) para diagnosticar um problema.
 
 ## Como solucionar problemas de discrepância de dados? {#datadiscrepancy}
 
-A Adobe sabe que ver dados inconsistentes pode ser uma experiência frustrante. Tente usar o [Lista de verificação de discrepância de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) ou [Tutorial de exportações de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) para diagnosticar o problema. Se você ainda estiver perdido, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+A Adobe sabe que ver dados inconsistentes pode ser uma experiência frustrante. Tente usar o [Lista de verificação de discrepância de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) ou [Tutorial de exportações de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) para diagnosticar o problema. Se você ainda estiver perdido, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

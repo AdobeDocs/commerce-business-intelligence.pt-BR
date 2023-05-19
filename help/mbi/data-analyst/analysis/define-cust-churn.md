@@ -2,16 +2,16 @@
 title: Definir churn do cliente
 description: Saiba como configurar um painel que ajuda a definir a rotatividade para seus clientes transacionais.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Churn transacional do cliente
 
-Este artigo demonstra como configurar um painel que ajuda a definir a rotatividade dos clientes transacionais.
+Este tópico demonstra como configurar um painel que ajuda a definir a rotatividade dos clientes transacionais.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -136,4 +136,4 @@ Depois de criar o painel, a pergunta mais comum é: como usar isso para determin
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode parecer com a imagem na parte superior da página
 
-Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

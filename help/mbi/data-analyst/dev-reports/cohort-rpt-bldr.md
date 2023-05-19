@@ -2,7 +2,7 @@
 title: Report Builder de coorte
 description: Saiba mais sobre a análise de grupos de usuários que compartilham características semelhantes em seus ciclos de vida.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Report Builder de coorte
 
-Você já quis estudar como diferentes subconjuntos de usuários se comportam ao longo do tempo? Por exemplo, você já se perguntou se os usuários que se registram durante um período promocional têm uma receita média vitalícia maior do que aqueles que não têm? Se a resposta for `Yes`, depois o `Cohort Report Builder` O é a ferramenta perfeita para você. [!DNL MBI] O é otimizado para realizar essa análise e torná-la relevante para sua empresa.
+Você já quis estudar como diferentes subconjuntos de usuários se comportam ao longo do tempo? Por exemplo, você já se perguntou se os usuários que se registram durante um período promocional têm uma receita média vitalícia maior do que aqueles que não têm? Se a resposta for `Yes`, depois o `Cohort Report Builder` O é a ferramenta perfeita para você. [!DNL Adobe Commerce Intelligence] O é otimizado para realizar essa análise e torná-la relevante para sua empresa.
 
 ## O que é a análise de coorte? {#what}
 
 `Cohort` a análise pode ser definida amplamente como a análise de grupos de usuários que compartilham características semelhantes em seus ciclos de vida. Ele permite identificar tendências comportamentais em diferentes grupos de usuários.
 
-Para obter uma introdução mais detalhada sobre `cohort` análise, [olhe aqui](https://www.cohortanalysis.com/).
+Para obter uma introdução detalhada sobre `cohort` análise, revisão [esta página](https://www.cohortanalysis.com/).
 
-No seu [!DNL MBI] é fácil criar um usuário `cohorts` com base em um `cohort` data e uma métrica em sua conta.
+No seu [!DNL Commerce Intelligence] é fácil criar um usuário `cohorts` com base em um `cohort` data e uma métrica em sua conta.
 
 ## Bem, por que a análise de coorte é importante? {#important}
 
-Tal como acima referido, `cohort` A análise permite identificar tendências comportamentais entre diferentes grupos de usuários. Com uma sólida compreensão de como determinados grupos se comportam, você pode adaptar suas decisões e gastos para maximizar suas vendas. Considere, por exemplo, uma receita vitalícia `cohort` análise - embora esse tipo de análise seja benéfico por vários motivos, a imediata é a adoção de melhores decisões de aquisição de clientes.
+Tal como acima referido, `cohort` A análise permite identificar tendências comportamentais entre diferentes grupos de usuários. Com uma sólida compreensão de como determinados grupos se comportam, você pode adaptar suas decisões e gastos para maximizar suas vendas. Por exemplo, pegue uma receita vitalícia `cohort` análise - embora esse tipo de análise seja benéfico por vários motivos, a imediata é a adoção de melhores decisões de aquisição de clientes.
 
 ## Como criar o meu próprio `cohort` análise?
 
@@ -99,7 +99,7 @@ Aqui está um exemplo para reunir tudo. Neste exemplo, quero verificar o comport
 
 #### Arquitetura herdada {#personalinfo}
 
-Abaixo estão as instruções específicas para a versão herdada do `Cohort Report Builder`. Se estiver interessado em usar a nova versão, consulte [Nova arquitetura](../../administrator/account-management/new-architecture.md) para obter mais informações sobre como migrar para uma [!DNL MBI] Nova conta de arquitetura.
+Abaixo estão as instruções específicas para a versão herdada do `Cohort Report Builder`. Se estiver interessado em usar a nova versão, consulte [Nova arquitetura](../../administrator/account-management/new-architecture.md) para obter mais informações sobre como migrar para uma [!DNL Commerce Intelligence] Nova conta de arquitetura.
 
 #### Como criar o meu próprio `cohort` análise? {#create}
 
@@ -107,7 +107,7 @@ Abaixo estão as instruções específicas para a versão herdada do `Cohort Rep
 
 `Cohort` análise em ação! Aqui, você pode ver a receita crescendo ao longo do tempo de forma cumulativa e por usuário.
 
-Esta seção o orienta na criação da sua própria `cohort` análise. Para obter exemplos (e GIF animados demonstrando o processo), verifique a [Seção Exemplos](#examples) deste artigo.
+Esta seção o orienta na criação da sua própria `cohort` análise. Para obter exemplos (e GIF animados demonstrando o processo), verifique a [Seção Exemplos](#examples) deste tópico.
 
 1. Clique em **[!UICONTROL Report Builder]** na guia esquerda ou **[!UICONTROL Add Report** > **Create Report]** em qualquer painel.
 

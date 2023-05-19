@@ -2,9 +2,9 @@
 title: Fórmulas
 description: Saiba como usar fórmulas.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Uma fórmula combina várias métricas e lógica matemática para responder a um
 
    Faça o seguinte:
 
-   * No `Enter your Formul` caixa de entrada, insira `A/B`.
+   * No `Enter your Formula` caixa de entrada, insira `A/B`.
 
       Isso divide a receita por produtos solicitados pelo número de novos clientes.
 
@@ -71,7 +71,7 @@ Uma fórmula combina várias métricas e lógica matemática para responder a um
 
    * Nos calendários, escolha o intervalo de datas.
 
-      Para este exemplo, a temporada de festas é de 1º de novembro a 31 de dezembro.
+      Neste exemplo, a temporada de festas é de `November 1` até `December 31`.
 
    * Em `Select Time Interval`, escolha `Day`.
 

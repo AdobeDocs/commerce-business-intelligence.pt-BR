@@ -1,15 +1,15 @@
 ---
-title: Integração
-description: Saiba mais sobre integração.
+title: Integração ao Adobe Commerce Intelligence
+description: Saiba mais sobre a integração do Adobe Commerce Intelligence.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# Integração
+# Integração [!DNL Adobe Commerce Intelligence]
 
 As perguntas de integração relacionadas ao `store` e `database` as configurações garantem que seus relatórios sejam configurados corretamente. Com essas respostas, o Adobe fornece relatórios que são adaptados precisamente para a configuração de sua loja.
 
@@ -29,6 +29,6 @@ As perguntas de integração relacionadas ao `store` e `database` as configuraç
 
 ## Configurações do banco de dados
 
-- `Database name` - O que é o *nome do banco de dados MySQL* onde estão os dados transacionais do Commerce?
+- `Database name` - O que é o *nome do [!DNL MySQL] banco de dados* onde estão os dados transacionais do Commerce?
 
 - `Table prefix (optional)` - As tabelas contidas no banco de dados do Commerce são precedidas de qualquer item (por exemplo, `store_`)? Normalmente, não é o caso, mas é uma personalização que pode ser feita.

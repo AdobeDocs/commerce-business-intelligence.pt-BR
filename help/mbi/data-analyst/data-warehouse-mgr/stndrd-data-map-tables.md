@@ -2,16 +2,16 @@
 title: Padronizar dados com tabelas de mapeamento
 description: Saiba como trabalhar com tabelas de mapeamento.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # Padronizar Dados com Tabelas de Mapeamento
 
-Imagine isso: você está no `Report Builder`, criando um `Revenue by State` relatório. Você está na zona. Tudo vai bem até que você adicione um `billing state` ao seu relatório e você verá isto:
+Imagine que você esteja no `Report Builder` criação de um `Revenue by State` relatório. Tudo vai bem até que você tente adicionar um `billing state` ao seu relatório e você verá isto:
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -45,9 +45,9 @@ Na segunda coluna, insira quais desses valores **deve ser**. Continuando com o e
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## O que preciso fazer em [!DNL MBI] para usá-lo? {#use}
+## O que preciso fazer em [!DNL Commerce Intelligence] para usá-lo? {#use}
 
-Após concluir a criação da tabela de mapeamento, será necessário [fazer upload do arquivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) em [!DNL MBI] e [criar uma coluna unida](../../data-analyst/data-warehouse-mgr/calc-column-types.md) que realoca o novo campo na tabela desejada. Você pode fazer isso depois que o arquivo for sincronizado com a Data Warehouse.
+Após concluir a criação da tabela de mapeamento, você deverá [fazer upload do arquivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) em [!DNL Commerce Intelligence] e [criar uma coluna unida](../../data-analyst/data-warehouse-mgr/calc-column-types.md) que realoca o novo campo na tabela desejada. Você pode fazer isso depois que o arquivo for sincronizado com a Data Warehouse.
 
 Este exemplo move a coluna criada na variável `mapping_state` tabela (`state_input`) para o `customer_address` tabela usando uma coluna unida. Isso nos permite agrupar pela limpeza `state_input` em seus relatórios em vez da `state` coluna.
 
@@ -70,15 +70,13 @@ Para criar o `joined` navegue até a tabela na qual o campo será realocado no G
 1. O caminho pode não ser preenchido imediatamente após salvar - se isso acontecer, clique no link `Path` e selecione o caminho criado.
 1. Clique em **[!UICONTROL Save]** para criar a coluna.
 
-Pronto!
-
 ## O que eu faço agora? {#wrapup}
 
 Depois que um ciclo de atualização for concluído, você poderá usar sua nova coluna unida para segmentar corretamente os dados em vez da coluna confusa do banco de dados. Olhe para suas opções de agrupamento agora - sem mais confusão de estresse:
 
 ![](../../assets/Clean_State_Segments.png)
 
-As tabelas de mapeamento são úteis a qualquer momento em que você desejar limpar alguns dados potencialmente confusos na Data Warehouse. No entanto, as tabelas de mapeamento também podem ser usadas para alguns outros casos de uso interessantes, como [replicação de canais do Google Analytics no MBI](../data-warehouse-mgr/rep-google-analytics-channels.md).
+As tabelas de mapeamento são úteis a qualquer momento em que você desejar limpar alguns dados potencialmente confusos na Data Warehouse. No entanto, as tabelas de mapeamento também podem ser usadas para alguns outros casos de uso interessantes, como [replicação do [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Relacionados
 

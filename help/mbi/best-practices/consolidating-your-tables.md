@@ -2,7 +2,7 @@
 title: Consolidar suas tabelas
 description: Saiba como consolidar tabelas e bancos de dados.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Consolidar suas tabelas
 
-Se você opera várias frentes de loja ou em vários mercados, você pode ter bancos de dados semelhantes armazenados separadamente. Entrada [!DNL MBI]No entanto, é fácil consolidar tabelas semelhantes de bancos de dados diferentes juntos.
+Se você opera várias frentes de loja ou em vários mercados, você pode ter bancos de dados semelhantes armazenados separadamente. Entrada [!DNL Adobe Commerce Intelligence]No entanto, é fácil consolidar tabelas semelhantes de bancos de dados diferentes juntos.
 
-Por exemplo, você pode ter um `orders` tabela para `Market A`, e um similar `orders` tabela para `Market B`. [!DNL MBI] pode consolidar ambas as tabelas e permitir que você veja os dados da ordem agregada de ambos `Market A` e `B`, além de segmentá-la por mercado específico.
+Por exemplo, você pode ter um `orders` tabela para `Market A`, e um similar `orders` tabela para `Market B`. [!DNL Commerce Intelligence] pode consolidar ambas as tabelas e permitir que você veja os dados da ordem agregada de ambos `Market A` e `B`, além de segmentá-la por mercado específico.
 
 Para que a consolidação das tabelas funcione, as tabelas de entrada devem ser **estruturado de forma semelhante**. Em outras palavras, todas as tabelas de entrada devem conter as colunas de dados necessárias na tabela consolidada.
 
@@ -43,8 +43,8 @@ Como em todas as outras tabelas da Data Warehouse, é possível adicionar mais c
 
 ## Criando, Exibindo ou Atualizando uma Tabela Consolidada
 
-Se você estiver interessado em adicionar uma tabela consolidada à sua Data Warehouse, entre em contato com [!DNL MBI] [suporte](../guide-overview.md).
+Se você estiver interessado em adicionar uma tabela consolidada à sua Data Warehouse, entre em contato com [!DNL Commerce Intelligence] [suporte](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Como as tabelas consolidadas não são visíveis na variável `Data Warehouse Manager`, a exibição e a atualização dessas tabelas só podem ser feitas por [!DNL MBI] suporte.
+>Como as tabelas consolidadas não são visíveis na variável `Data Warehouse Manager`, a exibição e a atualização dessas tabelas só podem ser feitas por [!DNL Commerce Intelligence] suporte.

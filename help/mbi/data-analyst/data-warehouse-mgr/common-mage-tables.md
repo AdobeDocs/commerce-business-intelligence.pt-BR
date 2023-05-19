@@ -1,19 +1,19 @@
 ---
 title: Tabelas de comércio comuns
-description: Saiba mais sobre algumas das tabelas mais comuns que [!DNL MBI] clientes usam.
+description: Saiba mais sobre algumas das tabelas mais comuns que [!DNL Commerce Intelligence] clientes usam.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # Tabelas de comércio comuns
 
-Ao conectar pela primeira vez uma instância do Commerce ao [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] O replica automaticamente os dados de algumas tabelas de comércio (normalmente de 4 a 6 tabelas) para configurar o conjunto inicial de painéis e relatórios. Embora isso ofereça um excelente ponto de partida, a maioria das instâncias de armazenamento gera dezenas, ou centenas, de tabelas adicionais que podem fornecer informações críticas sobre o desempenho de sua empresa.
+Ao conectar pela primeira vez um [!DNL Adobe Commerce] instância para [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] O replica automaticamente dados de algumas de suas tabelas de comércio (normalmente de 4 a 6 tabelas) para configurar o conjunto inicial de painéis e relatórios. Embora isso ofereça um excelente ponto de partida, a maioria das instâncias de armazenamento gera dezenas, ou centenas, de tabelas adicionais que podem fornecer informações críticas sobre o desempenho de sua empresa.
 
-Abaixo está uma lista de algumas das tabelas mais comuns que [!DNL MBI] clientes usam. Depois que você [conectar sua instância do Commerce ao MBI](../../data-analyst/importing-data/integrations/magento.md), você pode usar o [Gerenciador de Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear campos de dados relevantes.
+Abaixo está uma lista de algumas das tabelas mais comuns que [!DNL Commerce Intelligence] clientes usam. Depois que você [conectar sua instância do Commerce ao Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md), você pode usar o [Gerenciador de Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear campos de dados relevantes.
 
 | Nome da tabela | Descrição |
 |---|---|

@@ -2,16 +2,16 @@
 title: Análise do comportamento de recompra do cliente
 description: Saiba como analisar o comportamento de recompra do cliente.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
 # Comportamento de recompra do cliente
 
-Se você oferecer mais de um produto, provavelmente se perguntará como os clientes que compram um produto específico se comportam de forma diferente ao longo do tempo em comparação a outros clientes. Este artigo explora análises que podem ajudar você a responder às seguintes perguntas:
+Se você oferecer mais de um produto, provavelmente se perguntará como os clientes que compram um produto específico se comportam de forma diferente ao longo do tempo em comparação a outros clientes. Este tópico explora análises que podem ajudá-lo a responder às seguintes perguntas.
 
 Entre os clientes que compram um *item específico*,
 
@@ -52,7 +52,7 @@ Considerando as métricas acima, veja um exemplo que envolve produtos para café
 
 {style="table-layout:auto"}
 
-Agora que você tem seus dados, veja o que isso pode significar para cada uma de suas métricas.
+Agora que você tem seus dados, o que isso significa para cada uma de suas métricas?
 
 ### Probabilidade de ordem de repetição
 
@@ -74,10 +74,10 @@ Entre os clientes que compraram cápsulas de café, metade faz um pedido repetid
 
 ## Que outras análises posso fazer?
 
-Usando as métricas descritas neste artigo, você também pode criar outras análises úteis de recompra. Por exemplo, você também pode ver como os clientes compram novamente **o mesmo item** - por exemplo, se compram recheios regularmente. Cápsulas e grãos de café podem ser recomprados regularmente, mas seria inesperado ver clientes fazendo compras repetidas da cervejaria de café. Se sua empresa se concentrar em recarregamentos ou reabastecimento, essa análise será útil.
+Usando as métricas descritas neste tópico, você também pode criar outras análises úteis de recompra. Por exemplo, você também pode ver como os clientes compram novamente **o mesmo item** - por exemplo, se compram recheios regularmente. Cápsulas e grãos de café podem ser recomprados regularmente, mas seria inesperado ver clientes fazendo compras repetidas da cervejaria de café. Se sua empresa se concentrar em recarregamentos ou reabastecimento, essa análise será útil.
 
 Além de analisar o comportamento de recompra dos clientes, você também pode criar análises que analisam a fidelidade do cliente. Considere analisar os padrões de churn do cliente - de onde seus clientes estão saindo do site e não voltando? Em que ritmo isso ocorre?
 
 Depois de identificar por que o abandono está acontecendo, você pode usar sua análise para criar um `reactivation` campanha. Usando esses dados, você pode identificar os usuários que se tornaram inativos, quanto tempo passou desde a última visita, qual foi a última compra e assim por diante. Isso permite tomar decisões acionáveis que motivam seus clientes a voltar.
 
-Para obter ajuda com a análise, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Para obter ajuda com a análise, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

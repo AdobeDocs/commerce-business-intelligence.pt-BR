@@ -1,27 +1,27 @@
 ---
 title: Relatórios sobre um calendário de varejo
-description: Saiba como configurar a estrutura para usar um calendário de varejo 4-5-4 no [!DNL MBI] conta.
+description: Saiba como configurar a estrutura para usar um calendário de varejo 4-5-4 no [!DNL Commerce Intelligence] conta.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # Relatórios de um Calendário de varejo
 
-Este artigo demonstra como configurar a estrutura para usar uma [4-5-4 calendário de varejo](https://nrf.com/resources/4-5-4-calendar) no seu [!DNL MBI] conta. O construtor de relatórios visuais oferece intervalos de tempo, intervalos e configurações independentes incrivelmente flexíveis. No entanto, todas essas configurações funcionam com o calendário mensal tradicional em vigor.
+Este tópico demonstra como configurar a estrutura para usar uma [4-5-4 calendário de varejo](https://nrf.com/resources/4-5-4-calendar) no seu [!DNL Adobe Commerce Intelligence] conta. O construtor de relatórios visuais oferece intervalos de tempo, intervalos e configurações independentes incrivelmente flexíveis. No entanto, todas essas configurações funcionam com o calendário mensal tradicional em vigor.
 
 Como muitos clientes alteram seu calendário para usar datas de varejo ou contábeis, as etapas abaixo ilustram como trabalhar com seus dados e criar relatórios usando datas de varejo. Embora as instruções abaixo façam referência ao calendário 4-5-4 Varejo, você pode alterá-lo para qualquer calendário específico que sua equipe use, seja financeiro ou apenas um intervalo de tempo personalizado.
 
-Antes de começar, você precisa se familiarizar com o [o Uploader do arquivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) e certifique-se de ter alongado o `.csv` arquivo. Isso garante que as datas cubram todos os seus dados históricos e insiram as datas no futuro.
+Antes de começar, você deve revisar [o Uploader do arquivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) e certifique-se de ter alongado o `.csv` arquivo. Isso garante que as datas cubram todos os seus dados históricos e insiram as datas no futuro.
 
 Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Introdução
 
-Você pode [baixar](../../assets/454-calendar.csv) a `.csv` versão do calendário de varejo 4-5-4 para os anos de varejo de 2014 a 2017. Talvez seja necessário ajustar esse arquivo de acordo com seu calendário de varejo interno e estender o intervalo de datas para oferecer suporte ao seu histórico e período atual. Depois de baixar o arquivo, use o Carregador de arquivo para criar uma tabela de Calendário de varejo no seu [!DNL MBI] Data Warehouse. Se você estiver usando uma versão inalterada do calendário de varejo 4-5-4, verifique se a estrutura e os tipos de dados dos campos nessa tabela correspondem ao seguinte:
+Você pode [baixar](../../assets/454-calendar.csv) a `.csv` versão do calendário de varejo 4-5-4 para os anos de varejo de 2014 a 2017. Talvez seja necessário ajustar esse arquivo de acordo com seu calendário de varejo interno e estender o intervalo de datas para oferecer suporte ao seu histórico e período atual. Depois de baixar o arquivo, use o Carregador de arquivo para criar uma tabela de Calendário de varejo no seu [!DNL Commerce Intelligence] Data Warehouse. Se você estiver usando uma versão inalterada do calendário de varejo 4-5-4, verifique se a estrutura e os tipos de dados dos campos nessa tabela correspondem ao seguinte:
 
 | Nome da coluna | Tipo de dados da coluna | Chave primária |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Você pode [baixar](../../assets/454-calendar.csv) a `.csv` versão do calendár
 
          >[!NOTE]
          >
-         >A variável `now()` A função acima é específica do PostgreSQL. Embora a maioria dos [!DNL MBI] Os data warehouses estão hospedados no PostgreSQL, alguns podem estar hospedados no Redshift. Se o cálculo acima retornar um erro, talvez seja necessário usar a função Redshift `getdate()` em vez de `now()`.
+         >A variável `now()` A função acima é específica do PostgreSQL. Embora a maioria dos [!DNL Commerce Intelligence] Os data warehouses estão hospedados no PostgreSQL, alguns podem estar hospedados no Redshift. Se o cálculo acima retornar um erro, talvez seja necessário usar a função Redshift `getdate()` em vez de `now()`.
    * **Ano de varejo atual** (Deve ser criado pelo analista de suporte)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
@@ -201,6 +201,6 @@ Observação: nenhuma métrica nova é necessária para essa análise. No entant
 
 As informações acima descrevem como configurar um calendário de varejo para ser compatível com qualquer métrica criada em seu `sales\_order` tabela (como `Revenue` ou `Orders`). Também é possível estender essa opção para oferecer suporte ao calendário de varejo para métricas criadas em qualquer tabela. O único requisito é que essa tabela tenha um campo de data e hora válido que possa ser usado para unir à tabela Calendário de Varejo.
 
-Por exemplo, para exibir métricas no nível do cliente em um calendário de varejo 4-5-4, crie um `Same Table` cálculo no `customer\_entity` tabela, semelhante a `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` acima descritas. É possível usar essa coluna para reproduzir a variável `One to Many` JOINED\_COLUMN cálculos (como `Created_at (retail year)` e `Include in previous retail year? (Yes/No)` ao ingressar no `customer\_entity` tabela para a `Retail Calendar` tabela.
+Por exemplo, para exibir métricas no nível do cliente em um calendário de varejo 4-5-4, crie um `Same Table` cálculo no `customer\_entity` tabela, semelhante a `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` acima descritas. É possível usar essa coluna para reproduzir a variável `One to Many` JOINED\_COLUMN cálculos (como `Created_at (retail year)`) e `Include in previous retail year? (Yes/No)` ao ingressar no `customer\_entity` tabela para a `Retail Calendar` tabela.
 
 Não se esqueça de [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.

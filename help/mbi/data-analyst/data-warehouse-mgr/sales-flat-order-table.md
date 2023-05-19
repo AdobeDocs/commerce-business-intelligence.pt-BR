@@ -2,9 +2,9 @@
 title: tabela sales_order
 description: Saiba como trabalhar com a tabela sales_order.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Esta tabela inclui todos os pedidos do cliente, independentemente de esse pedido
 | `base_tax_amount` | Valor de imposto aplicado ao pedido |
 | `billing_address_id` | `Foreign key` associado à `sales_order_address` tabela. Associar-se a `sales_order_address.entity_id` para determinar os detalhes do endereço de cobrança associados ao pedido |
 | `coupon_code` | Cupom aplicado à ordem. Se nenhum cupom for aplicado, este campo será `NULL` |
-| `created_at` | Carimbo de data e hora de criação do pedido, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL MBI], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL MBI] que difere do fuso horário do seu banco de dados |
+| `created_at` | Carimbo de data e hora de criação do pedido, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL Commerce Intelligence], esse carimbo de data e hora pode ser convertido em um fuso horário de relatórios no [!DNL Commerce Intelligence] que difere do fuso horário do seu banco de dados |
 | `customer_email` | Endereço de email do cliente que faz o pedido. Isso é preenchido em todas as situações, incluindo pedidos processados por meio da finalização da compra do convidado |
 | `customer_group_id` | Chave estrangeira associada à `customer_group` tabela. Associar-se a `customer_group.customer_group_id` para determinar o grupo de clientes associado ao pedido |
 | `customer_id` | `Foreign key` associado à `customer_entity` tabela, se o cliente estiver registrado. Associar-se a `customer_entity.entity_id` para determinar os atributos do cliente associados à ordem. Se o pedido foi feito por meio do check-out do convidado, esse campo será `NULL` |
@@ -55,7 +55,7 @@ Esta tabela inclui todos os pedidos do cliente, independentemente de esse pedido
 | `Customer's lifetime revenue` | Soma total da receita de todos os pedidos feitos por esse cliente. Calculado pela soma de `base_grand_total` para todos os pedidos de cada cliente único |
 | `Customer's order number` | Classificação de ordem sequencial para a ordem deste cliente. Calculado identificando todos os pedidos feitos por um cliente e classificando-os em ordem crescente pelo `created_at` carimbo de data e hora e atribuição de um valor inteiro crescente a cada ordem. Por exemplo, a primeira ordem do cliente retorna uma `Customer's order number` de 1, a segunda ordem do cliente retorna uma `Customer's order number` de 2 e assim por diante. |
 | `Customer's order number (previous-current)` | Classificação da ordem anterior do cliente concatenada com a classificação desta ordem, separada por uma `-` caractere. Calculado pela concatenação (&quot;`Customer's order number` - 1&quot;) por &quot;`-`&quot; seguido por &quot;`Customer's order number`&quot;. Por exemplo, para a ordem associada à segunda compra do cliente, essa coluna retorna um valor de `1-2`. Usado com mais frequência ao representar o tempo entre dois eventos de ordem (ou seja, no gráfico &quot;Tempo entre ordens&quot;) |
-| `Is customer's last order?` | Determina se o pedido corresponde ao último pedido do cliente ou ao pedido mais recente. Calculado por comparação do `Customer's order number` valor com `Customer's lifetime number of orders`. Quando esses dois campos são iguais para a ordem especificada, essa coluna retorna &quot;Sim&quot;; caso contrário, retorna &quot;Não&quot; |
+| `Is customer's last order?` | Determina se o pedido corresponde ao último pedido do cliente ou ao pedido mais recente. Calculado por comparação do `Customer's order number` valor com `Customer's lifetime number of orders`. Quando esses dois campos são iguais para a ordem especificada, essa coluna retorna `Yes`; caso contrário, retornará `No` |
 | `Number of items in order` | Quantidade total de itens incluídos no pedido. Calculado por associação `sales_order`.`entity_id` para `sales_order_item`.`order_id` e a soma de `sales_order_item`.`qty_ordered` campo |
 | `Seconds between customer's first order date and this order` | Tempo decorrido entre este pedido e o primeiro pedido do cliente. Calculado por subtração `Customer's first order date` do `created_at` para cada pedido, retornado como um número inteiro de segundos |
 | `Seconds since previous order` | Tempo decorrido entre este pedido e o pedido imediatamente anterior do cliente. Calculado subtraindo o `created_at` para o pedido anterior do `created_at` desta ordem, retornado como um número inteiro de segundos. Por exemplo, para o registro de pedido correspondente à terceira ordem de um cliente, essa coluna retorna o número de segundos entre a segunda ordem do cliente e a terceira ordem. Para a primeira ordem do cliente, esse campo retorna `NULL` |

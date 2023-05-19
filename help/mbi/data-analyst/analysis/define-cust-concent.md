@@ -2,16 +2,16 @@
 title: Definir concentração do cliente
 description: Saiba como configurar um painel que ajuda a medir como a receita total é distribuída entre a base de clientes.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Concentração de clientes
 
-Este artigo demonstra como configurar um painel que ajuda a medir como a receita total é distribuída entre a base de clientes. Entenda qual porcentagem dos clientes contribui com que porcentagem da receita e crie listas segmentadas para comercializar melhor e manter seus clientes que contribuem com destaque.
+Este tópico demonstra como configurar um painel que ajuda a medir como a receita total é distribuída entre a base de clientes. Entenda qual porcentagem dos clientes contribui com que porcentagem da receita e crie listas segmentadas para comercializar melhor e manter seus clientes que contribuem com destaque.
 
 Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -158,4 +158,4 @@ Colunas para criar
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima.
 
-Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

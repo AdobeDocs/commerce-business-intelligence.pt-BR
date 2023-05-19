@@ -2,31 +2,32 @@
 title: Configurando Verificações de Dados
 description: Saiba como configurar colunas de dados com valores alteráveis.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # Configurando Verificações de Dados
 
-Em uma tabela de banco de dados, pode haver colunas de dados com valores alteráveis. Por exemplo, em uma `orders`) tabela pode haver uma coluna chamada `status`. Quando um pedido é inicialmente gravado no banco de dados, a coluna de status pode conter o valor _pendente_. A ordem é replicada em seu [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) com este `pending` valor.
+Em uma tabela de banco de dados, pode haver colunas de dados com valores alteráveis. Por exemplo, em uma `orders` tabela, pode haver uma coluna chamada `status`. Quando um pedido é inicialmente gravado no banco de dados, a coluna de status pode conter o valor _pendente_. A ordem é replicada em seu [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) com este `pending` valor.
 
-No entanto, os status dos pedidos podem mudar - eles nem sempre estão em uma `pending` status. Eventualmente, poderá tornar-se `complete` ou `cancelled`. Para garantir que sua Data Warehouse sincronize essa alteração, a coluna deve ser verificada novamente em busca de novos valores.
+Os status dos pedidos podem mudar, embora nem sempre estejam em `pending` status. Eventualmente, poderá tornar-se `complete` ou `cancelled`. Para garantir que sua Data Warehouse sincronize essa alteração, a coluna deve ser verificada novamente em busca de novos valores.
 
 Como isso se encaixa no [métodos de replicação](../data-warehouse-mgr/cfg-replication-methods.md) isso foi discutido? O processamento de novas verificações varia de acordo com o método de replicação escolhido. A variável `Modified\_At` o método de replicação é a melhor opção para processar valores alterados, já que as reverificações não precisam ser configuradas. A variável `Auto-Incrementing Primary Key` e `Primary Key Batch Monitoring` Os métodos exigem a reverificação da configuração.
 
 Ao usar um desses métodos, as colunas alteráveis devem ser sinalizadas para nova verificação. Há três maneiras de fazer isso:
 
-* Um processo de auditoria que é executado como parte das colunas de sinalizadores de atualização a serem verificadas novamente.
+1. Um processo de auditoria que é executado como parte das colunas de sinalizadores de atualização a serem verificadas novamente.
 
    >[!NOTE]
    >
    >O auditor depende de um processo de amostragem e as colunas de alteração podem não ser capturadas imediatamente.
 
-* Você mesmo pode defini-las marcando a caixa de seleção ao lado da coluna no gerenciador de Datas Warehouse e clicando em **[!UICONTROL Set Recheck Frequency]** e escolhendo um intervalo de tempo apropriado para quando você deve verificar as alterações.
-* Um membro da [!DNL MBI] A equipe de Data Warehouse pode marcar manualmente as colunas para nova verificação na Data Warehouse. Se você tiver conhecimento de colunas que podem ser alteradas, entre em contato com a equipe do para solicitar que as novas verificações sejam definidas. Inclua uma lista de colunas, juntamente com a frequência, com sua solicitação.
+1. Você mesmo pode defini-las marcando a caixa de seleção ao lado da coluna no gerenciador de Datas Warehouse e clicando em **[!UICONTROL Set Recheck Frequency]** e escolhendo um intervalo de tempo apropriado para quando você deve verificar as alterações.
+
+1. Um membro da [!DNL Adobe Commerce Intelligence] A equipe de Data Warehouse pode marcar manualmente as colunas para nova verificação na Data Warehouse. Se você tiver conhecimento de colunas que podem ser alteradas, entre em contato com a equipe do para solicitar que as novas verificações sejam definidas. Inclua uma lista de colunas, juntamente com a frequência, com sua solicitação.
 
 ## Verificar novamente as frequências {#frequency}
 
@@ -55,7 +56,7 @@ Para alterar a frequência de reverificação, clique na caixa de seleção ao l
 
 Às vezes, você pode ver `Paused` no `Changes?` coluna. Esse valor é exibido quando a variável [método de replicação](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) está definida como `Paused`.
 
-A Adobe recomenda revisar essas colunas para otimizar suas atualizações e garantir que as colunas alteráveis estejam sendo verificadas novamente. Se a frequência de nova verificação de uma coluna for alta, considerando a frequência com que os dados são alterados, o Adobe recomenda diminuí-la para otimizar suas atualizações.
+[!DNL Adobe] A recomenda revisar essas colunas para otimizar suas atualizações e garantir que as colunas alteráveis estejam sendo remarcadas. Se a frequência de nova verificação de uma coluna for alta, considerando a frequência com que os dados são alterados, o Adobe recomenda diminuí-la para otimizar suas atualizações.
 
 Entre em contato conosco se tiver dúvidas ou para saber sobre os métodos de replicação atuais ou novas verificações.
 

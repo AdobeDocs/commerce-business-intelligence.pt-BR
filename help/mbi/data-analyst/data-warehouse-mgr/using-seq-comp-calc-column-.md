@@ -2,16 +2,16 @@
 title: Coluna Calculada de Comparação Sequencial
 description: Saiba mais sobre a finalidade e os usos da coluna calculada Comparação sequencial.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # Coluna Calculada de Comparação Sequencial
 
-Este tópico descreve o objetivo e os usos da `Sequential Comparison` coluna calculada disponível no **[!DNL Manage Data > Data Warehouse]** página. Abaixo está uma explicação do que ele faz, seguido por um exemplo, e os mecanismos para criá-lo.
+Este tópico descreve o objetivo e os usos da `Sequential Comparison` coluna calculada disponível no **[!DNL Manage Data > Data Warehouse]** página. Abaixo está uma explicação do que ele faz, seguido por um exemplo e os mecanismos para criá-lo.
 
 **Explicação**
 
@@ -39,17 +39,25 @@ Para esse tipo de coluna calculada, a linha correspondente ao primeiro evento do
 
 Para criar uma **Número do evento** coluna:
 
-1. Navegue até a **[!DNL Manage Data** > **Data Warehouse]** página.
+1. Navegue até a **[!DNL Manage Data > Data Warehouse]** página.
+
 1. Navegue até a tabela em que deseja criar essa coluna.
-1. Clique em **[!UICONTROL Create New Column]** na parte superior direita da tela.
+
+1. Clique em **[!UICONTROL Create New Column]** no canto superior direito.
+
 1. Selecionar `Same Table` como o `Definition Type` (se as colunas que você deseja comparar não estiverem na mesma tabela, talvez seja necessário realocá-las).
+
 1. Selecionar `SEQUENTIAL_COMPARISON` como o `Column Definition Equation`.
+
 1. Escolha as entradas, conforme explicado acima:
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. Também é possível adicionar filtros para excluir linhas de serem consideradas. As linhas excluídas têm um valor NULL para essa coluna.
+
+1. Também é possível adicionar filtros para excluir linhas de serem consideradas. As linhas excluídas têm um `NULL` para esta coluna.
+
 1. Forneça um nome para a coluna na parte superior da página e clique em **[!UICONTROL Save]**.
+
 1. A coluna está disponível para uso *imediatamente*.
 
 ![S](../../assets/SEC_new.png)

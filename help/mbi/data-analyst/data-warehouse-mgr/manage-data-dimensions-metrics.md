@@ -2,9 +2,9 @@
 title: Gerenciamento de dimensões de dados
 description: Saiba o que é uma dimensão e ela pode ser usada para filtrar ou segmentar gráficos com base em uma métrica.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Uma dimensão é um campo na mesma tabela que uma métrica que pode ser usada pa
 
 Para adicionar uma ou mais dimensões a várias métricas de uma só vez:
 
-1. Na barra de navegação principal, acesse **[!UICONTROL Manage Data > Metrics]**.
+1. Ir para **[!UICONTROL Manage Data > Metrics]**.
 
-1. Na parte superior da página, clique em **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. Clique em **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. Escolha a tabela que contém as dimensões.
 
@@ -39,9 +39,9 @@ Para adicionar uma ou mais dimensões a várias métricas de uma só vez:
 
 Para excluir uma ou mais dimensões de várias métricas:
 
-1. Na barra de navegação principal, acesse **[!UICONTROL Data > Metrics]**.
+1. Ir para **[!UICONTROL Data > Metrics]**.
 
-1. Na parte superior da página, clique em **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. Clique em **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. Escolha a tabela que contém as dimensões.
 
@@ -49,13 +49,13 @@ Para excluir uma ou mais dimensões de várias métricas:
 
 1. Clique em **[!UICONTROL Remove]**.
 
-1. Se as dimensões estiverem em uso em relatórios, você verá um aviso e uma lista de gráficos que estão usando as dimensões. Clique em **[!UICONTROL Delete]** para excluir as dimensões marcadas e todos os seus dependentes, incluindo relatórios.
+1. Se as dimensões estiverem em uso em relatórios, um aviso será exibido com a lista de gráficos que estão usando as dimensões. Clique em **[!UICONTROL Delete]** para excluir as dimensões marcadas e todos os seus dependentes, incluindo relatórios.
 
 ## Gerenciar dimensões em métricas
 
 **Para adicionar dimensões em uma métrica:**
 
-1. Na barra de navegação principal, acesse **[!UICONTROL Data > Metrics]**.
+1. Ir para **[!UICONTROL Data > Metrics]**.
 
 1. Clique em **[!UICONTROL Edit]** na métrica que deseja uma nova dimensão.
 
@@ -63,12 +63,12 @@ Para excluir uma ou mais dimensões de várias métricas:
 
 >[!NOTE]
 >
->Qualquer dimensão pela qual você deseja filtrar ou agrupar já deve estar rastreada [!DNL MBI]. Se não encontrar a dimensão desejada, talvez seja necessário começar a rastrear uma nova coluna de dados no banco de dados por meio da [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) página.
+>Qualquer dimensão pela qual você deseja filtrar ou agrupar já deve estar rastreada [!DNL Commerce Intelligence]. Se não encontrar a dimensão desejada, talvez seja necessário começar a rastrear uma nova coluna de dados no banco de dados por meio da [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) página.
 
 
 **Para excluir dimensões de uma métrica:**
 
-1. Na barra de navegação principal, acesse **[!UICONTROL Manage Data > Metrics]**.
+1. Ir para **[!UICONTROL Manage Data > Metrics]**.
 
 1. Clique em **[!UICONTROL Edit]** na métrica que deseja uma nova dimensão.
 
@@ -76,7 +76,7 @@ Para excluir uma ou mais dimensões de várias métricas:
 
 >[!NOTE]
 >
->Mesmo depois de excluir uma dimensão, ela ainda existe como uma coluna na tabela na Data Warehouse. Você pode adicioná-la novamente a qualquer métrica e criar novas métricas usando essas dimensões. Para remover a coluna de dados à qual uma dimensão corresponde [!DNL MBI], basta desfazer o rastreamento da coluna de dados por meio da [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) página.
+>Mesmo depois de excluir uma dimensão, ela ainda existe como uma coluna na tabela na Data Warehouse. Você pode adicioná-la novamente a qualquer métrica e criar novas métricas usando essas dimensões. Para remover a coluna de dados à qual uma dimensão corresponde [!DNL Commerce Intelligence], basta desfazer o rastreamento da coluna de dados por meio da [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) página.
 
 ## Documentação relacionada
 

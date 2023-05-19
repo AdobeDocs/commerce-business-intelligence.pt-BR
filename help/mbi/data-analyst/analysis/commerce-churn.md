@@ -2,7 +2,7 @@
 title: Churn do comércio
 description: Saiba como gerar e analisar a taxa de churn do Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -15,7 +15,7 @@ Este tópico demonstra como calcular uma **taxa de churn** para seu **clientes c
 
 ![](../../assets/Churn_rate_image.png)
 
-Muitos clientes desejam assistência para começar a conceituar o que **período** devem utilizar com base nos seus dados. Se você quiser usar o comportamento histórico do cliente para definir isso, **período de churn**, você pode querer se familiarizar com o [definindo churn](../analysis/define-cust-churn.md) artigo. Em seguida, você pode usar os resultados na fórmula para taxa de churn nas instruções abaixo.
+Muitos clientes desejam assistência para começar a conceituar o que **período** devem utilizar com base nos seus dados. Se você quiser usar o comportamento histórico do cliente para definir isso, **período de churn**, você pode querer se familiarizar com o [definindo churn](../analysis/define-cust-churn.md) tópico. Em seguida, você pode usar os resultados na fórmula para taxa de churn nas instruções abaixo.
 
 ## Colunas calculadas
 
@@ -55,9 +55,9 @@ Colunas para criar
 * **Novos clientes (por data do último pedido)**
    * Clientes que são contados
 
->[!NOTE]
->
->Essa métrica pode existir em sua conta.
+   >[!NOTE]
+   >
+   >Essa métrica pode existir em sua conta.
 
 * No **`customer_entity`** tabela
 * Essa métrica executa uma **Contagem**

@@ -2,27 +2,30 @@
 title: Dados esperados do Google Adwords
 description: Saiba como você pode usar o Gerenciador de Datas Warehouse para rastrear facilmente campos de dados relevantes para análise.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
 
-# Dados esperados do Google Adwords
+# Esperado [!DNL Google Adwords] dados
 
 Depois [você conectou o [!DNL Google Adwords] account](../integrations/google-adwords.md), você pode usar o [Gerenciador de Data Warehouse](../../data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes para análise.
 
-Você verá duas tabelas disponíveis para replicação na Data Warehouse: `campaigns[account-id]` e `adwords[account-id]`.
+Você verá duas tabelas disponíveis para replicação na Data Warehouse:
+
+* `campaigns[account-id]`
+* `adwords[account-id]`
 
 A variável `campaigns` tabela *deve ser usado por padrão*, para que você possa começar sincronizando todos os campos relevantes dessa tabela.
 
 A variável `adwords` A tabela contém quatro colunas que não estão na `campaigns` tabela:
 
-* `keyword`
-* `adContent`
-* `adDestinationUrl`
-* `adGroup`
+1. `keyword`
+1. `adContent`
+1. `adDestinationUrl`
+1. `adGroup`
 
 Sempre que estiver interessado em executar uma análise que considere esses atributos, você deverá usar o `adwords` tabela.
 
@@ -30,9 +33,9 @@ Sempre que estiver interessado em executar uma análise que considere esses atri
 >
 >Esta tabela exclui linhas em que todas as quatro colunas são `null`.
 
-Esta é uma análise do schema esperado para ambas as tabelas:
+Veja abaixo o schema esperado para ambas as tabelas.
 
-## `Campaigns` tabela
+## [!DNL Campaigns] tabela
 
 A variável `campaigns` A tabela contém as seguintes colunas:
 
@@ -52,7 +55,7 @@ A variável `campaigns` A tabela contém as seguintes colunas:
 
 {style="table-layout:auto"}
 
-## Tabela do AdWords
+## [!DNL AdWords] tabela
 
 A variável `adwords` A tabela contém as seguintes colunas:
 
@@ -76,12 +79,12 @@ A variável `adwords` A tabela contém as seguintes colunas:
 
 {style="table-layout:auto"}
 
-Com esses dados, você pode começar a criar [métricas ](../../../data-user/reports/ess-manage-data-metrics.md) e [relatórios](../../../tutorials/using-visual-report-builder.md) com base em dados de gastos e [associe-a à sua receita vitalícia para calcular o ROI](../../analysis/roi-ad-camp.md).
+Com esses dados, você pode começar a criar [métricas](../../../data-user/reports/ess-manage-data-metrics.md) e [relatórios](../../../tutorials/using-visual-report-builder.md) com base em dados de gastos e [associe-a à sua receita vitalícia para calcular o ROI](../../analysis/roi-ad-camp.md).
 
 ## Tabelas consolidadas
 
-O Adobe recomenda criar um `consolidated ad spend` para combinar os dados de todas as suas várias fontes de publicidade em uma única tabela. Isso permite usar um único conjunto de métricas para análise de publicidade.
+[!DNL Adobe] A recomenda a criação de `consolidated ad spend` para combinar os dados de todas as suas várias fontes de publicidade em uma única tabela. Isso permite usar um único conjunto de métricas para análise de publicidade.
 
-Sem uma tabela consolidada, se você criar um belo painel no `adwords` você precisa replicar os relatórios ou criar métricas duplicadas para comparar esses dados com seus [!DNL Facebook Ads] dados. O uso de uma tabela consolidada permite incorporar facilmente [!DNL Facebook Ads] dados com seus existentes [!DNL Adwords] relatórios. Também é possível segmentar por plataforma de anúncios.
+Se você não tiver uma tabela consolidada e construir um belo painel no `adwords` você precisa replicar os relatórios ou criar métricas duplicadas para comparar esses dados com seus [!DNL Facebook Ads] dados. O uso de uma tabela consolidada permite incorporar facilmente [!DNL Facebook Ads] dados com seus existentes [!DNL Adwords] relatórios. Também é possível segmentar por plataforma de anúncios.
 
-Se você já sincronizou os campos acima, entre em contato conosco para consolidar seu investimento em anúncios.
+Se você já tiver sincronizado os campos acima, [entre em contato](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para consolidar seu investimento em anúncios.

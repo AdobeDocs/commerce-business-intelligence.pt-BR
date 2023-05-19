@@ -1,10 +1,10 @@
 ---
 title: Dados de difusão esperados
-description: Explore as principais tabelas de dados que você pode importar do Spree para o seu [!DNL MBI] conta.
+description: Explore as principais tabelas de dados que você pode importar do Spree para o seu [!DNL Commerce Intelligence] conta.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Depois de ter [conectou o [!DNL Spree] loja](../../../data-analyst/importing-data/integrations/spree.md), você pode usar o [Gerenciador de Data Warehouse](../../data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes a partir do [!DNL Spree] plataforma para análise.
 
-Este artigo explora as principais tabelas de dados que podem ser importadas do [!DNL Spree] no seu [!DNL MBI] conta, incluindo links para [documentação adicional](https://guides.spreecommerce.org/developer/addresses.html#address) sobre [!DNL Spree] dados.
+Este tópico explora as principais tabelas de dados das quais você pode importar [!DNL Spree] no seu [!DNL Commerce Intelligence] conta, incluindo links para [documentação adicional](https://guides.spreecommerce.org/developer/addresses.html#address) sobre [!DNL Spree] dados.
 
 | **Nome da tabela** | **Descrição** |
 |-----|-----|
@@ -28,4 +28,4 @@ Este artigo explora as principais tabelas de dados que podem ser importadas do [
 ## Relacionados:
 
 * [Conectando [!DNL Spree]](../integrations/spree.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

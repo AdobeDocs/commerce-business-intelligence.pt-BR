@@ -1,19 +1,19 @@
 ---
-title: Tradução de consultas SQL em [!DNL MBI] relatórios
-description: Saiba como as consultas SQL são convertidas nas colunas calculadas e nas métricas usadas no [!DNL MBI].
+title: Tradução de consultas SQL para relatórios do Commerce Intelligence
+description: Saiba como as consultas SQL são convertidas nas colunas calculadas e nas métricas usadas no Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# Traduzir consultas SQL no MBI
+# Traduzir consultas SQL no Commerce Intelligence
 
-Já se perguntou como as consultas de SQL são traduzidas na variável [colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md), [métricas](../../data-user/reports/ess-manage-data-metrics.md), e [relatórios](../../tutorials/using-visual-report-builder.md) você usa em [!DNL MBI]? Se você for um usuário de SQL pesado, entender como o SQL é convertido em [!DNL MBI] permite que você trabalhe de forma mais inteligente [Gerenciador de Data Warehouse](../data-warehouse-mgr/tour-dwm.md) e aproveitar ao máximo o [!DNL MBI] plataforma.
+Já se perguntou como as consultas de SQL são traduzidas na variável [colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md), [métricas](../../data-user/reports/ess-manage-data-metrics.md), e [relatórios](../../tutorials/using-visual-report-builder.md) você usa em [!DNL Commerce Intelligence]? Se você for um usuário de SQL pesado, entender como o SQL é convertido em [!DNL Commerce Intelligence] permite que você trabalhe de forma mais inteligente [Gerenciador de Data Warehouse](../data-warehouse-mgr/tour-dwm.md) e aproveitar ao máximo o [!DNL Commerce Intelligence] plataforma.
 
-No final deste artigo, você encontrará uma **matriz de tradução** para cláusulas de consulta SQL e [!DNL MBI] elementos.
+No final deste tópico, você encontrará uma **matriz de tradução** para cláusulas de consulta SQL e [!DNL Commerce Intelligence] elementos.
 
 Comece observando uma consulta geral:
 
@@ -32,7 +32,7 @@ Esse exemplo abrange a maioria dos casos de tradução, mas há algumas exceçõ
 
 ## Funções agregadas
 
-Funções agregadas (por exemplo, `count`, `sum`, `average`, `max`, `min`) em consultas assumem a forma de **agregações de métricas** ou **agregações de colunas** in [!DNL MBI]. O fator de diferenciação é se uma junção é necessária para executar a agregação.
+Funções agregadas (por exemplo, `count`, `sum`, `average`, `max`, `min`) em consultas assumem a forma de **agregações de métricas** ou **agregações de colunas** in [!DNL Commerce Intelligence]. O fator de diferenciação é se uma junção é necessária para executar a agregação.
 
 Veja um exemplo de cada uma das opções acima.
 
@@ -40,7 +40,7 @@ Veja um exemplo de cada uma das opções acima.
 
 Uma métrica é necessária ao agregar `within a single table`. Assim, por exemplo, o `SUM(b)` função agregada da consulta acima provavelmente seria representada por uma métrica que soma a coluna `B`. 
 
-Veja um exemplo específico de como uma `Total Revenue` a métrica pode ser definida em [!DNL MBI]. Observe a consulta abaixo que você tenta traduzir:
+Veja um exemplo específico de como uma `Total Revenue` a métrica pode ser definida em [!DNL Commerce Intelligence]. Observe a consulta abaixo que você tenta traduzir:
 
 |  |  |
 |--- |--- |
@@ -51,7 +51,7 @@ Veja um exemplo específico de como uma `Total Revenue` a métrica pode ser defi
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (e relatórios) `time range`) |
 
-Navegar até o construtor de métricas clicando em **[!UICONTROL Manage Data** > ** Métricas **> **Criar nova métrica]**, primeiro selecione o apropriado `source` que, neste caso, é o `orders` tabela. Em seguida, a métrica será configurada conforme mostrado abaixo:
+Navegue até o construtor de métricas clicando em **[!UICONTROL Manage Data** > ** Métricas **> **Criar nova métrica]**, primeiro selecione o apropriado `source` que, neste caso, é o `orders` tabela. Em seguida, a métrica será configurada conforme mostrado abaixo:
 
 ![Agregação de métricas](../../assets/Metric_aggregation.png)
 
@@ -71,7 +71,7 @@ A consulta para essa agregação pode ser semelhante ao mostrado abaixo:
 | `ON c.customer_id = o.customer_id` | Caminho |
 | `WHERE o.status = 'success'` | Filtro agregado |
 
-Configuração em [!DNL MBI] O requer o uso do gerenciador de Datas Warehouse, onde você cria um caminho entre os `orders` e `customers` tabela, crie uma coluna chamada `Customer LTV` na tabela do cliente.
+Configuração em [!DNL Commerce Intelligence] O requer o uso do gerenciador de Datas Warehouse, onde você cria um caminho entre os `orders` e `customers` tabela, crie uma coluna chamada `Customer LTV` na tabela do cliente.
 
 Veja como estabelecer um novo caminho entre as `customers` e `orders`. O objetivo final é criar uma nova coluna agregada no `customers` tabela, então, primeiro navegue até a `customers` na Data Warehouse e clique em **[!UICONTROL Create a Column** > ** Selecionar uma definição **> **SOMA]**.
 
@@ -83,9 +83,9 @@ Aqui, é necessário considerar cuidadosamente a relação entre as duas tabelas
 
 >[!NOTE]
 >
->Entrada [!DNL MBI], um *caminho* equivale a um `Join` no SQL.
+>Entrada [!DNL Commerce Intelligence], um `path` equivale a um `Join` no SQL.
 
-Depois que o caminho for salvo, você estará pronto para criar o `Customer LTV` coluna! Observe o seguinte:
+Depois que o caminho for salvo, você poderá criar o `Customer LTV` coluna! Consulte abaixo:
 
 ![](../../assets/Customer_LTV.gif)
 
@@ -95,11 +95,11 @@ Agora que você criou o novo `Customer LTV` coluna no seu `customers` tabela, vo
 >
 >Para a última, sempre que você criar uma nova coluna calculada, deverá [adicionar a dimensão às métricas existentes](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de estar disponível como um `filter` ou `group by`.
 
-Consulte [criação de colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) com seu gerente de Datas Warehouse.
+Consulte [criação de colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) com o Gerenciador de Datas Warehouse.
 
 ## `Group By` cláusulas
 
-`Group By` as funções em consultas geralmente são representadas em [!DNL MBI] como uma coluna usada para segmentar ou filtrar um relatório visual. Como exemplo, vamos rever a `Total Revenue` consulta que você explorou anteriormente, mas que neste momento segmenta a receita pelo `coupon\_code` para compreender melhor quais cupons estão gerando mais receita.
+`Group By` as funções em consultas geralmente são representadas em [!DNL Commerce Intelligence] como uma coluna usada para segmentar ou filtrar um relatório visual. Como exemplo, vamos rever a `Total Revenue` consulta que você explorou anteriormente, mas que neste momento segmenta a receita pelo `coupon\_code` para compreender melhor quais cupons estão gerando mais receita.
 
 Comece com a consulta abaixo:
 
@@ -149,10 +149,10 @@ Agora, suponha que você já tenha métricas configuradas para calcular o `Total
 
 ## Encapsulamento
 
-Se você for um usuário pesado de SQL, pensar em como as consultas traduzem [!DNL MBI] permite criar colunas calculadas, métricas e relatórios.
+Se você for um usuário pesado de SQL, pensar em como as consultas traduzem [!DNL Commerce Intelligence] permite criar colunas calculadas, métricas e relatórios.
 
-Para referência rápida, consulte a matriz abaixo. Isso mostra o equivalente de uma cláusula SQL [!DNL MBI] e como ele pode mapear para mais de um elemento, dependendo de como é usado na query.
+Para referência rápida, consulte a matriz abaixo. Isso mostra o equivalente de uma cláusula SQL [!DNL Commerce Intelligence] e como ele pode mapear para mais de um elemento, dependendo de como é usado na query.
 
-## Elementos MBI
+## Elementos de inteligência do Commerce
 
 |**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|X|-| |`FROM`|-|-|-|-|-|X| |`WHERE`X|-|-|-|-|-| |`WHERE` (com elementos de tempo) |`JOIN...ON`X |`GROUP BY`|-|-|X|-|-|-|-|

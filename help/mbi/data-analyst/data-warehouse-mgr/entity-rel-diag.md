@@ -2,22 +2,22 @@
 title: Diagramas de Relacionamento de Entidade
 description: Saiba mais sobre alguns diagramas de ER para ajudar a visualizar a relação entre algumas tabelas de banco de dados comuns do Commerce.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # Diagrama de Relação de Entidade
 
-O que é uma **[!UICONTROL entity relationship (ER) diagram]**? Um `ER` diagrama é uma visualização de tabelas em um banco de dados e como elas estão relacionadas umas com as outras. Este artigo contém alguns diagramas ER para ajudar a visualizar a relação entre algumas tabelas comuns de banco de dados do Commerce.
+O que é uma **[!UICONTROL entity relationship (ER) diagram]**? Um [!UICONTROL ER] diagrama é uma visualização de tabelas em um banco de dados e como elas estão relacionadas umas com as outras. Este tópico contém alguns [!UICONTROL ER] diagramas para ajudar a visualizar a relação entre algumas tabelas comuns do banco de dados do Adobe Commerce.
 
 >[!NOTE]
 >
->Neste artigo, você verá as palavras **ingressar**, **relacionamento**, e **caminho**. Todas essas palavras são usadas para descrever como duas tabelas são conectadas.
+>Em todo este tópico, você verá as palavras **ingressar**, **relacionamento**, e **caminho**. Todas essas palavras são usadas para descrever como duas tabelas são conectadas.
 
-## Comércio principal `ER` Diagrama
+## Comércio principal [!UICONTROL ER] Diagrama
 
 ![4_Gráfico_BD](../../assets/4_DB_Chart.png)
 
@@ -35,7 +35,7 @@ Um cliente pode fazer muitos pedidos. A relação entre essas duas tabelas é `c
 >
 >`customer\_entity.entity\_id` não é igual a `sales\_flat\_order.entity\_id`. O primeiro pode ser visto como um `customer\_id` e o segundo pode ser visto como um `order\_id.`
 
-Dentro de [!DNL MBI], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, ele será definido da seguinte maneira:
+Dentro de [!DNL Commerce Intelligence], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, ele será definido da seguinte maneira:
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -45,7 +45,7 @@ Dentro de [!DNL MBI], se o caminho entre essas duas tabelas não existir, você 
 
 Um pedido pode conter muitos itens. A relação entre essas duas tabelas é `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-Dentro de [!DNL MBI], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, ele será definido da seguinte maneira:
+Dentro de [!DNL Commerce Intelligence], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, defina-o conforme demonstrado abaixo.
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -55,6 +55,6 @@ Dentro de [!DNL MBI], se o caminho entre essas duas tabelas não existir, você 
 
 Um produto pode ser comprado por muitos itens. A relação entre essas duas tabelas é `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-Dentro de [!DNL MBI], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, ele será definido da seguinte maneira:
+Dentro de [!DNL Commerce Intelligence], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, defina-o conforme demonstrado abaixo.
 
 ![](../../assets/SFOI___CPE_path.png)

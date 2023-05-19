@@ -2,20 +2,20 @@
 title: Excluir um painel
 description: Saiba como excluir um painel.
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
 
 # Excluir um painel
 
-Caso deseje impedir que sua lista de painéis fique muito desorganizada, você pode excluir um painel se ele não for mais necessário. Isso pode ser feito de uma das duas maneiras:
+Para evitar que sua lista de painéis fique muito organizada, exclua um painel se ele não for mais necessário. Isso pode ser feito de uma das duas formas a seguir:
 
-1. [Por meio do `Account Settings` página](#account) - este método requer [Permissões de administrador](../../administrator/user-management/user-management.md).
+1. [Através do `Account Settings` página](#account) - este método Requer [Permissões de administrador](../../administrator/user-management/user-management.md).
 
-1. [Por meio do `Dashboard Options` menu](#do) - esse método exige que você seja o proprietário do painel ou tenha permissões para Editar.
+1. [Através do `Dashboard Options` menu](#do) - esse método exige que você seja o proprietário do painel ou tenha `Edit` permissões.
 
 ## Excluir painel por meio da `Account Settings` página {#account}
 
@@ -31,11 +31,11 @@ Exemplo:
 
 ## Excluir painel por meio da `Dashboard Options` menu {#do}
 
-1. Clique no botão **[!UICONTROL Dashboard Options]** na parte superior da tela.
+1. Clique em **[!UICONTROL Dashboard Options]** na parte superior da tela.
 
-1. Na lista suspensa , clique em **[!UICONTROL Delete]**.
+1. Na lista suspensa, clique em **[!UICONTROL Delete]**.
 
-1. Quando solicitado a confirmar, clique em **[!UICONTROL Delete]**.
+1. Quando for solicitada a confirmação, clique em **[!UICONTROL Delete]**.
 
 Exemplo:
 

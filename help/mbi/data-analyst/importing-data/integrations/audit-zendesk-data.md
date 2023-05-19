@@ -2,9 +2,9 @@
 title: Auditoria de dados do Zendesk
 description: Saiba mais sobre as etapas para exportar seus dados do Zendesk.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Encontrei algo estranho em seu [[!DNL Zendesk] dados](../integrations/exp-zendes
 
 ## Ativação da exportação de dados
 
-A exportação de dados não está habilitada no momento para todos [!DNL Zendesk] contas. Para ativar esse recurso, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), mencionando seu [!DNL Zendesk] nome do subdomínio.
+A exportação de dados não está habilitada no momento para todos [!DNL Zendesk] contas. Para ativar esse recurso, [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), mencionando seu [!DNL Zendesk] nome do subdomínio.
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ Depois que a exportação de dados estiver ativada, somente os administradores e
 
    Esse link de download é válido por pelo menos três dias.
 
-Esse processo cria um arquivo XML contendo todas as informações armazenadas no seu [!DNL Zendesk] conta, incluindo dados de tíquete (com comentários), dados do usuário e dados da conta. Nesse ponto, é possível [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (certifique-se de anexar esse arquivo!) para que você possa examinar seus dados mais de perto. Se o arquivo for muito grande, compartilhe-o com o [!DNL MBI] equipe via [!DNL Dropbox] ou [!DNL Google Drive].
+Esse processo cria um arquivo XML contendo todas as informações armazenadas no seu [!DNL Zendesk] conta, incluindo dados de tíquete (com comentários), dados do usuário e dados da conta. Nesse ponto, é possível [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (certifique-se de anexar esse arquivo!) para que você possa examinar seus dados mais de perto. Se o arquivo for muito grande, compartilhe-o com o [!DNL Commerce Intelligence] equipe via [!DNL Dropbox] ou [!DNL Google Drive].
 
 Para obter mais informações sobre [!DNL Zendesk] exportação de arquivos, consulte o documento oficial [[!DNL Zendesk] documentação de exportação](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

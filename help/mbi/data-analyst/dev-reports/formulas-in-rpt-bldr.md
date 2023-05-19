@@ -2,16 +2,16 @@
 title: Fórmulas no Report Builder
 description: Saiba como as fórmulas podem ser usadas no Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Fórmulas na `Report Builder`
 
-No [`Report Builder`](../../tutorials/using-visual-report-builder.md), você pode criar visualizações poderosas usando o [métricas definidas](../../data-user/reports/ess-manage-data-metrics.md) em sua conta. Combinar essas métricas em uma fórmula permite obter mais insights dos seus dados. Este artigo aborda como as fórmulas podem ser usadas na `Report Builder` - Vamos entrar!
+No [`Report Builder`](../../tutorials/using-visual-report-builder.md), você pode criar visualizações poderosas usando o [métricas definidas](../../data-user/reports/ess-manage-data-metrics.md) em sua conta. Combinar essas métricas em uma fórmula permite obter mais insights dos seus dados. Este tópico aborda como as fórmulas podem ser usadas na `Report Builder` - Vamos entrar!
 
 ## O que é uma `formula`? {#what}
 
@@ -63,4 +63,4 @@ Neste exemplo, você usou o `Stacked Columns` perspectiva para exibir os resulta
 
 Você notou nos exemplos acima que o valor da fórmula `timestamp`, `groupings`, `perspectives`, e `filters` são herdados de suas métricas de entrada? Lembre-se de que as fórmulas podem ser usadas para `perspectives` e [opções de tempo independentes](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, da mesma forma que as métricas podem.
 
-Se você tiver dúvidas adicionais sobre o uso de fórmulas no `Report Builder`, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se você tiver dúvidas adicionais sobre o uso de fórmulas no `Report Builder`, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

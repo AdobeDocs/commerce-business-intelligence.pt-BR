@@ -2,7 +2,7 @@
 title: Analisando Declínio e Churn de Probabilidade de Repetição
 description: Saiba e entenda o tempo decorrido entre os pedidos e quando é esperado que os clientes abandonem a empresa.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Entender a porcentagem de clientes que devem fazer compras repetidas (e como iss
 
 ## Exemplo de hoje
 
-Analise o declínio de probabilidade de repetição para um negócio de comércio eletrônico típico.
+Observe o declínio de probabilidade de repetição para um negócio de comércio eletrônico típico.
 
 ![Probabilidade de ordem de repetição inicial probabilidade de ordem de repetição em determinados meses desde a ordem.](../../assets/Order_probability_reports.png)
 
@@ -76,7 +76,7 @@ Depois de criar a análise acima e determinar um limite de churn, você pode cri
 
 Se você oferecer mais de um produto, provavelmente se perguntará como os clientes que compram um produto específico se comportam de forma diferente ao longo do tempo em comparação a outros clientes. Quer saber mais? Confira este tutorial para explorar o comportamento de compra vitalícia dos coortes de clientes com base nos produtos específicos que eles compraram.
 
-Esta prática recomendada é fornecida por [!DNL MBI] Serviços de análise de dados (DAS). [Entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter mais informações.
+Esta prática recomendada é fornecida por [!DNL Adobe Commerce Intelligence] Serviços de análise de dados (DAS). [Entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter mais informações.
 
 ### Relacionados
 

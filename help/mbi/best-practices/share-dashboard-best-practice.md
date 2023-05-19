@@ -2,7 +2,7 @@
 title: Compartilhamento de painéis
 description: Saiba como trabalhar com e compartilhar seus painéis.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Compartilhar um painel
 
-Compartilhar painéis significa que você e sua equipe possuem as mesmas informações a qualquer momento, o que permite colaboração e discussão. Estas são algumas recomendações para compartilhar painéis e manter seus [!DNL MBI] conta organizada.
+Compartilhar painéis significa que você e sua equipe possuem as mesmas informações a qualquer momento, o que permite colaboração e discussão. Estas são algumas recomendações para compartilhar painéis e manter seus [!DNL Adobe Commerce Intelligence] conta organizada.
 
 ## Evitar painéis duplicados
 

@@ -1,25 +1,25 @@
 ---
-title: Desenvolver o seu [!DNL MBI] Conta
-description: Saiba como limpar seu [!DNL MBI] conta.
+title: Desenvolver o seu [!DNL Commerce Intelligence] Conta
+description: Saiba como limpar seu [!DNL Commerce Intelligence] conta.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Limpe seu [!DNL MBI] Conta
+# Limpe seu [!DNL Adobe Commerce Intelligence] Conta
 
-Se você esteve com o [!DNL MBI] por seis meses ou seis anos, manter uma conta do tidy é fundamental para a sua organização aproveitar ao máximo a plataforma. Com o tempo, é natural que haja usuários, painéis, relatórios, métricas e colunas que não sejam mais necessários. Talvez você tenha criado um relatório para uso único e se esquecido dele, ou um usuário que deixou a empresa nunca teve a conta desativada.
+Se você esteve com o [!DNL Commerce Intelligence] por seis meses ou seis anos, manter uma conta do tidy é fundamental para a sua organização aproveitar ao máximo a plataforma. Com o tempo, é natural que haja usuários, painéis, relatórios, métricas e colunas que não sejam mais necessários. Talvez você tenha criado um relatório para uso único e se esquecido dele, ou um usuário que deixou a empresa nunca teve a conta desativada.
 
-Com [nomenclatura padronizada e clara para todos os elementos](../best-practices/naming-elements.md)) do seu [!DNL MBI] conta, as etapas de auditoria de conta abaixo ajudam a reduzir a desordem e as análises desnecessárias para seus usuários. Um benefício adicional inclui [ciclos de atualização potencialmente mais rápidos](../best-practices/reduce-update-cycle-time.md).
+Com [nomenclatura padronizada e clara para todos os elementos](../best-practices/naming-elements.md)) do seu [!DNL Commerce Intelligence] conta, as etapas de auditoria de conta abaixo ajudam a reduzir a desordem e as análises desnecessárias para seus usuários. Um benefício adicional inclui [ciclos de atualização potencialmente mais rápidos](../best-practices/reduce-update-cycle-time.md).
 
 ## Etapa 1: Identificar Usuários Não Ativos
 
-O primeiro passo para limpar sua conta é desativar as contas de seus usuários inativos, como pessoas que deixaram a empresa ou não usam mais [!DNL MBI] em suas funções atuais.
+O primeiro passo para limpar sua conta é desativar as contas de seus usuários inativos, como pessoas que deixaram a empresa ou não usam mais [!DNL Commerce Intelligence] em suas funções atuais.
 
-Para fazer isso, clique no nome da empresa no canto superior direito da barra de navegação superior e selecione **[!UICONTROL Manage Users]**. Em seguida, selecione o usuário que deseja desativar e clique em **[!UICONTROL Deactivate User]**.
+Para fazer isso, clique no nome da sua empresa na barra de navegação superior direita e selecione **[!UICONTROL Manage Users]**. Em seguida, selecione o usuário que deseja desativar e clique em **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Para fazer isso, clique no nome da empresa no canto superior direito da barra de
 
 >[!WARNING]
 >
->A desativação de um usuário remove os gráficos, painéis e outros ativos criados por esse usuário. Se quiser preservar esses ativos, entre em contato com o [!DNL MBI] [suporte](../guide-overview.md) antes de desativar o usuário. O suporte pode ajudar você a transferir esses ativos para outro usuário.
+>A desativação de um usuário remove os gráficos, painéis e outros ativos criados por esse usuário. Se quiser preservar esses ativos, entre em contato com o [!DNL Commerce Intelligence] [suporte](../guide-overview.md#Submitting-a-Support-Ticket) antes de desativar o usuário. O suporte pode ajudar você a transferir esses ativos para outro usuário.
 
 ### Reativar um usuário
 
@@ -89,7 +89,7 @@ Depois de limpar a lista de usuários, os painéis e os relatórios, você pode 
 1. Para gerar uma lista de relatórios dependentes para uma métrica, vá para **[!DNL Manage Data]**, em seguida, selecione Clique **[!UICONTROL Metrics]**.
 1. Clique em **[!UICONTROL Edit]** ao lado de uma métrica.
 1. Na parte inferior da página, você verá uma seção chamada **[!UICONTROL Dependent Charts]**. Clique no link para gerar uma lista de relatórios dependentes para essa métrica.
-1. Depois que o sistema concluir a verificação, [!DNL MBI] exibe uma lista de painéis, relatórios e usuários que utilizam essa métrica.
+1. Depois que o sistema concluir a verificação, [!DNL Commerce Intelligence] exibe uma lista de painéis, relatórios e usuários que utilizam essa métrica.
 
 ![](../../mbi/assets/report_dependecies.png)
 
@@ -99,7 +99,7 @@ Se você decidir que a métrica não é mais necessária, volte para a **[!UICON
 
 A última etapa é avaliar as colunas que estão sendo sincronizadas no momento na Data Warehouse. A não apenas dessincronização de colunas pode poluir sua conta, como também pode reduzir o tempo de atualização.
 
-Se desejar fazer isso, entre em contato com [!DNL MBI] [Suporte](../guide-overview.md). A equipe de suporte pode criar um relatório que inclua todas as colunas que não estão sendo usadas em nenhum painel para nenhum usuário e que não são usadas em resumos de email, excluindo Relatórios SQL. Você pode usar esse relatório como um guia para selecionar colunas para dessincronização por meio do Gerenciador de Datas Warehouse.
+Se desejar fazer isso, entre em contato com [!DNL Commerce Intelligence] [Suporte](../guide-overview.md#Submitting-a-Support-Ticket). A equipe de suporte pode criar um relatório que inclua todas as colunas que não estão sendo usadas em nenhum painel para nenhum usuário e que não são usadas em resumos de email, excluindo Relatórios SQL. Você pode usar esse relatório como um guia para selecionar colunas para dessincronização por meio do Gerenciador de Datas Warehouse.
 
 >[!NOTE]
 >
@@ -122,4 +122,4 @@ Veja aqui todo o processo:
 
 ## Encapsulamento
 
-Pronto! Seu [!DNL MBI] A conta do agora deve ser mais organizada e mais fácil de navegar para você e sua equipe.
+Seu [!DNL Commerce Intelligence] A conta do agora deve ser mais organizada e mais fácil de navegar para você e sua equipe.

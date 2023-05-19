@@ -2,7 +2,7 @@
 title: Excluir um gráfico permanentemente
 description: Saiba como excluir um gráfico permanentemente.
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Excluir um gráfico permanentemente
 
-Mesmo que você [remover um gráfico do painel](../../data-user/dashboards/remove-charts-dashboard.md), ele ainda existe no seu [!DNL MBI] conta.
+Mesmo que você [remover um gráfico do painel](../../data-user/dashboards/remove-charts-dashboard.md), ele ainda existe no seu [!DNL Commerce Intelligence] conta.
 
 Para excluir permanentemente um gráfico:
 

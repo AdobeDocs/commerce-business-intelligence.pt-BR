@@ -2,9 +2,9 @@
 title: Criar métricas
 description: Saiba como usar métricas para criar gráficos.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Exige [Permissões de administrador](../../administrator/user-management/user-management.md).
 
-Em outras palavras, uma métrica é uma medida. Em estruturas SQL e de banco de dados, uma métrica é como uma consulta armazenada em um período variável.
+Uma métrica é uma medida. Em estruturas SQL e de banco de dados, uma métrica é como uma consulta armazenada em um período variável.
 
-Entrada [!DNL MBI], você pode usar métricas para [criar gráficos](../../data-user/reports/ess-rpt-build-visual.md). Por exemplo, a métrica `revenue` é o número total de pedidos. A métrica `average customer revenue per order` é o que o cliente médio gasta por pedido.
+Entrada [!DNL Commerce Intelligence], você pode usar métricas para [criar gráficos](../../data-user/reports/ess-rpt-build-visual.md). Por exemplo, a métrica `revenue` é o número total de pedidos. A métrica `average customer revenue per order` é o que o cliente médio gasta por pedido.
 
 Quando usadas em relatórios, as métricas podem ser analisadas por um período específico e [filtrado ou segmentado](../../best-practices/segment-filter.md) por categorias diferentes. Considere analisar a receita média do cliente agrupada por gênero - neste caso, `average customer revenue per order` é a métrica e gênero é o agrupamento.
 
@@ -68,7 +68,7 @@ A variável `Filter Logic` é onde você pode definir melhor como uma métrica d
 
 A variável [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) A seção mostra todas as dimensões de dados disponíveis para filtragem ou agrupamento; por padrão, todas as colunas de dados disponíveis são listadas como dimensões. Continuando com o exemplo, se você quiser segmentar sua receita por fonte de referência, faça isso aqui.
 
-Além de listar todas as colunas de dados disponíveis como dimensões, [!DNL MBI] adivinha quais colunas podem ser agrupadas. *Para segmentar ou agrupar dados em relatórios*, as colunas devem ser marcadas como agrupáveis.
+Além de listar todas as colunas de dados disponíveis como dimensões, [!DNL Commerce Intelligence] adivinha quais colunas podem ser agrupadas. *Para segmentar ou agrupar dados em relatórios*, as colunas devem ser marcadas como agrupáveis.
 
 ## Terminando {#finish}
 

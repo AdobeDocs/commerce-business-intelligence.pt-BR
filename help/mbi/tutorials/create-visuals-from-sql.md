@@ -2,18 +2,18 @@
 title: Criar visualizações de consultas SQL
 description: Saiba como familiarizar você com a terminologia usada no Report Builder SQL e fornecer uma base sólida para criar visualizações SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 # Criar visualizações de consultas SQL
 
-O objetivo deste tutorial é familiarizá-lo com a terminologia usada no `SQL Report Builder` e fornecer uma base sólida para criar `SQL visualizations`.
+O objetivo deste tutorial é familiarizá-lo com a terminologia usada no [!DNL SQL Report Builder] e fornecer uma base sólida para criar `SQL visualizations`.
 
-A variável [`SQL Report Builder`](../data-analyst/dev-reports/sql-rpt-bldr.md) é um construtor de relatórios com opções: você pode executar uma consulta com o único objetivo de recuperar uma tabela de dados ou pode transformar esses resultados em um relatório. Este tutorial explica como criar uma visualização de uma consulta SQL.
+A variável [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) é um construtor de relatórios com opções: você pode executar uma consulta com o único objetivo de recuperar uma tabela de dados ou pode transformar esses resultados em um relatório. Este tutorial explica como criar uma visualização de uma consulta SQL.
 
 ## Terminologia
 
@@ -33,13 +33,13 @@ Antes de começar este tutorial, consulte a seguinte terminologia usada no `SQL 
 
 Lembre-se do seguinte:
 
-- A variável `SQL Report Builder` usos [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- A variável [!DNL SQL Report Builder] usos [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
 - Se você estiver criando um relatório com uma série de tempo, certifique-se de `ORDER BY` a(s) coluna(s) de carimbo de data e hora. Isso garante que os carimbos de data e hora sejam plotados na ordem correta no relatório.
 
 - A variável `EXTRACT` A função é ótima para usar na análise do dia, semana, mês ou ano do carimbo de data e hora. Isso é útil quando a variável `time interval` que você deseja usar no relatório é `daily`, `weekly`, `monthly`ou `yearly`.
 
-Para começar, abra o `SQL Report Builder` clicando em **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Para começar, abra o [!DNL SQL Report Builder] clicando em **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 Como exemplo, considere esta consulta que retorna o número total mensal de itens vendidos para cada produto:
 
@@ -94,6 +94,6 @@ Se quiser usar este relatório novamente, dê um nome a ele e clique em **[!UICO
 
 Na lista suspensa, selecione `Chart` como o `Type` e, em seguida, um painel no qual salvar o relatório.
 
-## Parabéns! Você terminou.
+## Encapsulamento
 
 Quer ir um passo além? Confira o [práticas recomendadas de otimização de consulta](../best-practices/optimizing-your-sql-queries.md).

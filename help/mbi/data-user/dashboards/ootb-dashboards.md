@@ -2,22 +2,22 @@
 title: Painéis incluídos
 description: Saiba como verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas e muito mais, criando assim uma base sólida para exploração futura.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # Painéis incluídos
 
-O Adobe oferece comércio eletrônico e `SaaS` Pacotes iniciais. Esses pacotes, criados pelos analistas do Adobe, contêm um conjunto personalizado de painéis e relatórios para seu conjunto de dados. As análises contidas nesses pacotes permitem verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas e muito mais, criando, assim, uma base sólida para exploração futura.
+[!DNL Adobe] ofertas `eCommerce` e `SaaS` Pacotes iniciais. Esses pacotes, criados pelos analistas do Adobe, contêm um conjunto personalizado de painéis e relatórios para seu conjunto de dados. As análises contidas nesses pacotes permitem verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas e muito mais, criando, assim, uma base sólida para exploração futura.
 
 >[!NOTE]
 >
 >A disponibilidade de alguns painéis depende do seu conjunto de dados.
 
-Se tiver dúvidas ou se estiver interessado em adicionar um pacote à sua conta, envie uma [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) para obter ajuda.
+Se tiver dúvidas ou se estiver interessado em adicionar um pacote à sua conta, envie uma [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter ajuda.
 
 ## Visão geral executiva
 

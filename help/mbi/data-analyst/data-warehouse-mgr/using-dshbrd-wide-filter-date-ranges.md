@@ -2,16 +2,16 @@
 title: Filtragem em todo o painel
 description: Saiba como fazer edições em massa de todos os relatórios em um painel específico.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Filtragem em todo o painel
 
-Com a filtragem em todo o painel, é possível fazer edições em massa de todos os relatórios em um painel específico. É possível visualizar rapidamente a mesma análise em diferentes períodos de tempo ou para diferentes armazenamentos. É possível comparar facilmente o desempenho de um ano, mês ou semana anterior por loja. Além disso, você pode atualizar um painel inteiro para acomodar uma campanha recém-lançada.
+Com a filtragem em todo o painel, é possível fazer edições em massa de todos os relatórios em um painel específico. É possível visualizar rapidamente a mesma análise em diferentes períodos de tempo ou para diferentes armazenamentos. É possível comparar facilmente o desempenho de um ano, mês ou semana anterior por loja. Você pode atualizar um painel inteiro para acomodar uma campanha recém-lançada.
 
 ## Filtros de data
 
@@ -45,7 +45,7 @@ Para analisar o desempenho de uma loja específica, clique no ícone lojas no ca
 
 >[!NOTE]
 >
->Um filtro de armazenamento é ativado ou desativado para um [!DNL MBI] conta. Se um painel contiver relatórios que não são afetados pelo filtro (como relatórios que não são criados em nenhum dado do Commerce ), esses relatórios não serão atualizados quando o filtro de armazenamento for aplicado. Você pode [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se você acredita que um relatório deve ser atualizado com base na seleção de armazenamento ou se acredita que seu filtro de armazenamento de conta foi desabilitado por engano.
+>Um filtro de armazenamento é ativado ou desativado para um [!DNL Commerce Intelligence] conta. Se um painel contiver relatórios que não são afetados pelo filtro (como relatórios que não são criados em qualquer [!DNL Adobe Commerce] dados), esses relatórios não são atualizados quando o filtro de armazenamento é aplicado. Você pode [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se você acredita que um relatório deve ser atualizado com base na seleção de armazenamento ou se acredita que seu filtro de armazenamento de conta foi desabilitado por engano.
 
 Ao selecionar um armazenamento na lista `Store Filter`, o filtro retém sua seleção ao navegar entre painéis. Manter a seleção permite ver os dados do armazenamento selecionado em todos os lugares até que você selecione `All Stores`.
 

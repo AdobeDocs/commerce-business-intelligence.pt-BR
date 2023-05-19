@@ -2,28 +2,28 @@
 title: Configuração de métodos de replicação
 description: Saiba como as tabelas são organizadas e como os dados da tabela se comportam permite escolher o melhor método de replicação para suas tabelas.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
 
 # Configuração de métodos de replicação
 
-`Replication` métodos e [recheques](../data-warehouse-mgr/cfg-data-rechecks.md) são usados para identificar dados novos ou atualizados nas tabelas do banco de dados. Configurar corretamente é fundamental para garantir a precisão dos dados e os tempos de atualização otimizados. Este artigo se concentra em métodos de replicação.
+`Replication` métodos e [recheques](../data-warehouse-mgr/cfg-data-rechecks.md) são usados para identificar dados novos ou atualizados nas tabelas do banco de dados. Configurar corretamente é fundamental para garantir a precisão dos dados e os tempos de atualização otimizados. Este tópico aborda os métodos de replicação.
 
-Quando novas tabelas são sincronizadas no Gerenciador de Datas Warehouse, um método de replicação é escolhido automaticamente para a tabela. Compreender os vários métodos de replicação, como as tabelas são organizadas e como os dados da tabela se comportam permite escolher o melhor método de replicação para suas tabelas.
+Quando novas tabelas são sincronizadas no [Gerenciador de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), um método de replicação é escolhido automaticamente para a tabela. Compreender os vários métodos de replicação, como as tabelas são organizadas e como os dados da tabela se comportam permite escolher o melhor método de replicação para suas tabelas.
 
 ## Quais são os métodos de replicação?
 
 `Replication` Os métodos dividem-se em três grupos: `Incremental`, `Full Table`, e `Paused`.
 
-[**[!UICONTROL Incremental Replication]**](#incremental) significa que [!DNL MBI] O replica somente dados novos ou atualizados em cada tentativa de replicação. Como esses métodos reduzem muito a latência, o Adobe recomenda usá-la sempre que possível.
+[**[!UICONTROL Incremental Replication]**](#incremental) significa que [!DNL Commerce Intelligence] O replica somente dados novos ou atualizados em cada tentativa de replicação. Como esses métodos reduzem muito a latência, o Adobe recomenda usá-la sempre que possível.
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) significa que [!DNL MBI] replica todo o conteúdo de uma tabela em cada tentativa de replicação. Devido à quantidade potencialmente grande de dados a serem replicados, esses métodos podem aumentar a latência e os tempos de atualização. Se uma tabela contiver colunas com carimbo de data e hora ou datetime, o Adobe recomenda usar um método Incremental.
+[**[!UICONTROL Full Table Replication]**](#fulltable) significa que [!DNL Commerce Intelligence] replica todo o conteúdo de uma tabela em cada tentativa de replicação. Devido à quantidade potencialmente grande de dados a serem replicados, esses métodos podem aumentar a latência e os tempos de atualização. Se uma tabela contiver colunas com carimbo de data e hora ou datetime, o Adobe recomenda usar um método Incremental.
 
-**[!UICONTROL Paused]** indica que a replicação da tabela foi interrompida ou pausada. [!DNL MBI] O não verifica dados novos ou atualizados durante um ciclo de atualização; isso significa que nenhum dado é replicado de uma tabela que tem isso como seu Método de replicação.
+**[!UICONTROL Paused]** indica que a replicação da tabela foi interrompida ou pausada. [!DNL Commerce Intelligence] O não verifica dados novos ou atualizados durante um ciclo de atualização; isso significa que nenhum dado é replicado de uma tabela que tem isso como seu Método de replicação.
 
 ## Métodos de replicação incremental {#incremental}
 
@@ -37,7 +37,7 @@ A variável `Modified At` o método de replicação usa uma coluna datetime - qu
 
 Além desses critérios, a Adobe recomenda **indexação** o `datetime` coluna usada para `Modified At` replicação, pois isso ajuda a otimizar a velocidade da replicação.
 
-Quando a atualização é executada, dados novos ou alterados são identificados pela pesquisa de linhas que têm um valor no `datetime` que ocorreu após a atualização mais recente. Quando novas linhas são descobertas, elas são replicadas na Data Warehouse. Se houver linhas na Data Warehouse, elas serão substituídas pelos valores atuais do banco de dados.
+Quando a atualização é executada, dados novos ou alterados são identificados pela pesquisa de linhas que têm um valor no `datetime` que ocorreu após a atualização mais recente. Quando novas linhas são descobertas, elas são replicadas na Data Warehouse. Se houver linhas na variável [Gerenciador de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), eles são substituídos pelos valores atuais do banco de dados.
 
 Por exemplo, uma tabela pode ter uma coluna chamada `modified\_at` que indica a última vez que os dados foram alterados. Se a atualização mais recente for executada na terça-feira ao meio-dia, a atualização pesquisará todas as linhas que tiverem uma `modified\_at` valor maior que terça-feira ao meio-dia. Todas as linhas descobertas que foram criadas ou modificadas desde o meio-dia da terça-feira são replicadas na Data Warehouse.
 
@@ -74,7 +74,7 @@ Quando uma tabela usa `Add Date` Na replicação, os novos dados são detectados
 
 `Full table` a replicação atualiza a tabela inteira sempre que novas linhas são detectadas. Esse é de longe o método de replicação menos eficiente, pois todos os dados devem ser reprocessados durante cada atualização, supondo que haja novas linhas.
 
-Novas linhas são detectadas consultando o banco de dados no início do processo de sincronização e contando o número de linhas. Se o banco de dados local contiver mais linhas do que [!DNL MBI], a tabela será atualizada. Se as contagens de linhas forem idênticas ou se [!DNL MBI] contém *mais* que o seu banco de dados local, a tabela será ignorada.
+Novas linhas são detectadas consultando o banco de dados no início do processo de sincronização e contando o número de linhas. Se o banco de dados local contiver mais linhas do que [!DNL Commerce Intelligence], a tabela será atualizada. Se as contagens de linhas forem idênticas ou se [!DNL Commerce Intelligence] contém *mais* que o seu banco de dados local, a tabela será ignorada.
 
 Isto levanta a questão importante de **`Full Table`a replicação é incompatível quando:**
 
@@ -104,11 +104,11 @@ Os métodos de replicação são definidos tabela por tabela. Para definir um m�
 1. No Gerenciador de Datas Warehouse, selecione a tabela no `Synced Tables` para exibir o schema da tabela.
 1. O método de replicação atual está listado abaixo do nome da tabela. Para alterá-lo, clique no link.
 1. Na janela pop-up exibida, clique no botão de opção ao lado de `Incremental` ou `Full Table` replicação para selecionar um tipo de replicação.
-1. Clique em **[!UICONTROL Replication Method]** selecione um método na lista suspensa - por exemplo, `Paused` ou `Modified At`.
+1. Clique em **[!UICONTROL Replication Method]** para selecionar um método. Por exemplo, `Paused` ou `Modified At`.
 
    >[!NOTE]
    >
-   >**Alguns métodos incrementais exigem a definição de um`Replication Key`**. [!DNL MBI] O usará essa chave para determinar onde o próximo ciclo de atualização deve começar.
+   >**Alguns métodos incrementais exigem a definição de um`Replication Key`**. [!DNL Commerce Intelligence] O usará essa chave para determinar onde o próximo ciclo de atualização deve começar.
    >
    >Por exemplo, se você deseja usar a variável `modified at` método para o seu `orders` , é necessário definir um `date column` como a chave de replicação. Várias opções para chaves de replicação podem existir, mas você seleciona `created at`ou a hora em que o pedido foi criado. Se o último ciclo de atualização parasse em 1/12/2015 00:10:00, o próximo ciclo iniciaria a replicação de dados com um `created at` data posterior a esta.
 

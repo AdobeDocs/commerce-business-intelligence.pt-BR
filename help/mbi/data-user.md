@@ -2,7 +2,7 @@
 title: Usuário de dados
 description: Usuário de dados
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 Você usa dados para ajudar a tomar decisões de negócios. Você pode receber relatórios e painéis de um analista de dados da sua equipe, mas também pode aprender a criar esses relatórios e painéis.
 
 Esta seção demonstra como:
-* adquirir e exibir dados no [!DNL MBI] uso de relatórios e painéis
+* adquirir e exibir dados no [!DNL Commerce Intelligence] uso de relatórios e painéis
 * compartilhe esses dados com as partes interessadas por email e `.csv` arquivos
 
 ## Relacionados

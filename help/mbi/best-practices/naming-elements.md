@@ -1,25 +1,25 @@
 ---
-title: Nomear relatórios e elementos no MBI
-description: Saiba mais sobre as práticas recomendadas para nomear relatórios e elementos no [!DNL MBI].
+title: Nomear relatórios e elementos no Commerce Intelligence
+description: Saiba mais sobre as práticas recomendadas para nomear relatórios e elementos no [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Nomear relatórios e elementos
 
-Antes de começar a criar em[!DNL MBI], Adobe quer compartilhar alguns segredos para o sucesso. Saber como criar métricas, filtros e assim por diante é importante, mas todo o seu trabalho pode ser em vão se você não conseguir encontrar o que precisa ou se houver ambiguidade.
+Antes de começar a criar em[!DNL Adobe Commerce Intelligence], Adobe quer compartilhar alguns segredos para o sucesso. Saber como criar métricas, filtros e assim por diante é importante, mas todo o seu trabalho pode ser em vão se você não conseguir encontrar o que precisa ou se houver ambiguidade.
 
 ## Por que a nomenclatura é importante? {#why}
 
-A forma como você nomeia colunas calculadas, métricas e relatórios determina a facilidade com que diferentes usuários podem navegar pelos seus [!DNL MBI] conta. Ao nomear esses recursos, lembre-se dos três Cs:
+A forma como você nomeia colunas calculadas, métricas e relatórios determina a facilidade com que diferentes usuários podem navegar pelos seus [!DNL Commerce Intelligence] conta. Ao nomear esses recursos, lembre-se dos três Cs:
 
 * **CLAREZA** - Para que você possa ter uma ideia geral do que um relatório está mostrando, o que uma métrica faz e assim por diante.
 * **CONSISTÊNCIA** - Para que você (e a equipe de suporte do Adobe) possam encontrar e entender facilmente elementos e relatórios em sua conta.
-* **CREDIBILIDADE** - A fim de inspirar e capacitar outras organizações [!DNL MBI] usuários, você precisa incutir confiança em como eles entendem e usam os dados!
+* **CREDIBILIDADE** - A fim de inspirar e capacitar outras organizações [!DNL Commerce Intelligence] usuários, você precisa incutir confiança em como eles entendem e usam os dados!
 
 Leia para dicas de nomenclatura testadas e verdadeiras!
 
@@ -41,7 +41,7 @@ Esses exemplos são específicos, o que diminui o potencial de confusão.
 
 ### Ser consistente com maiúsculas {#capitalize}
 
-Adobe recomenda que a primeira letra seja maiúscula com o restante dos caracteres em minúsculas, a menos que o estilo substantivo adequado seja capitalizado. Por exemplo, **Número do pedido do usuário** em vez de **Número do pedido do usuário.**
+[!DNL Adobe] A recomenda que a primeira letra seja maiúscula e o restante dos caracteres seja minúsculo, a menos que o estilo substantivo apropriado seja capitalizado. Por exemplo, **Número do pedido do usuário** em vez de **Número do pedido do usuário.**
 
 Isso é realmente uma questão de preferência, mas o que deve ser lembrado é ser consistente com o que você escolher.
 
@@ -101,4 +101,4 @@ Receita (remetida\_em) Receita (criada\_em)
 
 ## Encapsulamento {#wrapup}
 
-Estabelecer o estilo e as convenções de nomenclatura antecipadamente ajuda a configurar o para o sucesso no seu [!DNL MBI] conta. Lembre-se dos três códigos: clareza, consistência e credibilidade.
+Estabelecer o estilo e as convenções de nomenclatura antecipadamente ajuda a configurar o para o sucesso no seu [!DNL Commerce Intelligence] conta. Lembre-se dos três códigos: clareza, consistência e credibilidade.

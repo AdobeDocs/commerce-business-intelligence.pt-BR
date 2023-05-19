@@ -2,16 +2,16 @@
 title: Desempenho do cupom
 description: Saiba como analisar o desempenho do cupom.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Análise Avançada Do Código Do Cupom
 
-Compreender o desempenho do cupom de sua empresa é uma maneira interessante de segmentar seus pedidos e também entender melhor seus clientes. Este artigo mostra as etapas para criar análises para entender quais clientes você adquire usando cupons, como eles executam e rastrear o uso geral do cupom.
+Compreender o desempenho do cupom de sua empresa é uma maneira interessante de segmentar seus pedidos e também entender melhor seus clientes. Este tópico aborda as etapas para criar análises para entender quais clientes você adquire usando cupons, como eles são executados e rastrear o uso geral do cupom.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-
 
 ## Introdução
 
-Como primeira etapa, você precisa garantir que as seguintes colunas sejam sincronizadas com a Data Warehouse. Caso contrário, siga em frente e rastreie-os navegando até &quot;Gerenciar dados&quot; > &quot;Data Warehouse&quot; e sincronizando o seguinte:
+Como primeira etapa, você precisa garantir que as seguintes colunas sejam sincronizadas com a Data Warehouse. Se não estiverem, acesse e rastreie-os navegando até `Manage Data` > `Data Warehouse`e sincronizando o seguinte:
 
 * **sales\_flat\_order** tabela
 * **coupon\_code**
@@ -519,4 +519,4 @@ Colunas adicionais a serem criadas se as ordens de convidado NÃO forem suportad
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode parecer com a imagem na parte superior da página.
 
-Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

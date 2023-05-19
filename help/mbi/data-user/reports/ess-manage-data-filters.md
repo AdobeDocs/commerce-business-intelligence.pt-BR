@@ -2,18 +2,18 @@
 title: Criar conjuntos de filtros para métricas
 description: Saiba como criar Conjuntos de filtros salvos e aplicá-los às métricas.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Criar conjuntos de filtros
 
-Se você tiver várias métricas no [!DNL MBI] que precisam ser filtrados de uma maneira semelhante (por exemplo, filtrar ordens de teste), é possível criar Conjuntos de filtros salvos e aplicá-los às métricas. Isso economiza tempo, pois não é necessário adicionar filtros individuais ao criar ou editar uma métrica.
+Se você tiver várias métricas no [!DNL Commerce Intelligence] que precisam ser filtrados de uma maneira semelhante (por exemplo, filtrar ordens de teste), é possível criar Conjuntos de filtros salvos e aplicá-los às métricas. Isso economiza tempo, pois não é necessário adicionar filtros individuais ao criar ou editar uma métrica.
 
-Consulte a [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) para saber mais.
+Consulte a [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) para obter mais informações.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Consulte a [vídeo de treinamento](https://experienceleague.adobe.com/docs/comme
 
 1. Verifique a lógica do filtro e se os parênteses e operadores estão colocados corretamente: por exemplo, `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   Um filtro incorreto geralmente é a causa das discrepâncias de dados entre [!DNL MBI] relatórios e os resultados esperados.
+   Um filtro incorreto geralmente é a causa das discrepâncias de dados entre [!DNL Commerce Intelligence] relatórios e os resultados esperados.
 
 1. Salve o `Filter Set`.
 
@@ -45,7 +45,7 @@ Depois que um conjunto de filtros é salvo, é possível aplicá-lo a qualquer m
 
 >[!NOTE]
 >
->`Filter Sets` também pode ser aplicado a colunas calculadas em [!DNL MBI]. Você pode solicitar a aplicação de um conjunto de filtros a uma dimensão de dados criada no [!DNL MBI] via entrando em contato com o suporte.
+>`Filter Sets` também pode ser aplicado a colunas calculadas em [!DNL Commerce Intelligence]. Você pode solicitar a aplicação de um conjunto de filtros a uma dimensão de dados criada no [!DNL Commerce Intelligence] via entrando em contato com o suporte.
 
 ## Relacionados
 

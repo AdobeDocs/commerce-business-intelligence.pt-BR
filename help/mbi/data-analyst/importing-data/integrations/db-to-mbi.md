@@ -1,14 +1,14 @@
 ---
-title: Conecte seu banco de dados MySQL
-description: Veja como conectar seus bancos de dados MySQL com [!DNL MBI].
+title: Conectar seu [!DNL MySQL] Banco de dados
+description: Veja como conectar seu [!DNL MySQL] bancos de dados com [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '18'
+source-wordcount: '15'
 ht-degree: 0%
 
 ---
 
-# Conecte seu `MySQL` Banco de dados
+# Conectar seu `MySQL` Banco de dados
 
-Informações em breve.
+Informações chegando.
