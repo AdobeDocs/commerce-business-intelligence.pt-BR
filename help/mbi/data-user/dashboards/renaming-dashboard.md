@@ -13,11 +13,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Exige [Administrador](../../administrator/user-management/user-management.md) ou `Standard` permissões para executar essas funções. Se você for um `Standard` usuário, você também precisa `Edit` permissões no painel.
+>Exige [Admin](../../administrator/user-management/user-management.md) ou `Standard` para executar essas funções. Se você é um `Standard` usuário, você também precisará `Edit` ao painel.
 
-Às vezes, os nomes não se encaixam mais. Renomear um painel é rápido e fácil.
+Às vezes os nomes simplesmente não cabem mais. Renomear um painel é rápido e fácil.
 
-1. No painel, clique no botão **[!UICONTROL Dashboard Options]** na parte superior do ecrã, localizada ao lado da `Global Search` menu.
+1. No painel, clique no botão **[!UICONTROL Dashboard Options]** na parte superior da tela, localizada ao lado da guia `Global Search` menu.
 
 1. Clique em **[!UICONTROL Rename]** na lista suspensa.
 

@@ -1,6 +1,6 @@
 ---
 title: Definir churn do cliente
-description: Saiba como configurar um painel que ajuda a definir a rotatividade para seus clientes transacionais.
+description: Aprenda a configurar um painel que ajuda a definir churn para clientes transacionais.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Churn transacional do cliente
+# Rotatividade de cliente transacional
 
-Este tópico demonstra como configurar um painel que ajuda a definir a rotatividade dos clientes transacionais.
+Este tópico demonstra como configurar um painel que ajuda a definir churn para clientes transacionais.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -24,17 +24,17 @@ Colunas para criar
 * `customer_entity` tabela
 * `Customer's lifetime number of orders`
 * Selecione uma definição: `Count`
-* Selecione um [!UICONTROL table]: `sales_flat_order`
-* Selecione um [!UICONTROL column]: **`entity_id`**
-* [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
+* Selecione a [!UICONTROL table] : `sales_flat_order`
+* Selecione a [!UICONTROL column] : **`entity_id`**
+* [!UICONTROL Path]: sales_flat_order. Customer_ID = customer_entity. entity_id
 * [!UICONTROL Filter]:
-* Pedidos contados
+* Pedidos que são contados
 
-* `sales_flat_order` tabela
+* `sales_flat_order` Tabela
 * `Customer's lifetime number of orders`
 * Selecione uma definição: coluna unida
-* Selecione um [!UICONTROL table]: `customer_entity`
-* Selecione um [!UICONTROL column]: `Customer's lifetime number of orders`
+* Selecione a [!UICONTROL table] : `customer_entity`
+* Selecione a [!UICONTROL column] : `Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 * [!UICONTROL Filter]: `Orders we count`
 
@@ -43,9 +43,9 @@ Colunas para criar
 * Selecione um [!UICONTROL column]: `created_at`
 
 * **`Customer's order number`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
-* **`Is customer's last order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
-* **`Seconds since previous order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
-* **`Months since order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
+* **`Is customer's last order`**&#x200B;é criado por um analista como parte de sua **[definição do tíquete de rotatividade]**
+* **`Seconds since previous order`**&#x200B;é criado por um analista como parte de sua **[definição do tíquete de rotatividade]**
+* **`Months since order`**&#x200B;é criado por um analista como parte de sua **[definição do tíquete de rotatividade]**
 * **`Months since previous order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
 
 ## Métricas
@@ -58,17 +58,17 @@ Nenhuma métrica nova!
 
 ## Relatórios
 
-* **Probabilidade de ordem de repetição inicial**
-* Métrica A: Ordens de repetição Ocasionais
+* **Probabilidade solicitar de repetição inicial**
+* Métrica A: ordens repetidas de todos os tempos
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* Métrica B: pedidos a todo momento
+* Métrica B: todas as ordens de tempo
 * [!UICONTROL Metric]: Número de pedidos
 
-* [!UICONTROL Formula]: probabilidade inicial de ordem de repetição
+* [!UICONTROL Formula]: Repetição inicial da solicitar probabilidade
 * 
-   [!UICONTROL Fórmula]: `A/B`
+   [! Fórmula UICONTROL]: `A/B`
 * 
 
    [!UICONTROL Format]: `Percent`
@@ -80,38 +80,38 @@ Nenhuma métrica nova!
 
    [!UICONTROL Chart type]: `Scalar`
 
-* **Probabilidade de ordem de repetição em determinados meses desde a ordem**
-* Métrica A: repetir pedidos por meses desde o pedido anterior (ocultar)
+* **Repita solicitar probabilidade de meses desde solicitar**
+* Métrica A: repetir pedidos por meses desde o solicitar anterior (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * 
    [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* Métrica B: últimos pedidos por meses desde o pedido (ocultar)
+* Métrica B: últimos pedidos por meses desde a solicitar (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * 
    [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* Métrica C: ordens de repetição únicas (ocultar)
+* Métrica C: pedidos repetidos por tempo (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
 
-   [!UICONTROL Agrupar por]: `Independent`
+   [! UICONTROL Group by]: `Independent`
 
-* Métrica D: Últimas encomendas pontuais (ocultar)
+* Métrica D: todos os últimos pedidos (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
 
-   [!UICONTROL Agrupar por]: `Independent`
+   [! UICONTROL Group by]: `Independent`
 
-* [!UICONTROL Formula]: probabilidade inicial de ordem de repetição
+* [!UICONTROL Formula]: Repetição inicial da solicitar probabilidade
 * 
-   [!UICONTROL Fórmula]: `(C-A)/(C+D-A-B)`
+   [! Fórmula UICONTROL]: `(C-A)/(C+D-A-B)`
 * 
 
    [!UICONTROL Format]: `Percent`
@@ -128,9 +128,9 @@ Nenhuma métrica nova!
 
 O relatório de probabilidade de ordem de repetição inicial representa o Total de Pedidos Repetidos/Total de Pedidos. Cada pedido é uma oportunidade para fazer um pedido repetido; o número de pedidos repetidos é o subconjunto daqueles que realmente fazem.
 
-A fórmula usada simplifica para (Total de pedidos repetidos que ocorreram após X meses)/ (Total de pedidos que têm pelo menos X meses). Isso nos mostra que historicamente, dado que já se passaram X meses desde um pedido, há uma chance de Y% de o usuário colocar outro pedido.
+A fórmula usada simplifica o (total de pedidos repetidos que ocorriam após X meses)/(total de pedidos com pelo menos X meses de idade). Isso nos mostra que historicamente, dado que já se passaram X meses desde um pedido, há uma chance de Y% de o usuário colocar outro pedido.
 
-Depois de criar o painel, a pergunta mais comum é: como usar isso para determinar um limite de churn?
+Depois de criar a painel, a pergunta mais comum é: como usar isso para determinar uma limite churn?
 
 **Não há &quot;uma resposta certa&quot; para isso.** No entanto, Adobe recomenda encontrar o ponto em que a linha cruza o valor que é metade da taxa de probabilidade de repetição inicial. Este é o ponto em que você pode dizer &quot;Se um usuário vai fazer uma ordem repetida, ele provavelmente já teria feito isso&quot;. Em última análise, o objetivo é selecionar o limite no qual faz sentido alternar de esforços de &quot;retenção&quot; para esforços de &quot;reativação&quot;.
 

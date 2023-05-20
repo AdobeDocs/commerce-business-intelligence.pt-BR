@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Você pode fazer mais no `Visual Report Builder` do que criar análises com tendência ao longo do tempo. Por exemplo, você pode criar um relatório para mostrar o valor de seus canais de aquisição e marketing, mas também pode criar um relatório que mostre apenas os cinco principais desempenhos. Da mesma forma, é possível redirecionar seus esforços de marketing criando um relatório que mostra quais estados geram mais receita.
 
-Esse tipo de classificação e ordem de dados pode ser feito em relatórios que usam uma `Group By` e uma `Time Interval of None`. Quando ambos os elementos estão em um relatório, a variável `Show Top/Bottom` é exibido acima da visualização do gráfico. Esse recurso permite que você veja os pontos de dados superior (do mais alto ao mais baixo) e inferior (do mais baixo ao mais alto) com base nos parâmetros definidos.
+Esse tipo de classificação e ordenação de dados pode ser feito em relatórios que usam a `Group By` e a `Time Interval of None` . Quando esses elementos estão em um relatório, o `Show Top/Bottom` recurso é exibido acima do gráfico pré-visualização. Esse recurso permite que você visualize os pontos de dados superior (mais alto para o mais baixo) e inferior (mais baixo para mais alto) com base nos parâmetros definidos.
 
-![Mostrar recurso Superior/Inferior no Report Builder visual.](../../assets/Show_Top_Bottom.png)
+![Exibir primeiro/último recurso no Visual Report Builder.](../../assets/Show_Top_Bottom.png)
 
-## Como faço para usá-lo? {#how}
+## Como usar isso? {#how}
 
-Clique em **[!UICONTROL Show Top/Bottom link]** para definir os parâmetros de exibição e classificação. O número na caixa de texto pode ser um número inteiro (como `5`ou `ALL`. Em seguida, você pode optar por classificar o relatório pela métrica OU pelo agrupamento.
+**[!UICONTROL Show Top/Bottom link]** Clique em para definir os parâmetros de exibição e classificação. O número na caixa de texto pode ser um número inteiro (curtir `5` ) ou `ALL` . Próximo, você pode optar por classificar o relatório pelo métrica ou pelo agrupamento.
 
 Por exemplo, se você quiser exibir as cinco fontes de referência que geraram mais receita, esta é a maneira como você faz isso:
 
@@ -33,15 +33,15 @@ Por exemplo, se você quiser exibir as cinco fontes de referência que geraram m
 
 >[!NOTE]
 >
->Como o relatório não tem uma `Time Interval`, os valores - neste caso, as cinco principais fontes de referência - podem mudar com o tempo. Se uma origem de referência ultrapassar outra em termos de receita, a ordem em que as origens são exibidas será alterada.
+>Como o relatório não tem um `Time Interval` , os valores-neste caso, as cinco principais fontes de referência-podem mudar ao longo do tempo. Se uma fonte de referência supera outra em termos de receita, a solicitar em que as fontes são exibidas.
 
 ## E quanto ao uso de várias métricas? {#multiplemetrics}
 
-O uso desse recurso fica complicado quando há mais de uma métrica em um relatório porque cada métrica só pode ser classificada sozinha ou por um dos agrupamentos.
+O uso desse recurso fica complicado quando há mais de um métrica em um relatório, pois cada métrica só pode ser classificado por si mesmo ou por um dos agrupamentos.
 
-Digamos que você criou um relatório com os `Revenue` e `Number of orders` métricas, agrupadas por fonte de referência. `Revenue` só pode ser classificado por `Revenue` ou fonte de referência e `Number of orders` só pode ser classificado por `Number of orders` ou fonte de referência.
+Digamos que você tenha criado um relatório com as métricas e `Number of orders` as `Revenue` métricas, agrupadas por referência fonte. `Revenue` Só pode ser classificada por `Revenue` ou referência fonte e `Number of orders` só pode ser classificada por `Number of orders` ou referência fonte.
 
-Isso significa que, embora você possa mostrar a `Revenue` somente no início `5` fontes de referência geradoras de receita, não é possível mostrar o número de pedidos também pela parte superior `5` fontes de referência geradoras de receita. Simplificando: quando há várias métricas, a melhor opção é classificar cada métrica pelo agrupamento.
+Isso significa que enquanto você só pode mostrar `Revenue` a partir das principais `5` fontes referência de geração de receita, não é possível mostrar o número de pedidos também pelas principais `5` fontes referência de receita geradas. Em síntese: quando há várias métricas, a melhor opção é classificar cada métrica pelo agrupamento.
 
 Veja abaixo um exemplo de um gráfico que classificou a `Revenue` por si só, em vez de pelo agrupamento. Como você pode ver, não classificar a métrica pelo agrupamento criou um relatório estranho (e, em última análise, inútil):
 
@@ -53,13 +53,13 @@ Se você tivesse classificado ambas as métricas pelo agrupamento, o gráfico se
 
 ## Como os valores são classificados por padrão? {#defaultsorting}
 
-Quando apenas uma métrica é incluída em um relatório com um `Group by` e uma `Time Interval` de `None`, a ordenação padrão no `Visual Report Builder` é para mostrar os valores principais com base na métrica. Neste caso, o `Show Top/Bottom` Esse recurso pode não ser necessário se atender às suas necessidades.
+Quando apenas um métrica é incluído em um relatório com um `Group by` e um `Time Interval` de `None` , a ordenação padrão no `Visual Report Builder` é mostrar os valores principais com base na métrica. Nesse instância, o `Show Top/Bottom` recurso pode não ser necessário se isso atender às suas necessidades.
 
-Este exemplo analisa quantas oportunidades seus representantes de vendas fecharam. Essa tabela é classificada automaticamente da mais alta para a mais baixa com base na métrica, nesse caso `Won Opportunities`.
+Este exemplo analisa Quantas oportunidades os seus representantes de vendas fecharam. Essa tabela é classificada automaticamente do mais alto para o mais baixo com base no métrica, nesse caso `Won Opportunities` .
 
-![Ordenação pela métrica.](../../assets/Ordered_by_metric.png)
+![Ordenação pelo métrica.](../../assets/Ordered_by_metric.png)
 
-No entanto, quando uma segunda métrica é adicionada, o padrão é ordenar a parte superior com base no agrupamento. À medida que métricas e agrupamentos são adicionados, a classificação padrão é baseada no primeiro agrupamento, depois no segundo agrupamento e assim por diante.
+No entanto, quando um segundo métrica é adicionado, o padrão é solicitar parte superior com base no agrupamento. Como métricas e agrupamentos são adicionados, a classificação padrão é baseada no primeiro Agrupamento, depois no segundo Agrupamento, e assim por diante.
 
 ![Ordenação pelo agrupamento.](../../assets/Ordered_by_grouping.png)
 
@@ -67,4 +67,4 @@ No entanto, quando uma segunda métrica é adicionada, o padrão é ordenar a pa
 
 Embora alguns recursos básicos sejam abordados aqui, esse recurso tem muitos usos interessantes.
 
-Pense no exemplo de oportunidades e do representante de vendas anterior. Remover o `Time Interval`, aplicando um `Group By`e classificar os dados com base no agrupamento nos permitiu obter uma imagem detalhada do número de oportunidades ganhas de cada representante. Além disso, usando o `Show Top/Bottom` O recurso permite descobrir quem são os melhores desempenhos.
+Pense no exemplo de oportunidades e do representante de vendas anterior. Remover o `Time Interval`, aplicando um `Group By`e classificar os dados com base no agrupamento nos permitiu obter uma imagem detalhada do número de oportunidades ganhas de cada representante. Além disso, usar o `Show Top/Bottom` recurso nos permite descobrir quem são os principais executores.

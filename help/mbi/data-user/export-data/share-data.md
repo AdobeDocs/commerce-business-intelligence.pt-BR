@@ -11,4 +11,4 @@ ht-degree: 0%
 
 # Compartilhamento de dados
 
-Comunicar o status e as tendências da sua empresa é essencial. Nesta seção, saiba como exportar e compartilhar dados de um gráfico para um `.csv` ou `Excel` arquivo. Além disso, saiba como configurar e enviar automaticamente resumos de seus dados por email às principais partes interessadas.
+A comunicação do status e das tendências de sua empresa é essencial. Nesta seção, aprenda a exportar e compartilhar dados de um gráfico para um `.csv` arquivo or `Excel` . Além disso, aprenda a configurar e enviar automaticamente resumos de email de seus dados para os principais interessados.

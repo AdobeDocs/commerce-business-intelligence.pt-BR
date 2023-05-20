@@ -99,7 +99,7 @@ Não se preocupe se você clicar em **[!UICONTROL Delete]** por acidente. Uma ve
 
 Para remover colunas, clique na tabela à qual a coluna pertence. Marque as colunas que deseja remover e clique no link ![button\_1.png](../../assets/button_1.png) botão.
 
-Para remover uma tabela sincronizada, selecione todas as colunas na tabela e clique novamente no link ![botão](../../assets/button_1.png) botão. Isso remove todas as colunas nativas e calculadas que usam essa tabela da Data Warehouse.
+Para remover uma tabela sincronizada, selecione todas as colunas na tabela e clique novamente no ![botão](../../assets/button_1.png) botão. Isso remove todas as colunas nativas e calculadas que usam essa tabela da Data Warehouse.
 
 ### Confirmação de alterações
 

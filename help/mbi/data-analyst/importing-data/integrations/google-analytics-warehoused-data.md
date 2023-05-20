@@ -1,6 +1,6 @@
 ---
-title: Dados Armazenados De Google Analytics Esperados
-description: Saiba como interagir com os dados armazenados do Google Analytics.
+title: Google Analytics dados em depósito esperado
+description: Aprenda a interagir com os dados do Google Analytics warehouse.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
@@ -29,12 +29,12 @@ Uma única tabela - chamada `report` - é criado na Data Warehouse.
 
 O esquema desta tabela é composto pelas Métricas e Dimension selecionadas durante o processo de configuração e por duas outras colunas: `start-date` e `end-date`.
 
-Se, por exemplo, você selecionou as seguintes métricas e Dimension durante a configuração:
+Por exemplo, você selecionou as seguintes métricas e dimensões durante a configuração:
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
 
-A tabela seria semelhante ao exemplo abaixo.
+A tabela ficaria curtir o exemplo abaixo.
 
 | **Nome da coluna** | **Descrição** |
 |-----|-----|
@@ -42,9 +42,9 @@ A tabela seria semelhante ao exemplo abaixo.
 | `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] identificador exclusivo. Esta coluna é criada por [!DNL Commerce Intelligence]. |
 | `\_updated\_at` | Essa coluna contém a última vez que a linha de dados foi atualizada. Esta coluna é criada por [!DNL Commerce Intelligence]. |
 | `start-date` | Identificação do dia para o qual a linha é usada. |
-| `end-date` | Identificação do dia para o qual a linha é usada. |
-| `month` | Dimensão selecionada: mês da sessão, um número inteiro de dois dígitos de 01 a 12. |
-| `users` | Métrica selecionada: o número total de usuários para o período solicitado. |
+| `end-date` | Identificação do dia em que a linha é para. |
+| `month` | Dimensão selecionado: mês da sessão, um inteiro de dois dígitos de 01 a 12. |
+| `users` | Métrica selecionado: o número total de usuários para o período solicitado. |
 
 {style="table-layout:auto"}
 
@@ -60,4 +60,4 @@ Com o [!DNL Google Analytics Live] integração, por outro lado, cada [!DNL Goog
 
 ## Relacionados:
 
-* [Conectando [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)
+* [Conectar [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)

@@ -1,5 +1,5 @@
 ---
-title: Informações de Dados e Atualizações
+title: Informações de dados e atualizações
 description: Saiba como verificar o status do ciclo de atualização.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Por que meus dados foram alterados? {#datachange}
 
-Os valores do gráfico podem mudar durante o dia devido aos novos dados que estão sendo sincronizados com sua Data Warehouse. Além disso, os valores para colunas de dados existentes podem mudar devido a [recheques](../data-warehouse-mgr/cfg-data-rechecks.md). Uma nova verificação é um processo que busca valores alterados em colunas de dados, como um status de pedido movendo de `open` para `shipped`.
+Os valores do gráfico podem mudar durante o dia devido aos novos dados que estão sendo sincronizados com sua Data Warehouse. Além disso, os valores das colunas de dados existentes podem mudar devido a [ uma reverificação ](../data-warehouse-mgr/cfg-data-rechecks.md) . Uma reverificação é um processo que procura por valores alterados nas colunas de dados, como um status de solicitar movendo de `open` para `shipped` .
 
 Há algumas maneiras diferentes [para verificar o status do ciclo de atualização](../../best-practices/check-update-cycle.md), dependendo das configurações de permissões do usuário.
 
@@ -36,9 +36,9 @@ Vários fatores podem aumentar um tempo de atualização já longo. Certos [mét
 
 Se uma atualização estiver em andamento, há um link no `Connections` página que você pode usar para solicitar uma notificação por email quando o ciclo for concluído.
 
-## Por que[!DNL Google ECommerce]dados diferentes do meu banco de dados? {#ecommdatabase}
+## Por que os dados são [!DNL Google ECommerce] diferentes do meu banco de dados? {#ecommdatabase}
 
-Discrepâncias entre [!DNL Google Analytics] e seu banco de dados pode surgir por vários motivos. O rastreamento não está ativado corretamente, os usuários que visitam de forma incógnita e os eventos de clique que não estão funcionando corretamente são apenas alguns exemplos. Se sua receita e seus pedidos não parecerem corretos, [consulte este tópico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) para diagnosticar um problema.
+As discrepâncias entre [!DNL Google Analytics] e seu banco de dados podem surgir por vários motivos. O rastreamento não está habilitado corretamente, os usuários que visitam o anônima e os eventos de clique não funcionavam corretamente são apenas alguns exemplos. Se sua receita e seus pedidos não parecerem corretos, [consulte este tópico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) para diagnosticar um problema.
 
 ## Como solucionar problemas de discrepância de dados? {#datadiscrepancy}
 

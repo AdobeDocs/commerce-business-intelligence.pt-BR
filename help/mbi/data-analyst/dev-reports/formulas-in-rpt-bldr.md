@@ -11,33 +11,33 @@ ht-degree: 0%
 
 # Fórmulas na `Report Builder`
 
-No [`Report Builder`](../../tutorials/using-visual-report-builder.md), você pode criar visualizações poderosas usando o [métricas definidas](../../data-user/reports/ess-manage-data-metrics.md) em sua conta. Combinar essas métricas em uma fórmula permite obter mais insights dos seus dados. Este tópico aborda como as fórmulas podem ser usadas na `Report Builder` - Vamos entrar!
+No [`Report Builder`](../../tutorials/using-visual-report-builder.md), você pode criar visualizações poderosas usando o [métricas definidas](../../data-user/reports/ess-manage-data-metrics.md) em sua conta. A combinação dessas métricas em uma fórmula permite que você lance informações adicionais a partir dos seus dados. Este tópico se aprofunda em como as `Report Builder` fórmulas podem ser usadas no salto-permitir!
 
-## O que é uma `formula`? {#what}
+## O que é um `formula` ? {#what}
 
-No `Report Builder`, um `formula` é apenas uma combinação de uma ou mais métricas baseadas em alguma lógica matemática. Um exemplo típico tem esta aparência:
+`Report Builder`No, a `formula` é apenas uma combinação de uma ou mais métricas com base em alguma lógica matemática. Um exemplo típico parece curtir isso:
 
 ![](../../assets/formula-example.png)
 
-Neste exemplo, você usa um `Number of orders metric (A)` e uma `Distinct buyers metric (B)`, e o objetivo é responder à pergunta: qual é o número médio de pedidos que meus compradores estão fazendo a cada mês? Os parâmetros da fórmula são:
+Neste exemplo, você usa um `Number of orders metric (A)` e um `Distinct buyers metric (B)` , e o objetivo é responder a pergunta: Qual é o número médio de pedidos que meus compradores estão fazendo por mês? Os parâmetros da fórmula são:
 
-* `Definition`: aqui, você aplica matemática às métricas de entrada. Neste exemplo, dividir o número de pedidos pelo número de compradores distintos nos diz o número médio de pedidos. Portanto, a definição é (A/B).
+* `Definition`: Aqui, você aplica matemática nas métricas de entrada. Nesse exemplo, a divisão do número de pedidos pelo número de compradores distintos nos informa o número médio de pedidos. Portanto, a definição é (A/B).
 
 * `Format`: sua fórmula está retornando um número, um período ou um valor de moeda? Ao lado da definição da fórmula há uma lista suspensa, que pode ser usada para especificar o formato do retorno. Nesse caso, é um número.
 
 * `Miscellaneous`: o carimbo de data e hora, os agrupamentos, as perspectivas e os filtros da fórmula são herdados por suas métricas de entrada. Não há nada para fazer aqui!
 
-## Como posso usar `formulas` nos meus relatórios? {#how}
+## Como posso usar `formulas` em meus relatórios? {#how}
 
-Agora que já abordou as noções básicas, veja alguns exemplos.
+Agora que você abordou os fundamentos, veja alguns exemplos.
 
-### Exemplo: quero descobrir qual porcentagem da minha receita pode ser atribuída a pedidos iniciais.
+### Exemplo: desejo descobrir qual porcentagem de minhas receita pode ser atribuída a pedidos de primeira vez.
 
-![Uso de fórmulas para localizar o percentual de receita atribuído a pedidos pela primeira vez](../../assets/first_time_orders.gif)
+![Uso de fórmulas para encontrar a porcentagem de receita atribuída a pedidos em primeiro prazo](../../assets/first_time_orders.gif)
 
-Neste exemplo, você usou o `Revenue` e `Revenue (first time orders)` métricas. Ao dividir as `Revenue (first time orders)(B)` métrica por `Revenue metric (A)` e definição do formato de retorno para `Percent`, você pode encontrar a porcentagem de receita que pode ser atribuída aos pedidos iniciais.
+Neste exemplo, você usou as `Revenue` métricas e `Revenue (first time orders)` . Ao dividir a `Revenue (first time orders)(B)` métrica pelo `Revenue metric (A)` e definir o formato `Percent` de devolução, você pode encontrar a porcentagem de receita que podem ser atribuídas aos pedidos do primeiro período.
 
-### Exemplo: quero saber qual é a receita média por pedido quando faço e não ofereço um `promo code`.
+### Exemplo: desejo saber qual é a receita média por solicitar quando faço e não oferta a `promo code` .
 
 ![Utilização de fórmulas para localizar a receita média por pedido com e sem códigos promocionais](../../assets/promo_code.gif)
 
@@ -47,15 +47,15 @@ Neste exemplo, você usou o `Revenue` e `Number of orders` métricas. A resposta
 
 ![Utilização de fórmulas para encontrar a distribuição de fontes de UTM de novos clientes](../../assets/distro.gif)
 
-A resposta para essa pergunta envolve algumas etapas:
+Encontrar a resposta a essa pergunta envolve algumas etapas:
 
-1. Primeiro, você adicionou o `New Customers` e, em seguida, agrupada por `utm_source - all`. Esta é a métrica `A`ou `New Customers (grouped)`.
+1. Primeiro, você adicionou a `New Customers` métrica e, em seguida, agrupado por `utm_source - all` . Isso é métrica `A` ou `New Customers (grouped)` .
 
-1. Em seguida, você duplicou o `New Customers (grouped)` e defina-a para usar uma dimensão independente. Métrica `B` - `New customers (ungrouped)` - mostra o número total de novos clientes.
+1. Próximo, você duplicau o métrica e o `New Customers (grouped)` define para usar um dimensão independente. Métrica `B` - `New customers (ungrouped)` -mostra o número total de novos clientes.
 
-1. Depois de ocultar as duas métricas, defina a definição da fórmula como `A/B`. Isso divide a `New customers (grouped)` pela `New Customers (ungrouped)`.
+1. Depois de ocultar ambas as métricas, defina a definição de fórmula como `A/B` . Isso divide o `New customers (grouped)` pelo `New Customers (ungrouped)` .
 
-1. Em seguida, defina o formato dos resultados como `Percent`.
+1. Próximo, você define o formato de resultados como `Percent` .
 
 Neste exemplo, você usou o `Stacked Columns` perspectiva para exibir os resultados por mês. Isso nos permite comparar a distribuição de novos clientes a cada mês.
 
@@ -63,4 +63,4 @@ Neste exemplo, você usou o `Stacked Columns` perspectiva para exibir os resulta
 
 Você notou nos exemplos acima que o valor da fórmula `timestamp`, `groupings`, `perspectives`, e `filters` são herdados de suas métricas de entrada? Lembre-se de que as fórmulas podem ser usadas para `perspectives` e [opções de tempo independentes](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, da mesma forma que as métricas podem.
 
-Se você tiver dúvidas adicionais sobre o uso de fórmulas no `Report Builder`, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você tiver dúvidas adicionais sobre como usar fórmulas no, [ entre em contato com o `Report Builder` suporte ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) .
