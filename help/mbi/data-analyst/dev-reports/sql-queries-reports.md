@@ -2,7 +2,7 @@
 title: Tradução de consultas SQL para relatórios do Commerce Intelligence
 description: Saiba como as consultas SQL são convertidas nas colunas calculadas e nas métricas usadas no Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ No final deste tópico, você encontrará uma **matriz de tradução** para clá
 
 Comece observando uma consulta geral:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | Relatório `group by` |
@@ -42,7 +42,7 @@ Uma métrica é necessária ao agregar `within a single table`. Assim, por exemp
 
 Veja um exemplo específico de como uma `Total Revenue` a métrica pode ser definida em [!DNL Commerce Intelligence]. Observe a consulta abaixo que você tenta traduzir:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` (coluna) |
@@ -63,7 +63,7 @@ A consulta para essa agregação pode ser semelhante ao mostrado abaixo:
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | Proprietário agregado |
 | `SUM(o.order_total) as "Customer LTV"` | Operação agregada (coluna) |
 | `FROM customers c` | Tabela de proprietário agregada |
@@ -103,7 +103,7 @@ Consulte [criação de colunas calculadas](../data-warehouse-mgr/creating-calcul
 
 Comece com a consulta abaixo:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | Relatório `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(coluna) |
@@ -132,7 +132,7 @@ O método anterior envolveria a criação de uma nova métrica que executa uma m
 
 Dê um passo para trás e observe a consulta geral para `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | Métrica `operation` (coluna) |
@@ -155,4 +155,11 @@ Para referência rápida, consulte a matriz abaixo. Isso mostra o equivalente de
 
 ## Elementos de inteligência do Commerce
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|X|-| |`FROM`|-|-|-|-|-|X| |`WHERE`X|-|-|-|-|-| |`WHERE` (com elementos de tempo) |`JOIN...ON`X |`GROUP BY`|-|-|X|-|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` (com elementos de tempo) | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
