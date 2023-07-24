@@ -2,7 +2,9 @@
 title: Análise do impacto do cupom
 description: Saiba como analisar o impacto do cupom na aquisição e retenção de clientes.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 2%
@@ -122,10 +124,10 @@ O que podemos tirar disso? Primeiro, o cupom com &quot;20% de desconto&quot; tev
 * a hora do dia/semana/mês/ano em que os cupons foram oferecidos.
 * a temporada em que os cupons foram oferecidos, dependendo do negócio.
 
-   **Exemplo:** o cupom de &quot;20% de desconto&quot; foi oferecido durante os meses de verão, mas a empresa vende roupas de inverno.
+  **Exemplo:** o cupom de &quot;20% de desconto&quot; foi oferecido durante os meses de verão, mas a empresa vende roupas de inverno.
 * as restrições aos cupões.
 
-   **Exemplo:** o cupom de &quot;10% de desconto&quot; é oferecido apenas aos clientes que compram um casaco de inverno na mesma ordem.
+  **Exemplo:** o cupom de &quot;10% de desconto&quot; é oferecido apenas aos clientes que compram um casaco de inverno na mesma ordem.
 
 A variável **receita bruta** para o cupom &quot;25% de desconto de US$ 100 ou mais&quot;, é muito maior do que a receita bruta do cupom &quot;US$ 10 de desconto&quot;. No entanto, o cupom de &quot;$10 off&quot; tem um muito maior **número de ordens**. Análise da **valor médio de pedido** O fornece informações sobre essas diferenças. Embora o cupom com &quot;25% de desconto de US$ 100 ou mais&quot; tenha menos pedidos, o valor médio do pedido é superior ao triplo do cupom com &quot;US$ 10 de desconto&quot;. Assim, uma receita bruta maior é atribuída ao cupom &quot;25% de desconto de US$ 100 ou mais&quot;.
 

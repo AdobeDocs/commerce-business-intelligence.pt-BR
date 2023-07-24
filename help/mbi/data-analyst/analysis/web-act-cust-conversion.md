@@ -2,7 +2,9 @@
 title: Análise da atividade do site e taxas de conversão do cliente
 description: Saiba como configurar um painel que rastreará a atividade do site, incluindo exibições de página, sessões e usuários, e o índice de conversão do cliente ao longo do tempo.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%

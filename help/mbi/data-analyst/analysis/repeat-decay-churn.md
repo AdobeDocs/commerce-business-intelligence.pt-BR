@@ -2,7 +2,9 @@
 title: Analisando Declínio e Churn de Probabilidade de Repetição
 description: Saiba e entenda o tempo decorrido entre os pedidos e quando é esperado que os clientes abandonem a empresa.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Gerenciamento de usuários e permissões do Adobe Commerce
 description: Saiba como gerenciar os usuários do Commerce Intelligence.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -23,25 +25,25 @@ Entrada [!DNL Commerce Intelligence], há três níveis de permissão gerais que
 
 Essas permissões permitem que os usuários executem determinadas ações ou acessem partes específicas do [!DNL Commerce Intelligence]. Esta é uma tabela do que cada nível de permissão pode fazer no [!DNL Commerce Intelligence]:
 
-|  | `Admin` | `Standard` | `Read Only` |
+|   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Criar/gerenciar usuários** | ✔ |  |  |
-| **Criar resumos de email** | ✔ | ✔ |  |
-| **Criar/editar/compartilhar painéis** | ✔ | ✔ |  |
+| **Criar/gerenciar usuários** | ✔ |   |   |
+| **Criar resumos de email** | ✔ | ✔ |   |
+| **Criar/editar/compartilhar painéis** | ✔ | ✔ |   |
 | **Exibir painéis** | ✔ | ✔ | ✔ |
-| **Criar/editar/excluir relatórios visuais** | ✔ | ✔* |  |
-| **Criar/editar/excluir relatórios SQL** | ✔ |  |  |
-| **Clonar painéis** | ✔ |  |  |
-| **Adicionar/gerenciar integrações** | ✔ |  |  |
-| **Acessar o Gerenciador de Datas Warehouse** | ✔ |  |  |
-| **Sincronizar/dessincronizar tabelas e colunas** | ✔ |  |  |
-| **Criar/editar métricas** | ✔ |  |  |
-| **Criar/editar conjuntos de filtros** | ✔ |  |  |
-| **Criar/editar colunas calculadas** | ✔ |  |  |
-| **Criar lista de relatórios dependentes** | ✔ |  |  |
-| **Resumo do sistema de acesso** | ✔ |  |  |
-| **Configurações do fuso horário de acesso** | ✔ |  |  |
-| **Faturamento de acesso** | ✔ | ✔** |  |
+| **Criar/editar/excluir relatórios visuais** | ✔ | ✔* |   |
+| **Criar/editar/excluir relatórios SQL** | ✔ |  |   |
+| **Clonar painéis** | ✔ |   |   |
+| **Adicionar/gerenciar integrações** | ✔ |   |   |
+| **Acessar o Gerenciador de Datas Warehouse** | ✔ |   |   |
+| **Sincronizar/dessincronizar tabelas e colunas** | ✔ |   |   |
+| **Criar/editar métricas** | ✔ |   |   |
+| **Criar/editar conjuntos de filtros** | ✔ |   |   |
+| **Criar/editar colunas calculadas** | ✔ |   |   |
+| **Criar lista de relatórios dependentes** | ✔ |   |   |
+| **Resumo do sistema de acesso** | ✔ |   |   |
+| **Configurações do fuso horário de acesso** | ✔ |   |   |
+| **Faturamento de acesso** | ✔ | ✔** |   |
 | **Entrar em contato com o suporte** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}

@@ -2,7 +2,9 @@
 title: Entender e criar análises básicas
 description: Saiba como entender e criar análises básicas.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Dashboards, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '3113'
 ht-degree: 0%
@@ -153,7 +155,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`e selecione `2` e `3`
 
-   ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Exemplo de relatório 2**: o número de clientes repetidos nos últimos anos
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -161,7 +163,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Repetir Clientes no Ano Passado](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
+  ![Repetir Clientes no Ano Passado](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
 ### Principais clientes por número de ordens de vida
 
@@ -174,7 +176,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top/Bottom]**: 25 principais classificadas por Ordens
 
-   ![25 Principais Clientes por Ordens](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
+  ![25 Principais Clientes por Ordens](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
 ### Principais clientes por receita vitalícia
 
@@ -187,7 +189,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top Bottom]**: As 25 principais classificadas por receita vitalícia
 
-   ![Os 25 principais clientes por receita](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
+  ![Os 25 principais clientes por receita](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
 ### Receita média vitalícia por coorte
 
@@ -202,7 +204,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**: Valor Médio Cumulativo Por Membro De Coorte
 
-   ![Receita vitalícia do cliente por coorte](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
+  ![Receita vitalícia do cliente por coorte](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
 ### Clientes por uso de cupom
 
@@ -218,7 +220,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 
-   ![Clientes por uso de cupom](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
+  ![Clientes por uso de cupom](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **Exemplo de relatório 2**: Porcentagem de clientes de cupom e Não de cupom por mês
    * **[!UICONTROL Metric A]**: `Non coupon customers` (ocultar métrica)
@@ -300,7 +302,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Produtos encomendados](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
+  ![Produtos encomendados](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Combine essa métrica com a sua métrica número de pedidos para calcular o número de itens por pedido. Em seguida, adicione códigos de cupom ao relatório para determinar como suas promoções afetam o tamanho do carrinho ou segmente por pedidos novos e repetidos para entender melhor o comportamento do cliente.
 * **Exemplo de relatório**: Produtos por pedido: primeira ordem versus pedidos repetidos
@@ -337,7 +339,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
-   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
+  ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
 ### Produtos mais comprados com cupons
 
@@ -351,7 +353,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Group By**]: `name` (ou `SKU`ou qualquer outro identificador de produto)
    * **[!UICONTROL Show top/bottom]**: 25 principais classificados por Produtos ordenados
 
-   ![Produtos com cupons](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
+  ![Produtos com cupons](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### Tempo entre pedidos
 
@@ -370,7 +372,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
 
 >[!NOTE]
 >
->Desmarque a `Multiple Y-Axes` caixa.
+>Desmarque a opção `Multiple Y-Axes` caixa.
 
 ![Tempo entre pedidos](../../assets/time_bw_orders_pic.png)<!--{: width="929"}-->
 
@@ -398,7 +400,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-   ![Impressões do anúncio](../../assets/ad_impressions.png)<!--{: width="929"}-->
+  ![Impressões do anúncio](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
 ### Índice de click-through (CTR)
 
@@ -482,7 +484,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
       * Para métrica `A`, selecione `Customer's first order's campaign`
       * Para métrica `B`, selecione `campaign`
 
-   ![Novos usuários.](../../assets/New_Users_Last_Month.png)
+  ![Novos usuários.](../../assets/New_Users_Last_Month.png)
 
 >[!NOTE]
 >

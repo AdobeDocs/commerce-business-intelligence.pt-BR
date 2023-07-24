@@ -2,7 +2,9 @@
 title: Análise do valor vitalício esperado (LTV) para Pro
 description: Saiba como configurar um painel que ajuda você a entender o crescimento do valor vitalício do cliente e o valor vitalício esperado de seus clientes.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -26,19 +28,19 @@ Colunas para criar no **pedidos** tabela se estiver usando **30 dias por mês**:
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * **Definição:**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]: `Months since order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * Definição: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
 Colunas para criar no **`orders`** tabela se estiver usando **calendário** meses:
@@ -46,31 +48,31 @@ Colunas para criar no **`orders`** tabela se estiver usando **calendário** mese
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]:
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * Definição: `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
 * 
-   [!UICONTROL Datatype]: `Integer`
+  [!UICONTROL Datatype]: `Integer`
 * **Definição:**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]: `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]: `Same Table`
 * 
-   [!UICONTROL Column equation]: `CALCULATION`
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
 * 
-   [!UICONTROL Datatype]: `String`
+  [!UICONTROL Datatype]: `String`
 * Definição: `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## Métricas
@@ -102,7 +104,7 @@ Métricas para criar
    * `Is in current month?` = `No`
 
 * 
-   [!UICONTROL Métrica]: `Revenue`
+  [!UICONTROL Métrica]: `Revenue`
 * [!UICONTROL Filter]:
 
 * Métrica `B`: `All time customers (hide)`
@@ -121,8 +123,7 @@ Métricas para criar
 * [!UICONTROL Formula]: `Expected revenue`
 * [!UICONTROL Formula]: `A / (B - C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 Outros detalhes do gráfico
 
@@ -139,7 +140,7 @@ Outros detalhes do gráfico
 
 * Métrica `A`: `Revenue`
 * 
-   [!UICONTROL Metric view]: `Cohort`
+  [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
 
@@ -147,7 +148,7 @@ Outros detalhes do gráfico
 
 * Métrica `A`: `Revenue`
 * 
-   [!UICONTROL Metric view]: `Cohort`
+  [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 

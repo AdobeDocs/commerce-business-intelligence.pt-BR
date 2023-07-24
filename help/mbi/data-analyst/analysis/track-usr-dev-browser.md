@@ -2,7 +2,9 @@
 title: Google Analytics - Rastrear o dispositivo do usuário e os dados do navegador no banco de dados
 description: Saiba quantos usuários estão realmente fazendo logon por dispositivos móveis e como isso afeta o valor vitalício desses usuários.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -20,8 +22,7 @@ Toda vez que uma solicitação é feita ao seu site, o navegador do usuário env
 1. `Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_8\_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36`
 1. `Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0`
 1. `Mozilla/5.0 (iPhone; U; CPU iPhone OS 4\_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7`
-1.
-` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
+1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
 Se você observar com atenção, verá que a cadeia de caracteres contém informações sobre o sistema operacional do usuário, o navegador e o nome do dispositivo que ele está usando (se tiver um nome). Embora as strings usuário-agente variem amplamente entre as plataformas e até mesmo versões da mesma plataforma, geralmente é verdade que o nome da plataforma existirá em algum lugar dentro do. Por exemplo, #1 acima é um Mac com navegador Chrome, #2 acima é uma máquina Windows com navegador Firefox, #3 é um iPhone, #4 é um iPad e #5 é um dispositivo Android.

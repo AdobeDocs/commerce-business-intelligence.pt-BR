@@ -2,7 +2,9 @@
 title: Modificando o Banco de Dados para Suporte à Replicação Incremental
 description: Saiba como modificar seu banco de dados para oferecer suporte à replicação incremental.
 exl-id: c9a38892-6096-4eb5-8a53-35b8b7b083dc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

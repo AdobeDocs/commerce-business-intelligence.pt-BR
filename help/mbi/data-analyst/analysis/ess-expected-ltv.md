@@ -2,7 +2,9 @@
 title: Análise do valor vitalício esperado (LTV) (básico)
 description: Saiba como criar análises para entender o valor vitalício dos clientes atuais e prever como esse valor aumenta com mais pedidos.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -23,17 +25,16 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
 * Navegue até **[!UICONTROL Manage Data > Metrics]**
    * Visualizar o existente **[!UICONTROL Avg lifetime revenue]**.
 
-   >[!NOTE]
-   >
-   >A tabela em que essa métrica é construída (provavelmente `customer_entity` ou `sales_order` dependendo da capacidade da loja de aceitar o check-out do convidado.).
+  >[!NOTE]
+  >
+  >A tabela em que essa métrica é construída (provavelmente `customer_entity` ou `sales_order` dependendo da capacidade da loja de aceitar o check-out do convidado.).
 
    * Clique em **[!UICONTROL Create New Metric]** e selecione a tabela acima.
    * Essa métrica executa uma **Mediana** no `Customer's lifetime revenue` coluna, ordenada por `created_at`.
       * [!UICONTROL Filters]:
          * Adicione o `Customers we count (Saved Filter Set)` (ou `Registered accounts we count`)
+
    * Nomeie a métrica, como `Median lifetime revenue`.
-
-
 
 ## Criar seu painel
 
@@ -53,7 +54,7 @@ Depois que a métrica é criada, é possível **criar um painel** fazendo isso:
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalo]: `None`
+     [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -61,11 +62,11 @@ Depois que a métrica é criada, é possível **criar um painel** fazendo isso:
       * Adicionar [!UICONTROL filters]:
          * [`A`] `Customer's group code` **Não Igual a** `Not Logged In`
          * [`B`] `Customer's lifetime number of orders` **Maior que**`0`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalo]: `None`
+     [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
-
 
 * **[!UICONTROL Average and Median LTV]**
    * Métrica `1`: `Avg lifetime revenue`
@@ -73,7 +74,7 @@ Depois que a métrica é criada, é possível **criar um painel** fazendo isso:
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * 
-      [!UICONTROL Tipo de gráfico]: `Line`
+     [!UICONTROL Tipo de gráfico]: `Line`
    * Desmarcar `Multiple Y-Axes`
 
 * **LTV por número de ordens vitalícias**
@@ -81,14 +82,14 @@ Depois que a métrica é criada, é possível **criar um painel** fazendo isso:
    * Métrica `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervalo]: `None`
+     [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
    * 
+     [!UICONTROL Tipo de gráfico]: `Line`
 
-      [!UICONTROL Tipo de gráfico]: `Line`
-   >[!NOTE]
-   >
-   >Não adicione todos os valores de `Customer's lifetime number of orders`. Em vez disso, observe um ponto em que o número de Novos clientes atinge um número pequeno e adicione manualmente o número de vida útil de cada cliente do valor do pedido a esse ponto. Por exemplo, se houver 200 clientes em um pedido, 75 em dois, 15 em três e 3 em quatro, adicione *1, 2 e 3*.
+  >[!NOTE]
+  >
+  >Não adicione todos os valores de `Customer's lifetime number of orders`. Em vez disso, observe um ponto em que o número de Novos clientes atinge um número pequeno e adicione manualmente o número de vida útil de cada cliente do valor do pedido a esse ponto. Por exemplo, se houver 200 clientes em um pedido, 75 em dois, 15 em três e 3 em quatro, adicione *1, 2 e 3*.
 
 * Adicionar o existente [!UICONTROL Avg customer lifetime revenue by cohort] relatório.
 

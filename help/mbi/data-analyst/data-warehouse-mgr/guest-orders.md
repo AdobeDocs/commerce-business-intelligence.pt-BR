@@ -2,7 +2,9 @@
 title: Pedidos de convidados
 description: Saiba mais sobre o impacto que os pedidos de convidado têm nos seus dados e quais opções você tem para contabilizar corretamente os pedidos de convidado em seus [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ No banco de dados de comércio típico, há uma variável `orders` tabela que se
 
 * **Se todos os clientes estiverem registrados** e as encomendas de convidados não são permitidas, isso significa que cada registro no `orders` a tabela tem um valor no `customer\_id` coluna. Como resultado, cada pedido se junta de volta ao `customers` tabela.
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **Se as ordens do convidado forem permitidas**, isso significa que alguns pedidos não têm um valor no `customer\_id` coluna. Somente clientes registrados recebem um valor para a variável `customer\_id` coluna na `orders` tabela. Os clientes que não estão registrados recebem uma `NULL` (ou em branco) para esta coluna. Como resultado, nem todos os registros de pedido têm registros correspondentes no `customers` tabela.
 
-   >[!NOTE]
-   >
-   >Para identificar o indivíduo único que fez o pedido, precisa haver outro atributo de usuário único ao lado `customer\_id` a um pedido. Normalmente, o endereço de email do cliente é usado.
+  >[!NOTE]
+  >
+  >Para identificar o indivíduo único que fez o pedido, precisa haver outro atributo de usuário único ao lado `customer\_id` a um pedido. Normalmente, o endereço de email do cliente é usado.
 
 ## Como contabilizar ordens de convidado na configuração do Data Warehouse
 

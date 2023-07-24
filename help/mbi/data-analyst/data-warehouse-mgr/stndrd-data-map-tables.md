@@ -2,7 +2,9 @@
 title: Padronizar dados com tabelas de mapeamento
 description: Saiba como trabalhar com tabelas de mapeamento.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ Para criar o `joined` navegue até a tabela na qual o campo será realocado no G
    * No `One` selecione a variável `mapping` tabela e o `Primary key` coluna. Nesse caso, você selecionaria o `state_input` coluna da `mapping_state` tabela.
    * Veja como o caminho se parece:
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. Quando terminar, clique em **[!UICONTROL Save]** para criar o caminho.
 1. O caminho pode não ser preenchido imediatamente após salvar - se isso acontecer, clique no link `Path` e selecione o caminho criado.
