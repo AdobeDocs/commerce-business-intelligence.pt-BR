@@ -2,7 +2,9 @@
 title: Usar o Report Builder visual
 description: Saiba como analisar os dados em seu relatório por um período específico.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -31,7 +33,7 @@ Você pode adicionar outras métricas depois que a métrica inicial for selecion
 
 ## Etapa 3: Adição `Formulas`
 
-`Formulas` são adicionados aos relatórios clicando em **[!UICONTROL Add Formula]**, localizado logo acima da lista de métricas no relatório. [Na fórmula editor ](../data-analyst/dev-reports/formulas-in-rpt-bldr.md) , qualquer uma das métricas incluídas no relatório pode ser usada como entrada. Operadores matemáticos básicos são usados para manipular as diferentes métricas.
+`Formulas` são adicionados aos relatórios clicando em **[!UICONTROL Add Formula]**, localizado logo acima da lista de métricas no relatório. No [editor de fórmulas](../data-analyst/dev-reports/formulas-in-rpt-bldr.md), qualquer uma das métricas incluídas no relatório pode ser usada como entradas. Operadores matemáticos básicos são usados para manipular as diferentes métricas.
 
 Digamos que você deseje criar um relatório que mostre a receita média por pedido. Nesse caso, você dividiria a variável `Revenue` métrica por `Number of orders` métrica.
 
@@ -73,9 +75,9 @@ Para cada métrica adicionada à análise, é possível adicionar filtros, selec
 
 Além dos menus suspensos e da caixa de texto, também é possível usar operadores de filtro especiais, como `LIKE` ou `IN` para criar filtros.
 
-O uso de curingas ( `%` ou `_` ) com `LIKE` declarações é suportado. O curinga corresponde a `%` vários caracteres, enquanto `_` só corresponde a um único caractere. Por exemplo:
+O uso de curingas (`%` ou `_`) com `LIKE` é compatível. A variável `%` o curinga corresponde a vários caracteres, enquanto `_` corresponde apenas a qualquer caractere único. Por exemplo:
 
-- `affiliate's name Like B%` permite somente dados de clientes cujo nome começa `B` .
+- `affiliate's name Like B%` permite somente dados de clientes cujo nome começa com `B`.
 
 - `affiliate's name Like _ake` O permite somente dados de clientes cujos nomes sejam semelhantes a `Jake`, `Rake`ou `Bake` mas não `Drake` ou `Blake`.
 
@@ -109,9 +111,9 @@ A adição de vários filtros permite um controle rígido dos dados do gráfico.
 
 ### Opções de tempo específicas da métrica
 
-Há duas opções para métricas usadas nos relatórios: elas podem ser tendências ao longo do tempo, de acordo com as opções de tempo globais, ou não, que irão exibi-las como um número escalar.
+Existem duas opções para as métricas usadas nos relatórios: elas podem analisar a tendência ao longo do tempo de acordo com as opções de tempo global, que as exibirão como um número escalar.
 
-Alterar um intervalo de tempo de métrica para `None` retorna um `scalar` número, que é útil ao criar fórmulas que envolvem dividir uma tendência de tempo métricada por um `scalar` número. Além disso, também é possível alterar o intervalo de tempo do `scalar` métrica para um intervalo de tempo independente do relatório.
+Alteração do intervalo de tempo de uma métrica para `None` retorna um `scalar` número, que é útil ao criar fórmulas que envolvem a divisão de uma métrica de tendência de tempo por uma `scalar` número. Além disso, também é possível alterar o intervalo de tempo da variável `scalar` para um intervalo de tempo independente daquele do relatório.
 
 Por exemplo, você gostaria de ver a receita mensal de 2019 expressa como uma porcentagem da receita geral de 2019. Você pode adicionar dois `Revenue` para um relatório com um intervalo de tempo global de 1 de janeiro de 2019 a 31 de dezembro de 2019, segmentado por intervalo mensal.
 

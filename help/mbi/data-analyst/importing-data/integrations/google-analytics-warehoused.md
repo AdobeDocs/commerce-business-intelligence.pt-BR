@@ -2,7 +2,9 @@
 title: Conectar Google Analytics Armazenados
 description: Saiba como rastrear como os visitantes usam seu site, qual conteúdo é atraente, onde os visitantes saem e muito mais.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -13,41 +15,41 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Requer [ permissões ](../../../administrator/user-management/user-management.md) de administrador.
+>Exige [Permissões de administrador](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] é o serviço de análise da web mais amplamente usado na Internet. A implementação [!DNL Google Analytics] em seu site permite faixa como os visitantes usam o site, o que conteúdo é atraente, onde os visitantes saem e muito mais. [!DNL Google Analytics Warehoused] é uma integração separada da integração existente [!DNL Google Analytics] . Isso permite um melhor análise devido à existência dos [!DNL Google Analytics] dados no data warehouse, que é diferente do feed ao vivo da integração existente [!DNL Google Analytics] . A análise dessas métricas em [!DNL Commerce Intelligence] , juntamente com outras partes de dados, melhora a integridade e a usabilidade geral do site.
+[!DNL Google Analytics] O é o serviço de análise da web mais usado na Internet. Implementação [!DNL Google Analytics] no seu site permite rastrear como os visitantes usam o site, qual conteúdo é atraente, onde os visitantes saem e muito mais. [!DNL Google Analytics Warehoused] O é uma integração separada do seu [!DNL Google Analytics] integração. Permite uma melhor análise devido à necessidade de [!DNL Google Analytics] dados na sua Data Warehouse, que é diferente do feed ativo do existente [!DNL Google Analytics] integração. Análise dessas métricas no [!DNL Commerce Intelligence], juntamente com outros dados, melhora a integridade e a usabilidade geral do site.
 
-## Diferença entre a integração do GA em depósito e ao vivo
+## Diferença entre GA Warehouse e Integração em tempo real
 
 O principal diferencial é que uma integração é armazenada ([!DNL Google Analytics Warehoused]), e o outro não ([!DNL Google Analytics Live]). No caso de [!DNL Google Analytics Warehoused], isso permite a manipulação do [!DNL Google Analytics] dados e oferece a capacidade de combinar [!DNL Google Analytics] e outras fontes de dados para criar relatórios relevantes.
 
 Examinar [!DNL Google Analytics] Adicione campanhas para obter um exemplo do que pode ser feito do ponto de vista da manipulação. Suponha que você tenha várias campanhas de anúncios para o quarto trimestre com nomes diferentes. As campanhas foram resultado de uma iniciativa de marketing específica. Com dados armazenados, você pode criar uma coluna que localize os nomes de campanha em questão e retorne o nome da iniciativa do quarto trimestre de `Operation Dumbo`.
 
-O aspecto de combinação permite [!DNL Google Analytics] dados a serem unidos a outros dados para realizar análises. Por exemplo, use `Total Time On Site By Ad Campaign` dados de [!DNL Google Analytics] e Junte-se a eles `Total Spent Per Campaign` a partir de [!DNL Facebook Ads] dados para obter uma imagem completa do quanto envolvimento está demorando.
+O aspecto de combinação permite [!DNL Google Analytics] dados a serem unidos a outros dados para realizar análises. Por exemplo, considere `Total Time On Site By Ad Campaign` dados de [!DNL Google Analytics] e uni-lo contra `Total Spent Per Campaign` dados de [!DNL Facebook Ads] para obter uma visão completa de quanto o engajamento está custando a você.
 
-Com a [!DNL Google Analytics Live] integração por outro lado, todos [!DNL Google Analytics] os gráficos são curtir um pequeno silo que não está armazenado em seu data warehouse.
+Com o [!DNL Google Analytics Live] integração, por outro lado, cada [!DNL Google Analytics] O gráfico é como um pequeno silo que não é armazenado em sua Data Warehouse.
 
-## Conectar [!DNL Google Analytics Warehoused]
+## Conectando [!DNL Google Analytics Warehoused]
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] é uma `Premium` integração. [Entre em contato com o suporte ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se tiver uma interesse de adicionar essa integração à sua assinatura.
+>[!DNL Google Analytics Warehoused] é um `Premium` Integração. [Entrar em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se você tiver interesse em adicionar essa integração à sua assinatura.
 
-1. Vá para o `Connections` página em **[!UICONTROL Admin** > **Integrations]** .
+1. Vá para a `Connections` página abaixo **[!UICONTROL Admin** > **Integrations]**.
 1. Clique em **[!UICONTROL Add an Integration]**, localizado no lado direito.
 1. Clique em [!DNL Google Analytics Warehoused] ícone. Isso abre o [!DNL Google Analytics] página de credenciais.
 1. Insira seu [!DNL Google Analytics] credenciais. Após a conclusão do processo de autorização, você será redirecionado de volta para [!DNL Commerce Intelligence].
 1. Uma lista de IDs de perfil é exibida. Marque os perfis aos quais deseja se conectar [!DNL Commerce Intelligence]. Se você tiver vários perfis e precisar de ajuda para identificar qual é qual, consulte o tópico sobre Conexão de vários [!DNL Google Analytics] seção de perfis abaixo.
 
-## Conexão de vários [!DNL Google Analytics] perfis
+## Conectando vários [!DNL Google Analytics] perfis
 
-Você pode ter vários sites conectados a uma única [!DNL Google Analytics] conta, identificados por sua própria [!DNL Google Analytics] ID de perfil. Nesse caso, você tem a opção de incluir todas as suas perfil IDs no [!DNL Commerce Intelligence] . Verifique os perfil IDs que você curtir para incluir durante a etapa de seleção de perfil.
+Você pode ter vários sites conectados a um único [!DNL Google Analytics] conta, identificada pelos seus próprios [!DNL Google Analytics] ID do perfil. Nesse caso, você tem a opção de incluir todas as IDs de perfil no [!DNL Commerce Intelligence]. Marque as IDs de perfil que você deseja incluir durante a etapa de seleção de perfil.
 
-Para identificar a ID de perfil de [!DNL Google Analytics] um site específico:
+Para identificar o de um site específico [!DNL Google Analytics] ID do perfil:
 
-1. Faça logon em [!DNL Google Analytics]
+1. Efetue logon no [!DNL Google Analytics]
 1. Ir para o site específico [!DNL Google Analytics] painel
 1. Examine o URL - a ID do perfil corresponde aos oito números seguintes `p` no final da linha
 
@@ -61,7 +63,7 @@ Para identificar a ID de perfil de [!DNL Google Analytics] um site específico:
 
 ## Documentação relacionada
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [Conectar [!DNL Google Adwords]](../integrations/google-adwords.md)
-* [Análise de atividade de site e taxas de conversão do cliente](../../analysis/web-act-cust-conversion.md)
-* [Rastrear usuário atração dados usando  [!DNL Google Analytics]  cookies](../../analysis/google-track-user-acq.md)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
+* [Análise da atividade do site e das taxas de conversão do cliente](../../analysis/web-act-cust-conversion.md)
+* [Rastrear dados de aquisição de usuário usando [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

@@ -2,7 +2,9 @@
 title: Usar opções de tempo no Report Builder visual
 description: Saiba como analisar os dados em seu relatório por um período específico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -82,6 +84,7 @@ Para demonstrar esse caso de uso, verifique a receita diária do mês anterior e
    * `Time Interval`: defina como `None`.
 
    * `Time Range`: defina como `From 14 Months Ago To 13 Months Ago` clicando primeiro em **[!UICONTROL Custom]** depois **[!UICONTROL Moving Range]**. Use os campos e os menus suspensos na parte superior do menu para definir o intervalo. Essa configuração permite visualizar a receita do mês anterior, mas do ano anterior.
+
    Não se preocupe se a métrica desaparecer do relatório - definir uma opção de tempo independente oculta automaticamente a métrica do relatório. Para exibi-lo novamente, clique em **[!UICONTROL Show]** ao lado da métrica.
 
    ![](../assets/Different_Time_Ranges.gif)
@@ -95,8 +98,6 @@ Para demonstrar esse caso de uso, verifique a receita diária do mês anterior e
    ![](../assets/TO4.png)
 
    * Renomeie as métricas. No exemplo, a primeira métrica é `Revenue - 2015` e o segundo é `Revenue - 2014`.
-
-
 
 Outro uso comum do personalizado `Time Options` é determinar semanas de suprimento. Especialmente durante a temporada de festas ou um período promocional especial, você pode considerar os itens vendidos na última semana, mês e período promocional anterior para tomar decisões de compra informadas.
 
@@ -129,13 +130,13 @@ Para criar as fórmulas, clique em **[!UICONTROL Add Formula]**. Insira as fórm
 * Para o `last 7 days time period`, insira `D / A` no `Formula` campo.
 * Para o `last 28 days time period`, insira `D / (B/4)` no `Formula` campo.
 
-   >[!NOTE]
-   >
-   >É importante normalizar os intervalos de tempo selecionados aqui. Divida 28 dias em quatro semanas neste exemplo. Talvez seja necessário aplicar uma lógica diferente à fórmula.
+  >[!NOTE]
+  >
+  >É importante normalizar os intervalos de tempo selecionados aqui. Divida 28 dias em quatro semanas neste exemplo. Talvez seja necessário aplicar uma lógica diferente à fórmula.
 
 * Para o `last promo period`, insira `D / C` no `Formula` campo.
 
-   ![](../assets/Different_Time_Ranges_2.png)
+  ![](../assets/Different_Time_Ranges_2.png)
 
 * Por fim, personalize o relatório ocultando as métricas e adicionando uma `SKU` ou uma dimensão semelhante ao relatório como uma `Group By`.
 

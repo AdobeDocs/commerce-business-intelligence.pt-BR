@@ -2,7 +2,9 @@
 title: Painéis
 description: Saiba como criar e trabalhar com um painel.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ A aparência dos painéis que você cria depende totalmente de você. Você pode
 
    * Para criar um `Group` no painel, digite o nome do grupo.
 
-      Por exemplo, se a sua instalação do Commerce tiver várias exibições de loja, você pode criar um Grupo para cada exibição de loja.
+     Por exemplo, se a sua instalação do Commerce tiver várias exibições de loja, você pode criar um Grupo para cada exibição de loja.
 
    * Clique em **[!UICONTROL Create]**.
 
    ![nome do painel](../../assets/magento-bi-dashboard-create-name.png)
 
    * O nome do novo painel é exibido no canto superior esquerdo. Clique na seta para baixo (![](../../assets/magento-bi-btn-down.png)) para mostrar as opções. Se você criou um grupo, o novo painel aparece abaixo do grupo na lista.
-
 
 ### Adicionar um relatório
 
@@ -58,7 +59,7 @@ A aparência dos painéis que você cria depende totalmente de você. Você pode
 
    * No cabeçalho do painel, clique em **[!UICONTROL Add Report]**.
 
-      ![Adicionar relatório](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![Adicionar relatório](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. Clique em **[!UICONTROL Create Report]** para mostrar a **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ Ao compartilhar um painel, você pode atribuir permissões em sua organização 
       * `View`
       * `Edit`
       * `None`
+
    1. Quando for solicitada a confirmação, clique em **[!UICONTROL OK]** para atualizar o nível de permissões para cada usuário.
 
    1. Para alterar o nível de permissão de um indivíduo, encontre o usuário na lista e altere o nível de permissão. A alteração é salva automaticamente.

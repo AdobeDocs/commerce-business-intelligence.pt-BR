@@ -2,7 +2,9 @@
 title: Auditoria de dados do Google Adwords
 description: Saiba mais sobre as etapas para exportar os dados do Google Adwords.
 exl-id: f619801f-e789-44ad-945e-268d430bf583
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%

@@ -1,8 +1,10 @@
 ---
-title: Conectar Google ECommerce
-description: Saiba mais sobre os canais referência mais valorizados.
+title: Conectar o Google Commerce
+description: Saiba mais sobre os seus canais de referência mais importantes.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -25,9 +27,9 @@ Comece digitando seu [!DNL Google ECommerce] credenciais para [!DNL Commerce Int
 
 1. Clique em **[!UICONTROL Add a New Source]**, localizado no lado direito da tela acima da `Data Sources` tabela.
 
-1. Clique no [!DNL Google ECommerce] ícone. Isso abre as [!DNL Google ECommerce] credenciais página.
+1. Clique em [!DNL Google ECommerce] ícone. Isso abre o [!DNL Google ECommerce] página de credenciais.
 
-1. Insira suas [!DNL Google Analytics] credenciais. Ao concluir o processo de autorização, você é redirecionado para [!DNL Commerce Intelligence] .
+1. Insira seu [!DNL Google Analytics] credenciais. Ao concluir o processo de autorização, você será redirecionado de volta para [!DNL Commerce Intelligence].
 
 1. Uma lista de IDs de perfil é exibida. Marque os perfis aos quais deseja se conectar [!DNL Commerce Intelligence].
 
@@ -43,13 +45,13 @@ Você pode ter vários sites conectados a um único [!DNL Google Analytics] cont
 
 Para identificar o de um site específico [!DNL Google Analytics] ID do perfil:
 
-1. [!DNL Google Analytics]Fazer logon.
-1. Vá para a painel do [!DNL Google Analytics] site específico.
-1. Look na URL-a ID do perfil corresponde aos oito números após `p` o final da linha.
+1. Efetue logon no [!DNL Google Analytics].
+1. Ir para o site específico [!DNL Google Analytics] painel.
+1. Examine o URL - a ID do perfil corresponde aos oito números seguintes `p` no final da linha.
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## Desconectar-se [!DNL Google ECommerce] de [!DNL Commerce Intelligence] {#disconnect}
+## Desconectando [!DNL Google ECommerce] de [!DNL Commerce Intelligence] {#disconnect}
 
 1. Visite seu [!DNL Google Analytics] [configurações da conta](https://www.google.com/account/about/?hl=en) página.
 1. No `Security` clique em **[!UICONTROL edit]** ao lado de `Authorizing` aplicativos e sites.
@@ -60,5 +62,5 @@ Para identificar o de um site específico [!DNL Google Analytics] ID do perfil:
 * [Esperado [!DNL Google ECommerce] dados](../integrations/google-ecommerce-data.md)
 * [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Configuração [!DNL Google ECommerce] rastreamento](https://support.google.com/analytics/answer/1009612?hl=en)
-* [Discover suas fontes de atração e canais mais valiosos](../../analysis/most-value-source-channel.md)
-* [Aumente ROI em suas campanhas publicitárias](../../analysis/roi-ad-camp.md)
+* [Descubra as fontes e os canais de aquisição mais valiosos](../../analysis/most-value-source-channel.md)
+* [Aumente o ROI em suas campanhas publicitárias](../../analysis/roi-ad-camp.md)

@@ -2,7 +2,9 @@
 title: Report Builder de coorte
 description: Saiba mais sobre a análise de grupos de usuários que compartilham características semelhantes em seus ciclos de vida.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -181,7 +183,7 @@ Neste exemplo, você analisou a variável `Revenue` , seus coortes foram agrupad
 
 ### Quero saber, em média, quantos pedidos um usuário faz em pontos diferentes de sua vida.
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif
+(../../assets/cohort2.gif
 
 Neste exemplo, você analisou o `Number of orders` , seus coortes foram agrupados pela variável `customer's first order date`, e incluiu os oito coortes mais recentes (definidos na `Time Period` menu ) na análise. Para ver o número médio de pedidos para cada coorte, você alterou o `perspective` para `Average Value per Cohort Member`.
 

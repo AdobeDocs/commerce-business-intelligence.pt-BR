@@ -2,7 +2,9 @@
 title: Validação de dados no Mixpanel
 description: Saiba como confirmar que você sincronizou todos os mesmos dados disponíveis diretamente no Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # Validação de dados no [!DNL Mixpanel]
 
-Quando [!DNL Adobe Commerce Intelligence] primeiro se conecta ao seu [!DNL Mixpanel] dados, seu Gerente de conta ou Analista pode solicitar que você forneça exportações de dados do [!DNL Mixpanel] para fins de validação. Isso permite confirmar que você sincronizou todos os mesmos dados que estão disponíveis diretamente no [!DNL Mixpanel].
+Quando [!DNL Adobe Commerce Intelligence] primeiro se conecta ao seu [!DNL Mixpanel] dados, seu Gerente de conta ou Analista pode solicitar que você forneça exportações de dados do [!DNL Mixpanel] para fins de validação. Isso permite confirmar que você sincronizou todos os mesmos dados que estão disponíveis diretamente no [!DNL Mixpanel].
 
 ## Processo de exportação de dados: `Events`
 

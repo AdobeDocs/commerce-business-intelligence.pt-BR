@@ -2,7 +2,9 @@
 title: Conectando [!DNL MySQL] via túnel SSH
 description: Saiba como se conectar [!DNL MySQL] via túnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -20,12 +22,12 @@ ht-degree: 0%
 ## IR PARA
 
 * [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
-* [[!DNL MySQL] Via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
+* [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-Para conectar seu [!DNL MySQL] banco de [!DNL Commerce Intelligence] dados por meio de um `SSH tunnel` , você deve fazer algumas coisas:
+Para conectar seu [!DNL MySQL] banco de dados para [!DNL Commerce Intelligence] por meio de um `SSH tunnel`, você deve fazer algumas coisas:
 
 1. Recuperar o [!DNL Commerce Intelligence] `public key`
-1. Permitir acesso ao [!DNL Commerce Intelligence] `IP address`
+1. Permitir acesso à [!DNL Commerce Intelligence] `IP address`
 1. Criar um `Linux` usuário para [!DNL Commerce Intelligence]
 1. Criar um `MySQL` usuário para [!DNL Commerce Intelligence]
 1. Insira a conexão e as informações do usuário em [!DNL Commerce Intelligence]
@@ -62,16 +64,16 @@ Pode ser uma máquina de produção ou secundária, desde que contenha dados em 
         mkdir /home/rjmetric/.ssh
 ```
 
-1. Lembra-se da `public key` sua recuperação na primeira seção? Para garantir que o usuário tenha acesso ao banco de dados, é necessário importar a chave para `authorized\_keys` o.
+1. Lembre-se do `public key` você recuperou na primeira seção? Para garantir que o usuário tenha acesso ao banco de dados, é necessário importar a chave para o `authorized\_keys`.
 
-   Copie a chave inteira para o arquivo da `authorized\_keys` seguinte maneira:
+   Copie toda a chave na `authorized\_keys` do seguinte modo:
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. Para concluir a criação do usuário, altere as permissões no `/home/rjmetric` diretório para permitir acesso via `SSH` :
+1. Para concluir a criação do usuário, altere as permissões no `/home/rjmetric` diretório para permitir acesso via `SSH`:
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -81,7 +83,7 @@ Pode ser uma máquina de produção ou secundária, desde que contenha dados em 
 
 >[!IMPORTANT]
 >
->Se o `sshd\_config` arquivo associado ao servidor não estiver definido para a opção padrão, apenas determinados usuários terão acesso ao servidor-isso evita uma conexão [!DNL Commerce Intelligence] com êxito. Nesses casos, é necessário executar um comando como `AllowUsers` para permitir que o `rjmetric` acesso do usuário ao servidor.
+>Se a variável `sshd\_config` o arquivo associado ao servidor não está definido como a opção padrão, somente determinados usuários têm acesso ao servidor - isso impede uma conexão bem-sucedida com o [!DNL Commerce Intelligence]. Nesses casos, é necessário executar um comando como `AllowUsers` para permitir que o `rjmetric` acesso do usuário ao servidor.
 
 ## Criação de um [!DNL MySQL] usuário para [!DNL Commerce Intelligence] {#mysql}
 
@@ -104,11 +106,11 @@ Insira as seguintes informações nesta página, começando com o `Database Conn
 * `Username`: O nome de usuário para o [!DNL Commerce Intelligence] [!DNL MySQL] usuário
 * `Password`: A senha para o [!DNL Commerce Intelligence] [!DNL MySQL] usuário
 * `Port`: [!DNL MySQL] porta no servidor (3306 por padrão)
-* `Host` Por padrão, esse é o localhost. Em geral, é o valor do endereço do BIND para o seu [!DNL MySQL] servidor, que por padrão é `127.0.0.1 (localhost)` , mas também pode ser um endereço de rede local (por exemplo, `192.168.0.1` ) ou o endereço IP público do seu servidor.
+* `Host` Por padrão, é localhost. Em geral, é o valor bind-address do [!DNL MySQL] servidor, que por padrão é `127.0.0.1 (localhost)`, mas também pode ser algum endereço de rede local (por exemplo, `192.168.0.1`) ou o endereço IP público do seu servidor.
 
-   O valor pode ser encontrado no `my.cnf` arquivo (localizado em `/etc/my.cnf` ) abaixo da linha que lê `\[mysqld\]` . Se a linha do endereço do vínculo for comentada nesse arquivo, seu servidor estará protegido contra tentativas de conexão externa.
+  O valor pode ser encontrado no `my.cnf` arquivo (localizado em `/etc/my.cnf`) abaixo da linha que lê `\[mysqld\]`. Se a linha de vinculação de endereço for comentada nesse arquivo, seu servidor estará protegido contra tentativas de conexão externa.
 
-`SSH Connection`Na seção:
+No `SSH Connection` seção:
 
 * `Remote Address`: O endereço IP ou o nome de host do servidor [!DNL Commerce Intelligence] encaminhará por túnel para
 * `Username`: O nome de usuário para o [!DNL Commerce Intelligence] SSH ([!DNL Linux]) usuário

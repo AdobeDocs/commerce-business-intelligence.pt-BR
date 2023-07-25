@@ -2,7 +2,9 @@
 title: Relatórios de Help Desk para o Zendesk
 description: Saiba mais sobre os seus canais de referência mais importantes.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -196,16 +198,14 @@ Antes de começar, você deseja conectar seu [[!DNL Zendesk]](../integrations/ze
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` – `String`
-
+     *`Datatype` – `String`
 
 * **`customer_entity`** tabela
    * Selecione uma definição: `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
    * 
-
-      [!UICONTROL Um]: `customer_entity.email`
+     [!UICONTROL Um]: `customer_entity.email`
 
    * Selecione um [!UICONTROL table]: `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
@@ -402,8 +402,7 @@ Antes de começar, você deseja conectar seu [[!DNL Zendesk]](../integrations/ze
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
    * 
-
-      [!UICONTROL Métrica]: Users
+     [!UICONTROL Métrica]: Users
 
 * Métrica `A`: `New users`
 * `Time period`: `All time`

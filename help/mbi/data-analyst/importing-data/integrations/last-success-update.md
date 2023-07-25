@@ -2,7 +2,9 @@
 title: Entender os resultados entre o banco de dados e o editor SQL
 description: Saiba como entender os resultados entre o banco de dados e o editor SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%

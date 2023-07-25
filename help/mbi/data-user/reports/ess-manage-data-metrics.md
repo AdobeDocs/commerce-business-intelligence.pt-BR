@@ -1,79 +1,81 @@
 ---
-title: Métricas Criar
-description: Aprenda a usar métricas para criar gráficos.
+title: Criar métricas
+description: Saiba como usar métricas para criar gráficos.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
 
 ---
 
-# Métricas Criar
+# Criar métricas
 
 >[!NOTE]
 >
->Requer [ permissões ](../../administrator/user-management/user-management.md) de administrador.
+>Exige [Permissões de administrador](../../administrator/user-management/user-management.md).
 
-Uma métrica é uma medida. Nas estruturas SQL e banco de dados, um métrica é curtir um query armazenado durante um período variável.
+Uma métrica é uma medida. Em estruturas SQL e de banco de dados, uma métrica é como uma consulta armazenada em um período variável.
 
-No [!DNL Commerce Intelligence] , você pode usar métricas para [ criar gráficos ](../../data-user/reports/ess-rpt-build-visual.md) . Por exemplo, a métrica `revenue` é o número total de pedidos. O métrica `average customer revenue per order` é o que o cliente médio gasta por solicitar.
+Entrada [!DNL Commerce Intelligence], você pode usar métricas para [criar gráficos](../../data-user/reports/ess-rpt-build-visual.md). Por exemplo, a métrica `revenue` é o número total de pedidos. A métrica `average customer revenue per order` é o que o cliente médio gasta por pedido.
 
-Quando usado em relatórios, as métricas podem ser analisadas em um período especificado e [ filtradas ou segmentadas ](../../best-practices/segment-filter.md) por categorias diferentes. Considere analisar o cliente médio receita agrupados por gênero-neste caso, `average customer revenue per order` o métrica e o gênero são o agrupamento.
+Quando usadas em relatórios, as métricas podem ser analisadas por um período específico e [filtrado ou segmentado](../../best-practices/segment-filter.md) por categorias diferentes. Considere analisar a receita média do cliente agrupada por gênero - neste caso, `average customer revenue per order` é a métrica e gênero é o agrupamento.
 
 ## Definição da métrica {#define}
 
-1. Para criar uma métrica, clique em **[!UICONTROL Data** > **Metrics]** .
+1. Para criar uma métrica, clique em **[!UICONTROL Data** > **Metrics]**.
 
-1. Clique em **[!UICONTROL Create New Metric]** .
+1. Clique em **[!UICONTROL Create New Metric]**.
 
-1. Na lista suspensa, clique na tabela que inclui a nativo ou a coluna calculada que deseja usar para o métrica.
+1. Na lista suspensa, clique na tabela que inclui a coluna nativa ou calculada que deseja usar para sua métrica.
 
-1. Nomeie o métrica.
+1. Nomeie sua métrica.
 
-   Adobe Systems recomenda um nome que, em um relance, indique o que é o métrica. Por exemplo: `Average Order Revenue` .
+   Adobe recomenda um nome que informa qual é a métrica. Por exemplo: `Average Order Revenue`.
 
-1. A próxima etapa é definir o que a métrica faz. Usando os menus suspensos, defina a operação do métrica, a `operation` coluna e um `date` Dimensão:
+1. A próxima etapa é definir o que sua métrica faz. Usando os menus suspensos, defina a operação da métrica, a variável `operation` e uma `date` dimensão:
 
    * Escolha uma operação:
-      * `Count` -Esta operação conta o número de linhas em uma tabela de dados
-      * `Max` -Max retorna o valor máximo de uma coluna de dados específica
-      * `Min` -Min retorna o valor mínimo de uma coluna de dados específica
-      * `Sum` -Esta operação soma os valores de uma coluna de dados específica
-      * `Average` -Esta operação calcula a média dos valores da coluna de dados
-      * `Count Distinct Value` -Isso conta o número exclusivo de valores em uma coluna de dados específica
-      * `Median` -Esta operação calcula a mediana dos valores da coluna de dados
-      * `First and Third Quartiles` -Essas operações calculam os 25 e 75 percentils dos valores da coluna de dados, respectivamente
-      * `Tenth and Ninetieth Percentiles` -Essas operações calculam os 10º e 90th percentil dos valores da coluna de dados, respectivamente
-   * Escolha uma coluna para executar a operação. Por exemplo, se você quisesse encontrar seu total receita, realizaria uma operação de soma na `order total` coluna.
+      * `Count` - Essa operação conta o número de linhas em uma tabela de dados
+      * `Max` - Max retorna o valor máximo de uma coluna de dados específica
+      * `Min` - Mín retorna o valor mínimo de uma coluna de dados específica
+      * `Sum` - Essa operação soma os valores de uma coluna de dados específica
+      * `Average` - Essa operação calcula a média dos valores da coluna de dados
+      * `Count Distinct Value` - Isso conta o número exclusivo de valores em uma coluna de dados específica
+      * `Median` - Essa operação calcula a mediana dos valores da coluna de dados
+      * `First and Third Quartiles` - Essas operações calculam os percentis 25 e 75 dos valores da coluna de dados, respectivamente.
+      * `Tenth and Ninetieth Percentiles` - Essas operações calculam os percentis 10 e 90 dos valores da coluna de dados, respectivamente.
 
-      Se você estiver editando uma métrica existente, também [ poderá alterar a tabela ](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) operacional do métrica nessa seção.
+   * Escolha uma coluna na qual executar a operação. Por exemplo, se você quisesse encontrar sua receita total, executaria uma operação de soma na variável `order total` coluna.
 
-   * Escolha uma data dimensão que possa ser usada para analisar a tendência da métrica. Por exemplo, `order date` .
+     Se você estiver editando uma métrica existente, também poderá [alterar a tabela operacional da métrica](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) nesta seção.
 
+   * Escolha uma dimensão de data que possa ser usada para analisar a tendência da métrica. Por exemplo, `order date`.
 
-## Adicionar filtros {#filters}
+## Adição de filtros {#filters}
 
-A `Filter` seção permite criar um filtro ou aplicar um [ conjunto ](../../data-user/reports/ess-manage-data-filters.md) de filtros salvo à métrica.
+A variável `Filter` permite criar um filtro ou aplicar um [conjunto de filtros salvo](../../data-user/reports/ess-manage-data-filters.md) para sua métrica.
 
-Para o `average order revenue` métrica, você não desejaria incluir pedidos de teste que possam ter sido feitos ao configurar o armazenamento-isso nos forneceria um resultado incorreto. Pode aplicar um conjunto de filtros para remover esses pedidos do conjunto de dados. Após a criação do filtro, ele será aplicado a todos os gráficos criados com essa métrica.
+Para o `average order revenue` , você não desejaria incluir pedidos de teste que poderiam ter sido feitos durante a configuração de sua loja, isso nos daria um resultado impreciso. É possível aplicar um conjunto de filtros para remover esses pedidos do conjunto de dados. Depois que o filtro for criado, ele será aplicado a todos os gráficos criados usando essa métrica.
 
-A `Filter Logic` seção é onde você pode definir mais como um métrica deve se comportar.
+A variável `Filter Logic` é onde você pode definir melhor como uma métrica deve se comportar.
 
-* &quot;\ [ `A` \] ou \ [ `B` \]&quot; permite que qualquer dado que satisfaça a filtros \ [ `A` \] ou \ [ `B` \]
-* &quot;\ [ `A` \] e \ [ `B` \]&quot; só permite que os dados satisfaçam ambos filtros \ [ `A` \] e \ [ `B` \]
-* &quot;(\ [ `A` \] e \ [ `B` \]) ou \ [ `C` \]&quot; só permite que os dados atendam apenas a filtros \ [ `A` \] e \ [ `B` \], ou satisfaçam o filtro \ [ `C` \] sozinho
+* &quot;\[`A`\] ou \[`B`\]&quot; permite quaisquer dados que satisfaçam aos filtros \[`A`\] OU \[`B`\]
+* &quot;\[`A`\] e \[`B`\]&quot; permite somente dados que satisfaçam a ambos os filtros \[`A`\] e \[`B`\]
+* &quot;(\[`A`\] e \[`B`\]) OU \[`C`\]&quot; permite somente dados que satisfaçam a ambos os filtros \[`A`\] e \[`B`\], ou satisfaz o filtro \[`C`\] sozinho
 
-## Adição de dimensões {#dimensions}
+## Adicionar Dimension {#dimensions}
 
-A [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) seção mostra todas as dimensões de dados disponíveis para filtragem ou agrupamento; por padrão, todas as colunas de dados disponíveis são listadas como dimensões. Continuando com o exemplo, se você quisesse segmento seu receita por referência fonte, é possível fazer isso aqui.
+A variável [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) A seção mostra todas as dimensões de dados disponíveis para filtragem ou agrupamento; por padrão, todas as colunas de dados disponíveis são listadas como dimensões. Continuando com o exemplo, se você quiser segmentar sua receita por fonte de referência, faça isso aqui.
 
-Além de listar todas as colunas de dados disponíveis como dimensões, [!DNL Commerce Intelligence] adivinhe em quais colunas são agrupadas. *Para segmento ou grupo dados em relatórios* , as colunas devem ser marcadas como agrupadas.
+Além de listar todas as colunas de dados disponíveis como dimensões, [!DNL Commerce Intelligence] adivinha quais colunas podem ser agrupadas. *Para segmentar ou agrupar dados em relatórios*, as colunas devem ser marcadas como agrupáveis.
 
-## Concluindo {#finish}
+## Terminando {#finish}
 
-Além de definir como o métrica se comporta, você também pode definir níveis de permissão na `User Rights` seção. Embora `Admin` os usuários tenham acesso a todas as métricas, é necessário indicar os usuários que podem usar essa métrica marcando a caixa ao lado do grupo apropriado.
+Além de definir como sua métrica se comporta, você também pode definir níveis de permissão na variável `User Rights` seção. Enquanto `Admin` Se os usuários tiverem acesso a todas as métricas, será necessário indicar os usuários que podem usar essa métrica marcando a caixa ao lado do grupo apropriado.
 
-Se você estiver editando uma métrica existente, poderá visualização uma lista de gráficos (e quem as possui) que usam essa métrica na `Dependent Charts` seção.
+Se você estiver editando uma métrica existente, poderá exibir uma lista de gráficos (e quem é o proprietário deles) que usam essa métrica na `Dependent Charts` seção.
 
-As alterações são salvas automaticamente e o métrica agora é bom go.
+As alterações são salvas automaticamente e sua métrica está pronta para ser usada.
