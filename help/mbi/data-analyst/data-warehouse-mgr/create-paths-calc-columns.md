@@ -67,7 +67,7 @@ Agora, você pode criar o caminho.
 
    ![Criação de caminhos para o modal de colunas calculadas](../../assets/Creating_Paths_modal.png)
 
-1. Usando as listas suspensas, selecione as chaves primária e estrangeira para cada tabela.
+1. Usando os menus suspensos, selecione as chaves primária e estrangeira para cada tabela.
 
    No `Many` lado, selecione `orders.customerid` - lembre-se, os clientes podem ter muitos pedidos.
 

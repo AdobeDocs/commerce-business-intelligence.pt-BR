@@ -231,7 +231,7 @@ ht-degree: 0%
    - Trabalhar com painéis {#working-dashboards}
       - [Compartilhamento de painéis](best-practices/share-dashboard-best-practice.md)
       - [Construindo um painel de investidores](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Tutoriais do {#tutorials}
    - [Usar o [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilização de Opções de tempo no [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Criar visualizações para um [!DNL SQL] Query](tutorials/create-visuals-from-sql.md)

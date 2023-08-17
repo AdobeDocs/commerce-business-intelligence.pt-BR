@@ -19,7 +19,7 @@ Imagine que você esteja no `Report Builder` criação de um `Revenue by State` 
 
 ## Como isso pode acontecer?
 
-Infelizmente, a falta de padronização pode, às vezes, causar confusão nos dados e dores de cabeça ao criar relatórios. Neste exemplo, pode não ter havido um menu suspenso ou um modo padronizado para seus clientes inserirem suas informações de estado de faturamento. Isso leva a vários valores - `pa`, `PA`, `penna`, `pennsylvania`, e `Pennsylvania` - tudo pelo mesmo estado, o que leva a alguns resultados estranhos na `Report Builder`.
+Infelizmente, a falta de padronização pode, às vezes, causar confusão nos dados e dores de cabeça ao criar relatórios. Neste exemplo, pode não ter havido um menu suspenso ou um modo padronizado para seus clientes inserirem suas informações de estado de faturamento. Isso leva a vários valores - `pa`, `PA`, `penna`, `pennsylvania`, e `Pennsylvania` - todos para o mesmo estado, o que leva a alguns resultados estranhos na `Report Builder`.
 
 É possível que haja um recurso técnico que possa ajudar você a limpar os dados ou inserir as colunas necessárias diretamente no banco de dados. Caso contrário, há outra solução: **a tabela de mapeamento**. Uma tabela de mapeamento permite limpar e padronizar de forma rápida e fácil quaisquer dados confusos, mapeando os dados para uma única saída.
 

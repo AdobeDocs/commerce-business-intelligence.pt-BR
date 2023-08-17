@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] O é o serviço de análise da web mais usado na Internet. Implementação [!DNL Google Analytics] no seu site permite rastrear como os visitantes usam o site, qual conteúdo é atraente, onde os visitantes saem e muito mais. [!DNL Google Analytics Warehoused] O é uma integração separada do seu [!DNL Google Analytics] integração. Permite uma melhor análise devido à necessidade de [!DNL Google Analytics] dados na sua Data Warehouse, que é diferente do feed ativo do existente [!DNL Google Analytics] integração. Análise dessas métricas no [!DNL Commerce Intelligence], juntamente com outros dados, melhora a integridade e a usabilidade geral do site.
+[!DNL Google Analytics] O é o serviço de análise da web mais usado na Internet. Implementação [!DNL Google Analytics] no seu site permite rastrear como os visitantes usam o site, qual conteúdo é atraente, onde os visitantes saem e muito mais. [!DNL Google Analytics Warehoused] O é uma integração separada do seu existente [!DNL Google Analytics] integração. Permite uma melhor análise devido à necessidade de [!DNL Google Analytics] dados na sua Data Warehouse, que é diferente do feed ativo do existente [!DNL Google Analytics] integração. Análise dessas métricas no [!DNL Commerce Intelligence], juntamente com outros dados, melhora a integridade e a usabilidade geral do site.
 
 ## Diferença entre GA Warehouse e Integração em tempo real
 

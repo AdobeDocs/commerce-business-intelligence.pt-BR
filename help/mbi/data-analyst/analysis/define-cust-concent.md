@@ -125,7 +125,7 @@ Colunas para criar
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Concentração de 50% inferior com apenas uma compra**
+* **50% de concentração inferior com apenas uma compra**
 
 * Métrica `A`: `Total customer lifetime revenue`
 * `Customer's revenue percentile <= 50`

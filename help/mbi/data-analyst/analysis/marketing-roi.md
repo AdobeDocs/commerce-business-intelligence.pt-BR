@@ -173,7 +173,7 @@ Colunas para criar
       * `User's first order's medium IN cpc, ppc`
       * Lógica do filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
-   * [!UICONTROL Metric]: Receita média vitalícia
+   * [!UICONTROL Metric]: receita média ao longo da vida
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -217,7 +217,7 @@ Colunas para criar
       * `User's first order's medium IN cpc, ppc`
       * Lógica do filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
-   * [!UICONTROL Metric]: Receita média vitalícia
+   * [!UICONTROL Metric]: receita média ao longo da vida
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`

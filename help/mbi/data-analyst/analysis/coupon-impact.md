@@ -22,7 +22,7 @@ Analisar como os clientes usam seus cupons pode fornecer informações significa
 
 Responda a essas perguntas se concentrando em [comparação de clientes adquiridos com cupom com clientes não adquiridos com cupom](#compare), [análise de detalhes da primeira ordem de aquisições de cupom](#firstorder), e [analisar os atributos de clientes que usam cupons em sua primeira ordem.](#attributes)
 
-Comece já!
+Introdução!
 
 ## Comparação de clientes adquiridos com cupom com clientes não adquiridos com cupom {#compare}
 

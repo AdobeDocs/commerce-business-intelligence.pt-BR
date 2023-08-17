@@ -42,7 +42,7 @@ Os nomes das colunas devem ser exclusivos e conter apenas letras, números, espa
 
 ### Dados com vírgulas {#commas}
 
-Porque os arquivos devem estar em `CSV` , o uso de vírgulas pode causar problemas com o upload de dados. `CSV` arquivos usam vírgulas para indicar novos valores, portanto, uma coluna com um nome como `Campaigns`, `August` é lida como duas colunas (`Campaigns` e `August`) em vez de um, movendo todos os seus dados em uma linha. Adobe recomenda evitar vírgulas sempre que possível. Você pode usar `Data Preview` para ver se os dados são exibidos corretamente após a conclusão de uma atualização.
+Porque os arquivos devem estar em `CSV` , o uso de vírgulas pode causar problemas com o upload de dados. `CSV` arquivos usam vírgulas para indicar novos valores, portanto, uma coluna com um nome como `Campaigns`, `August` é lida como duas colunas (`Campaigns` e `August`) em vez de uma, movendo todos os seus dados em uma linha. Adobe recomenda evitar vírgulas sempre que possível. Você pode usar `Data Preview` para ver se os dados são exibidos corretamente após a conclusão de uma atualização.
 
 ### Datas
 

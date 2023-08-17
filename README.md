@@ -2,7 +2,7 @@
 source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 # Contribuir com o artigo
@@ -11,7 +11,7 @@ Agradecemos as contribuições de nossa comunidade, bem como de funcionários da
 
 ## Código de conduta de código aberto do Adobe
 
-Este projeto adotou a [Código de conduta de código aberto do Adobe](../code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte [Contribuição](../contributing.md) tópico.
+Este projeto adotou o [Código de conduta de código aberto da Adobe](../code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte [Contribuição](../contributing.md) tópico.
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
@@ -21,7 +21,7 @@ A forma como você contribui depende de quem você é e do tipo de alterações 
 
 ### Pequenas alterações
 
-Se você estiver contribuindo pequenas atualizações fora da importância de seu coração, visita o artigo e clique na **link editar** no artigo que vai para a origem do GitHub do tópico. Em seguida, basta usar o interface GitHub para fazer as atualizações. Consulte as [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
+Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique no link **Editar** no artigo que vai para a origem GitHub do tópico. Em seguida, use a interface do usuário do GitHub para fazer suas atualizações. Consulte as [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
 As pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso do Adobe.
 
@@ -43,11 +43,11 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe d
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
-Consulte o guia ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) do colaborador do [ Adobe Systems docs para obter detalhes.
+Consulte a [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter detalhes.
 
-## Como usar a redução para formatar seu tópico
+## Como usar marcação para formatar seu tópico
 
-Todos os artigos desta repositório usam a redução do GitHub. Se não estiver familiarizado com a marcação, consulte:
+Todos os artigos neste repositório usam GitHub flavored markdown. Se não estiver familiarizado com a marcação, consulte:
 
 * [Noções básicas do Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Cheatsheet de markdown para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

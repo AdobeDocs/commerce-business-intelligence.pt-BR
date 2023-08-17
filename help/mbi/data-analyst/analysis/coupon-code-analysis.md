@@ -218,7 +218,7 @@ Colunas adicionais a serem criadas se as ordens de convidado NÃO forem suportad
   [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Receita média do ciclo de vida: não cupom Acq. (mais de 90 dias de idade)**
-   * [!UICONTROL Metric]: Receita média vitalícia
+   * [!UICONTROL Metric]: receita média ao longo da vida
    * [!UICONTROL Filter]:
       * A primeira ordem do cliente incluiu um cupom (Cupom/Sem Cupom) = Sem cupom
 

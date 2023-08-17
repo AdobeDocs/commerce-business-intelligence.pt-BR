@@ -76,7 +76,7 @@ As análises 1 e 2 acima são exploradas em um tutorial separado sobre [identifi
 
 1. Em qualquer painel, clique em **[!UICONTROL Add Report > Create new report]**
 1. Adicione como entrada, use as três métricas usadas acima. A cada uma é atribuída uma letra (por exemplo,\[`A`\], \[`B`\], e \[`C`\])
-1. [!UICONTROL Cost]: adicione a métrica Custo do AdWords - essa é a variável \[A\]. Isso retorna o custo por campanhas.
+1. [!UICONTROL Cost]: adicione a métrica Custo do AdWords - esta é a variável \[A\]. Isso retorna o custo por campanhas.
 1. [!UICONTROL Users]: adicione a métrica Novos usuários - isso é variável \[B\]. Isso retorna o número de usuários por campanhas.
 1. [!UICONTROL LTV]: adicione a métrica Receita média durante a vida útil. Essa é a variável \[`C`\]. Isso retorna o LTV por campanhas.
 

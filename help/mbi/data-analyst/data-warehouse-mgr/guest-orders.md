@@ -19,7 +19,7 @@ Este tópico discute o impacto que os pedidos de convidados têm nos seus dados 
 
 ## Impacto dos pedidos de convidados nos dados
 
-No banco de dados de comércio típico, há uma variável `orders` tabela que se associa a um `customers` tabela. Todas as linhas no `orders` a tabela tem um `customer\_id` que é exclusiva de uma linha no `customers` tabela.
+No banco de dados de comércio típico, há uma variável `orders` tabela que se associa a um `customers` tabela. Todas as linhas no `orders` a tabela tem um `customer\_id` que é exclusiva de uma linha na variável `customers` tabela.
 
 * **Se todos os clientes estiverem registrados** e as encomendas de convidados não são permitidas, isso significa que cada registro no `orders` a tabela tem um valor no `customer\_id` coluna. Como resultado, cada pedido se junta de volta ao `customers` tabela.
 

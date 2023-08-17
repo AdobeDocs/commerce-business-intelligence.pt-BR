@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Este tópico orienta você na conexão direta com o [!DNL MySQL] banco de dados 
 1. Criar um [!DNL Commerce Intelligence] [!DNL MySQL] usuário em [!DNL cPanel]
 1. Insira as informações de conexão e usuário em [!DNL Commerce Intelligence]
 
-Comece já.
+Introdução.
 
 ## Criação de um [!DNL Commerce Intelligence] [!DNL MySQL] usuário em [!DNL cPanel] {#cpanel}
 

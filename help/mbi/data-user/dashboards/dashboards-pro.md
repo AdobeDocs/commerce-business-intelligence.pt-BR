@@ -61,7 +61,7 @@ O painel Clientes (sem check-out de convidado permitido) fornece informações s
 | `Subsequent Order Probability (All Time)` | A probabilidade de os clientes que fizeram um pedido fazerem outro. |
 | `% of Customers with Multiple Orders (All Time)` | Porcentagem de todos os clientes que fizeram mais de um pedido. |
 | `Median Time Between Orders (All Time)` | Tempo médio que cada cliente leva entre a realização de um pedido e o próximo. |
-| `Subsequent Order Probability` | A probabilidade de os clientes que fizeram um pedido fazerem outro, dividido pelo número do pedido. Ou seja, por cento de clientes com um pedido que fazem um segundo, por cento com dois que fazem um terceiro, e assim por diante. |
+| `Subsequent Order Probability` | A probabilidade de os clientes que fizeram um pedido fazerem outro, dividido pelo número do pedido. Isto é, por cento de clientes com um pedido que fazem um segundo, por cento com dois que fazem um terceiro, e assim por diante. |
 | `Time Between Orders` | O tempo médio e mediano que os clientes passam entre os pedidos, dividido por número de pedido (ou seja, o tempo entre os pedidos um e dois, dois e três e assim por diante). |
 | `Number of Customers - Lifetime Orders` | Para um determinado número de pedidos feitos durante a vida útil de um cliente, o número de clientes que fizeram esses pedidos e a porcentagem de toda a base de clientes que esse número representa. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Clientes que fizeram sua primeira e única compra entre três e seis meses atrás. |

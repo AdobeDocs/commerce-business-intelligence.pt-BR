@@ -325,7 +325,7 @@ Estes são alguns exemplos comuns de relatórios e métricas que podem ser útei
 
 >[!NOTE]
 >
->Desmarque a `Multiple Y-Axes box` e `Hide` todas as métricas
+>Desmarque a opção `Multiple Y-Axes box` e `Hide` todas as métricas
 
 ![Produtos encomendados 2](../../assets/products_ordered_pic2.png)<!--{: width="929"}-->
 

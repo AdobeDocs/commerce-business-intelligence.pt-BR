@@ -93,7 +93,7 @@ Nenhuma métrica nova!
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* Métrica C: ordens de repetição únicas (ocultar)
+* Métrica C: Ordens de repetição a todo momento (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
