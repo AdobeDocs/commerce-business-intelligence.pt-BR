@@ -4,9 +4,9 @@ description: Saiba mais sobre como fazer logon na sua conta do Commerce Intellig
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # Acessar o ativado [!DNL Adobe Commerce Intelligence] account
 
 Depois de ativar o [!DNL Commerce Intelligence] contabilizar para [no local ou na nuvem](../getting-started/onpremise-activation.md) e tiver trabalhado com a sua equipe de conta do Adobe para finalizar as etapas de configuração, agora é possível entrar em sua conta.
-
-Você pode entrar com seu [!DNL Adobe ID] ou usando seu [!DNL Commerce Intelligence] endereço de e-mail e senha.
-
-![fazer logon](../assets/sign-in.png)
 
 ## Entrar usando seu [!DNL Adobe ID]
 
