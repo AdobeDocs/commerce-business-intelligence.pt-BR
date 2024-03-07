@@ -4,9 +4,9 @@ description: Saiba como colunas avançadas podem ser criadas no formato de colun
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Aqui, você pode criar um `Calculation` seguindo as etapas abaixo:
    * `Integer` - Número inteiro
    * `Decimal(10,2)` - um número decimal com 10 dígitos totais, dos quais 2 à direita da casa decimal
    * `String` - Qualquer tipo de texto ou série de caracteres que use números não numéricos
-   * `Datetime` - aaaa-MM-dd hh:mm:formato ss
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss` formato
 
 1. Clique em **[!UICONTROL test column]**. Isso gera uma lista de cinco valores de teste para cada uma de suas entradas e mostra o resultado da lógica da etapa 6 para cada conjunto de valores de teste. Se qualquer parte do SQL gerar um erro, a mensagem de erro apropriada será retornada. Os resultados de amostra só podem ser gerados se todas as colunas de entrada forem campos nativos. Se qualquer uma das colunas de entrada for calculada, você deverá validar os resultados adicionando a coluna a uma métrica e exibindo no Report Builder visual
 
