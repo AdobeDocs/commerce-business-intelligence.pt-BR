@@ -4,9 +4,9 @@ description: Saiba mais sobre o desempenho do cupom de sua empresa é uma maneir
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,13 @@ Este tópico documenta as etapas necessárias para criar essa análise para ente
 
 Primeiro, uma observação sobre como os códigos de cupom são rastreados. Se um cliente aplicou um cupom a um pedido, acontecem três coisas:
 
-* Um desconto é refletido na `base_grand_total` quantidade (seu `Revenue` métrica no Commerce Intelligence)
+* Um desconto é refletido na `base_grand_total` quantidade (seu `Revenue` no Commerce Intelligence)
 * O código do cupom é armazenado na variável `coupon_code` campo. Se esse campo for NULL (vazio), a ordem não terá um cupom associado a ela.
 * O valor com desconto é armazenado em `base_discount_amount`. Dependendo da sua configuração, esse valor pode parecer negativo ou positivo.
+
+A partir do Commerce 2.4.7, um cliente pode aplicar mais de um código de cupom a um pedido. Neste caso:
+
+* Todos os códigos de cupom aplicados são armazenados no `coupon_code` campo de `sales_order_coupons`. O primeiro código de cupom aplicado também é armazenado no `coupon_code` campo de `sales_order`. Se esse campo for NULL (vazio), a ordem não terá um cupom associado a ela.
 
 ## Criar uma métrica
 
@@ -196,3 +200,9 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
    * [!UICONTROL Chart type]: `Stacked Column`
 
 Depois de criar os relatórios, consulte a imagem na parte superior deste tópico para saber como organizar os relatórios em seu painel.
+
+>[!NOTE]
+>
+>A partir do Adobe Commerce 2.4.7, os clientes podem usar o **quote_coupons** e **sales_order_coupons** tabelas para obter insights sobre como o cliente usa vários cupons.
+
+![](../../assets/multicoupon_relationship_tables.png)
