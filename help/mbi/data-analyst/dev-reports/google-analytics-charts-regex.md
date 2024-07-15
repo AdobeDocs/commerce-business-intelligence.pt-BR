@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 (com ajuda da sintaxe de regex)
 
-Depois de conectar seu [[!DNL Google Analytics] account](../../data-analyst/importing-data/integrations/google-analytics.md), você pode criar gráficos com o seu [!DNL Google Analytics] dados.
+Após conectar sua [[!DNL Google Analytics] conta](../../data-analyst/importing-data/integrations/google-analytics.md), você pode criar gráficos com seus dados do [!DNL Google Analytics].
 
-## Criar [!DNL Google Analytics] Gráficos
+## Criar Gráficos de [!DNL Google Analytics]
 
 1. Clique em **[!UICONTROL Add Chart** > **Create New Chart]**.
 
-1. Ao selecionar uma métrica na variável `Chart Builder`, role até a parte inferior da lista para encontrar uma seção que inclua [!DNL Google Analytics] Perfis. Uma segunda lista suspensa de métricas é exibida. Aqui é possível escolher a métrica que deseja analisar.
+1. Ao selecionar uma métrica no `Chart Builder`, role até a parte inferior da lista para localizar uma seção que inclua seus Perfis do [!DNL Google Analytics]. Uma segunda lista suspensa de métricas é exibida. Aqui é possível escolher a métrica que deseja analisar.
 
-1. Após escolher a métrica, você pode continuar com esse gráfico como se ele fosse qualquer outro gráfico selecionando o `time period`, `interval`, e dados `perspectives` que você gostaria de ver.
+1. Após escolher a métrica, você pode continuar com este gráfico como se fosse qualquer outro gráfico, selecionando o `time period`, `interval` e os dados `perspectives` que você gostaria de ver.
 
-1. A grande diferença aqui é que `√` O usa expressões regulares para filtros. Uma expressão regular (regex para abreviar) é uma sequência especial de texto para descrever um padrão de pesquisa. Veja exemplos de sintaxe regex no [[!DNL Google] guia sobre expressões regulares do Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
+1. A principal diferença aqui é que `√` usa expressões regulares para filtros. Uma expressão regular (regex para abreviar) é uma sequência especial de texto para descrever um padrão de pesquisa. Consulte exemplos de sintaxe regex no [[!DNL Google] guia sobre expressões regulares do Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
 
 >[!NOTE]
 >

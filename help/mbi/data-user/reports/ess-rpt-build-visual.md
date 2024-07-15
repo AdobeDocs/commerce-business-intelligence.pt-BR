@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # [!DNL Visual Report Builder]
 
-[!DNL Visual Report Builder] O facilita a criação de relatórios rápidos com base em métricas predefinidas. Cada métrica inclui uma consulta que define o conjunto de dados do relatório.
+O [!DNL Visual Report Builder] facilita a criação de relatórios rápidos com base em métricas predefinidas. Cada métrica inclui uma consulta que define o conjunto de dados do relatório.
 
 O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por uma dimensão adicional, definir o intervalo de data e hora, alterar o tipo de gráfico e salvar o relatório em um painel.
 
 ## Para criar um relatório simples:
 
-1. No [!DNL Commerce Intelligence] clique em **[!UICONTROL Report Builder]**.
+1. No menu [!DNL Commerce Intelligence], clique em **[!UICONTROL Report Builder]**.
 
 1. Em [!UICONTROL Visual Report Builder], clique em **[!UICONTROL Create Report]** e faça o seguinte:
 
@@ -29,9 +29,9 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
      ![Report Builder visual](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
-   * Escolha o [métrica](../../data-user/reports/ess-manage-data-metrics.md) que descreve o conjunto de dados que você deseja usar para o relatório.
+   * Escolha a [métrica](../../data-user/reports/ess-manage-data-metrics.md) que descreve o conjunto de dados que você deseja usar para o relatório.
 
-     A variável `New Customers` A métrica usada neste exemplo conta todos os clientes e classifica a lista pela data em que o cliente se inscreveu em uma conta. O relatório inicial inclui um gráfico de linhas simples, seguido pela tabela de dados.
+     A métrica `New Customers` usada neste exemplo conta todos os clientes e classifica a lista pela data em que o cliente se inscreveu em uma conta. O relatório inicial inclui um gráfico de linhas simples, seguido pela tabela de dados.
 
      O resumo à esquerda mostra o nome da métrica atual, seguido do resultado de quaisquer cálculos nos dados da coluna especificados na métrica. Neste exemplo, o resumo exibe a contagem total de clientes.
 
@@ -43,15 +43,15 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
    **`Group By`**
 
-   A variável `Group By` control oferece a capacidade de adicionar várias dimensões por grupo ou segmento. Dimension são colunas na tabela que podem ser usadas para agrupar os dados.
+   O controle `Group By` oferece a capacidade de adicionar várias dimensões por grupo ou segmento. Dimension são colunas na tabela que podem ser usadas para agrupar os dados.
 
-   * Escolha uma das dimensões disponíveis na lista de `Group By` opções.
+   * Escolha uma das dimensões disponíveis na lista de opções `Group By`.
 
      Neste exemplo, o sistema encontrou cinco códigos de cupom que foram usados pelos clientes ao fazer o primeiro pedido.
 
      ![Agrupar por](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     A variável `Group By` O detail lista cada cupom usado por clientes. Os cupons usados para fazer o pedido inicial são marcados com uma caixa de seleção. O gráfico agora tem várias linhas coloridas que representam cada cupom usado para um primeiro pedido. A legenda é codificada por cores para corresponder a cada linha de dados.
+     O detalhe `Group By` lista cada cupom usado pelos clientes. Os cupons usados para fazer o pedido inicial são marcados com uma caixa de seleção. O gráfico agora tem várias linhas coloridas que representam cada cupom usado para um primeiro pedido. A legenda é codificada por cores para corresponder a cada linha de dados.
 
    * Clique em **[!UICONTROL Apply]** para fechar o detalhe Agrupar por.
 
@@ -61,19 +61,19 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
    * A tabela de dados agora tem uma dimensão de adição, com uma coluna para cada mês e uma linha para cada código de cupom.
 
-     ![Agrupar por dados da tabela](../../assets/magento-bi-report-builder-group-by-table-data.png)
+     ![Agrupar por Dados da Tabela](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Clique no botão Transpor (![](../../assets/magento-bi-btn-transpose.png)) no canto superior direito da tabela para alterar a orientação dos dados.
+   * Clique no controle Transpor (![](../../assets/magento-bi-btn-transpose.png)) no canto superior direito da tabela para alterar a orientação dos dados.
 
      O eixo dos dados é invertido e a tabela agora tem uma coluna para cada código de cupom e uma linha para cada mês. Talvez seja mais fácil ler essa orientação.
 
-     ![Dados transpostos](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
+     ![Dados Transpostos](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
    **`Date Range`**
 
-   A variável `Date Range` control mostra as configurações atuais de intervalo de datas e intervalo de tempo e está localizado logo acima do gráfico à direita.
+   O controle `Date Range` mostra as configurações atuais de intervalo de datas e intervalo de tempo e está localizado logo acima do gráfico à direita.
 
-   * Clique em `Date Range` controle, que neste exemplo é definido como `All-Time by Month`.
+   * Clique no controle `Date Range`, que neste exemplo está definido como `All-Time by Month`.
 
      ![Intervalo de datas](../../assets/magento-bi-report-builder-date-range.png)
 
@@ -106,7 +106,7 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
      {style="table-layout:auto"}
 
-1. Para dar ao relatório um `title`, substitua o `Untitled Report` texto na parte superior da página com um título descritivo.
+1. Para dar ao relatório um `title`, substitua o texto `Untitled Report` na parte superior da página por um título descritivo.
 
 1. No canto superior direito, clique em **[!UICONTROL Save]** e faça o seguinte:
 
@@ -116,7 +116,7 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
    * Clique em **[!UICONTROL Save to Dashboard]**.
 
-     ![Salvar no painel](../../assets/magento-bi-report-builder-save-to-dashboard.png)
+     ![Salvar no Painel](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 
 1. Para exibir o gráfico em um painel, siga um destes procedimentos:
 

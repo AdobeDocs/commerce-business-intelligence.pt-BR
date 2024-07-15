@@ -11,17 +11,17 @@ ht-degree: 1%
 
 ---
 
-# [!DNL MongoDB] Modelagem de dados
+# Modelagem de dados [!DNL MongoDB]
 
-Quando [!DNL Adobe Commerce Intelligence] extrai [!DNL MongoDB] dados, esses dados são convertidos em um modelo relacional.
+Quando [!DNL Adobe Commerce Intelligence] extrai dados [!DNL MongoDB], esses dados são convertidos em um modelo relacional.
 
-A má notícia: embora a maioria dos padrões de dados não represente um problema, há algumas que não são compatíveis com o [!DNL Commerce Intelligence], devido à tradução para um modelo relacional.
+A má notícia: embora a maioria dos padrões de dados não represente um problema, há alguns que não têm suporte no [!DNL Commerce Intelligence], devido à conversão em um modelo relacional.
 
 A boa notícia: Todos esses padrões podem ser evitados.
 
 ## Matrizes Subaninhadas {#subnested}
 
-Se sua coleção for semelhante ao exemplo abaixo, [!DNL Commerce Intelligence] replica somente os dados na matriz de itens. Os dados da matriz de subitens não são extraídos.
+Se sua coleção se parece com o exemplo abaixo, o [!DNL Commerce Intelligence] replica somente os dados na matriz de itens. Os dados da matriz de subitens não são extraídos.
 
 ```bash
     {
@@ -43,7 +43,7 @@ Se sua coleção for semelhante ao exemplo abaixo, [!DNL Commerce Intelligence] 
 
 ## Chaves de objeto variável {#varobjectkeys}
 
-As coleções que incluem objetos com chaves de objeto variáveis não são replicadas no [!DNL Commerce Intelligence]. Por exemplo:
+As coleções que incluem objetos com chaves de objeto variável não são replicadas em [!DNL Commerce Intelligence]. Por exemplo:
 
 ```bash
     {

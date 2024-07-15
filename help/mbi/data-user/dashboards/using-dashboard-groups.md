@@ -31,11 +31,11 @@ Os grupos de painéis podem ser criados de uma das duas formas a seguir:
 
    ![criar grupo de painéis](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. Ao alterar o grupo de um painel existente, na variável `Manage Data > Dashboards` página:
+1. Ao alterar o grupo de um painel existente, na página `Manage Data > Dashboards`:
 
    1. Clique no painel para o qual deseja criar o grupo.
 
-   1. Em `Dashboard Group (optional)`, o grupo de painéis atual é exibido.
+   1. Em `Dashboard Group (optional)`, o grupo de painéis atual aparece.
 
    1. Para criar um grupo, digite o nome do novo grupo e clique em fora da caixa.
 
@@ -43,11 +43,11 @@ Os grupos de painéis podem ser criados de uma das duas formas a seguir:
 
 ## Adicionar painéis existentes a grupos existentes
 
-1. No `Manage Data > Dashboards` escolha o painel para o qual alterar o grupo.
+1. Na página `Manage Data > Dashboards`, escolha o painel para o qual alterar o grupo.
 
 1. O texto em `Dashboard Group (optional)` mostra o grupo de painéis atual do painel.
 
-1. Para alterar o grupo do painel, escolha outro grupo na lista, nesse caso `PS`, `Campaigns`.
+1. Para alterar o grupo do painel, escolha outro grupo na lista - neste caso, `PS`, `Campaigns`.
 
    ![alterar painel do grupo](../../assets/add-existing-dashboard-existing-group.png)
 

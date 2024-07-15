@@ -1,6 +1,6 @@
 ---
 title: Commerce Intelligence
-description: Saiba como usar o [!DNL Commerce Intelligence] recursos disponíveis para o Adobe Commerce.
+description: Saiba como usar  [!DNL Commerce Intelligence]  recursos disponíveis para o Adobe Commerce.
 breadcrumb-title: Guia do usuário do Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
@@ -12,33 +12,33 @@ ht-degree: 0%
 ---
 
 
-# [!DNL Commerce Intelligence] Guia do usuário {#mbi}
+# Guia do Usuário do [!DNL Commerce Intelligence] {#mbi}
 
-- [[!DNL Commerce Intelligence] Guia do usuário](guide-overview.md)
-- [[!DNL Commerce Intelligence] Introdução](getting-started/getting-started.md)
+- [Guia do Usuário do [!DNL Commerce Intelligence]](guide-overview.md)
+- [Introdução ao [!DNL Commerce Intelligence]](getting-started/getting-started.md)
 - Introdução {#start}
    - [Integração](getting-started/onboarding.md)
-   - [Ativar o [!DNL Commerce Intelligence] Conta](getting-started/onpremise-activation.md)
-   - [Faça logon no [!DNL Commerce Intelligence] Conta](getting-started/sign-in.md)
+   - [Ativar sua conta  [!DNL Commerce Intelligence] ](getting-started/onpremise-activation.md)
+   - [Entrar na sua conta [!DNL Commerce Intelligence] do](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials versus Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administrador {#administrator}
-   - Gerenciamento de contas {#acct-mgmt}
-      - [Benefícios do [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
+   - Gerenciamento de Conta {#acct-mgmt}
+      - [Benefícios do  [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
       - [Exibir Painéis no escritório](../mbi/administrator/account-management/display-dashboards-office.md)
       - [Gerencie sua conta](administrator/account-management/managing-account-settings.md)
       - [Restringir Acesso ao Banco de Dados](../mbi/administrator/account-management/restrict-db-access.md)
-   - User Management {#user-mgmt}
+   - Gerenciamento de usuários {#user-mgmt}
       - [Criar/editar usuário](../mbi/administrator/user-management/create-user.md)
       - [Excluir/Reativar usuário](../mbi/administrator/user-management/delete-user.md)
       - [Gerenciar permissões do usuário](administrator/user-management/user-management.md)
       - [Redefinir senha](../mbi/administrator/user-management/reset-password.md)
       - [Restringir acesso à métrica](../mbi/administrator/user-management/restrict-metric-access.md)
-- Analisar dados {#analyze}
+- Analisar Dados {#analyze}
    - [Analista de dados](data-analyst.md)
    - Gerenciador de Data Warehouse {#warehouse-manager}
       - [Introdução](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Tipos de Coluna Calculados Avançados](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
-      - [Criação [!DNL Google Ecommerce] dimensões](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
+      - [Compilando  [!DNL Google Ecommerce] dimensões](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
       - [Tipos de Colunas Calculadas](data-analyst/data-warehouse-mgr/calc-column-types.md)
       - [Configuração de métodos de replicação](data-analyst/data-warehouse-mgr/cfg-replication-methods.md)
       - [Configuração de novas verificações de dados](data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)
@@ -52,16 +52,16 @@ ht-degree: 0%
       - [Como o Commerce armazena dados](data-analyst/data-warehouse-mgr/mage-store-data.md)
       - [Diagramas de Relacionamento de Entidade](data-analyst/data-warehouse-mgr/entity-rel-diag.md)
       - [Gerenciamento de dimensões de dados em métricas](data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md)
-      - [[!DNL MongoDB] guia de modelagem de dados](data-analyst/data-warehouse-mgr/mongodb-data-modeling.md)
-      - [Replicação [!DNL Google Analytics] canais](data-analyst/data-warehouse-mgr/rep-google-analytics-channels.md)
+      - [Guia de modelagem de dados do [!DNL MongoDB]](data-analyst/data-warehouse-mgr/mongodb-data-modeling.md)
+      - [Replicação de  [!DNL Google Analytics]  canais](data-analyst/data-warehouse-mgr/rep-google-analytics-channels.md)
       - [Padronização de dados com tabelas de mapeamento](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
-      - [Tradução de consultas SQL em [!DNL Commerce Intelligence] relatórios](data-analyst/dev-reports/sql-queries-reports.md)
+      - [Traduzindo consultas SQL em  [!DNL Commerce Intelligence] relatórios](data-analyst/dev-reports/sql-queries-reports.md)
       - [Compreendendo e avaliando relações de tabela](data-analyst/data-warehouse-mgr/table-relationships.md)
       - [Usando a Diferença de Datas Calculada](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [Usar a filtragem ampla do painel](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [Usando a Coluna Calculado Número do Evento](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
       - [Utilização da Coluna Calculada de Comparação Sequencial](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
-   - Tabelas de comércio comuns {#tables}
+   - Tabelas Comuns do Commerce {#tables}
       - [Introdução](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
       - [[!DNL enterprise_rma]](data-analyst/data-warehouse-mgr/enter-rma-table.md)
@@ -71,76 +71,76 @@ ht-degree: 0%
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
    - REPORT BUILDER SQL {#sql}
-      - [Usar o [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
-      - [Usar o [!DNL Cohort Report Builder] para coortes não baseados em data](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
+      - [Usando o  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
+      - [Usar o [!DNL Cohort Report Builder] para Coortes não baseados em data](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Criação de uma análise qualitativa de coorte](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [Explorar operadores de filtro especiais](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [Exportar os resultados da minha consulta](data-analyst/dev-reports/export-query-results.md)
       - [Utilização de fórmulas no [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Criar [!DNL Google Analytics] gráficos](data-analyst/dev-reports/google-analytics-charts-regex.md)
-      - [Importância do [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
-      - [Solicitar dados usando o [!DNL Show Top/Bottom] recurso](data-analyst/dev-reports/order-data-top-bottom-feat.md)
-      - [Usar o [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
+      - [Importância de  [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
+      - [Ordenando dados usando o recurso [!DNL Show Top/Bottom] ](data-analyst/dev-reports/order-data-top-bottom-feat.md)
+      - [Usando o  [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
       - [Relatório da primeira compra](data-analyst/dev-reports/time-first-purchase-slope-dwnwrd.md)
-      - [Compreender o [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
-      - [Auditoria de métricas usando o [!DNL SQL Report Builder]](data-analyst/dev-reports/audit-metrics-sql.md)
-      - [Diferenças nas colunas entre [!DNL SQL] e [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
+      - [Compreendendo o  [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
+      - [Auditando Métricas usando o  [!DNL SQL Report Builder]](data-analyst/dev-reports/audit-metrics-sql.md)
+      - [Diferenças nas Colunas Entre [!DNL SQL] e [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
    - Conectando Dados {#connecting}
       - [Introdução](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [Formatação e importação de dados de comércio eletrônico](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [Importando [!DNL Bing Ad Spend] Dados](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
-      - [Importando [!DNL CJ Affiliate] (Junção da Comissão) Dados de marketing](data-analyst/importing-data/connecting-data/import-cj-market-data.md)
-      - [Importando [!DNL Linkshare] dados](data-analyst/importing-data/connecting-data/import-linkshare-data.md)
-      - [Importando [!DNL MailChimp] dados](data-analyst/importing-data/connecting-data/import-mailchimp-data.md)
+      - [Importando Dados de Marketing [!DNL CJ Affiliate] (Junção de Comissões)](data-analyst/importing-data/connecting-data/import-cj-market-data.md)
+      - [Importando  [!DNL Linkshare] dados](data-analyst/importing-data/connecting-data/import-linkshare-data.md)
+      - [Importando  [!DNL MailChimp] dados](data-analyst/importing-data/connecting-data/import-mailchimp-data.md)
       - [Importação offline/outros dados de gastos com anúncios](data-analyst/importing-data/connecting-data/import-offline-ad-data.md)
       - [Uso do carregador de arquivos](data-analyst/importing-data/connecting-data/using-file-uploader.md)
       - [Serviços de migração de dados](data-analyst/importing-data/connecting-data/data-migration-services.md)
    - Integrações SaaS {#saas}
       - [Integrações SaaS](data-analyst/importing-data/integrations/integrations.md)
-      - [Entender os resultados entre [!DNL Database] e [!DNL SQL] Editor](data-analyst/importing-data/integrations/last-success-update.md)
+      - [Compreender os resultados entre o  [!DNL Database]  e o  [!DNL SQL] Editor](data-analyst/importing-data/integrations/last-success-update.md)
       - [Conectando [!DNL Adobe Analytics]](data-analyst/importing-data/integrations/adobe-analytics.md)
-      - [Esperado [!DNL Adobe Analytics] Dados](data-analyst/importing-data/integrations/adobe-analytics-data.md)
+      - [Dados  [!DNL Adobe Analytics]  esperados](data-analyst/importing-data/integrations/adobe-analytics-data.md)
       - [Conectando [!DNL Facebook Ads]](data-analyst/importing-data/integrations/facebook-ads.md)
-      - [Esperado [!DNL Facebook Ads] dados](data-analyst/importing-data/integrations/facebook-ads-data.md)
+      - [Dados  [!DNL Facebook Ads]  esperados](data-analyst/importing-data/integrations/facebook-ads-data.md)
       - [Conectando [!DNL Google Adwords]](data-analyst/importing-data/integrations/google-adwords.md)
-      - [Esperado [!DNL Google Adword] dados](data-analyst/importing-data/integrations/google-adwords-data.md)
-      - [Auditoria [!DNL Google Adwords] dados](data-analyst/importing-data/integrations/audit-google-adwords.md)
+      - [Dados  [!DNL Google Adword]  esperados](data-analyst/importing-data/integrations/google-adwords-data.md)
+      - [Auditando  [!DNL Google Adwords] dados](data-analyst/importing-data/integrations/audit-google-adwords.md)
       - [Conectando [!DNL Google Analytics Warehoused]](data-analyst/importing-data/integrations/google-analytics-warehoused.md)
-      - [Esperado [!DNL Google Analytics Warehoused] Dados](data-analyst/importing-data/integrations/google-analytics-warehoused-data.md)
+      - [Dados  [!DNL Google Analytics Warehoused]  esperados](data-analyst/importing-data/integrations/google-analytics-warehoused-data.md)
       - [Conectando [!DNL Google Analytics]](data-analyst/importing-data/integrations/google-analytics.md)
-      - [Esperado [!DNL Google Analytics] dados](data-analyst/importing-data/integrations/google-analytics-data.md)
+      - [Dados  [!DNL Google Analytics]  esperados](data-analyst/importing-data/integrations/google-analytics-data.md)
       - [Conectando [!DNL Google ECommerce]](data-analyst/importing-data/integrations/google-ecommerce.md)
-      - [Esperado [!DNL Google ECommerce] dados](data-analyst/importing-data/integrations/google-ecommerce-data.md)
+      - [Dados  [!DNL Google ECommerce]  esperados](data-analyst/importing-data/integrations/google-ecommerce-data.md)
       - [Conectando [!DNL Mixpanel]](data-analyst/importing-data/integrations/mixpanel.md)
-      - [Esperado [!DNL Mixpanel] dados](data-analyst/importing-data/integrations/mixpanel-data.md)
-      - [Validação de dados no [!DNL Mixpanel]](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
+      - [Dados  [!DNL Mixpanel]  esperados](data-analyst/importing-data/integrations/mixpanel-data.md)
+      - [Validação de Dados em  [!DNL Mixpanel]](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
       - [Conectando [!DNL PrestaShop]](data-analyst/importing-data/integrations/prestashop.md)
       - [Conectando [!DNL Quickbooks]](data-analyst/importing-data/integrations/quickbooks.md)
-      - [Esperado [!DNL Quickbooks] dados](data-analyst/importing-data/integrations/quickbooks-data.md)
+      - [Dados  [!DNL Quickbooks]  esperados](data-analyst/importing-data/integrations/quickbooks-data.md)
       - [Conectando [!DNL Salesforce]](data-analyst/importing-data/integrations/salesforce.md)
-      - [Esperado [!DNL Salesforce] dados](data-analyst/importing-data/integrations/salesforce-data.md)
+      - [Dados  [!DNL Salesforce]  esperados](data-analyst/importing-data/integrations/salesforce-data.md)
       - [Conectando [!DNL Spree]](data-analyst/importing-data/integrations/spree.md)
-      - [Esperado [!DNL Spree] Dados](data-analyst/importing-data/integrations/spree-data.md)
+      - [Dados  [!DNL Spree]  esperados](data-analyst/importing-data/integrations/spree-data.md)
       - [Conectando [!DNL Stripe]](data-analyst/importing-data/integrations/stripe.md)
-      - [Esperado [!DNL Stripe] dados](data-analyst/importing-data/integrations/stripe-data.md)
+      - [Dados  [!DNL Stripe]  esperados](data-analyst/importing-data/integrations/stripe-data.md)
       - [Conectando [!DNL WooCommerce]](data-analyst/importing-data/integrations/woocommerce.md)
       - [Conectando [!DNL Zendesk]](data-analyst/importing-data/integrations/zendesk.md)
-      - [Esperado [!DNL Zendesk] dados](data-analyst/importing-data/integrations/exp-zendesk-data.md)
-      - [Análise [!DNL Zendesk] dados](data-analyst/importing-data/integrations/help-desk-zendesk.md)
-      - [Auditoria [!DNL Zendesk] dados](data-analyst/importing-data/integrations/audit-zendesk-data.md)
-   - Integrações de banco de dados {#integration}
+      - [Dados  [!DNL Zendesk]  esperados](data-analyst/importing-data/integrations/exp-zendesk-data.md)
+      - [Analisando  [!DNL Zendesk] dados](data-analyst/importing-data/integrations/help-desk-zendesk.md)
+      - [Auditando  [!DNL Zendesk] dados](data-analyst/importing-data/integrations/audit-zendesk-data.md)
+   - Integrações de Banco de Dados {#integration}
       - [Conectando [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Conectando Bancos de Dados via VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
-      - [Conectar seu [!DNL MySQL Database] para [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
+      - [Conectar o(a) seu(sua) [!DNL MySQL Database] a [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
       - [Conectar o Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
-      - [Dados de comércio esperados](data-analyst/importing-data/integrations/magento-data.md)
+      - [Dados esperados do Commerce](data-analyst/importing-data/integrations/magento-data.md)
       - [Conectando [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
       - [Conectando [!DNL MongoDB] via [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
       - [Conectando [!DNL MySQL] via [!DNL direct connection]](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
       - [Conectando [!DNL MySQL] via [!DNL cPanel]](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
       - [Conectando [!DNL MySQL] via [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
       - [Conectando [!DNL PostgreSQ]](data-analyst/importing-data/integrations/postgresql.md)
-   - Analisar campanhas {#campaigns}
+   - Analisar Campanhas {#campaigns}
       - [Análise do código do cupom (básica)](data-analyst/analysis/ess-coupon-code-analysis.md)
       - [Análise do código do cupom (avançada)](data-analyst/analysis/coupon-code-analysis.md)
       - [Limite de frete gratuito](data-analyst/analysis/free-ship-thresh.md)
@@ -148,18 +148,18 @@ ht-degree: 0%
       - [Análise do uso do cupom](data-analyst/analysis/coupon-usage.md)
       - [Aumentar o ROI em suas campanhas publicitárias](data-analyst/analysis/roi-ad-camp.md)
       - [ROI de marketing](data-analyst/analysis/marketing-roi.md)
-   - Analisar clientes {#customers}
-      - [Calcular taxas de churn do Commerce](data-analyst/analysis/commerce-churn.md)
+   - Analisar Clientes {#customers}
+      - [Cálculo das taxas de churn do Commerce](data-analyst/analysis/commerce-churn.md)
       - [Definindo a concentração do cliente](data-analyst/analysis/define-cust-concent.md)
       - [Definindo churn do cliente](data-analyst/analysis/define-cust-churn.md)
-      - [[!DNL Expected Lifetime Value (LTV)] análise (básica)](data-analyst/analysis/ess-expected-ltv.md)
-      - [[!DNL Expected Lifetime Value (LTV)] análise (avançada)](data-analyst/analysis/expected-customer-ltv.md)
-      - [Visão geral dos dados de origem do rastreamento de aquisição de usuários](data-analyst/analysis/google-track-user-acq.md)
+      - [Análise de [!DNL Expected Lifetime Value (LTV)] (básica)](data-analyst/analysis/ess-expected-ltv.md)
+      - [Análise de [!DNL Expected Lifetime Value (LTV)] (avançada)](data-analyst/analysis/expected-customer-ltv.md)
+      - [Visão geral do rastreamento de dados do Source de aquisição de usuários](data-analyst/analysis/google-track-user-acq.md)
       - [Rastrear o dispositivo do usuário e os dados do navegador no banco de dados](data-analyst/analysis/track-usr-dev-browser.md)
       - [Análise do comportamento de recompra do cliente](data-analyst/analysis/repurchase-behavior.md)
       - [Análise da atividade do site e taxas de conversão do cliente](data-analyst/analysis/web-act-cust-conversion.md)
       - [Recenticidade, frequência, análise monetária (RFM)](data-analyst/analysis/rfm-analysis.md)
-   - Analisar o desempenho dos negócios {#performance}
+   - Analisar Desempenho de Negócios {#performance}
       - [Rastrear metas em relação a métricas reais](data-analyst/analysis/track-goals-against-metrics.md)
       - [Analisando ordens devolvidas](data-analyst/analysis/returned-order-analysis.md)
       - [Ano por ano, mês por mês, semana por semana](data-analyst/analysis/year-month-week.md)
@@ -167,7 +167,7 @@ ht-degree: 0%
       - [Análise do declínio e churn da probabilidade de repetição](data-analyst/analysis/repeat-decay-churn.md)
       - [Como entender e criar uma análise básica](data-analyst/analysis/basic-analytics.md)
       - [Identificação de suas fontes e canais de marketing mais valiosos](data-analyst/analysis/most-value-source-channel.md)
-      - [Noções básicas [!DNL Google Analytics] Atribuição UTM](data-analyst/analysis/utm-attributes.md)
+      - [Compreendendo a atribuição  [!DNL Google Analytics] UTM](data-analyst/analysis/utm-attributes.md)
       - [Análise de níveis de inventário](data-analyst/analysis/analyze-inventory-level.md)
       - [Relatar um calendário de varejo](data-analyst/analysis/report-retail-calendar.md)
    - Previsão {#forecasting}
@@ -208,31 +208,31 @@ ht-degree: 0%
       - [Acessar painéis compartilhados](data-user/dashboards/access-shared-dashboard.md)
       - [Alteração do acesso a Painéis compartilhados](data-user/dashboards/change-access-dashboard.md)
       - [Sair (cancelar o compartilhamento) de um painel](data-user/dashboards/leave-dashboard.md)
-   - Compartilhamento de dados {#share}
+   - Compartilhando Dados {#share}
       - [Compartilhar dados](data-user/export-data/share-data.md)
       - [Exportar dados do gráfico](data-user/export-data/exp-chart-dash.md)
       - [Resumos automatizados de email](data-user/export-data/email-summaries.md)
 - Práticas recomendadas {#best-practices}
-   - Trabalhar com dados {#data}
+   - Trabalhando com Dados {#data}
       - [Trabalhar com dados](best-practices/work-data.md)
-      - [Marcação UTM em [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
+      - [Marcação UTM em  [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formatando e Importando Dados Financeiros](best-practices/format-import-financial-data.md)
       - [Dimension recomendados para segmentação e filtragem](best-practices/segment-filter.md)
       - [Verificando o Status do Ciclo de Atualização](best-practices/check-update-cycle.md)
       - [Redução do tempo do ciclo de atualização](best-practices/reduce-update-cycle-time.md)
       - [Modificando seu Banco de Dados para Suporte à Replicação Incremental](best-practices/mod-db-inc-replication.md)
       - [Otimização do Banco de Dados para Análise](best-practices/opt-db-analysis.md)
-      - [Otimização do seu [!DNL SQL] Consultas](best-practices/optimizing-your-sql-queries.md)
-      - [Compreender o [!DNL Commerce Intelligence] Ambiente](best-practices/understanding-magento.md)
+      - [Otimizando Suas  [!DNL SQL] Consultas](best-practices/optimizing-your-sql-queries.md)
+      - [Noções Básicas sobre o Ambiente  [!DNL Commerce Intelligence] ](best-practices/understanding-magento.md)
    - Organização do Projeto {#project}
-      - [Nomenclatura de relatórios e elementos no [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
+      - [Nomeando Relatórios e Elementos em [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidação de tabelas](best-practices/consolidating-your-tables.md)
-      - [Desenvolva seu [!DNL Commerce Intelligence] account](best-practices/declutter-account.md)
-   - Trabalhar com painéis {#working-dashboards}
+      - [Descritor da sua conta  [!DNL Commerce Intelligence] ](best-practices/declutter-account.md)
+   - Trabalhando com Painéis {#working-dashboards}
       - [Compartilhamento de painéis](best-practices/share-dashboard-best-practice.md)
       - [Construindo um painel de investidores](best-practices/build-investor-dashboard.md)
 - Tutorials {#tutorials}
-   - [Usar o [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
-   - [Utilização de Opções de tempo no [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
-   - [Criar visualizações para um [!DNL SQL] Query](tutorials/create-visuals-from-sql.md)
+   - [Usando o  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
+   - [Usando Opções de Tempo em  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
+   - [Criando Visualizações para uma Consulta  [!DNL SQL] ](tutorials/create-visuals-from-sql.md)
    - [Exportação de dados brutos](tutorials/export-raw-data.md)

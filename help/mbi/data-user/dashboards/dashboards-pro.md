@@ -6,22 +6,22 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # Painéis de controle prontos para uso
 
-[!DNL Adobe Commerce Intelligence] O inclui painéis prontos para uso para fornecer informações sobre sua empresa. Com os painéis, você pode verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas, os principais produtos comprados em um determinado período e muito mais. Esses painéis pré-configurados foram criados para ajudá-lo a tomar decisões de negócios conscientes.
+O [!DNL Adobe Commerce Intelligence] inclui painéis prontos para uso para fornecer insights sobre sua empresa. Com os painéis, você pode verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas, os principais produtos comprados em um determinado período e muito mais. Esses painéis pré-configurados foram criados para ajudá-lo a tomar decisões de negócios conscientes.
 
 >[!NOTE]
 >
->O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, entre em contato com [suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, contate o [suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilidade do relatório
 
-Para o `Customers` e `Executive Summary` painéis, alguns relatórios só estarão disponíveis dependendo da configuração de check-out da loja. Especificamente, se o armazenamento permitir check-out de convidado ou não permitir check-out de convidado.
+Para os painéis `Customers` e `Executive Summary`, alguns relatórios só estão disponíveis, dependendo da configuração de check-out da sua loja. Especificamente, se o armazenamento permitir check-out de convidado ou não permitir check-out de convidado.
 
 ## Clientes (check-out de convidado permitido)
 
@@ -42,7 +42,7 @@ O painel Clientes (checkout de convidado permitido) fornece informações sobre 
 | `Time Between Orders` | O tempo médio e mediano que os clientes passam entre os pedidos, dividido por número de pedido (ou seja, o tempo entre os pedidos um e dois, dois e três e assim por diante). |
 | `Number of Customers - Lifetime Orders` | Para um determinado número de pedidos feitos durante a vida útil de um cliente, o número de clientes que fizeram esses pedidos e a porcentagem de toda a base de clientes que esse número representa. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Clientes que fizeram sua primeira e única compra entre três e seis meses atrás. |
-| `Avg LTV by First Order` | Compara a receita média cumulativa de vida útil do cliente em todos os coortes. Os coortes são definidos pelo mês em que um cliente fez uma compra pela primeira vez. Por exemplo, uma variável `Jan 2020` A coorte mostra a média cumulativa de LTV para clientes cuja primeira compra foi em janeiro de 2020. |
+| `Avg LTV by First Order` | Compara a receita média cumulativa de vida útil do cliente em todos os coortes. Os coortes são definidos pelo mês em que um cliente fez uma compra pela primeira vez. Por exemplo, uma coorte `Jan 2020` mostra o LTV médio cumulativo para clientes cuja primeira compra foi em janeiro de 2020. |
 | `Customer's First 30 Day vs Lifetime Revenue` | Comparação da receita média dos clientes nos 30 dias após a primeira compra em relação a toda a vida útil. Cada bolha corresponde a uma região de entrega e o tamanho de cada bolha representa o número de clientes adquiridos dessa região. |
 
 ## Clientes (checkout de convidado não é permitido)
@@ -133,7 +133,7 @@ O painel Pedidos fornece informações sobre o volume transacional de pedidos, o
 
 ## Produtos
 
-O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Sua loja deve ser [configurado para rastrear reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que esses gráficos sejam preenchidos.
+O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Seu armazenamento deve estar [configurado para rastrear reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que esses gráficos sejam preenchidos.
 
 >[!NOTE]
 >

@@ -19,18 +19,18 @@ Isso é útil se você quiser recriar um conjunto existente de gráficos, mas al
 
 1. Para clonar um painel, clique em **[!UICONTROL Options]** na parte superior da tela.
 
-1. Na lista suspensa , clique em **[!UICONTROL Save As]**.
+1. Na lista suspensa, clique em **[!UICONTROL Save As]**.
 
 1. Quando solicitado, insira o `New Dashboard Name`. A Adobe recomenda nomes que informam rapidamente quais informações estão contidas no painel.
 
-   Por exemplo, você está clonando um painel chamado `Customer Activity`. Esse painel continha informações de atividade do cliente para o local da Filadélfia, mas agora você deseja criar um painel para o novo local da cidade de Nova York. Este painel pode ser nomeado `New York City - Customer Activity`.
+   Por exemplo, você está clonando um painel chamado `Customer Activity`. Esse painel continha informações de atividade do cliente para o local da Filadélfia, mas agora você deseja criar um painel para o novo local da cidade de Nova York. Este painel pode ser nomeado como `New York City - Customer Activity`.
 
-1. Use o `Chart Title Find` e `Chart Title Replace` campos para localizar todos os gráficos com `Philadelphia` no título e substitua-o por `New York City`.
+1. Use os campos `Chart Title Find` e `Chart Title Replace` para localizar todos os gráficos com `Philadelphia` no título e substituí-los por `New York City`.
 
-   Se você não inserir nenhum valor nesses campos, uma variável `(2)` anexa automaticamente ao final de todos os títulos de gráfico no novo painel.
+   Se você não inserir nenhum valor nesses campos, uma `(2)` será anexada automaticamente ao final de todos os títulos de gráfico no novo painel.
 
 1. Clique em **[!UICONTROL Save]** para clonar o painel.
 
 Exemplo:
 
-![clonar painel](../../assets/datgif.gif)
+![painel do clone](../../assets/datgif.gif)

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Exige [Permissões de administrador](../../administrator/user-management/user-management.md).
+>Requer [permissões de administrador](../../administrator/user-management/user-management.md).
 
 Uma dimensão é um campo na mesma tabela que uma métrica que pode ser usada para filtrar ou segmentar gráficos com base nessa métrica. Por exemplo, uma métrica de receita pode conter cidade, estado, país, status de pedido, código de cupom e outros tipos de dimensões.
 
@@ -29,11 +29,11 @@ Para adicionar uma ou mais dimensões a várias métricas de uma só vez:
 
 1. Escolha a tabela que contém as dimensões.
 
-1. No `Choose Metric(s) to Add Dimensions` , selecione as métricas às quais deseja adicionar dimensões. Uma vez selecionado, o `Choose Dimensions to Add` é exibida à direita. Marque as dimensões que deseja adicionar à métrica selecionada.
+1. Na coluna `Choose Metric(s) to Add Dimensions`, selecione as métricas às quais deseja adicionar dimensões. Depois de selecionada, a coluna `Choose Dimensions to Add` aparece à direita. Marque as dimensões que deseja adicionar à métrica selecionada.
 
    ![](../../assets/Add_Dimensions.png)
 
-1. Se você quiser segmentar ou agrupar por qualquer uma das dimensões de dados nos relatórios, certifique-se de indicar que elas são _Agrupável_.
+1. Se você quiser segmentar ou agrupar por qualquer uma das dimensões de dados nos relatórios, certifique-se de indicar que elas são _Agrupáveis_.
 
 1. Clique em **[!UICONTROL Add]**.
 
@@ -59,26 +59,26 @@ Para excluir uma ou mais dimensões de várias métricas:
 
 1. Ir para **[!UICONTROL Data > Metrics]**.
 
-1. Clique em **[!UICONTROL Edit]** na métrica que deseja uma nova dimensão.
+1. Clique em **[!UICONTROL Edit]** na métrica desejada para uma nova dimensão.
 
-1. No `Dimensions` , use o `Add a dimension` selecione uma dimensão para adicionar.
+1. Na seção `Dimensions`, use a lista suspensa `Add a dimension` para selecionar uma dimensão a ser adicionada.
 
 >[!NOTE]
 >
->Qualquer dimensão pela qual você deseja filtrar ou agrupar já deve estar rastreada [!DNL Commerce Intelligence]. Se não encontrar a dimensão desejada, talvez seja necessário começar a rastrear uma nova coluna de dados no banco de dados por meio da [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) página.
+>Qualquer dimensão pela qual você deseja filtrar ou agrupar já deve estar rastreada em [!DNL Commerce Intelligence]. Se você não encontrar a dimensão desejada, talvez precise começar a rastrear uma nova coluna de dados no banco de dados por meio da página [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 
 **Para excluir dimensões de uma métrica:**
 
 1. Ir para **[!UICONTROL Manage Data > Metrics]**.
 
-1. Clique em **[!UICONTROL Edit]** na métrica que deseja uma nova dimensão.
+1. Clique em **[!UICONTROL Edit]** na métrica desejada para uma nova dimensão.
 
-1. No `Dimensions` marque a caixa de seleção na coluna excluir ao lado da(s) dimensão(ões) que deseja remover.
+1. Na seção `Dimensions`, marque a caixa de seleção na coluna de exclusão ao lado da(s) dimensão(ões) que deseja remover.
 
 >[!NOTE]
 >
->Mesmo depois de excluir uma dimensão, ela ainda existe como uma coluna na tabela na Data Warehouse. Você pode adicioná-la novamente a qualquer métrica e criar novas métricas usando essas dimensões. Para remover a coluna de dados à qual uma dimensão corresponde [!DNL Commerce Intelligence], basta desfazer o rastreamento da coluna de dados por meio da [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) página.
+>Mesmo depois de excluir uma dimensão, ela ainda existe como uma coluna na tabela na Data Warehouse. Você pode adicioná-la novamente a qualquer métrica e criar novas métricas usando essas dimensões. Para remover a coluna de dados à qual uma dimensão corresponde de [!DNL Commerce Intelligence], basta desfazer o rastreamento da coluna de dados por meio da página [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 ## Documentação relacionada
 

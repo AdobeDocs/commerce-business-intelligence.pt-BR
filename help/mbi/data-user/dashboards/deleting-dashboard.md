@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Para evitar que sua lista de painéis fique muito organizada, exclua um painel se ele não for mais necessário. Isso pode ser feito de uma das duas formas a seguir:
 
-1. [Através do `Account Settings` página](#account) - este método Requer [Permissões de administrador](../../administrator/user-management/user-management.md).
+1. [Pela página `Account Settings`](#account) - este método Requer [Permissões de administrador](../../administrator/user-management/user-management.md).
 
-1. [Através do `Dashboard Options` menu](#do) - esse método exige que você seja o proprietário do painel ou tenha `Edit` permissões.
+1. [Por meio do menu `Dashboard Options`](#do) - este método requer que você seja o proprietário do painel ou tenha `Edit` permissões.
 
-## Excluir painel por meio da `Account Settings` página {#account}
+## Excluir Painel por meio da página `Account Settings` {#account}
 
 1. Clique em **[!UICONTROL Account Settings** > **Dashboards]**.
 
@@ -31,9 +31,9 @@ Exemplo:
 
 ![excluir painel](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
 
-## Excluir painel por meio da `Dashboard Options` menu {#do}
+## Excluir Painel através do menu `Dashboard Options` {#do}
 
-1. Clique em **[!UICONTROL Dashboard Options]** na parte superior da tela.
+1. Clique no menu **[!UICONTROL Dashboard Options]**, na parte superior da tela.
 
 1. Na lista suspensa, clique em **[!UICONTROL Delete]**.
 

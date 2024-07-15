@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Informações de Cobrança
 
-Para visualizar, adicionar ou alterar as informações de faturamento de sua conta, você deve ter `Billing` permissões. [As permissões são definidas para cada usuário](../../administrator/user-management/user-management.md) quando contas de usuário são criadas. Se você precisar `Billing` permissões, entre em contato com o administrador da sua conta.
+Para exibir, adicionar ou alterar as informações de cobrança da sua conta, você deve ter `Billing` permissões. [As permissões são definidas com base em cada usuário](../../administrator/user-management/user-management.md) quando as contas de usuário são criadas. Se você precisar de `Billing` permissões, contate o administrador da sua conta.

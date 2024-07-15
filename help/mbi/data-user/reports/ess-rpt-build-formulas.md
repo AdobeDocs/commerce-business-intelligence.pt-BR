@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Uma fórmula combina várias métricas e lógica matemática para responder a um
 
 1. Clique em **[!UICONTROL Add Metric]** e escolha a primeira métrica para o relatório.
 
-   Neste exemplo, a variável `Revenue by products ordered` será utilizada.
+   Neste exemplo, a métrica `Revenue by products ordered` é usada.
 
-1. Clique em **[!UICONTROL Add Metric]** novamente e escolha a segunda métrica para o relatório.
+1. Clique novamente em **[!UICONTROL Add Metric]** e escolha a segunda métrica para o relatório.
 
-   Neste exemplo, a variável `New Customers` será utilizada.
+   Neste exemplo, a métrica `New Customers` é usada.
 
 1. Na barra lateral, clique em **[!UICONTROL Details]** para exibir informações sobre cada métrica.
 
@@ -35,7 +35,7 @@ Uma fórmula combina várias métricas e lógica matemática para responder a um
 
 1. Na barra lateral, clique no nome de cada métrica para abrir a página de configurações em uma nova guia do navegador. Role para baixo para ver cada componente da métrica, incluindo a consulta da métrica, o filtro e as dimensões.
 
-   ![Configurações de métrica](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
+   ![Configurações de Métrica](../../assets/magento-bi-report-builder-revenue-by-products-metric-detail.png)
 
 1. Para retornar ao relatório, clique na guia anterior do navegador.
 
@@ -49,15 +49,15 @@ Uma fórmula combina várias métricas e lógica matemática para responder a um
 
    Faça o seguinte:
 
-   * No `Enter your Formula` caixa de entrada, insira `A/B`.
+   * Na caixa de entrada `Enter your Formula`, digite `A/B`.
 
      Isso divide a receita por produtos solicitados pelo número de novos clientes.
 
-   * Definir `Select format` para `123Number`.
+   * Defina `Select format` como `123Number`.
 
-   * Na barra lateral, substitua `Untitled` com um nome para a fórmula.
+   * Na barra lateral, substitua `Untitled` por um nome para a fórmula.
 
-   ![Configurações da Fórmula](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
+   ![Configurações de Fórmula](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
 
 1. Quando terminar, clique em **[!UICONTROL Apply]**.
 
@@ -69,7 +69,7 @@ Uma fórmula combina várias métricas e lógica matemática para responder a um
 
 1. Clique em **[!UICONTROL Date Range]** no canto superior direito.
 
-1. No `Fixed Date Range` faça o seguinte:
+1. Na guia `Fixed Date Range`, faça o seguinte:
 
    * Nos calendários, escolha o intervalo de datas.
 
@@ -89,25 +89,25 @@ Uma fórmula combina várias métricas e lógica matemática para responder a um
 
 Nesta etapa, você salva o relatório como um gráfico e também como uma tabela.
 
-1. Clique em `Untitled Report` na parte superior da página e insira um título descritivo. Neste exemplo, o título do relatório é `2017 Holiday Sales`.
+1. Clique em `Untitled Report` na parte superior da página e insira um título descritivo. Para este exemplo, o título do relatório é `2017 Holiday Sales`.
 
    Em seguida, faça o seguinte:
 
    * No canto superior direito, clique em **[!UICONTROL Save]**.
 
-   * Para `Type`, aceitar o padrão `Chart` configuração.
+   * Para `Type`, aceite a configuração padrão `Chart`.
 
    * Escolha o `Dashboard` onde o relatório deve estar disponível.
 
    * Clique em **[!UICONTROL Save to Dashboard]**.
 
-1. Clique no título do relatório e altere o nome. Neste exemplo, o título do relatório é alterado para `2017 Holiday Sales Data`.
+1. Clique no título do relatório e altere o nome. Neste exemplo, o título do relatório foi alterado para `2017 Holiday Sales Data`.
 
    Em seguida, faça o seguinte:
 
    * No canto superior direito, clique em **[!UICONTROL Save a Copy]**.
 
-   * Definir `Type` para `Table`.
+   * Defina `Type` como `Table`.
 
    * Escolha o `Dashboard` onde o relatório deve estar disponível.
 

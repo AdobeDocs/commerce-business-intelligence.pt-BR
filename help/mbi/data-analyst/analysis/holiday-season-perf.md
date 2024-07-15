@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ As pressas podem ser sentidas em qualquer ponto durante o ano; por exemplo, se s
 
 ## Métricas recomendadas
 
-Ao analisar o desempenho da temporada de festas, considere analisar ([ou construção](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
+Ao analisar o desempenho da temporada de festas, considere analisar ([ou criar](../../data-user/reports/ess-manage-data-metrics.md)) essas métricas:
 
 ### Número de novos clientes, Número de pedidos, Receita
 
@@ -33,7 +33,7 @@ Essa medida exibe o valor médio geral do pedido durante as temporadas de féria
 
 Agora que você sabe quais métricas analisar, poderá ver alguns dados de receita de amostra durante os meses de temporada de festas de novembro e dezembro de 2014 e 2015.
 
-![Receita diária da temporada de festas em 2014 e 2015](../../assets/Analyzing_holiday_season.png)
+![Receita diária da temporada de festas de 2014 e 2015](../../assets/Analyzing_holiday_season.png)
 
 Neste exemplo, há dois grandes picos na receita de 2014 e 2015: esses aumentos coincidem com a Black Friday e a Cyber Monday. Observe como os picos não estão no mesmo dia de 2014 e 2015. Isso ocorre porque a Black Friday caiu em 27 de novembro de 2014 e 28 de novembro de 2015. Da mesma forma, a Cyber Monday aconteceu em 30 de novembro de 2014 e em 1º de dezembro de 2015.
 
@@ -58,7 +58,7 @@ Uma opção é analisar o comportamento de compra de seus clientes durante a tem
 
 Outra opção é analisar seu ROI por campanha durante as temporadas de festas. Seu ROI é maior para campanhas específicas executadas durante a temporada de festas? Você deve aumentar os gastos para campanhas com alto ROI durante essas temporadas?
 
-Além disso, você poderia analisar o número de pedidos com desconto em relação aos pedidos de preço total. [A maioria dos clientes está aguardando uma venda para ordens de compra](../analysis/coupon-usage.md) durante sua temporada de festas ou eles estão comprando itens de preço total?
+Além disso, você poderia analisar o número de pedidos com desconto em relação aos pedidos de preço total. [A maioria dos clientes está aguardando uma venda para ordens de compra](../analysis/coupon-usage.md) durante a temporada de festas ou está comprando itens de preço total?
 
 ### Relacionados
 

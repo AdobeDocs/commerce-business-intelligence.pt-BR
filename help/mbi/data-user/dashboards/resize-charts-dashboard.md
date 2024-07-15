@@ -13,12 +13,12 @@ ht-degree: 0%
 
 # Trabalhar com gráficos em painéis
 
-Números escalares. Gráficos de barras. Gráficos estendidos por longos períodos. Cada gráfico exibe informações de forma diferente, o que significa que o tamanho e o local dos gráficos não são uma solução única. Entrada [!DNL Commerce Intelligence], é possível redimensionar e reorganizar gráficos para criar o espaço de trabalho ideal.
+Números escalares. Gráficos de barras. Gráficos estendidos por longos períodos. Cada gráfico exibe informações de forma diferente, o que significa que o tamanho e o local dos gráficos não são uma solução única. No [!DNL Commerce Intelligence], você pode redimensionar e reorganizar gráficos para criar seu espaço de trabalho ideal.
 
 *Para redimensionar um gráfico*, clique e arraste o canto inferior direito de qualquer gráfico.
 
 ![redimensionar gráfico](../../assets/Resize_Chart_in_Dashboard.gif)
 
-*Para mover um gráfico*, passe o mouse sobre a parte superior do gráfico até `Move` cursor é exibido. Clique e mantenha pressionado, em seguida, arraste o gráfico para o local desejado. Solte clique em para posicionar o gráfico.
+*Para mover um gráfico*, passe o mouse sobre a parte superior do gráfico até que o cursor `Move` seja exibido. Clique e mantenha pressionado, em seguida, arraste o gráfico para o local desejado. Solte clique em para posicionar o gráfico.
 
 ![mover gráfico](../../assets/Move_Chart_in_Dashboard.gif)

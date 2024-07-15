@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Exportar meus resultados de consulta
 
-Clique em **[!UICONTROL Export Data]** no `Results` painel para exportar seus resultados para um `.csv` arquivo.
+Clique em **[!UICONTROL Export Data]** no painel `Results` para exportar seus resultados para um arquivo `.csv`.

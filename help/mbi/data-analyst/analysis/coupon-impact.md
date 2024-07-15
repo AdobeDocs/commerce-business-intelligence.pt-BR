@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 2%
+source-wordcount: '1382'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ Analisar como os clientes usam seus cupons pode fornecer informações significa
 * Como a receita média vitalícia difere entre clientes adquiridos de cupom e clientes não adquiridos por meio de cupons?
 * Os clientes adquiridos de cupons fazem compras repetidas com cupons?
 
-Responda a essas perguntas se concentrando em [comparação de clientes adquiridos com cupom com clientes não adquiridos com cupom](#compare), [análise de detalhes da primeira ordem de aquisições de cupom](#firstorder), e [analisar os atributos de clientes que usam cupons em sua primeira ordem.](#attributes)
+Responda estas perguntas concentrando-se em [comparar clientes adquiridos com cupom com clientes não adquiridos com cupom](#compare), [analisar detalhes de primeira ordem de aquisições de cupom](#firstorder) e [analisar os atributos de clientes que usam cupons em sua primeira ordem.](#attributes)
 
-Introdução!
+Comece já!
 
 ## Comparação de clientes adquiridos com cupom com clientes não adquiridos com cupom {#compare}
 
@@ -46,10 +46,10 @@ Mostra o número de pedidos repetidos feitos com um cupom aplicado e a porcentag
 
 Analise alguns dados de exemplo para métricas de aquisição de cupom versus aquisição de não cupom:
 
-| **Aquisição de clientes** | **Número de novos clientes** | **Receita média vitalícia** | **Número de ordens repetidas** | **Número de ordens repetidas c/ cupom** | **% de ordens repetidas c/ cupom** |
+| **Aquisição de clientes** | **Número de novos clientes** | **Receita média vitalícia** | **Número de pedidos repetidos** | **Número de pedidos repetidos c/ cupom** | **% de pedidos repetidos c/ cupom** |
 |-----|-----|-----|-----|-----|-----|
-| Cupom | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
-| Sem cupom | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
+| Cupom | 1.206 | $ 356,91 | 2.570 | 1.248 | 48,56% |
+| Sem cupom | 11.561 | $ 498,30 | 20.145 | 3.251 | 16,14% |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ Os clientes não adquiridos com cupom têm uma porcentagem muito menor de pedido
 
 ## Análise de detalhes da primeira ordem das aquisições de cupom {#firstorder}
 
-Esta seção foca apenas em **primeiras ordens de aquisições de cupom, segmentadas por cupom.** Use estas métricas em sua análise:
+Esta seção focaliza apenas **primeiras ordens de aquisições de cupom, segmentadas por cupom.** Use estas métricas em sua análise:
 
 ### Número de pedidos/clientes
 
@@ -109,11 +109,11 @@ Essa métrica ajuda a avaliar a fidelidade e a receita média geradas pelos clie
 
 Agora, veja um exemplo envolvendo três cupons diferentes usados para o pedido de clientes pela primeira vez:
 
-| **Cupom** | **Ordens pela primeira vez (FTO)** | **Receita bruta de FTO** | **Descontos aplicados a FTO** | **Receita líquida de FTO** | **Valor médio de pedido para FTO** |
+| **Cupom** | **Pedidos pela primeira vez (FTO)** | **Receita bruta de FTO** | **Descontos aplicados a FTO** | **Receita líquida de FTO** | **Valor médio de pedido para FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25% de desconto em US$ 100 ou mais** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
-| **$10 de desconto** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
-| **20% de desconto** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
+| **Desconto de 25% em $100 ou mais** | 56 | $ 8.531,04 | $ 2.132,76 | $ 6.398,28 | $ 152,34 |
+| **$10 de desconto** | 87 | $ 3.707,07 | $ 426,10 | $ 3.280,97 | $ 42,61 |
+| **20% de desconto** | 145 | $ 10.975,05 | $ 2.195,01 | $ 8.780,04 | $ 75,69 |
 
 {style="table-layout:auto"}
 
@@ -124,31 +124,31 @@ O que podemos tirar disso? Primeiro, o cupom com &quot;20% de desconto&quot; tev
 * a hora do dia/semana/mês/ano em que os cupons foram oferecidos.
 * a temporada em que os cupons foram oferecidos, dependendo do negócio.
 
-  **Exemplo:** o cupom de &quot;20% de desconto&quot; foi oferecido durante os meses de verão, mas a empresa vende roupas de inverno.
+  **Exemplo:** o cupom &quot;20% de desconto&quot; foi oferecido durante os meses de verão, mas a empresa vende roupas de inverno.
 * as restrições aos cupões.
 
-  **Exemplo:** o cupom de &quot;10% de desconto&quot; é oferecido apenas aos clientes que compram um casaco de inverno na mesma ordem.
+  **Exemplo:** o cupom &quot;10% de desconto&quot; é oferecido somente a clientes que compram um casaco de inverno na mesma ordem.
 
-A variável **receita bruta** para o cupom &quot;25% de desconto de US$ 100 ou mais&quot;, é muito maior do que a receita bruta do cupom &quot;US$ 10 de desconto&quot;. No entanto, o cupom de &quot;$10 off&quot; tem um muito maior **número de ordens**. Análise da **valor médio de pedido** O fornece informações sobre essas diferenças. Embora o cupom com &quot;25% de desconto de US$ 100 ou mais&quot; tenha menos pedidos, o valor médio do pedido é superior ao triplo do cupom com &quot;US$ 10 de desconto&quot;. Assim, uma receita bruta maior é atribuída ao cupom &quot;25% de desconto de US$ 100 ou mais&quot;.
+A **receita bruta** do cupom &quot;25% de desconto de $100 ou mais&quot; é muito maior do que a receita bruta do cupom &quot;$10 de desconto&quot;. No entanto, o cupom de &quot;$10 de desconto&quot; tem um **número de pedidos** muito maior. A análise do **valor médio de pedido** fornece informações sobre essas diferenças. Embora o cupom com &quot;25% de desconto de US$ 100 ou mais&quot; tenha menos pedidos, o valor médio do pedido é superior ao triplo do cupom com &quot;US$ 10 de desconto&quot;. Assim, uma receita bruta maior é atribuída ao cupom &quot;25% de desconto de US$ 100 ou mais&quot;.
 
-A variável **descontos** e **receita líquida** para os cupons &quot;25% de desconto de US$ 100 ou mais&quot; e &quot;20% de desconto&quot;, os cupons têm valor próximo. Mesmo que o valor médio de pedido para &quot;25% de desconto de US$ 100 ou mais&quot; esteja próximo do dobro do valor médio de pedido para &quot;20% de desconto&quot;, o último cupom tem um pouco menos do que o triplo do número de pedidos.
+Os **descontos** e **receita líquida** para os cupons &quot;25% de desconto de $100 ou mais&quot; e &quot;20% de desconto&quot; têm valor próximo. Mesmo que o valor médio de pedido para &quot;25% de desconto de US$ 100 ou mais&quot; esteja próximo do dobro do valor médio de pedido para &quot;20% de desconto&quot;, o último cupom tem um pouco menos do que o triplo do número de pedidos.
 
 ## Atributos de clientes que usam cupons em sua primeira ordem {#attributes}
 
 Agora que você analisou os próprios pedidos, analise os clientes que usam cupons em seus primeiros pedidos:
 
-| **Cupom de primeira ordem do cliente** | **Número de clientes** | **Número médio de ordens vitalícias** | **Receita média vitalícia** |
+| **Cupom de primeira ordem do cliente** | **Número de clientes** | **Número médio de ordens do ciclo de vida** | **Receita média vitalícia** |
 |-----|-----|-----|-----|
-| **25% de desconto em US$ 100 ou mais** | 56 | 2.8 | $554.54 |
-| **$10 de desconto** | 87 | 1.9 | $115.50 |
-| **20% de desconto** | 145 | 1.3 | $103.75 |
+| **Desconto de 25% em $100 ou mais** | 56 | 2,8 | $ 554,54 |
+| **$10 de desconto** | 87 | 1,9 | $ 115,50 |
+| **20% de desconto** | 145 | 1,3 | $ 103,75 |
 
 {style="table-layout:auto"}
 
 Você percebe que o número de pedidos pela primeira vez é o mesmo que o número de clientes para cada cupom. Isso faz sentido porque cada cliente só pode ter uma primeira ordem.
 
-O maior número de clientes foi adquirido por meio do cupom com &quot;20% de desconto&quot;. No entanto, esses clientes têm a menor **número médio de ordens vitalícias** e **receita média vitalícia**; geralmente, a maioria dos clientes adquiridos com cupons não faz pedidos repetidos. Além disso, os clientes adquiridos através do drive de cupom &quot;25% de desconto de US$ 100 ou mais&quot; mais alto **número médio de ordens vitalícias** e, por sua vez, **receita média vitalícia**. Geralmente, os usuários que foram adquiridos através deste cupom geralmente voltam e fazem mais compras repetidas.
+O maior número de clientes foi adquirido por meio do cupom com &quot;20% de desconto&quot;. No entanto, esses clientes têm o menor **número médio de pedidos** e a **receita média de tempo de vida**; geralmente, a maioria dos clientes adquiridos com cupom não faz pedidos repetidos. Além disso, os clientes adquiridos com a unidade de cupom &quot;25% de desconto de US$ 100 ou mais&quot; **número médio de pedidos** por vida útil e, por sua vez, **receita média por vida útil** mais alta. Geralmente, os usuários que foram adquiridos através deste cupom geralmente voltam e fazem mais compras repetidas.
 
 ## Encapsulamento {#wrapup}
 
-Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda com esses tipos de perguntas, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda sobre esses tipos de perguntas, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

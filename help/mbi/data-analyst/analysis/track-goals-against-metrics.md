@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Rastreamento De Metas Em Relação Às Métricas De Desempenho
 
-A maioria dos clientes gostaria de rastrear seus **metas de negócios**, mas não percebam que isso é possível em [!DNL Adobe Commerce Intelligence]. Este tópico demonstra como configurar um painel que ajudará você a controlar suas metas de negócios em relação aos dados reais, incluindo receita, novos usuários registrados e pedidos ao longo do tempo. Você também aprenderá a comparar o desempenho ano a ano, tudo em um painel como este:
+A maioria dos clientes gostaria de acompanhar suas **metas comerciais**, mas não percebe que isso é possível em [!DNL Adobe Commerce Intelligence]. Este tópico demonstra como configurar um painel que ajudará você a controlar suas metas de negócios em relação aos dados reais, incluindo receita, novos usuários registrados e pedidos ao longo do tempo. Você também aprenderá a comparar o desempenho ano a ano, tudo em um painel como este:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Antes de começar, você deve revisar o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e certifique-se de ter definido suas metas comerciais para um determinado período.
+Antes de começar, você deve revisar o [carregador de arquivos](../importing-data/connecting-data/using-file-uploader.md) e verificar se definiu suas metas comerciais para um determinado período.
 
 ## Introdução
 
 Primeiro, faça upload de um arquivo contendo metas diárias/mensais/trimestrais específicas para sua empresa.
 
-Você pode usar o [carregador de arquivo](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo. Os alvos mais comuns que os clientes rastreiam [!DNL Commerce Intelligence] inclui Pedidos, Receita e Novas contas registradas.
+Você pode usar o [carregador de arquivos](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo. Os destinos mais comuns que os clientes monitoram em [!DNL Commerce Intelligence] incluem Pedidos, Receita e Novas contas registradas.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -32,28 +32,28 @@ Você pode usar o [carregador de arquivo](../importing-data/connecting-data/usin
 Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos destinos mensais de receita e pedidos, será necessário criar duas novas métricas:
 
 * **Meta de receita mensal**
-* No **`Monthly goals`** tabela
-* Essa métrica executa uma **Sum**
-* No **`Revenue target`** coluna
-* Ordenado por **`Month`** carimbo de data e hora
+* Na tabela **`Monthly goals`**
+* Esta métrica executa uma **Soma**
+* Na coluna **`Revenue target`**
+* Ordenado pelo carimbo de data/hora **`Month`**
 
-* **Público alvo de pedidos mensal**
-* No **`Monthly goals`** tabela
-* Essa métrica executa uma **Sum**
-* No **`Orders target`** coluna
-* Ordenado por **`Month`** carimbo de data e hora
+* **Destino de pedidos mensais**
+* Na tabela **`Monthly goals`**
+* Esta métrica executa uma **Soma**
+* Na coluna **`Orders target`**
+* Ordenado pelo carimbo de data/hora **`Month`**
 
 * **Público alvo mensal de novas contas registradas**
-* No **`Monthly goals`** tabela
-* Essa métrica executa uma **Sum**
-* No **`New registered accounts target`** coluna
-* Ordenado por **`Month`** carimbo de data e hora
+* Na tabela **`Monthly goals`**
+* Esta métrica executa uma **Soma**
+* Na coluna **`New registered accounts target`**
+* Ordenado pelo carimbo de data/hora **`Month`**
 
 ## Relatórios
 
 É útil ter uma combinação de valores estáticos e gráficos visuais ao analisar suas metas. Abaixo estão três relatórios de exemplo para começar a rastrear o desempenho da receita.
 
-* **Receita restante para atingir o objetivo**
+* **Receita restante para atingir o destino**
 * Métrica `A`: `Revenue`
 * 
   [!UICONTROL Métrica]: `Revenue`
@@ -67,13 +67,13 @@ Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos 
 * 
   [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]: (qualquer período relevante que você desejar)
+* [!UICONTROL Time period]: (Qualquer período de tempo relevante que você desejar)
 * 
   [!UICONTROL Interval]: `Month`
 * 
   [!UICONTROL Tipo de gráfico]: `Scalar`
 
-* **Metas de receita**
+* **Destinos de receita**
 * Métrica `A`: `Revenue`
 * 
   [!UICONTROL Métrica]: `Revenue`
@@ -92,8 +92,8 @@ Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos 
 * 
   [!UICONTROL Format]: `Currency`
 
-* Desativar `Multiple Y-Axes`
-* [!UICONTROL Time period]: (qualquer período relevante que você desejar)*
+* Desligar `Multiple Y-Axes`
+* [!UICONTROL Time period]: (Qualquer período relevante que você desejar)*
 * 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`

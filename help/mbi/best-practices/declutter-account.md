@@ -1,35 +1,35 @@
 ---
-title: Desenvolver o seu [!DNL Commerce Intelligence] Conta
-description: Saiba como limpar seu [!DNL Commerce Intelligence] conta.
+title: Decodificar sua Conta  [!DNL Commerce Intelligence]
+description: Saiba como limpar sua conta do  [!DNL Commerce Intelligence] .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
 
-# Limpe seu [!DNL Adobe Commerce Intelligence] Conta
+# Limpar sua Conta [!DNL Adobe Commerce Intelligence]
 
-Se você esteve com o [!DNL Commerce Intelligence] por seis meses ou seis anos, manter uma conta do tidy é fundamental para a sua organização aproveitar ao máximo a plataforma. Com o tempo, é natural que haja usuários, painéis, relatórios, métricas e colunas que não sejam mais necessários. Talvez você tenha criado um relatório para uso único e se esquecido dele, ou um usuário que deixou a empresa nunca teve a conta desativada.
+Esteja você com o [!DNL Commerce Intelligence] há seis meses ou seis anos, manter uma conta do tidy é fundamental para que sua organização obtenha o máximo da plataforma. Com o tempo, é natural que haja usuários, painéis, relatórios, métricas e colunas que não sejam mais necessários. Talvez você tenha criado um relatório para uso único e se esquecido dele, ou um usuário que deixou a empresa nunca teve a conta desativada.
 
-Com [nomenclatura padronizada e clara para todos os elementos](../best-practices/naming-elements.md)) do seu [!DNL Commerce Intelligence] conta, as etapas de auditoria de conta abaixo ajudam a reduzir a desordem e as análises desnecessárias para seus usuários. Um benefício adicional inclui [ciclos de atualização potencialmente mais rápidos](../best-practices/reduce-update-cycle-time.md).
+Com a [nomenclatura padronizada e clara para todos os elementos](../best-practices/naming-elements.md)) da sua conta do [!DNL Commerce Intelligence], as etapas de auditoria de conta abaixo ajudam a reduzir a desordem e as análises desnecessárias para seus usuários. Um benefício adicional inclui [ciclos de atualização potencialmente mais rápidos](../best-practices/reduce-update-cycle-time.md).
 
 ## Etapa 1: Identificar Usuários Não Ativos
 
-O primeiro passo para limpar sua conta é desativar as contas de seus usuários inativos, como pessoas que deixaram a empresa ou não usam mais [!DNL Commerce Intelligence] em suas funções atuais.
+O primeiro passo para limpar a sua conta é desativar as contas dos seus usuários inativos, como pessoas que deixaram a empresa ou não usam mais o [!DNL Commerce Intelligence] em suas funções atuais.
 
 Para fazer isso, clique no nome da sua empresa na barra de navegação superior direita e selecione **[!UICONTROL Manage Users]**. Em seguida, selecione o usuário que deseja desativar e clique em **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
->Você precisa [Permissões de administrador](../administrator/user-management/user-management.md) para fazer isso.
+>Você precisa de [Permissões de administrador](../administrator/user-management/user-management.md) para fazer isso.
 
 >[!WARNING]
 >
->A desativação de um usuário remove os gráficos, painéis e outros ativos criados por esse usuário. Se quiser preservar esses ativos, entre em contato com o [!DNL Commerce Intelligence] [suporte](../guide-overview.md#Submitting-a-Support-Ticket) antes de desativar o usuário. O suporte pode ajudar você a transferir esses ativos para outro usuário.
+>A desativação de um usuário remove os gráficos, painéis e outros ativos criados por esse usuário. Para preservar esses ativos, contate a equipe de [!DNL Commerce Intelligence] [suporte](../guide-overview.md#Submitting-a-Support-Ticket) antes de desativar o usuário. O suporte pode ajudar você a transferir esses ativos para outro usuário.
 
 ### Reativar um usuário
 
@@ -41,31 +41,31 @@ A próxima etapa na auditoria da sua conta é excluir todos os painéis e relat�
 
 >[!NOTE]
 >
->Você precisa `Admin` ou `Standard` [permissões de usuário](../administrator/user-management/user-management.md) para fazer isso.
+>Você precisa de `Admin` ou `Standard` [permissões de usuário](../administrator/user-management/user-management.md) para fazer isso.
 
-Todos os usuários com `Admin` ou `Standard` O Access pode criar relatórios e painéis. Por esse motivo, todos os usuários com essas permissões devem seguir as etapas abaixo para identificar e remover relatórios não utilizados.
+Todos os usuários com acesso de `Admin` ou `Standard` podem criar relatórios e painéis. Por esse motivo, todos os usuários com essas permissões devem seguir as etapas abaixo para identificar e remover relatórios não utilizados.
 
 ### Examinar seus painéis e relatórios
 
-Antes de excluir qualquer item, você deve revisar seus relatórios e painéis para avaliar o que está em uso. Embora você possa usar a variável **[!UICONTROL find unused reports]** recurso descrito abaixo, qualquer análise inicial torna seus esforços de limpeza muito mais produtivos.
+Antes de excluir qualquer item, você deve revisar seus relatórios e painéis para avaliar o que está em uso. Embora você possa usar o recurso **[!UICONTROL find unused reports]** descrito abaixo, qualquer revisão inicial torna seus esforços de limpeza muito mais produtivos.
 
 ### Exclusão de painéis e relatórios
 
 Depois de acessar os painéis e relatórios, você pode começar a limpar a conta.
 
-**Para remover um relatório de um painel**
+**Para Remover um Relatório de um Painel**
 
 1. Localize o relatório que deseja remover no painel.
-1. Selecionar **[!UICONTROL Options]** no canto superior direito do relatório.
+1. Selecione **[!UICONTROL Options]** no canto superior direito do relatório.
 1. Clique em **[!UICONTROL Remove From Dashboard]**.
 
-**Para excluir um painel inteiro**
+**Para Excluir um Painel Inteiro**
 
-1. Selecionar **[!UICONTROL Manage Data]**, depois **[!UICONTROL Dashboards**].
+1. Selecione **[!UICONTROL Manage Data]** e depois **[!UICONTROL Dashboards**].
 1. Clique no painel que deseja excluir.
 1. Clique em **[!UICONTROL Delete Dashboard]**.
 
-Também é possível selecionar **[!UICONTROL Dashboard Options]**, depois **[!UICONTROL Delete]** do próprio painel.
+Você também pode selecionar **[!UICONTROL Dashboard Options]** e depois **[!UICONTROL Delete]** no próprio painel.
 
 ![](../../mbi/assets/Delete_from_dashboard.png)
 
@@ -75,8 +75,8 @@ Também é possível selecionar **[!UICONTROL Dashboard Options]**, depois **[!U
 
 **Para Excluir Relatórios Não Utilizados**
 
-1. Selecionar **[!UICONTROL Manage Data]**, depois **[!UICONTROL Reports]**.
-1. Verifique a **Mostrar apenas relatórios não utilizados** localizada abaixo da lista de métricas. Isso cria uma lista de relatórios que não são usados em um painel ou resumo de email.
+1. Selecione **[!UICONTROL Manage Data]**, depois **[!UICONTROL Reports]**.
+1. Marque a caixa **Mostrar apenas relatórios não utilizados**, localizada abaixo da lista de métricas. Isso cria uma lista de relatórios que não são usados em um painel ou resumo de email.
 1. Selecione os relatórios que deseja excluir. É possível selecionar tudo ao clicar na caixa de seleção acima da lista de relatórios.
 1. Clique em **[!UICONTROL Delete Selected]**.
 
@@ -88,29 +88,29 @@ Esta é uma análise do processo de exclusão de relatórios não utilizado:
 
 Depois de limpar a lista de usuários, os painéis e os relatórios, você pode passar para a auditoria da lista de métricas. Isso ajuda a identificar qualquer item que possa estar desatualizado (por exemplo, uma nova métrica foi criada com uma definição diferente) ou não está em uso.
 
-1. Para gerar uma lista de relatórios dependentes para uma métrica, vá para **[!DNL Manage Data]**, em seguida, selecione Clique **[!UICONTROL Metrics]**.
+1. Para gerar uma lista de relatórios dependentes para uma métrica, vá para **[!DNL Manage Data]** e selecione Clique em **[!UICONTROL Metrics]**.
 1. Clique em **[!UICONTROL Edit]** ao lado de uma métrica.
 1. Na parte inferior da página, você verá uma seção chamada **[!UICONTROL Dependent Charts]**. Clique no link para gerar uma lista de relatórios dependentes para essa métrica.
-1. Depois que o sistema concluir a verificação, [!DNL Commerce Intelligence] exibe uma lista de painéis, relatórios e usuários que utilizam essa métrica.
+1. Depois que o sistema concluir a verificação, o [!DNL Commerce Intelligence] exibe uma lista de painéis, relatórios e usuários que usam essa métrica.
 
 ![](../../mbi/assets/report_dependecies.png)
 
-Se você decidir que a métrica não é mais necessária, volte para a **[!UICONTROL Metrics]** clicando em **[!UICONTROL Back to Metric List]** para localizar a métrica que deseja deletar. Clique em **[!UICONTROL Delete]**.
+Se você decidir que a métrica não é mais necessária, navegue de volta para a página **[!UICONTROL Metrics]** clicando em **[!UICONTROL Back to Metric List]** para encontrar a métrica que deseja excluir. Clique em **[!UICONTROL Delete]**.
 
 ## Etapa 4: Avaliar as Colunas Sincronizadas
 
 A última etapa é avaliar as colunas que estão sendo sincronizadas no momento na Data Warehouse. A não apenas dessincronização de colunas pode poluir sua conta, como também pode reduzir o tempo de atualização.
 
-Se desejar fazer isso, entre em contato com [!DNL Commerce Intelligence] [Suporte](../guide-overview.md#Submitting-a-Support-Ticket). A equipe de suporte pode criar um relatório que inclua todas as colunas que não estão sendo usadas em nenhum painel para nenhum usuário e que não são usadas em resumos de email, excluindo Relatórios SQL. Você pode usar esse relatório como um guia para selecionar colunas para dessincronização por meio do Gerenciador de Datas Warehouse.
+Se quiser continuar, entre em contato com o [!DNL Commerce Intelligence] [Suporte](../guide-overview.md#Submitting-a-Support-Ticket). A equipe de suporte pode criar um relatório que inclua todas as colunas que não estão sendo usadas em nenhum painel para nenhum usuário e que não são usadas em resumos de email, excluindo Relatórios SQL. Você pode usar esse relatório como um guia para selecionar colunas para dessincronização por meio do Gerenciador de Datas Warehouse.
 
 >[!NOTE]
 >
 >Você sempre pode começar a sincronizar essas colunas novamente no futuro. Dessincronizar uma coluna remove quaisquer dados da Data Warehouse; isso significa apenas que essa coluna não é verificada em busca de valores novos ou atualizados durante o ciclo de atualização.
 
-**Para dessincronizar uma coluna (ou colunas)**
+**Para Dessincronizar uma Coluna (ou Colunas)**
 
-1. Ir para **[!DNL Manage Data]**, depois **[!UICONTROL Data Warehouse]**.
-1. No **[!UICONTROL Synced Tables]** , navegue até a tabela que contém a coluna.
+1. Vá para **[!DNL Manage Data]** e depois para **[!UICONTROL Data Warehouse]**.
+1. Na lista **[!UICONTROL Synced Tables]**, navegue até a tabela que contém a coluna.
 1. Marque uma ou mais caixas ao lado de uma ou mais colunas que deseja dessincronizar.
    >[!NOTE]
    >
@@ -124,4 +124,4 @@ Veja aqui todo o processo:
 
 ## Encapsulamento
 
-Seu [!DNL Commerce Intelligence] A conta do agora deve ser mais organizada e mais fácil de navegar para você e sua equipe.
+A conta do [!DNL Commerce Intelligence] agora deve ser mais organizada e mais fácil de navegar para você e sua equipe.

@@ -6,8 +6,8 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Exige [Permissões de administrador](../../../administrator/user-management/user-management.md).
+>Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] O permite gerenciar e rastrear os dados de pagamento e fatura da sua empresa. Conectar o [!DNL Stripe] conta para [!DNL Commerce Intelligence] O é um processo simples de duas etapas:
+O [!DNL Stripe] permite gerenciar e controlar os dados de pagamento e fatura da sua empresa. A conexão da conta do [!DNL Stripe] com o [!DNL Commerce Intelligence] é um processo simples de duas etapas:
 
-1. [Adicionar [!DNL Stripe] como fonte de dados no [!DNL Commerce Intelligence]](#stepone)
-1. [Permitir [!DNL Commerce Intelligence] acesso ao seu [!DNL Stripe] Dados](#steptwo)
+1. [Adicionar [!DNL Stripe] como uma fonte de dados em [!DNL Commerce Intelligence]](#stepone)
+1. [Permitir [!DNL Commerce Intelligence] acesso aos seus [!DNL Stripe] Dados](#steptwo)
 
-## Adicionar [!DNL Stripe] como fonte de dados {#stepone}
+## Adicionar [!DNL Stripe] como uma fonte de dados {#stepone}
 
-1. Vá para a `Connections` página abaixo **[!UICONTROL Admin** > **Connections]**.
-1. Clique em **[!UICONTROL Add a Data Source]**, localizado no lado direito da tela acima da `Data Sources` tabela.
-1. Clique em [!DNL Stripe] ícone. Isso exibe o `[!DNL Stripe] authorization` página.
+1. Vá para a página `Connections` em **[!UICONTROL Admin** > **Connections]**.
+1. Clique em **[!UICONTROL Add a Data Source]**, localizado no lado direito da tela acima da tabela `Data Sources`.
+1. Clique no ícone [!DNL Stripe]. Isso exibe a página `[!DNL Stripe] authorization`.
 1. Clique em **[!UICONTROL Connect with Stripe]**.
 
-## Permitir [!DNL Commerce Intelligence] acesso ao seu [!DNL Stripe] dados {#steptwo}
+## Permitir que [!DNL Commerce Intelligence] acesse seus dados de [!DNL Stripe] {#steptwo}
 
 Depois de clicar em **[!UICONTROL Connect with Stripe]**, uma página de solicitação de acesso é exibida.
 
@@ -41,11 +41,11 @@ Depois de clicar em **[!UICONTROL Connect with Stripe]**, uma página de solicit
 
 1. Suas credenciais serão validadas e você será direcionado de volta a [!DNL Commerce Intelligence].
 
-1. Se a conexão for bem-sucedida, uma variável *Conexão bem sucedida!* será exibida na parte superior da tela.
+1. Se a conexão for bem-sucedida, uma *Conexão bem-sucedida!* mensagem aparece na parte superior da tela.
 
 ## Relacionados:
 
-A variável [[!DNL Stripe] Documentação da API](https://stripe.com/docs/api) pode ser um recurso útil para saber mais sobre como [!DNL Stripe] está integrado com [!DNL Commerce Intelligence].
+A [[!DNL Stripe] Documentação da API](https://stripe.com/docs/api) pode ser um recurso útil para saber mais sobre como o [!DNL Stripe] é integrado ao [!DNL Commerce Intelligence].
 
-* [Esperado [!DNL Stripe] dados](../integrations/stripe-data.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Dados  [!DNL Stripe]  esperados](../integrations/stripe-data.md)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Exige [Admin](../../administrator/user-management/user-management.md) ou `Standard` para executar essas funções. Se você é um `Standard` usuário, você também precisará `Edit` ao painel.
+>Exige [permissões de Administrador](../../administrator/user-management/user-management.md) ou `Standard` para executar essas funções. Se você for um usuário do `Standard`, também precisará de `Edit` permissões para o painel.
 
 Às vezes os nomes simplesmente não cabem mais. Renomear um painel é rápido e fácil.
 
-1. No painel, clique no botão **[!UICONTROL Dashboard Options]** na parte superior da tela, localizada ao lado da guia `Global Search` menu.
+1. No painel, clique no menu **[!UICONTROL Dashboard Options]** na parte superior da tela, localizada ao lado do menu `Global Search`.
 
 1. Clique em **[!UICONTROL Rename]** na lista suspensa.
 

@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Este tópico demonstra como configurar um painel que ajuda você a entender o cr
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-Essa análise só está disponível para clientes da conta Pro na nova arquitetura. Se sua conta tiver acesso ao `Persistent Views` recurso no `Manage Data` barra lateral, você está na nova arquitetura e pode seguir as instruções listadas aqui para criar essa análise você mesmo.
+Essa análise só está disponível para clientes da conta Pro na nova arquitetura. Se sua conta tiver acesso ao recurso `Persistent Views` na barra lateral `Manage Data`, você estará na nova arquitetura e poderá seguir as instruções listadas aqui para criar essa análise.
 
-Antes de começar, você deseja se familiarizar com o [construtor de relatórios de coorte.](../dev-reports/cohort-rpt-bldr.md)
+Antes de começar, você quer se familiarizar com o [construtor de relatórios de coorte.](../dev-reports/cohort-rpt-bldr.md)
 
 ## Colunas calculadas
 
-Colunas para criar no **pedidos** tabela se estiver usando **30 dias por mês**:
+Colunas a serem criadas na tabela **pedidos** se estiver usando **meses de 30 dias**:
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -43,7 +43,7 @@ Colunas para criar no **pedidos** tabela se estiver usando **30 dias por mês**:
   [!UICONTROL Datatype]: `Integer`
 * Definição: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-Colunas para criar no **`orders`** tabela se estiver usando **calendário** meses:
+Colunas a serem criadas na tabela **`orders`** se estiver usando o **calendário** meses:
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -82,22 +82,22 @@ Colunas para criar no **`orders`** tabela se estiver usando **calendário** mese
 Métricas para criar
 
 * **Clientes distintos pela data da primeira ordem**
-   * Se você ativar ordens de convidados, use `customer_email`
+   * Se você habilitar os pedidos de convidados, use `customer_email`
 
-* No **`orders`** tabela
-* Essa métrica executa uma **Contar valores distintos**
-* No **`customer_id`** coluna
-* Ordenado por **`Customer's first order date`** carimbo de data e hora
+* Na tabela **`orders`**
+* Esta métrica executa uma **Contagem de Valores Distintos**
+* Na coluna **`customer_id`**
+* Ordenado pelo carimbo de data/hora **`Customer's first order date`**
 
 >[!NOTE]
 >
->Verifique se [adicionar todas as novas colunas como dimensões às métricas](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
+>[adicione todas as novas colunas como dimensões às métricas](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
 
 ## Relatórios
 
 ### Instruções do relatório
 
-**Receita esperada por cliente por mês**
+**Receita esperada por cliente em mês**
 
 * Métrica `A`: `Revenue (hide)`
    * `Calendar months between first order and this order` `<= X` (Escolha um número razoável para X, por exemplo, 24 meses)
@@ -128,15 +128,15 @@ Métricas para criar
 Outros detalhes do gráfico
 
 * [!UICONTROL Time period]: `All time`
-* Intervalo: `None`
+* Intervalo de tempo: `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` - mostrar tudo
-* Altere o `group by` para o `All time customers` para Independente usando o ícone de lápis ao lado da `group by`
-* Edite o `Show top/bottom` seguintes campos:
+* Altere o `group by` da métrica `All time customers` para Independente usando o ícone de lápis ao lado do `group by`
+* Edite os campos `Show top/bottom` da seguinte maneira:
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
 
-**Receita mensal média por coorte**
+**Receita média por mês por coorte**
 
 * Métrica `A`: `Revenue`
 * 
@@ -154,4 +154,4 @@ Outros detalhes do gráfico
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode parecer com a imagem na parte superior da página.
 
-Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

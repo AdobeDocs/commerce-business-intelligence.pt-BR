@@ -21,4 +21,4 @@ Depois que um novo usuário criar sua senha, uma lista de painéis compartilhado
 
 ## Usuários existentes
 
-Para exibir a lista de painéis compartilhados novamente, os usuários podem clicar em **[!UICONTROL Find]** no `Global Search` menu.
+Para exibir a lista de painéis compartilhados novamente, os usuários podem clicar em **[!UICONTROL Find]** no menu `Global Search`.

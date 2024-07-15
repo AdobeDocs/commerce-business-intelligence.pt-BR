@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 2%
+source-wordcount: '1177'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Você já se perguntou como a oferta de cupons afeta seus negócios? Quer saber 
 
 ## Métricas recomendadas {#metrics}
 
-Ao analisar o uso do cupom, considere usar ([ou construção](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
+Ao analisar o uso do cupom, considere usar ([ou criar](../../data-user/reports/ess-manage-data-metrics.md)) estas métricas:
 
 ### Número de ordens
 
@@ -65,26 +65,26 @@ Essa métrica ajuda a avaliar a fidelidade e a receita média geradas pelos clie
 
 Agora que você sabe quais métricas examinar, veja um exemplo envolvendo três cupons diferentes: 10% de desconto, $20 de desconto em $100 ou mais e $10 de desconto.
 
-| **Cupom** | **Nº de pedidos** | **Receita bruta** | **Descontos brutos de cupons** | **Receita líquida** | **Porcentagem descontada** |
+| **Cupom** | **# de pedidos** | **Receita bruta** | **Descontos brutos de cupons** | **Receita líquida** | **Percentual com desconto** |
 |-----|-----|-----|-----|-----|-----|
-| **10% de desconto** | 79 | $19,757.02 | $1,975.70 | $17,781.32 | 10.00% |
-| **US$ 20 de desconto US$ 100+** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
-| **$10 de desconto** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
+| **10% de desconto** | 79 | $ 19.757,02 | $ 1.975,70 | $ 17.781,32 | 10,00% |
+| **$20 de desconto $100+** | 101 | $ 13.928,91 | $ 2.020,00 | $ 11.908,91 | 14,50% |
+| **$10 de desconto** | 201 | $ 14.542,35 | $ 2.010,00 | $ 12.532,35 | 13,82% |
 
 {style="table-layout:auto"}
 
 
 | **Cupom** | **Média valor líquido da ordem** | **Média desconto do pedido** | **Compradores distintos** | **Média receita vitalícia** |
 |-----|-----|-----|-----|-----|
-| **10% de desconto** | $225.08 | $25.01 | 79 | $361.50 |
-| **US$ 20 de desconto US$ 100+** | $117.91 | $20.00 | 95 | $218.76 |
-| **$10 de desconto** | $62.35 | $10.00 | 199 | $84.27 |
+| **10% de desconto** | $ 225,08 | $ 25,01 | 79 | $ 361,50 |
+| **$20 de desconto $100+** | $ 117,91 | $ 20,00 | 95 | $ 218,76 |
+| **$10 de desconto** | $ 62,35 | $ 10,00 | 199 | $ 84,27 |
 
 {style="table-layout:auto"}
 
 ## O que você pode tirar disso?
 
-Cerca de 80 pedidos foram feitos com o cupom de &quot;10% de desconto&quot;, 100 pedidos com o cupom de &quot;$20 de $100 ou mais&quot; e 200 pedidos com o cupom de &quot;$10 de desconto&quot;. A variável **número de ordens** associado a cada cupom pode variar com base em vários fatores, incluindo:
+Cerca de 80 pedidos foram feitos com o cupom de &quot;10% de desconto&quot;, 100 pedidos com o cupom de &quot;$20 de $100 ou mais&quot; e 200 pedidos com o cupom de &quot;$10 de desconto&quot;. O **número de pedidos** associados a cada cupom pode variar com base em vários fatores, incluindo:
 
 * o período pelo qual os cupons foram oferecidos.
 * a hora do dia/semana/mês/ano em que os cupons foram oferecidos.
@@ -97,21 +97,21 @@ Cerca de 80 pedidos foram feitos com o cupom de &quot;10% de desconto&quot;, 100
 
 * o comportamento de compra típico do cliente.
 
-Embora a **descontos brutos** para todos os três cupons são semelhantes (cerca de US$ 2.000), o número de pedidos para cada cupom é diferente. A análise de descontos por ordem ajuda a explicar os motivos desses números contrastantes. O cupom com &quot;10% de desconto&quot; tem o menor número de pedidos, mas uma **desconto médio de pedido** de cerca de US$ 25. Embora esse cupom tenha um número baixo de pedidos, seu alto valor médio de desconto faz com que sua quantia bruta de desconto se aproxime de US$ 2.000.
+Embora os **descontos brutos** para todos os três cupons sejam semelhantes (cerca de US$ 2.000), o número de pedidos para cada cupom é diferente. A análise de descontos por ordem ajuda a explicar os motivos desses números contrastantes. O cupom com &quot;10% de desconto&quot; tem o menor número de pedidos, mas um **desconto médio de pedido** de cerca de US$ 25. Embora esse cupom tenha um número baixo de pedidos, seu alto valor médio de desconto faz com que sua quantia bruta de desconto se aproxime de US$ 2.000.
 
-**Receita bruta e líquida** fornecer uma ideia geral do valor total dos pedidos associados a cada cupom. No entanto, esse quadro geral não fornece uma compreensão dos diferentes comportamentos relacionados a cada cupom. Uma vez que você olhar para uma base por pedido, você pode ver que o cupom &quot;10% off&quot; tem um alto **ordem líquida média** o que, por sua vez, leva ao seu elevado **receita líquida**.
+**Receita bruta e líquida** fornece uma ideia geral do valor total dos pedidos associados a cada cupom. No entanto, esse quadro geral não fornece uma compreensão dos diferentes comportamentos relacionados a cada cupom. Uma vez analisado o valor por ordem, você pode ver que o cupom com 10% de desconto tem um valor alto de **ordem líquida média**, o que, por sua vez, resulta em sua alta **receita líquida**.
 
-Por outro lado, o cupom com &quot;10% de desconto&quot; tem um valor médio de desconto alto ($25,01), mas o mais baixo **porcentagem descontada**. Isso faz sentido quando você contabiliza seu valor líquido médio de pedido de US$ 225,08. O cupom de &quot;10% de desconto&quot; tem um pequeno desconto por cento de um grande valor líquido médio de pedido, portanto, o desconto médio de pedido é uma grande quantia.
+Por outro lado, o cupom com &quot;10% de desconto&quot; tem um valor de desconto médio alto ($25,01), mas o menor **percentual com desconto**. Isso faz sentido quando você contabiliza seu valor líquido médio de pedido de US$ 225,08. O cupom de &quot;10% de desconto&quot; tem um pequeno desconto por cento de um grande valor líquido médio de pedido, portanto, o desconto médio de pedido é uma grande quantia.
 
-Olhe para o **compradores distintos** e **receita média vitalícia** para cada cupom. O cupom com &quot;10% de desconto&quot; tem o mesmo número de pedidos que os compradores distintos. Isso pode ser resultado de cada cliente estar limitado a um cupom. Por outro lado, os cupons &quot;$20 de $100 ou mais&quot; e &quot;$10 de desconto&quot; têm menos compradores distintos do que o número de pedidos, o que implica que alguns clientes usaram esses cupons várias vezes.
+Examine os **compradores distintos** e a **receita média ao longo da vida** para cada cupom. O cupom com &quot;10% de desconto&quot; tem o mesmo número de pedidos que os compradores distintos. Isso pode ser resultado de cada cliente estar limitado a um cupom. Por outro lado, os cupons &quot;$20 de $100 ou mais&quot; e &quot;$10 de desconto&quot; têm menos compradores distintos do que o número de pedidos, o que implica que alguns clientes usaram esses cupons várias vezes.
 
-Para a receita média por vida útil, é possível ver que a receita média por vida útil de cada cupom é maior que a respectiva **ordem líquida média** valor. Isso implica que os clientes fizeram compras repetidas e/ou o valor de seus pedidos foi muito maior do que o valor líquido médio de pedido.
+Para a receita média por vida, você pode ver que a receita média por vida para cada cupom é maior que o respectivo valor de **ordem líquida média**. Isso implica que os clientes fizeram compras repetidas e/ou o valor de seus pedidos foi muito maior do que o valor líquido médio de pedido.
 
 ## O que mais posso analisar? {#otheranalyses}
 
 As análises mencionadas neste tópico podem fornecer informações valiosas sobre como seus clientes usam seus cupons, mas há uma variedade de outras análises que permitem obter informações um pouco mais detalhadas.
 
-**Você poderia analisar as aquisições de clientes com base em cupons.**
+**Você pode analisar as aquisições de clientes com cupons.**
 
 Quais cupons estão incentivando os clientes a fazer pedidos? Esses cupons atraem compradores únicos ou incentivam a fidelidade do cliente (em outras palavras, o cliente que faz compras repetidas)?
 
@@ -119,7 +119,7 @@ Quais cupons estão incentivando os clientes a fazer pedidos? Esses cupons atrae
 
 Seus cupons são usados no dia em que são liberados ou uma ou duas semanas antes da maioria de seus clientes os usarem?
 
-**Você pode descobrir a quantidade ideal de desconto que aumenta a fidelidade do cliente e o valor geral.**
+**Você pode descobrir o valor do desconto ideal que aumenta a fidelidade do cliente e o valor geral.**
 
 Que quantia de desconto incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia?
 

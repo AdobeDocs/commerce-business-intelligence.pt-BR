@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # Tutorials
 
-Siga estes tutoriais autoguiados para saber mais sobre o poder do [!DNL Adobe Commerce Intelligence].
+Siga estes tutoriais autoguiados para conhecer o poder do [!DNL Adobe Commerce Intelligence].

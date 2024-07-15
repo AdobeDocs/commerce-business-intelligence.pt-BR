@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Alterar acesso a painéis compartilhados
 
-O acesso aos painéis pode ser alterado a qualquer momento usando as mesmas etapas para [compartilhar inicialmente o painel](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. Na lista de usuários exibida na variável `Share Dashboard` , atualize as permissões de usuário/organização conforme necessário e clique em **[!UICONTROL Save Changes]** para atualizar.
+O acesso aos painéis pode ser alterado a qualquer momento usando as mesmas etapas para [compartilhar inicialmente o painel](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. Na lista de usuários exibida no menu `Share Dashboard`, atualize as permissões de usuário/organização conforme necessário e clique em **[!UICONTROL Save Changes]** para atualizar.

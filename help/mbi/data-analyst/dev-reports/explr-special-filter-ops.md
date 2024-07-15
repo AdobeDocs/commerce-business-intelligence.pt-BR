@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Opções de filtro
 
-Este tópico explora alguns tópicos `operators` usado em `filters` quando [criação de um relatório](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} ou [criação de uma métrica](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+Este tópico explora alguns `operators` especiais usados em `filters` ao [criar um relatório](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} ou [criar uma métrica](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 
-* `LIKE` para correspondência de padrões. Isso deve ser usado com os caracteres curinga % (para um curinga com um número variável de letras) ou _ (para uma única letra curinga).  Por exemplo, a restrição `LIKE \_ake%` retornaria verdadeiro para `Jake Stein`, `Jake Smith`ou `Fake Smith`.  Retornaria falso por `Drake Smith`.
+* `LIKE` para correspondência de padrão. Isso deve ser usado com os caracteres curinga % (para um curinga com um número variável de letras) ou _ (para uma única letra curinga).  Por exemplo, a restrição `LIKE \_ake%` retornaria true para `Jake Stein`, `Jake Smith` ou `Fake Smith`.  Retornaria falso para `Drake Smith`.
 
 * `NOT LIKE` é semelhante à correspondência de padrões acima, mas verifica quais padrões não correspondem.
 
-* `IS` verifica se a coluna é `NULL`ou em branco.
+* `IS` verifica se a coluna é `NULL` ou está vazia.
 
-* `IS NOT` é semelhante ao `IS` operador acima, mas verifica se há colunas não-NULL.
+* `IS NOT` é semelhante ao operador `IS` acima, mas verifica se há colunas não-NULL.
 
-* `IN` verifica a presença de um valor em uma lista separada por vírgulas. (por exemplo, &quot;Cor `IN` vermelho, laranja&quot; é o equivalente a cor `equal to` cor OR vermelha `equal to` laranja).
+* `IN` verifica a presença de um valor em uma lista separada por vírgulas. (por exemplo, &quot;Cor `IN` vermelho,laranja&quot; é o equivalente à cor `equal to` vermelho OU cor `equal to` laranja).
 
 * `NOT IN` é semelhante a `IN` acima, mas verifica a ausência de um valor.

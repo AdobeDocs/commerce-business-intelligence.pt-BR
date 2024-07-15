@@ -23,13 +23,13 @@ Este tópico documenta as etapas necessárias para criar essa análise para ente
 
 Primeiro, uma observação sobre como os códigos de cupom são rastreados. Se um cliente aplicou um cupom a um pedido, acontecem três coisas:
 
-* Um desconto é refletido na `base_grand_total` quantidade (seu `Revenue` no Commerce Intelligence)
-* O código do cupom é armazenado na variável `coupon_code` campo. Se esse campo for NULL (vazio), a ordem não terá um cupom associado a ela.
-* O valor com desconto é armazenado em `base_discount_amount`. Dependendo da sua configuração, esse valor pode parecer negativo ou positivo.
+* Um desconto é refletido no valor `base_grand_total` (sua métrica `Revenue` no Commerce Intelligence)
+* O código do cupom é armazenado no campo `coupon_code`. Se esse campo for NULL (vazio), a ordem não terá um cupom associado a ela.
+* O valor com desconto está armazenado em `base_discount_amount`. Dependendo da sua configuração, esse valor pode parecer negativo ou positivo.
 
 A partir do Commerce 2.4.7, um cliente pode aplicar mais de um código de cupom a um pedido. Neste caso:
 
-* Todos os códigos de cupom aplicados são armazenados no `coupon_code` campo de `sales_order_coupons`. O primeiro código de cupom aplicado também é armazenado no `coupon_code` campo de `sales_order`. Se esse campo for NULL (vazio), a ordem não terá um cupom associado a ela.
+* Todos os códigos de cupom aplicados são armazenados no campo `coupon_code` de `sales_order_coupons`. O primeiro código de cupom aplicado também é armazenado no campo `coupon_code` de `sales_order`. Se esse campo for NULL (vazio), a ordem não terá um cupom associado a ela.
 
 ## Criar uma métrica
 
@@ -38,11 +38,11 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
 * Navegue até **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
 * Selecione o `sales_order`.
-* Essa métrica executa uma **Sum** no **base_discount_amount** coluna, ordenada por **created_at**.
+* Esta métrica executa uma **Soma** na coluna **base_discount_amount**, ordenada por **created_at**.
    * [!UICONTROL Filters]:
-      * Adicione o `Orders we count` (Conjunto de filtros salvos)
+      * Adicionar o `Orders we count` (Conjunto de Filtros Salvos)
       * Adicione o seguinte:
-         * `coupon_code`**NÃO É**`[NULL]`
+         * `coupon_code`**NÃO**`[NULL]`
       * Nomeie a métrica, como `Coupon discount amount`.
 
 ## Criar seu painel
@@ -55,17 +55,17 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
 
 ## Criação de relatórios
 
-* **Novos relatórios:**
+* **Novos Relatórios:**
 
 >[!NOTE]
 >
->A variável [!UICONTROL Time Period]** para cada relatório é listado como `All-time`. Altere isso para atender às suas necessidades de análise. Adobe recomenda que todos os relatórios desse painel cubram o mesmo período, como `All time`, `Year-to-date`ou `Last 365 days`.
+>O [!UICONTROL Time Period]** para cada relatório está listado como `All-time`. Altere isso para atender às suas necessidades de análise. A Adobe recomenda que todos os relatórios deste painel cubram o mesmo período de tempo, como `All time`, `Year-to-date` ou `Last 365 days`.
 
 * **Pedidos com cupons**
    * 
      [!UICONTROL Métrica]: `Orders`
       * Adicionar filtro:
-         * [`A`] `coupon_code` **NÃO É** `[NULL]`
+         * [`A`] `coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -76,7 +76,7 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
    * 
      [!UICONTROL Métrica]: `Orders`
       * Adicionar filtro:
-         * [`A`] `coupon_code` **É** `[NULL]`
+         * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -87,7 +87,7 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
    * 
      [!UICONTROL Métrica]: `Revenue`
       * Adicionar filtro:
-         * [`A`] `coupon_code` **NÃO É** `[NULL]`
+         * [`A`] `coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -101,20 +101,20 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Receita média da vida útil: clientes adquiridos do cupom**
+* **Receita média vitalícia: cupom adquirido aos clientes**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Adicionar filtro:
-         * [`A`] `Customer's first order's coupon_code` **NÃO É** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Receita média do tempo de vida: clientes adquiridos sem cupom**
+* **Receita média vitalícia: clientes não adquiridos com cupom**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Adicionar filtro:
-         * [A] `Customer's first order's coupon_code` **É**`[NULL]`
+         * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -124,19 +124,19 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
 * **Detalhes de uso do cupom (ordens pela primeira vez)**
    * Métrica `1`: `Orders`
       * Adicionar filtro:
-         * [`A`] `coupon_code` **NÃO É**`[NULL]`
+         * [`A`] `coupon_code` **NÃO**`[NULL]`
          * [`B`] `Customer's order number` **Igual a** `1`
 
    * Métrica `2`: `Revenue`
       * Adicionar filtro:
-         * [`A`] `coupon_code` **NÃO É**`[NULL]`
+         * [`A`] `coupon_code` **NÃO**`[NULL]`
          * [`B`] `Customer's order number` **Igual a** `1`
 
-      * Renomear:  `Net revenue`
+      * Renomear: `Net revenue`
 
    * Métrica `3`: `Coupon discount amount`
       * Adicionar filtro:
-         * [`A`] `coupon_code` **NÃO É**`[NULL]`
+         * [`A`] `coupon_code` **NÃO**`[NULL]`
          * [`B`] `Customer's order number` **Igual a** `1`
 
    * Criar fórmula: `Gross revenue`
@@ -144,7 +144,7 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
       * 
         [!UICONTROL Format]: `Currency`
 
-   * Criar fórmula:**% descontado**
+   * Criar fórmula:**% com desconto**
       * Fórmula: `(C / (B - C))`
       * 
         [!UICONTROL Format]: `Percentage`
@@ -173,7 +173,7 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
 * **Detalhes de uso do cupom (ordens pela primeira vez)**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Adicionar filtro:
-         * [`A`] `Customer's first order's coupon_code` **NÃO É** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -182,10 +182,10 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
    * 
      [!UICONTROL Tipo de gráfico]: **Column**
 
-* **Novos clientes por aquisição de cupom/não cupom**
+* **Novos clientes por aquisição de cupom/não-cupom**
    * Métrica `1`: `New customers`
       * Adicionar filtro:
-         * [`A`] `Customer's first order's coupon_code` **NÃO É** `[NULL]`
+         * [`A`] `Customer's first order's coupon_code` **NÃO** `[NULL]`
 
       * [!UICONTROL Rename]: `Coupon acquisition customer`
 
@@ -203,6 +203,6 @@ Depois de criar os relatórios, consulte a imagem na parte superior deste tópic
 
 >[!NOTE]
 >
->A partir do Adobe Commerce 2.4.7, os clientes podem usar o **quote_coupons** e **sales_order_coupons** tabelas para obter insights sobre como o cliente usa vários cupons.
+>A partir do Adobe Commerce 2.4.7, os clientes podem usar as tabelas **quote_coupons** e **sales_order_coupons** para obter informações sobre como os clientes usam vários cupons.
 
 ![](../../assets/multicoupon_relationship_tables.png)

@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Exige [Permissões de administrador](../../../administrator/user-management/user-management.md).
+>Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/WooCommerce-Logo.jpg)
 
-Quer ver o desempenho da sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos? Conectar o [!DNL WooCommerce] dados para [!DNL Commerce Intelligence] O permite responder a essas perguntas e muito mais.
+Quer ver o desempenho da sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos? Conectar os dados do [!DNL WooCommerce] ao [!DNL Commerce Intelligence] permite que você responda a essas perguntas e muito mais.
 
-A variável [!DNL WooCommerce] o banco de dados é baseado em [!DNL MySQL], você pode conectá-lo a [!DNL Commerce Intelligence] por meio de uma [conexão direta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)ou [por meio de um `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). A Adobe recomenda o uso do método SSH, pois é o mais seguro.
+O banco de dados [!DNL WooCommerce] é baseado em [!DNL MySQL]. Você pode conectá-lo a [!DNL Commerce Intelligence] através de uma [conexão direta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), ou [através de um `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). A Adobe recomenda o uso do método SSH, pois é o mais seguro.
 
 ## Relacionados:
 
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Dimensões de dados recomendadas para segmentação e filtragem](../../../best-practices/segment-filter.md)

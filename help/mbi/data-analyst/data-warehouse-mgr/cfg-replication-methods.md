@@ -6,88 +6,88 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1433'
 ht-degree: 0%
 
 ---
 
 # Configuração de métodos de replicação
 
-`Replication` métodos e [recheques](../data-warehouse-mgr/cfg-data-rechecks.md) são usados para identificar dados novos ou atualizados nas tabelas do banco de dados. Configurar corretamente é fundamental para garantir a precisão dos dados e os tempos de atualização otimizados. Este tópico aborda os métodos de replicação.
+`Replication` métodos e [reverificações](../data-warehouse-mgr/cfg-data-rechecks.md) são usados para identificar dados novos ou atualizados nas tabelas do banco de dados. Configurar corretamente é fundamental para garantir a precisão dos dados e os tempos de atualização otimizados. Este tópico aborda os métodos de replicação.
 
-Quando novas tabelas são sincronizadas no [Gerenciador de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), um método de replicação é escolhido automaticamente para a tabela. Compreender os vários métodos de replicação, como as tabelas são organizadas e como os dados da tabela se comportam permite escolher o melhor método de replicação para suas tabelas.
+Quando novas tabelas são sincronizadas no [Gerenciador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), um método de replicação é escolhido automaticamente para a tabela. Compreender os vários métodos de replicação, como as tabelas são organizadas e como os dados da tabela se comportam permite escolher o melhor método de replicação para suas tabelas.
 
 ## Quais são os métodos de replicação?
 
-`Replication` Os métodos dividem-se em três grupos: `Incremental`, `Full Table`, e `Paused`.
+Os métodos `Replication` se dividem em três grupos - `Incremental`, `Full Table` e `Paused`.
 
-[**[!UICONTROL Incremental Replication]**](#incremental) significa que [!DNL Commerce Intelligence] O replica somente dados novos ou atualizados em cada tentativa de replicação. Como esses métodos reduzem muito a latência, o Adobe recomenda usá-la sempre que possível.
+[**[!UICONTROL Incremental Replication]**](#incremental) significa que [!DNL Commerce Intelligence] replica somente dados novos ou atualizados em cada tentativa de replicação. Como esses métodos reduzem muito a latência, o Adobe recomenda usá-la sempre que possível.
 
 [**[!UICONTROL Full Table Replication]**](#fulltable) significa que [!DNL Commerce Intelligence] replica todo o conteúdo de uma tabela em cada tentativa de replicação. Devido à quantidade potencialmente grande de dados a serem replicados, esses métodos podem aumentar a latência e os tempos de atualização. Se uma tabela contiver colunas com carimbo de data e hora ou datetime, o Adobe recomenda usar um método Incremental.
 
-**[!UICONTROL Paused]** indica que a replicação da tabela foi interrompida ou pausada. [!DNL Commerce Intelligence] O não verifica dados novos ou atualizados durante um ciclo de atualização; isso significa que nenhum dado é replicado de uma tabela que tem isso como seu Método de replicação.
+**[!UICONTROL Paused]** indica que a replicação da tabela foi interrompida ou pausada. [!DNL Commerce Intelligence] não verifica se há dados novos ou atualizados durante um ciclo de atualização; isso significa que nenhum dado é replicado de uma tabela que tenha isso como seu Método de Replicação.
 
 ## Métodos de replicação incremental {#incremental}
 
 ### Modificado em (mais ideal)
 
-A variável `Modified At` o método de replicação usa uma coluna datetime - que é preenchida quando uma linha é criada e, em seguida, atualizada quando os dados são alterados - para localizar os dados que serão replicados. Este método foi projetado para funcionar com tabelas que atendem aos seguintes critérios:
+O método de replicação `Modified At` usa uma coluna datetime - que é preenchida quando uma linha é criada e depois atualizada quando os dados são alterados - para encontrar os dados que serão replicados. Este método foi projetado para funcionar com tabelas que atendem aos seguintes critérios:
 
-* contém um `datetime` coluna que é preenchida inicialmente quando uma linha é criada e é atualizada sempre que a linha é modificada;
-* o `datetime` a coluna nunca é nula;
+* contém uma coluna `datetime` que é preenchida inicialmente quando uma linha é criada e é atualizada sempre que a linha é modificada;
+* a coluna `datetime` nunca é nula;
 * as linhas não são excluídas da tabela
 
-Além desses critérios, a Adobe recomenda **indexação** o `datetime` coluna usada para `Modified At` replicação, pois isso ajuda a otimizar a velocidade da replicação.
+Além desses critérios, o Adobe recomenda a **indexação** da coluna `datetime` usada para a replicação `Modified At`, pois isso ajuda a otimizar a velocidade da replicação.
 
-Quando a atualização é executada, dados novos ou alterados são identificados pela pesquisa de linhas que têm um valor no `datetime` que ocorreu após a atualização mais recente. Quando novas linhas são descobertas, elas são replicadas na Data Warehouse. Se houver linhas na variável [Gerenciador de Data Warehouse](../data-warehouse-mgr/tour-dwm.md), eles são substituídos pelos valores atuais do banco de dados.
+Quando a atualização é executada, dados novos ou alterados são identificados pela pesquisa de linhas com um valor na coluna `datetime` que ocorreram após a atualização mais recente. Quando novas linhas são descobertas, elas são replicadas na Data Warehouse. Se houver linhas no [Gerenciador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), elas serão substituídas pelos valores atuais do banco de dados.
 
-Por exemplo, uma tabela pode ter uma coluna chamada `modified\_at` que indica a última vez que os dados foram alterados. Se a atualização mais recente for executada na terça-feira ao meio-dia, a atualização pesquisará todas as linhas que tiverem uma `modified\_at` valor maior que terça-feira ao meio-dia. Todas as linhas descobertas que foram criadas ou modificadas desde o meio-dia da terça-feira são replicadas na Data Warehouse.
+Por exemplo, uma tabela pode ter uma coluna chamada `modified\_at` que indica a última vez que os dados foram alterados. Se a atualização mais recente for executada na terça-feira ao meio-dia, a atualização pesquisará todas as linhas com um valor de `modified\_at` maior que na terça-feira ao meio-dia. Todas as linhas descobertas que foram criadas ou modificadas desde o meio-dia da terça-feira são replicadas na Data Warehouse.
 
 **Você sabia?**
-Mesmo que seu banco de dados não possa suportar um `Incremental` Método de replicação, talvez você possa [fazer alterações no banco de dados](../../best-practices/mod-db-inc-replication.md) que permitiria a utilização de `Modified At` ou `Single Auto Incrementing PK`.
+Mesmo que seu banco de dados não seja compatível com um método de Replicação `Incremental`, você poderá [fazer alterações no banco de dados](../../best-practices/mod-db-inc-replication.md) que permitiriam o uso de `Modified At` ou `Single Auto Incrementing PK`.
 
-`Modified At` não é apenas o método de replicação mais ideal, é também o mais rápido. Esse método não apenas produz aumentos perceptíveis de velocidade com grandes conjuntos de dados, como também não requer a configuração de uma opção de reverificação. Outros métodos precisam iterar por meio de uma tabela inteira para identificar alterações, mesmo se um pequeno subconjunto de dados tiver sido alterado. `Modified At` repete somente esse pequeno subconjunto.
+`Modified At` não é apenas o método de replicação mais ideal, é também o mais rápido. Esse método não apenas produz aumentos perceptíveis de velocidade com grandes conjuntos de dados, como também não requer a configuração de uma opção de reverificação. Outros métodos precisam iterar por meio de uma tabela inteira para identificar alterações, mesmo se um pequeno subconjunto de dados tiver sido alterado. `Modified At` repete somente através desse pequeno subconjunto.
 
 ### Chave primária de incrementação automática única
 
-`Auto Incrementing` é um comportamento que atribui sequencialmente chaves primárias a linhas. Se uma tabela for `Auto Incrementing` e a chave primária mais alta na tabela for 1.000, então o próximo valor primário será 1.001 ou superior. Uma tabela que não usa `Auto Incrementing` O comportamento do pode atribuir um valor de chave primária inferior a 1.000 ou saltar para um número muito maior, mas isso não é usado com frequência.
+`Auto Incrementing` é um comportamento que atribui sequencialmente chaves primárias a linhas. Se uma tabela for `Auto Incrementing` e a chave primária mais alta for 1.000, o próximo valor primário será 1.001 ou superior. Uma tabela que não usa o comportamento `Auto Incrementing` pode atribuir um valor de chave primária menor que 1.000 ou saltar para um número muito maior, mas isso não é comumente usado.
 
 Esse método foi projetado para replicar novos dados de tabelas que atendem aos seguintes critérios:
 
 * `single-column primary key`; e
-* `primary key` o tipo de dados é `integer`; e
-* `auto incrementing` valores da chave primária.
+* O tipo de dados `primary key` é `integer`; e
+* `auto incrementing` valores de chave primária.
 
-Quando uma tabela está usando `Single Auto Incrementing Primary Key` replicação, novos dados são detectados procurando valores de chave primária que sejam maiores que o valor mais alto atual em sua Data Warehouse. Por exemplo, se o valor mais alto da chave primária na sua Data Warehouse for 500, quando a próxima atualização for executada, ela pesquisará linhas com valores de chave primária de 501 ou superiores.
+Quando uma tabela está usando a replicação do `Single Auto Incrementing Primary Key`, novos dados são descobertos pela pesquisa de valores de chave primária maiores que o valor mais alto atual na Data Warehouse. Por exemplo, se o valor mais alto da chave primária na sua Data Warehouse for 500, quando a próxima atualização for executada, ela pesquisará linhas com valores de chave primária de 501 ou superiores.
 
 ### Adicionar data
 
-A variável `Add Date` O método funciona de forma semelhante à `Single Auto Incrementing Primary Key` método. Em vez de usar um número inteiro para a chave primária da tabela, esse método usa um `timestamped` para verificar se há novas linhas.
+O método `Add Date` funciona de forma semelhante ao método `Single Auto Incrementing Primary Key`. Em vez de usar um número inteiro para a chave primária da tabela, esse método usa uma coluna `timestamped` para verificar se há novas linhas.
 
-Quando uma tabela usa `Add Date` Na replicação, os novos dados são detectados procurando valores de carimbo de data e hora maiores que a última data sincronizada com a sua Data Warehouse. Por exemplo, se uma última atualização foi executada em 12/2015 09:00:00, qualquer linha com um carimbo de data e hora maior que este será marcada como dados novos e replicada.
+Quando uma tabela usa a replicação do `Add Date`, novos dados são descobertos pela pesquisa de valores com carimbo de data e hora maiores que a última data sincronizada com sua Data Warehouse. Por exemplo, se uma última atualização foi executada em 12/20/2015 em 09:00:00, quaisquer linhas com um carimbo de data e hora maior que este serão marcadas como novos dados e replicadas.
 
 >[!NOTE]
 >
->Ao contrário do `Modified At` método, `Add Date` O não verifica as linhas existentes em busca de informações atualizadas - ele só espera pelas novas linhas.
+>Ao contrário do método `Modified At`, `Add Date` não verifica se há linhas existentes para obter informações atualizadas - só aguarda novas linhas.
 
 ## Métodos de replicação de tabela completa {#fulltable}
 
 ### Tabela completa
 
-`Full table` a replicação atualiza a tabela inteira sempre que novas linhas são detectadas. Esse é de longe o método de replicação menos eficiente, pois todos os dados devem ser reprocessados durante cada atualização, supondo que haja novas linhas.
+A replicação `Full table` atualiza a tabela inteira sempre que novas linhas são detectadas. Esse é de longe o método de replicação menos eficiente, pois todos os dados devem ser reprocessados durante cada atualização, supondo que haja novas linhas.
 
-Novas linhas são detectadas consultando o banco de dados no início do processo de sincronização e contando o número de linhas. Se o banco de dados local contiver mais linhas do que [!DNL Commerce Intelligence], a tabela será atualizada. Se as contagens de linhas forem idênticas ou se [!DNL Commerce Intelligence] contém *mais* que o seu banco de dados local, a tabela será ignorada.
+Novas linhas são detectadas consultando o banco de dados no início do processo de sincronização e contando o número de linhas. Se o banco de dados local contiver mais linhas do que [!DNL Commerce Intelligence], a tabela será atualizada. Se as contagens de linhas forem idênticas ou se [!DNL Commerce Intelligence] contiver *mais* linhas do que o banco de dados local, a tabela será ignorada.
 
-Isto levanta a questão importante de **`Full Table`a replicação é incompatível quando:**
+Isso gera o ponto importante de que a replicação **`Full Table`é incompatível quando:**
 
 * mais linhas são excluídas do que criadas na tabela do banco de dados local entre os ciclos de atualização subsequentes, ou
 * os valores da coluna são alterados, mas nenhuma linha adicional é criada
 
-Em qualquer um dos cenários acima, `Full Table` a replicação não detecta alterações e seus dados se tornam obsoletos. Devido à ineficiência desse método de replicação e aos requisitos mencionados acima, `Full Table` a replicação só é recomendada como último recurso.
+Em qualquer um dos cenários acima, a replicação do `Full Table` não detecta nenhuma alteração e seus dados tornam-se obsoletos. Devido à ineficiência deste método de replicação e aos requisitos mencionados acima, a replicação `Full Table` é recomendada somente como último recurso.
 
 ### Lote da chave primária
 
-Quando uma tabela usa `Primary Key Batch` (Lote de CP), novos dados são descobertos ao contar linhas dentro de intervalos, ou lotes, de valores de chave primária. Enquanto você normalmente pensa que isso está sendo usado com inteiros, até mesmo valores de texto podem ser ordenados de uma maneira que permite que o sistema defina intervalos constantes.
+Quando uma tabela usa `Primary Key Batch` (Lote PK), novos dados são descobertos pela contagem de linhas dentro de intervalos, ou lotes, de valores de chave primária. Enquanto você normalmente pensa que isso está sendo usado com inteiros, até mesmo valores de texto podem ser ordenados de uma maneira que permite que o sistema defina intervalos constantes.
 
 Por exemplo, digamos que uma atualização seja executada e execute uma contagem de linhas para o intervalo de chaves de 1 a 100. Nesta atualização, o sistema encontra e registra 37 linhas. Na próxima atualização, uma contagem de linhas é executada novamente no intervalo de 1 a 100 e encontra 41 linhas. Como há uma diferença no número de linhas em comparação à última atualização, o sistema inspeciona esse intervalo (ou lote) com mais detalhes.
 
@@ -101,18 +101,18 @@ Esse método não é ideal, pois é incrivelmente lento devido à quantidade de 
 
 ## Configuração de métodos de replicação
 
-Os métodos de replicação são definidos tabela por tabela. Para definir um método de replicação para uma tabela, você precisa [`Admin`](../../administrator/user-management/user-management.md) para que você possa acessar o Gerenciador de Datas Warehouse.
+Os métodos de replicação são definidos tabela por tabela. Para definir um método de replicação para uma tabela, você precisa de [`Admin`](../../administrator/user-management/user-management.md) permissões para acessar o Gerenciador de Datas Warehouse.
 
-1. No Gerenciador de Datas Warehouse, selecione a tabela no `Synced Tables` para exibir o schema da tabela.
+1. Uma vez no Gerenciador de Datas Warehouse, selecione a tabela na lista `Synced Tables` para exibir o esquema da tabela.
 1. O método de replicação atual está listado abaixo do nome da tabela. Para alterá-lo, clique no link.
-1. Na janela pop-up exibida, clique no botão de opção ao lado de `Incremental` ou `Full Table` replicação para selecionar um tipo de replicação.
-1. Clique em **[!UICONTROL Replication Method]** para selecionar um método. Por exemplo, `Paused` ou `Modified At`.
+1. Na janela pop-up exibida, clique no botão de opção ao lado da replicação `Incremental` ou `Full Table` para selecionar um tipo de replicação.
+1. Em seguida, clique na lista suspensa **[!UICONTROL Replication Method]** para selecionar um método. Por exemplo, `Paused` ou `Modified At`.
 
    >[!NOTE]
    >
-   >**Alguns métodos incrementais exigem a definição de um`Replication Key`**. [!DNL Commerce Intelligence] O usará essa chave para determinar onde o próximo ciclo de atualização deve começar.
+   >**Alguns métodos incrementais exigem que você defina um`Replication Key`**. O [!DNL Commerce Intelligence] usará essa chave para determinar onde o próximo ciclo de atualização deve começar.
    >
-   >Por exemplo, se você deseja usar a variável `modified at` método para o seu `orders` , é necessário definir um `date column` como a chave de replicação. Várias opções para chaves de replicação podem existir, mas você seleciona `created at`ou a hora em que o pedido foi criado. Se o último ciclo de atualização parasse em 1/12/2015 00:10:00, o próximo ciclo iniciaria a replicação de dados com um `created at` data posterior a esta.
+   >Por exemplo, se você deseja usar o método `modified at` para a tabela `orders`, é necessário definir um `date column` como a chave de replicação. Várias opções para chaves de replicação podem existir, mas você seleciona `created at` ou a hora em que o pedido foi criado. Se o último ciclo de atualização parasse em 01/12/2015 00:10:00, o próximo ciclo começaria a replicar dados com uma data `created at` maior que esta.
 
 1. Quando terminar, clique em **[!UICONTROL Save]**.
 

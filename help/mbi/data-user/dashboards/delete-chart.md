@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Excluir um gráfico permanentemente
 
-Mesmo que você [remover um gráfico do painel](../../data-user/dashboards/remove-charts-dashboard.md), ele ainda existe no seu [!DNL Commerce Intelligence] conta.
+Mesmo que você [remova um gráfico do painel](../../data-user/dashboards/remove-charts-dashboard.md), ele ainda existirá em sua conta do [!DNL Commerce Intelligence].
 
 Para excluir permanentemente um gráfico:
 
@@ -29,7 +29,7 @@ Para excluir permanentemente um gráfico:
 
    >[!NOTE]
    >
-   >Se o gráfico estiver sendo usado em um painel ou resumo de email, uma notificação será exibida. Para continuar, confirme a exclusão e clique em **[!UICONTROL Force Deletion]**.
+   >Se o gráfico estiver sendo usado em um painel ou resumo de email, uma notificação será exibida. Para continuar, você deve confirmar a exclusão e, em seguida, clicar em **[!UICONTROL Force Deletion]**.
 
 Exemplo:
 

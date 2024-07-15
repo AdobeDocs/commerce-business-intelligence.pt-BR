@@ -19,7 +19,7 @@ Esta seção demonstra como:
 * conectar e importar dados para [!DNL Commerce Intelligence]
 * visualizar como os dados são armazenados e estruturados na Data Warehouse
 * analisar seus dados
-* use o [!DNL SQL Report Builder]
+* usar o [!DNL SQL Report Builder]
 
 ## Relacionados
 

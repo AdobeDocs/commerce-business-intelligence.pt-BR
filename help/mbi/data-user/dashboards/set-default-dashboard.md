@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Definir um painel padrão
 
-O painel padrão é o primeiro painel exibido ao abrir [!DNL Commerce Intelligence].
+O painel padrão é o primeiro painel que você vê ao abrir [!DNL Commerce Intelligence].
 
-1. No painel, clique em **[!UICONTROL Dashboard Options]** localizado na parte superior da tela.
+1. No painel, clique em **[!UICONTROL Dashboard Options]**, localizado na parte superior da tela.
 
 1. Clique em **[!UICONTROL Make Default]** na lista suspensa.
 

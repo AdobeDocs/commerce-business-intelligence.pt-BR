@@ -17,4 +17,4 @@ Ser capaz de prever o valor vitalício dos clientes à medida que fazem mais ped
 
 Nesta seção, você aprenderá sobre o valor vitalício dos clientes atuais e projetará como o valor vitalício aumenta com mais pedidos.
 
-Consulte também: [Análise do valor vitalício esperado (LTV) (básica)](../../data-analyst/analysis/ess-expected-ltv.md)
+Consulte também: [Análise de valor vitalício esperado (LTV) (básica)](../../data-analyst/analysis/ess-expected-ltv.md)

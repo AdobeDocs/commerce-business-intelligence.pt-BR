@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Otimizar seu banco de dados
 
-A principal vantagem de usar um banco de dados operacional para [!DNL Adobe Commerce Intelligence] é que nada precisa ser criado ou modificado para coletar dados. Informações valiosas já estão disponíveis - você só precisa desbloqueá-las.
+O principal benefício de usar um banco de dados operacional para [!DNL Adobe Commerce Intelligence] é que nada precisa ser compilado ou modificado para coletar dados. Informações valiosas já estão disponíveis - você só precisa desbloqueá-las.
 
 Este tópico contém algumas recomendações para ajudá-lo a otimizar seu banco de dados para análise e desenhar insights acionáveis a partir de dados brutos.
 
@@ -35,15 +35,15 @@ Usando as datas de logon como exemplo, muitas empresas armazenam a data do últi
 
 Geralmente, se você estiver atualizando um registro devido a algum tipo de ação do usuário, não substitua as informações sobre uma ação do usuário anterior ou separada.
 
-## Incluir `Updated_at` Colunas para dados atualizados ao longo do tempo
+## Incluir `Updated_at` colunas para dados atualizados ao longo do tempo
 
-Se as linhas de uma tabela tiverem valores alterados ao longo do tempo, por exemplo, **order\_status** alterações de`processing` para `complete`, inclua um **atualizado\_em** coluna a ser registrada quando ocorrer a última alteração. Assegure que uma **atualizado\_em** estiver disponível ao inserir a nova linha de dados pela primeira vez, quando a variável **atualizado\_em** A data corresponde à **created\_at** data.
+Se as linhas de uma tabela tiverem valores alterados com o tempo, por exemplo, **order\_status** alterações de`processing` para `complete`, inclua uma coluna **updated\_at** para registrar quando ocorrer a alteração mais recente. Verifique se um valor de **atualizado\_às** está disponível ao inserir a nova linha de dados pela primeira vez, quando a data **atualizada\_às** corresponder à data **criada\_às**.
 
-Além de otimizar para análise, **atualizado\_em** As colunas também permitem usar [Métodos de replicação incremental](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), o que pode ajudar a reduzir a duração dos ciclos de atualização.
+Além da otimização para análise, as colunas **updated\_at** também permitem que você use os [Métodos de replicação incremental](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), o que pode ajudar a reduzir a duração dos ciclos de atualização.
 
-## Armazenar origem de aquisição de usuário
+## Armazenar Source de aquisição de usuário
 
-Um dos erros mais comuns é o [origem de aquisição do usuário](../data-analyst/analysis/google-track-user-acq.md) (UAS) não armazenado no banco de dados operacional. Na maioria das situações quando isso é um problema, o UAS só está sendo rastreado por meio de [!DNL Google Analytics] ou alguma outra ferramenta de análise da web. Embora essas ferramentas possam ser valiosas, há algumas desvantagens em armazenar UAS nelas exclusivamente; como, você não pode extrair dados no nível do usuário dessas ferramentas. Quando é possível, geralmente é um processo difícil. Deve ser fácil obter essas informações e combiná-las com dados de outras fontes, como as informações comportamentais e transacionais também armazenadas no banco de dados.
+Um dos erros mais comuns é que a [fonte de aquisição do usuário](../data-analyst/analysis/google-track-user-acq.md) (UAS) não está sendo armazenada no banco de dados operacional. Na maioria das situações quando isso é um problema, o UAS só está sendo rastreado por meio do [!DNL Google Analytics] ou alguma outra ferramenta de análise da Web. Embora essas ferramentas possam ser valiosas, há algumas desvantagens em armazenar UAS nelas exclusivamente; como, você não pode extrair dados no nível do usuário dessas ferramentas. Quando é possível, geralmente é um processo difícil. Deve ser fácil obter essas informações e combiná-las com dados de outras fontes, como as informações comportamentais e transacionais também armazenadas no banco de dados.
 
 Armazenar o UAS em seu próprio banco de dados geralmente é a maior melhoria que uma empresa online pode fazer em suas capacidades analíticas. Isso permite a análise de vendas, envolvimento do usuário, períodos de retorno, valor vitalício do cliente, churn e outras métricas críticas por UAS. [Esses dados são cruciais ao decidir onde investir os recursos de marketing](../data-analyst/analysis/most-value-source-channel.md).
 
@@ -53,15 +53,15 @@ Muitas empresas se concentram apenas em encontrar canais que forneçam novos usu
 
 ### Definir uma chave primária
 
-A [chave primária](https://en.wikipedia.org/wiki/Unique_key) é uma coluna (ou conjunto de colunas) inalterável que produz valores únicos em uma tabela. As chaves primárias são incrivelmente importantes, pois garantem que suas tabelas sejam replicadas corretamente em [!DNL Commerce Intelligence].
+Uma [chave primária](https://en.wikipedia.org/wiki/Unique_key) é uma coluna (ou conjunto de colunas) inalterável que produz valores únicos dentro de uma tabela. As chaves primárias são incrivelmente importantes, pois garantem que suas tabelas sejam replicadas corretamente em [!DNL Commerce Intelligence].
 
 Ao criar chaves primárias, use um tipo de dados de número inteiro para a coluna que aumenta automaticamente. O Adobe recomenda evitar o uso de várias chaves primárias de coluna, quando possível.
 
-Se a tabela for uma visualização SQL, adicione uma coluna que possa agir como uma chave primária. [!DNL Commerce Intelligence] O pode identificar automaticamente essa coluna como uma chave primária.
+Se a tabela for uma visualização SQL, adicione uma coluna que possa agir como uma chave primária. [!DNL Commerce Intelligence] pode identificar automaticamente esta coluna como uma chave primária.
 
 ### Atribuir um Tipo de Dados à Coluna de Dados
 
-Se uma coluna de dados não tiver um [tipo de dados](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] adivinha qual tipo de dados usar. Se o sistema adivinhar incorretamente, talvez você não possa realizar as análises relevantes até que a equipe de suporte do Adobe ajuste a coluna para o tipo de dados correto. Por exemplo, se uma coluna de data for adivinhada como um tipo de dados numérico, você poderá analisar a tendência ao longo do tempo usando essa dimensão de data.
+Se uma coluna de dados não tiver um [tipo de dados](https://en.wikipedia.org/wiki/Data_type) atribuído, [!DNL Commerce Intelligence] adivinhará qual tipo de dados usar. Se o sistema adivinhar incorretamente, talvez você não possa realizar as análises relevantes até que a equipe de suporte do Adobe ajuste a coluna para o tipo de dados correto. Por exemplo, se uma coluna de data for adivinhada como um tipo de dados numérico, você poderá analisar a tendência ao longo do tempo usando essa dimensão de data.
 
 ### Adicionar prefixos às tabelas de dados se você tiver vários bancos de dados
 

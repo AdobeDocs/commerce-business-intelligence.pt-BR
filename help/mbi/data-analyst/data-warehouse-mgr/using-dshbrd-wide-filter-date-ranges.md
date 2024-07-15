@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -19,38 +19,38 @@ Com a filtragem em todo o painel, é possível fazer edições em massa de todos
 
 Para alterar o intervalo de datas ou o intervalo de relatórios em um painel, clique no ícone de calendário no canto superior direito (![calendário](../../assets/calendar-button.png)).
 
-É possível optar por exibir dados usando um `Fixed Date Range` ou vários valores pré-calculados `Moving Date Ranges`:
+Você pode optar por exibir dados usando um `Fixed Date Range` ou vários `Moving Date Ranges` pré-calculados:
 
-![movimentação de intervalos de datas](../../assets/moving_date_ranges.png)
+![movendo intervalos de datas](../../assets/moving_date_ranges.png)
 
-A variável `Last Full...` as opções de intervalo móvel representam o intervalo concluído mais recentemente, enquanto `This...` é o intervalo atual em andamento. Por exemplo, se for junho, o `Last Full Month` é _1º de maio - 31 de maio_, enquanto `This Month` é _1 de junho - Agora_.
+As opções de intervalo móvel `Last Full...` representam o intervalo concluído mais recentemente, enquanto `This...` é o intervalo atual em andamento. Por exemplo, se for junho, o `Last Full Month` será de _1º de maio a 31_ de maio, enquanto `This Month` será de _1º de junho a Agora_.
 
 Ou crie o seu próprio `Custom Moving Range`\:
 
 ![intervalo de movimentação personalizado](../../assets/custom-moving-range.png)
 
-Escolha alterar o intervalo também. Selecionar o botão padrão (![padrão de intervalo de tempo](../../assets/time_interval_default.png)) significa que somente o intervalo de datas muda:
+Escolha alterar o intervalo também. Selecionar o botão padrão (![padrão de intervalo de tempo](../../assets/time_interval_default.png)) significa que somente o intervalo de datas é alterado:
 
-![intervalo de tempo](../../assets/time_interval.png)
+![intervalo](../../assets/time_interval.png)
 
-Para restaurar todos os relatórios para o intervalo de datas e datas iniciais, clique em **[!UICONTROL Restore Defaults]** ou clique em **[!UICONTROL Cancel]**.
+Para restaurar todos os relatórios para o intervalo de datas e intervalo iniciais, clique em **[!UICONTROL Restore Defaults]** ou em **[!UICONTROL Cancel]**.
 
 Ao especificar um filtro de datas para um painel, esse filtro é aplicado somente a esse painel. Não é aplicado quando você navega para outros painéis.
 
 >[!NOTE]
 >
->Atualmente, `Cohort Reports` e `SQL Reports` não são incluídos ao aplicar alterações no nível do painel.
+>Atualmente, `Cohort Reports` e `SQL Reports` não estão incluídos ao aplicar alterações no nível do painel.
 
 ## Armazenar filtros
 
-Para analisar o desempenho de uma loja específica, clique no ícone lojas no canto superior direito (![Filtro de armazenamento](../../assets/store-filter.png)). Por padrão, `Store Filter` está definida como `All Stores`, que exibe os dados de todos [exibições de loja](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) disponível em seu site do Commerce.
+Para analisar o desempenho de um armazenamento específico, clique no ícone de armazenamentos no canto superior direito (![Filtro de Armazenamento](../../assets/store-filter.png)). Por padrão, `Store Filter` está definido como `All Stores`, que exibe os dados de todas as [exibições de loja](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) disponíveis no site do Commerce.
 
 >[!NOTE]
 >
->Um filtro de armazenamento é ativado ou desativado para um [!DNL Commerce Intelligence] conta. Se um painel contiver relatórios que não são afetados pelo filtro (como relatórios que não são criados em qualquer [!DNL Adobe Commerce] dados), esses relatórios não são atualizados quando o filtro de armazenamento é aplicado. Você pode [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se você acredita que um relatório deve ser atualizado com base na seleção de armazenamento ou se acredita que seu filtro de armazenamento de conta foi desabilitado por engano.
+>Um filtro de repositório está habilitado ou desabilitado para uma conta [!DNL Commerce Intelligence] inteira. Se um painel contiver relatórios que não são afetados pelo filtro (como relatórios que não são criados em nenhum dado [!DNL Adobe Commerce]), esses relatórios não serão atualizados quando o filtro de armazenamento for aplicado. Você pode [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se achar que um relatório deve ser atualizado com base na seleção de armazenamento ou se achar que o filtro de armazenamento da sua conta foi desabilitado por engano.
 
-Ao selecionar um armazenamento na lista `Store Filter`, o filtro retém sua seleção ao navegar entre painéis. Manter a seleção permite ver os dados do armazenamento selecionado em todos os lugares até que você selecione `All Stores`.
+Quando você seleciona um armazenamento no `Store Filter`, o filtro retém sua seleção ao navegar entre painéis. Manter a seleção permite ver os dados do armazenamento selecionado em todos os lugares até que você selecione `All Stores`.
 
 ## Filtros para painéis compartilhados
 
-Para painéis compartilhados, se um usuário configurar o filtro de data, outros usuários com acesso ao painel verão o mesmo filtro aplicado. No entanto, o filtro de armazenamento não se aplica nesse caso. Se o proprietário do painel configurar o filtro de armazenamento e compartilhar o painel, o filtro de armazenamento configurado não persistirá para outro usuário. Um usuário deve ter [editar acesso](../../data-user/dashboards/share-dashboard-with-users.md) a um painel para ajustar os filtros do painel.
+Para painéis compartilhados, se um usuário configurar o filtro de data, outros usuários com acesso ao painel verão o mesmo filtro aplicado. No entanto, o filtro de armazenamento não se aplica nesse caso. Se o proprietário do painel configurar o filtro de armazenamento e compartilhar o painel, o filtro de armazenamento configurado não persistirá para outro usuário. O usuário deve ter [acesso de edição](../../data-user/dashboards/share-dashboard-with-users.md) a um painel para ajustar os filtros do painel.

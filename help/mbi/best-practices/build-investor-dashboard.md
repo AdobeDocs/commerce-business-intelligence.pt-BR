@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -59,20 +59,20 @@ Veja o que é necessário para criar relatórios para seu painel de investidores
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sessões
 
-Com um [!DNL Google Analytics] integração, é possível incluir relatórios sobre:
+Com uma integração [!DNL Google Analytics], você pode incluir relatórios sobre:
 
 * Visitas ao site
 * Índice de conversão
 
-Com o [Serviços de enriquecimento de dados do Commerce](https://business.adobe.com/products/magento/magento-commerce.html), é possível incluir relatórios sobre:
+Com os [serviços de Enriquecimento de Dados da Commerce](https://business.adobe.com/products/magento/magento-commerce.html), você pode incluir relatórios sobre:
 
 * Clientes únicos por estado/região, idade, sexo.
 
 ## Outras dicas
 
-* Use um método claro e conciso [convenção de nomenclatura](../best-practices/naming-elements.md)
+* Usar uma [convenção de nomenclatura](../best-practices/naming-elements.md) clara e concisa
 * Compartilhar o painel com usuários investidores
-* Ou envie-o via **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* Ou envie via **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
 * Crie apenas um painel. Isso facilita a manutenção do conteúdo e você sabe exatamente o que seus investidores estão vendo.
 
 Organize seus relatórios cuidadosamente e preste atenção aos detalhes. Uma vez concluído, o painel será semelhante ao mostrado abaixo:

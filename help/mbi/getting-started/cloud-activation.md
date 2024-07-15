@@ -1,5 +1,5 @@
 ---
-title: Ativar sua conta do Commerce Intelligence para Assinaturas do Cloud Starter
+title: Ativar a conta da Commerce Intelligence para assinaturas do Cloud Starter
 description: Saiba como ativar o Commerce Intelligence para projetos do Cloud Starter.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
 redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html

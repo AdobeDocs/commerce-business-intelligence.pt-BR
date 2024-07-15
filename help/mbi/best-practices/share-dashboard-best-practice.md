@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Compartilhar um painel
 
-Compartilhar painéis significa que você e sua equipe possuem as mesmas informações a qualquer momento, o que permite colaboração e discussão. Estas são algumas recomendações para compartilhar painéis e manter seus [!DNL Adobe Commerce Intelligence] conta organizada.
+Compartilhar painéis significa que você e sua equipe possuem as mesmas informações a qualquer momento, o que permite colaboração e discussão. Estas são algumas recomendações para compartilhar painéis e manter sua conta do [!DNL Adobe Commerce Intelligence] organizada.
 
 ## Evitar painéis duplicados
 
@@ -26,8 +26,8 @@ Para ver quem possui um painel, clique na lista suspensa de painéis no canto su
 Para remover todos os painéis duplicados:
 
 1. Sincronize com sua equipe e identifique a pessoa que deve manter o painel.
-1. [Deixar de compartilhar](../data-user/dashboards/leave-dashboard.md) de todos os painéis semelhantes, exceto aquele compartilhado pelo usuário principal.
-1. Se você tiver uma cópia do painel, [excluí-lo](../data-user/dashboards/deleting-dashboard.md).
+1. [Descompartilhe-se](../data-user/dashboards/leave-dashboard.md) de todos os painéis semelhantes, exceto aquele compartilhado pelo usuário principal.
+1. Se você tiver uma cópia do painel, [exclua-a](../data-user/dashboards/deleting-dashboard.md).
 1. Peça a outras pessoas que excluam a versão delas no painel.
 
 ## Criar um conjunto principal de painéis
@@ -36,11 +36,11 @@ Quando novos usuários são criados, eles não têm painéis ou gráficos. No en
 
 ## Compartilhar painéis com novos usuários
 
-Os novos usuários também podem se beneficiar do acesso a alguns painéis que não são compartilhados em toda a organização. Nesses casos, a Adobe recomenda que os proprietários de painéis [compartilhar os painéis relevantes](../data-user/dashboards/share-dashboard-with-users.md) com novos usuários quando suas contas são criadas.
+Os novos usuários também podem se beneficiar do acesso a alguns painéis que não são compartilhados em toda a organização. Nesses casos, a Adobe recomenda que os proprietários do painel [compartilhem os painéis relevantes](../data-user/dashboards/share-dashboard-with-users.md) com novos usuários quando suas contas forem criadas.
 
 ## Seja seletivo com permissões de edição
 
-`Edit` As permissões do dão aos usuários muita potência. Mas com grande poder vem grande responsabilidade. Para evitar alterações acidentais em seus gráficos e painéis, o Adobe recomenda que você seja seletivo sobre quem você deve fornecer `Edit` permissões para.
+`Edit` as permissões dão muita potência aos usuários. Mas com grande poder vem grande responsabilidade. Para evitar alterações acidentais em seus gráficos e painéis, a Adobe recomenda que você escolha a quem você dará permissões de `Edit`.
 
 ## Anotar Seus Gráficos
 

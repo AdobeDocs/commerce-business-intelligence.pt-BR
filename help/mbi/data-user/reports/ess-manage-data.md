@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Gerenciar dados fornece acesso a várias ferramentas para gerenciar integrações, dados de relatórios e gráficos, painéis e exportações.
 
-## Para acessar o [!DNL Manage Data]:
+## Para acessar [!DNL Manage Data]:
 
 1. No menu, clique em **[!DNL Manage Data]**.
 
@@ -25,4 +25,4 @@ Gerenciar dados fornece acesso a várias ferramentas para gerenciar integraçõe
    * `Manage Data`
    * `Export Data`
 
-   ![Gerenciar dados](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->
+   ![Gerenciar Dados](../../assets/magento-bi-manage-data.png)<!--{: .zoom}-->

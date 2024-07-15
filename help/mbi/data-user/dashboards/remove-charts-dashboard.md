@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Remover um gráfico de um painel
 
-Para remover um gráfico de um painel, clique no botão de engrenagem (![](../../assets/gear-icon.png)) no canto superior direito do gráfico e clique em **[!UICONTROL Remove from Dashboard]**.
+Para remover um gráfico de um painel, clique no ícone de engrenagem (![](../../assets/gear-icon.png)) no canto superior direito do gráfico e clique em **[!UICONTROL Remove from Dashboard]**.
 
 >[!NOTE]
 >
->Remover um gráfico não é o mesmo que [excluindo-o](../../data-user/dashboards/delete-chart.md). Além disso, [um gráfico pode ser lido em um painel](../../data-user/dashboards/add-charts-dashboard.md) a qualquer momento.
+>Remover um gráfico não é o mesmo que [excluí-lo](../../data-user/dashboards/delete-chart.md). Além disso, [um gráfico pode ser lido em um painel](../../data-user/dashboards/add-charts-dashboard.md) a qualquer momento.
 
 ![remover gráfico](../../assets/Removing_Charts_from_Dashboards.gif)

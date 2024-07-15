@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Consolidar suas tabelas
 
-Se você opera várias frentes de loja ou em vários mercados, você pode ter bancos de dados semelhantes armazenados separadamente. Entrada [!DNL Adobe Commerce Intelligence]No entanto, é fácil consolidar tabelas semelhantes de bancos de dados diferentes juntos.
+Se você opera várias frentes de loja ou em vários mercados, você pode ter bancos de dados semelhantes armazenados separadamente. No [!DNL Adobe Commerce Intelligence], é fácil consolidar tabelas semelhantes de bancos de dados diferentes.
 
-Por exemplo, você pode ter um `orders` tabela para `Market A`, e um similar `orders` tabela para `Market B`. [!DNL Commerce Intelligence] pode consolidar ambas as tabelas e permitir que você veja os dados da ordem agregada de ambos `Market A` e `B`, além de segmentá-la por mercado específico.
+Por exemplo, você pode ter uma tabela `orders` para `Market A` e uma tabela `orders` semelhante para `Market B`. O [!DNL Commerce Intelligence] pode consolidar ambas as tabelas e permitir que você veja os dados de ordem de agregação de `Market A` e `B`, além de segmentá-los por mercado específico.
 
-Para que a consolidação das tabelas funcione, as tabelas de entrada devem ser **estruturado de forma semelhante**. Em outras palavras, todas as tabelas de entrada devem conter as colunas de dados necessárias na tabela consolidada.
+Para que a consolidação de tabelas funcione, as tabelas de entrada devem ser **estruturadas de forma semelhante**. Em outras palavras, todas as tabelas de entrada devem conter as colunas de dados necessárias na tabela consolidada.
 
 Este tópico discute alguns dos casos de uso mais comuns para tabelas consolidadas e as próximas etapas necessárias para criar as suas próprias tabelas.
 
@@ -29,7 +29,7 @@ O documento a seguir discute quando pode ser apropriado usar tabelas consolidada
 
 Se você vender seus produtos em diferentes marcas e sites, é provável que as tabelas de cada marca ou site sejam estruturadas de forma semelhante.
 
-Por exemplo, você pode ter um `orders` tabela para site `A` e uma separada, mas semelhante, `orders` tabela para site `B`. Nesta situação, pode ser útil consolidar a `orders` tabelas do site `A` e `B`. Isso permite que você verifique a receita consolidada e o número de pedidos do site `A` e `B`, além de poder segmentar métricas por esses dois sites.
+Por exemplo, você pode ter uma tabela `orders` para o site `A` e uma tabela `orders` separada, mas semelhante, para o site `B`. Nessa situação, pode ser útil consolidar as tabelas `orders` do site `A` e `B`. Isso permite que você observe a receita consolidada e o número de pedidos dos sites `A` e `B`, além de poder segmentar as métricas por esses dois sites.
 
 ### Integração de dados herdados
 
@@ -45,8 +45,8 @@ Como em todas as outras tabelas da Data Warehouse, é possível adicionar mais c
 
 ## Criando, Exibindo ou Atualizando uma Tabela Consolidada
 
-Se você estiver interessado em adicionar uma tabela consolidada à sua Data Warehouse, entre em contato com [!DNL Commerce Intelligence] [suporte](../guide-overview.md#Submitting-a-Support-Ticket).
+Se você estiver interessado em adicionar uma tabela consolidada à sua Data Warehouse, contate o [!DNL Commerce Intelligence] [suporte](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Como as tabelas consolidadas não são visíveis na variável `Data Warehouse Manager`, a exibição e a atualização dessas tabelas só podem ser feitas por [!DNL Commerce Intelligence] suporte.
+>Como as tabelas consolidadas não são visíveis no `Data Warehouse Manager`, a exibição e a atualização dessas tabelas só pode ser feita pelo suporte [!DNL Commerce Intelligence].

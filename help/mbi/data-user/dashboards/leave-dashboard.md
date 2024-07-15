@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Deixar (cancelar o compartilhamento) de um painel
 
-Mudando equipes? No meio da primavera limpando o seu [!DNL Commerce Intelligence] conta? Para sair ou cancelar o compartilhamento de si mesmo de um painel, clique em **[!UICONTROL Shared]** na parte superior da tela, enquanto estiver no painel que deseja deixar. Clique em **[!UICONTROL Leave this Dashboard]** para se remover.
+Mudando equipes? No meio da primavera, está limpando sua conta [!DNL Commerce Intelligence]? Para sair ou cancelar o compartilhamento de um painel, clique em **[!UICONTROL Shared]** na parte superior da tela enquanto estiver no painel que deseja sair. Clique em **[!UICONTROL Leave this Dashboard]** para remover a si mesmo.
 
 Exemplo:
 

@@ -17,12 +17,12 @@ Talvez você queira editar um gráfico que pertença a outro usuário ou criar a
 
 ## Localizar o gráfico
 
-Primeiro, localize o gráfico que deseja copiar do outro usuário. Todos os painéis compartilhados com você podem ser encontrados na `Dashboard` barra lateral onde eles são marcados com um ícone compartilhado. Clique no painel desejado.
+Primeiro, localize o gráfico que deseja copiar do outro usuário. Todos os painéis compartilhados com você podem ser encontrados na barra lateral do `Dashboard`, onde estão marcados com um ícone compartilhado. Clique no painel desejado.
 
 ## Clonar o gráfico
 
-No painel compartilhado, escolha o gráfico que deseja copiar para sua própria conta. Clique na engrenagem (![](../../assets/gear-icon.png)) e clique em **[!UICONTROL Save As]**.
+No painel compartilhado, escolha o gráfico que deseja copiar para sua própria conta. Clique no ícone de engrenagem (![](../../assets/gear-icon.png)) e clique em **[!UICONTROL Save As]**.
 
-Você será solicitado a nomear sua cópia do gráfico e adicioná-lo a qualquer um dos painéis existentes. Se você não selecionar um painel, ele será adicionado à lista de gráficos existentes e você poderá [adicionar mais tarde](../../data-user/dashboards/add-charts-dashboard.md).
+Você será solicitado a nomear sua cópia do gráfico e adicioná-lo a qualquer um dos painéis existentes. Se você não selecionar um painel, ele será adicionado à lista de gráficos existentes e você poderá [adicioná-lo mais tarde](../../data-user/dashboards/add-charts-dashboard.md).
 
 ![total de clientes](../../assets/total-customers.png)

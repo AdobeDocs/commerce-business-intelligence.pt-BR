@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Pesquisar um painel
 
-Este tópico mostra como usar a variável [[!DNL Global Search] recurso](#global) para procurar painéis e como pesquisar [painéis de propriedade de outros usuários](#other).
+Este tópico mostra como usar o [[!DNL Global Search] recurso](#global) para procurar painéis e como procurar [painéis de propriedade de outros usuários](#other).
 
 ## Pesquisa global {#global}
 
-A variável [!DNL Global Search] permite procurar e selecionar painéis para visualização.
+O menu [!DNL Global Search] permite procurar e selecionar painéis para exibição.
 
-* *Para visualizar uma lista de seus painéis existentes*, clique no painel.
+* *Para exibir uma lista de seus painéis existentes*, clique no painel.
 
 * *Para pesquisar um painel*, digite alguns critérios de pesquisa na barra de pesquisa depois de clicar na lista suspensa do painel. Se algum painel corresponder aos critérios, será exibido primeiro na lista.
 
@@ -29,6 +29,6 @@ Exemplo:
 
 ## Localizar painéis de propriedade de outros usuários {#other}
 
-Procurando um painel de propriedade de outro usuário? Se o painel puder ser visualizado por outras pessoas, procure-o clicando em **[!UICONTROL Find]** no `Dashboard Options` lista suspensa.
+Procurando um painel de propriedade de outro usuário? Se o painel puder ser visualizado por outras pessoas, você poderá pesquisá-lo clicando em **[!UICONTROL Find]** na lista suspensa `Dashboard Options`.
 
 ![localizar painéis](../../assets/find-dboards-other-owners.png)

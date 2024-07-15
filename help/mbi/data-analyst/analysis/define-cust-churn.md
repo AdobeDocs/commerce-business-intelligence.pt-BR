@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-
 
 Colunas para criar
 
-* `customer_entity` tabela
+* Tabela `customer_entity`
 * `Customer's lifetime number of orders`
 * Selecione uma definição: `Count`
 * Selecione um [!UICONTROL table]: `sales_flat_order`
@@ -32,7 +32,7 @@ Colunas para criar
 * [!UICONTROL Filter]:
 * Pedidos contados
 
-* `sales_flat_order` tabela
+* Tabela `sales_flat_order`
 * `Customer's lifetime number of orders`
 * Selecione uma definição: coluna unida
 * Selecione um [!UICONTROL table]: `customer_entity`
@@ -44,11 +44,11 @@ Colunas para criar
 * Selecione uma definição: `Age`
 * Selecione um [!UICONTROL column]: `created_at`
 
-* **`Customer's order number`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
-* **`Is customer's last order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
-* **`Seconds since previous order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
-* **`Months since order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
-* **`Months since previous order`** O é criado por um analista como parte de sua **[DEFINIÇÃO DE CHURN]** tíquete
+* **`Customer's order number`** foi criado por um analista como parte do seu tíquete **[DEFININDO CHURN]**
+* **`Is customer's last order`** foi criado por um analista como parte do seu tíquete **[DEFININDO CHURN]**
+* **`Seconds since previous order`** foi criado por um analista como parte do seu tíquete **[DEFININDO CHURN]**
+* **`Months since order`** foi criado por um analista como parte do seu tíquete **[DEFININDO CHURN]**
+* **`Months since previous order`** foi criado por um analista como parte do seu tíquete **[DEFININDO CHURN]**
 
 ## Métricas
 
@@ -56,7 +56,7 @@ Nenhuma métrica nova!
 
 >[!NOTE]
 >
->Verifique se [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
+>[adicione todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
 
 ## Relatórios
 
@@ -66,9 +66,9 @@ Nenhuma métrica nova!
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Métrica B: pedidos a todo momento
-* [!UICONTROL Metric]: Número de pedidos
+* [!UICONTROL Metric]: Número de ordens
 
-* [!UICONTROL Formula]: probabilidade inicial de ordem de repetição
+* [!UICONTROL Formula]: Probabilidade inicial de repetição de ordem
 * 
   [!UICONTROL Fórmula]: `A/B`
 * 
@@ -80,7 +80,7 @@ Nenhuma métrica nova!
 * 
   [!UICONTROL Chart type]: `Scalar`
 
-* **Probabilidade de ordem de repetição em determinados meses desde a ordem**
+* **Probabilidade de ordem repetida fornecida meses desde a ordem**
 * Métrica A: repetir pedidos por meses desde o pedido anterior (ocultar)
 * [!UICONTROL Metric]: `Number of orders`
 * 
@@ -107,7 +107,7 @@ Nenhuma métrica nova!
 * 
   [!UICONTROL Agrupar por]: `Independent`
 
-* [!UICONTROL Formula]: probabilidade inicial de ordem de repetição
+* [!UICONTROL Formula]: Probabilidade inicial de repetição de ordem
 * 
   [!UICONTROL Fórmula]: `(C-A)/(C+D-A-B)`
 * 
@@ -128,8 +128,8 @@ A fórmula usada simplifica para (Total de pedidos repetidos que ocorreram após
 
 Depois de criar o painel, a pergunta mais comum é: como usar isso para determinar um limite de churn?
 
-**Não há &quot;uma resposta certa&quot; para isso.** No entanto, Adobe recomenda encontrar o ponto em que a linha cruza o valor que é metade da taxa de probabilidade de repetição inicial. Este é o ponto em que você pode dizer &quot;Se um usuário vai fazer uma ordem repetida, ele provavelmente já teria feito isso&quot;. Em última análise, o objetivo é selecionar o limite no qual faz sentido alternar de esforços de &quot;retenção&quot; para esforços de &quot;reativação&quot;.
+**Não há &quot;uma resposta certa&quot; para isso.** No entanto, Adobe recomenda encontrar o ponto onde a linha cruza o valor que é metade da taxa de probabilidade de repetição inicial. Este é o ponto em que você pode dizer &quot;Se um usuário vai fazer uma ordem repetida, ele provavelmente já teria feito isso&quot;. Em última análise, o objetivo é selecionar o limite no qual faz sentido alternar de esforços de &quot;retenção&quot; para esforços de &quot;reativação&quot;.
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode parecer com a imagem na parte superior da página
 
-Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

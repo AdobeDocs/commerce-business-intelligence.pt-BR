@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Este tópico demonstra como configurar um painel que fornece uma análise detalh
 
 ![](../../assets/detailed-returns-dboard.png)
 
-Antes de começar, você deve ser um [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) cliente e deve garantir que sua empresa esteja usando o `enterprise\_rma` tabela para devoluções.
+Antes de começar, você deve ser um cliente do [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) e verificar se sua empresa está usando a tabela `enterprise\_rma` para devoluções.
 
 Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -25,14 +25,14 @@ Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-
 
 Colunas a serem rastreadas
 
-* **`enterprise_rma`** ou **`rma`** tabela
+* Tabela **`enterprise_rma`** ou **`rma`**
 * **`entity_id`**
 * **`status`**
 * **`order_id`**
 * **`customer_id`**
 * **`date_requested`**
 
-* **`enterprise_rma_item_entity`** ou **`rma_item_entity`** tabela
+* Tabela **`enterprise_rma_item_entity`** ou **`rma_item_entity`**
 * **`entity_id`**
 * **`rma_entity_id`**
 * **`qty_returned`**
@@ -43,12 +43,12 @@ Colunas a serem rastreadas
 
 Conjuntos de filtros a serem criados
 
-* **`enterprise_rma`** tabela
+* Tabela **`enterprise_rma`**
 * Nome do conjunto de filtros: `Returns we count`
 * Lógica do conjunto de filtros:
    * Espaço reservado - insira sua lógica personalizada aqui
 
-* **`enterprise_rma_item_entity`** tabela
+* Tabela **`enterprise_rma_item_entity`**
 * Nome do conjunto de filtros: `Returns items we count`
 * Lógica do conjunto de filtros:
    * Espaço reservado - insira sua lógica personalizada aqui
@@ -57,7 +57,7 @@ Conjuntos de filtros a serem criados
 
 Colunas para criar
 
-* **`enterprise_rma`** tabela
+* Tabela **`enterprise_rma`**
 * **`Order's created at`**
 * Selecione uma definição: `Joined Column`
 * [!UICONTROL Create Path]:
@@ -76,9 +76,9 @@ Colunas para criar
 * Selecione um [!UICONTROL column]: `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** O é criado por um analista como parte de sua `[RETURNS ANALYSIS]` tíquete
+* **`Time between order's created_at and date_requested`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
 
-* **`enterprise_rma_item_entity`** tabela
+* Tabela **`enterprise_rma_item_entity`**
 * **`return_date_requested`**
 * Selecione uma definição: `Joined Column`
 * [!UICONTROL Create Path]:
@@ -91,16 +91,16 @@ Colunas para criar
 * Selecione um [!UICONTROL column]: `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** O é criado por um analista como parte de sua `[RETURNS ANALYSIS]` tíquete
+* **`Return item total value (qty_returned * price)`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
 
-* **`sales_flat_order`** tabela
+* Tabela **`sales_flat_order`**
 * **`Order contains a return? (1=yes/0=No)`**
 * Selecione uma definição: `Exists`
 * Selecione um [!UICONTROL table]: `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** O é criado por um analista como parte de sua `[RETURNS ANALYSIS]` tíquete
-* **`Customer's previous order contains return? (1=yes/0=no)`** O é criado por um analista como parte de sua `[RETURNS ANALYSIS]` tíquete
+* **`Customer's previous order number`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
+* **`Customer's previous order contains return? (1=yes/0=no)`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
 
 >[!NOTE]
 >
@@ -109,36 +109,36 @@ Colunas para criar
 ### Métricas
 
 * **Devoluções**
-* No **`enterprise_rma`** tabela
-* Essa métrica executa uma **Contagem**
-* No **`entity_id`** coluna
-* Ordenado por **`date_requested`**
+* Na tabela **`enterprise_rma`**
+* Esta métrica executa uma **Contagem**
+* Na coluna **`entity_id`**
+* Encomendado por **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Itens devolvidos**
-* No **`enterprise_rma_item_entity`** tabela
-* Essa métrica executa uma **Sum**
-* No **`qty_approved`** coluna
-* Ordenado por **`return date_requested`**
+* **Itens retornados**
+* Na tabela **`enterprise_rma_item_entity`**
+* Esta métrica executa uma **Soma**
+* Na coluna **`qty_approved`**
+* Encomendado por **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **Valor total do item retornado**
-* No **`enterprise_rma_item_entity`** tabela
-* Essa métrica executa uma **Sum**
-* No **`Returned item total value (qty_returned * price)`** coluna
-* Ordenado por **`return date_requested`**
+* Na tabela **`enterprise_rma_item_entity`**
+* Esta métrica executa uma **Soma**
+* Na coluna **`Returned item total value (qty_returned * price)`**
+* Encomendado por **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Tempo médio entre a ordem e a devolução**
-* No **`enterprise_rma`** tabela
-* Essa métrica executa uma **Média**
-* No **`Time between order's created_at and date_requested`** coluna
-* Ordenado por **`date_requested`**
+* **Tempo médio entre a ordem e o retorno**
+* Na tabela **`enterprise_rma`**
+* Esta métrica executa uma **Média**
+* Na coluna **`Time between order's created_at and date_requested`**
+* Encomendado por **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->Verifique se [adicionar todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
+>[adicione todas as novas colunas como dimensões às métricas](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes de criar novos relatórios.
 
 ### Relatórios
 
@@ -167,7 +167,7 @@ Colunas para criar
 * 
   [!UICONTROL Tipo de gráfico]: `Bar`
 
-* **Tempo médio para retornar (todo o tempo)**
+* **Tempo médio para retornar (o tempo todo)**
 * Métrica `A`: `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
@@ -177,7 +177,7 @@ Colunas para criar
 * 
   [!UICONTROL Tipo de gráfico]: `Number`
 
-* **Porcentagem de ordens com uma devolução**
+* **Porcentagem de pedidos com retorno**
 * Métrica `A`: `Number of orders`
 * [!UICONTROL Metric]: `Number of orders`
 
@@ -205,7 +205,7 @@ Colunas para criar
 * 
   [!UICONTROL Tipo de gráfico]: `Line`
 
-* **Clientes que fizeram um retorno e não compraram novamente**
+* **Clientes que fizeram uma devolução e não compraram novamente**
 * Métrica `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -242,4 +242,4 @@ Colunas para criar
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima.
 
-Se você tiver dúvidas ao criar essa análise ou se desejar entrar em contato com a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você tiver dúvidas ao criar esta análise ou quiser envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

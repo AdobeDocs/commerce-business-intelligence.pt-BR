@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Diferenças entre [!DNL SQL] e [!DNL Data Warehouse Manager]
 
-Há duas diferenças principais entre as colunas criadas no [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) e as criadas com o uso do [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). Uma é a dependência dos ciclos de atualização e a outra é como as colunas são salvas em sua conta.
+Há duas diferenças principais entre as colunas criadas em [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) e as criadas com o [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). Uma é a dependência dos ciclos de atualização e a outra é como as colunas são salvas em sua conta.
 
 ## Colunas na [!DNL SQL Report Builder]
 
@@ -21,8 +21,8 @@ As colunas não dependem dos ciclos de atualização, portanto, não é mais nec
 
 >[!IMPORTANT]
 >
->As colunas criadas usando a variável [!DNL SQL] editor não são salvos na Data Warehouse. Você sempre tem acesso à consulta contendo a coluna, mas se quiser usar a coluna em mais de um relatório, será necessário recriá-la na consulta para cada relatório. Isso significa que as colunas criadas usando o [!DNL SQL] O editor não pode ser usado no [!DNL Report Builder].
+>As colunas criadas usando o editor [!DNL SQL] não são salvas na Data Warehouse. Você sempre tem acesso à consulta contendo a coluna, mas se quiser usar a coluna em mais de um relatório, será necessário recriá-la na consulta para cada relatório. Isso significa que as colunas criadas usando o editor [!DNL SQL] não podem ser usadas no [!DNL Report Builder] tradicional.
 
 ## Colunas no Gerenciador de Datas Warehouse
 
-As colunas dependem dos ciclos de atualização, portanto, um ciclo completo deve ser concluído antes de serem editadas. Essas colunas são salvas no Gerenciador de Datas Warehouse e podem ser usadas na [!DNL Report Builder] ou [!DNL SQL Report Builder].
+As colunas dependem dos ciclos de atualização, portanto, um ciclo completo deve ser concluído antes de serem editadas. Essas colunas são salvas no Gerenciador de Datas Warehouse e podem ser usadas na [!DNL Report Builder] ou [!DNL SQL Report Builder] tradicional.

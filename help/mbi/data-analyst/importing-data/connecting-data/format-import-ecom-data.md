@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Formatação e Importação de Dados
 
-Se você estiver usando uma integração não compatível com o [!DNL Adobe Commerce Intelligence], você ainda poderá usar o [Recurso de carregamento de arquivo](using-file-uploader.md) para inserir seus dados na Data Warehouse. Este tópico aborda os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
+Se você estiver usando uma integração que não é suportada atualmente pelo [!DNL Adobe Commerce Intelligence], ainda poderá usar o [recurso de Carregamento de Arquivo](using-file-uploader.md) para colocar seus dados em sua Data Warehouse. Este tópico aborda os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
 
-## `Orders` tabela
+## Tabela `Orders`
 
-A variável `orders` A tabela deve conter uma linha para cada transação que a empresa realizou. As possíveis colunas incluem:
+A tabela `orders` deve conter uma linha para cada transação conduzida pela empresa. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|
@@ -25,16 +25,16 @@ A variável `orders` A tabela deve conter uma linha para cada transação que a 
 | `Customer` | O cliente que fez o pedido. |
 | `Order total` | O total do pedido. Pode ser uma coluna baseada em cálculo, em que os valores em outras colunas — como subtotal e envio — compõem o total dessa coluna. |
 | `Currency` | A moeda em que o pedido foi pago. Inclua, se relevante. |
-| ` Order status` | O status do pedido, como `In Progress`, `Refunded`ou `Complete`. O valor dessa coluna é alterado (se não estiver completo). Dados novos e atualizados podem ser importados usando o [Recurso Acrescentar Dados](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) no `File Uploads` página. |
+| ` Order status` | O status do pedido, como `In Progress`, `Refunded` ou `Complete`. O valor dessa coluna é alterado (se não estiver completo). Dados novos e atualizados podem ser importados usando o [recurso Acrescentar Dados](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) na página `File Uploads`. |
 | `Acquisition/marketing channel` | A aquisição ou canal de marketing do qual o cliente que fez o pedido foi referenciado. |
 | `Order datetime` | A data e a hora em que o pedido foi criado. |
 | `Order updated at` | A data e a hora em que a última modificação no registro de pedido foi feita. |
 
 {style="table-layout:auto"}
 
-## `Order detail/items` tabela {#itemstable}
+## Tabela `Order detail/items` {#itemstable}
 
-A variável `order_detail / items` a tabela deve conter uma linha para cada item distinto em cada ordem. As possíveis colunas incluem:
+A tabela `order_detail / items` deve conter uma linha para cada item distinto em cada ordem. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|
@@ -45,9 +45,9 @@ A variável `order_detail / items` a tabela deve conter uma linha para cada item
 | `Product's unit price` | O preço de uma única unidade do produto. |
 | `Quantity` | A quantidade do produto no pedido. |
 
-## `Customers` tabela {#customerstable}
+## Tabela `Customers` {#customerstable}
 
-A variável `customers` A tabela deve conter uma linha para cada conta de cliente. As possíveis colunas incluem:
+A tabela `customers` deve conter uma linha para cada conta de cliente. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|
@@ -58,9 +58,9 @@ A variável `customers` A tabela deve conter uma linha para cada conta de client
 | `Demographic info` | Informações demográficas, como faixa etária e gênero, podem ser usadas para segmentar seus relatórios. |
 | `Acquisition/marketing channel` | A aquisição ou canal de marketing do qual o cliente que fez o pedido foi referenciado. |
 
-## `Subscription payments` tabela
+## Tabela `Subscription payments`
 
-A variável `subscriptions` A tabela deve conter uma linha para cada pagamento de assinatura. As possíveis colunas incluem:
+A tabela `subscriptions` deve conter uma linha para cada pagamento de assinatura. As possíveis colunas incluem:
 
 | Nome da coluna | Descrição |
 |----|----|

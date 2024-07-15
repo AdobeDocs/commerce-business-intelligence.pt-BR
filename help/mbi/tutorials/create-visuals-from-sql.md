@@ -6,24 +6,24 @@ role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # Criar visualizações de consultas SQL
 
-O objetivo deste tutorial é familiarizá-lo com a terminologia usada no [!DNL SQL Report Builder] e fornecer uma base sólida para criar `SQL visualizations`.
+O objetivo deste tutorial é familiarizá-lo com a terminologia usada no [!DNL SQL Report Builder] e fornecer uma base sólida para a criação do `SQL visualizations`.
 
-A variável [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) é um construtor de relatórios com opções: você pode executar uma consulta com o único objetivo de recuperar uma tabela de dados ou pode transformar esses resultados em um relatório. Este tutorial explica como criar uma visualização de uma consulta SQL.
+O [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) é um construtor de relatórios com opções: você pode executar uma consulta com a única finalidade de recuperar uma tabela de dados, ou pode transformar esses resultados em um relatório. Este tutorial explica como criar uma visualização de uma consulta SQL.
 
 ## Terminologia
 
 Antes de começar este tutorial, consulte a seguinte terminologia usada no `SQL Report Builder`.
 
-- `Series`: a coluna que você deseja medir é chamada de Série no Report Builder SQL. Exemplos comuns são `revenue`, `items sold`, e `marketing spend`. Pelo menos uma coluna deve ser definida como `Series` para criar uma visualização.
+- `Series`: A coluna que você deseja medir é chamada de Série no Report Builder SQL. Exemplos comuns são `revenue`, `items sold` e `marketing spend`. Pelo menos uma coluna deve ser definida como `Series` para criar uma visualização.
 
-- `Category`: A coluna que você deseja usar para segmentar seus dados é chamada de `Category` Isso é exatamente como o `Group By` recurso no [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Por exemplo, se você quiser segmentar a receita vitalícia de seus clientes pela fonte de aquisição, a coluna que contém a fonte de aquisição seria especificada como a `Category`. Mais de uma coluna pode ser definida como `Category`.
+- `Category`: A coluna que você deseja usar para segmentar seus dados é chamada de `Category`. É exatamente como o recurso `Group By` no [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Por exemplo, se você quiser segmentar a receita vitalícia de seus clientes pela fonte de aquisição, a coluna que contém a fonte de aquisição seria especificada como `Category`. Mais de uma coluna pode ser definida como `Category`.
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ Antes de começar este tutorial, consulte a seguinte terminologia usada no `SQL 
 
 Lembre-se do seguinte:
 
-- A variável [!DNL SQL Report Builder] usos [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- O [!DNL SQL Report Builder] usa [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
-- Se você estiver criando um relatório com uma série de tempo, certifique-se de `ORDER BY` a(s) coluna(s) de carimbo de data e hora. Isso garante que os carimbos de data e hora sejam plotados na ordem correta no relatório.
+- Se estiver criando um relatório com uma série temporal, certifique-se de `ORDER BY` a(s) coluna(s) de carimbo de data e hora. Isso garante que os carimbos de data e hora sejam plotados na ordem correta no relatório.
 
-- A variável `EXTRACT` A função é ótima para usar na análise do dia, semana, mês ou ano do carimbo de data e hora. Isso é útil quando a variável `time interval` que você deseja usar no relatório é `daily`, `weekly`, `monthly`ou `yearly`.
+- A função `EXTRACT` é ideal para ser usada na análise do dia, semana, mês ou ano do carimbo de data e hora. Isso é útil quando o `time interval` que você deseja usar no relatório é `daily`, `weekly`, `monthly` ou `yearly`.
 
 Para começar, abra o [!DNL SQL Report Builder] clicando em **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
@@ -62,7 +62,7 @@ Esta consulta retorna esta tabela de resultados:
 
 ## Etapa 2: criar a visualização
 
-Com esses resultados, *como criar a visualização?* Para começar, clique no link **[!UICONTROL Chart]** na guia `Results` painel. Isso exibe o `Chart settings` guia.
+Com esses resultados, *como você cria a visualização?* Para começar, clique na guia **[!UICONTROL Chart]** no painel `Results`. Isso exibe a guia `Chart settings`.
 
 Quando uma consulta é executada pela primeira vez, o relatório pode parecer inescrutável, pois todas as colunas na consulta são representadas como uma série:
 
@@ -70,15 +70,15 @@ Quando uma consulta é executada pela primeira vez, o relatório pode parecer in
 
 Neste exemplo, você deseja que seja um gráfico de linhas com tendência ao longo do tempo. Para criá-lo, use estas configurações:
 
-- `Series`: selecione a variável `Items sold` como a `Series` já que você deseja medi-la. Depois de definir um `Series` você verá uma única linha plotada no relatório.
+- `Series`: Selecione a coluna `Items sold` como `Series` já que deseja medi-la. Depois de definir uma coluna `Series`, você verá uma única linha plotada no relatório.
 
-- `Category`: neste exemplo, você deseja exibir cada produto como uma linha diferente no relatório. Para fazer isso, você define `Product name` como o `Category`.
+- `Category`: Neste exemplo, você deseja exibir cada produto como uma linha diferente no relatório. Para fazer isso, você definiu `Product name` como `Category`.
 
-- `Labels`: Use as colunas `year` e `month` como rótulos no eixo x para poder visualizar `Items Sold` como tendência ao longo do tempo.
+- `Labels`: Use as colunas `year` e `month` como rótulos no eixo x para poder exibir `Items Sold` como tendência ao longo do tempo.
 
 >[!NOTE]
 >
->A consulta deve conter um `ORDER BY` nos rótulos, se estiverem `date`/`time` colunas.
+>A consulta deve conter uma cláusula `ORDER BY` nos rótulos se forem colunas `date`/`time`.
 
 Veja abaixo rapidamente como você criou essa visualização, desde a execução da consulta até a configuração do relatório:
 
@@ -86,16 +86,16 @@ Veja abaixo rapidamente como você criou essa visualização, desde a execução
 
 ## Etapa 3: Selecionar um `Chart Type`
 
-Este exemplo usa o `Line` tipo de gráfico. Para usar um `chart type`, clique nos ícones acima da seção de opções do gráfico para alterá-lo:
+Este exemplo usa o tipo de gráfico `Line`. Para usar um `chart type` diferente, clique nos ícones acima da seção de opções do gráfico para alterá-lo:
 
 ![](../assets/Chart_types.png)
 
 ## Etapa 4: salvar a visualização
 
-Se quiser usar este relatório novamente, dê um nome a ele e clique em **[!UICONTROL Save]** no canto superior direito.
+Se quiser usar este relatório novamente, dê um nome ao relatório e clique em **[!UICONTROL Save]** no canto superior direito.
 
-Na lista suspensa, selecione `Chart` como o `Type` e, em seguida, um painel no qual salvar o relatório.
+Na lista suspensa, selecione `Chart` como `Type` e, em seguida, um painel no qual salvar o relatório.
 
 ## Encapsulamento
 
-Quer ir um passo além? Confira o [práticas recomendadas de otimização de consulta](../best-practices/optimizing-your-sql-queries.md).
+Quer ir um passo além? Confira as [práticas recomendadas de otimização de consulta](../best-practices/optimizing-your-sql-queries.md).

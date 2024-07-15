@@ -6,8 +6,8 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 1%
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
 
@@ -15,29 +15,29 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Exige [Permissões de administrador](../../../administrator/user-management/user-management.md).
+>Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
 ![](../../../assets/Quickbooks.png)
 
-Com o [!DNL QuickBooks] integração, suas finanças comerciais agora podem conviver com seus dados de vendas e marketing, permitindo que você mantenha controle sobre suas despesas de maneira rápida e fácil, identifique gastos excessivos e muito mais.
+Com a integração do [!DNL QuickBooks], suas finanças empresariais agora podem acompanhar seus dados de vendas e marketing, permitindo que você mantenha controle sobre suas despesas de maneira rápida e fácil, identifique gastos excessivos e muito mais.
 
-## Adicionar [!DNL QuickBooks] como fonte de dados no [!DNL Commerce Intelligence]
+## Adicionar [!DNL QuickBooks] como uma fonte de dados em [!DNL Commerce Intelligence]
 
-1. Vá para a `Integrations` página abaixo **[!UICONTROL Manage Data** > **Data Sources]**.
-1. Clique em **[!UICONTROL Add Integration]**, localizado no lado direito da tela acima da `Data Sources` tabela.
-1. Clique em [!DNL QuickBooks] ícone.
+1. Vá para a página `Integrations` em **[!UICONTROL Manage Data** > **Data Sources]**.
+1. Clique em **[!UICONTROL Add Integration]**, localizado no lado direito da tela acima da tabela `Data Sources`.
+1. Clique no ícone [!DNL QuickBooks].
 1. Clique em **[!UICONTROL Connect to Quickbooks]**.
 
-## Conceder [!DNL Commerce Intelligence] acesso ao seu [!DNL QuickBooks] dados
+## Conceder acesso de [!DNL Commerce Intelligence] aos seus dados de [!DNL QuickBooks]
 
-Depois de clicar em **[!UICONTROL Connect to Quickbooks]**, faça logon no [!DNL Intuit] e autorize a conexão:
+Depois de clicar em **[!UICONTROL Connect to Quickbooks]**, faça logon em sua conta do [!DNL Intuit] e autorize a conexão:
 
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
-1. No `Search for a company` selecione sua empresa.
-1. Clique em **[!UICONTROL Next]**. Você será redirecionado para [!DNL Commerce Intelligence] e uma *Conexão bem sucedida!* é exibida na parte superior da tela.
+1. Na lista suspensa `Search for a company`, selecione sua empresa.
+1. Clique em **[!UICONTROL Next]**. Você foi redirecionado para [!DNL Commerce Intelligence] e a *Conexão realizada com êxito!* mensagem é exibida na parte superior da tela.
 
 ## Relacionados
 
-* [Esperado [!DNL QuickBooks] dados](../integrations/quickbooks-data.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Dados  [!DNL QuickBooks]  esperados](../integrations/quickbooks-data.md)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

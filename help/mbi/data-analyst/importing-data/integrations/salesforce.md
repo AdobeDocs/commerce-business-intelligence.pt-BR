@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -17,23 +17,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Exige [Permissões de administrador](../../../administrator/user-management/user-management.md).
+>Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-Conectar o [!DNL Salesforce] Os dados do permitem uma variedade de análises, desde pontuar e otimizar leads até atingir suas metas para oportunidades convertidas.
+Conectar os dados do [!DNL Salesforce] permite uma variedade de análises, desde pontuar e otimizar leads até atingir suas metas para oportunidades convertidas.
 
 >[!IMPORTANT]
 >
->A variável [!DNL Salesforce] o conector exige que você tenha [[!DNL Salesforce] Acesso à API](../integrations/salesforce.md) como parte do seu [!DNL Salesforce] assinatura. Verifique se está ativado antes de começar.
+>O conector [!DNL Salesforce] exige que você tenha [[!DNL Salesforce] acesso à API](../integrations/salesforce.md) como parte de sua assinatura do [!DNL Salesforce]. Verifique se está ativado antes de começar.
 
-1. Para adicionar o [!DNL Salesforce] integração com sua conta, navegue até o `Connections` página abaixo **[!UICONTROL Manage Data** > **Connections]**.
+1. Para adicionar a integração do [!DNL Salesforce] à sua conta, navegue até a página `Connections` em **[!UICONTROL Manage Data** > **Connections]**.
 1. Clique em **[!UICONTROL Add a Data Source]**, localizado no lado direito da tela acima da tabela Fontes de dados.
-1. Clique em [!DNL Salesforce] ícone.
+1. Clique no ícone [!DNL Salesforce].
 1. Clique em **[!UICONTROL Connect to Salesforce]**.
-1. Insira seu [!DNL Salesforce] e clique em **[!UICONTROL Login to Salesforce]**.
+1. Insira suas credenciais do [!DNL Salesforce] e clique em **[!UICONTROL Login to Salesforce]**.
 
 ## Relacionados:
 
-Se você tiver um pouco mais de conhecimento em tecnologia, [[!DNL Salesforce] Documentação da API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) pode ser um recurso útil para saber mais sobre como o Salesforce é integrado ao [!DNL Commerce Intelligence].
+Se você tiver um pouco mais de conhecimento técnico, a [[!DNL Salesforce] Documentação da API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) poderá ser um recurso útil para saber mais sobre como o Salesforce é integrado ao [!DNL Commerce Intelligence].
 
-* [Esperado [!DNL Salesforce] dados](../integrations/salesforce-data.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Dados  [!DNL Salesforce]  esperados](../integrations/salesforce-data.md)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

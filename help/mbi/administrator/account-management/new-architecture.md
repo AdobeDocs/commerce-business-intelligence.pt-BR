@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Nova arquitetura
 
-[!DNL Adobe Commerce Intelligence] As equipes de produtos e engenharia se concentraram em fazer as melhorias mais abrangentes e solicitadas possíveis no último ano. O Adobe tem o prazer de anunciar a disponibilidade de um novo [!DNL Commerce Intelligence] que torna essas melhorias uma realidade.
+As equipes de Produtos e Engenharia do [!DNL Adobe Commerce Intelligence] concentraram-se em realizar as melhorias mais abrangentes e solicitadas possíveis no último ano. O Adobe tem o prazer de anunciar a disponibilidade de uma nova arquitetura de produto do [!DNL Commerce Intelligence] que torna essas melhorias uma realidade.
 
 ## Benefícios da nova arquitetura
 
@@ -45,7 +45,7 @@ Quando estiver concluído, você saberá quais dados precisam ser sincronizados 
 
 ### Obtendo ajuda
 
-A variável [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) O pode executar a reimplementação por um custo extra. Entre em contato com [Equipe da conta Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar ao criar na nova conta
+A [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pode realizar sua reimplementação por um custo extra. Contate a sua [Equipe de Conta do Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar a criar na nova conta
 
 ### Permanecendo com a arquitetura existente
 

@@ -6,25 +6,25 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Analisar Níveis de Inventário
 
-Este tópico demonstra como configurar um painel que fornece informações sobre o inventário atual e contém instruções para clientes sobre a arquitetura herdada ou a nova arquitetura. Você está na arquitetura herdada se não tem o **[!UICONTROL Data Warehouse Views]** opção no campo **[!UICONTROL Manage Data]** menu. Se você estiver na arquitetura herdada, envie um [nova solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** depois de alcançar a seção designada no _Colunas calculadas_ instruções abaixo.
+Este tópico demonstra como configurar um painel que fornece informações sobre o inventário atual e contém instruções para clientes sobre a arquitetura herdada ou a nova arquitetura. Você está na arquitetura herdada se não tem a opção **[!UICONTROL Data Warehouse Views]** no menu **[!UICONTROL Manage Data]**. Se você estiver na arquitetura herdada, envie uma [nova solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** assim que chegar à seção designada nas _Colunas calculadas_ instruções abaixo.
 
 ## Colunas a rastrear:
 
 ### Colunas para rastrear instruções
 
-* **[!UICONTROL cataloginventory_stock_item]** tabela:
+* Tabela **[!UICONTROL cataloginventory_stock_item]**:
    * **`item_id`**
    * **`product_id`**
    * **`qty`**
 
-* **[!UICONTROL catalog_product_entity]** tabela:
+* Tabela **[!UICONTROL catalog_product_entity]**:
    * **`entity_id`**
    * **`sku`**
    * **`created_at`**
@@ -33,7 +33,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
 
 +++ Nova arquitetura
 
-* **[!UICONTROL catalog_product_entity]** tabela:
+* Tabela **[!UICONTROL catalog_product_entity]**:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
@@ -79,7 +79,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
       * Definição:
          * caso em que A é nulo ou B é nulo, senão nulo round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
 
-* **[!UICONTROL cataloginventory_stock_item]** tabela:
+* Tabela **[!UICONTROL cataloginventory_stock_item]**:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
@@ -123,7 +123,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
 +++
 +++ Arquitetura herdada
 
-* **[!UICONTROL catalog_product_entity]** tabela:
+* Tabela **[!UICONTROL catalog_product_entity]**:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
@@ -146,7 +146,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
       * [!UICONTROL Column type]: `Same Table`
       * 
         [!UICONTROL Column equation]: `AGE`
-      * Selecione a coluna DATETIME: **`Product's most recent order date`**
+      * Selecionar coluna DATETIME: **`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
@@ -158,9 +158,9 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
          * [A] `Ordered products we count`
 
    * **`Avg products sold per week (all time)`**
-      * Criado por um analista quando você arquiva e envia seus **[ANÁLISE DE INVENTÁRIO]** solicitação de suporte
+      * Criado por um analista quando você envia sua solicitação de suporte da **[ANÁLISE DE INVENTÁRIO]**
 
-* **[!UICONTROL cataloginventory_stock_item]** tabela:
+* Tabela **[!UICONTROL cataloginventory_stock_item]**:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
@@ -190,7 +190,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
       * Selecione um [!UICONTROL column]: `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
-      * Criado por um analista quando você arquiva e envia seus **[!UICONTROL INVENTORY ANALYSIS]** solicitação de suporte
+      * Criado por um analista quando você arquiva e envia sua solicitação de suporte do **[!UICONTROL INVENTORY ANALYSIS]**
 
 +++
 
@@ -198,11 +198,11 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
 
 ### Instruções de métricas
 
-* **[!UICONTROL cataloginventory_stock_item]** tabela:
+* Tabela **[!UICONTROL cataloginventory_stock_item]**:
    * **`Inventory on hand`**: essa métrica executa uma
-      * **Sum** no
-      * **`qty`** coluna ordenada pelo
-      * [Nenhum] coluna
+      * **Soma** em
+      * **`qty`** coluna ordenada por
+      * Coluna [Nenhuma]
 
 ## Relatórios
 
@@ -211,7 +211,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
 * **`Inventory on hand by sku`**
    * [!UICONTROL Metric]: `Inventory on hand`
    * [!UICONTROL Time period]: `All time`
-   * Intervalo: `None`
+   * Intervalo de tempo: `None`
    * [!UICONTROL Group by]:
       * `Sku`
       * `Weeks on hand`
@@ -224,7 +224,7 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
          * [A] `Weeks on hand` `< 2`
 
    * [!UICONTROL Time period]: `All time`
-   * Intervalo: `None`
+   * Intervalo de tempo: `None`
    * 
      [!UICONTROL Agrupar por]: `Sku`
    * 
@@ -236,10 +236,10 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
          * [A] `Weeks on hand` `> 26`
 
    * [!UICONTROL Time period]: `All time`
-   * Intervalo: `None`
+   * Intervalo de tempo: `None`
    * 
      [!UICONTROL Agrupar por]: `Sku`
    * 
      [!UICONTROL Chart type]: `Table`
 
-Se você tiver dúvidas ao criar essa análise ou se quiser simplesmente envolver a equipe de serviços profissionais, [entre em contato com o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
