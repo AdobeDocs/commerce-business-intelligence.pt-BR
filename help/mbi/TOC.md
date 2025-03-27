@@ -4,9 +4,9 @@ description: Saiba como usar  [!DNL Commerce Intelligence]  recursos disponívei
 breadcrumb-title: Guia do usuário do Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,10 @@ ht-degree: 0%
       - [Gerenciar permissões do usuário](administrator/user-management/user-management.md)
       - [Redefinir senha](../mbi/administrator/user-management/reset-password.md)
       - [Restringir acesso à métrica](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [Gerenciamento avançado de usuários](../mbi/administrator/user-management/advanced.md)
 - Analisar Dados {#analyze}
    - [Analista de dados](data-analyst.md)
-   - Gerenciador de Data Warehouse {#warehouse-manager}
+   - Gerente do Data Warehouse {#warehouse-manager}
       - [Introdução](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Tipos de Coluna Calculados Avançados](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [Compilando  [!DNL Google Ecommerce] dimensões](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -43,7 +44,7 @@ ht-degree: 0%
       - [Configuração de métodos de replicação](data-analyst/data-warehouse-mgr/cfg-replication-methods.md)
       - [Configuração de novas verificações de dados](data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)
       - [Alteração da tabela operacional de uma métrica](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
-      - [Criando e Usando Exibições de Data Warehouse](data-analyst/data-warehouse-mgr/create-dw-views.md)
+      - [Criação e uso de visualizações do Data Warehouse](data-analyst/data-warehouse-mgr/create-dw-views.md)
       - [Criação/exclusão de caminhos para colunas calculadas](data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
       - [Criando / Usando uma Coluna Calculada SQL](data-analyst/data-warehouse-mgr/create-sql-calc-column.md)
       - [Criação de colunas calculadas](data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
@@ -70,13 +71,13 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - REPORT BUILDER SQL {#sql}
+   - SQL Report Builder {#sql}
       - [Usando o  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Usar o [!DNL Cohort Report Builder] para Coortes não baseados em data](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Criação de uma análise qualitativa de coorte](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [Explorar operadores de filtro especiais](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [Exportar os resultados da minha consulta](data-analyst/dev-reports/export-query-results.md)
-      - [Utilização de fórmulas no [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
+      - [Usando Fórmulas no [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Criar [!DNL Google Analytics] gráficos](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Importância de  [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [Ordenando dados usando o recurso [!DNL Show Top/Bottom] ](data-analyst/dev-reports/order-data-top-bottom-feat.md)
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [Trabalhar com dados](best-practices/work-data.md)
       - [Marcação UTM em  [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formatando e Importando Dados Financeiros](best-practices/format-import-financial-data.md)
-      - [Dimension recomendados para segmentação e filtragem](best-practices/segment-filter.md)
+      - [Dimensões de dados recomendadas para segmentação e filtragem](best-practices/segment-filter.md)
       - [Verificando o Status do Ciclo de Atualização](best-practices/check-update-cycle.md)
       - [Redução do tempo do ciclo de atualização](best-practices/reduce-update-cycle-time.md)
       - [Modificando seu Banco de Dados para Suporte à Replicação Incremental](best-practices/mod-db-inc-replication.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
    - Trabalhando com Painéis {#working-dashboards}
       - [Compartilhamento de painéis](best-practices/share-dashboard-best-practice.md)
       - [Construindo um painel de investidores](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Tutoriais {#tutorials}
    - [Usando o  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Usando Opções de Tempo em  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Criando Visualizações para uma Consulta  [!DNL SQL] ](tutorials/create-visuals-from-sql.md)
