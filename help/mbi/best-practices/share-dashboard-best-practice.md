@@ -4,7 +4,7 @@ description: Saiba como trabalhar com e compartilhar seus painéis.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -17,11 +17,11 @@ Compartilhar painéis significa que você e sua equipe possuem as mesmas informa
 
 ## Evitar painéis duplicados
 
-Às vezes, você pode encontrar vários painéis com o mesmo nome - geralmente porque outros usuários criaram e compartilharam painéis semelhantes com você. Esses painéis podem ser duplicatas de uma cópia principal. Nesse caso, o Adobe recomenda que você tenha um usuário compartilhando a cópia principal do painel e, em seguida, remova todos os painéis duplicados.
+Às vezes, você pode encontrar vários painéis com o mesmo nome - geralmente porque outros usuários criaram e compartilharam painéis semelhantes com você. Esses painéis podem ser duplicatas de uma cópia principal. Nesse caso, a Adobe recomenda que você tenha um usuário compartilhando a cópia principal do painel e, em seguida, remova todos os painéis duplicados.
 
 Para ver quem possui um painel, clique na lista suspensa de painéis no canto superior esquerdo. Qualquer painel que não tenha um nome abaixo dele pertence a você.
 
-![](../../mbi/assets/Dash_ownership.gif)
+![](../../mbi/assets/Dash_ownership.png)
 
 Para remover todos os painéis duplicados:
 
@@ -36,7 +36,7 @@ Quando novos usuários são criados, eles não têm painéis ou gráficos. No en
 
 ## Compartilhar painéis com novos usuários
 
-Os novos usuários também podem se beneficiar do acesso a alguns painéis que não são compartilhados em toda a organização. Nesses casos, a Adobe recomenda que os proprietários do painel [compartilhem os painéis relevantes](../data-user/dashboards/share-dashboard-with-users.md) com novos usuários quando suas contas forem criadas.
+Os novos usuários também podem se beneficiar do acesso a alguns painéis que não são compartilhados em toda a organização. Nesses casos, a Adobe recomenda que os proprietários de painéis [compartilhem os painéis relevantes](../data-user/dashboards/share-dashboard-with-users.md) com novos usuários quando suas contas forem criadas.
 
 ## Seja seletivo com permissões de edição
 
@@ -44,4 +44,4 @@ Os novos usuários também podem se beneficiar do acesso a alguns painéis que n
 
 ## Anotar Seus Gráficos
 
-O compartilhamento de um painel oferece aos usuários acesso às mesmas informações. Para garantir que as informações sejam compreendidas, a Adobe recomenda usar o recurso de notas do gráfico para compartilhar conhecimento e nuances sobre um ponto de dados específico ou transmitir a finalidade de uma análise.
+O compartilhamento de um painel oferece aos usuários acesso às mesmas informações. Para garantir que as informações sejam entendidas, a Adobe recomenda usar o recurso de notas do gráfico para compartilhar conhecimento e nuances sobre um ponto de dados específico ou transmitir a finalidade de uma análise.
