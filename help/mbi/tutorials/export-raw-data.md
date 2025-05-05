@@ -34,7 +34,7 @@ Há duas maneiras de exportar dados brutos para o [!DNL Commerce Intelligence]:
 
 Para exportar a tabela da guia [!UICONTROL Manage Data], são necessárias [permissões de administrador](../administrator/user-management/user-management.md).
 
-1. Clique em **[!UICONTROL Manage Data** > ** Exportar Dados **> **Exportação de Dados Brutos]**.
+1. Clique em **[!UICONTROL Manage Data** > **&#x200B; Exportar Dados &#x200B;**> **Exportação de Dados Brutos]**.
 1. Você verá uma `Export List` de exportações de dados criadas recentemente, se houver alguma. Clique em **[!UICONTROL Add Export]** para criar uma exportação.
 1. A caixa de diálogo `New Raw Data Export` é exibida. Aqui, você pode personalizar a exportação selecionando ou desmarcando colunas e filtros:
 

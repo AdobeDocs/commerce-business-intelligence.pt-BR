@@ -101,7 +101,7 @@ Em seguida, tente criar a **mídia [!DNL Google Analytics] do primeiro pedido do
 
 ### Bônus: Tabela de pedidos, rodada 2
 
-Você pode parar aqui se desejar, mas esta seção habilita análises adicionais trazendo as [!DNL Google Analytics] dimensões **da** primeira ordem do Cliente[que você criou na {última seção](#customers) para a tabela `orders`. A criação de dimensões nesta seção permite analisar todas as métricas criadas na tabela `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e assim por diante - usando os [!DNL Google Analytics] atributos da primeira ordem de um cliente.
+Você pode parar aqui se desejar, mas esta seção habilita análises adicionais trazendo as [!DNL Google Analytics] dimensões **da** primeira ordem do Cliente[que você criou na &lbrace;última seção](#customers) para a tabela `orders`. A criação de dimensões nesta seção permite analisar todas as métricas criadas na tabela `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e assim por diante - usando os [!DNL Google Analytics] atributos da primeira ordem de um cliente.
 
 Este exemplo une a dimensão `Customer's first order's [!DNL Google Analytics] source` à tabela `orders`.
 

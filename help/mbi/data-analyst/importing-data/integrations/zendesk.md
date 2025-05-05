@@ -31,7 +31,7 @@ Para concluir esse processo, é necessário abrir duas janelas ou guias do naveg
 
 ## Abrir a página de credenciais do [!DNL Zendesk] em [!DNL Commerce Intelligence] {#stepone}
 
-1. Vá para a página `Integrations` em **[!UICONTROL Manage Data** > ** Fontes de Dados **> **Integrações]**.
+1. Vá para a página `Integrations` em **[!UICONTROL Manage Data** > **&#x200B; Fontes de Dados &#x200B;**> **Integrações]**.
 1. Clique em **[!UICONTROL Add Integration]**, localizado no lado direito da tela.
 1. Clique no ícone [!DNL Zendesk]. Isso abre a página de credenciais do [!DNL Zendesk].
 

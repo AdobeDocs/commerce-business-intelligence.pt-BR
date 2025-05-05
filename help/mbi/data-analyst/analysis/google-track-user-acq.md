@@ -27,7 +27,7 @@ O [!DNL Adobe] recomenda dois métodos para rastrear os dados da fonte de refer�
 
 ### (Opção 1) Rastrear dados de origem de referência de ordem via [!DNL Google Analytics E-Commerce]
 
-Se você usa o [!DNL Google Analytics E-Commerce] para acompanhar seus dados de pedidos e vendas, você pode usar o [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) para sincronizar os dados de origem de referência de cada pedido. Isso permite segmentar receita e pedidos por fonte de referência (por exemplo, `utm_source` ou `utm_medium`). Você também tem uma noção das fontes de aquisição de clientes por meio de [!DNL Commerce Intelligence] dimensões personalizadas, como `User's first order source`.
+Se você usa o [!DNL Google Analytics E-Commerce] para acompanhar seus dados de pedidos e vendas, você pode usar o [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) para sincronizar os dados de origem de referência de cada pedido. Isso permite segmentar receita e pedidos por fonte de referência (por exemplo, `utm_source` ou `utm_medium`). Você também tem uma noção das fontes de aquisição de clientes por meio de [!DNL Commerce Intelligence] dimensões personalizadas, como `User's first order source`.
 
 ### (Opção 2) Salvando os dados da fonte de aquisição [!DNL Google Analytics] em seu banco de dados
 

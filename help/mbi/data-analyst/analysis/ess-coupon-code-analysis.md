@@ -62,42 +62,49 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
 >O [!UICONTROL Time Period]** para cada relatório está listado como `All-time`. Altere isso para atender às suas necessidades de análise. A Adobe recomenda que todos os relatórios deste painel cubram o mesmo período de tempo, como `All time`, `Year-to-date` ou `Last 365 days`.
 
 * **Pedidos com cupons**
-   * 
+   * &#x200B;
+
      [!UICONTROL Métrica]: `Orders`
       * Adicionar filtro:
          * [`A`] `coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Pedidos sem cupons**
-   * 
+   * &#x200B;
+
      [!UICONTROL Métrica]: `Orders`
       * Adicionar filtro:
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Receita líquida de pedidos com cupons**
-   * 
+   * &#x200B;
+
      [!UICONTROL Métrica]: `Revenue`
       * Adicionar filtro:
          * [`A`] `coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Descontos de cupons**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -107,7 +114,8 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
          * [`A`] `Customer's first order's coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -117,7 +125,8 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -141,23 +150,28 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
 
    * Criar fórmula: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
-      * 
+      * &#x200B;
+
         [!UICONTROL Format]: `Currency`
 
    * Criar fórmula:**% com desconto**
       * Fórmula: `(C / (B - C))`
-      * 
+      * &#x200B;
+
         [!UICONTROL Format]: `Percentage`
 
    * Criar fórmula: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
-      * 
+      * &#x200B;
+
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
-   * 
+   * &#x200B;
+
      [!UICONTROL Tipo de gráfico]: `Table`
 
 * **Receita média vitalícia por cupom de primeira ordem**
@@ -166,7 +180,8 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
          * [`A`] `coupon_code` **É**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -176,10 +191,12 @@ A primeira etapa é criar uma nova métrica com as seguintes etapas:
          * [`A`] `Customer's first order's coupon_code` **NÃO** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-   * 
+   * &#x200B;
+
      [!UICONTROL Tipo de gráfico]: **Column**
 
 * **Novos clientes por aquisição de cupom/não-cupom**
