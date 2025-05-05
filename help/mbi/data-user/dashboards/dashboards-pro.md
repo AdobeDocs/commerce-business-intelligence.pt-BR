@@ -17,7 +17,7 @@ O [!DNL Adobe Commerce Intelligence] inclui painéis prontos para uso para forne
 
 >[!NOTE]
 >
->O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, contate o [suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, contate o [suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
 
 ## Disponibilidade do relatório
 
@@ -133,7 +133,7 @@ O painel Pedidos fornece informações sobre o volume transacional de pedidos, o
 
 ## Produtos
 
-O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Seu armazenamento deve estar [configurado para rastrear reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que esses gráficos sejam preenchidos.
+O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Seu armazenamento deve estar [configurado para rastrear reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=pt-BR) para que esses gráficos sejam preenchidos.
 
 >[!NOTE]
 >

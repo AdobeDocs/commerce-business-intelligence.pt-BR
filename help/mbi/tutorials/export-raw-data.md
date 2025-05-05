@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Exportar dados brutos
 
-Usando exportações de dados brutos, você pode exportar registros da sua Data Warehouse para ver mais de perto o que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudá-lo a [identificar discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
+Usando exportações de dados brutos, você pode exportar registros da sua Data Warehouse para ver mais de perto o que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudá-lo a [identificar discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=pt-BR).
 
 As exportações de dados brutos fornecem acesso a colunas e dimensões adicionais geradas por meio da desnormalização e da pré-agregação de métricas relevantes. Por exemplo, `User's first order date` é uma dimensão que você pode exportar para cada usuário em [!DNL Commerce Intelligence], embora ela possa não estar disponível no banco de dados.
 

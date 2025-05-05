@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Seu Ambiente [!DNL Adobe Commerce Intelligence]
 
-Ao analisar seus dados comerciais, esteja ciente desses fatores e dos equívocos comuns. Se precisar de ajuda para verificar se está usando o esquema do Commerce corretamente, não hesite em [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Ao analisar seus dados comerciais, esteja ciente desses fatores e dos equívocos comuns. Se precisar de ajuda para verificar se está usando o esquema do Commerce corretamente, não hesite em [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
 
 ## [!DNL entity\_id]
 

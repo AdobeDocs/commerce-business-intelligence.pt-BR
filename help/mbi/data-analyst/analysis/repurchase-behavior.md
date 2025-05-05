@@ -82,4 +82,4 @@ Além de analisar o comportamento de recompra dos clientes, você também pode c
 
 Depois de identificar por que o abandono está acontecendo, você pode usar sua análise para criar uma campanha `reactivation`. Usando esses dados, você pode identificar os usuários que se tornaram inativos, quanto tempo passou desde a última visita, qual foi a última compra e assim por diante. Isso permite tomar decisões acionáveis que motivam seus clientes a voltar.
 
-Para obter ajuda com a análise, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Para obter ajuda com a análise, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).

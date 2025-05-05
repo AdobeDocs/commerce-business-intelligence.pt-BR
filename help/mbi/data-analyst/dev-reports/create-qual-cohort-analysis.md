@@ -39,7 +39,7 @@ Entretanto, se você quiser analisar o comportamento da coorte de vários segmen
 
 A criação de um relatório `qualitative cohort` no `Report Builder` envolve a equipe de analistas Adobe criando algumas [colunas calculadas avançadas](../data-warehouse-mgr/creating-calculated-columns.md) nas tabelas necessárias.
 
-Para criar isso, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (e consulte este artigo!). Veja o que você precisa saber:
+Para criar isso, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) (e consulte este artigo!). Veja o que você precisa saber:
 
 * O `metric` com o qual você deseja realizar sua análise de coorte e qual tabela ele usa (exemplo: `Revenue`, criado na tabela `orders`).
 

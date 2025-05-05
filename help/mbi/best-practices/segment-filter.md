@@ -71,7 +71,7 @@ Esse tipo de análise é o que os profissionais de marketing das empresas Fortun
 
 A primeira etapa para segmentar suas métricas pelas dimensões acima é verificar se você está rastreando esses dados no banco de dados. Se não for rastreado, reúna-se com sua equipe técnica e encontre uma maneira de começar a rastrear esses dados.
 
-Após confirmar que os dados estão sendo rastreados em seu banco de dados, [contate a equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para enviar as dimensões para suas métricas e gráficos do [!DNL Commerce Intelligence]. Você também pode usar a ferramenta *Gerenciamento de campos* para rastrear esses campos em [!DNL Commerce Intelligence].
+Após confirmar que os dados estão sendo rastreados em seu banco de dados, [contate a equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para enviar as dimensões para suas métricas e gráficos do [!DNL Commerce Intelligence]. Você também pode usar a ferramenta *Gerenciamento de campos* para rastrear esses campos em [!DNL Commerce Intelligence].
 
 ## Relacionados
 

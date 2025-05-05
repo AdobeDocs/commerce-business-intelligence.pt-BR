@@ -161,7 +161,7 @@ Para criar esse tipo de coluna calculada, você precisa saber:
 
 Não se preocupe. Só porque não está listado aqui não significa que não seja possível. A equipe Adobe de analistas do Data Warehouse pode ajudar.
 
-Para definir uma nova coluna calculada, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com detalhes sobre exatamente o que deseja criar.
+Para definir uma nova coluna calculada, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) com detalhes sobre exatamente o que deseja criar.
 
 ## Documentação relacionada
 

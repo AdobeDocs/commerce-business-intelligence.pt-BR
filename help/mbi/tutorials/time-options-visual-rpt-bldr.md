@@ -66,7 +66,7 @@ Agora você pode ver o impacto que cada mês teve no ano passado:
 
 ## Comparação da mesma métrica em diferentes intervalos de tempo {#difftimerange}
 
-Este exemplo usa uma dimensão personalizada chamada `Day number of the month`. Se você quiser criar este relatório e ainda não tiver essa dimensão em sua Data Warehouse, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter assistência.
+Este exemplo usa uma dimensão personalizada chamada `Day number of the month`. Se você quiser criar este relatório e ainda não tiver essa dimensão em sua Data Warehouse, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter assistência.
 
 Os dois exemplos mais comuns nesta categoria são (1) comparar as métricas de crescimento (receita ano a ano ou mês a mês) e (2) entender melhor as tendências recentes de vendas de itens ou inventário.
 

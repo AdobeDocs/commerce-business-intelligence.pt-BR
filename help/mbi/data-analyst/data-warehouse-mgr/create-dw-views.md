@@ -136,7 +136,7 @@ Em vez de criar um conjunto separado de métricas de marketing para cada fonte d
 
 **Procurando ajuda adicional?**
 
-A gravação de SQL e a criação de `Data Warehouse Views` não estão incluídas no Suporte Técnico. No entanto, a [equipe de Serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) oferece assistência para a criação de exibições. A equipe de suporte pode ajudar em tudo, desde migrar um banco de dados herdado por um novo banco de dados até criar uma única Exibição do Data Warehouse para fins de análise específica.
+A gravação de SQL e a criação de `Data Warehouse Views` não estão incluídas no Suporte Técnico. No entanto, a [equipe de Serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) oferece assistência para a criação de exibições. A equipe de suporte pode ajudar em tudo, desde migrar um banco de dados herdado por um novo banco de dados até criar uma única Exibição do Data Warehouse para fins de análise específica.
 
 Normalmente, a criação de um novo `Data Warehouse View` com a finalidade de consolidar de 2 a 3 tabelas estruturadas de forma semelhante requer cinco horas de serviço, o que se traduz em aproximadamente US$ 1.250 de trabalho. No entanto, abaixo estão alguns fatores comuns que podem aumentar o investimento esperado necessário:
 
