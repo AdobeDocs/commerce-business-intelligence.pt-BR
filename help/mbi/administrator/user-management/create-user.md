@@ -4,14 +4,14 @@ description: Saiba como adicionar um novo usuário  [!DNL Commerce Intelligence]
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 99fc6c26017b5da4d066d400be1888ab4032590d
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Adicionar um novo usuário [!DNL Adobe Commercer Intelligence]
+# Adicionar um novo usuário [!DNL Adobe Commerce Intelligence]
 
 1. Clique no nome da sua empresa no canto superior direito e selecione **[!UICONTROL Invite User]** na lista suspensa.
 1. Insira o nome de usuário e o email.
@@ -40,4 +40,4 @@ Se precisar reenviar o convite, na [página de logon](https://dashboard.rjmetric
 
 >[!IMPORTANT]
 >
->Cada conta tem um número contratado de licenças ou vagas. Se você atingir seu limite ou quiser saber mais, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+>Cada conta tem um número contratado de licenças ou vagas. Se você atingir seu limite ou quiser saber mais, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
