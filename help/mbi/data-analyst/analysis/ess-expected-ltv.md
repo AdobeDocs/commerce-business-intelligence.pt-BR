@@ -53,7 +53,7 @@ Depois que a métrica for criada, você poderá **criar um painel** fazendo o se
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -64,7 +64,7 @@ Depois que a métrica for criada, você poderá **criar um painel** fazendo o se
          * [`B`] `Customer's lifetime number of orders` **Maior Que**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -73,7 +73,7 @@ Depois que a métrica for criada, você poderá **criar um painel** fazendo o se
    * Métrica `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * 
+   * &#x200B;
      [!UICONTROL Tipo de gráfico]: `Line`
    * Desmarcar `Multiple Y-Axes`
 
@@ -81,10 +81,10 @@ Depois que a métrica for criada, você poderá **criar um painel** fazendo o se
    * Métrica `1`: `Avg lifetime revenue`
    * Métrica `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervalo]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Tipo de gráfico]: `Line`
 
   >[!NOTE]
