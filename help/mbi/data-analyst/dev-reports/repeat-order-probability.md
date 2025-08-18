@@ -25,7 +25,7 @@ Se você adicionasse um filtro que usa uma dimensão que não é igual para toda
 
 Em certos casos, você pode transformar uma dimensão `order-specific` em uma dimensão `user-specific` para adicionar como filtro no gráfico `Repeat Order Probability`. Nesses casos, você retorna o atributo da ordem da primeira ordem de um usuário ou da ordem mais recente (por exemplo, nome da região da primeira ordem do usuário).
 
-Para criar uma nova dimensão, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Para criar uma nova dimensão, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
 
 ## Comparando a probabilidade de repetição de ordens com atributos diferentes
 

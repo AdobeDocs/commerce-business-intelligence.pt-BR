@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migração de dados
 
-A migração para um novo esquema de banco de dados, servidor ou banco de dados de relatórios não precisa ser complicada. A [[!DNL Adobe] equipe de Serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) oferece assistência para migração.
+A migração para um novo esquema de banco de dados, servidor ou banco de dados de relatórios não precisa ser complicada. A [[!DNL Adobe] equipe de Serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) oferece assistência para migração.
 
 Para garantir que sua transição seja a mais tranquila possível, você deve estar o mais detalhado possível ao enviar sua solicitação de migração. Este tópico tem tudo o que você precisa para enviar uma solicitação e começar a migração. Fornecer uma visão abrangente de suas necessidades garante que seu projeto tenha o escopo adequado e que a estimativa seja precisa.
 
@@ -67,7 +67,7 @@ Veja um exemplo:
 
 ## Como faço para enviar uma solicitação? {#submitreq}
 
-Entre em contato conosco [enviando uma solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Entre em contato conosco [enviando uma solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
 
 Se você seguiu as etapas da seção anterior para criar a planilha correspondente à coluna, não se esqueça de anexá-la.
 

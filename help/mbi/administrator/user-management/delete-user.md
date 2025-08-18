@@ -26,5 +26,5 @@ Você pode reativar o usuário criando um usuário com o mesmo endereço de emai
 Se você precisar apenas dos painéis desse usuário enviados para uma conta de usuário diferente, faça o seguinte:
 
 1. Use o endereço de email do usuário excluído para criar um novo usuário [!DNL Commerce Intelligence].
-1. [Notifique o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) após criar o usuário. O suporte transfere os painéis para sua conta.
+1. [Notifique o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) após criar o usuário. O suporte transfere os painéis para sua conta.
 1. Depois que o Suporte da Adobe notificar você sobre a transferência, você poderá excluir o usuário novamente.

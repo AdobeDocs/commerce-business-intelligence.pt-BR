@@ -55,7 +55,7 @@ Você pode ter vários sites conectados a uma única conta do [!DNL Google Analy
 
 ## Relacionados
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
 * [Rastrear origem da referência de ordem via [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no banco de dados](../../analysis/google-track-user-acq.md)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../../analysis/most-value-source-channel.md)
