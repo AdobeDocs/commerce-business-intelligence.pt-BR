@@ -49,9 +49,9 @@ Pense na relação entre **produtos** e **categorias**: um produto pode pertence
 
 ## Avaliando Suas Tabelas {#eval}
 
-Dados os tipos de relações que existem entre tabelas, você pode aprender a avaliar as tabelas em sua Data Warehouse. Como essas relações moldam como colunas calculadas de várias tabelas são definidas, é importante que você entenda como identificar relações de tabela e a que lado - `one` ou `many` - a tabela pertence.
+Dados os tipos de relações que existem entre tabelas, você pode aprender a avaliar as tabelas no seu Data Warehouse. Como essas relações moldam como colunas calculadas de várias tabelas são definidas, é importante que você entenda como identificar relações de tabela e a que lado - `one` ou `many` - a tabela pertence.
 
-Há dois métodos que podem ser usados para avaliar os relacionamentos de um determinado par de tabelas dentro da Data Warehouse. O primeiro método emprega uma [estrutura conceitual](#concept) que considera como as entidades da tabela interagem entre si. O segundo método usa o [esquema da tabela](#schema).
+Há dois métodos que podem ser usados para avaliar os relacionamentos de um determinado par de tabelas no seu Data Warehouse. O primeiro método emprega uma [estrutura conceitual](#concept) que considera como as entidades da tabela interagem entre si. O segundo método usa o [esquema da tabela](#schema).
 
 ### Uso da Estrutura Conceitual {#concept}
 
@@ -65,7 +65,7 @@ Para usar este método:
 
 1. Identifique um ou mais verbos que descrevam como essas entidades interagem. Por exemplo, ao comparar usuários a pedidos, os usuários &quot;fazem&quot; pedidos. Indo na outra direção, os pedidos &quot;pertencem&quot; aos usuários.
 
-Esse tipo de estrutura pode ser aplicado a qualquer par de tabelas na Data Warehouse. Isso permite identificar facilmente o tipo de relação e qual tabela está em um lado e qual tabela está em vários lados.
+Esse tipo de estrutura pode ser aplicado a qualquer par de tabelas no Data Warehouse. Isso permite identificar facilmente o tipo de relação e qual tabela está em um lado e qual tabela está em vários lados.
 
 Depois de identificar a terminologia que descreve como as duas tabelas interagem, enquadre a interação em ambas as direções considerando como uma determinada instância da primeira entidade se relaciona com a segunda. Estes são alguns exemplos de cada relação:
 
@@ -129,4 +129,4 @@ Se qualquer uma das opções a seguir for verdadeira, a relação será `many-to
 
 ## Próximas etapas
 
-A avaliação correta das relações de tabela é essencial para a modelagem precisa dos dados. Agora que você entende como as tabelas estão relacionadas entre si, consulte [o que você pode fazer com o Gerenciador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md).
+A avaliação correta das relações de tabela é essencial para a modelagem precisa dos dados. Agora que você entende como as tabelas estão relacionadas entre si, consulte [o que você pode fazer com o Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md).

@@ -1,6 +1,6 @@
 ---
 title: Dados esperados do Google Adwords
-description: Saiba como você pode usar o Gerenciador de Datas Warehouse para rastrear facilmente campos de dados relevantes para análise.
+description: Saiba como você pode usar o Data Warehouse Manager para rastrear facilmente campos de dados relevantes para análise.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Dados [!DNL Google Adwords] esperados
 
-Depois de [conectar sua [!DNL Google Adwords] conta](../integrations/google-adwords.md), você poderá usar o [Gerenciador de Data Warehouse](../../data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes para análise.
+Depois de [conectar sua [!DNL Google Adwords] conta](../integrations/google-adwords.md), você poderá usar o [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes para análise.
 
-Você verá duas tabelas disponíveis para replicação na Data Warehouse:
+Lá, você observa duas tabelas disponíveis para replicação no Data Warehouse:
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
@@ -45,12 +45,12 @@ A tabela `campaigns` contém as seguintes colunas:
 |-----|-----|
 | `\_id` | A chave primária da tabela |
 | `accountId` | A ID da conta |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Número total de cliques do dia |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Custo total da campanha do dia |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] ID da campanha |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Nome da campanha (por exemplo, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | A data em que a campanha foi executada |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Número de impressões do dia |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | Número total de cliques do dia |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | Custo total da campanha do dia |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords] ID da campanha |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | Nome da campanha (por exemplo, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | A data em que a campanha foi executada |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | Número de impressões do dia |
 | `profileId` | A ID do perfil |
 | `profileName` | O nome do perfil |
 | `\_updated\_at` | A data e a hora da última atualização desta linha |
@@ -65,12 +65,12 @@ A tabela `adwords` contém as seguintes colunas:
 |-----|-----|
 | `\_id` | A chave primária da tabela |
 | `accountId` | A ID da conta |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Número total de cliques do dia |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Custo total da campanha do dia |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] ID da campanha |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Nome da campanha (por exemplo, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | A data em que a campanha foi executada |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Número de impressões do dia |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | Número total de cliques do dia |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | Custo total da campanha do dia |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords] ID da campanha |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | Nome da campanha (por exemplo, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | A data em que a campanha foi executada |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | Número de impressões do dia |
 | `profileId` | A ID do perfil |
 | `profileName` | O nome do perfil |
 | `\_updated\_at` | A data e a hora da última atualização desta linha |
@@ -89,4 +89,4 @@ A [!DNL Adobe] recomenda criar uma tabela `consolidated ad spend` para combinar 
 
 Se você não tiver uma tabela consolidada e criar um painel bonito na tabela `adwords`, precisará replicar os relatórios ou criar métricas duplicadas para comparar esses dados aos seus dados do [!DNL Facebook Ads]. Usar uma tabela consolidada permite incorporar facilmente os dados do [!DNL Facebook Ads] aos seus relatórios existentes do [!DNL Adwords]. Também é possível segmentar por plataforma de anúncios.
 
-Se você já tiver sincronizado os campos acima, [contate-nos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para consolidar seu investimento em anúncios.
+Se você já tiver sincronizado os campos acima, [contate-nos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para consolidar seu investimento em anúncios.

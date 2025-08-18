@@ -45,7 +45,7 @@ Essa é a parte do processo em que, dependendo do banco de dados que você está
 
 Depois de conceder acesso de [!DNL Commerce Intelligence] à sua instância e criar um usuário para nós, a última coisa a fazer é inserir as informações de conexão em [!DNL Commerce Intelligence].
 
-As páginas de credencial para `MySQL`, `Microsoft SQL` e `PostgreSQL` são acessadas através da página `Integrations` (**[!UICONTROL Manage Data** > **Integrations]**) clicando em **[!UICONTROL Add Integration]**. Quando a lista de integrações for exibida, clique no ícone do banco de dados que você está usando para acessar a página de credenciais. Se, atualmente, você não tiver acesso à integração necessária, entre em contato com a equipe de conta do Adobe.
+As páginas de credencial para `MySQL`, `Microsoft SQL` e `PostgreSQL` são acessadas através da página `Integrations` (**[!UICONTROL Manage Data** > **Integrations]**) clicando em **[!UICONTROL Add Integration]**. Quando a lista de integrações for exibida, clique no ícone do banco de dados que você está usando para acessar a página de credenciais. Se, atualmente, você não tiver acesso à integração necessária, entre em contato com a equipe de conta da Adobe.
 
 Para concluir a criação da conexão, você precisa das seguintes informações:
 

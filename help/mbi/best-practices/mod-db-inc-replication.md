@@ -25,7 +25,7 @@ Para garantir que o método `Modified At` funcione conforme o esperado, não é 
 
 ## Modificações para chave primária de incrementação automática única
 
-Se o método `Modified At` não puder ser habilitado, a Chave Primária de Incrementação Automática Única será a próxima melhor opção. Novos dados são detectados em tabelas usando esse método procurando valores de chave primária que sejam maiores que o valor mais alto atual na Data Warehouse.
+Se o método `Modified At` não puder ser habilitado, a Chave Primária de Incrementação Automática Única será a próxima melhor opção. Novos dados são detectados em tabelas usando esse método procurando valores de chave primária que são maiores que o valor mais alto atual no Data Warehouse.
 
 Lembre-se, as tabelas que usam este método são colunas únicas com números inteiros incrementando automaticamente as chaves primárias. Para usar esse método no banco de dados, faça as seguintes modificações:
 

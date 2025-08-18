@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Dados [!DNL Adobe Commerce] esperados
 
-Depois de [conectar seu [!DNL Adobe Commerce] armazenamento](../../../data-analyst/importing-data/integrations/magento.md), você poderá usar o Gerenciador de Data Warehouse para rastrear facilmente campos de dados relevantes do banco de dados do Commerce para análise.
+Depois de [conectar sua [!DNL Adobe Commerce] loja](../../../data-analyst/importing-data/integrations/magento.md), você poderá usar o Data Warehouse Manager para rastrear facilmente campos de dados relevantes do banco de dados do Commerce para análise.
 
 Este tópico explora as principais tabelas de dados que os usuários do Commerce importam para o [!DNL Commerce Intelligence].
 
@@ -30,4 +30,4 @@ Este tópico explora as principais tabelas de dados que os usuários do Commerce
 ## Relacionados
 
 * [Conectando [!DNL Adobe Commerce]](../integrations/magento.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

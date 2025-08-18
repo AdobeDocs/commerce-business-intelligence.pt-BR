@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - Rastrear a aquisição de usuários - Visão geral dos dados do Source
+title: Google Analytics - Rastrear Visão geral dos dados do Source de aquisição de usuários
 description: Saiba como segmentar seus dados por fonte de aquisição de usuário.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
@@ -27,7 +27,7 @@ O [!DNL Adobe] recomenda dois métodos para rastrear os dados da fonte de refer�
 
 ### (Opção 1) Rastrear dados de origem de referência de ordem via [!DNL Google Analytics E-Commerce]
 
-Se você usa o [!DNL Google Analytics E-Commerce] para acompanhar seus dados de pedidos e vendas, você pode usar o [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) para sincronizar os dados de origem de referência de cada pedido. Isso permite segmentar receita e pedidos por fonte de referência (por exemplo, `utm_source` ou `utm_medium`). Você também tem uma noção das fontes de aquisição de clientes por meio de [!DNL Commerce Intelligence] dimensões personalizadas, como `User's first order source`.
+Se você usa o [!DNL Google Analytics E-Commerce] para acompanhar seus dados de pedidos e vendas, você pode usar o [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) para sincronizar os dados de origem de referência de cada pedido. Isso permite segmentar receita e pedidos por fonte de referência (por exemplo, `utm_source` ou `utm_medium`). Você também tem uma noção das fontes de aquisição de clientes por meio de [!DNL Commerce Intelligence] dimensões personalizadas, como `User's first order source`.
 
 ### (Opção 2) Salvando os dados da fonte de aquisição [!DNL Google Analytics] em seu banco de dados
 
@@ -35,7 +35,7 @@ Este tópico explica como salvar as informações do canal de aquisição do [!D
 
 #### Por quê?
 
-Se você estiver apenas olhando para as métricas padrão de conversão e aquisição do [!DNL Google Analytics], não está obtendo uma visão completa. Embora ver o número de conversões de pesquisa orgânica versus pesquisa paga seja interessante, o que você pode fazer com essa informação? Você deveria gastar mais dinheiro em pesquisa paga? Isso depende do valor dos clientes provenientes desse canal, o que não é algo que o Google Analytics oferece.
+Se você estiver apenas olhando para as métricas padrão de conversão e aquisição do [!DNL Google Analytics], não está obtendo uma visão completa. Embora ver o número de conversões de pesquisa orgânica versus pesquisa paga seja interessante, o que você pode fazer com essa informação? Você deveria gastar mais dinheiro em pesquisa paga? Isso depende do valor dos clientes provenientes desse canal, que não é algo que a Google Analytics fornece.
 
 >[!NOTE]
 >

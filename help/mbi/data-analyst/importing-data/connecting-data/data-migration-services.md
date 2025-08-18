@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migração de dados
 
-A migração para um novo esquema de banco de dados, servidor ou banco de dados de relatórios não precisa ser complicada. A [[!DNL Adobe] equipe de Serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) oferece assistência para migração.
+A migração para um novo esquema de banco de dados, servidor ou banco de dados de relatórios não precisa ser complicada. A [[!DNL Adobe] equipe de Serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) oferece assistência para migração.
 
 Para garantir que sua transição seja a mais tranquila possível, você deve estar o mais detalhado possível ao enviar sua solicitação de migração. Este tópico tem tudo o que você precisa para enviar uma solicitação e começar a migração. Fornecer uma visão abrangente de suas necessidades garante que seu projeto tenha o escopo adequado e que a estimativa seja precisa.
 
@@ -49,9 +49,9 @@ Se você se sentir confortável em fazer a correspondência sozinho, siga estas 
 
 1. Em uma planilha, crie uma guia para cada tabela a ser migrada para o novo banco de dados.
 
-1. Em cada guia, crie uma coluna para todas as colunas existentes que precisam ser migradas. O Adobe recomenda dar um nome parecido com `Existing column name` a ele.
+1. Em cada guia, crie uma coluna para todas as colunas existentes que precisam ser migradas. A Adobe recomenda dar um nome parecido com `Existing column name`.
 
-1. Você também precisa fazer outra coluna para os equivalentes da coluna no novo banco de dados em cada guia da planilha. O Adobe recomenda nomear a coluna como algo como `New column name`.
+1. Você também precisa fazer outra coluna para os equivalentes da coluna no novo banco de dados em cada guia da planilha. A Adobe recomenda nomear a coluna como algo como `New column name`.
 
 1. Insira as colunas existentes e seus equivalentes. Se uma coluna existente não tiver um novo equivalente, digite `N/A`.
 
@@ -67,7 +67,7 @@ Veja um exemplo:
 
 ## Como faço para enviar uma solicitação? {#submitreq}
 
-Entre em contato conosco [enviando uma solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Entre em contato conosco [enviando uma solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Se você seguiu as etapas da seção anterior para criar a planilha correspondente à coluna, não se esqueça de anexá-la.
 

@@ -17,13 +17,13 @@ Você está confortável em criar consultas e ser a pessoa principal para a aná
 
 Esta seção demonstra como:
 * conectar e importar dados para [!DNL Commerce Intelligence]
-* visualizar como os dados são armazenados e estruturados na Data Warehouse
+* visualizar como os dados são armazenados e estruturados no Data Warehouse
 * analisar seus dados
 * usar o [!DNL SQL Report Builder]
 
 ## Relacionados
 
-* [Gerenciador de Data Warehouse](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
+* [Data Warehouse Manager](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
 * [[!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
 * [Conectando Dados](../mbi/data-analyst/importing-data/connecting-data/connecting-data.md)
 * [Integrações](../mbi/data-analyst/importing-data/integrations/magento.md)

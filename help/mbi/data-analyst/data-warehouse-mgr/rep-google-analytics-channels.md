@@ -1,6 +1,6 @@
 ---
-title: Replicação de canais do Google Analytics usando fontes de aquisição
-description: Saiba como replicar canais do Google Analytics usando fontes de aquisição.
+title: Replicação de canais da Google Analytics usando fontes de aquisição
+description: Saiba como replicar canais da Google Analytics usando fontes de aquisição.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -40,13 +40,13 @@ Por padrão, o [!DNL Google] configura oito canais diferentes. As regras que det
 
 {style="table-layout:auto"}
 
-## Como posso recriar esses agrupamentos de canais na minha Data Warehouse? {#recreate}
+## Como posso recriar esses agrupamentos de canal no meu Data Warehouse? {#recreate}
 
-Agora que você sabe que os canais são apenas combinações de fontes e meios, é fácil executar o processo de 3 etapas para recriar esses agrupamentos na Data Warehouse.
+Agora que você sabe que os canais são apenas combinações de fontes e mídias, é um processo fácil de 3 etapas para recriar esses agrupamentos no Data Warehouse.
 
 1. **Habilitar sua[!DNL Google ECommerce]integração**
 
-   [Quando habilitado](../importing-data/integrations/google-ecommerce.md), certifique-se de [sincronizar](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#sincronizando) os campos **mídia** e **origem** em sua Data Warehouse. Após concluir, os dados de aquisição de mídia e fonte serão trazidos para a Data Warehouse.
+   [Quando habilitado](../importing-data/integrations/google-ecommerce.md), certifique-se de [sincronizar]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#sincronizando) os campos **mídia** e **origem** em sua Data Warehouse. Depois que isso for concluído, os dados de aquisição de mídia e fonte serão trazidos para a Data Warehouse.
 
 1. **Carregar um mapeamento dos agrupamentos de canais da Google**
 

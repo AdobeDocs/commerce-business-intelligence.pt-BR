@@ -1,6 +1,6 @@
 ---
 title: Dados esperados do Salesforce
-description: Saiba mais sobre objetos compatíveis e não compatíveis nos dados do Salesforce.
+description: Saiba mais sobre objetos compatíveis e não compatíveis com dados do Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Dados [!DNL Salesforce] esperados
 
-Após a conclusão da [[!DNL Salesforce] configuração](../integrations/salesforce.md), uma tabela para cada [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) consultável - denominado `sf_/\{sobject-name}` - será criada na sua Data Warehouse.
+Após a conclusão da [[!DNL Salesforce] configuração](../integrations/salesforce.md), uma tabela para cada [objeto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) consultável - denominado `sf_/\{sobject-name}` - será criada em sua Data Warehouse.
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ Atualmente, [!DNL Salesforce] não expõe os seguintes objetos em suas APIs:
 ## Relacionados:
 
 * [Conectando [!DNL Salesforce]](../integrations/salesforce.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -76,22 +76,19 @@ Colunas para criar
 * **Taxa de churn**
    * [!UICONTROL Metric]: Novos clientes (por data de primeiro pedido)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Segundos desde a última data do pedido do cliente >= [Seu limite autodefinido para clientes com churn ]&#x200B;**`^`**
+   * Segundos desde a última data do pedido do cliente >= [Seu limite autodefinido para clientes com churn ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: Percentage
 
 * *Métrica `A`:`New customers cumulative`*

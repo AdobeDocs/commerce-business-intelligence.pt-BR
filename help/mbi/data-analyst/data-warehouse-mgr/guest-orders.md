@@ -1,6 +1,6 @@
 ---
 title: Pedidos de convidados
-description: Saiba mais sobre o impacto que os pedidos de convidados têm nos seus dados e quais opções você tem para contabilizar corretamente os pedidos de convidados na sua Data Warehouse [!DNL Commerce Intelligence] .
+description: Saiba mais sobre o impacto que os pedidos de convidados têm nos seus dados e quais opções você tem para contabilizar corretamente os pedidos de convidados no seu  [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -31,7 +31,7 @@ No banco de dados de comércio típico, há uma tabela `orders` que se une a uma
   >
   >Para identificar o indivíduo único que fez o pedido, precisa haver outro atributo de usuário único além de `customer\_id` anexado a um pedido. Normalmente, o endereço de email do cliente é usado.
 
-## Como contabilizar ordens de convidado na configuração do Data Warehouse
+## Como contabilizar ordens de convidados na configuração do Data Warehouse
 
 Normalmente, o engenheiro de vendas que implementa sua conta leva em consideração os pedidos de convidados ao criar a base da sua Data Warehouse.
 

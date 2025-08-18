@@ -15,13 +15,13 @@ ht-degree: 0%
 
 O [!DNL SQL Report Builder] permite consultar e iterar nessas consultas a qualquer momento. Isso é útil quando você precisa modificar uma consulta sem ter que esperar o término de um ciclo de atualização antes de perceber que uma coluna ou relatório criado precisa ser atualizado.
 
-Antes da execução de uma consulta, [[!DNL Commerce Intelligence] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=pt-BR). O custo considera o tempo e o número de recursos necessários para executar uma consulta. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder os limites [!DNL Commerce Intelligence], a consulta falhará. Para consultar sua [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), o que garante que você esteja gravando as consultas mais simplificadas possíveis, a Adobe recomenda o seguinte.
+Antes da execução de uma consulta, [[!DNL Commerce Intelligence] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). O custo considera o tempo e o número de recursos necessários para executar uma consulta. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder os limites [!DNL Commerce Intelligence], a consulta falhará. Para consultar sua [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), o que garante que você esteja gravando as consultas mais simples possíveis, a Adobe recomenda o seguinte.
 
 ## Utilização de SELECIONAR ou Seleção de Todas as Colunas
 
 Selecionar todas as colunas não possibilita uma consulta oportuna e facilmente executada. As consultas que usam `SELECT *` podem demorar um pouco para serem executadas, especialmente se a tabela tiver muitas colunas.
 
-Por isso, a Adobe recomenda que você evite usar `SELECT *` sempre que possível e inclua apenas as colunas necessárias:
+Por isso, a Adobe recomenda que você evite usar o `SELECT *` sempre que possível e inclua apenas as colunas necessárias:
 
 | **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
@@ -47,7 +47,7 @@ Essas consultas são idênticas em todos os aspectos, exceto pelo tipo de JOIN q
 
 ## Uso de Várias Associações
 
-Embora você possa incluir várias associações em sua consulta, lembre-se de que isso pode aumentar o custo da consulta. Para evitar atingir o limite de custo, a Adobe recomenda evitar várias associações sempre que possível.
+Embora você possa incluir várias associações em sua consulta, lembre-se de que isso pode aumentar o custo da consulta. Para não atingir o limite de custo, a Adobe recomenda evitar várias associações sempre que possível.
 
 ## Utilização de filtros
 

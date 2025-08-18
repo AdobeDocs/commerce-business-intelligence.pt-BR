@@ -17,7 +17,7 @@ Você pode fazer mais no `Visual Report Builder` do que criar análises de tend�
 
 Esse tipo de classificação e ordenação de dados pode ser feito em relatórios que usam um `Group By` e um `Time Interval of None`. Quando ambos os elementos estão em um relatório, o recurso `Show Top/Bottom` é exibido acima da visualização do gráfico. Esse recurso permite que você veja os pontos de dados superior (do mais alto ao mais baixo) e inferior (do mais baixo ao mais alto) com base nos parâmetros definidos.
 
-![Mostrar recurso Superior/Inferior no Report Builder visual.](../../assets/Show_Top_Bottom.png)
+![Mostrar recurso Superior/Inferior no Visual Report Builder.](../../assets/Show_Top_Bottom.png)
 
 ## Como faço para usá-lo? {#how}
 

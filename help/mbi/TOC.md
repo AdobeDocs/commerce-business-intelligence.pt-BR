@@ -22,21 +22,21 @@ ht-degree: 0%
    - [Entrar na sua conta [!DNL Commerce Intelligence] do](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials versus Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administrador {#administrator}
-   - Gerenciamento de Conta {#acct-mgmt}
+   - Gerenciamento de contas {#acct-mgmt}
       - [Benefícios do  [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
       - [Exibir Painéis no escritório](../mbi/administrator/account-management/display-dashboards-office.md)
       - [Gerencie sua conta](administrator/account-management/managing-account-settings.md)
       - [Restringir Acesso ao Banco de Dados](../mbi/administrator/account-management/restrict-db-access.md)
-   - Gerenciamento de usuários {#user-mgmt}
+   - User Management {#user-mgmt}
       - [Criar/editar usuário](../mbi/administrator/user-management/create-user.md)
       - [Excluir/Reativar usuário](../mbi/administrator/user-management/delete-user.md)
       - [Gerenciar permissões do usuário](administrator/user-management/user-management.md)
       - [Redefinir senha](../mbi/administrator/user-management/reset-password.md)
       - [Restringir acesso à métrica](../mbi/administrator/user-management/restrict-metric-access.md)
       - [Gerenciamento avançado de usuários](../mbi/administrator/user-management/advanced.md)
-- Analisar Dados {#analyze}
+- Analisar dados {#analyze}
    - [Analista de dados](data-analyst.md)
-   - Gerente do Data Warehouse {#warehouse-manager}
+   - Data Warehouse Manager {#warehouse-manager}
       - [Introdução](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Tipos de Coluna Calculados Avançados](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [Compilando  [!DNL Google Ecommerce] dimensões](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -62,7 +62,7 @@ ht-degree: 0%
       - [Usar a filtragem ampla do painel](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [Usando a Coluna Calculado Número do Evento](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
       - [Utilização da Coluna Calculada de Comparação Sequencial](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
-   - Tabelas Comuns do Commerce {#tables}
+   - Tabelas comuns do Commerce {#tables}
       - [Introdução](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
       - [[!DNL enterprise_rma]](data-analyst/data-warehouse-mgr/enter-rma-table.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder {#sql}
+   - SQL REPORT BUILDER {#sql}
       - [Usando o  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Usar o [!DNL Cohort Report Builder] para Coortes não baseados em data](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Criação de uma análise qualitativa de coorte](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -129,7 +129,7 @@ ht-degree: 0%
       - [Dados  [!DNL Zendesk]  esperados](data-analyst/importing-data/integrations/exp-zendesk-data.md)
       - [Analisando  [!DNL Zendesk] dados](data-analyst/importing-data/integrations/help-desk-zendesk.md)
       - [Auditando  [!DNL Zendesk] dados](data-analyst/importing-data/integrations/audit-zendesk-data.md)
-   - Integrações de Banco de Dados {#integration}
+   - Integrações de banco de dados {#integration}
       - [Conectando [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Conectando Bancos de Dados via VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
       - [Conectar o(a) seu(sua) [!DNL MySQL Database] a [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
@@ -141,7 +141,7 @@ ht-degree: 0%
       - [Conectando [!DNL MySQL] via [!DNL cPanel]](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
       - [Conectando [!DNL MySQL] via [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
       - [Conectando [!DNL PostgreSQ]](data-analyst/importing-data/integrations/postgresql.md)
-   - Analisar Campanhas {#campaigns}
+   - Analisar campanhas {#campaigns}
       - [Análise do código do cupom (básica)](data-analyst/analysis/ess-coupon-code-analysis.md)
       - [Análise do código do cupom (avançada)](data-analyst/analysis/coupon-code-analysis.md)
       - [Limite de frete gratuito](data-analyst/analysis/free-ship-thresh.md)
@@ -149,7 +149,7 @@ ht-degree: 0%
       - [Análise do uso do cupom](data-analyst/analysis/coupon-usage.md)
       - [Aumentar o ROI em suas campanhas publicitárias](data-analyst/analysis/roi-ad-camp.md)
       - [ROI de marketing](data-analyst/analysis/marketing-roi.md)
-   - Analisar Clientes {#customers}
+   - Analisar clientes {#customers}
       - [Cálculo das taxas de churn do Commerce](data-analyst/analysis/commerce-churn.md)
       - [Definindo a concentração do cliente](data-analyst/analysis/define-cust-concent.md)
       - [Definindo churn do cliente](data-analyst/analysis/define-cust-churn.md)
@@ -160,7 +160,7 @@ ht-degree: 0%
       - [Análise do comportamento de recompra do cliente](data-analyst/analysis/repurchase-behavior.md)
       - [Análise da atividade do site e taxas de conversão do cliente](data-analyst/analysis/web-act-cust-conversion.md)
       - [Recenticidade, frequência, análise monetária (RFM)](data-analyst/analysis/rfm-analysis.md)
-   - Analisar Desempenho de Negócios {#performance}
+   - Analisar o desempenho dos negócios {#performance}
       - [Rastrear metas em relação a métricas reais](data-analyst/analysis/track-goals-against-metrics.md)
       - [Analisando ordens devolvidas](data-analyst/analysis/returned-order-analysis.md)
       - [Ano por ano, mês por mês, semana por semana](data-analyst/analysis/year-month-week.md)
@@ -209,12 +209,12 @@ ht-degree: 0%
       - [Acessar painéis compartilhados](data-user/dashboards/access-shared-dashboard.md)
       - [Alteração do acesso a Painéis compartilhados](data-user/dashboards/change-access-dashboard.md)
       - [Sair (cancelar o compartilhamento) de um painel](data-user/dashboards/leave-dashboard.md)
-   - Compartilhando Dados {#share}
+   - Compartilhamento de dados {#share}
       - [Compartilhar dados](data-user/export-data/share-data.md)
       - [Exportar dados do gráfico](data-user/export-data/exp-chart-dash.md)
       - [Resumos automatizados de email](data-user/export-data/email-summaries.md)
 - Práticas recomendadas {#best-practices}
-   - Trabalhando com Dados {#data}
+   - Trabalhar com dados {#data}
       - [Trabalhar com dados](best-practices/work-data.md)
       - [Marcação UTM em  [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formatando e Importando Dados Financeiros](best-practices/format-import-financial-data.md)
@@ -229,10 +229,10 @@ ht-degree: 0%
       - [Nomeando Relatórios e Elementos em [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidação de tabelas](best-practices/consolidating-your-tables.md)
       - [Descritor da sua conta  [!DNL Commerce Intelligence] ](best-practices/declutter-account.md)
-   - Trabalhando com Painéis {#working-dashboards}
+   - Trabalhar com painéis {#working-dashboards}
       - [Compartilhamento de painéis](best-practices/share-dashboard-best-practice.md)
       - [Construindo um painel de investidores](best-practices/build-investor-dashboard.md)
-- Tutoriais {#tutorials}
+- Tutorials {#tutorials}
    - [Usando o  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Usando Opções de Tempo em  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Criando Visualizações para uma Consulta  [!DNL SQL] ](tutorials/create-visuals-from-sql.md)

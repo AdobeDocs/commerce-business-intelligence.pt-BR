@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Essas permissões permitem que os usuários executem determinadas ações ou ace
 | **Criar/editar/excluir relatórios SQL** | ✔ |  |   |
 | **Clonar painéis** | ✔ |   |   |
 | **Adicionar/gerenciar integrações** | ✔ |   |   |
-| **Acessar o Gerenciador de Datas Warehouse** | ✔ |   |   |
+| **Acessar o Data Warehouse Manager** | ✔ |   |   |
 | **Sincronizar/dessincronizar tabelas e colunas** | ✔ |   |   |
 | **Criar/editar métricas** | ✔ |   |   |
 | **Criar/editar conjuntos de filtros** | ✔ |   |   |
@@ -50,7 +50,7 @@ Essas permissões permitem que os usuários executem determinadas ações ou ace
 
 >[!NOTE]
 >
->_Você pode limitar o [acesso a métricas específicas](../../administrator/user-management/restrict-metric-access.md) de um usuário **[!UICONTROL Standard]**._
+>_Você pode limitar o **[!UICONTROL Standard]**acesso a métricas específicas[ de um usuário ](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _usuários podem acessar o Faturamento com uma configuração de permissão extra._
 >
@@ -62,7 +62,7 @@ Além dos níveis de permissão gerais, existem duas outras designações de usu
 
 ### Faturamento
 
-`Billing` usuários têm acesso à página de cobrança e podem alterar informações de pagamento. Além disso, eles também podem ser contatados pelo Adobe para perguntas sobre faturamento.
+`Billing` usuários têm acesso à página de cobrança e podem alterar informações de pagamento. Além disso, elas também podem ser contatadas pela Adobe em caso de dúvidas sobre cobrança.
 
 Por padrão, `Admin` usuários têm acesso à guia `Billing`, mas `Standard` usuários também podem obter acesso se tiverem a caixa de seleção `Billing` marcada em seus perfis.
 
@@ -70,7 +70,7 @@ Por padrão, `Admin` usuários têm acesso à guia `Billing`, mas `Standard` usu
 
 ### Técnico
 
-`Technical` usuários não têm permissões específicas para eles - essa configuração apenas marca um contato técnico em sua organização. Esses usuários podem ser contatados pelo Adobe para perguntas técnicas.
+`Technical` usuários não têm permissões específicas para eles - essa configuração apenas marca um contato técnico em sua organização. A Adobe pode entrar em contato com esses usuários para perguntas técnicas.
 
 `Admin` usuários podem adicionar novos usuários às suas contas clicando em **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** e seguindo os prompts. Depois que o usuário for criado em [!DNL Commerce Intelligence], a pessoa de sorte que você está convidando receberá instruções por email sobre como concluir o processo de configuração da conta.
 

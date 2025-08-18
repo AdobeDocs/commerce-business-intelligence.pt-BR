@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # Nova arquitetura
 
-As equipes de Produtos e Engenharia do [!DNL Adobe Commerce Intelligence] concentraram-se em realizar as melhorias mais abrangentes e solicitadas possíveis no último ano. O Adobe tem o prazer de anunciar a disponibilidade de uma nova arquitetura de produto do [!DNL Commerce Intelligence] que torna essas melhorias uma realidade.
+As equipes de Produtos e Engenharia do [!DNL Adobe Commerce Intelligence] concentraram-se em realizar as melhorias mais abrangentes e solicitadas possíveis no último ano. A Adobe tem o prazer de anunciar a disponibilidade de uma nova arquitetura de produto do [!DNL Commerce Intelligence] que torna essas melhorias uma realidade.
 
 ## Benefícios da nova arquitetura
 
-* Crie tipos de colunas na Data Warehouse, incluindo colunas calculadas com SQL.
+* Crie tipos de colunas no Data Warehouse, incluindo colunas calculadas com SQL.
 * Novas colunas estão disponíveis imediatamente.
 * A latência de dados é drasticamente melhorada.
 
 ## Benefícios técnicos
 
-As principais diferenças estão listadas acima, mas a principal alteração é a maneira como os cálculos são executados durante o ciclo de atualização. Os cálculos não são mais executados em cada coluna durante cada atualização; em vez disso, são executados sob demanda a partir do Report Builder visual.
+As principais diferenças estão listadas acima, mas a principal alteração é a maneira como os cálculos são executados durante o ciclo de atualização. Os cálculos não são mais executados em cada coluna durante cada atualização; em vez disso, são executados sob demanda no Visual Report Builder.
 
 ### Migrando para a nova arquitetura
 
-Como as contas são fundamentalmente criadas de forma diferente, não há um processo automático para migrar sua Data Warehouse ou relatórios para uma nova conta de arquitetura. A migração para a nova arquitetura requer a reimplementação da conta existente.
+Como as contas são criadas de forma fundamentalmente diferente, não há um processo automático para migrar seu Data Warehouse ou relatórios para uma nova conta de arquitetura. A migração para a nova arquitetura requer a reimplementação da conta existente.
 
 ### Custo para migrar para a nova arquitetura
 
-Sem custo adicional! O Adobe criará essa nova conta para que você comece a reimplementação, que é gratuita por pelo menos um mês. Isso permite que você tenha tempo para abrir ambas as contas para executar mais facilmente a reimplementação e garantir que sua equipe não tenha uma lacuna no serviço.
+Sem custo adicional! A Adobe criará essa nova conta para você começar a reimplementação, que é gratuita por pelo menos um mês. Isso permite que você tenha tempo para abrir ambas as contas para executar mais facilmente a reimplementação e garantir que sua equipe não tenha uma lacuna no serviço.
 
 ### Tempo necessário para reimplementar a conta na nova arquitetura
 
@@ -41,12 +41,12 @@ Os tempos de reimplementação variam dependendo do que você deseja reconstruir
 * Identifique as métricas e dimensões necessárias para criar esses relatórios.
 * Identifique as colunas necessárias para recriar essas métricas e dimensões.
 
-Quando estiver concluído, você saberá quais dados precisam ser sincronizados com a nova Data Warehouse de arquitetura para reconstruir esses relatórios principais.
+Quando estiver concluído, você saberá quais dados precisam ser sincronizados com a nova arquitetura do Data Warehouse para reconstruir esses relatórios principais.
 
 ### Obtendo ajuda
 
-A [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) pode realizar sua reimplementação por um custo extra. Contate a sua [Equipe de Conta do Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar a criar na nova conta
+A [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pode realizar sua reimplementação por um custo extra. Contate a sua [Equipe de Conta da Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar a criar na nova conta
 
 ### Permanecendo com a arquitetura existente
 
-Se esses recursos não forem importantes para você, é possível manter a conta existente. Não há custo extra para manter sua conta existente. O Adobe continua oferecendo suporte a essas contas sem alterações.
+Se esses recursos não forem importantes para você, é possível manter a conta existente. Não há custo extra para manter sua conta existente. A Adobe continua oferecendo suporte a essas contas sem alterações.

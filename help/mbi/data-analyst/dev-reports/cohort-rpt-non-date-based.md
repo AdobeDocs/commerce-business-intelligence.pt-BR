@@ -55,11 +55,11 @@ Cinco especificações são necessárias para criar um relatório de coorte:
 
 
 
-#### 1. Agrupamento `cohorts`
+#### &#x200B;1. Agrupamento `cohorts`
 
 `Cohorts` estão agrupados por uma característica de comportamento, neste exemplo `Customer's first order GA source`. As opções disponíveis aqui são colunas que já estão designadas como `groupable` para a métrica.
 
-#### 2. Seleção de coortes
+#### &#x200B;2. Seleção de coortes
 
 É possível mostrar todos os resultados para a característica fornecida. Como isso pode resultar em muitos `cohorts`, você pode selecionar o `cohorts` específico (que corresponde aos vários valores disponíveis para `Customer's first order GA source`) que você precisa.
 

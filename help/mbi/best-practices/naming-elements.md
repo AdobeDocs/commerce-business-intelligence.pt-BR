@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Nomear relatórios e elementos
 
-Antes de começar a criar no [!DNL Adobe Commerce Intelligence], o Adobe deseja compartilhar alguns segredos com sucesso. Saber como criar métricas, filtros e assim por diante é importante, mas todo o seu trabalho pode ser em vão se você não conseguir encontrar o que precisa ou se houver ambiguidade.
+Antes de começar a criar no [!DNL Adobe Commerce Intelligence], a Adobe deseja compartilhar alguns segredos com sucesso. Saber como criar métricas, filtros e assim por diante é importante, mas todo o seu trabalho pode ser em vão se você não conseguir encontrar o que precisa ou se houver ambiguidade.
 
 ## Por que a nomenclatura é importante? {#why}
 
 A forma como você nomeia colunas calculadas, métricas e relatórios facilita a navegação de diferentes usuários pela sua conta do [!DNL Commerce Intelligence]. Ao nomear esses recursos, lembre-se dos três Cs:
 
 * **CLAREZA** - para que você possa saber rapidamente o que um relatório está mostrando, o que uma métrica faz e assim por diante.
-* **CONSISTÊNCIA** - Para que você (e a equipe de suporte do Adobe) possam encontrar e entender facilmente elementos e relatórios em sua conta.
+* **CONSISTÊNCIA** - Para que você (e a equipe de suporte da Adobe) possam encontrar e entender facilmente elementos e relatórios em sua conta.
 * **CREDIBILIDADE** - Para inspirar e capacitar outros usuários do [!DNL Commerce Intelligence] orientados por dados, é necessário incutir confiança em como eles entendem e usam os dados!
 
 Leia para dicas de nomenclatura testadas e verdadeiras!
@@ -80,7 +80,7 @@ Os painéis devem ser nomeados de forma a representar tematicamente os relatóri
 
 Por outro lado, se o seu painel for um local onde você está experimentando com relatórios diferentes, considere nomeá-lo como **Sandbox do seu nome** para que você saiba que os relatórios contidos nele são rascunhos.
 
-## Dimension (colunas calculadas) {#dimensions}
+## Dimensões (colunas calculadas) {#dimensions}
 
 Ao nomear novas [dimensões](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), é mais útil seguir esta fórmula: **(Entidade) + (Enésimo) + (intervalo de tempo) + (cálculo) + (comentários)**. Por exemplo:
 

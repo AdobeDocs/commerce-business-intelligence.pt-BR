@@ -33,7 +33,7 @@ Quando usadas em relatórios, as métricas podem ser analisadas por um período 
 
 1. Nomeie sua métrica.
 
-   Adobe recomenda um nome que informa qual é a métrica. Por exemplo: `Average Order Revenue`.
+   A Adobe recomenda um nome que, resumidamente, informa qual é a métrica. Por exemplo: `Average Order Revenue`.
 
 1. A próxima etapa é definir o que sua métrica faz. Usando os menus suspensos, defina a operação da métrica, a coluna `operation` e uma dimensão `date`:
 
@@ -66,7 +66,7 @@ A seção `Filter Logic` é onde você pode definir melhor como uma métrica dev
 * &quot;\[`A`\] e \[`B`\]&quot; permite somente dados que satisfaçam ambos os filtros \[`A`\] e \[`B`\]
 * &quot;(\[`A`\] e \[`B`\]) OU \[`C`\]&quot; permite somente dados que satisfazem os filtros \[`A`\] e \[`B`\] ou satisfazem o filtro \[`C`\] sozinho
 
-## Adicionar Dimension {#dimensions}
+## Adição de dimensões {#dimensions}
 
 A seção [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) mostra todas as dimensões de dados disponíveis para filtragem ou agrupamento. Por padrão, todas as colunas de dados disponíveis são listadas como dimensões. Continuando com o exemplo, se você quiser segmentar sua receita por fonte de referência, faça isso aqui.
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Tempo médio até a primeira compra do relatório
 
-Muitos clientes do Adobe têm uma métrica e um gráfico chamado `Average time to first purchase`, que mostra o tempo médio entre a data de registro de um grupo de usuários e a data da primeira compra. Os dados quase invariavelmente inclinam-se para baixo à medida que o tempo se aproxima do presente.
+Muitos clientes da Adobe têm uma métrica e um gráfico chamado `Average time to first purchase`, que mostra o tempo médio entre a data de registro de um grupo de usuários e a data da primeira compra. Os dados quase invariavelmente inclinam-se para baixo à medida que o tempo se aproxima do presente.
 
 ![tempo médio até a primeira solicitação](../../assets/average-time-to-first-order.png)
 

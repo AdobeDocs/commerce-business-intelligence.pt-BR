@@ -23,7 +23,7 @@ Para conectar o banco de dados do [!DNL MongoDB] ao [!DNL Commerce Intelligence]
 
 >[!NOTE]
 >
->Devido à natureza técnica dessa configuração, o Adobe recomenda que você faça o loop em um desenvolvedor para ajudar se você não tiver feito isso antes.
+>Devido à natureza técnica dessa configuração, a Adobe recomenda que você faça um loop em um desenvolvedor para ajudar caso ainda não tenha feito isso.
 
 ## Recuperando a chave pública [!DNL Commerce Intelligence] {#retrieve}
 
@@ -146,4 +146,4 @@ Quando terminar, clique em **[!UICONTROL Save Test]** para concluir a instalaç�
 
 ### Relacionados
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

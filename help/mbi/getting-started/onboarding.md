@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Integração de [!DNL Adobe Commerce Intelligence]
 
-As perguntas de integração relacionadas às configurações do `store` e do `database` garantem que você configure seus relatórios corretamente. Com essas respostas, o Adobe fornece relatórios que são adaptados precisamente para a configuração de sua loja.
+As perguntas de integração relacionadas às configurações do `store` e do `database` garantem que você configure seus relatórios corretamente. Com essas respostas, a Adobe fornece relatórios que são adaptados precisamente à configuração de sua loja.
 
 ## Configurações da loja
 
@@ -27,7 +27,7 @@ As perguntas de integração relacionadas às configurações do `store` e do `d
 
 - *Qual versão do Commerce você usa?* - Selecione o `currency` em que seu armazenamento opera.
 
-- *Sua loja está baseada na União Europeia?* - Se você responder `Yes` a esta pergunta, Adobe hospede sua Data Warehouse e todos os seus dados na União Europeia, em conformidade com o GDPR.
+- *Sua loja está baseada na União Europeia?* - Se você responder `Yes` a esta pergunta, a Adobe hospedará sua Data Warehouse e todos os seus dados na União Europeia, em conformidade com o GDPR.
 
 ## Configurações do banco de dados
 

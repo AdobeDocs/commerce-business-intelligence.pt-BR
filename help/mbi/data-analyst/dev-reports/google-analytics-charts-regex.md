@@ -1,5 +1,5 @@
 ---
-title: Criar gráficos de Google Analytics
+title: Criar gráficos do Google Analytics
 description: Saiba como criar gráficos a partir dos dados do Google Analytics.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
 role: Admin, Data Architect, Data Engineer, User

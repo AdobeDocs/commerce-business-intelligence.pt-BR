@@ -55,14 +55,14 @@ Muitas empresas se concentram apenas em encontrar canais que forneçam novos usu
 
 Uma [chave primária](https://en.wikipedia.org/wiki/Unique_key) é uma coluna (ou conjunto de colunas) inalterável que produz valores únicos dentro de uma tabela. As chaves primárias são incrivelmente importantes, pois garantem que suas tabelas sejam replicadas corretamente em [!DNL Commerce Intelligence].
 
-Ao criar chaves primárias, use um tipo de dados de número inteiro para a coluna que aumenta automaticamente. O Adobe recomenda evitar o uso de várias chaves primárias de coluna, quando possível.
+Ao criar chaves primárias, use um tipo de dados de número inteiro para a coluna que aumenta automaticamente. A Adobe recomenda evitar o uso de várias chaves primárias de coluna, quando possível.
 
 Se a tabela for uma visualização SQL, adicione uma coluna que possa agir como uma chave primária. [!DNL Commerce Intelligence] pode identificar automaticamente esta coluna como uma chave primária.
 
 ### Atribuir um Tipo de Dados à Coluna de Dados
 
-Se uma coluna de dados não tiver um [tipo de dados](https://en.wikipedia.org/wiki/Data_type) atribuído, [!DNL Commerce Intelligence] adivinhará qual tipo de dados usar. Se o sistema adivinhar incorretamente, talvez você não possa realizar as análises relevantes até que a equipe de suporte do Adobe ajuste a coluna para o tipo de dados correto. Por exemplo, se uma coluna de data for adivinhada como um tipo de dados numérico, você poderá analisar a tendência ao longo do tempo usando essa dimensão de data.
+Se uma coluna de dados não tiver um [tipo de dados](https://en.wikipedia.org/wiki/Data_type) atribuído, [!DNL Commerce Intelligence] adivinhará qual tipo de dados usar. Se o sistema adivinhar incorretamente, talvez você não possa realizar as análises relevantes até que a equipe de suporte da Adobe ajuste a coluna ao tipo de dados correto. Por exemplo, se uma coluna de data for adivinhada como um tipo de dados numérico, você poderá analisar a tendência ao longo do tempo usando essa dimensão de data.
 
 ### Adicionar prefixos às tabelas de dados se você tiver vários bancos de dados
 
-Se você tiver mais de um banco de dados conectado ao [!DNL Commerce Intelligence], o Adobe recomenda adicionar prefixos às tabelas para evitar confusão. Os prefixos ajudam a lembrar de onde as métricas ou dimensões de dados são originadas.
+Se você tiver mais de um banco de dados conectado ao [!DNL Commerce Intelligence], a Adobe recomenda adicionar prefixos às tabelas para evitar confusão. Os prefixos ajudam a lembrar de onde as métricas ou dimensões de dados são originadas.

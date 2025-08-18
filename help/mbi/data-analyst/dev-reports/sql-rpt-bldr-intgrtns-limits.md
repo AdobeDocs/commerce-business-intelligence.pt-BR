@@ -1,6 +1,6 @@
 ---
-title: Integrações usadas com o Report Builder SQL?
-description: Saiba quais integrações podem ser usadas com o Report Builder SQL.
+title: Integrações usadas com o SQL Report Builder?
+description: Saiba quais integrações podem ser usadas com o SQL Report Builder.
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a

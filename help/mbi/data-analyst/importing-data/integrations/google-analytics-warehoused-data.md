@@ -1,5 +1,5 @@
 ---
-title: Dados Armazenados De Google Analytics Esperados
+title: Dados Armazenados Esperados Do Google Analytics
 description: Saiba como interagir com os dados armazenados do Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
@@ -29,9 +29,9 @@ A integração [!DNL Google Analytics Warehoused] em [!DNL Commerce Intelligence
 
 Uma única tabela - chamada `report` - é criada no Data Warehouse.
 
-O esquema desta tabela é composto pelas Métricas e Dimension selecionadas durante o processo de instalação e por duas outras colunas: `start-date` e `end-date`.
+O esquema desta tabela é composto pelas Métricas e Dimensões selecionadas durante o processo de instalação e por duas outras colunas: `start-date` e `end-date`.
 
-Se, por exemplo, você selecionou as seguintes métricas e Dimension durante a configuração:
+Por exemplo, se você selecionou as seguintes Métricas e dimensões durante a configuração:
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
@@ -58,7 +58,7 @@ Veja as campanhas de anúncios [!DNL Google Analytics] para ver um exemplo do qu
 
 O aspecto de combinação permite que dados [!DNL Google Analytics] sejam unidos a outros dados para realizar análises. Por exemplo, pegue os dados de `Total Time On Site By Ad Campaign` de [!DNL Google Analytics] e junte-os aos dados de `Total Spent Per Campaign` de [!DNL Facebook Ads] para obter uma visão completa de quanto o engajamento está lhe custando.
 
-Por outro lado, com a integração [!DNL Google Analytics Live], cada gráfico [!DNL Google Analytics] se parece com um pequeno silo que não está armazenado na sua Data Warehouse [!DNL Commerce Intelligence].
+Por outro lado, com a integração do [!DNL Google Analytics Live], cada gráfico do [!DNL Google Analytics] se parece com um pequeno silo que não está armazenado no Data Warehouse [!DNL Commerce Intelligence].
 
 ## Relacionados:
 

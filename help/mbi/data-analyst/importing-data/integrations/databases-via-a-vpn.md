@@ -20,7 +20,7 @@ Embora a Adobe recomende que você conecte seus bancos de dados usando um `SSH t
 1. [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Insira a conexão e as informações de usuário da VPN no Commerce Intelligence](#finish)
 
-Além das credenciais do banco de dados, você deve inserir credenciais para um usuário VPN para concluir tudo. Qualquer usuário VPN funciona, mas o Adobe recomenda que você crie um usuário [!DNL Commerce Intelligence], pois isso facilita o rastreamento dos usuários em sua conta.
+Além das credenciais do banco de dados, você deve inserir credenciais para um usuário VPN para concluir tudo. Qualquer usuário VPN funciona, mas a Adobe recomenda que você crie um usuário [!DNL Commerce Intelligence], pois isso facilita o rastreamento dos usuários em sua conta.
 
 ## Criando um usuário de banco de dados para [!DNL Commerce Intelligence] {#database}
 

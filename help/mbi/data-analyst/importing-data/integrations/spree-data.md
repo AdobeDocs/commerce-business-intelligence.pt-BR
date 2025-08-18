@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Dados [!DNL Spree] esperados
 
-Depois de [conectar seu [!DNL Spree] armazenamento](../../../data-analyst/importing-data/integrations/spree.md), você poderá usar o [Gerenciador de Data Warehouse](../../data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes da sua plataforma [!DNL Spree] para análise.
+Depois de [conectar seu [!DNL Spree] armazenamento](../../../data-analyst/importing-data/integrations/spree.md), você poderá usar o [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes da sua plataforma [!DNL Spree] para análise.
 
 Este tópico explora as principais tabelas de dados que você pode importar do [!DNL Spree] para sua conta do [!DNL Commerce Intelligence], incluindo links para a [documentação adicional](https://guides.spreecommerce.org/developer/addresses.html#address) sobre os dados do [!DNL Spree].
 
@@ -30,4 +30,4 @@ Este tópico explora as principais tabelas de dados que você pode importar do [
 ## Relacionados:
 
 * [Conectando [!DNL Spree]](../integrations/spree.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

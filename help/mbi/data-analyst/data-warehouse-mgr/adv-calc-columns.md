@@ -1,22 +1,22 @@
 ---
 title: Tipos de Coluna Calculados Avançados
-description: Aprenda as noções básicas para a maioria dos casos de coluna de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Gerenciador de Datas Warehouse pode criar.
+description: Aprenda as noções básicas para a maioria dos casos de coluna de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Data Warehouse Manager pode criar.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
 
 # Tipos de Coluna Calculados Avançados
 
-Muitas análises que você pode criar envolvem o uso de uma **nova coluna** que você deseja `group by` ou `filter by`. O tutorial [Criação de colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) aborda as noções básicas da maioria dos casos de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Gerenciador de Datas Warehouse pode criar.
+Muitas análises que você pode criar envolvem o uso de uma **nova coluna** que você deseja `group by` ou `filter by`. O tutorial [Criação de colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) aborda as noções básicas da maioria dos casos de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Data Warehouse Manager pode criar.
 {: #top}
 
-Esses tipos de colunas podem ser criados pela equipe de Adobe dos analistas do Data Warehouse. Para definir uma nova coluna calculada, forneça as seguintes informações:
+Esses tipos de colunas podem ser criados pela equipe de analistas do Data Warehouse do Adobe. Para definir uma nova coluna calculada, forneça as seguintes informações:
 
 1. O **`definition`** desta coluna (incluindo entradas, fórmulas ou formatação)
 1. O **`table`** no qual você deseja criar a coluna
@@ -159,9 +159,9 @@ Para criar esse tipo de coluna calculada, você precisa saber:
 
 ## Estou tentando fazer algo que não está listado aqui. {#else}
 
-Não se preocupe. Só porque não está listado aqui não significa que não seja possível. A equipe Adobe de analistas do Data Warehouse pode ajudar.
+Não se preocupe. Só porque não está listado aqui não significa que não seja possível. A equipe do Adobe de analistas da Data Warehouse pode ajudar.
 
-Para definir uma nova coluna calculada, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) com detalhes sobre exatamente o que deseja criar.
+Para definir uma nova coluna calculada, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com detalhes sobre exatamente o que deseja criar.
 
 ## Documentação relacionada
 

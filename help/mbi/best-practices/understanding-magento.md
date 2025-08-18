@@ -1,5 +1,5 @@
 ---
-title: Compreender o ambiente  [!DNL Commerce Intelligence]
+title: 'Compreender o ambiente  [!DNL Commerce Intelligence] '
 description: Saiba como trabalhar com e melhorar o ambiente do  [!DNL Commerce Intelligence] .
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
 role: Admin, Data Architect, Data Engineer, User
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Seu Ambiente [!DNL Adobe Commerce Intelligence]
 
-Ao analisar seus dados comerciais, esteja ciente desses fatores e dos equívocos comuns. Se precisar de ajuda para verificar se está usando o esquema do Commerce corretamente, não hesite em [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Ao analisar seus dados comerciais, esteja ciente desses fatores e dos equívocos comuns. Se precisar de ajuda para verificar se está usando o esquema do Commerce corretamente, não hesite em [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## [!DNL entity\_id]
 
@@ -33,7 +33,7 @@ Se você usar a tabela `sales\_order` como uma tabela do cliente, tenha cuidado 
 
 Se você puder usar a tabela `customer\_entity`, cada linha será um único cliente e cada cliente existirá somente nessa tabela uma vez. Portanto, quando você tem a coluna de receita vitalícia, tudo o que é necessário é criar uma métrica média. No entanto, se você usar a tabela `sales\_order` como tabela do cliente, é possível que haja um cliente em várias linhas. Depois de configurar a coluna receita vitalícia, cada pedido (linha) feito por um determinado cliente mostrará a receita vitalícia desse cliente, mas você só deseja incluir esse cliente uma vez na métrica média geral.
 
-O truque aqui é que você deve adicionar um filtro à sua métrica para garantir que inclua apenas cada cliente uma vez. O Adobe incentiva você a criar e usar um conjunto de filtros chamado **Clientes que contamos**, que filtra o **número do pedido do cliente = 1** (entre outros filtros que você pode precisar excluir clientes indesejados). A adição desse filtro garante que você inclua apenas cada cliente uma vez em uma métrica no nível do cliente.
+O truque aqui é que você deve adicionar um filtro à sua métrica para garantir que inclua apenas cada cliente uma vez. A Adobe incentiva você a criar e usar um conjunto de filtros chamado **Clientes que contamos**, que filtra o **número do pedido do cliente = 1** (entre outros filtros que você pode precisar excluir clientes indesejados). A adição desse filtro garante que você inclua apenas cada cliente uma vez em uma métrica no nível do cliente.
 
 ## Produtos e categorias
 
@@ -43,4 +43,4 @@ Imagine um par de jeans que se enquadra em três níveis de categoria diferentes
 
 Antes de mover quaisquer dados, primeiro você deve conhecer as associações e os filtros adequados para garantir que captura a categoria correta. Para algumas análises, você pode precisar saber &quot;Calças&quot;, mas em outras análises, &quot;Roupas&quot; pode ser mais apropriado. Essas são categorias distintas que são identificadas separadamente. Saber como cada nível de categoria é definido garante que você possa atribuir vendas de unidade à categoria apropriada para sua análise específica.
 
-Agora, imagine que você também tem uma categoria de nível superior `Our Favorites` na home page do seu site. Talvez você tenha implementado sua loja da Commerce para incluir esses jeans nas categorias `Clothing` e `Our Favorites`. Nesse caso, esse par de jeans tem mais de uma categoria de nível superior. Nesse caso, mover uma única categoria de nível superior para a tabela `sales\_order\_item` não faz sentido, pois há várias opções. Para levar em conta isso, o Adobe sugere criar colunas sim/não que verifiquem categorias específicas. Por exemplo, as colunas `Is product in Clothing category?` e `Is product in Our Favorites category?` permitem que você verifique se um produto se enquadra nessas categorias específicas.
+Agora, imagine que você também tem uma categoria de nível superior `Our Favorites` na home page do seu site. Talvez você tenha implementado sua loja da Commerce para incluir esses jeans nas categorias `Clothing` e `Our Favorites`. Nesse caso, esse par de jeans tem mais de uma categoria de nível superior. Nesse caso, mover uma única categoria de nível superior para a tabela `sales\_order\_item` não faz sentido, pois há várias opções. Para levar em conta isso, a Adobe sugere criar colunas sim/não que verifiquem categorias específicas. Por exemplo, as colunas `Is product in Clothing category?` e `Is product in Our Favorites category?` permitem que você verifique se um produto se enquadra nessas categorias específicas.

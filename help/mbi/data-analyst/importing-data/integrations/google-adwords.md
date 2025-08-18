@@ -39,7 +39,7 @@ Se você tiver vários perfis e precisar de ajuda para identificar qual é qual,
 
 Você pode ter vários sites conectados a uma única conta do [!DNL Google Analytics], identificada pela sua própria ID de perfil do [!DNL Google Analytics]. Nesse caso, você tem a opção de incluir todas as IDs de perfil em [!DNL Commerce Intelligence]. Marque as IDs de perfil que você deseja incluir durante a etapa de seleção de perfil.
 
-**Para identificar a ID de perfil de Google Analytics de um site específico:**
+**Para identificar a ID de Perfil do Google Analytics de um site específico:**
 
 1. Fazer logon em [!DNL Google Analytics]
 1. Ir para o painel do site específico [!DNL Google Analytics]
@@ -55,7 +55,7 @@ Você pode ter vários sites conectados a uma única conta do [!DNL Google Analy
 
 ## Relacionados
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Rastrear origem da referência de ordem via [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no banco de dados](../../analysis/google-track-user-acq.md)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../../analysis/most-value-source-channel.md)

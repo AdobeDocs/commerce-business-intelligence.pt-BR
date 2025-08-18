@@ -23,7 +23,7 @@ Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-
 
 ## Introdução
 
-Você pode [baixar](../../assets/454-calendar.csv) uma versão `.csv` do calendário de varejo 4-5-4 para os anos de 2014 a 2017. Talvez seja necessário ajustar esse arquivo de acordo com seu calendário de varejo interno e estender o intervalo de datas para oferecer suporte ao seu histórico e período atual. Depois de baixar o arquivo, use o Carregador de Arquivos para criar uma tabela de Calendário de Varejo na Data Warehouse [!DNL Commerce Intelligence]. Se você estiver usando uma versão inalterada do calendário de varejo 4-5-4, verifique se a estrutura e os tipos de dados dos campos nessa tabela correspondem ao seguinte:
+Você pode [baixar](../../assets/454-calendar.csv) uma versão `.csv` do calendário de varejo 4-5-4 para os anos de 2014 a 2017. Talvez seja necessário ajustar esse arquivo de acordo com seu calendário de varejo interno e estender o intervalo de datas para oferecer suporte ao seu histórico e período atual. Depois de baixar o arquivo, use o Carregador de Arquivos para criar uma tabela de Calendário de Varejo no Data Warehouse [!DNL Commerce Intelligence]. Se você estiver usando uma versão inalterada do calendário de varejo 4-5-4, verifique se a estrutura e os tipos de dados dos campos nessa tabela correspondem ao seguinte:
 
 | Nome da coluna | Tipo de dados da coluna | Chave primária |
 | --- | --- | --- |
@@ -50,8 +50,7 @@ Você pode [baixar](../../assets/454-calendar.csv) uma versão `.csv` do calend�
    * **Data atual**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * &#x200B;
-
+      * 
         [!UICONTROL Tipo de dados]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -63,8 +62,7 @@ Você pode [baixar](../../assets/454-calendar.csv) uma versão `.csv` do calend�
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * &#x200B;
-
+      * 
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Incluído no ano de varejo atual? (Sim/Não)**
@@ -72,8 +70,7 @@ Você pode [baixar](../../assets/454-calendar.csv) uma versão `.csv` do calend�
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
+      * 
         [!UICONTROL Tipo de dados]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Incluído no ano de varejo anterior? (Sim/Não)**
@@ -81,8 +78,7 @@ Você pode [baixar](../../assets/454-calendar.csv) uma versão `.csv` do calend�
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
+      * 
         [!UICONTROL Tipo de dados]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -143,79 +139,62 @@ Observação: nenhuma métrica nova é necessária para essa análise. No entant
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
       * Desligar `multiple Y-axes`
 
 * **Visão geral do calendário de varejo (ano de varejo atual por mês)**
    * Métrica `A`: `Revenue`
-      * &#x200B;
-
+      * 
         [!UICONTROL Métrica]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 * **Visão geral do calendário de varejo (ano de varejo anterior por mês)**
    * Métrica `A`: `Revenue`
-      * &#x200B;
-
+      * 
         [!UICONTROL Métrica]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `B`: `Orders`
       * [!UICONTROL Metric]: Número de ordens
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Métrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 ## Próximas etapas

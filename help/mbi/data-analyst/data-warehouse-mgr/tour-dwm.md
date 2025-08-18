@@ -1,5 +1,5 @@
 ---
-title: Gerenciador de Data Warehouse
+title: Data Warehouse Manager
 description: Saiba como gerenciar configurações de sincronização de tabela e coluna, detalhar um esquema de tabela e criar colunas calculadas para usar em relatórios.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Gerenciador de Data Warehouse
+# Data Warehouse Manager
 
 >[!NOTE]
 >
 >Requer [permissões de administrador](../../administrator/user-management/user-management.md)
 
-O Gerenciador de Datas Warehouse, acessado ao clicar em **[!UICONTROL Manage Data > Data Warehouse]**, é o portal para sua Data Warehouse [!DNL Adobe Commerce Intelligence]. Usando o Gerenciador de Data Warehouse, você pode gerenciar configurações de sincronização de tabela e coluna, detalhar um esquema de tabela e criar colunas calculadas para usar em relatórios.
+O Data Warehouse Manager, acessado ao clicar em **[!UICONTROL Manage Data > Data Warehouse]**, é o portal para o seu Data Warehouse [!DNL Adobe Commerce Intelligence]. Usando o Data Warehouse Manager, você pode gerenciar configurações de sincronização de tabela e coluna, detalhar um esquema de tabela e criar colunas calculadas para usar em relatórios.
 
 Este tópico abrange:
 
@@ -34,9 +34,9 @@ O lado esquerdo da página `Data Warehouse Manager` contém a lista de tabelas, 
 
 Na lista de tabelas, as tabelas são agrupadas por sua origem de conexão. Estas fontes são adicionadas em [!UICONTROL Manage Data > Integrations] e podem ser um banco de dados, uma [API](https://developer.adobe.com/commerce/services/reporting/) ou um conector de terceiros. Na parte superior da lista de tabelas, há uma caixa de pesquisa que permite localizar facilmente as tabelas desejadas.
 
-Abaixo da caixa de pesquisa, você vê duas opções: `All Tables` e `Synced Tables`. A opção `All Tables` lista todas as tabelas que você disponibilizou para a Data Warehouse, o que inclui tabelas sincronizadas e não sincronizadas.
+Abaixo da caixa de pesquisa, você vê duas opções: `All Tables` e `Synced Tables`. A opção `All Tables` lista todas as tabelas que você disponibilizou para a Data Warehouse, que inclui tabelas sincronizadas e não sincronizadas.
 
-A opção `Synced Tables` mostra todas as tabelas que já foram adicionadas à Data Warehouse e cujos dados estão sendo replicados das colunas selecionadas.
+A opção `Synced Tables` mostra todas as tabelas que já foram adicionadas ao Data Warehouse e cujos dados estão sendo replicados das colunas selecionadas.
 
 Não está vendo a tabela que você está procurando na lista `All Tables`? Há algumas razões possíveis para isso:
 
@@ -48,7 +48,7 @@ Não está vendo a tabela que você está procurando na lista `All Tables`? Há 
 
 ### Sincronizando Novas Tabelas e Colunas Nativas
 
-O Gerenciador de Datas Warehouse não só oferece a capacidade de visualizar e gerenciar facilmente suas fontes de dados, como também tem a liberdade de selecionar as tabelas e colunas individuais que deseja sincronizar.
+O Data Warehouse Manager não apenas oferece a capacidade de visualizar e gerenciar facilmente suas fontes de dados, mas também tem a liberdade de selecionar as tabelas e colunas individuais que deseja sincronizar.
 
 1. Clique na opção `All Tables` e localize a tabela que deseja sincronizar.
 1. Clique no nome da tabela para visualizar o schema. Se a tabela for nova, todas as colunas serão exibidas como `Unsynced`.
@@ -71,19 +71,19 @@ Aqui está uma rápida visão de todo o processo:
 
 ### Sincronizando Novas Tabelas em Segundo Plano {#syncnew}
 
-Quando você sincroniza uma tabela grande pela primeira vez, sua Data Warehouse precisa capturar retroativamente todos os pontos de dados na tabela antes de capturar novos dados de forma contínua. Se sua tabela for grande, talvez você não queira que essa sincronização inicial seja executada em sequência com seu **ciclo de atualização**. Nesta situação, você deseja que a sincronização inicial ocorra em segundo plano, em *paralelo* com qualquer atualização em execução no momento.
+Ao sincronizar uma tabela grande pela primeira vez, o Data Warehouse precisa capturar retroativamente todos os pontos de dados na tabela antes de capturar novos dados de forma contínua. Se sua tabela for grande, talvez você não queira que essa sincronização inicial seja executada em sequência com seu **ciclo de atualização**. Nesta situação, você deseja que a sincronização inicial ocorra em segundo plano, em *paralelo* com qualquer atualização em execução no momento.
 
 Para ter certeza de que isso ocorre, você deve selecionar a opção `Save and Sync Data Immediately` sincronizando essa tabela pela primeira vez.
 
 ### Verificação de novas tabelas e colunas {#forceupdate}
 
-Sua Data Warehouse não detecta automaticamente novas fontes, tabelas ou colunas no momento em que são adicionadas. Um processo de sincronização é executado durante toda a semana para localizar novas adições e disponibilizá-las, mas você pode forçar uma sincronização de estrutura se quiser acessar tabelas e colunas recém-adicionadas antes que o processo seja executado.
+Seu Data Warehouse não detecta automaticamente novas fontes, tabelas ou colunas no momento em que são adicionadas. Um processo de sincronização é executado durante toda a semana para localizar novas adições e disponibilizá-las, mas você pode forçar uma sincronização de estrutura se quiser acessar tabelas e colunas recém-adicionadas antes que o processo seja executado.
 
 Abaixo da barra de pesquisa na lista de tabelas há um link `Check for new tables and columns`. Clicar nesse link forçará o início do processo de sincronização de estrutura; normalmente, novas adições estão disponíveis após 10 minutos. Atualize a página para ver a nova fonte, tabela ou coluna.
 
 ## Criação de Colunas Calculadas {#calculated}
 
-Simplesmente ser capaz de ver e gerenciar dados de todas as fontes torna muito mais fácil obter insights sobre os negócios. Mas, no Gerenciador de Datas Warehouse, você pode ir além criando colunas calculadas dentro das tabelas. `Calculated` colunas derivam novas informações de seus dados existentes.
+Simplesmente ser capaz de ver e gerenciar dados de todas as fontes torna muito mais fácil obter insights sobre os negócios. Mas, no Data Warehouse Manager, você pode ir além criando colunas calculadas dentro das tabelas. `Calculated` colunas derivam novas informações de seus dados existentes.
 
 Digamos que você queira adicionar `user's lifetime revenue` à tabela `users` para encontrar usuários de alto valor. Ou, se você quiser segmentar a receita por gênero, adicione `customer's gender` à tabela `orders`.
 
@@ -101,7 +101,7 @@ Não se preocupe se você clicar em **[!UICONTROL Delete]** acidentalmente. Uma 
 
 Para remover colunas, clique na tabela à qual a coluna pertence. Verifique as colunas que deseja remover e clique no botão ![button\_1.png](../../assets/button_1.png).
 
-Para remover uma tabela sincronizada, selecione todas as colunas da tabela e clique novamente no botão ![botão](../../assets/button_1.png). Isso remove todas as colunas nativas e calculadas que usam essa tabela da Data Warehouse.
+Para remover uma tabela sincronizada, selecione todas as colunas da tabela e clique novamente no botão ![botão](../../assets/button_1.png). Isso remove todas as colunas nativas e calculadas que usam essa tabela da sua Data Warehouse.
 
 ### Confirmação de alterações
 
@@ -121,6 +121,6 @@ Quando estiver pronto para usar suas novas colunas em relatórios, [você precis
 
 ## Encapsulamento
 
-Este artigo cobriu um monte de material. Até agora, você deve ter uma sólida compreensão do que é um banco de dados, como os dados são organizados, como as tabelas se relacionam entre si e o que você pode fazer com o Gerenciador de Datas Warehouse.
+Este artigo cobriu um monte de material. Até agora, você deve ter uma sólida compreensão do que é um banco de dados, como os dados são organizados, como as tabelas se relacionam entre si e o que você pode fazer com o Data Warehouse Manager.
 
 Teste seu conhecimento [criando uma coluna calculada](../data-warehouse-mgr/creating-calculated-columns.md) ou [criando alguns relatórios interessantes](../../tutorials/using-visual-report-builder.md).

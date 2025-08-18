@@ -24,4 +24,4 @@ Selecione:
 
 Você também pode definir a [tabela e as colunas que deseja incluir na exportação](../../tutorials/export-raw-data.md).
 
-Se você precisar incluir um gráfico em uma apresentação ou documento, poderá exportar o gráfico como uma imagem no formato PNG, PDF ou SVG. Clique no ícone de engrenagem no canto superior direito de qualquer gráfico. Selecione a opção `Enlarge` na lista suspensa e clique em **[!UICONTROL Download]** para concluir a exportação.
+Se você precisar incluir um gráfico em uma apresentação ou documento, poderá exportá-lo como uma imagem no formato PNG, PDF ou SVG. Clique no ícone de engrenagem no canto superior direito de qualquer gráfico. Selecione a opção `Enlarge` na lista suspensa e clique em **[!UICONTROL Download]** para concluir a exportação.

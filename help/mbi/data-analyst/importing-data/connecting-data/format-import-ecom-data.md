@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formatação e Importação de Dados
 
-Se você estiver usando uma integração que não é suportada atualmente pelo [!DNL Adobe Commerce Intelligence], ainda poderá usar o [recurso de Carregamento de Arquivo](using-file-uploader.md) para colocar seus dados em sua Data Warehouse. Este tópico aborda os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
+Se você estiver usando uma integração que não é suportada atualmente pelo [!DNL Adobe Commerce Intelligence], ainda poderá usar o [recurso de Carregamento de Arquivo](using-file-uploader.md) para obter seus dados na Data Warehouse. Este tópico aborda os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
 
 ## Tabela `Orders`
 

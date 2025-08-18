@@ -21,7 +21,7 @@ Os painéis do [!DNL Adobe Commerce Intelligence] fornecem uma visão rápida do
 
 ## Criação de painéis {#createdash}
 
-Os painéis são compartimentos com temas compartilháveis para as análises criadas nos Report Builder. É assim que você pode incentivar sua equipe a colaborar e manter uma única fonte de verdade em toda a organização.
+Os painéis são compartimentáveis, com temas para as análises criadas nos Construtores de relatórios. É assim que você pode incentivar sua equipe a colaborar e manter uma única fonte de verdade em toda a organização.
 
 *Se você for um usuário Administrador ou Padrão*, poderá criar um painel clicando na lista suspensa `Dashboard Options` e escolhendo `Create New dashboard`.
 
@@ -63,7 +63,7 @@ A aparência dos painéis que você cria depende totalmente de você. Você pode
 
 1. Clique em **[!UICONTROL Create Report]** para mostrar **[!UICONTROL Report Builder Options]**.
 
-   ![Opções de Report Builder](../../assets/magento-bi-report-builder.png)
+   ![Opções do Report Builder](../../assets/magento-bi-report-builder.png)
 
 ## Organizar itens em um painel
 
@@ -77,7 +77,7 @@ No **[!DNL Manage Data** > **Dashboards]**, você pode gerenciar permissões de 
 
 ### Compartilhamento de seus painéis {#sharingdash}
 
-Para realmente dimensionar o [!DNL Commerce Intelligence] em toda a sua organização e fornecer insights valiosos, o Adobe incentiva você a compartilhar painéis que criar com outros membros da equipe. *Você pode compartilhar seus painéis* clicando na opção `Share Dashboard` na parte superior da página.
+Para realmente dimensionar o [!DNL Commerce Intelligence] em toda a sua organização e fornecer insights valiosos, a Adobe incentiva você a compartilhar painéis que criar com outros membros da equipe. *Você pode compartilhar seus painéis* clicando na opção `Share Dashboard` na parte superior da página.
 
 Ao compartilhar um painel, você pode atribuir permissões em sua organização OU individualmente, o que significa que decide quem pode visualizar e editar seus relatórios.
 

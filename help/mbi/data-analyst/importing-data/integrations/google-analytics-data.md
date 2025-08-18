@@ -1,5 +1,5 @@
 ---
-title: Dados de Google Analytics esperados
+title: Dados esperados do Google Analytics
 description: Saiba como interagir com suas métricas do Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Data Architect, Data Engineer, User
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Dados [!DNL Google Analytics] esperados
 
-Depois de conectar uma integração com o [!DNL Google Analytics], você poderá interagir com suas métricas *do [!DNL Google Analytics] imediatamente no`Visual Report Builder`*. Ao inserir a `Visual Report Builder`, se você clicar em **[!UICONTROL Add a Metric]**, uma série de métricas do seu perfil [!DNL Google Analytics] será exibida em uma lista suspensa imediatamente abaixo das métricas da sua Data Warehouse.
+Depois de conectar uma integração com o [!DNL Google Analytics], você poderá interagir com suas métricas [!DNL Google Analytics] do *imediatamente no`Visual Report Builder`*. Ao inserir a `Visual Report Builder`, se você clicar em **[!UICONTROL Add a Metric]**, uma série de métricas do seu perfil [!DNL Google Analytics] será exibida em uma lista suspensa imediatamente abaixo das métricas do seu Data Warehouse.
 
 A integração do [!DNL Google Analytics] está *ativa* — isso significa que o `Report Builder` solicita dados de [!DNL Google Analytics] *imediatamente* quando você adiciona uma métrica ao seu relatório. Também significa que as métricas que você pode acessar são definidas exatamente como estão em [!DNL Google Analytics], e que esses valores não estão *armazenados* em sua conta [!DNL Commerce Intelligence] - exibidos apenas visualmente em seus relatórios.
 
-+++Métricas e Dimension compatíveis (Google Analytics 3 ou Universal Analytics)
++++Métricas e dimensões compatíveis (Google Analytics 3 ou Universal Analytics)
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ A integração do [!DNL Google Analytics] está *ativa* — isso significa que o
 
 {style="table-layout:auto"}
 
-## Dimension compatíveis
+## Dimensões suportadas
 
 | Nome para Exibição de [!DNL Commerce Intelligence] | [!DNL Google Analytics] Nome/Fórmula | Agrupável? |
 | --- | --- | --- |
@@ -154,7 +154,7 @@ A integração do [!DNL Google Analytics] está *ativa* — isso significa que o
 
 +++
 
-+++Métricas e Dimension compatíveis (Google Analytics 4)
++++Métricas e dimensões compatíveis (Google Analytics 4)
 
 [!DNL Google Analytics] integrações em [!DNL Commerce Intelligence] usam a [!DNL Google Analytics] [API de Dados v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
@@ -162,6 +162,6 @@ A integração do [!DNL Google Analytics] está *ativa* — isso significa que o
 >
 > O Commerce Intelligence não oferece suporte às seguintes dimensões: `cohort`, `cohortNthDay`, `cohortNthMonth` e `cohortNthWeek`.
 >
->Para evitar resultados inesperados ou sem sentido, confirme se as dimensões usadas são compatíveis com uma ou mais métricas usadas na `Visual Report Builder`. Você pode verificar o [GA4 Dimension e o Gerenciador de Métricas](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>Para evitar resultados inesperados ou sem sentido, confirme se as dimensões usadas são compatíveis com uma ou mais métricas usadas na `Visual Report Builder`. Você pode verificar o [Gerenciador de Dimensões e Métricas do GA4](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
 
 +++

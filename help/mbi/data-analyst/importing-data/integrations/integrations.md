@@ -17,4 +17,4 @@ Uma integração é uma fonte de dados. Integrações são aplicativos e bancos 
 
 Esta seção apresenta as integrações disponíveis que você pode usar para conectar várias fontes de dados externas a [!DNL Commerce Intelligence].
 
-Para excluir uma conexão ou integração, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) e inclua o nome da conexão ou integração a ser excluída.
+Para excluir uma conexão ou integração, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) e inclua o nome da conexão ou integração a ser excluída.

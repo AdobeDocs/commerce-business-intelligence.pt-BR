@@ -40,4 +40,4 @@ Se precisar reenviar o convite, na [página de logon](https://dashboard.rjmetric
 
 >[!IMPORTANT]
 >
->Cada conta tem um número contratado de licenças ou vagas. Se você atingir seu limite ou quiser saber mais, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+>Cada conta tem um número contratado de licenças ou vagas. Se você atingir seu limite ou quiser saber mais, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,6 +1,6 @@
 ---
 title: Criar visualizações de consultas SQL
-description: Saiba como familiarizar você com a terminologia usada no Report Builder SQL e fornecer uma base sólida para criar visualizações SQL.
+description: Saiba como familiarizar você com a terminologia usada no SQL Report Builder e fornecer uma base sólida para criar visualizações SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
@@ -21,7 +21,7 @@ O [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) é um
 
 Antes de começar este tutorial, consulte a seguinte terminologia usada no `SQL Report Builder`.
 
-- `Series`: A coluna que você deseja medir é chamada de Série no Report Builder SQL. Exemplos comuns são `revenue`, `items sold` e `marketing spend`. Pelo menos uma coluna deve ser definida como `Series` para criar uma visualização.
+- `Series`: a coluna que você deseja medir é chamada de Série no SQL Report Builder. Exemplos comuns são `revenue`, `items sold` e `marketing spend`. Pelo menos uma coluna deve ser definida como `Series` para criar uma visualização.
 
 - `Category`: A coluna que você deseja usar para segmentar seus dados é chamada de `Category`. É exatamente como o recurso `Group By` no [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Por exemplo, se você quiser segmentar a receita vitalícia de seus clientes pela fonte de aquisição, a coluna que contém a fonte de aquisição seria especificada como `Category`. Mais de uma coluna pode ser definida como `Category`.
 

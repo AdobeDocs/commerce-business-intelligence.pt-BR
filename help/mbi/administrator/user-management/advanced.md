@@ -3,13 +3,13 @@ title: Gerenciamento avançado de usuários
 description: Melhore a visibilidade dos dados, simplifique a emissão de relatórios, adapte o acesso por grupos de usuários, simplifique o compartilhamento de painéis e garanta a segurança e a escalabilidade para sua organização.
 role: Admin, User
 feature: User Management
-source-git-commit: 42871886d12b97ee52aa270da6f0186a9a4eaddc
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
+source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciamento avançado de usuários
 

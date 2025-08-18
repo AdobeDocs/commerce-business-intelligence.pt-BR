@@ -25,11 +25,11 @@ Se você adicionasse um filtro que usa uma dimensão que não é igual para toda
 
 Em certos casos, você pode transformar uma dimensão `order-specific` em uma dimensão `user-specific` para adicionar como filtro no gráfico `Repeat Order Probability`. Nesses casos, você retorna o atributo da ordem da primeira ordem de um usuário ou da ordem mais recente (por exemplo, nome da região da primeira ordem do usuário).
 
-Para criar uma nova dimensão, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Para criar uma nova dimensão, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Comparando a probabilidade de repetição de ordens com atributos diferentes
 
-Para comparar o número de compras repetidas para atributos de pedidos diferentes (por exemplo, o `region` do pedido), a Adobe recomenda criar um gráfico semelhante a `Users by lifetime number of orders`. Isso mostra o número de usuários que fizeram 1, 2, 3,... número de pedidos por vida e adiciona o filtro de nível de pedido. (em outras palavras, isso pode mostrar se os usuários fazem compras mais ou menos repetidas em uma região ou outra.)
+Para comparar o número de compras repetidas para atributos de pedidos diferentes (por exemplo, o do pedido `region`), a Adobe recomenda criar um gráfico semelhante a `Users by lifetime number of orders`. Isso mostra o número de usuários que fizeram 1, 2, 3,... número de pedidos por vida e adiciona o filtro de nível de pedido. (em outras palavras, isso pode mostrar se os usuários fazem compras mais ou menos repetidas em uma região ou outra.)
 
 Os números que compõem esse gráfico podem ser exportados para Excel para calcular a taxa de probabilidade de ordem de repetição. Para ver a probabilidade de clientes que fizeram `(x)` pedidos para fazer `(x+1)` pedidos, basta` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` compras.
 

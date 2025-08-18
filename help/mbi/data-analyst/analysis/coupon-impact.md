@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Impacto do cupom
 
-Analisar como os clientes usam seus cupons pode fornecer informações significativas sobre sua empresa. Especificamente, analisar como adquirir e reter clientes por meio de cupons. Este tópico explora análises que podem ajudá-lo a responder aos seguintes tipos de perguntas:
+Analisar como os clientes usam seus cupons pode fornecer insight significativos para sua empresa. Especificamente, analisar como adquirir e reter clientes por meio de cupons. Este tópico explora análises que podem ajudá-lo a responder aos seguintes tipos de perguntas:
 
 * Quantos clientes você está adquirindo através de cupons?
 * Os clientes adquiridos com cupons têm mais probabilidade de fazer compras repetidas do que os clientes não adquiridos por meio de cupons?
@@ -129,7 +129,7 @@ O que podemos tirar disso? Primeiro, o cupom com &quot;20% de desconto&quot; tev
 
   **Exemplo:** o cupom &quot;10% de desconto&quot; é oferecido somente a clientes que compram um casaco de inverno na mesma ordem.
 
-A **receita bruta** do cupom &quot;25% de desconto de $100 ou mais&quot; é muito maior do que a receita bruta do cupom &quot;$10 de desconto&quot;. No entanto, o cupom de &quot;$10 de desconto&quot; tem um **número de pedidos** muito maior. A análise do **valor médio de pedido** fornece informações sobre essas diferenças. Embora o cupom com &quot;25% de desconto de US$ 100 ou mais&quot; tenha menos pedidos, o valor médio do pedido é superior ao triplo do cupom com &quot;US$ 10 de desconto&quot;. Assim, uma receita bruta maior é atribuída ao cupom &quot;25% de desconto de US$ 100 ou mais&quot;.
+A **receita bruta** do cupom &quot;25% de desconto de $100 ou mais&quot; é muito maior do que a receita bruta do cupom &quot;$10 de desconto&quot;. No entanto, o cupom de &quot;$10 de desconto&quot; tem um **número de pedidos** muito maior. A análise do **valor médio de pedido** fornece o insight para essas diferenças. Embora o cupom com &quot;25% de desconto de US$ 100 ou mais&quot; tenha menos pedidos, o valor médio do pedido é superior ao triplo do cupom com &quot;US$ 10 de desconto&quot;. Assim, uma receita bruta maior é atribuída ao cupom &quot;25% de desconto de US$ 100 ou mais&quot;.
 
 Os **descontos** e **receita líquida** para os cupons &quot;25% de desconto de $100 ou mais&quot; e &quot;20% de desconto&quot; têm valor próximo. Mesmo que o valor médio de pedido para &quot;25% de desconto de US$ 100 ou mais&quot; esteja próximo do dobro do valor médio de pedido para &quot;20% de desconto&quot;, o último cupom tem um pouco menos do que o triplo do número de pedidos.
 
@@ -151,4 +151,4 @@ O maior número de clientes foi adquirido por meio do cupom com &quot;20% de des
 
 ## Encapsulamento {#wrapup}
 
-Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda sobre esses tipos de perguntas, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda sobre esses tipos de perguntas, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

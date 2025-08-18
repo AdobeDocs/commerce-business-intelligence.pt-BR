@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Report Builder SQL
-description: Saiba como auditar dados e métricas usando o Report Builder SQL para poder comparar os resultados com os dados do banco de dados local.
+title: Trabalhar com o SQL Report Builder
+description: Saiba como auditar dados e métricas usando o SQL Report Builder para poder comparar os resultados com os dados do banco de dados local.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
@@ -36,7 +36,7 @@ Se você estiver tentando identificar uma discrepância específica ou um conjun
 
 ## Salvar e exportar
 
-Quando o relatório atender às suas necessidades, dê a ele um nome distinto, clique em **[!UICONTROL Save]**, selecione o tipo de relatório que deseja salvar e o painel. Ao auditar as métricas, o Adobe recomenda salvar o relatório como `Table` e salvá-lo em um painel de teste.
+Quando o relatório atender às suas necessidades, dê a ele um nome distinto, clique em **[!UICONTROL Save]**, selecione o tipo de relatório que deseja salvar e o painel. Ao auditar métricas, a Adobe recomenda salvar o relatório como `Table` e salvá-lo em um painel de teste.
 
 Após salvar o relatório, navegue até o painel selecionando `Go to Dashboard`. A partir daí, você pode exportar os dados localizando o relatório e selecionando **[!UICONTROL Options gear > Full `.csv`Exportar]** ou **[!UICONTROL Full Excel Export]**.
 
@@ -48,4 +48,4 @@ Você também pode gravar consultas personalizadas e exportar os resultados para
 
 >[!NOTE]
 >
->Se você encontrar uma discrepância depois de auditar seus dados, consulte o tópico de suporte [Contato com o suporte: discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=pt-BR) para obter mais informações sobre o que fazer a seguir.
+>Se você encontrar uma discrepância depois de auditar seus dados, consulte o tópico de suporte [Contato com o suporte: discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) para obter mais informações sobre o que fazer a seguir.

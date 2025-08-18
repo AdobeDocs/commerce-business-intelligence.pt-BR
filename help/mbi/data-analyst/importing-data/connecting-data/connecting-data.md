@@ -1,6 +1,6 @@
 ---
 title: Conectar seus dados
-description: Saiba como procurar as tabelas disponíveis para sincronização no Gerenciador de Datas Warehouse.
+description: Saiba como procurar as tabelas disponíveis para sincronização no Data Warehouse Manager.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Conectar seus dados
 
-Em [!DNL Adobe Commerce Intelligence], as fontes de dados são chamadas `integrations`. Depois que um `integration` for conectado com êxito, você poderá procurar as tabelas disponíveis para sincronização no Gerenciador de Datas Warehouse.
+Em [!DNL Adobe Commerce Intelligence], as fontes de dados são chamadas `integrations`. Depois que um `integration` for conectado com êxito, você poderá procurar as tabelas disponíveis para sincronização no Data Warehouse Manager.
 
 As integrações são adicionadas e gerenciadas usando a página `Connections`, que pode ser acessada clicando em **[!UICONTROL Manage Data** > **Connections]**. Aqui, você vê:
 
@@ -29,7 +29,7 @@ As integrações são adicionadas e gerenciadas usando a página `Connections`, 
 
 ## Tipos de integrações
 
-Há quatro maneiras de obter seus dados no [!DNL Commerce Intelligence]: conectar um banco de dados, conectar uma integração SaaS, carregar um arquivo `.csv` ou usar a API Adobe.
+Há quatro maneiras de obter seus dados no [!DNL Commerce Intelligence]: conectar um banco de dados, conectar uma integração SaaS, carregar um arquivo `.csv` ou usar a API do Adobe.
 
 ## Integrações de banco de dados
 
@@ -37,7 +37,7 @@ Há quatro maneiras de obter seus dados no [!DNL Commerce Intelligence]: conecta
 
 [!DNL Commerce Intelligence] dá suporte a bancos de dados NoSQL e baseados em SQL, como [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) e [PostgreSQL](../integrations/postgresql.md).
 
-Embora você possa conectar seu banco de dados diretamente ao [!DNL Commerce Intelligence] usando as credenciais do banco de dados, o Adobe recomenda que você use um método de criptografia comprovado, como um túnel SSH. Isso garante que seus dados permaneçam seguros à medida que são enviados para sua Data Warehouse.
+Embora você possa conectar seu banco de dados diretamente ao [!DNL Commerce Intelligence] usando credenciais de banco de dados, a Adobe recomenda usar um método de criptografia comprovado, como um túnel SSH. Isso garante que seus dados permaneçam seguros à medida que são direcionados para a Data Warehouse.
 
 Dependendo do método de conexão e do tipo de banco de dados, talvez seja necessário algum conhecimento técnico para concluir a configuração.
 
@@ -51,7 +51,7 @@ Normalmente, configurar uma integração no [!DNL Commerce Intelligence] é tão
 
 ## Upload de arquivo
 
-Não tem certeza de como obter dados de uma fonte complementar na sua Data Warehouse? [Usar o recurso `File Upload`](../connecting-data/using-file-uploader.md) é uma boa maneira de obter dados que você não precisa para tomar decisões diárias. Seguindo as regras de formatação, você pode carregar rapidamente arquivos do `.csv` na Data Warehouse e juntá-los a outras fontes de dados.
+Não tem certeza de como obter dados de uma fonte complementar para o Data Warehouse? [Usar o recurso `File Upload`](../connecting-data/using-file-uploader.md) é uma boa maneira de obter dados que você não precisa para tomar decisões diárias. Seguindo as regras de formatação, você pode carregar rapidamente arquivos do `.csv` na Data Warehouse e associá-los a outras fontes de dados.
 
 ## [!DNL Commerce Intelligence] `Import API`
 
@@ -70,6 +70,6 @@ Para adicionar uma integração, clique em **[!UICONTROL Manage Data** > **Conne
 * [Consolidação de tabelas](../../../best-practices/consolidating-your-tables.md)
 * [Restrição do acesso ao banco de dados](../../../administrator/account-management/restrict-db-access.md)
 
-**Não está vendo uma integração desejada?** Algumas integrações devem ser ativadas para que fiquem visíveis em sua conta. Se você estiver procurando algo como [!DNL Facebook], mas ele não está listado, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+**Não está vendo uma integração desejada?** Algumas integrações devem ser ativadas para que fiquem visíveis em sua conta. Se você estiver procurando algo como [!DNL Facebook], mas ele não está listado, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Se você vir um status de erro para uma integração**, confira a [seção Solução de problemas](https://support.magento.com/hc/en-us/sections/360003078151) para obter ajuda.

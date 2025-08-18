@@ -99,7 +99,7 @@ Você está veiculando anúncios específicos de produtos? Em caso afirmativo, v
 >
 >Este exemplo pressupõe que todos os custos de campanha foram usados exclusivamente para gerar compras de produtos específicos. Ao presumir que todo o custo foi gasto na geração de compras, o ROI resultante leva em conta o pior cenário (custo mais alto por compra). Você pode ter certeza de que seu ROI real é superior a esse cálculo. Exemplo: supondo que você gastou US$ 20 em uma campanha que gerou 10 novos usuários e 10 compras, seu custo real por compra é de US$ 1. Sob a suposição de que todo o custo foi para adquirir novos usuários, o custo por compra é de $2.
 
-Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
+Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
 
 * Origem do pedido (se você rastrear apenas a origem de referência no nível do usuário, então ingressar na origem do usuário)
 * Campanha do pedido (se você só rastrear a fonte de referência no nível do usuário e, em seguida, ingressar na campanha do usuário)

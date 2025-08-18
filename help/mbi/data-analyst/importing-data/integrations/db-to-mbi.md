@@ -1,5 +1,5 @@
 ---
-title: Conectar Seu Banco De Dados  [!DNL MySQL]
+title: 'Conectar Seu Banco De Dados  [!DNL MySQL] '
 description: Veja como conectar seus [!DNL MySQL] bancos de dados [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
 role: Admin, Data Architect, Data Engineer, User

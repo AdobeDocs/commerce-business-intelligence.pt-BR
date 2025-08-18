@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Painéis incluídos
 
-[!DNL Adobe] oferece `eCommerce` e `SaaS` Pacotes de Início. Esses pacotes, criados pelos analistas do Adobe, contêm um conjunto personalizado de painéis e relatórios para seu conjunto de dados. As análises contidas nesses pacotes permitem verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas e muito mais, criando, assim, uma base sólida para exploração futura.
+[!DNL Adobe] oferece `eCommerce` e `SaaS` Pacotes de Início. Esses pacotes, criados pelos analistas da Adobe, contêm um conjunto personalizado de painéis e relatórios para seu conjunto de dados. As análises contidas nesses pacotes permitem verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas e muito mais, criando, assim, uma base sólida para exploração futura.
 
 >[!NOTE]
 >
 >A disponibilidade de alguns painéis depende do seu conjunto de dados.
 
-Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter ajuda.
+Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter ajuda.
 
 ## Visão geral executiva
 

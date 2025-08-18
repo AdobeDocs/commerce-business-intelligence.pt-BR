@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [Mapa de referência prático](#map)
 * [Colunas calculadas avançadas](#advanced)
 
-No [Gerenciador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md), você pode criar colunas para aumentar e otimizar seus dados para análise. [Esta funcionalidade](../data-warehouse-mgr/creating-calculated-columns.md) pode ser acessada selecionando qualquer tabela no Gerenciador de Datas Warehouse e clicando em **[!UICONTROL Create New Column]**.
+No [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md), você pode criar colunas para aumentar e otimizar seus dados para análise. [Esta funcionalidade](../data-warehouse-mgr/creating-calculated-columns.md) pode ser acessada selecionando qualquer tabela no Data Warehouse Manager e clicando em **[!UICONTROL Create New Column]**.
 
-Este tópico descreve os tipos de colunas que você pode criar com o Gerenciador de Datas Warehouse. Também aborda a descrição, uma apresentação visual dessa coluna e um [mapa de referência](#map) de todas as entradas necessárias para criar uma coluna. Há três maneiras de criar colunas calculadas:
+Este tópico descreve os tipos de colunas que você pode criar com o Data Warehouse Manager. Também aborda a descrição, uma apresentação visual dessa coluna e um [mapa de referência](#map) de todas as entradas necessárias para criar uma coluna. Há três maneiras de criar colunas calculadas:
 
 1. [Mesmas colunas calculadas da tabela](#sametable)
 1. [Colunas calculadas de um para muitos](#onetomany)
@@ -71,7 +71,7 @@ Este tipo de coluna calculada retorna a contagem de valores em muitas tabelas *e
 
 No exemplo abaixo, a dimensão `Customer's lifetime number of canceled orders` é criada na tabela `customers` (com um filtro para `orders.status`).
 
-![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Sum {#sum}
 
@@ -101,7 +101,7 @@ Se você estiver tendo problemas para lembrar o que são todas as entradas ao cr
 
 Em sua busca para analisar e responder perguntas sobre sua empresa, você pode se deparar com uma situação em que não é possível criar a coluna exata desejada.
 
-Para garantir uma recuperação rápida, a Adobe recomenda consultar o guia [Tipos de Coluna Calculados Avançados](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) para ver que tipo de colunas a equipe de suporte do Adobe pode criar. Esse tópico também aborda as informações necessárias para criar a coluna; inclua-a na solicitação.
+Para garantir uma recuperação rápida, a Adobe recomenda consultar o guia [Tipos de Coluna Calculados Avançados](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) para ver que tipo de colunas a equipe de suporte da Adobe pode criar. Esse tópico também aborda as informações necessárias para criar a coluna; inclua-a na solicitação.
 
 ## Documentação relacionada
 

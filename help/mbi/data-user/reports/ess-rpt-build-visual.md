@@ -1,5 +1,5 @@
 ---
-title: Report Builder visual
+title: Visual Report Builder
 description: Saiba como usar o Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
@@ -27,7 +27,7 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
      As métricas disponíveis podem ser listadas em ordem alfabética ou por tabela.
 
-     ![Report Builder visual](../../assets/magento-bi-visual-report-builder-add-metric.png)
+     ![Visual Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
    * Escolha a [métrica](../../data-user/reports/ess-manage-data-metrics.md) que descreve o conjunto de dados que você deseja usar para o relatório.
 
@@ -35,7 +35,7 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
      O resumo à esquerda mostra o nome da métrica atual, seguido do resultado de quaisquer cálculos nos dados da coluna especificados na métrica. Neste exemplo, o resumo exibe a contagem total de clientes.
 
-     ![Report Builder visual](../../assets/magento-bi-report-builder-untitled.png)
+     ![Visual Report Builder](../../assets/magento-bi-report-builder-untitled.png)
 
 1. No gráfico, passe o mouse sobre cada ponto de dados na linha. Cada ponto de dados mostra o número total de novos clientes que se inscreveram durante esse mês.
 
@@ -43,7 +43,7 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
    **`Group By`**
 
-   O controle `Group By` oferece a capacidade de adicionar várias dimensões por grupo ou segmento. Dimension são colunas na tabela que podem ser usadas para agrupar os dados.
+   O controle `Group By` oferece a capacidade de adicionar várias dimensões por grupo ou segmento. Dimensões são colunas na tabela que podem ser usadas para agrupar os dados.
 
    * Escolha uma das dimensões disponíveis na lista de opções `Group By`.
 
@@ -55,7 +55,7 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
    * Clique em **[!UICONTROL Apply]** para fechar o detalhe Agrupar por.
 
-     ![Vários Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![Várias dimensões](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * Passe o mouse sobre alguns pontos de dados em cada linha para ver o número de clientes durante o mês que usaram esse cupom enquanto faziam seu primeiro pedido.
 

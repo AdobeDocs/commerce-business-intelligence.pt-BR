@@ -43,7 +43,7 @@ Essa métrica mostra a receita líquida que você ganha com pedidos que incluem 
 
 ### Porcentagem descontada
 
-Mostra a parte da receita bruta que é compensada por descontos. Para cupons que oferecem um desconto percentual, esse valor já é conhecido (por exemplo, 10% de desconto). Apesar disso, essa medida fornece insight e um método de comparação para cupons que são um desconto em dólar fixo.
+Mostra a parte da receita bruta que é compensada por descontos. Para cupons que oferecem um desconto percentual, esse valor já é conhecido (por exemplo, 10% de desconto). Apesar disso, essa medida fornece a insight e um método de comparação para cupons que são um desconto em dólar fixo.
 
 ### Valor líquido médio da ordem
 
@@ -109,7 +109,7 @@ Para a receita média por vida, você pode ver que a receita média por vida par
 
 ## O que mais posso analisar? {#otheranalyses}
 
-As análises mencionadas neste tópico podem fornecer informações valiosas sobre como seus clientes usam seus cupons, mas há uma variedade de outras análises que permitem obter informações um pouco mais detalhadas.
+Insight As análises mencionadas neste tópico podem fornecer informações valiosas sobre como seus clientes usam seus cupons, mas há uma variedade de outras análises que permitem aprofundar um pouco mais.
 
 **Você pode analisar as aquisições de clientes com cupons.**
 

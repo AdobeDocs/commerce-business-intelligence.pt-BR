@@ -64,7 +64,7 @@ Isso é usado para criar:
 
 Ambos os campos precisam ser criados no nível do usuário (por exemplo, na tabela `user`). Isso permite que a análise média possa ser normalizada por usuários (em outras palavras, o denominador nesse cálculo médio é a contagem de usuários).
 
-É aqui que [!DNL Commerce Intelligence] entra. Você pode usar sua Data Warehouse [!DNL Commerce Intelligence] para criar as colunas acima. Entre em contato com a equipe de analistas do Adobe e forneça a definição específica de suas novas colunas para criação. Você também pode usar o [Editor de Colunas](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+É aqui que [!DNL Commerce Intelligence] entra. Você pode usar o Data Warehouse [!DNL Commerce Intelligence] para criar as colunas acima. Entre em contato com a equipe de analistas da Adobe e forneça a definição específica de suas novas colunas para criação. Você também pode usar o [Editor de Colunas](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 É uma prática recomendada evitar a criação desses campos de dados calculados diretamente no banco de dados, pois sobrecarrega desnecessariamente os servidores de produção.
 
@@ -107,7 +107,7 @@ Basta ir para qualquer painel e [criar um relatório](../../data-user/reports/es
 
 #### Adição de descrições a relatórios
 
-Ao criar relatórios compartilhados com outros membros da equipe, o Adobe recomenda adicionar descrições que permitam que outros usuários entendam melhor sua análise.
+Ao criar relatórios compartilhados com outros membros da equipe, a Adobe recomenda adicionar descrições que permitam que outros usuários entendam melhor sua análise.
 
 1. Clique em **[!UICONTROL i]** na parte superior de qualquer relatório.
 1. Digite uma descrição na caixa de palavras.
@@ -119,7 +119,7 @@ Consulte abaixo:
 
 #### Exportação de relatórios como imagens
 
-Precisa incluir um relatório em uma apresentação ou documento? Qualquer relatório pode ser salvo como uma imagem (no formato PNG, PDF ou SVG) usando o menu `Report Options`, localizado no canto superior direito de cada relatório.
+Precisa incluir um relatório em uma apresentação ou documento? Qualquer relatório pode ser salvo como uma imagem (em formato PNG, PDF ou SVG) usando o menu `Report Options`, localizado no canto superior direito de cada relatório.
 
 1. Clique no ícone de engrenagem no canto superior direito de qualquer relatório.
 1. Na lista suspensa, selecione `Enlarge`.

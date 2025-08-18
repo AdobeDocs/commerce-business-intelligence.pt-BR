@@ -21,23 +21,23 @@ O [!DNL Google Analytics] usa a marcação `UTM` para saber de onde vem seu trá
 
 A seguir, uma lista dos cinco itens mais importantes a serem lembrados ao configurar suas URLs com a marcação `UTM`.
 
-### 1. Tenha como objetivo marcar cada URL que você pode controlar acessando seu site
+### &#x200B;1. Tenha como objetivo marcar cada URL que você pode controlar acessando seu site
 
 Toda vez que você pede às pessoas para clicarem em um link, você deve configurar a marcação `UTM`. Isso inclui todos os seus links de email (seu provedor de serviços de email provavelmente tem uma maneira de marcar automaticamente seus URLs), links de anúncios, artigos de imprensa, postagens de blog.
 
-### 2. Use uma ferramenta para criar o URL
+### &#x200B;2. Use uma ferramenta para criar o URL
 
 URLs com marcas de `UTM` podem ser complicadas. Em vez de tentar digitá-los por muito tempo, use uma ferramenta [como esta](https://support.google.com/analytics/answer/1033867?hl=en) para ajudá-lo. Isso garante que você esteja pensando em adicionar todos os parâmetros adequados ao URL e obtenha o URL para copiar e colar diretamente dele. Para gerenciar links sociais, ferramentas como o [!DNL Hootsuite] incluem a opção de adicionar parâmetros de URL personalizados a todos os seus links.
 
-### 3. Verifique se você diferencia maiúsculas de minúsculas nos valores de parâmetro
+### &#x200B;3. Verifique se você diferencia maiúsculas de minúsculas nos valores de parâmetro
 
 É importante lembrar que a marca `utm\_source=adwords` é diferente da marca `utm\_source=Adwords`. Considere tornar tudo em letras minúsculas.
 
-### 4. Armazene os valores de parâmetro UTM no banco de dados
+### &#x200B;4. Armazene os valores de parâmetro UTM no banco de dados
 
 Cada vez que uma transação ou evento ocorre, você deseja avaliar o desempenho de suas atividades de marketing. Você pode fazer isso lendo os valores dos parâmetros UTM do [[!DNL Google Analytics] cookie no banco de dados](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Pense em como você nomeia campanhas
+### &#x200B;5. Pense em como você nomeia campanhas
 
 Para acompanhar como seus esforços de marketing estão melhorando ao longo do tempo, você precisará conhecer suas convenções de nomenclatura. Mantenha-o simples e minimize o máximo possível. Sistemas de nomenclatura complicados são mais difíceis de manter.
 

@@ -73,6 +73,6 @@ Para obter uma visão abrangente de seus esforços de campanha, você pode impor
 
 ## Preparar arquivos para carregá-los em [!DNL Commerce Intelligence] {#upload}
 
-Cada arquivo - `Opens`, `Clicks` e `Sent` - deve ser carregado para [!DNL Commerce Intelligence] como um arquivo separado. O Adobe recomenda nomear os arquivos usando esta convenção de nomenclatura: `MailChimp\_ACTION\_DATE`. Substitua `ACTION` por `Open`, `Click` ou `Sent` e substitua `DATE` pela data de exportação.
+Cada arquivo - `Opens`, `Clicks` e `Sent` - deve ser carregado para [!DNL Commerce Intelligence] como um arquivo separado. A Adobe recomenda nomear os arquivos usando esta convenção de nomenclatura: `MailChimp\_ACTION\_DATE`. Substitua `ACTION` por `Open`, `Click` ou `Sent` e substitua `DATE` pela data de exportação.
 
 Quando estiver pronto para carregar os arquivos, use o recurso [`File Upload`](../connecting-data/using-file-uploader.md) para trazer os dados para sua Data Warehouse.

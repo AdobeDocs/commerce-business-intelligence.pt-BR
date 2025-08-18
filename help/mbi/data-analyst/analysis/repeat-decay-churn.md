@@ -51,7 +51,7 @@ Neste exemplo, a probabilidade inicial de pedido repetido - ou a probabilidade d
 
 ### Probabilidade de ordem de repetição em determinados meses desde a ordem
 
-Este relatório mostra a probabilidade de um cliente fazer um pedido novamente, considerando que alguns meses se passaram desde o último pedido. Embora não haja uma definição singular para o limite de churn dado esse relatório, Adobe recomenda definir churn como o ponto onde o declínio da probabilidade cruza o valor que é metade da taxa de probabilidade de repetição inicial.
+Este relatório mostra a probabilidade de um cliente fazer um pedido novamente, considerando que alguns meses se passaram desde o último pedido. Embora não haja uma definição singular para o limite de churn dado esse relatório, a Adobe recomenda definir churn como o ponto em que o declínio da probabilidade cruza o valor que é metade da taxa de probabilidade de repetição inicial.
 
 Como a taxa de probabilidade de repetição inicial para este exemplo é de 60%, a data de churn seria o momento em que a probabilidade de ordem de repetição cai abaixo de 60%/2 = 30%, ou em cerca de 6 meses. Dos 60% de pedidos que deveriam ser seguidos por outro pedido, metade deles foi feita nos primeiros 6 meses.
 
@@ -78,7 +78,7 @@ Depois de criar a análise acima e determinar um limite de churn, você pode cri
 
 Se você oferecer mais de um produto, provavelmente se perguntará como os clientes que compram um produto específico se comportam de forma diferente ao longo do tempo em comparação a outros clientes. Quer saber mais? Confira este tutorial para explorar o comportamento de compra vitalícia dos coortes de clientes com base nos produtos específicos que eles compraram.
 
-Esta prática recomendada é fornecida pelo Data Analysis Services (DAS) [!DNL Adobe Commerce Intelligence]. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter mais informações.
+Esta prática recomendada é fornecida pelo Data Analysis Services (DAS) [!DNL Adobe Commerce Intelligence]. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter mais informações.
 
 ### Relacionados
 

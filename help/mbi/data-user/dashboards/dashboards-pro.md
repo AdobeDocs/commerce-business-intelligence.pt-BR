@@ -1,6 +1,6 @@
 ---
 title: Painéis de Controle Prontos para Uso
-description: Saiba mais sobre os painéis prontos para uso para fornecer insights sobre sua empresa.
+description: Saiba mais sobre os painéis prontos para uso para fornecer o insight à sua empresa.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Painéis de controle prontos para uso
 
-O [!DNL Adobe Commerce Intelligence] inclui painéis prontos para uso para fornecer insights sobre sua empresa. Com os painéis, você pode verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas, os principais produtos comprados em um determinado período e muito mais. Esses painéis pré-configurados foram criados para ajudá-lo a tomar decisões de negócios conscientes.
+O [!DNL Adobe Commerce Intelligence] inclui painéis prontos para uso para fornecer o insight à sua empresa. Com os painéis, você pode verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas, os principais produtos comprados em um determinado período e muito mais. Esses painéis pré-configurados foram criados para ajudá-lo a tomar decisões de negócios conscientes.
 
 >[!NOTE]
 >
->O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, contate o [suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+>O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, contate o [suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilidade do relatório
 
@@ -133,7 +133,7 @@ O painel Pedidos fornece informações sobre o volume transacional de pedidos, o
 
 ## Produtos
 
-O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Seu armazenamento deve estar [configurado para rastrear reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=pt-BR) para que esses gráficos sejam preenchidos.
+O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Seu armazenamento deve estar [configurado para rastrear reembolsos](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) para que esses gráficos sejam preenchidos.
 
 >[!NOTE]
 >

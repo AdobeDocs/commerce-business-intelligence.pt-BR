@@ -17,14 +17,14 @@ ht-degree: 0%
 >
 >Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-O [!DNL Adobe Commerce Intelligence] é poderoso não apenas por causa de seus recursos de visualização, mas também porque oferece a capacidade de colocar todos os seus dados em uma única Data Warehouse. Mesmo dados que estão fora de seus bancos de dados e integrações podem ser trazidos para o [!DNL Commerce Intelligence] usando a ferramenta Upload de Arquivo no Gerenciador de Datas Warehouse.
+O [!DNL Adobe Commerce Intelligence] é poderoso não apenas por causa de seus recursos de visualização, mas também porque oferece a capacidade de colocar todos os seus dados em um único Data Warehouse. Mesmo dados que estão fora de seus bancos de dados e integrações podem ser trazidos para o [!DNL Commerce Intelligence] usando a ferramenta Upload de Arquivo no Data Warehouse Manager.
 
 Use campanhas publicitárias como exemplo. Se você estiver executando campanhas online e offline, não poderá obter o quadro completo se estiver analisando apenas dados de uma integração online. Fazer o upload de uma planilha com os dados de campanha offline permite analisar ambos os conjuntos de dados e obter uma compreensão mais robusta do desempenho da campanha.
 
 ## Restrições e requisitos {#require}
 
 1. **O único formato suportado para os carregamentos de arquivos é `CSV` ou`comma separated values`**. Se estiver trabalhando no Excel, você pode usar a função Salvar como para salvar o arquivo no formato `.csv`.
-1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema. Se você encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=pt-BR).
+1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema. Se você encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Os arquivos não podem ter mais de 100 MB**. Se o arquivo for maior que isso, separe a tabela em partes e salve-as como arquivos individuais. Você pode anexar os dados depois que o arquivo inicial for carregado.
 1. **Todas as tabelas devem ter um`primary key`**. Deve haver pelo menos uma coluna na tabela que possa ser usada como `primary key` ou um identificador exclusivo para cada linha na tabela. Qualquer coluna designada como `primary key` pode *never* ser nula. Um `primary key` pode ser tão simples quanto adicionar uma coluna que forneça um número para cada linha, ou pode ser duas colunas concatenadas para criar uma coluna de valores únicos (por exemplo, `campaign name` e `date`).
 
@@ -38,11 +38,11 @@ Antes de carregar seus dados no [!DNL Commerce Intelligence], verifique se eles 
 
 Para garantir que as colunas sejam rotuladas e importadas corretamente, verifique se a primeira linha da planilha é um cabeçalho que descreve os dados em cada coluna.
 
-Os nomes das colunas devem ser exclusivos e conter apenas letras, números, espaços e estes símbolos: `$ % # /`. Se um nome de coluna contiver uma vírgula, ele será dividido em duas colunas quando o arquivo for carregado. Além disso, a Adobe recomenda que haja menos de 85 colunas no arquivo para otimizar a velocidade de atualização.
+Os nomes das colunas devem ser exclusivos e conter apenas letras, números, espaços e estes símbolos: `$ % # /`. Se um nome de coluna contiver uma vírgula, ele será dividido em duas colunas quando o arquivo for carregado. Além disso, a Adobe recomenda que haja menos de 85 colunas no arquivo para otimizar a velocidade da atualização.
 
 ### Dados com vírgulas {#commas}
 
-Como os arquivos devem estar no formato `CSV`, o uso de vírgulas pode causar problemas com o carregamento de dados. `CSV` arquivos usam vírgulas para indicar novos valores, portanto, uma coluna com um nome como `Campaigns`, `August` é lida como duas colunas (`Campaigns` e `August`) em vez de uma, deslocando todos os seus dados por uma linha. Adobe recomenda evitar vírgulas sempre que possível. Você pode usar o `Data Preview` para ver se os dados são exibidos corretamente após a conclusão de uma atualização.
+Como os arquivos devem estar no formato `CSV`, o uso de vírgulas pode causar problemas com o carregamento de dados. `CSV` arquivos usam vírgulas para indicar novos valores, portanto, uma coluna com um nome como `Campaigns`, `August` é lida como duas colunas (`Campaigns` e `August`) em vez de uma, deslocando todos os seus dados por uma linha. A Adobe recomenda evitar vírgulas sempre que possível. Você pode usar o `Data Preview` para ver se os dados são exibidos corretamente após a conclusão de uma atualização.
 
 ### Datas
 
@@ -69,17 +69,17 @@ As porcentagens devem ser inseridas como decimais. Por exemplo:
 
 ### Valores com zeros iniciais e/ou finais {#zeroes}
 
-Alguns valores no arquivo, como códigos postais e IDs, podem começar ou terminar com zeros. Para garantir que os zeros sejam mantidos e carregados corretamente, você pode alterar o tipo de formatação (por exemplo, [de número para texto](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us)) ou impor a formatação de número.
+Alguns valores no arquivo, como códigos postais e IDs, podem começar ou terminar com zeros. Para garantir que os zeros sejam mantidos e carregados corretamente, você pode alterar o tipo de formatação (por exemplo, [de número para texto](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us)) ou impor a formatação de número.
 
-Use `US ZIP codes` como exemplo de como alterar a formatação de números. Em [!DNL Excel], realce a coluna que contém `ZIP codes` e [altere o formato do número](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) para `ZIP code`. Você também pode selecionar um formato de número personalizado e, na janela `Type`, inserir `00000`. Lembre-se que este método pode apresentar problemas se alguns códigos estiverem formatados como `00000` e outros como `00000-0000`.
+Use `US ZIP codes` como exemplo de como alterar a formatação de números. Em [!DNL Excel], realce a coluna que contém `ZIP codes` e [altere o formato do número](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) para `ZIP code`. Você também pode selecionar um formato de número personalizado e, na janela `Type`, inserir `00000`. Lembre-se que este método pode apresentar problemas se alguns códigos estiverem formatados como `00000` e outros como `00000-0000`.
 
-O `Type` pode ser [formatado de forma diferente para acomodar outros tipos de dados](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), como IDs. Se um `ID` tiver nove dígitos, por exemplo, `Type` poderia ser `000000000` ou `000-000-000`. Isso mudaria `123456` para `000-123-456`.
+O `Type` pode ser [formatado de forma diferente para acomodar outros tipos de dados](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us), como IDs. Se um `ID` tiver nove dígitos, por exemplo, `Type` poderia ser `000000000` ou `000-000-000`. Isso mudaria `123456` para `000-123-456`.
 
 Para os recursos [!DNL Google Docs] e [!DNL Apple Numbers], consulte a lista [Relacionados](#related) na parte inferior desta página.
 
 ## Upload de dados {#uploading}
 
-Agora que sua planilha está formatada corretamente e é compatível com o [!DNL Commerce Intelligence], adicione-a à Data Warehouse.
+Agora que sua planilha está formatada corretamente e é compatível com o [!DNL Commerce Intelligence], adicione-a à sua Data Warehouse.
 
 1. Para começar, acesse **[!UICONTROL Data** > **File Uploads]**.
 
@@ -107,7 +107,7 @@ Se você precisar de um visual, observe todo o processo:
 
 ![](../../../assets/fileupload.gif)
 
-As tabelas carregadas são exibidas na seção **Carregamentos de Arquivos** da lista de tabelas (nas opções Todas as Tabelas e Tabelas Sincronizadas) no Gerenciador de Datas Warehouse:
+As tabelas carregadas são exibidas na seção **Carregamentos de Arquivos** da lista de tabelas (nas opções Todas as Tabelas e Tabelas Sincronizadas) no Data Warehouse Manager:
 
 ![](../../../assets/upload-tables.png)
 
@@ -137,13 +137,13 @@ Tem novos dados para adicionar a um arquivo que você já carregou? Sem problema
 
 ## Disponibilidade de dados {#availability}
 
-Assim como as colunas calculadas, os dados de uploads de arquivo ficam disponíveis após a conclusão do próximo ciclo de atualização. Se uma atualização estava em andamento durante o upload do arquivo, os dados não estarão disponíveis até após a próxima atualização. Depois que um ciclo de atualização for concluído, você poderá navegar até a guia `Data Preview` na Data Warehouse para garantir que o arquivo seja carregado corretamente e os dados sejam exibidos conforme esperado.
+Assim como as colunas calculadas, os dados de uploads de arquivo ficam disponíveis após a conclusão do próximo ciclo de atualização. Se uma atualização estava em andamento durante o upload do arquivo, os dados não estarão disponíveis até após a próxima atualização. Depois que um ciclo de atualização for concluído, você poderá navegar até a guia `Data Preview` no Data Warehouse para garantir que o arquivo seja carregado corretamente e os dados sejam exibidos conforme esperado.
 
 ## Encapsulamento {#wrapup}
 
 Este tópico abordou apenas as noções básicas de uso da importação de dados, mas convém fazer algo mais avançado. Confira os artigos relacionados para obter orientação sobre formatação e importação de dados financeiros, de comércio eletrônico e de gastos com anúncios, entre outros.
 
-Além disso, o carregamento de arquivo não é a única maneira de obter seus dados no [!DNL Commerce Intelligence]. As funções da [API de Importação de Dados](https://developer.adobe.com/commerce/services/reporting/import-api/) permitem enviar dados arbitrários para a Data Warehouse [!DNL Commerce Intelligence].
+Além disso, o carregamento de arquivo não é a única maneira de obter seus dados no [!DNL Commerce Intelligence]. As funções da [API de Importação de Dados](https://developer.adobe.com/commerce/services/reporting/import-api/) permitem enviar dados arbitrários para o Data Warehouse [!DNL Commerce Intelligence].
 
 ## Relacionados {#related}
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Traduzir consultas SQL no Commerce Intelligence
 
-Você já se perguntou como as consultas SQL são traduzidas nas [colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md), [métricas](../../data-user/reports/ess-manage-data-metrics.md) e [relatórios](../../tutorials/using-visual-report-builder.md) usados em [!DNL Commerce Intelligence]? Se você for um usuário de SQL pesado, entender como o SQL é traduzido no [!DNL Commerce Intelligence] permite que você trabalhe de forma mais inteligente no [Gerenciador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md) e aproveite ao máximo a plataforma [!DNL Commerce Intelligence].
+Você já se perguntou como as consultas SQL são traduzidas nas [colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md), [métricas](../../data-user/reports/ess-manage-data-metrics.md) e [relatórios](../../tutorials/using-visual-report-builder.md) usados em [!DNL Commerce Intelligence]? Se você for um usuário de SQL pesado, entender como o SQL é traduzido no [!DNL Commerce Intelligence] permite que você trabalhe de forma mais inteligente no [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) e aproveite ao máximo a plataforma [!DNL Commerce Intelligence].
 
 No final deste tópico, você encontrará uma **matriz de tradução** para cláusulas de consulta SQL e elementos [!DNL Commerce Intelligence].
 
@@ -53,7 +53,7 @@ Veja um exemplo específico de como uma métrica `Total Revenue` pode ser defini
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (e relatórios `time range`) |
 
-Navegue até o construtor de métricas clicando em **[!UICONTROL Manage Data** > **&#x200B; Métricas &#x200B;**> **Criar nova métrica]**, primeiro selecione a tabela `source` apropriada, que, nesse caso, é a tabela `orders`. Em seguida, a métrica será configurada conforme mostrado abaixo:
+Navegue até o construtor de métricas clicando em **[!UICONTROL Manage Data** > ** Métricas **> **Criar nova métrica]**, primeiro selecione a tabela `source` apropriada, que, nesse caso, é a tabela `orders`. Em seguida, a métrica será configurada conforme mostrado abaixo:
 
 ![Agregação de métrica](../../assets/Metric_aggregation.png)
 
@@ -73,9 +73,9 @@ A consulta para essa agregação pode ser semelhante ao mostrado abaixo:
 | `ON c.customer_id = o.customer_id` | Caminho |
 | `WHERE o.status = 'success'` | Filtro agregado |
 
-A configuração no [!DNL Commerce Intelligence] requer o uso do gerenciador de Datas Warehouse, no qual você cria um caminho entre a tabela `orders` e a tabela `customers` e, em seguida, cria uma coluna chamada `Customer LTV` na tabela do cliente.
+A configuração no [!DNL Commerce Intelligence] requer o uso do gerenciador do Data Warehouse, no qual você cria um caminho entre a tabela `orders` e a tabela `customers` e, em seguida, cria uma coluna chamada `Customer LTV` na tabela do cliente.
 
-Veja como estabelecer um novo caminho entre `customers` e `orders`. O objetivo final é criar uma nova coluna agregada na tabela `customers`, portanto, primeiro navegue até a tabela `customers` em sua Data Warehouse e clique em **[!UICONTROL Create a Column** > **&#x200B; Selecionar uma definição &#x200B;**> **SOMA]**.
+Veja como estabelecer um novo caminho entre `customers` e `orders`. O objetivo final é criar uma nova coluna agregada na tabela `customers`, portanto, primeiro navegue até a tabela `customers` em sua Data Warehouse e clique em **[!UICONTROL Create a Column** > ** Selecionar uma definição **> **SOMA]**.
 
 Em seguida, é necessário selecionar a tabela de origem. Se existir um caminho para a tabela `orders`, basta selecioná-lo na lista suspensa. No entanto, se você estiver criando um novo caminho, clique em **[!UICONTROL Create new path]** e a tela abaixo será exibida para você:
 
@@ -97,7 +97,7 @@ Agora que você criou a nova coluna `Customer LTV` na tabela `customers`, está 
 >
 >Para a última, sempre que você criar uma nova coluna calculada, deverá [adicionar a dimensão às métricas existentes](../data-warehouse-mgr/manage-data-dimensions-metrics.md) antes que ela esteja disponível como `filter` ou `group by`.
 
-Consulte [criando colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) com seu Gerenciador de Datas Warehouse.
+Consulte [criando colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) com seu Data Warehouse Manager.
 
 ## `Group By` cláusulas
 

@@ -23,6 +23,6 @@ As colunas não dependem dos ciclos de atualização, portanto, não é mais nec
 >
 >As colunas criadas usando o editor [!DNL SQL] não são salvas na Data Warehouse. Você sempre tem acesso à consulta contendo a coluna, mas se quiser usar a coluna em mais de um relatório, será necessário recriá-la na consulta para cada relatório. Isso significa que as colunas criadas usando o editor [!DNL SQL] não podem ser usadas no [!DNL Report Builder] tradicional.
 
-## Colunas no Gerenciador de Datas Warehouse
+## Colunas no Data Warehouse Manager
 
-As colunas dependem dos ciclos de atualização, portanto, um ciclo completo deve ser concluído antes de serem editadas. Essas colunas são salvas no Gerenciador de Datas Warehouse e podem ser usadas na [!DNL Report Builder] ou [!DNL SQL Report Builder] tradicional.
+As colunas dependem dos ciclos de atualização, portanto, um ciclo completo deve ser concluído antes de serem editadas. Essas colunas são salvas no Gerenciador do Data Warehouse e podem ser usadas no [!DNL Report Builder] ou [!DNL SQL Report Builder] tradicional.

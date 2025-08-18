@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Criar uma Coluna Calculada de SQL
 
-Este tópico descreve a finalidade e os usos do tipo de coluna `Calculation`, que pode ser adicionado às tabelas usando o [Gerenciador de Datas Warehouse](../data-warehouse-mgr/tour-dwm.md). Abaixo, explica o que os cálculos SQL fazem, por que eles são usados, o processo para criar um cálculo SQL e inclui dois exemplos.
+Este tópico descreve a finalidade e os usos do tipo de coluna `Calculation`, que pode ser adicionado às tabelas usando o [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Abaixo, explica o que os cálculos SQL fazem, por que eles são usados, o processo para criar um cálculo SQL e inclui dois exemplos.
 
 **Explicação**
 
 Antigamente, as colunas consideradas `advanced` só podiam ser feitas por um analista da equipe de Sucesso do cliente aqui em [!DNL Adobe Commerce Intelligence]. Agora todo o poder está nas mãos do usuário final, e colunas avançadas podem ser criadas no formato de `SQL Calculation` colunas na nova arquitetura [!DNL Commerce Intelligence].
 
-O tipo de coluna `Calculation`, agora disponível como uma opção no Gerenciador de Datas Warehouse, é uma mesma operação de tabela que permite transformar as colunas em uma tabela usando a lógica PostgreSQL. A documentação sobre as funções e operadores que podem ser usados no tipo de coluna `Calculation` pode ser encontrada no site PostgreSQL [aqui](https://www.postgresql.org/docs/9.6/functions.html).
+O tipo de coluna `Calculation`, agora disponível como uma opção no Data Warehouse Manager, é uma mesma operação de tabela que permite transformar as colunas em uma tabela usando a lógica PostgreSQL. A documentação sobre as funções e operadores que podem ser usados no tipo de coluna `Calculation` pode ser encontrada no site PostgreSQL [aqui](https://www.postgresql.org/docs/9.6/functions.html).
 
 As diferentes colunas que podem ser criadas com a coluna `Calculation` são quase ilimitadas, mas a maioria das colunas pode ser criada usando instruções IF-THEN e aritmética básica, que é usada nos exemplos abaixo.
 
@@ -74,6 +74,6 @@ Aqui, você pode criar uma coluna `Calculation` seguindo as etapas abaixo:
    * `String` - Qualquer tipo de texto ou série de caracteres que use números não numéricos
    * `Datetime` - Formato `yyyy-MM-dd hh:mm:ss`
 
-1. Clique em **[!UICONTROL test column]**. Isso gera uma lista de cinco valores de teste para cada uma de suas entradas e mostra o resultado da lógica da etapa 6 para cada conjunto de valores de teste. Se qualquer parte do SQL gerar um erro, a mensagem de erro apropriada será retornada. Os resultados de amostra só podem ser gerados se todas as colunas de entrada forem campos nativos. Se qualquer uma das colunas de entrada for calculada, você deverá validar os resultados adicionando a coluna a uma métrica e exibindo no Report Builder visual
+1. Clique em **[!UICONTROL test column]**. Isso gera uma lista de cinco valores de teste para cada uma de suas entradas e mostra o resultado da lógica da etapa 6 para cada conjunto de valores de teste. Se qualquer parte do SQL gerar um erro, a mensagem de erro apropriada será retornada. Os resultados de amostra só podem ser gerados se todas as colunas de entrada forem campos nativos. Se qualquer uma das colunas de entrada for calculada, você deverá validar os resultados adicionando a coluna a uma métrica e exibindo no Visual Report Builder
 
 1. Quando estiver satisfeito com os resultados, clique em **[!UICONTROL Save]**. A coluna ativa para uso.

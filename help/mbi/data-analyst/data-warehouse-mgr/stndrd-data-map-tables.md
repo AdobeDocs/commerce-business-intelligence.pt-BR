@@ -25,7 +25,7 @@ Infelizmente, a falta de padronização pode, às vezes, causar confusão nos da
 
 >[!NOTE]
 >
->Não é possível criar uma tabela de mapeamento para tabelas consolidadas sem a ajuda da equipe de suporte do Adobe.
+>Não é possível criar uma tabela de mapeamento para tabelas consolidadas sem a ajuda da equipe de suporte da Adobe.
 
 ## Como criá-lo? {#how}
 
@@ -37,7 +37,7 @@ Infelizmente, a falta de padronização pode, às vezes, causar confusão nos da
 * As porcentagens devem ser inseridas como decimais.
 * Verifique se os zeros à esquerda ou à direita estão retidos corretamente.
 
-Antes de mergulhar, o Adobe recomenda [exportar os dados brutos da tabela](../../tutorials/export-raw-data.md). Observar os dados brutos primeiro significa que você pode explorar todas as combinações possíveis para os dados que precisam ser limpos, garantindo que a tabela de mapeamento cubra tudo.
+Antes de mergulhar, a Adobe recomenda [exportar os dados brutos da tabela](../../tutorials/export-raw-data.md). Observar os dados brutos primeiro significa que você pode explorar todas as combinações possíveis para os dados que precisam ser limpos, garantindo que a tabela de mapeamento cubra tudo.
 
 Para criar uma tabela de mapeamento, você precisa criar uma planilha de duas colunas que siga as [regras de formatação para os uploads de arquivo](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
@@ -53,7 +53,7 @@ Após concluir a criação da tabela de mapeamento, você deve [carregar o arqui
 
 Este exemplo move a coluna criada na tabela `mapping_state` (`state_input`) para a tabela `customer_address` usando uma coluna unida. Isso nos permite agrupar pela coluna `state_input` limpa em seus relatórios em vez da coluna `state`.
 
-Para criar a coluna `joined`, navegue até a tabela para a qual o campo será realocado no Gerenciador de Datas Warehouse. Neste exemplo, esta seria a tabela `customer_address`.
+Para criar a coluna `joined`, navegue até a tabela para a qual o campo será realocado no Data Warehouse Manager. Neste exemplo, esta seria a tabela `customer_address`.
 
 1. Clique em **[!UICONTROL Create a Column]**.
 1. Selecione `Joined Column` na lista suspensa `Definition`.

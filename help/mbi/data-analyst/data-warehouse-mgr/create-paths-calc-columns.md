@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ## Atualizador das Colunas Calculadas
 
-Ao [criar colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) na Data Warehouse, você deverá definir um caminho que descreva como a tabela na qual você está criando uma coluna está relacionada à tabela da qual você está obtendo informações. Para criar um caminho com êxito, você precisa saber duas coisas:
+Ao [criar colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.md) na Data Warehouse, você deverá definir um caminho que descreva como a tabela na qual está criando uma coluna está relacionada à tabela da qual está obtendo informações. Para criar um caminho com êxito, você precisa saber duas coisas:
 
 1. Como as tabelas em seus bancos de dados se relacionam
 1. As chaves primária e estrangeira que definem esta relação
 
-Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Atualizadores de relacionamentos de tabela e tipos de chave {#refresher}
 
@@ -48,7 +48,7 @@ Quando uma relação entre duas tabelas é entendida, ela pode ser usada para de
 
 ## Criação de um caminho {#createpath}
 
-Ao criar uma coluna na Data Warehouse, você deve definir o caminho que traz informações de uma tabela para outra. Às vezes, os caminhos são preenchidos previamente porque existe um caminho entre as tabelas, mas se isso não acontecer, você deverá criar um.
+Ao criar uma coluna no Data Warehouse, você deve definir o caminho que traz informações de uma tabela para outra. Às vezes, os caminhos são preenchidos previamente porque existe um caminho entre as tabelas, mas se isso não acontecer, você deverá criar um.
 
 Use a relação entre **clientes** e **pedidos** para mostrar como ela é feita. Detalhado:
 
@@ -79,7 +79,7 @@ Agora, você pode criar o caminho.
 
 * **[!DNL Commerce Intelligence]não pode adivinhar relações de chave primária/estrangeira**. Você não deseja introduzir dados incorretos em sua conta, portanto, a criação de caminhos deve ser feita manualmente.
 
-* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para encontrar a melhor abordagem para suas metas.
+* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para encontrar a melhor abordagem para suas metas.
 
 * **Uma coluna só pode ser a referência de chave estrangeira para UM caminho de cada vez**. Por exemplo, se `order_items.order_id` aponta para `orders.id`, então `order_items.order_id` não pode apontar para mais nada.
 
@@ -89,11 +89,11 @@ Se você for impedido de criar uma coluna calculada devido a uma ou mais limita�
 
 ## Excluir um Caminho de Coluna Calculada {#delete}
 
-Criou um caminho incorreto na Data Warehouse? Ou talvez você esteja fazendo uma pequena limpeza de primavera e queira arrumar? Se precisar excluir um caminho da sua conta, você pode [enviar um tíquete para os analistas de suporte do Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Inclua o nome do caminho!**
+Criou um caminho incorreto no Data Warehouse? Ou talvez você esteja fazendo uma pequena limpeza de primavera e queira arrumar? Se precisar excluir um caminho da sua conta, você pode [enviar um tíquete para os analistas de suporte da Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Inclua o nome do caminho!**
 
 ## Encapsulamento {#wrapup}
 
-Agora que você está familiarizado com a criação de caminhos para colunas calculadas na sua Data Warehouse. Se você ainda não tiver certeza sobre um caminho específico, lembre-se de que você sempre pode clicar em **[!UICONTROL Support]** na sua conta do [!DNL Commerce Intelligence] para obter assistência.
+Agora que você está familiarizado com a criação de caminhos para colunas calculadas no Data Warehouse. Se você ainda não tiver certeza sobre um caminho específico, lembre-se de que você sempre pode clicar em **[!UICONTROL Support]** na sua conta do [!DNL Commerce Intelligence] para obter assistência.
 
 ## Relacionados
 

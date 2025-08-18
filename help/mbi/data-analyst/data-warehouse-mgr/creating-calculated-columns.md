@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Ao analisar seus dados, é útil consolidar dados de diferentes fontes. Deseja agrupar a receita por fonte de aquisição, vinculando os dados da tabela `orders` e os dados de [!DNL Google Analytics]? Talvez você queira agrupar a receita por gênero do cliente ou associar um atributo do cliente aos dados da transação para segmentação. Este tópico discute como fazer isso.
 
-Antes de começar, a Adobe recomenda que você consulte o [Guia de Tipos de Colunas Calculadas](../../data-analyst/data-warehouse-mgr/calc-column-types.md) para obter informações sobre os tipos de colunas que você pode criar no Gerenciador de Datas Warehouse, juntamente com suas definições e exemplos.
+Antes de começar, a Adobe recomenda que você consulte o [Guia de Tipos de Colunas Calculadas](../../data-analyst/data-warehouse-mgr/calc-column-types.md) para obter informações sobre os tipos de colunas que você pode criar no Data Warehouse Manager, juntamente com suas definições e exemplos.
 
 1. Para começar, clique em **[!DNL Manage Data > Data Warehouse]**.
 

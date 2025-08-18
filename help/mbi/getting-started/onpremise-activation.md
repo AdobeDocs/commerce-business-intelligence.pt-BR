@@ -1,5 +1,5 @@
 ---
-title: Ativar sua conta  [!DNL Adobe Commerce Intelligence]
+title: 'Ativar sua conta  [!DNL Adobe Commerce Intelligence] '
 description: Saiba com quem contatar para ativar sua conta do  [!DNL Commerce Intelligence] .
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
@@ -17,13 +17,13 @@ Para ativar o [!DNL Commerce Intelligence] para assinaturas locais, primeiro cri
 
 ## Crie sua conta do [!DNL Commerce Intelligence]
 
-Para criar sua conta, entre em contato com a equipe de conta do Adobe ou com o consultor técnico do cliente.
+Para criar sua conta, entre em contato com a equipe de conta da Adobe ou com o consultor técnico do cliente.
 
 ## Crie sua senha
 
 Depois que sua conta for criada, verifique se há um email de notificação de conta de [!DNL The Magento BI Team@rjmetrics.com]. Use o link fornecido no email para acessar sua conta do [!DNL Commerce Intelligence] e criar sua senha. Vá para sua caixa de entrada e verifique seu endereço de email.
 
-Se você não recebeu um email, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você não recebeu um email, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ![](../assets/create-account-4.png)
 
@@ -41,14 +41,14 @@ Depois de definir sua senha e fazer logon no [!DNL Commerce Intelligence], você
 
 ## Criar um usuário [!DNL Commerce Intelligence] dedicado no administrador [!DNL Commerce]
 
-Para usar o [!DNL Commerce Intelligence], você deve adicionar um usuário permanente e dedicado ao projeto [!DNL Commerce]. Este usuário dedicado serve como uma conexão permanente com o [!DNL Commerce] que permite a busca e a transferência de novos dados para a Data Warehouse [!DNL Commerce Intelligence] da conta.
+Para usar o [!DNL Commerce Intelligence], você deve adicionar um usuário permanente e dedicado ao projeto [!DNL Commerce]. Este usuário dedicado serve como uma conexão permanente com o [!DNL Commerce] que permite a busca e a transferência de novos dados para o Data Warehouse [!DNL Commerce Intelligence] da conta.
 
 A configuração de um usuário [!DNL Commerce Intelligence] dedicado garante que a conta não seja desativada ou excluída, interrompendo assim a conexão [!DNL Commerce Intelligence].
 
 
 >[!NOTE]
 >
->O Adobe incentiva o uso de um nome de conta que indique seu status permanente (por exemplo, ACI-dedicated, ACI-database-connector e assim por diante).
+>A Adobe incentiva o uso de um nome de conta que indique seu status permanente (por exemplo, ACI-dedicated, ACI-database-connector e assim por diante).
 
 Depois de criar o usuário dedicado para [!DNL Commerce Intelligence] no Administrador, adicione o mesmo usuário ao ambiente primário do projeto [!DNL Commerce] com uma configuração **[!UICONTROL Master]** de `Contributor`.
 
@@ -78,7 +78,7 @@ Depois de criar o usuário dedicado para [!DNL Commerce Intelligence] no Adminis
 
    ![](../assets/paste-public-key.png)
 
-## Fornecer credenciais do `MySQL` do [!DNL Commerce Intelligence] Essentials
+## Fornecer credenciais do [!DNL Commerce Intelligence] do `MySQL` Essentials
 
 1. Atualize seu `.magento/services.yaml`.
 
@@ -170,7 +170,7 @@ Após concluir a configuração, [entre](../getting-started/sign-in.md) em sua c
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: Decodificar sua Conta  [!DNL Commerce Intelligence]
+title: 'Decodificar sua Conta  [!DNL Commerce Intelligence] '
 description: Saiba como limpar sua conta do  [!DNL Commerce Intelligence] .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
@@ -99,13 +99,13 @@ Se você decidir que a métrica não é mais necessária, navegue de volta para 
 
 ## Etapa 4: Avaliar as Colunas Sincronizadas
 
-A última etapa é avaliar as colunas que estão sendo sincronizadas no momento na Data Warehouse. A não apenas dessincronização de colunas pode poluir sua conta, como também pode reduzir o tempo de atualização.
+A última etapa é avaliar as colunas que estão sendo sincronizadas no Data Warehouse. A não apenas dessincronização de colunas pode poluir sua conta, como também pode reduzir o tempo de atualização.
 
-Se quiser continuar, entre em contato com o [!DNL Commerce Intelligence] [Suporte](../guide-overview.md#Submitting-a-Support-Ticket). A equipe de suporte pode criar um relatório que inclua todas as colunas que não estão sendo usadas em nenhum painel para nenhum usuário e que não são usadas em resumos de email, excluindo Relatórios SQL. Você pode usar esse relatório como um guia para selecionar colunas para dessincronização por meio do Gerenciador de Datas Warehouse.
+Se quiser continuar, entre em contato com o [!DNL Commerce Intelligence] [Suporte](../guide-overview.md#Submitting-a-Support-Ticket). A equipe de suporte pode criar um relatório que inclua todas as colunas que não estão sendo usadas em nenhum painel para nenhum usuário e que não são usadas em resumos de email, excluindo Relatórios SQL. Você pode usar esse relatório como um guia para selecionar colunas para dessincronização por meio do Data Warehouse Manager.
 
 >[!NOTE]
 >
->Você sempre pode começar a sincronizar essas colunas novamente no futuro. Dessincronizar uma coluna remove quaisquer dados da Data Warehouse; isso significa apenas que essa coluna não é verificada em busca de valores novos ou atualizados durante o ciclo de atualização.
+>Você sempre pode começar a sincronizar essas colunas novamente no futuro. Dessincronizar uma coluna remove todos os dados da Data Warehouse; isso significa apenas que essa coluna não é verificada em busca de valores novos ou atualizados durante o ciclo de atualização.
 
 **Para Dessincronizar uma Coluna (ou Colunas)**
 

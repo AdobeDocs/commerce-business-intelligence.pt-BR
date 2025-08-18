@@ -1,6 +1,6 @@
 ---
-title: Atribuição de Google Analytics e UTM
-description: Saiba mais sobre o processo de atribuição da origem de Google Analytics.
+title: Google Analytics e atribuição UTM
+description: Saiba mais sobre o processo de atribuição de origem do Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Idealmente, cada vez que um evento de conversão ocorre, uma fonte de referência é registrada. Mas como se determina a fonte?
 
-A realidade é que os usuários geralmente vêm de muitas fontes antes de atingir/confirmar uma conversão micro ou macro. Por exemplo, elas podem vir ao site por meio de pesquisa orgânica, depois sair, depois vir por meio de pesquisa paga, depois sair, e depois vir diretamente ao próprio site. Essas informações de rastreamento de origem geralmente são fornecidas ao site por meio de parâmetros UTM, mas também há sistemas mais sofisticados. Para sua finalidade, concentre-se em [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+A realidade é que os usuários geralmente vêm de muitas fontes antes de atingir/confirmar uma conversão micro ou macro. Por exemplo, elas podem vir ao site por meio de pesquisa orgânica, depois sair, depois vir por meio de pesquisa paga, depois sair, e depois vir diretamente ao próprio site. Essas informações de rastreamento de origem geralmente são fornecidas ao site por meio de parâmetros UTM, mas também há sistemas mais sofisticados. Para sua finalidade, concentre-se em [UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998).
 
 ## Como o [!DNL Google Analytics] atribui fontes de referência por meio de parâmetros UTM?
 

@@ -19,7 +19,7 @@ Este tópico demonstra como configurar um painel que rastreará as atividades do
 
 ## Pré-requisitos
 
-**Importar seus dados de custo de publicidade** - Conectar [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - sincroniza automaticamente seus gastos com [!DNL AdWords] no Commerce Intelligence.
+**Importar seus dados de custo de publicidade** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - sincroniza automaticamente seus gastos com [!DNL AdWords] no Commerce Intelligence.
 
 **Rastrear dados do canal de aquisição de usuário** - Para vincular os dados de [!DNL Google AdWords] a pedidos específicos no banco de dados, é necessário [rastrear a aquisição de usuário](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Isso permite conectar cada pedido a uma fonte e um meio utm.
 
@@ -29,7 +29,7 @@ Essa coleção de relatórios é criada usando o seguinte:
 
 * Métricas geradas automaticamente quando você conecta os dados do [!DNL Google AdWords]
 * Métricas básicas que já devem estar disponíveis em sua conta, como `Number of orders` e `New users`
-* Dimension criado ao unir os dados do [!DNL Google Analytics Ecommerce] ao banco de dados, como a origem utm do pedido e a mídia utm do pedido. Entre em contato com a equipe de suporte se esses campos não estiverem disponíveis atualmente em sua conta
+* Dimensões criadas ao unir os dados do [!DNL Google Analytics Ecommerce] ao banco de dados, como a origem utm do pedido e a mídia utm do pedido. Entre em contato com a equipe de suporte se esses campos não estiverem disponíveis atualmente em sua conta
 
 ## Criação de relatórios
 

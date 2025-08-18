@@ -25,6 +25,6 @@ Em certos casos, você pode decidir alterar a tabela de dados que uma métrica u
 
    ![](../../assets/change-metrics-2.png)
 
-1. Se você não tiver uma coluna correspondente na nova tabela, poderá **criá-la na tabela de dados** ou [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) se for uma coluna de cálculo ou uma dimensão criada por [!DNL Commerce Intelligence]. Você também pode **excluir a dimensão da métrica**. Para excluir uma dimensão que não é mais necessária, retorne ao editor da métrica e selecione quais dimensões serão excluídas em `Dimensions`.
+1. Se você não tiver uma coluna correspondente na nova tabela, poderá **criá-la na tabela de dados** ou [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se for uma coluna de cálculo ou uma dimensão criada por [!DNL Commerce Intelligence]. Você também pode **excluir a dimensão da métrica**. Para excluir uma dimensão que não é mais necessária, retorne ao editor da métrica e selecione quais dimensões serão excluídas em `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Quer ver o desempenho da sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos? Conectar os dados do [!DNL PrestaShop] ao [!DNL Commerce Intelligence] permite que você responda a essas perguntas e muito mais.
 
-O banco de dados [!DNL PrestaShop] é baseado em [!DNL MySQL]. Você pode conectá-lo a [!DNL Commerce Intelligence] através de uma [conexão direta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), ou [através de um `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). A Adobe recomenda o uso do método `SSH`, pois ele é o mais seguro.
+O banco de dados [!DNL PrestaShop] é baseado em [!DNL MySQL]. Você pode conectá-lo a [!DNL Commerce Intelligence] através de uma [conexão direta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), ou [através de um `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). A Adobe recomenda usar o método `SSH`, pois ele é o mais seguro.
 
 ## Documentação relacionada
 

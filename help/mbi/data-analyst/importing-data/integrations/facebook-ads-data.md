@@ -1,6 +1,6 @@
 ---
 title: Dados esperados do Facebook Ads
-description: Saiba mais sobre uma breve visão geral das tabelas recomendadas para sincronização com a Data Warehouse
+description: Saiba mais sobre uma breve visão geral das tabelas recomendadas para sincronização com o Data Warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Dados [!DNL Facebook Ads] esperados
 
-Depois de [conectar sua [!DNL Facebook Ads] conta](../integrations/facebook-ads.md), você poderá usar o [Gerenciador de Data Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes para análise.
+Depois de [conectar sua [!DNL Facebook Ads] conta](../integrations/facebook-ads.md), você poderá usar o [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) para rastrear facilmente campos de dados relevantes para análise.
 
-Este tópico fornece uma breve visão geral das tabelas que a Adobe recomenda que você sincronize com a Data Warehouse. Isso apenas destaca as tabelas principais, pois há algumas subtabelas.
+Este tópico fornece uma breve visão geral das tabelas que a Adobe recomenda que você sincronize com o Data Warehouse. Isso apenas destaca as tabelas principais, pois há algumas subtabelas.
 
 ## Tabelas de campanha de publicidade principais
 
@@ -60,4 +60,4 @@ Esta tabela inclui as mesmas informações que a tabela `facebook_ads_insights_{
 ## Relacionados
 
 * [Conectando [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

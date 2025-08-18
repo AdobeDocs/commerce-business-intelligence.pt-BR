@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Além de definir níveis de permissão de usuário, você também pode restringir o acesso às métricas individualmente. Por exemplo, se você quiser que o departamento de contabilidade tenha acesso a métricas relacionadas à receita, mas não a métricas de aquisição de usuário, poderá restringir o acesso a essas métricas.
 
-Em casos como esses, o Adobe recomenda configurar a conta desse usuário como **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** permissões devem ser concedidas a usuários que não precisam criar ou alterar métricas, colunas calculadas, integrações ou usuários, mas que precisam de acesso aos dados na Data Warehouse. Se quiser restringir totalmente o acesso aos dados, use as permissões de **[!UICONTROL Read Only]**.
+Em casos como esse, a Adobe recomenda configurar a conta desse usuário como **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** permissões devem ser concedidas a usuários que não precisam criar ou alterar métricas, colunas calculadas, integrações ou usuários, mas que precisam de acesso aos dados na Data Warehouse. Se quiser restringir totalmente o acesso aos dados, use as permissões de **[!UICONTROL Read Only]**.
 
 Depois de definir o nível de permissão, você pode selecionar as métricas que um usuário **[!UICONTROL Standard]** pode acessar fazendo o seguinte:
 

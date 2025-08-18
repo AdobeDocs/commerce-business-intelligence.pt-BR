@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
 # Opções de filtro
 
-Este tópico explora alguns `operators` especiais usados em `filters` ao [criar um relatório](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} ou [criar uma métrica](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+Este tópico explora alguns `operators` especiais usados em `filters` ao [criar um relatório](../../tutorials/using-visual-report-builder.md){: target="_blank"} ou [criar uma métrica](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}.
 
 ## `Filter Operators`
 

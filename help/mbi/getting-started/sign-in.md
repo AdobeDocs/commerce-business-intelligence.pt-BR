@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Acessar sua conta ativada do [!DNL Adobe Commerce Intelligence]
 
-Depois de ativar sua conta do [!DNL Commerce Intelligence] para o [no local ou na nuvem](../getting-started/onpremise-activation.md) e trabalhar com sua equipe de conta do Adobe para finalizar as etapas de configuração, você poderá entrar em sua conta agora.
+Depois de ativar sua conta do [!DNL Commerce Intelligence] para o [no local ou na nuvem](../getting-started/onpremise-activation.md) e trabalhar com sua equipe de conta da Adobe para finalizar as etapas de configuração, você pode entrar em sua conta agora.
 
 ## Entrar usando seu [!DNL Adobe ID]
 
@@ -21,7 +21,7 @@ Depois de ativar sua conta do [!DNL Commerce Intelligence] para o [no local ou n
 
    ![entrar na adobe](../assets/sign-in-adobe.png)
 
-1. Digite o endereço de email que você usou ao criar sua conta do [!DNL Commerce Intelligence]. Se você ainda não tiver uma conta Adobe, clique em **[!UICONTROL Create an account]** e insira suas informações. Lembre-se de usar o endereço de email que você usou ao criar sua conta do [!DNL Commerce Intelligence]. O endereço de email é a chave necessária para acessar a conta Adobe.
+1. Digite o endereço de email que você usou ao criar sua conta do [!DNL Commerce Intelligence]. Se você ainda não tiver uma conta da Adobe, clique em **[!UICONTROL Create an account]** e insira suas informações. Lembre-se de usar o endereço de email que você usou ao criar sua conta do [!DNL Commerce Intelligence]. O endereço de email é a chave necessária para acessar a conta do Adobe.
 
 >[!NOTE]
 >

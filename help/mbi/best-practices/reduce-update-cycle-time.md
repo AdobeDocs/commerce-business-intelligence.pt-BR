@@ -19,13 +19,13 @@ Muitos fatores podem aumentar um tempo de atualização já longo. Determinados 
 
 ## Diminuir Frequência de Nova Verificação
 
-Em uma tabela de banco de dados, pode haver colunas de dados com valores alteráveis. Por exemplo, em uma tabela **pedidos**, pode haver uma coluna chamada **status**. Quando um pedido é inicialmente gravado no banco de dados, a coluna de status pode conter o valor `pending`. A ordem é replicada em sua [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) com este valor `pending`.
+Em uma tabela de banco de dados, pode haver colunas de dados com valores alteráveis. Por exemplo, em uma tabela **pedidos**, pode haver uma coluna chamada **status**. Quando um pedido é inicialmente gravado no banco de dados, a coluna de status pode conter o valor `pending`. A ordem é replicada no seu [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) com este valor `pending`.
 
-As colunas alteráveis devem ser [verificadas novamente quanto a valores atualizados](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) ao longo do tempo. Por padrão, o [!DNL Commerce Intelligence] verifica novamente essas colunas durante cada atualização, mas se houver uma grande quantidade de dados a serem verificados novamente e replicados, isso poderá afetar negativamente seu tempo de atualização. Em vez de executar reverificações durante cada atualização, o Adobe recomenda definir a frequência de reverificação como diária, semanal ou mensal.
+As colunas alteráveis devem ser [verificadas novamente quanto a valores atualizados](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) ao longo do tempo. Por padrão, o [!DNL Commerce Intelligence] verifica novamente essas colunas durante cada atualização, mas se houver uma grande quantidade de dados a serem verificados novamente e replicados, isso poderá afetar negativamente seu tempo de atualização. Em vez de executar novas verificações durante cada atualização, a Adobe recomenda definir a frequência de novas verificações como diária, semanal ou mensal.
 
 ## Usar métodos de replicação incremental
 
-Como mencionado acima, longos tempos de atualização estão diretamente relacionados à quantidade de dados que devem ser verificados novamente e replicados. [Os métodos de replicação incremental](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) podem reduzir muito a quantidade de dados processados durante o ciclo de atualização. Sempre que possível, o Adobe recomenda o uso desses métodos ou a modificação do banco de dados para suportar um método incremental.
+Como mencionado acima, longos tempos de atualização estão diretamente relacionados à quantidade de dados que devem ser verificados novamente e replicados. [Os métodos de replicação incremental](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) podem reduzir muito a quantidade de dados processados durante o ciclo de atualização. Sempre que possível, a Adobe recomenda usar esses métodos ou modificar seu banco de dados para suportar um método incremental.
 
 ## Remover Gráficos Não Utilizados dos Painéis
 
@@ -43,4 +43,4 @@ Além de reavaliar as frequências de reverificação, os métodos de replicaç�
 
 ## Encapsulamento
 
-Se o tempo de atualização ainda parecer lento mesmo após a implementação dessas recomendações, [contate a equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se o tempo de atualização ainda parecer lento mesmo após a implementação dessas recomendações, [contate a equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

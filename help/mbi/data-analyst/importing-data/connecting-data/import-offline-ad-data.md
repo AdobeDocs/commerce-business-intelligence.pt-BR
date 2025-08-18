@@ -17,9 +17,9 @@ Ao carregar seus dados de gastos com publicidade, você pode medir o ROI da camp
 
 ## Upload de dados de custo de publicidade
 
-A primeira etapa na análise de dados de gastos com anúncios é obter os dados. Como a maioria das plataformas de publicidade permite exportar relatórios, a Adobe recomenda exportar os dados brutos da sua plataforma de publicidade e carregá-los diretamente no [!DNL Commerce Intelligence] sem nenhuma manipulação. Você pode executar operações nos dados em sua Data Warehouse, de modo que não há necessidade de duplicar seus esforços.
+A primeira etapa na análise de dados de gastos com anúncios é obter os dados. Como a maioria das plataformas de publicidade permite exportar relatórios, a Adobe recomenda exportar os dados brutos da sua plataforma de publicidade e carregá-los diretamente no [!DNL Commerce Intelligence] sem qualquer manipulação. Você pode executar operações nos dados em sua Data Warehouse, de modo que não há necessidade de duplicar seus esforços.
 
-Após exportar os dados de gastos com anúncios, use o recurso [`File Upload`](../connecting-data/using-file-uploader.md) para trazer os dados para a sua Data Warehouse. Você pode carregar novos dados para a mesma tabela [!DNL Commerce Intelligence] ao longo do tempo.
+Após exportar os dados de gastos com anúncios, use o recurso [`File Upload`](../connecting-data/using-file-uploader.md) para trazer os dados para a Data Warehouse. Você pode carregar novos dados para a mesma tabela [!DNL Commerce Intelligence] ao longo do tempo.
 
 ## Fontes offline
 

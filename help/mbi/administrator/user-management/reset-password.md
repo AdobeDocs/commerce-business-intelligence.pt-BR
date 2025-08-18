@@ -17,4 +17,4 @@ Para redefinir sua senha, clique em **[!UICONTROL Reset Password]** abaixo do ca
 
 Além disso, você pode alterar sua senha dentro de [!DNL Commerce Intelligence] usando a página **[!UICONTROL Personal Settings]**.
 
-Se você redefinir sua senha e permanecer bloqueado na sua conta, siga [estas dicas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=pt-BR) para ajudar a identificar o problema.
+Se você redefinir sua senha e permanecer bloqueado na sua conta, siga [estas dicas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) para ajudar a identificar o problema.

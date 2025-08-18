@@ -56,7 +56,7 @@ Insira as seguintes informações nesta página na seção `Database Connection`
 * `Username`: O nome de usuário de [!DNL Commerce Intelligence] [!DNL MySQL]
 * `Password`: A senha para o usuário [!DNL Commerce Intelligence] [!DNL MySQL]
 * `Port`: Porta do MySQL no servidor (`3306` por padrão)
-* `Host`: O endereço público do servidor [!DNL Commerce Intelligence] do `MySQL` se conecta ao. Normalmente, esta é a URL que você usa para fazer logon no `[!DNL cPanel]`.
+* `Host`: O endereço público do servidor `MySQL` do [!DNL Commerce Intelligence] se conecta ao. Normalmente, esta é a URL que você usa para fazer logon no `[!DNL cPanel]`.
 
 Se você estiver usando um [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md), deverá inserir as informações de criptografia. Ajuste o botão `Encrypted` para `Yes` para exibir o formulário.
 
@@ -69,4 +69,4 @@ Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instala�
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

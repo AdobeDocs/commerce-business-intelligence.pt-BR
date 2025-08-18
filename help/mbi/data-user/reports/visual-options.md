@@ -1,5 +1,5 @@
 ---
-title: Opções de visualização no Report Builder visual
+title: Opções de visualização no Visual Report Builder
 description: Saiba como usar as opções de Visualização no Visual Report Builder.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User

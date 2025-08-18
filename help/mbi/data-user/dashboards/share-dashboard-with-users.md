@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Compartilhar painéis com outros usuários
 
-O compartilhamento de painéis é uma ótima maneira de manter sua equipe informada e incentivar discussões colaborativas. Ao criar e compartilhar um painel central, você pode fornecer à sua equipe as informações necessárias, mantendo o controle. A [[!DNL Adobe] recomenda](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} que você conceda direitos `Edit` para selecionar alguns para minimizar as alterações acidentais.
+O compartilhamento de painéis é uma ótima maneira de manter sua equipe informada e incentivar discussões colaborativas. Ao criar e compartilhar um painel central, você pode fornecer à sua equipe as informações necessárias, mantendo o controle. A [[!DNL Adobe] recomenda](../../best-practices/share-dashboard-best-practice.md){: target="_blank"} que você conceda direitos de `Edit` a alguns usuários selecionados para minimizar alterações acidentais.
 
 >[!NOTE]
 >

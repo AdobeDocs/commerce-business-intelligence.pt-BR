@@ -1,12 +1,12 @@
 ---
-title: Usando o Report Builder SQL
-description: Saiba mais sobre os detalhes do uso do Report Builder SQL.
+title: Uso do SQL Report Builder
+description: Saiba mais sobre as vantagens e desvantagens de usar o SQL Report Builder.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >Exige [permissões de administrador](../../administrator/user-management/user-management.md) para criar e editar gráficos SQL. `Standard` usuários podem reorganizar esses gráficos em painéis, e `Read-only` usuários têm a mesma experiência que têm com gráficos tradicionais. Além disso, `Read-only` usuários não têm acesso ao texto da consulta.
 
-Veja o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=pt-BR) para saber mais.
+Veja o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) para saber mais.
 
 [!DNL SQL], ou Linguagem de Consulta Estruturada, é uma linguagem de programação usada para se comunicar com bancos de dados. No [!DNL Commerce Intelligence], o [!DNL SQL] é usado para consultar ou recuperar dados da sua Data Warehouse. Examine os relatórios em seu painel - nos bastidores, cada um é alimentado por uma consulta [!DNL SQL].
 
-Você pode usar o [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) para consultar diretamente a Data Warehouse, visualizar os resultados e transformá-los em um gráfico. Você pode começar a criar um relatório com o [!DNL SQL Report Builder] clicando em **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
+Você pode usar o [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) para consultar diretamente sua Data Warehouse, visualizar os resultados e transformá-los em um gráfico. Você pode começar a criar um relatório com o [!DNL SQL Report Builder] clicando em **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Veja o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=pt-BR) para saber mais.
+Veja o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) para saber mais.
 
 O [!DNL SQL Report Builder] permite consultar diretamente a Data Warehouse, visualizar os resultados e transformá-los rapidamente em um gráfico. A melhor parte do uso do [!DNL SQL] para criar relatórios é que você não precisa esperar nos ciclos de atualização para iterar nas colunas que criar. Se os resultados não parecerem corretos, você poderá editar e executar novamente a query rapidamente até que tudo corresponda às suas expectativas.
 
@@ -71,9 +71,9 @@ Você também pode usar a barra lateral no editor [!DNL SQL] para inserir métri
 
 >[!NOTE]
 >
->Qualquer [função SELECT](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST), ou qualquer função que não altere dados, que seja suportada pelo PostgreSQL, é suportada no Report Builder SQL. Isso inclui, mas não está limitado a, MÉDIA, CONTAGEM, CONTAGEM DISTINTA, MÍN/MAX e SOMA.
+>Qualquer [função SELECT](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST), ou qualquer função que não altere dados, que seja suportada pelo PostgreSQL, tem suporte no SQL Report Builder. Isso inclui, mas não está limitado a, MÉDIA, CONTAGEM, CONTAGEM DISTINTA, MÍN/MAX e SOMA.
 
-Além disso, qualquer tipo `JOIN` é suportado, mas o Adobe recomenda usar somente INNER JOIN, pois é o mais barato dos tipos `JOIN`.
+Além disso, qualquer tipo `JOIN` é suportado, mas a Adobe recomenda usar somente INNER JOIN, pois é o mais barato dos tipos `JOIN`.
 
 ## Execução da consulta e exibição dos resultados {#runquery}
 
@@ -99,11 +99,11 @@ Veja abaixo como é o processo de visualização:
 
 ![](../../assets/SQL_RB_viz_overview.gif)
 
-Para obter uma apresentação detalhada de como criar uma visualização, consulte o [Tutorial de criação de visualizações de consultas SQL](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}.
+Para obter uma apresentação detalhada de como criar uma visualização, consulte o [tutorial Criar visualizações de consultas SQL](../../tutorials/create-visuals-from-sql.md){: target="_blank"}.
 
 ## Salvamento do relatório {#save}
 
-Antes de salvar seu trabalho, você deve dar um nome ao relatório. Lembre-se de seguir as [diretrizes de práticas recomendadas para nomenclatura](../../best-practices/naming-elements.md){: target=&quot;_blank&quot;} e escolher algo que transmita claramente o que é o relatório!
+Antes de salvar seu trabalho, você deve dar um nome ao relatório. Lembre-se de seguir as [diretrizes de práticas recomendadas para nomenclatura](../../best-practices/naming-elements.md){: target="_blank"} e escolher algo que transmita claramente o que é o relatório!
 
 Clique em **[!UICONTROL Save]** no canto superior direito do editor [!DNL SQL] e selecione o relatório `Type` (`Chart` ou `Table`). Para finalizar, selecione o painel no qual salvar o relatório e clique em **[!UICONTROL Save to Dashboard]**.
 
@@ -113,7 +113,7 @@ Clique em **[!UICONTROL Save]** no canto superior direito do editor [!DNL SQL] e
 
 #### [!DNL SQL Report Builder]
 
-O [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) possibilita consultar diretamente a Data Warehouse, visualizar os resultados e transformá-los rapidamente em um relatório. Usar o [!DNL SQL] também permite que você [use [!DNL SQL] funções que não estão disponíveis](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) nos `Visual` ou `Cohort` Report Builder, dando a você maior controle sobre seus dados.
+O [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) possibilita consultar diretamente a Data Warehouse, visualizar os resultados e transformá-los rapidamente em um relatório. Usar o [!DNL SQL] também permite que você [use [!DNL SQL] funções que não estão disponíveis](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) no `Visual` ou `Cohort` Report Builder, dando a você maior controle sobre seus dados.
 
 As colunas calculadas criadas usando [!DNL SQL] não dependem dos ciclos de atualização, o que significa que você pode iterar nelas da maneira que desejar e ver os resultados imediatamente.
 
@@ -133,17 +133,17 @@ As colunas calculadas criadas usando [!DNL SQL] não dependem dos ciclos de atua
 
 Na maioria das vezes, as diferenças nos resultados podem ser atribuídas aos ciclos de atualização. Se [!DNL Commerce Intelligence] estiver replicando dados do banco de dados para a Data Warehouse, você poderá ver resultados diferentes mesmo ao usar a mesma consulta.
 
-Problemas de conexão também podem resultar em discrepâncias. Navegue até a página `Connections` clicando em **[!DNL Manage Data** > **Connections]** para fazer o check-out - há um erro para a integração de banco de dados em questão? Em caso afirmativo, talvez seja necessário [reautenticar a integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR) para executar as tarefas novamente.
+Problemas de conexão também podem resultar em discrepâncias. Navegue até a página `Connections` clicando em **[!DNL Manage Data** > **Connections]** para fazer o check-out - há um erro para a integração de banco de dados em questão? Em caso afirmativo, talvez seja necessário [reautenticar a integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) para executar as tarefas novamente.
 
 Se todas as suas integrações forem conectadas com êxito e você não estiver no meio de um ciclo de atualização, talvez haja algo errado.
 
-#### A exclusão de um relatório [!DNL SQL] também exclui as colunas subjacentes da minha Data Warehouse?
+#### A exclusão de um relatório [!DNL SQL] também exclui as colunas subjacentes do meu Data Warehouse?
 
-Não, você não perde nenhuma coluna da Data Warehouse, independentemente de como as criou.
+Não, você não perde nenhuma coluna do Data Warehouse, independentemente de como você as criou.
 
 As colunas criadas usando `Data Warehouse Manager` não serão afetadas se você excluir um relatório ou consulta que as utiliza.
 
-As colunas criadas usando o [!DNL SQL Report Builder] não são salvas na Data Warehouse.
+As colunas criadas usando o [!DNL SQL Report Builder] não são salvas no Data Warehouse.
 
 
 #### `Report Builder` versus `SQL Report Builder`
@@ -157,7 +157,7 @@ Ao contrário do [!DNL Visual Report Builder], o [[!DNL Cohort Report Builder]](
 | **Perfeito para...** | **Isso não é tão bom para...** |
 |---|---|
 | Analistas intermediários/avançados | Iniciantes - você precisa de coortes que definam práticas. |
-| Identificação de tendências comportamentais ao longo do tempo | Análise qualitativa - pode ser [concluído](../dev-reports/create-qual-cohort-analysis.md), mas requer assistência para Adobe. |
+| Identificação de tendências comportamentais ao longo do tempo | Análise qualitativa - pode ser [concluído](../dev-reports/create-qual-cohort-analysis.md), mas requer assistência da Adobe. |
 
 ## Reconstrução de Consultas após o Ciclo de Atualização
 
@@ -167,10 +167,10 @@ Não é necessário recriar as consultas. Os relatórios criados usando o [[!DNL
 >
 >Ao excluir um relatório/consulta [!DNL SQL], as colunas subjacentes não são excluídas da sua Data Warehouse. Você não perde nenhuma coluna, independentemente de como as criou.
 
-* As colunas criadas usando o Gerenciador de Datas Warehouse não serão afetadas se você excluir um relatório ou consulta que as utiliza.
+* As colunas criadas usando o Data Warehouse Manager não serão afetadas se você excluir um relatório ou query que as utiliza.
 
-* As colunas criadas usando o Report Builder SQL não são salvas na Data Warehouse.
+* As colunas criadas usando o SQL Report Builder não são salvas no Data Warehouse.
 
 ## Encapsulamento {#wrapup}
 
-Se você deseja tentar algo um pouco mais desafiador, por que não tentar escrever uma consulta otimizada para visualização? Confira o [Tutorial de criação de visualizações de [!DNL SQL] consultas](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;} para começar.
+Se você deseja tentar algo um pouco mais desafiador, por que não tentar escrever uma consulta otimizada para visualização? Confira o [Tutorial de criação de visualizações de [!DNL SQL] consultas](../../tutorials/create-visuals-from-sql.md){: target="_blank"} para começar.
