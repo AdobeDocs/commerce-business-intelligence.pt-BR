@@ -10,7 +10,7 @@ feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 source-git-commit: aae7508da07dcf464401a4e5681f76cee20f01c9
 workflow-type: tm+mt
 source-wordcount: '142'
