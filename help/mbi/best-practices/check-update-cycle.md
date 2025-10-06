@@ -4,9 +4,9 @@ description: Saiba como verificar o status do ciclo de atualização.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Ao fazer logon no painel do [!DNL Adobe Commerce Intelligence], há várias mane
 
 ## Por que devo verificar o status do ciclo de atualização?
 
-A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=pt-BR), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
+A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
 
 ## [!UICONTROL Read-Only] e [!UICONTROL Standard] usuários
 
 `Read-only` usuários podem fazer logon no painel e ver como os dados foram atualizados recentemente, passando o mouse sobre o ícone na parte superior direita da página. Isso mostra quando o último ponto de dados foi extraído.
 
-![](../../mbi/assets/last-success-data.png)
+![Carimbo de data/hora da última atualização de dados bem-sucedida mostrado na interface](../../mbi/assets/last-success-data.png)
 
 ## [!UICONTROL Admin] Usuários
 
@@ -31,7 +31,7 @@ A verificação do ciclo de atualização de status é útil quando você está 
 
 Para obter mais detalhes, os usuários administradores podem clicar em **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
 
-![](../../mbi/assets/detail-manage-data-integrations.png)
+![Página Gerenciar integrações de dados mostrando os detalhes da conexão e o status da atualização](../../mbi/assets/detail-manage-data-integrations.png)
 
 Esta página mostra o status da atualização atual e a hora da última atualização concluída.
 

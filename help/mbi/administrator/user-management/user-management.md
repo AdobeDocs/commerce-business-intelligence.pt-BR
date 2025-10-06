@@ -4,9 +4,9 @@ description: Saiba como gerenciar usuários do Commerce Intelligence.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Essas permissões permitem que os usuários executem determinadas ações ou ace
 
 >[!NOTE]
 >
->_Você pode limitar o **[!UICONTROL Standard]**&#x200B;acesso a métricas específicas[ de um usuário ](../../administrator/user-management/restrict-metric-access.md)._
+>_Você pode limitar o **[!UICONTROL Standard]**acesso a métricas específicas[ de um usuário ](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _usuários podem acessar o Faturamento com uma configuração de permissão extra._
 >
@@ -66,7 +66,7 @@ Além dos níveis de permissão gerais, existem duas outras designações de usu
 
 Por padrão, `Admin` usuários têm acesso à guia `Billing`, mas `Standard` usuários também podem obter acesso se tiverem a caixa de seleção `Billing` marcada em seus perfis.
 
-![faturamento](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![Página de cobrança](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Técnico
 

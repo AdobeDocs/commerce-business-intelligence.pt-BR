@@ -4,9 +4,9 @@ description: Saiba como analisar os dados de gastos com anúncios e ver se o din
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/facebook-ads-logo.png)
+![Logotipo do Facebook Ads](../../../assets/facebook-ads-logo.png)
 
 Você fez sua pesquisa, criou seus anúncios, iniciou sua campanha em [!DNL Facebook]. Agora é hora de analisar seus dados de gastos com anúncios e ver se seu dinheiro está sendo gasto de maneira eficaz. Usando seus dados de gastos com anúncios, você pode [medir o ROI da campanha ao casar seu custo de publicidade com o valor vitalício do cliente (CLV)](../../../data-analyst/analysis/roi-ad-camp.md) dos usuários adquiridos de suas campanhas.
 
@@ -38,7 +38,7 @@ A conexão dos dados do [!DNL Facebook Ad] com o [!DNL Commerce Intelligence] é
 
 Depois de clicar em **[!DNL Facebook Authorize]**, uma pequena janela pop-up será exibida:
 
-![](../../../assets/Facebook_Access_Popup.png)
+![Caixa de diálogo de permissão de acesso do Facebook para o Commerce Intelligence](../../../assets/Facebook_Access_Popup.png)
 
 Siga uma série de etapas para permitir que o [!DNL Commerce Intelligence] acesse dados do seu Perfil Público, [!DNL Facebook Ads] e estatísticas relacionadas. Clique em **[!UICONTROL OK]** nessas etapas para continuar.
 
@@ -46,7 +46,7 @@ Siga uma série de etapas para permitir que o [!DNL Commerce Intelligence] acess
 
 1. Após a conclusão da autenticação, você será solicitado a selecionar as [!DNL Facebook Ads] contas das quais deseja extrair dados. Selecione as contas desejadas clicando na caixa de seleção na coluna `Connect`.
 
-   ![](../../../assets/Facebook_Ad_Accounts.png)
+   ![Interface de seleção de contas de anúncio do Facebook](../../../assets/Facebook_Ad_Accounts.png)
 
 1. Clique em **[!UICONTROL Save Connections]**.
 
@@ -58,7 +58,7 @@ Verifique se você está rastreando campanhas de [!DNL Facebook] em [!DNL Google
 
 ## Relacionados
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Conectar sua conta  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Rastrear origem da referência de ordem via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no banco de dados](../../analysis/google-track-user-acq.md)

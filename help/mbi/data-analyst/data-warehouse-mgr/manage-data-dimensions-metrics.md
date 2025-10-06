@@ -4,9 +4,9 @@ description: Saiba o que é uma dimensão e ela pode ser usada para filtrar ou s
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Para adicionar uma ou mais dimensões a várias métricas de uma só vez:
 
 1. Na coluna `Choose Metric(s) to Add Dimensions`, selecione as métricas às quais deseja adicionar dimensões. Depois de selecionada, a coluna `Choose Dimensions to Add` aparece à direita. Marque as dimensões que deseja adicionar à métrica selecionada.
 
-   ![](../../assets/Add_Dimensions.png)
+   ![Caixa de diálogo Adicionar Dimensões mostrando as opções de dimensão disponíveis](../../assets/Add_Dimensions.png)
 
 1. Se você quiser segmentar ou agrupar por qualquer uma das dimensões de dados nos relatórios, certifique-se de indicar que elas são _Agrupáveis_.
 

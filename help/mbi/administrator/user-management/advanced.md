@@ -4,9 +4,9 @@ description: Melhore a visibilidade dos dados, simplifique a emissão de relató
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -460,7 +460,7 @@ Os usuários administradores podem visualizar dados do painel com acesso a todas
 
 No entanto, os usuários podem visualizar dados do painel filtrados com base nos armazenamentos mapeados para eles durante a configuração do usuário.
 
-![Exibir administrador do painel](../../assets/view-dashboard-user.png)
+![Exibir administrador filtrado pelo painel](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

@@ -4,9 +4,9 @@ description: Saiba como consolidar dados de diferentes fontes.
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Sua nova coluna aparece na tabela atual com um status `Pending`. Quando a próxi
 
 Se você estiver tendo problemas para lembrar o que são todas as entradas ao criar uma coluna calculada, tente manter esse mapa de referência disponível quando estiver criando:
 
-![](../../assets/Calculated_Columns_Example.png)
+![Exemplo de configuração de coluna calculada no Data Warehouse Manager](../../assets/Calculated_Columns_Example.png)
 
 ## Documentação relacionada
 

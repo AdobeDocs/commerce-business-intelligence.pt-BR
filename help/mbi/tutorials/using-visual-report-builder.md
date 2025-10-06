@@ -4,9 +4,9 @@ description: Saiba como analisar os dados em seu relatório por um período espe
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Você pode adicionar outras métricas depois que a métrica inicial for selecion
 
 Digamos que você deseje criar um relatório que mostre a receita média por pedido. Nesse caso, você dividiria a métrica `Revenue` pela métrica `Number of orders`.
 
-![](../assets/ave-rev-per-order.png)
+![Usar o Visual Report Builder](../assets/ave-rev-per-order.png)
 
 ## Etapa 4: Definindo o `Time Period` e `Interval of Analysis` {#time}
 
 Para zerar em um período de tempo específico, é possível definir o período da análise. Você também pode escolher intervalos de tempo para segmentar os dados (por exemplo, por ano, por trimestre ou por mês). Use os menus no canto superior direito do gráfico para definir o período e o intervalo.
 
-![](../assets/Time_Options_Report_Builder.png)
+![Usar o Visual Report Builder](../assets/Time_Options_Report_Builder.png)
 
 Ao definir um intervalo de datas específico para o período, verifique se a data de início está no início do intervalo e a data de término está no final do intervalo.
 
@@ -57,17 +57,17 @@ Você pode escolher `None` para impedir que uma métrica seja segmentada. Por ex
 
 Retorne ao exemplo de receita média por pedido e defina o Group by para o código promocional. Isso mostra a receita média por pedido para pedidos com e sem um código promocional.
 
-![](../assets/Group_By_Report_Builder.png)
+![Usar o Visual Report Builder](../assets/Group_By_Report_Builder.png)
 
 Se as métricas incluídas na análise forem criadas em tabelas de dados diferentes, uma janela pop-up permitirá selecionar a dimensão de dados correspondente em cada tabela. O objetivo aqui é encontrar dimensões que compartilham tipos de valores para segmentação:
 
-![](../assets/Dimension_Editor.png)
+![Usar o Visual Report Builder](../assets/Dimension_Editor.png)
 
 ## Etapa 6: configuração `Metric Filters`, `Perspective` e `Time Interval` {#metric-specific}
 
-Para cada métrica adicionada à análise, é possível adicionar filtros, selecionar a perspectiva de dados relevante e definir opções de `time interval`. Para acessar esses recursos, clique nos ícones de funil (`Filter`), olho (`Perspective`) e relógio (`Time`) localizados ao lado das métricas incluídas no relatório.
+Para cada métrica adicionada à análise, é possível adicionar filtros, selecionar a perspectiva de dados relevante e definir opções de `time interval`. Para acessar esses recursos, clique nos ícones funnel (`Filter`), olho (`Perspective`) e relógio (`Time`) localizados ao lado das métricas incluídas no relatório.
 
-![](../assets/Filters_Perspective_Interval_Report_builder.png)
+![Usar o Visual Report Builder](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
@@ -83,7 +83,7 @@ Há suporte para o uso de curingas (`%` ou `_`) com instruções `LIKE`. O curin
 
 A adição de vários filtros permite um controle rígido dos dados do gráfico. Por padrão, todas as condições de filtro devem ser verdadeiras para que um pedaço de dados seja incluído, mas você pode criar relações OR editando a caixa de texto Regras de filtro.
 
-![](../assets/edit-filter-rules.png)
+![Usar o Visual Report Builder](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
@@ -91,23 +91,23 @@ A adição de vários filtros permite um controle rígido dos dados do gráfico.
 
 - `Standard perspective`: a perspectiva padrão mostra o resultado para a data correspondente no eixo x (por exemplo, receita em janeiro). Essa é a perspectiva que você usa no exemplo de Receita média por pedidos.
 
-![](../assets/Standard.png)
+![Usar o Visual Report Builder](../assets/Standard.png)
 
 - `Amount` OR `Percent Change` versus `Previous Period` perspectiva: essa perspectiva mostra a quantidade ou porcentagem de alteração de um intervalo para o próximo e é útil para medir a taxa de alteração em métricas de alteração rápida. Também há uma perspectiva para comparar o intervalo com o mesmo período do ano passado para mostrar o crescimento ano a ano.
 
-![](../assets/Amt_or_Percent_Change.png)
+![Usar o Visual Report Builder](../assets/Amt_or_Percent_Change.png)
 
 - `Cumulative perspective`: `cumulative perspective` mostra a quantidade de soma contínua ou cumulativa da métrica no período. Isso é usado com frequência para analisar o total de clientes e planejar a capacidade futura.
 
-![](../assets/Cumulative_Perspective.png)
+![Usar o Visual Report Builder](../assets/Cumulative_Perspective.png)
 
 - `Percent of First Value perspective`: esta perspectiva mostra os dados como um percentual do primeiro intervalo incluído na análise. Isso é útil para medir a eficácia de ações específicas em relação ao desempenho do primeiro período.
 
-![](../assets/Percent_of_First_Value.png)
+![Usar o Visual Report Builder](../assets/Percent_of_First_Value.png)
 
 - `Rolling averages window perspective`: a perspectiva da janela de médias contínuas mostra o valor da média contínua de uma métrica no intervalo de tempo especificado. O intervalo deve ser igual ao intervalo definido no nível de relatório. Por exemplo, se o relatório estiver mostrando o último trimestre completo de Receita por semana, você pode definir o intervalo de tempo da janela média acumulada para quatro semanas. Isso faz com que os três primeiros valores sejam nulos e o quarto valor represente a média das quatro primeiras semanas de Receita. Para maior clareza, desative a caixa de seleção `Multiple Y-Axes` se estiver visualizando a mesma métrica com uma média variável, como no exemplo abaixo.
 
-![](../assets/rolling_avg_window.png)
+![Usar o Visual Report Builder](../assets/rolling_avg_window.png)
 
 ### Opções de tempo específicas da métrica
 
@@ -131,7 +131,7 @@ Você pode salvar um gráfico, tabela ou número (`scalar`) usando a lista suspe
 
 Você pode salvar o relatório clicando em **[!UICONTROL Save to Dashboard]**.
 
-![](../assets/save-to-dashboard.png)
+![Usar o Visual Report Builder](../assets/save-to-dashboard.png)
 
 ## Saídas do relatório
 
@@ -139,14 +139,14 @@ Para ajudá-lo a decidir qual saída de relatório escolher, consulte o seguinte
 
 ### Gráfico
 
-![](../assets/RB_Chart.png)
+![Usar o Visual Report Builder](../assets/RB_Chart.png)
 
 ### Tabela
 
-![](../assets/RB_Table.png)
+![Usar o Visual Report Builder](../assets/RB_Table.png)
 
 ### Número (`scalar`)
 
-![](../assets/RB_Scalar.png)
+![Usar o Visual Report Builder](../assets/RB_Scalar.png)
 
 Parabéns! Você terminou.

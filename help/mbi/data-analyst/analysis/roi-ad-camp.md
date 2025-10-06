@@ -4,9 +4,9 @@ description: Saiba mais sobre alguns métodos diferentes de avaliação do desem
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ As análises (1) e (2) acima são exploradas em um tutorial separado sobre [iden
 1. Selecione `Add New Metric` e selecione a tabela [!DNL `Adwords...`] que está gravando seus dados de custo [!DNL AdWords].
 1. No editor de métricas, dê um nome à sua métrica (por exemplo, [!UICONTROL AdWord Cost])
 1. Usando os menus suspensos, execute uma **Soma** na coluna `adCost` da tabela [!DNL Adwords...] (Alteração) ordenada pela coluna `date`.
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   ![Mensagem de sucesso após a adição de nova métrica](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. Clique em `Back to Metric List` na parte superior e vá para qualquer painel.
 
 1. Criar um relatório que segmente os gastos por campanhas
@@ -99,7 +99,7 @@ Você está veiculando anúncios específicos de produtos? Em caso afirmativo, v
 >
 >Este exemplo pressupõe que todos os custos de campanha foram usados exclusivamente para gerar compras de produtos específicos. Ao presumir que todo o custo foi gasto na geração de compras, o ROI resultante leva em conta o pior cenário (custo mais alto por compra). Você pode ter certeza de que seu ROI real é superior a esse cálculo. Exemplo: supondo que você gastou US$ 20 em uma campanha que gerou 10 novos usuários e 10 compras, seu custo real por compra é de US$ 1. Sob a suposição de que todo o custo foi para adquirir novos usuários, o custo por compra é de $2.
 
-Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
+Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
 
 * Origem do pedido (se você rastrear apenas a origem de referência no nível do usuário, então ingressar na origem do usuário)
 * Campanha do pedido (se você só rastrear a fonte de referência no nível do usuário e, em seguida, ingressar na campanha do usuário)
@@ -122,8 +122,8 @@ Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe
 1. Com essas métricas implementadas, adicione fórmulas:
 1. [!UICONTROL ROI]: Insira a fórmula `\[A\]/\[B\]`, se `\[A\]` representa `Revenue per campaign for specific product(s)` e `\[B\]` representa `Ad cost by campaigns`. Retorna a proporção de (Receita para produtos específicos) / (Custo da campanha)
 1. [!UICONTROL Return]: Insira a fórmula `\[A\]-\[B\]`. Retorna a margem média feita em um usuário calculando (LTV de usuário médio) - (custo médio por aquisição)
-1. (Opcional) [!UICONTROL Revenue]: mostre a métrica `Revenue by items` para ver a receita de produtos específicos por campanhas
-1. (Opcional) [!UICONTROL Cost]: Revele a métrica `AdWords Cost` para ver o custo de campanhas
+   1. (Opcional) [!UICONTROL Revenue]: mostre a métrica `Revenue by items` para ver a receita de produtos específicos por campanhas
+   1. (Opcional) [!UICONTROL Cost]: Revele a métrica `AdWords Cost` para ver o custo de campanhas
 
 1. Nomeie o relatório e salve-o como uma tabela
 

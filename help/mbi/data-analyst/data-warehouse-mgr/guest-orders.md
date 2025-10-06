@@ -4,9 +4,9 @@ description: Saiba mais sobre o impacto que os pedidos de convidados têm nos se
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ No banco de dados de comércio típico, há uma tabela `orders` que se une a uma
 
 * **Se todos os clientes estiverem registrados** e os pedidos de convidados não forem permitidos, significa que cada registro na tabela `orders` tem um valor na coluna `customer\_id`. Como resultado, cada pedido se junta de volta à tabela `customers`.
 
-  ![](../../assets/guest-orders-4.png)
+  ![Tabela de dados de pedidos convidados mostrando informações do cliente](../../assets/guest-orders-4.png)
 
 * **Se os pedidos de convidado forem permitidos**, isso significa que alguns pedidos não têm um valor na coluna `customer\_id`. Somente clientes registrados recebem um valor para a coluna `customer\_id` na tabela `orders`. Os clientes que não estão registrados recebem um valor `NULL` (ou em branco) para esta coluna. Como resultado, nem todos os registros de pedido têm registros correspondentes na tabela `customers`.
 
@@ -39,7 +39,7 @@ A melhor maneira de considerar pedidos de convidados é basear todas as métrica
 
 Observe que o filtro `Customers we count` definido nesse tipo de configuração tem um filtro para `Customer's order number = 1`.
 
-![](../../assets/guest-orders-filter-set.png)
+![Configuração de conjunto de filtros para excluir ordens de convidados](../../assets/guest-orders-filter-set.png)
 
 Em uma situação sem pedidos de convidado, cada cliente existe como uma linha exclusiva na tabela de clientes (consulte a Imagem 1). Uma métrica como `New customers` pode simplesmente contar a ID desta tabela com base na data `created\_at` para entender Novos clientes com base na data de registro.
 

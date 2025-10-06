@@ -4,9 +4,9 @@ description: Saiba como configurar um painel que ajuda você a entender o cresci
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Este tópico demonstra como configurar um painel que ajuda você a entender o crescimento do valor vitalício do cliente e o valor vitalício esperado de seus clientes.
 
-![](../../assets/exp-lifetim-value-anyalysis.png)
+![Painel de análise do valor vitalício esperado mostrando projeções do valor do cliente](../../assets/exp-lifetim-value-anyalysis.png)
 
 Essa análise só está disponível para clientes da conta Pro na nova arquitetura. Se sua conta tiver acesso ao recurso `Persistent Views` na barra lateral `Manage Data`, você estará na nova arquitetura e poderá seguir as instruções listadas aqui para criar essa análise.
 
@@ -27,19 +27,19 @@ Colunas a serem criadas na tabela **pedidos** se estiver usando **meses de 30 di
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **Definição:**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]: `Months since order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * Definição: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
@@ -47,31 +47,31 @@ Colunas a serem criadas na tabela **`orders`** se estiver usando o **calendário
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]:
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * Definição: `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **Definição:**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]: `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `String`
 * Definição: `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
@@ -103,7 +103,7 @@ Métricas para criar
    * `Calendar months between first order and this order` `<= X` (Escolha um número razoável para X, por exemplo, 24 meses)
    * `Is in current month?` = `No`
 
-* &#x200B;
+* 
   [!UICONTROL Métrica]: `Revenue`
 * [!UICONTROL Filter]:
 
@@ -122,7 +122,7 @@ Métricas para criar
 
 * [!UICONTROL Formula]: `Expected revenue`
 * [!UICONTROL Formula]: `A / (B - C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 Outros detalhes do gráfico
@@ -139,7 +139,7 @@ Outros detalhes do gráfico
 **Receita média por mês por coorte**
 
 * Métrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
@@ -147,11 +147,11 @@ Outros detalhes do gráfico
 **Receita média cumulativa por mês por coorte**
 
 * Métrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode parecer com a imagem na parte superior da página.
 
-Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

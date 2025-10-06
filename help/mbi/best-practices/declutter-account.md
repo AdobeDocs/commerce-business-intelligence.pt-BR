@@ -4,9 +4,9 @@ description: Saiba como limpar sua conta do  [!DNL Commerce Intelligence] .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Depois de acessar os painéis e relatórios, você pode começar a limpar a cont
 
 Você também pode selecionar **[!UICONTROL Dashboard Options]** e depois **[!UICONTROL Delete]** no próprio painel.
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![Excluir opção no menu de engrenagem do painel](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Você também pode selecionar **[!UICONTROL Dashboard Options]** e depois **[!UI
 
 Esta é uma análise do processo de exclusão de relatórios não utilizado:
 
-![](../../mbi/assets/unused_reports.png)
+![Lista de relatórios não utilizados mostrando relatórios que não estão em nenhum painel](../../mbi/assets/unused_reports.png)
 
 ## Etapa 3: Excluir métricas não usadas
 
@@ -93,7 +93,7 @@ Depois de limpar a lista de usuários, os painéis e os relatórios, você pode 
 1. Na parte inferior da página, você verá uma seção chamada **[!UICONTROL Dependent Charts]**. Clique no link para gerar uma lista de relatórios dependentes para essa métrica.
 1. Depois que o sistema concluir a verificação, o [!DNL Commerce Intelligence] exibe uma lista de painéis, relatórios e usuários que usam essa métrica.
 
-![](../../mbi/assets/report_dependecies.png)
+![Caixa de diálogo de dependências de relatório mostrando quais relatórios usam a coluna selecionada](../../mbi/assets/report_dependecies.png)
 
 Se você decidir que a métrica não é mais necessária, navegue de volta para a página **[!UICONTROL Metrics]** clicando em **[!UICONTROL Back to Metric List]** para encontrar a métrica que deseja excluir. Clique em **[!UICONTROL Delete]**.
 
@@ -112,6 +112,7 @@ Se quiser continuar, entre em contato com o [!DNL Commerce Intelligence] [Suport
 1. Vá para **[!DNL Manage Data]** e depois para **[!UICONTROL Data Warehouse]**.
 1. Na lista **[!UICONTROL Synced Tables]**, navegue até a tabela que contém a coluna.
 1. Marque uma ou mais caixas ao lado de uma ou mais colunas que deseja dessincronizar.
+
    >[!NOTE]
    >
    >Não é possível dessincronizar uma coluna de Chave primária sem remover a tabela inteira.
@@ -120,7 +121,7 @@ Se quiser continuar, entre em contato com o [!DNL Commerce Intelligence] [Suport
 
 Veja aqui todo o processo:
 
-![](../../mbi/assets/drop_column.png)
+![Opção de descartar coluna no Data Warehouse Manager](../../mbi/assets/drop_column.png)
 
 ## Encapsulamento
 

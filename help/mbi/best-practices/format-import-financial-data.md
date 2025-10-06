@@ -4,9 +4,9 @@ description: Saiba como formatar e importar dados financeiros.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Este tópico discute a melhor maneira de importar dados financeiros para anális
 
 Uma tabela de dados bidimensional entre guias geralmente é o formato usado para dados financeiros. Com valores categorizados por rótulos em colunas e linhas, esse tipo de layout pode ser fácil de visualizar com olhos humanos e ferramentas de planilha, mas não é amigável para bancos de dados.
 
-![](../../mbi/assets/crosstab.png)
+![Formato de tabela de referência cruzada mostrando dados no layout da tabela dinâmica](../../mbi/assets/crosstab.png)
 
 Para importar e analisar esses dados em [!DNL Commerce Intelligence], a tabela deve ser nivelada em uma lista unidimensional. Quando nivelado, cada valor de dados é categorizado por vários rótulos, todos em uma única linha, onde cada linha é única ou teria um identificador exclusivo, por exemplo, uma coluna de chave primária.
 
-![](../../mbi/assets/flattened.png)
+![Formato nivelado mostrando dados no layout de colunas](../../mbi/assets/flattened.png)
 
 ## Formatação de arquivos do Excel para importação
 
@@ -35,7 +35,7 @@ Para nivelar uma tabela bidimensional usando uma tabela dinâmica [!DNL Excel]:
 1. Crie a tabela dinâmica em uma nova planilha e clique em **[!UICONTROL Finish]**.
 1. Desmarque os campos de coluna e linha da lista de campos.
 1. Clique duas vezes no valor numérico resultante para mostrar os dados de origem nivelados em uma nova planilha.
-   ![](../../mbi/assets/pivot-table-double-click.png)
+   ![Lista de campos da tabela dinâmica do Excel mostrando um clique duplo para expandir](../../mbi/assets/pivot-table-double-click.png)
 1. Salvar como arquivo `CSV`.
 
 ## Encapsulamento

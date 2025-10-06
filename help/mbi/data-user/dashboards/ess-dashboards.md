@@ -4,9 +4,9 @@ description: Saiba como criar e trabalhar com um painel.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ A aparência dos painéis que você cria depende totalmente de você. Você pode
 
 1. No menu, clique em **[!UICONTROL Dashboards]**.
 
-1. O nome do painel padrão aparece no canto superior esquerdo do cabeçalho do painel. Clique na seta para baixo (![](../../assets/magento-bi-btn-down.png)) para mostrar as opções disponíveis.
+1. O nome do painel padrão aparece no canto superior esquerdo do cabeçalho do painel. Clique na seta para baixo (![ícone de seta para baixo](../../assets/magento-bi-btn-down.png)) para mostrar as opções disponíveis.
 
    ![Criar Painel](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ A aparência dos painéis que você cria depende totalmente de você. Você pode
 
    ![nome do painel](../../assets/magento-bi-dashboard-create-name.png)
 
-   * O nome do novo painel é exibido no canto superior esquerdo. Clique na seta para baixo (![](../../assets/magento-bi-btn-down.png)) para mostrar as opções. Se você criou um grupo, o novo painel aparece abaixo do grupo na lista.
+   * O nome do novo painel é exibido no canto superior esquerdo. Clique na seta para baixo (![ícone de seta para baixo](../../assets/magento-bi-btn-down.png)) para mostrar as opções. Se você criou um grupo, o novo painel aparece abaixo do grupo na lista.
 
 ### Adicionar um relatório
 

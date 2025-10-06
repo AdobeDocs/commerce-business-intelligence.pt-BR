@@ -4,9 +4,9 @@ description: Saiba mais sobre as etapas para conectar sua instância do RDS.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ As etapas para conectar sua instância do [!DNL RDS] variam, dependendo do tipo 
 
 Na página de credenciais (**[!UICONTROL Manage Data** > **Integrations]**) de cada banco de dados, você verá uma caixa contendo os endereços IP que devem ser autorizados a conectar R[!DNL RDS] a [!DNL Commerce Intelligence]: `54.88.76.97` e `34.250.211.151`. Veja a página `MySQL credentials`, onde você realçou a caixa de endereço IP:
 
-![](../../../assets/RDS_IP.png)
+![Configurações do grupo de segurança do Amazon RDS mostrando a configuração do endereço IP](../../../assets/RDS_IP.png)
 
 Para que o [!DNL Commerce Intelligence] se conecte com êxito à instância [!DNL RDS], você deve adicionar esses endereços IP ao grupo de segurança de banco de dados apropriado por meio do console de gerenciamento do AWS. Esses endereços IP podem ser adicionados a um grupo existente ou você pode criar um. O importante é que o grupo esteja autorizado a acessar a instância à qual você deseja se conectar [!DNL Commerce Intelligence].
 
@@ -55,6 +55,6 @@ Para concluir a criação da conexão, você precisa das seguintes informações
 
 Se você estiver usando uma conexão criptografada, altere o botão `Encrypted` na página de credenciais do banco de dados para `Yes`. Isso exibe um formulário extra para configurar a criptografia:
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+![Formulário de integração do SQL com criptografia habilitada mostrando a opção Sim](../../../assets/sql-integration-encrypted-yes.png)
 
 

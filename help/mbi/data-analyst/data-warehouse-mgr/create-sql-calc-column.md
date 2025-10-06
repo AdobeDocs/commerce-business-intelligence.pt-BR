@@ -4,9 +4,9 @@ description: Saiba como colunas avançadas podem ser criadas no formato de colun
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ As diferentes colunas que podem ser criadas com a coluna `Calculation` são quas
 
 A maioria das contas tem uma coluna chamada `Is customer's last order?` na tabela `orders` para executar análises em taxas de compra repetidas e clientes com churn. Se sua conta estiver na nova arquitetura, essa coluna será criada usando uma coluna `Calculation` e poderá ser vista na captura de tela abaixo:
 
-![](../../assets/Is_customer_s_last_order.png)
+![Definição de coluna calculada SQL para identificar a última ordem do cliente](../../assets/Is_customer_s_last_order.png)
 
 A coluna `Is customer's last order?` usa as entradas `Customer's lifetime number of orders` e `Customer's order number` com alias como `A` e `B`, respectivamente.
 
@@ -47,7 +47,7 @@ Muitos clientes gostam de analisar a receita no nível do item, fatiando-a por c
 
 Para habilitar análises de receita de produtos, a maioria das contas tem uma coluna chamada `Order item total value (quantity * price)` na tabela `Orders Items`. Se sua conta estiver na nova arquitetura, essa coluna também será criada usando uma coluna `Calculation` e poderá ser vista na captura de tela abaixo:
 
-![](../../assets/Order_item_total_value.png)
+![Definição de coluna calculada SQL para o valor total do item da ordem](../../assets/Order_item_total_value.png)
 
 No esquema Commerce, a coluna `Order item total value (quantity * price)` usa as entradas `qty ordered` e `base price` com alias como `A` e `B`, respectivamente.
 
@@ -57,7 +57,7 @@ Os valores retornados por esta nova coluna estão em dólares e centavos, portan
 
 Uma nova coluna `Calculation` pode ser adicionada a uma tabela navegando até **[!DNL Manage Data > Data Warehouse]** como mostrado abaixo:
 
-![](../../assets/blobid2.png)
+![Exibição de tabela mostrando resultados de coluna calculados](../../assets/blobid2.png)
 
 Aqui, você pode criar uma coluna `Calculation` seguindo as etapas abaixo:
 

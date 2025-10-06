@@ -4,18 +4,18 @@ description: Saiba como otimizar suas consultas de SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # Otimizar suas consultas de SQL
 
-O [!DNL SQL Report Builder] permite consultar e iterar nessas consultas a qualquer momento. Isso é útil quando você precisa modificar uma consulta sem ter que esperar o término de um ciclo de atualização antes de perceber que uma coluna ou relatório criado precisa ser atualizado.
+O [!DNL SQL Report Builder] permite que você execute e altere suas consultas sempre que desejar. Esse recurso é útil se você precisar atualizar uma consulta imediatamente, em vez de esperar a conclusão de um ciclo de atualização antes de corrigir uma coluna ou relatório.
 
-Antes da execução de uma consulta, [[!DNL Commerce Intelligence] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=pt-BR). O custo considera o tempo e o número de recursos necessários para executar uma consulta. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder os limites [!DNL Commerce Intelligence], a consulta falhará. Para consultar sua [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), o que garante que você esteja gravando as consultas mais simples possíveis, a Adobe recomenda o seguinte.
+Antes da execução de uma consulta, [[!DNL Commerce Intelligence] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). O custo considera o tempo e o número de recursos necessários para executar uma consulta. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder os limites [!DNL Commerce Intelligence], a consulta falhará. Para consultar sua [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), o que garante que você esteja gravando as consultas mais simples possíveis, a Adobe recomenda o seguinte.
 
 ## Utilização de SELECIONAR ou Seleção de Todas as Colunas
 
@@ -25,7 +25,7 @@ Por isso, a Adobe recomenda que você evite usar o `SELECT *` sempre que possív
 
 | **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| ![Consulta SQL usando o asterisco SELECT](../../mbi/assets/Select_all_1.png) | ![Consulta SQL selecionando colunas específicas](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ Veja como você pode reescrever uma consulta FULL OUTER JOIN:
 
 | **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![Consulta SQL com associação externa completa](../../mbi/assets/Full_Outer_Join_1.png) | ![Consulta SQL com associação otimizada](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -59,7 +59,7 @@ Se estiver usando um filtro ao executar uma associação, certifique-se de aplic
 
 | **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| ![Consulta SQL com filtro de cláusula WHERE](../../mbi/assets/Join_filters_1.png) | ![Consulta SQL com filtro da cláusula ON](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ Os operadores de comparação (>, &lt;, = e assim por diante) são os mais barat
 
 Usar `EXISTS` versus `IN` depende do tipo de resultados que você está tentando retornar. Se você estiver interessado apenas em um único valor, use a cláusula `EXISTS` em vez de `IN`. `IN` é usado com listas de valores separados por vírgula, o que aumenta o custo computacional da consulta.
 
-Quando as consultas `IN` são executadas, o sistema deve primeiro processar a subconsulta (a instrução `IN`) e depois a consulta inteira com base na relação especificada na instrução `IN`. `EXISTS` é muito mais eficiente porque a consulta não precisa ser executada várias vezes - um valor verdadeiro/falso é retornado ao verificar a relação especificada na consulta.
+Quando as consultas `IN` são executadas, o sistema deve primeiro processar a subconsulta (a instrução `IN`) e depois a consulta inteira com base na relação especificada na instrução `IN`. A consulta `EXISTS` é muito mais eficiente porque ela não precisa ser executada várias vezes - um valor verdadeiro/falso é retornado durante a verificação da relação especificada na consulta.
 
 Simplificando: o sistema não precisa processar tanto ao usar o `EXISTS`.
 
 | **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![Consulta SQL usando LEFT JOIN com verificação NULL](../../mbi/assets/Exists_1.png) | ![Consulta SQL usando a cláusula EXISTS](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## Usando ORDER BY
 
-`ORDER BY` é uma função cara no SQL e pode aumentar significativamente o custo de uma consulta. Se você receber uma mensagem de erro dizendo que o custo EXPLICAR da sua consulta é muito alto, tente eliminar qualquer `ORDER BY`s da sua consulta, a menos que seja necessário.
+A função `ORDER BY` é cara no SQL e pode aumentar significativamente o custo de uma consulta. Se você receber uma mensagem de erro dizendo que o custo EXPLICAR da sua consulta é muito alto, tente eliminar qualquer `ORDER BY`s da sua consulta, a menos que seja necessário.
 
 Isso não quer dizer que `ORDER BY` não possa ser usado; apenas que ele só deve ser usado quando necessário.
 
@@ -95,7 +95,7 @@ Pode haver algumas situações em que essa abordagem não esteja em conformidade
 
 | **Em vez disso...** | **Experimente isto!** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![Consulta SQL com GROUP BY antes do filtro](../../mbi/assets/Group_by_2.png) | ![Consulta SQL com filtro antes de GROUP BY](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 

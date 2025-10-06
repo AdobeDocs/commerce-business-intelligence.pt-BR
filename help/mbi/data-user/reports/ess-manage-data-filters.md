@@ -4,9 +4,9 @@ description: Saiba como criar Conjuntos de filtros salvos e aplicá-los às mét
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Se você tiver várias métricas em [!DNL Commerce Intelligence] que precisam ser filtradas de maneira semelhante (por exemplo, filtrar ordens de teste), poderá criar Conjuntos de Filtros salvos e aplicá-los às métricas. Isso economiza tempo, pois não é necessário adicionar filtros individuais ao criar ou editar uma métrica.
 
-Consulte o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=pt-BR) para obter mais informações.
+Consulte o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) para obter mais informações.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Consulte o [vídeo de treinamento](https://experienceleague.adobe.com/docs/comme
 
 1. Clique em **[!DNL Manage Data** > **Filter Sets]** na barra lateral.
 
-   ![](../../assets/create-filter-sets.png)
+   ![Criar interface de conjuntos de filtros com opção adicionar conjunto de filtros](../../assets/create-filter-sets.png)
 
 1. Clique em **[!UICONTROL Add Filter Set]** na parte superior da página.
 

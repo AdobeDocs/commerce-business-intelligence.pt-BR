@@ -4,9 +4,9 @@ description: Saiba como suas finanças comerciais agora podem acompanhar seus da
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
+source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Quickbooks.png)
+![Logotipo do QuickBooks](../../../assets/Quickbooks.png)
 
 Com a integração do [!DNL QuickBooks], suas finanças empresariais agora podem acompanhar seus dados de vendas e marketing, permitindo que você mantenha controle sobre suas despesas de maneira rápida e fácil, identifique gastos excessivos e muito mais.
 
@@ -36,7 +36,7 @@ Com a integração do [!DNL QuickBooks], suas finanças empresariais agora podem
 
 Depois de clicar em **[!UICONTROL Connect to Quickbooks]**, faça logon em sua conta do [!DNL Intuit] e autorize a conexão:
 
-![](../../../assets/QuickBooks_App_Store_1.jpg)
+![Página de integração do QuickBooks App Store](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. Na lista suspensa `Search for a company`, selecione sua empresa.
 1. Clique em **[!UICONTROL Next]**. Você foi redirecionado para [!DNL Commerce Intelligence] e a *Conexão realizada com êxito!* mensagem é exibida na parte superior da tela.
@@ -44,4 +44,4 @@ Depois de clicar em **[!UICONTROL Connect to Quickbooks]**, faça logon em sua c
 ## Relacionados
 
 * [Dados  [!DNL QuickBooks]  esperados](../integrations/quickbooks-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

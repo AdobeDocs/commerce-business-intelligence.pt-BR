@@ -4,9 +4,9 @@ description: Saiba como usar as opções de Visualização no Visual Report Buil
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ O [!DNL Commerce Intelligence] [!DNL Visual Report Builder] oferece 12 opções 
 
 `Scalar` relatórios são exibidos como um valor único e numérico. Na maioria das vezes, isso é usado para mostrar o valor &quot;sempre&quot; de uma métrica principal, como receita ou pedidos, ou para comparar receita para data versus orçamento com dois relatórios escalares separados. No exemplo abaixo, isso mostra apenas o número total de pedidos para um determinado intervalo de geração de relatórios:
 
-![](../../assets/blobid0.png)
+![Relatório escalar mostrando o número total de pedidos como um único valor numérico](../../assets/blobid0.png)
 
 Para salvar um relatório como escalar, defina as configurações de filtros e tempo e clique em **[!UICONTROL Save]** ou **[!UICONTROL Update]** na seção superior direita do relatório. Na lista suspensa `Type`, escolha Número: Nome da métrica para salvar o relatório como o valor mostrado na barra lateral esquerda.
 
-![](../../assets/blobid1.png)
+![Caixa de diálogo Salvar relatório com a lista suspensa Tipo mostrando a opção Nome de métrica numérica](../../assets/blobid1.png)
 
 **Requisitos**:
 
@@ -51,11 +51,11 @@ Para salvar um relatório como escalar, defina as configurações de filtros e t
 
 Como o nome sugere, os relatórios `table` são ótimos para exibir detalhes tabulares. Quando é necessário exibir muitos grupos por valores ou métricas em um único relatório, uma tabela geralmente é a melhor maneira de seguir em frente. Como exemplo, abaixo há uma tabela de &quot;Detalhes do cliente&quot;, mostrando pedidos e receita agrupados por email do cliente:
 
-![](../../assets/blobid2.png)
+![Relatório de tabela mostrando os detalhes do cliente com pedidos e receita por email do cliente](../../assets/blobid2.png)
 
 Semelhante aos relatórios escalares, você pode salvar um relatório como uma tabela clicando em **[!UICONTROL Save]** ou **[!UICONTROL Update]** no Report Builder e selecionando a opção Tabela na lista suspensa `Type`.
 
-![](../../assets/blobid3.png)
+![Caixa de diálogo Salvar relatório com a lista suspensa Tipo mostrando a opção Tabela selecionada](../../assets/blobid3.png)
 
 **Requisitos:**
 
@@ -65,13 +65,13 @@ Semelhante aos relatórios escalares, você pode salvar um relatório como uma t
 
 `Line` gráficos são a escolha perfeita para comparar o desempenho de coortes de métricas semelhantes. Por exemplo, analisar a receita de duas regiões durante o mesmo período de tempo ou comparar o crescimento ano a ano em ordens atendidas, conforme mostrado abaixo:
 
-![](../../assets/blobid0.png)
+![Gráfico de linhas comparando duas métricas ao longo do tempo com várias linhas](../../assets/blobid0.png)
 
 Cada métrica e fórmula adicionada ao relatório é representada por sua própria linha. Ao comparar métricas com unidades e escalas semelhantes, não se esqueça de marcar a caixa de seleção `Multiple Y-Axes` para exibir todas as métricas na mesma escala.
 
 Para salvar um relatório como um gráfico de linhas, ajuste o relatório `Type` como `Chart` e selecione a visualização apropriada no construtor de relatórios, conforme mostrado abaixo:
 
-![](../../assets/blobid1.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização de gráfico de linha realçada](../../assets/blobid1.png)
 
 **Requisitos:**
 
@@ -81,13 +81,13 @@ Para salvar um relatório como um gráfico de linhas, ajuste o relatório `Type`
 
 Os gráficos do `Bar` exibem seus dados como uma série de barras horizontais e são melhores para mostrar o desempenho geral de um número limitado de métricas ou agrupar por valores. Por exemplo, um gráfico de barras pode ser usado para comparar a receita por loja:
 
-![](../../assets/blobid2.png)
+![Gráfico de barras horizontal que mostra a comparação de receita por loja](../../assets/blobid2.png)
 
 Cada métrica distinta, agrupar por e combinação de intervalo de tempo é exibida como sua própria barra. Se você tiver duas métricas com uma `group by`, contendo três valores `group by` distintos, seu relatório mostrará seis barras separadas.
 
 Para salvar um relatório como um gráfico de barras, ajuste o relatório `Type` para `Chart` e selecione a opção `Bar` conforme mostrado abaixo:
 
-![](../../assets/blobid3.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização de barra realçada](../../assets/blobid3.png)
 
 **Requisitos:**
 
@@ -99,13 +99,13 @@ Para salvar um relatório como um gráfico de barras, ajuste o relatório `Type`
 
 Por exemplo, o relatório abaixo tem duas métricas de receita idênticas, uma filtrada para pedidos iniciais e a outra filtrada para pedidos repetidos. Após o agrupamento por loja, você pode ver a contribuição da receita total para cada loja (representada pela largura total da barra) e o detalhamento da receita pela primeira vez vs. repetição para cada loja.
 
-![](../../assets/blobid4.png)
+![Gráfico de barras horizontal empilhado mostrando a primeira vez e a receita repetida por loja](../../assets/blobid4.png)
 
 Certifique-se de que a caixa `Multiple Y-Axes` esteja desmarcada ao configurar um relatório como o acima.
 
 Para salvar um relatório como um gráfico de barras empilhadas, ajuste o relatório `Type` como `Chart` e selecione a opção de barras empilhadas no Report Builder:
 
-![](../../assets/blobid5.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização de barra empilhada realçada](../../assets/blobid5.png)
 
 **Requisitos:**
 
@@ -117,11 +117,11 @@ Para salvar um relatório como um gráfico de barras empilhadas, ajuste o relat�
 
 No exemplo abaixo, você vê duas métricas de receita, uma filtrada para receita pela primeira vez e a outra para receita repetida, com tendência ao longo do tempo por mês:
 
-![](../../assets/blobid6.png)
+![Gráfico de coluna vertical que mostra a primeira vez e a receita repetida por mês](../../assets/blobid6.png)
 
 Para salvar relatórios de coluna, altere o relatório `Type` para `Chart` e selecione a opção de visualização de coluna:
 
-![](../../assets/blobid7.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização de coluna realçada](../../assets/blobid7.png)
 
 **Requisitos:**
 
@@ -133,13 +133,13 @@ Para salvar relatórios de coluna, altere o relatório `Type` para `Chart` e sel
 
 Usando a mesma configuração de relatório descrita na seção `Column` acima, um relatório com duas métricas de receita (filtrado pela primeira vez e repetido) seria semelhante ao mostrado abaixo com uma visualização de coluna empilhada:
 
-![](../../assets/blobid8.png)
+![Gráfico de colunas verticais empilhadas mostrando a primeira vez e a receita repetida por mês](../../assets/blobid8.png)
 
 Novamente, é importante que a caixa de seleção `Multiple Y-Axes` seja desmarcada ao exibir várias métricas com a visualização de coluna empilhada.
 
 Para salvar um relatório como uma coluna empilhada, defina o relatório `Type` como `Chart` e selecione a opção `stacked column`:
 
-![](../../assets/blobid9.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização de coluna empilhada realçada](../../assets/blobid9.png)
 
 **Requisitos:**
 
@@ -149,11 +149,11 @@ Para salvar um relatório como uma coluna empilhada, defina o relatório `Type` 
 
 `Pie` gráficos são melhores para exibir uma única métrica com um ou mais agrupamentos, ou várias métricas sem agrupamentos. Em ambos os casos, o intervalo de tempo deve ser definido como nenhum para exibir dados em um gráfico de pizza. No exemplo abaixo, uma única métrica de pedidos é agrupada por nome de armazenamento para mostrar o detalhamento de pedidos por armazenamento:
 
-![](../../assets/blobid10.png)
+![Gráfico de pizza mostrando a distribuição de pedidos por nome de armazenamento](../../assets/blobid10.png)
 
 Para salvar um relatório como um gráfico de pizza, defina o relatório `Type` como `Chart` e selecione a opção `pie` conforme mostrado abaixo:
 
-![](../../assets/blobid11.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização de gráfico de pizza realçada](../../assets/blobid11.png)
 
 **Requisitos:**
 
@@ -168,11 +168,11 @@ Para salvar um relatório como um gráfico de pizza, defina o relatório `Type` 
 
 Usando o mesmo exemplo da seção `stacked column`, o relatório abaixo mostra a primeira vez em comparação com a receita repetida com a visualização do gráfico de área:
 
-![](../../assets/blobid12.png)
+![Gráfico de área mostrando tendências de receita pela primeira vez e repetidas ao longo do tempo](../../assets/blobid12.png)
 
 Para salvar um relatório como um gráfico de área, ajuste o `Type` como `Chart` e selecione a opção de área:
 
-![](../../assets/blobid13.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização de gráfico de área realçada](../../assets/blobid13.png)
 
 **Requisitos:**
 
@@ -180,19 +180,19 @@ Para salvar um relatório como um gráfico de área, ajuste o `Type` como `Chart
 
 ## `Funnel`
 
-`Funnel` gráficos são perfeitos para visualizar a conversão em uma sequência esperada de eventos. Alguns exemplos incluem analisar a receita potencial em seu funil de vendas do cliente potencial ao negócio fechado ou medir a queda nos clientes entre seu primeiro e segundo pedidos, segundo e terceiro pedidos e assim por diante. Um exemplo deste último é exibido abaixo:
+`Funnel` gráficos são perfeitos para visualizar a conversão em uma sequência esperada de eventos. Alguns exemplos incluem analisar a receita potencial em seu funnel de vendas, desde o lead até o negócio fechado, ou medir a queda nos clientes entre seu primeiro e segundo pedidos, segundo e terceiro pedidos e assim por diante. Um exemplo deste último é exibido abaixo:
 
-![](../../assets/blobid4.png)
+![Gráfico Funnel mostrando a conversão de clientes em pedidos sequenciais](../../assets/blobid4.png)
 
-Em um relatório de funil, o valor relativo de uma determinada etapa do funil é refletido pela altura da etapa. A configuração do relatório determina a ordem em que as etapas são exibidas. Há duas maneiras de configurar um relatório de funil:
+Em um relatório do funnel, o valor relativo de uma determinada etapa do funnel é refletido pela altura da etapa. A configuração do relatório determina a ordem em que as etapas são exibidas. Há duas maneiras de configurar um relatório do funnel:
 
-* `Single metric with one group by`: - Ordem de etapas determinada pela configuração &quot;Mostrar Superior/Inferior&quot; do grupo por. Por padrão, as etapas de funil são exibidas em ordem, do maior ao menor valor, mas você também pode classificá-las alfabeticamente pelo nome do grupo.
+* `Single metric with one group by`: - Ordem de etapas determinada pela configuração &quot;Mostrar Superior/Inferior&quot; do grupo por. Por padrão, as etapas do funnel são exibidas em ordem, do maior ao menor valor, mas você também pode classificá-las alfabeticamente pelo nome do grupo.
 
 * `Multiple metrics with no group by`: - Ordem de etapas determinada pela ordem em que as métricas são adicionadas ao relatório.
 
-Para salvar um relatório como um gráfico de funil, ajuste o relatório `Type` como `Chart` e selecione a visualização apropriada no construtor de relatórios.
+Para salvar um relatório como um gráfico funnel, ajuste o relatório `Type` para `Chart` e selecione a visualização apropriada no construtor de relatórios.
 
-![](../../assets/blobid5.png)
+![Report Builder com o tipo de gráfico selecionado e a opção de visualização funnel realçada](../../assets/blobid5.png)
 
 **Requisitos:**
 
@@ -205,13 +205,13 @@ Para salvar um relatório como um gráfico de funil, ajuste o relatório `Type` 
 
 Um `scatter plot` é usado para examinar a relação de uma métrica com duas variáveis diferentes, para que você possa identificar facilmente correlações e valores atípicos. Esse tipo de visualização é melhor usado somente com dimensões numéricas. Experimente com a métrica Pedidos e as dimensões `Customer's lifetime number of coupons` e `Customer's lifetime revenue` para ver como o uso do cupom está relacionado à receita. Você pode escolher entre um gráfico de dispersão com e sem uma linha de tendência:
 
-![](../../assets/scatter-plot-1.png)
+![Gráfico de dispersão mostrando a correlação entre as métricas do cliente](../../assets/scatter-plot-1.png)
 
-![sem linha de tendência](../../assets/scatter-plot-2.png)
+![Gráfico de dispersão sem linha de tendência mostrando a distribuição de pontos de dados](../../assets/scatter-plot-2.png)
 
-![](../../assets/scatter-plot-3.png)
+![Gráfico de dispersão com pontos de dados e padrão de correlação](../../assets/scatter-plot-3.png)
 
-![Com linha de tendência](../../assets/scatter-plot-4.png)
+![Gráfico de dispersão com linha de tendência mostrando correlação entre métricas](../../assets/scatter-plot-4.png)
 
 **Requisitos:**
 
@@ -233,11 +233,11 @@ Um gráfico `bubble` pode exibir até quatro dimensões de dados em que os eixos
 
 Por exemplo, o gráfico a seguir mostra o número de clientes (tamanho da bolha) agrupados por uma origem de aquisição específica (cor da bolha) e estado (várias bolhas em uma cor específica), representados em relação à receita total e às ordens de tempo de vida médio.
 
-![](../../assets/bubble-1.png)
+![Gráfico de bolhas mostrando a contagem de clientes por origem e estado de aquisição versus receita e pedidos](../../assets/bubble-1.png)
 
 O gráfico a seguir mostra o número de clientes (tamanho da bolha) agrupados por origem de aquisição (cor da bolha) e estado (várias bolhas em uma cor específica), representados em relação ao valor médio de vida útil e à receita total.
 
-![](../../assets/bubble-2.png)
+![Gráfico de bolhas mostrando as métricas do cliente por origem e estado de aquisição](../../assets/bubble-2.png)
 
 **Requisitos para o gráfico de bolhas de uma única série:**
 
@@ -265,7 +265,7 @@ Use o `heatmaps` para visualizar os pontos de acesso em seus dados. Por exemplo,
 
 O mapa de calor a seguir mostra os pedidos por dia da semana por hora do dia no agregado, durante várias semanas.
 
-![](../../assets/heat-map.png)<!--{: width="650"}-->
+![Mapa de calor mostrando a intensidade do pedido por dia da semana e hora do dia](../../assets/heat-map.png)<!--{: width="650"}-->
 
 **Requisitos:**
 

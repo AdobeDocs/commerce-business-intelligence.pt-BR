@@ -4,9 +4,9 @@ description: Saiba como configurar colunas de dados com valores alteráveis.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ As frequências de nova verificação podem ser gerenciadas na Data Warehouse cl
 
 Para alterar a frequência de reverificação, clique na caixa de seleção ao lado das colunas que deseja alterar. Clique na lista suspensa **[!UICONTROL Set Recheck Frequency]** e defina a frequência desejada.
 
-![](../../assets/dwm-recheck.png)
+![Data Warehouse Manager mostrando opções de reverificação da configuração](../../assets/dwm-recheck.png)
 
 Às vezes, você pode ver `Paused` na coluna `Changes?`. Este valor é exibido quando o [método de replicação](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) da tabela é definido como `Paused`.
 

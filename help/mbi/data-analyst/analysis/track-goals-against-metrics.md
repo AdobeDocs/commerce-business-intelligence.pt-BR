@@ -4,9 +4,9 @@ description: Saiba como configurar um painel que ajudará você a controlar suas
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 A maioria dos clientes gostaria de acompanhar suas **metas comerciais**, mas não percebe que isso é possível em [!DNL Adobe Commerce Intelligence]. Este tópico demonstra como configurar um painel que ajudará você a controlar suas metas de negócios em relação aos dados reais, incluindo receita, novos usuários registrados e pedidos ao longo do tempo. Você também aprenderá a comparar o desempenho ano a ano, tudo em um painel como este:
 
-![](../../assets/Goals-_dashboard_2.png)
+![Painel mostrando o rastreamento de metas em relação ao desempenho real das métricas](../../assets/Goals-_dashboard_2.png)
 
 Antes de começar, você deve revisar o [carregador de arquivos](../importing-data/connecting-data/using-file-uploader.md) e verificar se definiu suas metas comerciais para um determinado período.
 
@@ -25,7 +25,7 @@ Primeiro, faça upload de um arquivo contendo metas diárias/mensais/trimestrais
 
 Você pode usar o [carregador de arquivos](../importing-data/connecting-data/using-file-uploader.md) e a imagem abaixo para formatar o arquivo. Os destinos mais comuns que os clientes monitoram em [!DNL Commerce Intelligence] incluem Pedidos, Receita e Novas contas registradas.
 
-![](../../assets/Goals-_Excel.png)
+![Modelo de planilha do Excel para métricas e metas de rastreamento](../../assets/Goals-_Excel.png)
 
 ## Métricas
 
@@ -55,46 +55,46 @@ Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos 
 
 * **Receita restante para atingir o destino**
 * Métrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
+* 
   [!UICONTROL Fórmula]: `(B-A)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (Qualquer período de tempo relevante que você desejar)
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Destinos de receita**
 * Métrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Métrica `C`: `Revenue (amount change since previous year)` (ocultar)
-* &#x200B;
+* 
   [!UICONTROL Métrica]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Este mês no ano passado)
-* &#x200B;
+* 
   [!UICONTROL Fórmula]: `(A-C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 * Desligar `Multiple Y-Axes`
 * [!UICONTROL Time period]: (Qualquer período relevante que você desejar)*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

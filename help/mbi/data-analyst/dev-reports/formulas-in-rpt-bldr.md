@@ -4,9 +4,9 @@ description: Saiba como as fórmulas podem ser usadas na Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ No [`Report Builder`](../../tutorials/using-visual-report-builder.md), você pod
 
 No `Report Builder`, um `formula` é apenas uma combinação de uma ou mais métricas baseadas em alguma lógica matemática. Um exemplo típico tem esta aparência:
 
-![](../../assets/formula-example.png)
+![Exemplo de fórmula que mostra o cálculo no Report Builder](../../assets/formula-example.png)
 
 Neste exemplo, você usa um `Number of orders metric (A)` e um `Distinct buyers metric (B)`, e o objetivo é responder à pergunta: qual é o número médio de pedidos que meus compradores estão fazendo a cada mês? Os parâmetros da fórmula são:
 
@@ -65,4 +65,4 @@ Neste exemplo, você usou a perspectiva `Stacked Columns` para exibir os resulta
 
 Você observou nos exemplos acima que os `timestamp`, `groupings`, `perspectives` e `filters` da fórmula são herdados de suas métricas de entrada? Lembre-se de que as fórmulas podem ser usadas para usar `perspectives` e [opções de tempo independentes](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, da mesma forma que as métricas.
 
-Se você tiver mais perguntas sobre o uso de fórmulas no `Report Builder`, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você tiver mais perguntas sobre o uso de fórmulas no `Report Builder`, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

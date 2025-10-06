@@ -4,9 +4,9 @@ description: Saiba como colocar todos os seus dados em uma única Data Warehouse
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Use campanhas publicitárias como exemplo. Se você estiver executando campanhas
 ## Restrições e requisitos {#require}
 
 1. **O único formato suportado para os carregamentos de arquivos é `CSV` ou`comma separated values`**. Se estiver trabalhando no Excel, você pode usar a função Salvar como para salvar o arquivo no formato `.csv`.
-1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema. Se você encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=pt-BR).
+1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema. Se você encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Os arquivos não podem ter mais de 100 MB**. Se o arquivo for maior que isso, separe a tabela em partes e salve-as como arquivos individuais. Você pode anexar os dados depois que o arquivo inicial for carregado.
 1. **Todas as tabelas devem ter um`primary key`**. Deve haver pelo menos uma coluna na tabela que possa ser usada como `primary key` ou um identificador exclusivo para cada linha na tabela. Qualquer coluna designada como `primary key` pode *never* ser nula. Um `primary key` pode ser tão simples quanto adicionar uma coluna que forneça um número para cada linha, ou pode ser duas colunas concatenadas para criar uma coluna de valores únicos (por exemplo, `campaign name` e `date`).
 
@@ -105,11 +105,11 @@ Agora que sua planilha está formatada corretamente e é compatível com o [!DNL
 
 Se você precisar de um visual, observe todo o processo:
 
-![](../../../assets/fileupload.gif)
+![Demonstração animada do processo de carregamento de arquivos mostrando os dados que estão sendo adicionados](../../../assets/fileupload.gif)
 
 As tabelas carregadas são exibidas na seção **Carregamentos de Arquivos** da lista de tabelas (nas opções Todas as Tabelas e Tabelas Sincronizadas) no Data Warehouse Manager:
 
-![](../../../assets/upload-tables.png)
+![Interface de tabelas de carregamento mostrando as tabelas disponíveis para importação de dados](../../../assets/upload-tables.png)
 
 ## Atualização ou anexação de dados a uma tabela existente {#appending}
 

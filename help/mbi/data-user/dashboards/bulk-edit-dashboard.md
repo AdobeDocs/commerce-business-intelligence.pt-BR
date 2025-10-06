@@ -4,9 +4,9 @@ description: Saiba como usar o recurso de edição em massa no [!DNL Commerce In
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dito isto, considere isto: *Estas alterações precisam ser permanentes?* Caso c
 
 ## Usando o [!DNL Find/Replace] {#findreplace}
 
-1. Clique no ícone de engrenagem (![](../../assets/gear-icon.png)) ao lado do nome do painel e, em seguida, na janela [!UICONTROL Bulk Edit Reports].
+1. Clique no ícone de engrenagem (![ícone de engrenagem](../../assets/gear-icon.png)) ao lado do nome do painel e, em seguida, na janela [!UICONTROL Bulk Edit Reports].
 
 1. Clique em **[!UICONTROL Chart Title Find and Replace]** na janela pop-up.
 
@@ -45,7 +45,7 @@ Exemplo:
 
 ## Precedendo `Chart Names` {#prepend}
 
-1. Clique no ícone de engrenagem (![](../../assets/gear-icon.png)) ao lado do nome do painel e, em seguida, na janela [!UICONTROL Bulk Edit Reports].
+1. Clique no ícone de engrenagem (![ícone de engrenagem](../../assets/gear-icon.png)) ao lado do nome do painel e, em seguida, na janela [!UICONTROL Bulk Edit Reports].
 
 1. Clique em **[!UICONTROL Prepend Report Names]** na janela pop-up.
 
@@ -59,7 +59,7 @@ Exemplo:
 
 ## Alterando `Dates` {#dates}
 
-1. Clique no ícone de engrenagem (![](../../assets/gear-icon.png)) ao lado do nome do painel e selecione a janela [!UICONTROL Bulk Edit Reports].
+1. Clique no ícone de engrenagem (![ícone de engrenagem](../../assets/gear-icon.png)) ao lado do nome do painel e selecione a janela [!UICONTROL Bulk Edit Reports].
 
 1. Clique em **[!UICONTROL Change Dates]** na janela pop-up.
 

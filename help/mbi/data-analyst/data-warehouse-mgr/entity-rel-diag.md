@@ -4,9 +4,9 @@ description: Conheça alguns diagramas de ER para ajudar a visualizar a relaçã
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Um cliente pode fazer muitos pedidos. A relação entre essas duas tabelas é `c
 
 Em [!DNL Commerce Intelligence], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, ele será definido da seguinte maneira:
 
-![](../../assets/SFO___CE_path.png)
+![Diagrama de relacionamento da entidade mostrando o caminho de sales_flat_order para customer_entity](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ Um pedido pode conter muitos itens. A relação entre essas duas tabelas é `sal
 
 Em [!DNL Commerce Intelligence], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, defina-o conforme demonstrado abaixo.
 
-![](../../assets/SFOI___SFO_path.png)
+![Diagrama de relacionamento da entidade mostrando o caminho de sales_flat_order_item para sales_flat_order](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ Um produto pode ser comprado por muitos itens. A relação entre essas duas tabe
 
 Em [!DNL Commerce Intelligence], se o caminho entre essas duas tabelas não existir, você poderá [criar o caminho](../data-warehouse-mgr/create-paths-calc-columns.md) na guia Data Warehouse. Quando estiver pronto para criar o caminho, defina-o conforme demonstrado abaixo.
 
-![](../../assets/SFOI___CPE_path.png)
+![Diagrama de relacionamento da entidade mostrando o caminho de sales_flat_order_item para catalog_product_entity](../../assets/SFOI___CPE_path.png)

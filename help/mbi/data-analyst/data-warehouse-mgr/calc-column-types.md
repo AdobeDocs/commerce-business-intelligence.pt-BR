@@ -4,9 +4,9 @@ description: Saiba como criar colunas para aumentar e otimizar seus dados para a
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Uma coluna calculada por idade retorna o número de segundos entre a hora atual 
 
 O exemplo abaixo cria `Seconds since customer's most recent order` na tabela `customers`. Isso pode ser usado para criar listas de usuários de clientes que não fizeram compras (às vezes chamadas de churning) em `X days`.
 
-![](../../assets/age.gif)
+![Demonstração animada da criação da coluna de cálculo de idade](../../assets/age.gif)
 
 ### Conversor de moeda
 
@@ -47,7 +47,7 @@ O exemplo abaixo cria `base\_grand\_total In AED`, convertendo `base\_grand\_tot
 
 Para clientes Commerce, o campo `base\_currency\_code` geralmente armazena moedas nativas. O campo `Spot Time` deve corresponder à data usada em suas métricas.
 
-![](../../assets/currency_converter.png)
+![Configuração de coluna calculada do conversor de moeda](../../assets/currency_converter.png)
 
 ## Colunas calculadas de um para muitos {#onetomany}
 
@@ -59,7 +59,7 @@ Uma coluna unida realoca um atributo em uma tabela *para* a muitas tabelas. O ex
 
 No exemplo abaixo, a dimensão `Customer's group\_id` é unida à tabela `orders`.
 
-![](../../assets/joined_column.gif)
+![Demonstração animada da criação de tabelas de vinculação de colunas unidas](../../assets/joined_column.gif)
 
 ## Colunas calculadas de muitos para um {#manytoone}
 
@@ -71,7 +71,7 @@ Este tipo de coluna calculada retorna a contagem de valores em muitas tabelas *e
 
 No exemplo abaixo, a dimensão `Customer's lifetime number of canceled orders` é criada na tabela `customers` (com um filtro para `orders.status`).
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![Demonstração animada de agregação de colunas muitos para um](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Sum {#sum}
 
@@ -95,7 +95,7 @@ Esse tipo de dimensão pode determinar, por exemplo, se um cliente comprou um pr
 
 Se você estiver tendo problemas para lembrar o que são todas as entradas ao criar uma coluna calculada, mantenha esse mapa de referência disponível quando estiver criando:
 
-![](../../assets/merged_reference_map.png)
+![Mapa de referência mostrando a configuração de coluna calculada mesclada](../../assets/merged_reference_map.png)
 
 ## Colunas calculadas avançadas {#advanced}
 

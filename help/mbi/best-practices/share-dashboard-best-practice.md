@@ -4,9 +4,9 @@ description: Saiba como trabalhar com e compartilhar seus painéis.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Compartilhar painéis significa que você e sua equipe possuem as mesmas informa
 
 Para ver quem possui um painel, clique na lista suspensa de painéis no canto superior esquerdo. Qualquer painel que não tenha um nome abaixo dele pertence a você.
 
-![](../../mbi/assets/Dash_ownership.png)
+![Indicador de propriedade do painel mostrando o criador e as permissões](../../mbi/assets/Dash_ownership.png)
 
 Para remover todos os painéis duplicados:
 

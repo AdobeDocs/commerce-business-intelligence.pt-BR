@@ -4,9 +4,9 @@ description: Saiba como familiarizar você com a terminologia usada no SQL Repor
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Como exemplo, considere esta consulta que retorna o número total mensal de iten
 
 Esta consulta retorna esta tabela de resultados:
 
-![](../assets/SQL_results_table.png)
+![Tabela mostrando os resultados da consulta SQL com itens vendidos por produto, ano e mês](../assets/SQL_results_table.png)
 
 ## Etapa 2: criar a visualização
 
@@ -66,7 +66,7 @@ Com esses resultados, *como você cria a visualização?* Para começar, clique 
 
 Quando uma consulta é executada pela primeira vez, o relatório pode parecer inescrutável, pois todas as colunas na consulta são representadas como uma série:
 
-![](../assets/SQL_initial_report_results.png)
+![Relatório SQL inicial com todas as colunas plotadas como séries](../assets/SQL_initial_report_results.png)
 
 Neste exemplo, você deseja que seja um gráfico de linhas com tendência ao longo do tempo. Para criá-lo, use estas configurações:
 
@@ -82,13 +82,13 @@ Neste exemplo, você deseja que seja um gráfico de linhas com tendência ao lon
 
 Veja abaixo rapidamente como você criou essa visualização, desde a execução da consulta até a configuração do relatório:
 
-![](../assets/SQL_report_settings.gif)
+![Demonstração animada da definição das configurações de visualização de relatório SQL](../assets/SQL_report_settings.gif)
 
 ## Etapa 3: Selecionar um `Chart Type`
 
 Este exemplo usa o tipo de gráfico `Line`. Para usar um `chart type` diferente, clique nos ícones acima da seção de opções do gráfico para alterá-lo:
 
-![](../assets/Chart_types.png)
+![Ícones de tipo de gráfico disponíveis, incluindo linha, barra, área e outras opções de visualização](../assets/Chart_types.png)
 
 ## Etapa 4: salvar a visualização
 

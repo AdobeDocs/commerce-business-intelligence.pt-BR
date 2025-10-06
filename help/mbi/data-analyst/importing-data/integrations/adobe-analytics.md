@@ -4,9 +4,9 @@ description: Saiba como reunir o foco completo da jornada do cliente do  [!DNL A
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/adobe-analytic-slogo.png)
+![logotipo do Adobe Analytics](../../../assets/adobe-analytic-slogo.png)
 
 A integração do [!DNL Adobe Analytics] para [!DNL Adobe Commerce Intelligence] permite reunir o foco de jornada completa do cliente do [!DNL Adobe Analytics] e o foco de comércio eletrônico do qual você depende a partir do [!DNL Commerce Intelligence]. Isso dá uma imagem completa do desempenho geral da sua loja.
 
@@ -57,6 +57,6 @@ As seguintes informações são necessárias para se conectar:
 
 1. O conjunto de relatórios selecionado é exibido em uma tabela. Clique em **[!UICONTROL Save]** para confirmar a seleção.
 
-1. Informe à [!DNL Commerce Intelligence] [Equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) que sua integração está autorizada e que eles executam o processo de conexão inicial para você.
+1. Informe à [!DNL Commerce Intelligence] [Equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que sua integração está autorizada e que eles executam o processo de conexão inicial para você.
 
 Depois que o processo de conexão inicial for executado, sua tabela estará disponível na página do Data Warehouse, na guia `All Tables`. Selecione as colunas que deseja replicar e os dados aparecerão após a próxima atualização completa.

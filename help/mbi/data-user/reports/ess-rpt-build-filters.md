@@ -4,9 +4,9 @@ description: Saiba como usar filtros.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ O [!DNL Adobe Commerce Intelligence] inclui uma seleção de filtros que você p
 
    Neste relatório, cada ponto de dados mostra o número total de clientes do mês.
 
-1. No painel esquerdo, clique no ícone Filtros (![](../../assets/magento-bi-btn-filter.png)).
+1. No painel esquerdo, clique no ícone Filtros (![Ícone Filtro](../../assets/magento-bi-btn-filter.png)).
 
    ![Adicionar filtro](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ O [!DNL Adobe Commerce Intelligence] inclui uma seleção de filtros que você p
 
    Os filtros são numerados alfabeticamente, e o primeiro é `[A]`. As duas primeiras partes do filtro são opções suspensas e a terceira parte é um valor.
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![Interface de filtro mostrando a opção de adição de filtro](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * Clique na primeira parte do filtro e escolha a coluna que deseja usar como assunto da expressão.
 

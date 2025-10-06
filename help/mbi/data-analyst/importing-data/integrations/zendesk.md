@@ -4,9 +4,9 @@ description: Saiba como consolidar seus relatórios de suporte técnico no [!DNL
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Zendesk_logo.png)
+![Logotipo do Zendesk](../../../assets/Zendesk_logo.png)
 
 Conectar os dados do [!DNL Zendesk] permite consolidar os relatórios do suporte técnico no [!DNL Commerce Intelligence]. Isso permite otimizar o suporte ao cliente e monitorar o desempenho do help desk junto com sua receita.
 
@@ -31,7 +31,7 @@ Para concluir esse processo, é necessário abrir duas janelas ou guias do naveg
 
 ## Abrir a página de credenciais do [!DNL Zendesk] em [!DNL Commerce Intelligence] {#stepone}
 
-1. Vá para a página `Integrations` em **[!UICONTROL Manage Data** > **&#x200B; Fontes de Dados &#x200B;**> **Integrações]**.
+1. Vá para a página `Integrations` em **[!UICONTROL Manage Data** > ** Fontes de Dados **> **Integrações]**.
 1. Clique em **[!UICONTROL Add Integration]**, localizado no lado direito da tela.
 1. Clique no ícone [!DNL Zendesk]. Isso abre a página de credenciais do [!DNL Zendesk].
 
@@ -54,4 +54,4 @@ Para concluir esse processo, é necessário abrir duas janelas ou guias do naveg
 ## Relacionados:
 
 * [Dados  [!DNL Zendesk]  esperados](../integrations/exp-zendesk-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

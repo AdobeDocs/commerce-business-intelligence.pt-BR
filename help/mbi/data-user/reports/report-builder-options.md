@@ -4,9 +4,9 @@ description: Saiba como escolher o Report Builder.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Escolha um Report Builder
 
 >[!NOTE]
->&#x200B;>Requer [permissões de administrador](../../administrator/user-management/user-management.md).
+>>Requer [permissões de administrador](../../administrator/user-management/user-management.md).
 
 Agora que você tem mais opções para criar análises, às vezes pode ser difícil saber exatamente qual sabor do Report Builder atende às suas necessidades. Este tópico orienta você na escolha da melhor maneira de criar a análise.
 
@@ -53,7 +53,7 @@ Como mencionado na seção acima, criar uma coluna no Data Warehouse Manager lev
 
 Digamos que um único produto seja considerado parte de várias categorias de produtos, e você gostaria de visualizar a receita associada a cada categoria de cada produto. Tentar criar esta relação usando o DWM pode ser entediante e difícil, mas escrever uma consulta [!DNL SQL] pode ser um pouco mais simples:
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![A consulta SQL mostra a receita por categoria de produto com relações um para muitos](../../assets/When_should_I_use_the_RB_2.png)
 
 ## Quando devo usar o Report Builder tradicional? {#whentraditionalrb}
 

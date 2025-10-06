@@ -4,9 +4,9 @@ description: Saiba como trabalhar com tabelas de mapeamento.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Imagine que você esteja no `Report Builder` criando um relatório `Revenue by State`. Tudo vai bem até que você tente adicionar um agrupamento `billing state` ao seu relatório e veja o seguinte:
 
-![](../../assets/Messy_State_Segments.png)
+![Gráfico mostrando segmentos de estado confuso com nomenclatura inconsistente](../../assets/Messy_State_Segments.png)
 
 ## Como isso pode acontecer?
 
@@ -45,7 +45,7 @@ Na primeira coluna, insira os valores armazenados no banco de dados com **apenas
 
 Na segunda coluna, insira quais valores **devem ser**. Continuando com o exemplo de estado de faturamento, se você quiser que `pa`, `PA`, `Pennsylvania` e `pennsylvania` seja simplesmente `PA`, digite `PA` nesta coluna para cada valor de entrada.
 
-![](../../assets/Mapping_table_examples.jpg)
+![Exemplo de tabela de mapeamento mostrando valores originais e valores padronizados](../../assets/Mapping_table_examples.jpg)
 
 ## O que preciso fazer em [!DNL Commerce Intelligence] para usá-lo? {#use}
 
@@ -66,7 +66,7 @@ Para criar a coluna `joined`, navegue até a tabela para a qual o campo será re
    * No lado de `One`, selecione a tabela `mapping` e a coluna `Primary key`. Nesse caso, você selecionaria a coluna `state_input` da tabela `mapping_state`.
    * Veja como o caminho se parece:
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![Data Warehouse Manager mostrando o caminho de cálculo de mapeamento de estado](../../assets/State_Mapping_Path.png)
 
 1. Quando terminar, clique em **[!UICONTROL Save]** para criar o caminho.
 1. O caminho pode não ser preenchido imediatamente após salvar. Se isso acontecer, clique na caixa `Path` e selecione o caminho criado.
@@ -76,7 +76,7 @@ Para criar a coluna `joined`, navegue até a tabela para a qual o campo será re
 
 Depois que um ciclo de atualização for concluído, você poderá usar sua nova coluna unida para segmentar corretamente os dados em vez da coluna confusa do banco de dados. Olhe para suas opções de agrupamento agora - sem mais confusão de estresse:
 
-![](../../assets/Clean_State_Segments.png)
+![Gráfico mostrando segmentos de estado limpo após a padronização](../../assets/Clean_State_Segments.png)
 
 As tabelas de mapeamento são úteis a qualquer momento em que você desejar limpar alguns dados potencialmente confusos na Data Warehouse. No entanto, as tabelas de mapeamento também podem ser usadas para alguns outros casos de uso interessantes, como [replicar seu [!DNL Google Analytics channels] em [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 

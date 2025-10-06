@@ -4,9 +4,9 @@ description: Saiba como usar o Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
      ![Agrupar por Dados da Tabela](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Clique no controle Transpor (![](../../assets/magento-bi-btn-transpose.png)) no canto superior direito da tabela para alterar a orientação dos dados.
+   * Clique no controle Transpor (![Ícone Transpor](../../assets/magento-bi-btn-transpose.png)), no canto superior direito da tabela, para alterar a orientação dos dados.
 
      O eixo dos dados é invertido e a tabela agora tem uma coluna para cada código de cupom e uma linha para cada mês. Talvez seja mais fácil ler essa orientação.
 
@@ -95,14 +95,14 @@ O exemplo a seguir mostra como criar um relatório simples, agrupar os dados por
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | Gráfico de linhas |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | Barra horizontal |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barra empilhada horizontal |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Barra vertical |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barra empilhada vertical |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | Pizza |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Área |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | Funil |
+     | ![Ícone de gráfico de linhas](../../assets/magento-bi-btn-chart-line.png) | Gráfico de linhas |
+     | ![Ícone de barra horizontal](../../assets/magento-bi-btn-chart-horz-bar.png) | Barra horizontal |
+     | ![Ícone de barra empilhada horizontal](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barra empilhada horizontal |
+     | ![Ícone de barra vertical](../../assets/magento-bi-btn-chart-vert-bar.png) | Barra vertical |
+     | ![Ícone de barra empilhada vertical](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barra empilhada vertical |
+     | ![Ícone do gráfico de pizza](../../assets/magento-bi-btn-chart-pie.png) | Pizza |
+     | ![Ícone de gráfico de área](../../assets/magento-bi-btn-chart-area.png) | Área |
+     | ![ícone do gráfico Funnel](../../assets/magento-bi-btn-chart-funnel.png) | Funil |
 
      {style="table-layout:auto"}
 

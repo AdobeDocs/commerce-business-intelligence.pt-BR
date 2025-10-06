@@ -4,9 +4,9 @@ description: Saiba como gerar e analisar a taxa de churn do Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Este tópico demonstra como calcular uma **taxa de churn** para seus **clientes comerciais**. Ao contrário do SaaS ou de empresas de assinatura tradicionais, os clientes comerciais normalmente não têm um **&quot;evento de churn&quot;** concreto para mostrar que eles não devem mais contar para seus clientes ativos. Por esse motivo, as instruções abaixo permitem definir um cliente como &quot;rotativo&quot; com base em uma determinada quantidade de tempo decorrido desde o último pedido.
 
-![](../../assets/Churn_rate_image.png)
+![Visualização da taxa de churn mostrando a retenção do cliente ao longo do tempo](../../assets/Churn_rate_image.png)
 
 Muitos clientes desejam assistência para começar a conceituar o **período** que devem usar com base em seus dados. Se você quiser usar o comportamento histórico do cliente para definir este **período de churn**, familiarize-se com o tópico [definindo churn](../analysis/define-cust-churn.md). Em seguida, você pode usar os resultados na fórmula para taxa de churn nas instruções abaixo.
 
@@ -76,19 +76,19 @@ Colunas para criar
 * **Taxa de churn**
    * [!UICONTROL Metric]: Novos clientes (por data de primeiro pedido)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Segundos desde a última data do pedido do cliente >= [Seu limite autodefinido para clientes com churn ]&#x200B;**`^`**
+   * Segundos desde a última data do pedido do cliente >= [Seu limite autodefinido para clientes com churn ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *Métrica `A`:`New customers cumulative`*

@@ -4,9 +4,9 @@ description: Saiba como usar os dados do relatório.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Neste exemplo, suponha que você deseja responder à seguinte pergunta:
 
 * Tempo médio desde o registro até a primeira data de compra por uso.
 
-Isso revela o tempo médio que decorre entre a data de registro e a primeira data de compra dos usuários e fornece uma ideia sobre como os usuários se comportam nesta etapa final do funil de conversão.
+Isso revela o tempo médio que decorre entre a data de registro e a primeira data de compra dos usuários e fornece uma ideia sobre como os usuários se comportam nesta etapa final do funnel de conversão.
 
 ## Localização dos dados
 
@@ -128,4 +128,4 @@ Precisa incluir um relatório em uma apresentação ou documento? Qualquer relat
 
 Consulte abaixo:
 
-![](../../assets/exp-rep-as-image.gif)
+![Demonstração animada de exportação de um relatório como um arquivo de imagem](../../assets/exp-rep-as-image.gif)

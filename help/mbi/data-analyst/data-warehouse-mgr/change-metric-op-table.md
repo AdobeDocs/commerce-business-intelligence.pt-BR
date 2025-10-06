@@ -4,9 +4,9 @@ description: Saiba como alterar a tabela de dados que uma métrica usa para exec
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -19,12 +19,12 @@ Em certos casos, você pode decidir alterar a tabela de dados que uma métrica u
 1. Clique em **[!UICONTROL Edit]** ao lado da métrica para a qual você deseja alternar a tabela `operational`.
 1. No editor, clique em **[!UICONTROL Change]**.
 
-   ![](../../assets/change-metrics-1.png)
+   ![Página de definição de métrica mostrando a configuração de tabela operacional](../../assets/change-metrics-1.png)
 1. Selecione a nova tabela na qual você deseja basear essa métrica.
 1. Faça a correspondência das dimensões de dados existentes com as correspondentes na nova tabela. Por exemplo, se você tiver uma coluna chamada `User's registration date`, basta selecionar qual coluna na nova tabela registra os mesmos dados de data. (Consulte a próxima etapa se você não tiver colunas correspondentes na nova tabela)
 
-   ![](../../assets/change-metrics-2.png)
+   ![Lista suspensa de seleção de tabela mostrando as tabelas disponíveis](../../assets/change-metrics-2.png)
 
-1. Se você não tiver uma coluna correspondente na nova tabela, poderá **criá-la na tabela de dados** ou [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) se for uma coluna de cálculo ou uma dimensão criada por [!DNL Commerce Intelligence]. Você também pode **excluir a dimensão da métrica**. Para excluir uma dimensão que não é mais necessária, retorne ao editor da métrica e selecione quais dimensões serão excluídas em `Dimensions`.
+1. Se você não tiver uma coluna correspondente na nova tabela, poderá **criá-la na tabela de dados** ou [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se for uma coluna de cálculo ou uma dimensão criada por [!DNL Commerce Intelligence]. Você também pode **excluir a dimensão da métrica**. Para excluir uma dimensão que não é mais necessária, retorne ao editor da métrica e selecione quais dimensões serão excluídas em `Dimensions`.
 
-   ![](../../assets/change-metrics-3.png)
+   ![Menu suspenso de seleção de coluna operacional](../../assets/change-metrics-3.png)

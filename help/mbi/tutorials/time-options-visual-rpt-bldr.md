@@ -4,9 +4,9 @@ description: Saiba como analisar os dados em seu relatório por um período espe
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Algumas métricas simplesmente não podem analisar a tendência ao longo do temp
 
 Ao usar essa métrica em seus relatórios, você percebe que adicionar essa métrica a um relatório define automaticamente um `Time Interval` independente de `None` e `Time Range` de `Global`:
 
-![](../assets/Metrics_without_timestamps.gif)
+![Relatório que mostra a métrica com o Intervalo de Tempo definido como Nenhum e o Intervalo de Tempo definido como Global](../assets/Metrics_without_timestamps.gif)
 
 ## Atribuição de um intervalo de tempo independente a uma métrica {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ Esse tipo de relatório pode ser útil se você quiser comparar a receita gerada
 
 Agora você pode ver o impacto que cada mês teve no ano passado:
 
-![](../assets/Independent_Time_Int.png)
+![Gráfico mostrando a porcentagem de receita por mês do ano anterior](../assets/Independent_Time_Int.png)
 
 ## Comparação da mesma métrica em diferentes intervalos de tempo {#difftimerange}
 
-Este exemplo usa uma dimensão personalizada chamada `Day number of the month`. Se você quiser criar este relatório e ainda não tiver essa dimensão em sua Data Warehouse, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter assistência.
+Este exemplo usa uma dimensão personalizada chamada `Day number of the month`. Se você quiser criar este relatório e ainda não tiver essa dimensão em sua Data Warehouse, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter assistência.
 
 Os dois exemplos mais comuns nesta categoria são (1) comparar as métricas de crescimento (receita ano a ano ou mês a mês) e (2) entender melhor as tendências recentes de vendas de itens ou inventário.
 
@@ -87,7 +87,7 @@ Para demonstrar esse caso de uso, verifique a receita diária do mês anterior e
 
    Não se preocupe se a métrica desaparecer do relatório - definir uma opção de tempo independente oculta automaticamente a métrica do relatório. Para exibi-lo novamente, clique em **[!UICONTROL Show]** ao lado da métrica.
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![Demonstração de configuração de intervalos de tempo diferentes para métricas em um relatório](../assets/Different_Time_Ranges.gif)
 
    * Clique em **[!UICONTROL Apply]** para salvar as configurações de intervalo e intervalo.
 
@@ -95,7 +95,7 @@ Para demonstrar esse caso de uso, verifique a receita diária do mês anterior e
 
    * Na lista suspensa `Group By`, selecione `Show All` e clique em **[!UICONTROL Apply]**. Isso cria os valores do eixo X para o relatório:
 
-   ![](../assets/TO4.png)
+   ![Relatório que mostra a comparação de receita agrupada por número de dias do mês](../assets/TO4.png)
 
    * Renomeie as métricas. No exemplo, a primeira métrica é `Revenue - 2015` e a segunda é `Revenue - 2014`.
 
@@ -136,7 +136,7 @@ Para criar as fórmulas, clique em **[!UICONTROL Add Formula]**. Insira as fórm
 
 * Para o `last promo period`, digite `D / C` no campo `Formula`.
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![Relatório que mostra semanas de cálculos de suprimento para diferentes períodos](../assets/Different_Time_Ranges_2.png)
 
 * Por fim, personalize o relatório ocultando as métricas e adicionando uma `SKU` ou uma dimensão semelhante ao relatório como uma `Group By`.
 

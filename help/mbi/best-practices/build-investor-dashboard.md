@@ -4,9 +4,9 @@ description: Saiba como criar um painel para investidores.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Veja o que é necessário para criar relatórios para seu painel de investidores
    * Métrica - Receita
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * Métrica - Receita de pedido pela primeira vez
-   * Filtro - O número de ordem do usuário é igual a 1
+      * Filtro - O número de ordem do usuário é igual a 1
    * Métrica 2 - Repetir receita de ordem
       * Filtro - O número do pedido do usuário é maior que 1
    * Desmarque a caixa para Vários eixos Y
@@ -77,4 +77,4 @@ Com os [serviços de Enriquecimento de Dados da Commerce](https://business.adobe
 
 Organize seus relatórios cuidadosamente e preste atenção aos detalhes. Uma vez concluído, o painel será semelhante ao mostrado abaixo:
 
-![](../../mbi/assets/investor-dboard-example.png)
+![Criar Painel do Investidor](../../mbi/assets/investor-dboard-example.png)

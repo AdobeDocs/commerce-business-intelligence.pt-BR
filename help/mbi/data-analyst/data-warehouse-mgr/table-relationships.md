@@ -4,9 +4,9 @@ description: Saiba como entender quantas ocorrências possíveis em uma tabela p
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Em uma relação `one-to-one`, um registro na tabela `B` pertence a apenas um re
 
 Por exemplo, no relacionamento entre pessoas e números de carteira de motorista, uma pessoa pode ter apenas um número de carteira de motorista, e um número de carteira de motorista pertence a apenas uma pessoa.
 
-![](../../assets/one-to-one.png)
+![Diagrama mostrando a relação um para um entre duas entidades](../../assets/one-to-one.png)
 
 ### `One-to-Many` {#onetomany}
 
 Em uma relação `one-to-many`, um registro na tabela `A` pode pertencer a vários registros na tabela `B`. Pense na relação entre `orders` e `items` - um pedido pode conter muitos itens, mas um item pertence a um único pedido. Nesse caso, a tabela `orders` é o um lado e a tabela `items` é o muitos lado.
 
-![](../../assets/one-to-many_001.png)
+![Diagrama que mostra a relação um para muitos entre pedidos e itens](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
@@ -45,7 +45,7 @@ Em uma relação `many-to-many`, um registro na tabela `B` pode pertencer a vár
 
 Pense na relação entre **produtos** e **categorias**: um produto pode pertencer a muitas categorias, e uma categoria pode conter muitos produtos.
 
-![](../../assets/many-to-many.png)
+![Diagrama mostrando a relação muitos para muitos entre produtos e categorias](../../assets/many-to-many.png)
 
 ## Avaliando Suas Tabelas {#eval}
 
@@ -75,7 +75,7 @@ Uma determinada pessoa só pode ter um número de carteira de motorista. Um dete
 
 Esta é uma relação `one-to-one` em que cada tabela é um lado.
 
-![](../../assets/one-to-one3.png)
+![Diagrama conceitual da relação individualizada entre pessoa e carteira de motorista](../../assets/one-to-one3.png)
 
 ### `One-to-Many`
 
@@ -83,7 +83,7 @@ Uma determinada ordem pode conter muitos itens. Um determinado item pertence a a
 
 Esta é uma relação `one-to-many` em que a tabela de pedidos é um lado e a tabela de itens é o lado muitos.
 
-![](../../assets/one-to-many3.png)
+![Diagrama conceitual da relação um para muitos entre pedidos e itens](../../assets/one-to-many3.png)
 
 ### `Many-to-Many`
 
@@ -91,7 +91,7 @@ Um determinado produto pode possivelmente pertencer a muitas categorias. Uma det
 
 Esta é uma relação `many-to-many` em que cada tabela é um lado múltiplo.
 
-![](../../assets/many-to-many3.png)
+![Diagrama conceitual da relação muitos para muitos entre produtos e categorias](../../assets/many-to-many3.png)
 
 ### Usando o Esquema da Tabela {#schema}
 
@@ -105,7 +105,7 @@ Se as tabelas estiverem vinculadas usando o `primary key` de ambas as tabelas, a
 
 Por exemplo, uma tabela `users` pode capturar a maioria dos atributos de usuário (como nome), enquanto uma tabela `user_source` complementar captura fontes de registro de usuário. Em cada tabela, uma linha representa um usuário.
 
-![](../../assets/one-to-one1.png)
+![Diagrama de esquema mostrando uma relação um para um usando chaves primárias](../../assets/one-to-one1.png)
 
 ### `One-to-many`
 
@@ -115,17 +115,17 @@ Por exemplo, uma tabela `users` pode capturar a maioria dos atributos de usuári
 
 Quando tabelas são vinculadas usando um `Foreign key` apontando para um `primary key`, esta configuração descreve uma relação `one-to-many`. O lado um é a tabela contendo o `primary key` e o lado muitos é a tabela contendo o `foreign key`.
 
-![](../../assets/one-to-many1.png)
+![Diagrama de esquema mostrando relação um para muitos usando chave estrangeira](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
 Se qualquer uma das opções a seguir for verdadeira, a relação será `many-to-many`:
 
 * `Non-primary key` colunas estão sendo usadas para vincular duas tabelas
-  ![](../../assets/many-to-many1.png)
+  ![Diagrama de esquema mostrando a relação muitos para muitos usando chaves não primárias](../../assets/many-to-many1.png)
 * Parte de um `primary key` composto é usada para vincular duas tabelas
 
-![](../../assets/many-to-mnay2.png)
+![Diagrama de esquema mostrando a relação muitos para muitos usando a chave primária composta](../../assets/many-to-mnay2.png)
 
 ## Próximas etapas
 

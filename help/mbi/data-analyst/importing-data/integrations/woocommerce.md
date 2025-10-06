@@ -4,9 +4,9 @@ description: Saiba como observar o desempenho de sua empresa ou encontrar as fon
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/WooCommerce-Logo.jpg)
+![Logotipo do WooCommerce](../../../assets/WooCommerce-Logo.jpg)
 
 Quer ver o desempenho da sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos? Conectar os dados do [!DNL WooCommerce] ao [!DNL Commerce Intelligence] permite que você responda a essas perguntas e muito mais.
 
@@ -25,5 +25,5 @@ O banco de dados [!DNL WooCommerce] é baseado em [!DNL MySQL]. Você pode conec
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Dimensões de dados recomendadas para segmentação e filtragem](../../../best-practices/segment-filter.md)

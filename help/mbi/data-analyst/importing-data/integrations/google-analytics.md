@@ -4,9 +4,9 @@ description: Saiba como conectar o Google Analytics ao  [!DNL Commerce Intellige
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Requer [permissões de administrador](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-analytics-logo.png)
+![logotipo do Google Analytics](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] é o serviço de análise da web mais usado na Internet. A implementação do [!DNL Google Analytics] no seu site permite que você acompanhe como os visitantes usam o seu site, qual conteúdo é atraente, onde os visitantes saem e muito mais. A análise dessas métricas no [!DNL Commerce Intelligence], juntamente com outros dados, melhora a integridade e a usabilidade geral do site.
 
@@ -33,7 +33,7 @@ Comece digitando suas credenciais do [!DNL Google Analytics] em [!DNL Commerce I
 
 1. Uma lista de IDs de perfil é exibida. Verifique os perfis aos quais você deseja se conectar [!DNL Commerce Intelligence]. Se você tiver vários perfis e precisar de ajuda para identificar qual é qual, consulte a seção Conectando Vários Perfis [!DNL Google Analytics] abaixo.
 
-   ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
+   ![Página de administrador do Google Analytics mostrando a ID do perfil na URL](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
 
 1. As alterações são salvas automaticamente, portanto, clique em **Voltar às Conexões** quando terminar.
 
@@ -57,7 +57,7 @@ Para identificar a ID de perfil do [!DNL Google Analytics] de um site específic
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análise da atividade do site e das taxas de conversão do cliente](../../analysis/web-act-cust-conversion.md)
 * [Rastrear dados de aquisição de usuário usando  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

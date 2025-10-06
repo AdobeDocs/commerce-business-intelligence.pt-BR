@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas para segmentação e fil
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Quer saber quem são seus clientes mais valiosos? Quais são seus canais de mark
 
 Este tópico aborda segmentos críticos que geralmente são recomendados aos clientes. Também entra em detalhes sobre quais perguntas esses segmentos podem ajudar você a responder. Tecnicamente, os segmentos são colunas de dados no banco de dados. Em [!DNL Adobe Commerce Intelligence], eles são chamados de dimensões.
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![Painel mostrando filtros e segmentos críticos do cliente](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## Segmentos de usuário
@@ -71,7 +71,7 @@ Esse tipo de análise é o que os profissionais de marketing das empresas Fortun
 
 A primeira etapa para segmentar suas métricas pelas dimensões acima é verificar se você está rastreando esses dados no banco de dados. Se não for rastreado, reúna-se com sua equipe técnica e encontre uma maneira de começar a rastrear esses dados.
 
-Após confirmar que os dados estão sendo rastreados em seu banco de dados, [contate a equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para enviar as dimensões para suas métricas e gráficos do [!DNL Commerce Intelligence]. Você também pode usar a ferramenta *Gerenciamento de campos* para rastrear esses campos em [!DNL Commerce Intelligence].
+Após confirmar que os dados estão sendo rastreados em seu banco de dados, [contate a equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para enviar as dimensões para suas métricas e gráficos do [!DNL Commerce Intelligence]. Você também pode usar a ferramenta *Gerenciamento de campos* para rastrear esses campos em [!DNL Commerce Intelligence].
 
 ## Relacionados
 
