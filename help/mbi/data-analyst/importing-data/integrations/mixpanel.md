@@ -24,7 +24,7 @@ Com o [!DNL Mixpanel], você pode analisar como os usuários navegam e usam seus
 Conectando seus dados do [!DNL Mixpanel] ao [!DNL Commerce Intelligence] um processo simples de três etapas:
 
 1. [Abrir a página  [!DNL Mixpanel] credenciais [!DNL Commerce Intelligence]](#stepone)
-1. [Recupere suas credenciais de API do  [!DNL Mixpanel] ](#steptwo)
+1. [Recupere suas credenciais de API do  [!DNL Mixpanel] &#x200B;](#steptwo)
 1. [Insira suas  [!DNL Mixpanel] credenciais de API em  [!DNL Commerce Intelligence]](#stepthree)
 
 Para concluir esse processo, é necessário abrir duas janelas ou guias do navegador, uma para [!DNL Commerce Intelligence] e outra para sua conta do [!DNL Mixpanel].

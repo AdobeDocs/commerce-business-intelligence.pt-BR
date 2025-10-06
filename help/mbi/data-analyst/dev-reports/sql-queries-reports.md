@@ -53,7 +53,7 @@ Veja um exemplo específico de como uma métrica `Total Revenue` pode ser defini
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (e relatórios `time range`) |
 
-Navegue até o construtor de métricas clicando em **[!UICONTROL Manage Data** > ** Métricas **> **Criar nova métrica]**, primeiro selecione a tabela `source` apropriada, que, nesse caso, é a tabela `orders`. Em seguida, a métrica será configurada conforme mostrado abaixo:
+Navegue até o construtor de métricas clicando em **[!UICONTROL Manage Data** > **&#x200B; Métricas &#x200B;**> **Criar nova métrica]**, primeiro selecione a tabela `source` apropriada, que, nesse caso, é a tabela `orders`. Em seguida, a métrica será configurada conforme mostrado abaixo:
 
 ![Agregação de métrica](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ A consulta para essa agregação pode ser semelhante ao mostrado abaixo:
 
 A configuração no [!DNL Commerce Intelligence] requer o uso do gerenciador do Data Warehouse, no qual você cria um caminho entre a tabela `orders` e a tabela `customers` e, em seguida, cria uma coluna chamada `Customer LTV` na tabela do cliente.
 
-Veja como estabelecer um novo caminho entre `customers` e `orders`. O objetivo final é criar uma nova coluna agregada na tabela `customers`, portanto, primeiro navegue até a tabela `customers` em sua Data Warehouse e clique em **[!UICONTROL Create a Column** > ** Selecionar uma definição **> **SOMA]**.
+Veja como estabelecer um novo caminho entre `customers` e `orders`. O objetivo final é criar uma nova coluna agregada na tabela `customers`, portanto, primeiro navegue até a tabela `customers` em sua Data Warehouse e clique em **[!UICONTROL Create a Column** > **&#x200B; Selecionar uma definição &#x200B;**> **SOMA]**.
 
 Em seguida, é necessário selecionar a tabela de origem. Se existir um caminho para a tabela `orders`, basta selecioná-lo na lista suspensa. No entanto, se você estiver criando um novo caminho, clique em **[!UICONTROL Create new path]** e a tela abaixo será exibida para você:
 

@@ -55,46 +55,46 @@ Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos 
 
 * **Receita restante para atingir o destino**
 * Métrica `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
+* &#x200B;
   [!UICONTROL Fórmula]: `(B-A)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (Qualquer período de tempo relevante que você desejar)
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
-* 
+* &#x200B;
   [!UICONTROL Tipo de gráfico]: `Scalar`
 
 * **Destinos de receita**
 * Métrica `A`: `Revenue`
-* 
+* &#x200B;
   [!UICONTROL Métrica]: `Revenue`
 
 * Métrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Métrica `C`: `Revenue (amount change since previous year)` (ocultar)
-* 
+* &#x200B;
   [!UICONTROL Métrica]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Este mês no ano passado)
-* 
+* &#x200B;
   [!UICONTROL Fórmula]: `(A-C)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 * Desligar `Multiple Y-Axes`
 * [!UICONTROL Time period]: (Qualquer período relevante que você desejar)*
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
