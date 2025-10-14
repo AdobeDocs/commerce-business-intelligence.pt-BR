@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Para trazer seus dados do [!DNL Linkshare] para o [!DNL Adobe Commerce Intelligence], você precisa fazer o seguinte:
 
-1. [Exportar os dados do Linkshare no ](#export)
+1. [Exportar os dados do Linkshare no &#x200B;](#export)
 1. [Carregar a planilha em  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exportar dados do Linkshare {#export}

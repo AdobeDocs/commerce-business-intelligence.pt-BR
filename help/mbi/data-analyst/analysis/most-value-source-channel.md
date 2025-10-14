@@ -118,6 +118,6 @@ Este tópico abordou apenas algumas análises que você pode usar para analisar 
 ## Relacionados {#related}
 
 * [Rastreando origem de referência de ordem via  [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
-* [Conectando sua conta  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Conectando sua conta  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Compilando  [!DNL Google ECommerce] dimensões com pedidos e dados do cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Práticas recomendadas para marcação UTM em [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

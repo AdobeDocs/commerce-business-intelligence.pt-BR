@@ -18,7 +18,7 @@ ht-degree: 0%
 - [Introdução ao [!DNL Commerce Intelligence]](getting-started/getting-started.md)
 - Introdução {#start}
    - [Integração](getting-started/onboarding.md)
-   - [Ativar sua conta  [!DNL Commerce Intelligence] ](getting-started/onpremise-activation.md)
+   - [Ativar sua conta  [!DNL Commerce Intelligence] &#x200B;](getting-started/onpremise-activation.md)
    - [Entrar na sua conta [!DNL Commerce Intelligence] do](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials versus Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administrador {#administrator}
@@ -80,7 +80,7 @@ ht-degree: 0%
       - [Usando Fórmulas no [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Criar [!DNL Google Analytics] gráficos](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Importância de  [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
-      - [Ordenando dados usando o recurso [!DNL Show Top/Bottom] ](data-analyst/dev-reports/order-data-top-bottom-feat.md)
+      - [Ordenando dados usando o recurso [!DNL Show Top/Bottom] &#x200B;](data-analyst/dev-reports/order-data-top-bottom-feat.md)
       - [Usando o  [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
       - [Relatório da primeira compra](data-analyst/dev-reports/time-first-purchase-slope-dwnwrd.md)
       - [Compreendendo o  [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
@@ -224,16 +224,16 @@ ht-degree: 0%
       - [Modificando seu Banco de Dados para Suporte à Replicação Incremental](best-practices/mod-db-inc-replication.md)
       - [Otimização do Banco de Dados para Análise](best-practices/opt-db-analysis.md)
       - [Otimizando Suas  [!DNL SQL] Consultas](best-practices/optimizing-your-sql-queries.md)
-      - [Noções Básicas sobre o Ambiente  [!DNL Commerce Intelligence] ](best-practices/understanding-magento.md)
+      - [Noções Básicas sobre o Ambiente  [!DNL Commerce Intelligence] &#x200B;](best-practices/understanding-magento.md)
    - Organização do Projeto {#project}
       - [Nomeando Relatórios e Elementos em [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidação de tabelas](best-practices/consolidating-your-tables.md)
-      - [Descritor da sua conta  [!DNL Commerce Intelligence] ](best-practices/declutter-account.md)
+      - [Descritor da sua conta  [!DNL Commerce Intelligence] &#x200B;](best-practices/declutter-account.md)
    - Trabalhar com painéis {#working-dashboards}
       - [Compartilhamento de painéis](best-practices/share-dashboard-best-practice.md)
       - [Construindo um painel de investidores](best-practices/build-investor-dashboard.md)
 - Tutorials {#tutorials}
    - [Usando o  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Usando Opções de Tempo em  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
-   - [Criando Visualizações para uma Consulta  [!DNL SQL] ](tutorials/create-visuals-from-sql.md)
+   - [Criando Visualizações para uma Consulta  [!DNL SQL] &#x200B;](tutorials/create-visuals-from-sql.md)
    - [Exportação de dados brutos](tutorials/export-raw-data.md)
