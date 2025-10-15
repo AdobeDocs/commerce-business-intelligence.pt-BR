@@ -88,7 +88,7 @@ Essa tabela é usada para gerenciar as informações de subscrição, como id de
 
 ## Tabela de gastos de marketing
 
-Ao analisar seus gastos com marketing, você pode incluir [!DNL Facebook], [!DNL Google AdWords] ou outras fontes em suas análises. Se você tiver várias fontes de gastos com marketing, entre em contato com a [Equipe da Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) para obter ajuda sobre como configurar uma tabela consolidada para suas campanhas de marketing.
+Ao analisar seus gastos com marketing, você pode incluir [!DNL Facebook], [!DNL Google AdWords] ou outras fontes em suas análises. Se você tiver várias fontes de gastos com marketing, entre em contato com a [Equipe da Managed Services](https://business.adobe.com/br/products/magento/fully-managed-service.html) para obter ajuda sobre como configurar uma tabela consolidada para suas campanhas de marketing.
 
 **Dimensões**
 
