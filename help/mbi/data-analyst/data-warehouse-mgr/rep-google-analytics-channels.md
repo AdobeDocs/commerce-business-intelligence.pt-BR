@@ -4,9 +4,9 @@ description: Saiba como replicar canais da Google Analytics usando fontes de aqu
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Agora que você sabe que os canais são apenas combinações de fontes e mídias
 
 1. **Habilitar sua[!DNL Google ECommerce]integração**
 
-   [Quando habilitado](../importing-data/integrations/google-ecommerce.md), certifique-se de [sincronizar]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#sincronizando) os campos **mídia** e **origem** em sua Data Warehouse. Depois que isso for concluído, os dados de aquisição de mídia e fonte serão trazidos para a Data Warehouse.
+   [Quando habilitado](../importing-data/integrations/google-ecommerce.md), certifique-se de [sincronizar](tour-dwm.md#syncing) os campos **mídia** e **origem** em sua Data Warehouse. Depois que isso for concluído, os dados de aquisição de mídia e fonte serão trazidos para a Data Warehouse.
 
 1. **Carregar um mapeamento dos agrupamentos de canais da Google**
 
