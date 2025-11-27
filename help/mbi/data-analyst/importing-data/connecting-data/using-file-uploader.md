@@ -24,7 +24,7 @@ Use campanhas publicitárias como exemplo. Se você estiver executando campanhas
 ## Restrições e requisitos {#require}
 
 1. **O único formato suportado para os carregamentos de arquivos é `CSV` ou`comma separated values`**. Se estiver trabalhando no Excel, você pode usar a função Salvar como para salvar o arquivo no formato `.csv`.
-1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema. Se você encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
+1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema. Se você encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=pt-BR).
 1. **Os arquivos não podem ter mais de 100 MB**. Se o arquivo for maior que isso, separe a tabela em partes e salve-as como arquivos individuais. Você pode anexar os dados depois que o arquivo inicial for carregado.
 1. **Todas as tabelas devem ter um`primary key`**. Deve haver pelo menos uma coluna na tabela que possa ser usada como `primary key` ou um identificador exclusivo para cada linha na tabela. Qualquer coluna designada como `primary key` pode *never* ser nula. Um `primary key` pode ser tão simples quanto adicionar uma coluna que forneça um número para cada linha, ou pode ser duas colunas concatenadas para criar uma coluna de valores únicos (por exemplo, `campaign name` e `date`).
 
