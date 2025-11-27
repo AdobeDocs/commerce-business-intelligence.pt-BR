@@ -4,9 +4,9 @@ description: Saiba como replicar canais da Google Analytics usando fontes de aqu
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Por padrão, o [!DNL Google] configura oito canais diferentes. As regras que det
 | Pesquisa orgânica | Tráfego que foi classificado organicamente em mecanismos de pesquisa não pagos. | Medium = `organic` |
 | Referência | Tráfego que vem de um link externo que não é Pesquisa orgânica ou de sites que não são redes sociais. | Medium = `referral` |
 | Pesquisa paga | Tráfego que tem um Código de rastreamento UTM em que a mídia é &quot;cpc&quot;, &quot;ppc&quot; ou &quot;paidsearch&quot; E é uma rede de distribuição de anúncios que não corresponde a &quot;Conteúdo&quot;. | Medium = `^(cpc|ppc|paidsearch)$`<br>AND Rede de Distribuição de Anúncios ≠ `Content` |
-| Social | Tráfego de referência que vem de qualquer uma das aproximadamente [400 redes sociais](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) e não são marcadas como anúncios. | Referência do Social Source = `Yes`<br>OU Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| Social | Tráfego de referência que vem de qualquer uma das aproximadamente 400 redes sociais e não são marcadas como anúncios. | Referência do Social Source = `Yes`<br>OU Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
 | Email | Tráfego de sessões que são marcadas com uma mídia de &quot;email&quot;. | Código de rastreamento UTM do Medium = `email` |
 | Exibir | Tráfego que tem um Código de rastreamento UTM em que a mídia é exibição ou cpm. Também inclui a interação do AdWords em que a rede de distribuição de anúncios corresponde a &quot;Conteúdo&quot; | Medium = `^(display|cpm|banner)$`<br>OU Rede de Distribuição de Anúncios = `Content`<br>E Formato de Anúncio ≠ `Text` |
 | Outro | Sessões de outros canais de publicidade (sem incluir Pesquisa paga) marcadas com uma mídia &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm&quot;, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;afiliate&quot;. | Medium = `^(cpv|cpa|cpp|content-text)$` |

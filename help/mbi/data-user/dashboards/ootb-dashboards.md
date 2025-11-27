@@ -4,9 +4,9 @@ description: Saiba como verificar a integridade de métricas essenciais, como a 
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >A disponibilidade de alguns painéis depende do seu conjunto de dados.
 
-Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter ajuda.
+Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter ajuda.
 
 ## Visão geral executiva
 
@@ -45,7 +45,7 @@ O painel `Email Summary` inclui um conjunto de amostras de gráficos que podem s
 
 O painel `Retention health` revela o comportamento de compra repetida da sua base de usuários.
 
-O gráfico `Time between orders` mostra o tempo médio e/ou mediano decorrido entre a primeira e a segunda ordem de um usuário, a segunda e a terceira ordem e assim por diante. Você pode [considerar o uso desses dados para configurar suas campanhas de marketing por email](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+O gráfico `Time between orders` mostra o tempo médio e/ou mediano decorrido entre a primeira e a segunda ordem de um usuário, a segunda e a terceira ordem e assim por diante. Você pode considerar usar esses dados para configurar suas campanhas de marketing por email.
 
 O gráfico `Users by lifetime number of orders` lista o número total de usuários para cada número de pedidos vitalício para fornecer uma visão geral do comportamento de compra repetida.  
 
@@ -89,7 +89,7 @@ O painel `Users to target` inclui gráficos de estilo de tabela que listam usuá
 
 * Lista dos principais gastadores que estavam ativos nos últimos `X` dias (quem você pode premiar)
 
-Usando suas ferramentas de exportação de dados, é fácil [criar listas de email de usuários com comportamento de compra semelhante para marketing de público alvo](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Você pode usar suas ferramentas de exportação de dados para criar listas de email de usuários com comportamento de compra semelhante para marketing direcionado.
 
 ## Atividade do usuário
 
@@ -97,4 +97,4 @@ O painel `User activity` inclui gráficos que segmentam os usuários por vários
 
 O gráfico `% of cohort members who have purchased` é importante porque mostra a taxa de conversão (de 0 a 1) dos usuários com base em quando eles se registram (cada linha representa um coorte de usuários). Ele também mostra quando eles fazem sua primeira compra (por exemplo, no mês 1, 2, 3... após o registro). Isso pode mostrar que 10% dos usuários foram ativados no mês 1, enquanto esse número cresce no mês 2, 3, 4... e pode estabilizar posteriormente.
 
-Normalmente, as linhas neste gráfico se tornam horizontais após algum período de tempo. Isso indica que poucos membros de coorte adicionais estão fazendo uma conversão orgânica depois desse ponto - a maioria dos usuários que vai fazer uma compra já fez isso. Neste ponto, é altamente improvável que esses membros se convertam em compradores sem intervenção. [Contatá-los com promoções personalizadas ou emails direcionados é uma maneira de baixo risco de iniciar a conversão dessa população.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+Normalmente, as linhas neste gráfico se tornam horizontais após algum período de tempo. Isso indica que poucos membros de coorte adicionais estão fazendo uma conversão orgânica depois desse ponto - a maioria dos usuários que vai fazer uma compra já fez isso. Neste ponto, é altamente improvável que esses membros se convertam em compradores sem intervenção. Alcançá-los com promoções personalizadas ou emails direcionados é uma maneira de baixo risco de iniciar a conversão dessa população.

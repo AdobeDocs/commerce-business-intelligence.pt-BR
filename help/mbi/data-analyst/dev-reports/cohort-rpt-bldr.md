@@ -4,9 +4,9 @@ description: Saiba mais sobre a análise de grupos de usuários que compartilham
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ Você já quis estudar como diferentes subconjuntos de usuários se comportam ao
 ## O que é a análise de coorte? {#what}
 
 A análise do `Cohort` pode ser amplamente definida como a análise de grupos de usuários que compartilham características semelhantes em seus ciclos de vida. Ele permite identificar tendências comportamentais em diferentes grupos de usuários.
-
-Para um manual detalhado sobre a análise de `cohort`, revise [esta página](https://www.cohortanalysis.com/).
 
 No painel do [!DNL Commerce Intelligence], é fácil criar o usuário `cohorts` com base em uma data `cohort` e uma métrica em sua conta.
 

@@ -4,9 +4,9 @@ description: Saiba o que é uma coorte qualitativa, por que você pode estar int
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ Este tópico aborda o que é uma coorte qualitativa, por que você pode estar in
 ## O que são `qualitative cohorts`, afinal? {#whatare}
 
 A análise do `Cohort` em geral pode ser definida como a análise de grupos de usuários que compartilham características semelhantes em seus ciclos de vida. Ele permite identificar tendências comportamentais em diferentes grupos de usuários.
-
-Consulte [análise de coorte](https://www.cohortanalysis.com/).
 
 A maioria dos `cohort` analisa em [!DNL Commerce Intelligence] usuários em grupo por uma data comum (por exemplo, o conjunto de todos os clientes que fizeram sua primeira compra em um determinado mês). Um `qualitative cohort` é um pouco diferente: é um grupo de usuários definido por uma característica que não é baseada no tempo. Os exemplos incluem:
 
@@ -39,7 +37,7 @@ Entretanto, se você quiser analisar o comportamento da coorte de vários segmen
 
 A criação de um relatório `qualitative cohort` no `Report Builder` envolve a equipe de analistas da Adobe criando algumas [colunas calculadas avançadas](../data-warehouse-mgr/creating-calculated-columns.md) nas tabelas necessárias.
 
-Para criar isso, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) (e consulte este artigo!). Veja o que você precisa saber:
+Para criar isso, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (e consulte este artigo!). Veja o que você precisa saber:
 
 * O `metric` com o qual você deseja realizar sua análise de coorte e qual tabela ele usa (exemplo: `Revenue`, criado na tabela `orders`).
 
