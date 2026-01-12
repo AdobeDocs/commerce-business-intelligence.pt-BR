@@ -4,9 +4,9 @@ description: Saiba como criar resumos automatizados de email.
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: a65ededb203b7551fdfcb31cff130ef85b01fbe3
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -34,17 +34,32 @@ Os resumos de email são uma poderosa ferramenta de comunicação que pode ser u
 
 1. Na seção `Choose Content`, selecione os relatórios que deseja incluir no resumo.
 
+   Há duas opções para adicionar conteúdo:
+
+   * **Selecionar Relatórios Individuais** - Escolha relatórios específicos nos seus painéis
+   * **Selecionar Painel Inteiro** - Incluir todos os relatórios de um painel conforme eles aparecem no layout do painel
+
    Você pode selecionar até dez relatórios. Após selecionar um relatório, use os ícones exibidos para selecionar se deseja que o relatório seja enviado como uma tabela ou um gráfico. Se você tiver salvo o relatório como um número, só será possível enviá-lo como um número. Para obter informações sobre como enviar um resumo de email contendo um relatório com dados obsoletos, consulte [Gerenciando as configurações da sua conta](../../administrator/account-management/managing-account-settings.md).
+
+   Para adicionar painéis inteiros, você tem as seguintes opções de formato e exclusão:
+
+   * Alterar o formato do relatório para um gráfico ou uma tabela
+   * Impedir a inclusão de relatórios no email
+   * Selecione para incluir um arquivo CSV para relatórios tabulares - isso permite que os recipients acessem dados brutos e exportáveis diretamente da caixa de entrada.
 
    >[!NOTE]
    >
    >Os relatórios do `Cohort` só estarão disponíveis se você estiver usando a nova arquitetura.
 
+   >[!NOTE]
+   >
+   >Anexos CSV grandes são suportados com um total combinado de até 25 MB por email.
+
 1. (Opcional) Selecione `Send Email To Me` se desejar receber o email.
 
 1. Para incluir outros usuários no email, insira seus endereços de email no campo `Add Email Recipients` separados por vírgulas, espaços, tabulações ou ponto e vírgula.
 
-## Agendar Resumo de Email
+## Agendar resumo de email
 
 No campo `Set when to send the Email Summary`, é possível especificar quando enviar os resumos de email. As opções são:
 
@@ -52,7 +67,7 @@ No campo `Set when to send the Email Summary`, é possível especificar quando e
 * `Once`
 * `Repeating`
 
-### Salvar resumo de email para envio em uma data posterior
+### Salvar resumo de email para ser enviado em uma data posterior
 
 1. Selecione `Manual` no campo `Set when to send the Email Summary`.
 
@@ -70,7 +85,7 @@ No campo `Set when to send the Email Summary`, é possível especificar quando e
 
 1. Especifique a hora para enviar o email no campo `Select time to send`.
 
-### Criar Cronograma Repetitivo
+### Criar programação repetitiva
 
 1. Selecione `Repeating` no campo `Set when to send the Email Summary`.
 
@@ -82,20 +97,24 @@ No campo `Set when to send the Email Summary`, é possível especificar quando e
 
 1. (Opcional) Para especificar uma data de término, selecione `End Date` e selecione a data de término no calendário.
 
-## Modificar Resumo de Email Existente
+## Modificar resumo de email existente
 
-Depois de criar e salvar um resumo de email, a página `Email Summaries` exibe uma lista de todos os resumos salvos. Você pode expandir (`+`) cada linha para obter mais informações. As colunas desta exibição são:
+Depois de criar e salvar um resumo de email, a página `Email Summaries` exibe uma lista de todos os resumos salvos. Você pode expandir (`+`) em cada linha para obter mais informações. As colunas desta exibição são:
 
 * `Email Name` - Nome do resumo de email
-* `Content` - Tipo de conteúdo no resumo, como os nomes de todos os relatórios. Para obter informações sobre como enviar um resumo de email contendo um relatório com dados obsoletos, consulte [Gerenciando as configurações da sua conta](../../administrator/account-management/managing-account-settings.md).
+* `Content` - Tipo de conteúdo no resumo, como os nomes de todos os relatórios
 * `Scheduled` - Frequência, data e hora em que o resumo do email é enviado
 * `Recipients` - Destinatários do resumo de email
 * `Created Date` - Data de criação do resumo do email
 * `Status` - `Paused` ou `Active`
 
+>[!NOTE]
+>
+>Para obter informações sobre como enviar um resumo de email contendo um relatório com dados obsoletos, consulte [Gerenciando as configurações da sua conta](../../administrator/account-management/managing-account-settings.md).
+
 Clique no ícone de engrenagem à direita de cada linha para:
 
-* `Send Now` - Envia o resumo do email imediatamente para todos os destinatários especificados
-* `Edit` - Permite modificar os detalhes do resumo do email
-* `Pause/Active` - Permite pausar o resumo do email para não ser entregue ou habilitar o resumo com base em como ele é configurado
-* `Delete` - Exclui o resumo do email
+* `Send Now` - Enviar o resumo do email imediatamente para todos os destinatários especificados
+* `Edit` - Modificar os detalhes do resumo do email
+* `Pause/Active` - Pausar ou ativar a entrega de resumo de email
+* `Delete` - Excluir o resumo do email
