@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Esse diretório contém ganchos de pré-confirmação que otimizam automaticamen
 
 ## O que os ganchos fazem
 
-- **Detectar automaticamente** arquivos de imagem preparados (PNG, JPG, JPEG, GIF, SVG)
+- **Detectar automaticamente** arquivos de imagem preparados (PNG, JPG, JPEG, GIF)
 - **Execute`image_optim`** para compactar e otimizar imagens
 - **Repreparar imagens otimizadas** automaticamente
 - **Verifique se todas as imagens confirmadas** estão corretamente otimizadas
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Diretrizes de imagem
 
 - **PNG**: usar para capturas de tela e elementos da interface do usuário (será otimizado automaticamente)
-- **SVG**: usar para ícones e elementos gráficos simples (otimização desabilitada por padrão)
+- **SVG**: usar para ícones e elementos gráficos simples (não otimizado automaticamente pelo gancho de pré-confirmação)
 - **JPEG**: usar para fotografias (será otimizado automaticamente)
 - **GIF**: usar para animações (será otimizado automaticamente)
 
-Os ganchos de pré-confirmação otimizarão automaticamente todas as imagens na confirmação.
+Os ganchos de pré-confirmação otimizarão automaticamente imagens PNG, JPEG e GIF na confirmação.
 
 ## Otimização manual
 
@@ -138,10 +138,13 @@ Os ganchos usam o arquivo de configuração `_jekyll/.image_optim.yml` para pers
 
 ## Formatos de imagem compatíveis
 
+O gancho de pré-confirmação processa automaticamente:
+
 - **PNG** (`.png`) - Compactação sem perdas e com perdas
 - **JPEG** (`.jpg`, `.jpeg`) - Compactação com perda com limpeza de metadados
 - **GIF** (`.gif`) - Otimização de animação e estática
-- **SVG** (`.svg`) - Otimização de vetor (desabilitada por padrão)
+
+**Observação**: a otimização para SVG está desabilitada por padrão (pode quebrar animações e gráficos vetoriais complexos). Os arquivos do SVG não são processados automaticamente pelo gancho de pré-confirmação.
 
 ## Práticas recomendadas
 
