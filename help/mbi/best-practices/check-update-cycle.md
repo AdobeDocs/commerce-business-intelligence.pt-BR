@@ -4,7 +4,7 @@ description: Saiba como verificar o status do ciclo de atualização.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
+source-git-commit: 776b4b666c47775a7b883a3a6f71c16b4b3bfbad
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Ao fazer logon no painel do [!DNL Adobe Commerce Intelligence], há várias mane
 
 ## Por que devo verificar o status do ciclo de atualização?
 
-A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=pt-BR), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
+A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
 
 ## [!UICONTROL Read-Only] e [!UICONTROL Standard] usuários
 
@@ -72,4 +72,4 @@ curl -sS -H "X-RJM-API-Key: <EXPORT-API-KEY>" \
 }
 ```
 
-Para obter parâmetros, autenticação, erros e limites de taxa, consulte [Atualizar API de Status do Ciclo](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) na documentação do desenvolvedor.
+Para obter parâmetros, autenticação, erros e limites de taxa, consulte [Atualizar API de Status do Ciclo](https://developer.adobe.com/commerce/services/reporting/update-cycle/) na documentação do desenvolvedor.
