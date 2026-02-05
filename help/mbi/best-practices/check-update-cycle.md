@@ -4,9 +4,9 @@ description: Saiba como verificar o status do ciclo de atualização.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Ao fazer logon no painel do [!DNL Adobe Commerce Intelligence], há várias mane
 
 ## Por que devo verificar o status do ciclo de atualização?
 
-A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=pt-BR), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
+A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
 
 ## [!UICONTROL Read-Only] e [!UICONTROL Standard] usuários
 
@@ -42,3 +42,34 @@ Se uma atualização não estiver em andamento, você verá um link para forçar
 >[!NOTE]
 >
 >Se você tiver definido horas de blecaute (hora em que você não deseja que [!DNL Commerce Intelligence] atualize seus dados), forçar uma atualização inicia um ciclo de atualização que não respeita as limitações dessas horas de blecaute.
+
+
+## Verificar o status do ciclo de atualização usando a API
+
+Você pode recuperar o ciclo de atualização concluído mais recente usando a **API de Status do Ciclo de Atualização**.
+
+**Solicitação**
+
+```bash
+curl -sS -H "X-RJM-API-Key: <EXPORT-API-KEY>" \
+  https://api.rjmetrics.com/0.1/client/<CLIENT_ID>/fullupdatestatus
+```
+
+**Resposta (exemplo)**
+
+```json
+{
+  "clientId": 194,
+  "lastCompletedUpdateJob": {
+    "id": 13554,
+    "type": { "id": 2, "name": "Full Update" },
+    "start": "2025-12-09 03:26:25",
+    "end": "2025-12-09 03:29:03",
+    "status": { "id": 4, "name": "Completed Successfully" }
+  },
+  "lastCompletedUpdateJobWithDataSync": null,
+  "timezoneAbbreviation": "EST"
+}
+```
+
+Para obter parâmetros, autenticação, erros e limites de taxa, consulte [Atualizar API de Status do Ciclo](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) na documentação do desenvolvedor.
