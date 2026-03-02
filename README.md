@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARQUIVADO
 
-Este repositório foi migrado para <https://github.com/Adobe-Enterprise-Docs/commerce-business-intelligence.en>.
+Este repositório foi migrado para <https://github.com/Adobe-Enterprise-Docs/commerce-business-intelligence.pt-BR>.
