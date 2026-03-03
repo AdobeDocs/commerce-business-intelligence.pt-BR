@@ -15,11 +15,11 @@ ht-degree: 0%
 
 O recurso de edição em massa facilita a alteração de nomes e datas de gráficos em seus painéis. Por exemplo, você deseja que todos os gráficos em um painel específico se refiram a um único armazenamento e relatório mensalmente em vez de trimestralmente. Em vez de alterar tudo manualmente, deixe o recurso `bulk-editing` funcionar. Neste tópico, você aprenderá a usar:
 
-* [O Recurso  [!DNL Find/Replace] ](#findreplace)
+* [O Recurso  [!DNL Find/Replace] &#x200B;](#findreplace)
 
-* [O Recurso  [!DNL Prepend Name] ](#prepend)
+* [O Recurso  [!DNL Prepend Name] &#x200B;](#prepend)
 
-* [O Recurso  [!DNL Change Dates] ](#dates)
+* [O Recurso  [!DNL Change Dates] &#x200B;](#dates)
 
 Dito isto, considere isto: *Estas alterações precisam ser permanentes?* Caso contrário, considere clonar o painel e alterar as datas no novo painel. Isso permite preservar o painel original e, ao mesmo tempo, fazer as alterações necessárias.
 

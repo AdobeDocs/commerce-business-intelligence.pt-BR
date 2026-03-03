@@ -135,6 +135,6 @@ Para finalizar, você juntou essa tabela que compara os vários métodos de repl
 ## Documentação relacionada
 
 * [Noções básicas sobre reverificações de dados](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modificação do banco de dados para oferecer suporte ](../../best-practices/mod-db-inc-replication.md)
+* [Modificação do banco de dados para oferecer suporte &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [Otimização do banco de dados para análise](../../best-practices/opt-db-analysis.md)
 * [Redução dos tempos de atualização](../../best-practices/reduce-update-cycle-time.md)

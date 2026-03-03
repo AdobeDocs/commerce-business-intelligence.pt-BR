@@ -67,6 +67,6 @@ Aqui é onde você pergunta, &quot;Quanta receita eu recebi com a pesquisa paga?
 * [Rastrear a fonte de referência do usuário no banco de dados](../analysis/google-track-user-acq.md)
 * [Rastrear o dispositivo do usuário, o navegador e os dados do sistema operacional no banco de dados](../analysis/google-track-user-acq.md)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../analysis/most-value-source-channel.md)
-* [Conectar sua conta  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Conectar sua conta  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Aumente o ROI em suas campanhas publicitárias](../analysis/roi-ad-camp.md)
 * [Cinco práticas recomendadas para marcação UTM em  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

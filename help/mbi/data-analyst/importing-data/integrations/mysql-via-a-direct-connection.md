@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## Neste tópico
 
-* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] ](#allowlist)
+* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 * [Criar um  [!DNL MySQL] usuário para [!DNL Commerce Intelligence]](#steptwo)
 * [Inserir informações de conexão em  [!DNL Commerce Intelligence]](#stepthree)
 
 ## Ir para
 
-* [[!DNL MySQL] via ](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL] via  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
