@@ -69,4 +69,4 @@ Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instala�
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)

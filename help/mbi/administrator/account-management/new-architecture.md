@@ -45,7 +45,7 @@ Quando estiver concluído, você saberá quais dados precisam ser sincronizados 
 
 ### Obtendo ajuda
 
-A [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pode realizar sua reimplementação por um custo extra. Contate a sua [Equipe de Conta da Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar a criar na nova conta
+A [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) pode realizar sua reimplementação por um custo extra. Contate a sua [Equipe de Conta da Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar a criar na nova conta
 
 ### Permanecendo com a arquitetura existente
 

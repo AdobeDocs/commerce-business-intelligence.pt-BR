@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analisar Níveis de Inventário
 
-Este tópico demonstra como configurar um painel que fornece informações sobre o inventário atual e contém instruções para clientes sobre a arquitetura herdada ou a nova arquitetura. Você está na arquitetura herdada se não tem a opção **[!UICONTROL Data Warehouse Views]** no menu **[!UICONTROL Manage Data]**. Se você estiver na arquitetura herdada, envie uma [nova solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** assim que chegar à seção designada nas _Colunas calculadas_ instruções abaixo.
+Este tópico demonstra como configurar um painel que fornece informações sobre o inventário atual e contém instruções para clientes sobre a arquitetura herdada ou a nova arquitetura. Você está na arquitetura herdada se não tem a opção **[!UICONTROL Data Warehouse Views]** no menu **[!UICONTROL Manage Data]**. Se você estiver na arquitetura herdada, envie uma [nova solicitação de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) com o assunto **[!UICONTROL INVENTORY ANALYSIS]** assim que chegar à seção designada nas _Colunas calculadas_ instruções abaixo.
 
 ## Colunas a rastrear:
 
@@ -242,4 +242,4 @@ Este tópico demonstra como configurar um painel que fornece informações sobre
    * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
-Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).

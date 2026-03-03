@@ -78,7 +78,7 @@ Depois de criar a análise acima e determinar um limite de churn, você pode cri
 
 Se você oferecer mais de um produto, provavelmente se perguntará como os clientes que compram um produto específico se comportam de forma diferente ao longo do tempo em comparação a outros clientes. Quer saber mais? Confira este tutorial para explorar o comportamento de compra vitalícia dos coortes de clientes com base nos produtos específicos que eles compraram.
 
-Esta prática recomendada é fornecida pelo Data Analysis Services (DAS) [!DNL Adobe Commerce Intelligence]. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter mais informações.
+Esta prática recomendada é fornecida pelo Data Analysis Services (DAS) [!DNL Adobe Commerce Intelligence]. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter mais informações.
 
 ### Relacionados
 

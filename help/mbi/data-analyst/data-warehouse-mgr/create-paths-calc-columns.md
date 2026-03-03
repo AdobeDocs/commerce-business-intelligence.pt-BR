@@ -20,7 +20,7 @@ Ao [criar colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.
 1. Como as tabelas em seus bancos de dados se relacionam
 1. As chaves primária e estrangeira que definem esta relação
 
-Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
 
 ## Atualizadores de relacionamentos de tabela e tipos de chave {#refresher}
 
@@ -79,7 +79,7 @@ Agora, você pode criar o caminho.
 
 * **[!DNL Commerce Intelligence]não pode adivinhar relações de chave primária/estrangeira**. Você não deseja introduzir dados incorretos em sua conta, portanto, a criação de caminhos deve ser feita manualmente.
 
-* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para encontrar a melhor abordagem para suas metas.
+* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para encontrar a melhor abordagem para suas metas.
 
 * **Uma coluna só pode ser a referência de chave estrangeira para UM caminho de cada vez**. Por exemplo, se `order_items.order_id` aponta para `orders.id`, então `order_items.order_id` não pode apontar para mais nada.
 

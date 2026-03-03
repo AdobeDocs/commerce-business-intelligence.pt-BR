@@ -62,4 +62,4 @@ Para exibir todos os campos disponíveis para rastreamento, clique nos links na 
 ## Relacionados:
 
 * [Conectando [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)

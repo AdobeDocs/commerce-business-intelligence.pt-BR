@@ -57,7 +57,7 @@ Para identificar a ID de perfil do [!DNL Google Analytics] de um site específic
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
 * [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análise da atividade do site e das taxas de conversão do cliente](../../analysis/web-act-cust-conversion.md)
 * [Rastrear dados de aquisição de usuário usando  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

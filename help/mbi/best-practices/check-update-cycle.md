@@ -17,7 +17,7 @@ Ao fazer logon no painel do [!DNL Adobe Commerce Intelligence], há várias mane
 
 ## Por que devo verificar o status do ciclo de atualização?
 
-A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
+A verificação do ciclo de atualização de status é útil quando você está auditando os dados na sua conta [!DNL Commerce Intelligence]. Se você vir [resultados que não atendam às suas expectativas](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), por exemplo, as vendas diárias em [!DNL Commerce Intelligence] não correspondem ao que você está vendo na sua plataforma de comércio eletrônico ou na sua [[!DNL Google] receita de comércio eletrônico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=pt-BR), você poderá verificar o último ponto de dados para ver se o problema é resolvido depois que uma atualização for concluída.
 
 ## [!UICONTROL Read-Only] e [!UICONTROL Standard] usuários
 

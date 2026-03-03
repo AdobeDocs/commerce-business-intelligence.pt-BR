@@ -60,7 +60,7 @@ Para identificar a ID de perfil do [!DNL Google Analytics] de um site específic
 ## Relacionados:
 
 * [Dados  [!DNL Google ECommerce]  esperados](../integrations/google-ecommerce-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
 * [Configurando [!DNL Google ECommerce] rastreamento](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../../analysis/most-value-source-channel.md)
 * [Aumente o ROI em suas campanhas publicitárias](../../analysis/roi-ad-camp.md)
