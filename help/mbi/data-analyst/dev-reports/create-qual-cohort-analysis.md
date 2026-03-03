@@ -2,9 +2,9 @@
 title: Criar uma análise qualitativa de coorte
 description: Saiba o que é uma coorte qualitativa, por que você pode estar interessado em criar essa análise e como criá-la no Commerce Intelligence.
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%

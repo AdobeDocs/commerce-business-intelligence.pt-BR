@@ -2,9 +2,9 @@
 title: Pesquisar painéis
 description: Saiba como usar o recurso Pesquisa global para procurar painéis e como pesquisar painéis de propriedade de outros usuários.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%

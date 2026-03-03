@@ -2,9 +2,9 @@
 title: Criar visualizações de consultas SQL
 description: Saiba como familiarizar você com a terminologia usada no SQL Report Builder e fornecer uma base sólida para criar visualizações SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
