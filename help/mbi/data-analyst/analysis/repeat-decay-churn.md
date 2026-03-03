@@ -2,9 +2,9 @@
 title: Analisando Declínio e Churn de Probabilidade de Repetição
 description: Saiba e entenda o tempo decorrido entre os pedidos e quando é esperado que os clientes abandonem a empresa.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Depois de criar a análise acima e determinar um limite de churn, você pode cri
 
 Se você oferecer mais de um produto, provavelmente se perguntará como os clientes que compram um produto específico se comportam de forma diferente ao longo do tempo em comparação a outros clientes. Quer saber mais? Confira este tutorial para explorar o comportamento de compra vitalícia dos coortes de clientes com base nos produtos específicos que eles compraram.
 
-Esta prática recomendada é fornecida pelo Data Analysis Services (DAS) [!DNL Adobe Commerce Intelligence]. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter mais informações.
+Esta prática recomendada é fornecida pelo Data Analysis Services (DAS) [!DNL Adobe Commerce Intelligence]. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter mais informações.
 
 ### Relacionados
 

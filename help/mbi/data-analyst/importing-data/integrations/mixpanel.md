@@ -2,9 +2,9 @@
 title: Conectar Mixpanel
 description: Saiba como analisar como os usuários navegam e usam seus sites e aplicativos.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Com o [!DNL Mixpanel], você pode analisar como os usuários navegam e usam seus
 Conectando seus dados do [!DNL Mixpanel] ao [!DNL Commerce Intelligence] um processo simples de três etapas:
 
 1. [Abrir a página  [!DNL Mixpanel] credenciais [!DNL Commerce Intelligence]](#stepone)
-1. [Recupere suas credenciais de API do  [!DNL Mixpanel] &#x200B;](#steptwo)
+1. [Recupere suas credenciais de API do  [!DNL Mixpanel] ](#steptwo)
 1. [Insira suas  [!DNL Mixpanel] credenciais de API em  [!DNL Commerce Intelligence]](#stepthree)
 
 Para concluir esse processo, é necessário abrir duas janelas ou guias do navegador, uma para [!DNL Commerce Intelligence] e outra para sua conta do [!DNL Mixpanel].
@@ -65,4 +65,4 @@ Se a conexão for bem-sucedida, um _Sucesso!_ mensagem é exibida na parte super
 ### Relacionados
 
 * [Dados  [!DNL Mixpanel]  esperados](../integrations/mixpanel-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

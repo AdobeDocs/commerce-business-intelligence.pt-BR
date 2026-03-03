@@ -2,9 +2,9 @@
 title: Tradução de consultas SQL em relatórios do Commerce Intelligence
 description: Saiba como as consultas SQL são convertidas nas colunas calculadas e nas métricas usadas no Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Veja um exemplo específico de como uma métrica `Total Revenue` pode ser defini
 | `email NOT LIKE '%@magento.com'` | Métrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Métrica `timestamp` (e relatórios `time range`) |
 
-Navegue até o construtor de métricas clicando em **[!UICONTROL Manage Data** > **&#x200B; Métricas &#x200B;**> **Criar nova métrica]**, primeiro selecione a tabela `source` apropriada, que, nesse caso, é a tabela `orders`. Em seguida, a métrica será configurada conforme mostrado abaixo:
+Navegue até o construtor de métricas clicando em **[!UICONTROL Manage Data** > ** Métricas **> **Criar nova métrica]**, primeiro selecione a tabela `source` apropriada, que, nesse caso, é a tabela `orders`. Em seguida, a métrica será configurada conforme mostrado abaixo:
 
 ![Agregação de métrica](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ A consulta para essa agregação pode ser semelhante ao mostrado abaixo:
 
 A configuração no [!DNL Commerce Intelligence] requer o uso do gerenciador do Data Warehouse, no qual você cria um caminho entre a tabela `orders` e a tabela `customers` e, em seguida, cria uma coluna chamada `Customer LTV` na tabela do cliente.
 
-Veja como estabelecer um novo caminho entre `customers` e `orders`. O objetivo final é criar uma nova coluna agregada na tabela `customers`, portanto, primeiro navegue até a tabela `customers` em sua Data Warehouse e clique em **[!UICONTROL Create a Column** > **&#x200B; Selecionar uma definição &#x200B;**> **SOMA]**.
+Veja como estabelecer um novo caminho entre `customers` e `orders`. O objetivo final é criar uma nova coluna agregada na tabela `customers`, portanto, primeiro navegue até a tabela `customers` em sua Data Warehouse e clique em **[!UICONTROL Create a Column** > ** Selecionar uma definição **> **SOMA]**.
 
 Em seguida, é necessário selecionar a tabela de origem. Se existir um caminho para a tabela `orders`, basta selecioná-lo na lista suspensa. No entanto, se você estiver criando um novo caminho, clique em **[!UICONTROL Create new path]** e a tela abaixo será exibida para você:
 

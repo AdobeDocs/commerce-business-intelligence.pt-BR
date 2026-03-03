@@ -2,9 +2,9 @@
 title: Conectar o Google Analytics warehouse
 description: Saiba como rastrear como os visitantes usam seu site, qual conteúdo é atraente, onde os visitantes saem e muito mais.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Por outro lado, com a integração do [!DNL Google Analytics Live], cada gráfic
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] é uma Integração de `Premium`. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) se tiver interesse em adicionar essa integração à sua assinatura.
+>[!DNL Google Analytics Warehoused] é uma Integração de `Premium`. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se tiver interesse em adicionar essa integração à sua assinatura.
 
 1. Vá para a página `Connections` em **[!UICONTROL Admin** > **Integrations]**.
 1. Clique em **[!UICONTROL Add an Integration]**, localizado no lado direito.
@@ -63,7 +63,7 @@ Para identificar a ID de perfil do [!DNL Google Analytics] de um site específic
 
 ## Documentação relacionada
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análise da atividade do site e das taxas de conversão do cliente](../../analysis/web-act-cust-conversion.md)
 * [Rastrear dados de aquisição de usuário usando  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

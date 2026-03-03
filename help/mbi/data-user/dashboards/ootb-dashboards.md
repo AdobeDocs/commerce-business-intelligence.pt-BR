@@ -2,9 +2,9 @@
 title: Painéis incluídos
 description: Saiba como verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas e muito mais, criando assim uma base sólida para exploração futura.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >A disponibilidade de alguns painéis depende do seu conjunto de dados.
 
-Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter ajuda.
+Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter ajuda.
 
 ## Visão geral executiva
 

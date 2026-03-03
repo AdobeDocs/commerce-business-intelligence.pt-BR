@@ -2,9 +2,9 @@
 title: Google Analytics e atribuição UTM
 description: Saiba mais sobre o processo de atribuição de origem do Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 0%
@@ -67,6 +67,6 @@ Aqui é onde você pergunta, &quot;Quanta receita eu recebi com a pesquisa paga?
 * [Rastrear a fonte de referência do usuário no banco de dados](../analysis/google-track-user-acq.md)
 * [Rastrear o dispositivo do usuário, o navegador e os dados do sistema operacional no banco de dados](../analysis/google-track-user-acq.md)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../analysis/most-value-source-channel.md)
-* [Conectar sua conta  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Conectar sua conta  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Aumente o ROI em suas campanhas publicitárias](../analysis/roi-ad-camp.md)
 * [Cinco práticas recomendadas para marcação UTM em  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

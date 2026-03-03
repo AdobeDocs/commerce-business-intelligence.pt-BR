@@ -2,9 +2,9 @@
 title: Tipos de Coluna Calculados Avançados
 description: Aprenda as noções básicas para a maioria dos casos de coluna de uso, mas convém calcular uma coluna que seja um pouco mais complexa do que a que o Data Warehouse Manager pode criar.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 2%
@@ -161,7 +161,7 @@ Para criar esse tipo de coluna calculada, você precisa saber:
 
 Não se preocupe. Só porque não está listado aqui não significa que não seja possível. A equipe do Adobe de analistas da Data Warehouse pode ajudar.
 
-Para definir uma nova coluna calculada, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) com detalhes sobre exatamente o que deseja criar.
+Para definir uma nova coluna calculada, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) com detalhes sobre exatamente o que deseja criar.
 
 ## Documentação relacionada
 

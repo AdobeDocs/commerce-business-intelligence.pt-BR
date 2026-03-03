@@ -2,9 +2,9 @@
 title: Relatório de Probabilidade de Repetição de Pedido
 description: Saiba e entenda o Relatório de Probabilidade de Ordem de Repetição.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Se você adicionasse um filtro que usa uma dimensão que não é igual para toda
 
 Em certos casos, você pode transformar uma dimensão `order-specific` em uma dimensão `user-specific` para adicionar como filtro no gráfico `Repeat Order Probability`. Nesses casos, você retorna o atributo da ordem da primeira ordem de um usuário ou da ordem mais recente (por exemplo, nome da região da primeira ordem do usuário).
 
-Para criar uma nova dimensão, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Para criar uma nova dimensão, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Comparando a probabilidade de repetição de ordens com atributos diferentes
 

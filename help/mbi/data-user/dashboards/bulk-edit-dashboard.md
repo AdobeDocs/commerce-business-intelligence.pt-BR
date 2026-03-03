@@ -2,9 +2,9 @@
 title: Gráficos de edição em massa nos painéis
 description: Saiba como usar o recurso de edição em massa no [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 O recurso de edição em massa facilita a alteração de nomes e datas de gráficos em seus painéis. Por exemplo, você deseja que todos os gráficos em um painel específico se refiram a um único armazenamento e relatório mensalmente em vez de trimestralmente. Em vez de alterar tudo manualmente, deixe o recurso `bulk-editing` funcionar. Neste tópico, você aprenderá a usar:
 
-* [O Recurso  [!DNL Find/Replace] &#x200B;](#findreplace)
+* [O Recurso  [!DNL Find/Replace] ](#findreplace)
 
-* [O Recurso  [!DNL Prepend Name] &#x200B;](#prepend)
+* [O Recurso  [!DNL Prepend Name] ](#prepend)
 
-* [O Recurso  [!DNL Change Dates] &#x200B;](#dates)
+* [O Recurso  [!DNL Change Dates] ](#dates)
 
 Dito isto, considere isto: *Estas alterações precisam ser permanentes?* Caso contrário, considere clonar o painel e alterar as datas no novo painel. Isso permite preservar o painel original e, ao mesmo tempo, fazer as alterações necessárias.
 

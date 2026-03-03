@@ -2,9 +2,9 @@
 title: Connect WooCommerce
 description: Saiba como observar o desempenho de sua empresa ou encontrar as fontes e os canais de aquisição mais valiosos.
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -25,5 +25,5 @@ O banco de dados [!DNL WooCommerce] é baseado em [!DNL MySQL]. Você pode conec
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Dimensões de dados recomendadas para segmentação e filtragem](../../../best-practices/segment-filter.md)

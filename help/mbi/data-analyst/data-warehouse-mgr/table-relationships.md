@@ -2,9 +2,9 @@
 title: Entender e avaliar as relações de tabela
 description: Saiba como entender quantas ocorrências possíveis em uma tabela podem pertencer a uma entidade em outra.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 0%

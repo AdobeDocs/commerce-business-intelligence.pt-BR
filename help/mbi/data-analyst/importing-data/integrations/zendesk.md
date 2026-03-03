@@ -2,9 +2,9 @@
 title: Conectar Zendesk
 description: Saiba como consolidar seus relatórios de suporte técnico no [!DNL Commerce Intelligence].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -24,14 +24,14 @@ Conectar os dados do [!DNL Zendesk] permite consolidar os relatórios do suporte
 A conexão de dados do [!DNL Zendesk] é um processo simples de três etapas:
 
 1. [Abrir a página  [!DNL Zendesk] credenciais [!DNL Commerce Intelligence]](#stepone)
-1. [Recuperar o token de API  [!DNL Zendesk] &#x200B;](#steptwo)
+1. [Recuperar o token de API  [!DNL Zendesk] ](#steptwo)
 1. [Insira suas  [!DNL Zendesk] informações de logon e o token em  [!DNL Commerce Intelligence]](#stepthree)
 
 Para concluir esse processo, é necessário abrir duas janelas ou guias do navegador: uma para [!DNL Commerce Intelligence] e outra para sua conta do [!DNL Zendesk].
 
 ## Abrir a página de credenciais do [!DNL Zendesk] em [!DNL Commerce Intelligence] {#stepone}
 
-1. Vá para a página `Integrations` em **[!UICONTROL Manage Data** > **&#x200B; Fontes de Dados &#x200B;**> **Integrações]**.
+1. Vá para a página `Integrations` em **[!UICONTROL Manage Data** > ** Fontes de Dados **> **Integrações]**.
 1. Clique em **[!UICONTROL Add Integration]**, localizado no lado direito da tela.
 1. Clique no ícone [!DNL Zendesk]. Isso abre a página de credenciais do [!DNL Zendesk].
 
@@ -54,4 +54,4 @@ Para concluir esse processo, é necessário abrir duas janelas ou guias do naveg
 ## Relacionados:
 
 * [Dados  [!DNL Zendesk]  esperados](../integrations/exp-zendesk-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

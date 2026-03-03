@@ -2,9 +2,9 @@
 title: Tabela enterprise_rma
 description: Saiba como analisar informações sobre uma solicitação de retorno específica.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Cada linha na tabela `enterprise_rma` (geralmente chamada de `magento_rma` no Ad
 |---|---|---|
 | `Number of returns` | O número de devoluções solicitadas. | `Operation` coluna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Coluna: `date requested` |
 | `Total returned amount` | O valor monetário total retornado. | `Operation `Coluna: `Return's total value`<br>`Operation`: Soma<br>`Timestamp` Coluna: data solicitada |
-| `Average returned amount` | O valor monetário médio retornado. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
+| `Average returned amount` | O valor monetário médio retornado. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
 | `Average time to return` | O tempo médio desde a ordem até a devolução. | `Operation` Coluna: Segundos entre a criação do pedido na data de retorno solicitada<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
 
 {style="table-layout:auto"}

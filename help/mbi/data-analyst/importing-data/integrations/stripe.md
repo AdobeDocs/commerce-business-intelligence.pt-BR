@@ -2,9 +2,9 @@
 title: Conectar o Stripe
 description: Saiba como gerenciar e rastrear os dados de pagamento e fatura de sua empresa.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Depois de clicar em **[!UICONTROL Connect with Stripe]**, uma página de solicit
 A [[!DNL Stripe] Documentação da API](https://stripe.com/docs/api) pode ser um recurso útil para saber mais sobre como o [!DNL Stripe] é integrado ao [!DNL Commerce Intelligence].
 
 * [Dados  [!DNL Stripe]  esperados](../integrations/stripe-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

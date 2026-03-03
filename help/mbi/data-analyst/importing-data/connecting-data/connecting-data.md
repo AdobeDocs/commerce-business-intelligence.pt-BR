@@ -2,9 +2,9 @@
 title: Conectar seus dados
 description: Saiba como procurar as tabelas disponíveis para sincronização no Data Warehouse Manager.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -66,11 +66,11 @@ Para saber mais sobre a introdução ao `Import API`, verifique o [site do desen
 Para adicionar uma integração, clique em **[!UICONTROL Manage Data** > **Connections]** e em **[!UICONTROL Add a New Data Source]**. Clique no ícone da integração que deseja adicionar e siga as instruções nos tópicos de ajuda para configurar:
 
 * [Perguntas frequentes sobre integração](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Disponível &#x200B;](../integrations/integrations.md)
+* [Disponível ](../integrations/integrations.md)
 * [Consolidação de tabelas](../../../best-practices/consolidating-your-tables.md)
 * [Restrição do acesso ao banco de dados](../../../administrator/account-management/restrict-db-access.md)
 
-**Não está vendo uma integração desejada?** Algumas integrações devem ser ativadas para que fiquem visíveis em sua conta. Se você estiver procurando algo como [!DNL Facebook], mas ele não está listado, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+**Não está vendo uma integração desejada?** Algumas integrações devem ser ativadas para que fiquem visíveis em sua conta. Se você estiver procurando algo como [!DNL Facebook], mas ele não está listado, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Se você vir um status de erro para uma integração**, confira a [seção Solução de problemas](https://support.magento.com/hc/en-us/sections/360003078151) para obter ajuda.
 

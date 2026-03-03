@@ -2,9 +2,9 @@
 title: Conectar bancos de dados via VPN
 description: Saiba como conectar bancos de dados via VPN em vez de Túnel SSH.
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Embora a Adobe recomende que você conecte seus bancos de dados usando um `SSH tunnel`, você também pode usar uma conexão `VPN` criptografada para manter as coisas seguras. Um `VPN` pode ser usado para qualquer uma de suas integrações de banco de dados e, para simplificar, o processo é o mesmo que configurar um `SSH tunnel`:
 
-1. [Criar um usuário do banco de dados  [!DNL Commerce Intelligence] &#x200B;](#database)
+1. [Criar um usuário do banco de dados  [!DNL Commerce Intelligence] ](#database)
 1. [Criar um  [!DNL Commerce Intelligence] usuário VPN](#vpn)
-1. [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Insira a conexão e as informações de usuário da VPN no Commerce Intelligence](#finish)
 
 Além das credenciais do banco de dados, você deve inserir credenciais para um usuário VPN para concluir tudo. Qualquer usuário VPN funciona, mas a Adobe recomenda que você crie um usuário [!DNL Commerce Intelligence], pois isso facilita o rastreamento dos usuários em sua conta.

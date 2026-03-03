@@ -2,9 +2,9 @@
 title: Otimização das consultas SQL
 description: Saiba como otimizar suas consultas de SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O [!DNL SQL Report Builder] permite que você execute e altere suas consultas sempre que desejar. Esse recurso é útil se você precisar atualizar uma consulta imediatamente, em vez de esperar a conclusão de um ciclo de atualização antes de corrigir uma coluna ou relatório.
 
-Antes da execução de uma consulta, [[!DNL Commerce Intelligence] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=pt-BR). O custo considera o tempo e o número de recursos necessários para executar uma consulta. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder os limites [!DNL Commerce Intelligence], a consulta falhará. Para consultar sua [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), o que garante que você esteja gravando as consultas mais simples possíveis, a Adobe recomenda o seguinte.
+Antes da execução de uma consulta, [[!DNL Commerce Intelligence] estima seu custo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). O custo considera o tempo e o número de recursos necessários para executar uma consulta. Se esse custo for considerado muito alto ou se o número de linhas retornadas exceder os limites [!DNL Commerce Intelligence], a consulta falhará. Para consultar sua [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), o que garante que você esteja gravando as consultas mais simples possíveis, a Adobe recomenda o seguinte.
 
 ## Utilização de SELECIONAR ou Seleção de Todas as Colunas
 

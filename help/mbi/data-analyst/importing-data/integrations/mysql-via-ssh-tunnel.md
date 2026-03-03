@@ -2,9 +2,9 @@
 title: Conectando [!DNL MySQL] via túnel SSH
 description: Saiba como se conectar [!DNL MySQL] via túnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -14,14 +14,14 @@ ht-degree: 0%
 # Conectar [!DNL MySQL] via [!DNL SSH Tunnel]
 
 * [Recuperar a  [!DNL Commerce Intelligence] chave pública](#retrieve)
-* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] ](#allowlist)
 * [Criar um usuário do Linux para  [!DNL Commerce Intelligence]](#linux)
 * [Criar um  [!DNL MySQL] usuário para [!DNL Commerce Intelligence]](#mysql)
 * [Insira as informações de conexão e usuário em  [!DNL Commerce Intelligence]](#finish)
 
 ## IR PARA
 
-* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Para conectar o banco de dados do [!DNL MySQL] ao [!DNL Commerce Intelligence] por meio de um `SSH tunnel`, faça o seguinte:
@@ -120,4 +120,4 @@ Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instala�
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

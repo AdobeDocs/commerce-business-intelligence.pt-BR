@@ -2,9 +2,9 @@
 title: Identificação de suas fontes e canais de marketing mais valiosos
 description: Saiba mais sobre alguns relatórios que você pode usar para descobrir seus canais de marketing mais valiosos.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Você pesquisou seu público, criou sua campanha, investiu em alguns canais de marketing. Agora que já passou algum tempo, como esses canais estão se saindo? Qual canal trouxe os usuários mais novos? Qual fonte contribuiu mais para sua receita total?
 
-Com o [!DNL Adobe Commerce Intelligence], você pode facilmente segmentar sua receita e usuários por fonte de referência, quer corresponda ao [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) ou a campos de dados personalizados. Essa segmentação permite encontrar seus canais com melhor desempenho e investir melhor seu orçamento de marketing.
+Com o [!DNL Adobe Commerce Intelligence], você pode facilmente segmentar sua receita e usuários por fonte de referência, quer corresponda ao [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) ou a campos de dados personalizados. Essa segmentação permite encontrar seus canais com melhor desempenho e investir melhor seu orçamento de marketing.
 
 Este tópico explora alguns relatórios que você pode usar para descobrir seus canais de marketing mais valiosos:
 
@@ -118,6 +118,6 @@ Este tópico abordou apenas algumas análises que você pode usar para analisar 
 ## Relacionados {#related}
 
 * [Rastreando origem de referência de ordem via  [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
-* [Conectando sua conta  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Conectando sua conta  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Compilando  [!DNL Google ECommerce] dimensões com pedidos e dados do cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Práticas recomendadas para marcação UTM em [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

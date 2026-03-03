@@ -2,9 +2,9 @@
 title: Conectar o Microsoft SQL Server
 description: Saiba como conectar seu banco de dados SQL do Microsoft ao  [!DNL Commerce Intelligence] em um processo de quatro etapas.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Este tópico explica como conectar o banco de dados do [!DNL Microsoft SQL] ao [!DNL Commerce Intelligence] em um processo de quatro etapas. Esse processo requer alguma experiência técnica relacionada às conexões do servidor e ao SQL, e pode exigir suporte de desenvolvedores em sua equipe.
 
-[!DNL Commerce Intelligence] dá suporte a [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] e à maioria dos outros provedores de servidor de nuvem. Se você tiver uma dúvida sobre o seu host específico, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) solicitando que forneçamos essas informações.
+[!DNL Commerce Intelligence] dá suporte a [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] e à maioria dos outros provedores de servidor de nuvem. Se você tiver uma dúvida sobre o seu host específico, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) solicitando que forneçamos essas informações.
 
 O sistema precisa executar consultas SELECT no banco de dados. Isso é feito inicialmente para obter um instantâneo da estrutura do banco de dados e, em seguida, regularmente ao longo do tempo para manter seus dados atualizados. Suas atualizações são incrementais e a Adobe restringe a frequência e o tempo de atualização para evitar qualquer carga indesejada no servidor.
 

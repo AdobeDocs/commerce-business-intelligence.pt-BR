@@ -2,9 +2,9 @@
 title: Conectar anúncios do Facebook
 description: Saiba como analisar os dados de gastos com anúncios e ver se o dinheiro está sendo gasto de maneira eficaz.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -58,8 +58,8 @@ Verifique se você está rastreando campanhas de [!DNL Facebook] em [!DNL Google
 
 ## Relacionados
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
-* [Conectar sua conta  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Conectar sua conta  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Rastrear origem da referência de ordem via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no banco de dados](../../analysis/google-track-user-acq.md)
 * [Rastrear o dispositivo do usuário, o navegador e os dados do sistema operacional no banco de dados](../../analysis/track-usr-dev-browser.md)

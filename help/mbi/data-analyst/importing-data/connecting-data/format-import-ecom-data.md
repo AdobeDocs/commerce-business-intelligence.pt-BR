@@ -2,9 +2,9 @@
 title: Formatação e importação de dados de comércio eletrônico
 description: Conheça os formatos de dados ideais a serem usados para fazer upload de dados de comércio eletrônico.
 exl-id: 7b910f78-9a5a-4d5d-a8b7-1b0b76304afe
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%

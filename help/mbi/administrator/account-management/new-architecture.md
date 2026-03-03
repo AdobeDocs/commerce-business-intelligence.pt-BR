@@ -2,9 +2,9 @@
 title: Nova arquitetura
 description: Saiba mais sobre os benefícios de migrar para a nova arquitetura.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Quando estiver concluído, você saberá quais dados precisam ser sincronizados 
 
 ### Obtendo ajuda
 
-A [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) pode realizar sua reimplementação por um custo extra. Contate a sua [Equipe de Conta da Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar a criar na nova conta
+A [!DNL Adobe Commerce Intelligence] [Equipe de serviços](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) pode realizar sua reimplementação por um custo extra. Contate a sua [Equipe de Conta da Adobe](../../guide-overview.md#Submitting-a-Support-Ticket) e esteja preparado para fornecer uma lista de painéis/relatórios que você deseja priorizar a criar na nova conta
 
 ### Permanecendo com a arquitetura existente
 

@@ -2,9 +2,9 @@
 title: Definir concentração do cliente
 description: Saiba como configurar um painel que ajuda a medir como a receita total é distribuída entre a base de clientes.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Colunas para criar
 * Percentil de receita do cliente
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **caso quando A é nulo e depois nulo else (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **caso quando A é nulo e depois nulo else (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * Tabela `Sales_flat_order`
@@ -76,7 +76,7 @@ Colunas para criar
 * Percentil de receita do cliente
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **caso quando A é nulo e depois nulo else (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **caso quando A é nulo e depois nulo else (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ Colunas para criar
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Independent`
 * Métrica `A`: `Total customer lifetime revenue by percentile`
 * Métrica `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * Mostrar superior/inferior: `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **10% de concentração mais alta**
@@ -117,12 +117,12 @@ Colunas para criar
 
 * Métrica `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Ocultar gráfico
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Concentração de 50% inferior com apenas uma compra**
@@ -133,12 +133,12 @@ Colunas para criar
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Ocultar gráfico
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Concentração de 10% inferior**
@@ -146,14 +146,14 @@ Colunas para criar
 
 * Métrica `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Ocultar gráfico
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima.
 
-Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

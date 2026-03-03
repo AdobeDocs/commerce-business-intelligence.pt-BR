@@ -2,9 +2,9 @@
 title: Criar ou excluir caminhos para colunas calculadas
 description: Saiba como definir um caminho que descreva como a tabela em que você está criando uma coluna está relacionada à tabela da qual você está obtendo informações.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Ao [criar colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.
 1. Como as tabelas em seus bancos de dados se relacionam
 1. As chaves primária e estrangeira que definem esta relação
 
-Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Atualizadores de relacionamentos de tabela e tipos de chave {#refresher}
 
@@ -79,7 +79,7 @@ Agora, você pode criar o caminho.
 
 * **[!DNL Commerce Intelligence]não pode adivinhar relações de chave primária/estrangeira**. Você não deseja introduzir dados incorretos em sua conta, portanto, a criação de caminhos deve ser feita manualmente.
 
-* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para encontrar a melhor abordagem para suas metas.
+* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para encontrar a melhor abordagem para suas metas.
 
 * **Uma coluna só pode ser a referência de chave estrangeira para UM caminho de cada vez**. Por exemplo, se `order_items.order_id` aponta para `orders.id`, então `order_items.order_id` não pode apontar para mais nada.
 

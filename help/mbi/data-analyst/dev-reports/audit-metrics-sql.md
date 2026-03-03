@@ -2,9 +2,9 @@
 title: Trabalhar com o SQL Report Builder
 description: Saiba como auditar dados e métricas usando o SQL Report Builder para poder comparar os resultados com os dados do banco de dados local.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Você também pode gravar consultas personalizadas e exportar os resultados para
 
 >[!NOTE]
 >
->Se você encontrar uma discrepância depois de auditar seus dados, consulte o tópico de suporte [Contato com o suporte: discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=pt-BR) para obter mais informações sobre o que fazer a seguir.
+>Se você encontrar uma discrepância depois de auditar seus dados, consulte o tópico de suporte [Contato com o suporte: discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) para obter mais informações sobre o que fazer a seguir.

@@ -2,9 +2,9 @@
 title: Importação de dados do Linkshare
 description: Saiba como importar dados do Linkshare para o  [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Para trazer seus dados do [!DNL Linkshare] para o [!DNL Adobe Commerce Intelligence], você precisa fazer o seguinte:
 
-1. [Exportar os dados do Linkshare no &#x200B;](#export)
+1. [Exportar os dados do Linkshare no ](#export)
 1. [Carregar a planilha em  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exportar dados do Linkshare {#export}

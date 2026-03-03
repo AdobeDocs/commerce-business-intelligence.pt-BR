@@ -2,9 +2,9 @@
 title: Compilar [!DNL Google ECommerce] dimensões
 description: Saiba como criar dimensões que vinculam seus dados de comércio eletrônico aos seus pedidos e dados de clientes.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Em seguida, tente criar a **mídia [!DNL Google Analytics] do primeiro pedido do
 
 ### Bônus: Tabela de pedidos, rodada 2
 
-Você pode parar aqui se desejar, mas esta seção habilita análises adicionais trazendo as **dimensões[!DNL Google Analytics] da** primeira ordem do Cliente[que você criou na &lbrace;última seção](#customers) para a tabela `orders`. A criação de dimensões nesta seção permite analisar todas as métricas criadas na tabela `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e assim por diante - usando os [!DNL Google Analytics] atributos da primeira ordem de um cliente.
+Você pode parar aqui se desejar, mas esta seção habilita análises adicionais trazendo as **dimensões[!DNL Google Analytics] da** primeira ordem do Cliente[que você criou na {última seção](#customers) para a tabela `orders`. A criação de dimensões nesta seção permite analisar todas as métricas criadas na tabela `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e assim por diante - usando os [!DNL Google Analytics] atributos da primeira ordem de um cliente.
 
 Este exemplo une a dimensão `Customer's first order's [!DNL Google Analytics] source` à tabela `orders`.
 

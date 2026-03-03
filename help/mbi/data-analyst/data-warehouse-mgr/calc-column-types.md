@@ -2,9 +2,9 @@
 title: Tipos de Colunas Calculadas
 description: Saiba como criar colunas para aumentar e otimizar seus dados para análise.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 0%
