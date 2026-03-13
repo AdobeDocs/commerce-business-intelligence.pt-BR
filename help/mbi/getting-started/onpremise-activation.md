@@ -1,29 +1,29 @@
 ---
-title: 'Ativar sua conta  [!DNL Adobe Commerce Intelligence] '
-description: Saiba com quem contatar para ativar sua conta do  [!DNL Commerce Intelligence] .
+title: Ativar sua conta  [!DNL Adobe Commerce Intelligence] do
+description: Learn who to contact to activate your [!DNL Commerce Intelligence] account.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: ba64de148ad5b3fc44591a10531244cfe670a728
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
-# Ativar a conta [!DNL Commerce Intelligence] para Assinaturas no Local e de Início
+# Activate your [!DNL Commerce Intelligence] Account for On-Premise and Starter Subscriptions
 
-Para ativar o [!DNL Commerce Intelligence] para assinaturas locais, primeiro crie uma conta do [!DNL Commerce Intelligence], insira suas informações de configuração e conecte o [!DNL Commerce Intelligence] ao banco de dados do [!DNL Commerce]. <!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
+To activate [!DNL Commerce Intelligence] for on-premise subscriptions, first create a [!DNL Commerce Intelligence] account, enter your settings information, then connect [!DNL Commerce Intelligence] to your [!DNL Commerce] database. <!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
 
-## Crie sua conta do [!DNL Commerce Intelligence]
+## Criar sua conta do [!DNL Commerce Intelligence]
 
-Para criar sua conta, entre em contato com a equipe de conta da Adobe ou com o consultor técnico do cliente.
+Para criar sua conta, entre em contato com sua Equipe de conta do Adobe ou com o Supervisor técnico do cliente.
 
-## Crie sua senha
+## Criar sua senha
 
-Depois que sua conta for criada, verifique se há um email de notificação de conta de [!DNL The Magento BI Team@rjmetrics.com]. Use o link fornecido no email para acessar sua conta do [!DNL Commerce Intelligence] e criar sua senha. Vá para sua caixa de entrada e verifique seu endereço de email.
+Depois que sua conta for criada, verifique se o email de notificação de conta de [!DNL The Magento BI Team@rjmetrics.com] foi enviado. Use o link fornecido no email para acessar sua conta do [!DNL Commerce Intelligence] e criar sua senha. Acesse sua caixa de entrada e verifique seu endereço de email.
 
-Se você não recebeu um email, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você não recebeu um email, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ![Criar tela de senha para a nova conta do Commerce Intelligence](../assets/create-account-4.png)
 
@@ -33,40 +33,40 @@ Antes de configurar a conexão de banco de dados, preencha o formulário de info
 
 ![Armazenar formulário de informações com campos de nome da empresa, moeda e fuso horário](../assets/create-account-6.png)
 
-## Adicionar [!DNL Commerce Intelligence] usuários
+## Add [!DNL Commerce Intelligence] users
 
-Depois de definir sua senha e fazer logon no [!DNL Commerce Intelligence], você pode adicionar outros usuários à sua conta do [!DNL Commerce Intelligence]. Ao adicionar usuários, adicione usuários administradores com as permissões apropriadas para concluir o processo de ativação.
+After you set your password and log into [!DNL Commerce Intelligence], you can add other users to your [!DNL Commerce Intelligence] account. When adding users, add admin users with appropriate permissions to complete the activation process.
 
-![Adicionar formulário de usuário com campos de endereço de email e nível de permissão](../assets/create-account-5.png)
+![Add user form with email address and permission level fields](../assets/create-account-5.png)
 
 ## Criar um usuário [!DNL Commerce Intelligence] dedicado no administrador [!DNL Commerce]
 
 Para usar o [!DNL Commerce Intelligence], você deve adicionar um usuário permanente e dedicado ao projeto [!DNL Commerce]. Este usuário dedicado serve como uma conexão permanente com o [!DNL Commerce] que permite a busca e a transferência de novos dados para o Data Warehouse [!DNL Commerce Intelligence] da conta.
 
-A configuração de um usuário [!DNL Commerce Intelligence] dedicado garante que a conta não seja desativada ou excluída, interrompendo assim a conexão [!DNL Commerce Intelligence].
+A configuração de um usuário dedicado [!DNL Commerce Intelligence] garante que a conta não seja desativada ou excluída, interrompendo assim a conexão [!DNL Commerce Intelligence].
 
 
 >[!NOTE]
 >
->A Adobe incentiva o uso de um nome de conta que indique seu status permanente (por exemplo, ACI-dedicated, ACI-database-connector e assim por diante).
+>O Adobe incentiva o uso de um nome de conta que indique seu status permanente (por exemplo, ACI-dedicado, ACI-database-connector, e assim por diante).
 
 Depois de criar o usuário dedicado para [!DNL Commerce Intelligence] no Administrador, adicione o mesmo usuário ao ambiente primário do projeto [!DNL Commerce] com uma configuração **[!UICONTROL Master]** de `Contributor`.
 
-![Commerce adiciona interface de usuário com função definida como Colaborador](../assets/commerce-add-user-settings.png)
+![Commerce add user interface with role set to Contributor](../assets/commerce-add-user-settings.png)
 
-## Obtenha suas chaves SSH do Commerce Intelligence
+## Get your Commerce Intelligence SSH keys
 
-1. Na página [!UICONTROL Connect your database] da instalação do [!DNL Commerce Intelligence], role para baixo e selecione **[!UICONTROL Encryption settings]**.
+1. Na página [!UICONTROL Connect your database] da configuração [!DNL Commerce Intelligence], role para baixo e selecione **[!UICONTROL Encryption settings]**.
 
 1. Para **Tipo de Criptografia**, selecione `SSH Tunnel`.
 
-1. No menu suspenso, copie a chave pública fornecida.
+1. Na lista suspensa, copie a chave pública fornecida.
 
    ![Página de configurações de criptografia mostrando o tipo de túnel SSH e o campo de chave pública](../assets/encryption-setting-new-account.png)
 
-## Adicione sua chave pública ao [!DNL Commerce Intelligence]
+## Adicionar sua chave pública ao [!DNL Commerce Intelligence]
 
-1. No [!DNL Commerce Admin], entre usando as informações de logon do usuário [!DNL Commerce Intelligence] que você acabou de criar.
+1. No [!DNL Commerce Admin], entre usando as informações de logon do usuário [!DNL Commerce Intelligence] recém-criado.
 
 1. Selecione a guia **Configurações da conta**.
 
@@ -78,7 +78,7 @@ Depois de criar o usuário dedicado para [!DNL Commerce Intelligence] no Adminis
 
    ![Adicionar formulário de chave pública com campo de texto de chave e botão Enviar](../assets/paste-public-key.png)
 
-## Fornecer credenciais do [!DNL Commerce Intelligence] do `MySQL` Essentials
+## Provide [!DNL Commerce Intelligence] Essentials `MySQL` credentials
 
 1. Atualize seu `.magento/services.yaml`.
 
@@ -90,17 +90,17 @@ Depois de criar o usuário dedicado para [!DNL Commerce Intelligence] no Adminis
 
 ## Obter informações de conexão do banco de dados
 
-Obter as informações de conexão do banco de dados [!DNL Commerce] para [!DNL Commerce Intelligence]
+Get the database connection information to the [!DNL Commerce] database to [!DNL Commerce Intelligence]
 
-1. Execute o seguinte para obter suas informações.
+1. Run the following to get your information.
 
    `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp`
 
-1. Revise as informações do banco de dados, que devem ser semelhantes ao exemplo a seguir.
+1. Review the database information, which should look similar to the following example.
 
-   ![Saída JSON mostrando as credenciais de conexão do banco de dados, incluindo host, porta e nome de usuário](../assets/example-database-information.png)
+   ![JSON output showing database connection credentials including host, port, and username](../assets/example-database-information.png)
 
-## Conectar [!DNL Commerce Intelligence] ao banco de dados [!DNL Commerce] usando uma conexão criptografada
+## Connect [!DNL Commerce Intelligence] to your [!DNL Commerce] database using an encrypted connection
 
 >[!NOTE]
 >
@@ -118,15 +118,15 @@ Insira suas informações de [!DNL Commerce Intelligence] na tela [!UICONTROL Co
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL Nome de usuário]: `mbi`
+[!UICONTROL Username]: `mbi`
 
-[!UICONTROL Password]: [senha de entrada exibida na seção anterior]
+[!UICONTROL Password]: [input password displayed in the previous section]
 
 [!UICONTROL Database Name]: `main`
 
-[!UICONTROL Table Prefixes]: [deixe em branco se não houver prefixos de tabela]
+[!UICONTROL Table Prefixes]: [leave blank if there are no table prefixes]
 
-## Definir suas configurações de [!UICONTROL **Fuso Horário**]
+## Set your [!UICONTROL **Time Zone**] settings
 
 ![Formulário de configurações de fuso horário com fuso horário do banco de dados e campos suspensos de fuso horário desejados](../assets/time-zone-settings.png)
 
@@ -136,13 +136,13 @@ Insira suas informações de [!DNL Commerce Intelligence] na tela [!UICONTROL Co
 
 [!UICONTROL Desired Timezone]: [escolha o fuso horário para o qual deseja exibir seus dados]
 
-## Obter informações de configurações de criptografia
+## Get your encryption settings information
 
-A interface do projeto fornece uma cadeia de caracteres de acesso SSH. Esta cadeia de caracteres pode ser usada para coletar as informações necessárias para o [!UICONTROL **Endereço Remoto**] e o [!UICONTROL **Nome de Usuário**]. Use a cadeia de caracteres de Acesso SSH selecionando o botão de acesso do site na ramificação mestre da interface do usuário do projeto. Em seguida, localize seus [!UICONTROL User Name] e [!UICONTROL Remote Address] conforme mostrado abaixo.
+The project UI provides an SSH access string. This string can be used for gathering the information needed for the [!UICONTROL **Remote Address**] and [!UICONTROL **Username**]. Use the SSH Access string by selecting the access site button on the Master branch of the Project UI. Then, find your [!UICONTROL User Name] and [!UICONTROL Remote Address] as shown below.
 
-![Interface do usuário do projeto mostrando informações de acesso SSH com nome de usuário e endereço remoto](../assets/master-branch-settings.png)
+![Interface do projeto mostrando informações de acesso SSH com nome de usuário e endereço remoto](../assets/master-branch-settings.png)
 
-## Insira suas configurações de [!DNL Encryption]
+## Inserir suas configurações do [!DNL Encryption]
 
 ![Formulário de configurações de criptografia com campos para tipo de criptografia, endereço remoto, nome de usuário e porta](../assets/encryption-settings-2.png)
 
@@ -166,12 +166,14 @@ Você conectou com êxito o banco de dados [!DNL Commerce] à conta [!DNL Commer
 >
 >Se você for um cliente do [!DNL Adobe Commerce Intelligence Pro], entre em contato com seu Gerente de sucesso do cliente ou com o Consultor técnico do cliente para coordenar as próximas etapas.
 
-Após concluir a configuração, [entre](../getting-started/sign-in.md) em sua conta do [!DNL Commerce Intelligence].
+After you complete the configuration, [sign in](../getting-started/sign-in.md) to your [!DNL Commerce Intelligence] account.
 
-<!---# Activate your [!DNL Commerce Intelligence] Account
+<!--
+# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
->Adobe no longer supports new `Cloud Starter` subscriptions.--->
+>Adobe no longer supports new `Cloud Starter` subscriptions.
+-->
