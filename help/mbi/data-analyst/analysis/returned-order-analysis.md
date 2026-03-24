@@ -32,7 +32,7 @@ Este tópico demonstra como configurar um painel que fornece uma análise detalh
 
 ![Painel de devoluções detalhado mostrando as taxas de devolução e os motivos](../../assets/detailed-returns-dboard.png)
 
-Antes de começar, você deve ser um cliente do [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) e verificar se sua empresa está usando a tabela `enterprise\_rma` para devoluções.
+Antes de começar, você deve ser um cliente do [Adobe Commerce](https://business.adobe.com/br/products/magento/magento-commerce.html) e verificar se sua empresa está usando a tabela `enterprise\_rma` para devoluções.
 
 Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -257,4 +257,4 @@ Colunas para criar
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima.
 
-Se você tiver dúvidas ao criar esta análise ou quiser envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se você tiver dúvidas ao criar esta análise ou quiser envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
