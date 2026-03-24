@@ -4,9 +4,15 @@ description: Saiba como configurar um painel que rastreará a atividade do site,
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+TQID: https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: 756
 ht-degree: 0%
 
 ---
@@ -19,7 +25,7 @@ Este tópico demonstra como configurar um painel que rastreará as atividades do
 
 ## Pré-requisitos
 
-**Importar seus dados de custo de publicidade** - Conectar [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - sincroniza automaticamente seus gastos com [!DNL AdWords] no Commerce Intelligence.
+**Importar seus dados de custo de publicidade** - Conectar [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - sincroniza automaticamente seus gastos com [!DNL AdWords] no Commerce Intelligence.
 
 **Rastrear dados do canal de aquisição de usuário** - Para vincular os dados de [!DNL Google AdWords] a pedidos específicos no banco de dados, é necessário [rastrear a aquisição de usuário](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Isso permite conectar cada pedido a uma fonte e um meio utm.
 

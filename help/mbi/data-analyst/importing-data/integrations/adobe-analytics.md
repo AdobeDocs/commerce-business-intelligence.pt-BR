@@ -4,9 +4,15 @@ description: Saiba como reunir o foco completo da jornada do cliente do  [!DNL A
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/KkiKySM2q8ewqhQ1kdUjLuTM4iOpzrZb5Ok-UvBBpJE
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: 312
 ht-degree: 0%
 
 ---
@@ -57,6 +63,6 @@ As seguintes informações são necessárias para se conectar:
 
 1. O conjunto de relatórios selecionado é exibido em uma tabela. Clique em **[!UICONTROL Save]** para confirmar a seleção.
 
-1. Informe à [!DNL Commerce Intelligence] [Equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) que sua integração está autorizada e que eles executam o processo de conexão inicial para você.
+1. Informe à [!DNL Commerce Intelligence] [Equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) que sua integração está autorizada e que eles executam o processo de conexão inicial para você.
 
 Depois que o processo de conexão inicial for executado, sua tabela estará disponível na página do Data Warehouse, na guia `All Tables`. Selecione as colunas que deseja replicar e os dados aparecerão após a próxima atualização completa.

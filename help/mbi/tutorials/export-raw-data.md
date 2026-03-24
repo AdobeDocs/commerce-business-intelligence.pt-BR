@@ -4,16 +4,22 @@ description: Saiba como exportar registros do seu  [!DNL Commerce Intelligence] 
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: 491
 ht-degree: 0%
 
 ---
 
 # Exportar dados brutos
 
-Usando exportações de dados brutos, você pode exportar registros do seu Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudá-lo a [identificar discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=pt-BR).
+Usando exportações de dados brutos, você pode exportar registros do seu Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudá-lo a [identificar discrepâncias de dados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 As exportações de dados brutos fornecem acesso a colunas e dimensões adicionais geradas por meio da desnormalização e da pré-agregação de métricas relevantes. Por exemplo, `User's first order date` é uma dimensão que você pode exportar para cada usuário em [!DNL Commerce Intelligence], embora ela possa não estar disponível no banco de dados.
 
@@ -34,7 +40,7 @@ Há duas maneiras de exportar dados brutos para o [!DNL Commerce Intelligence]:
 
 Para exportar a tabela da guia [!UICONTROL Manage Data], são necessárias [permissões de administrador](../administrator/user-management/user-management.md).
 
-1. Clique em **[!UICONTROL Manage Data** > **&#x200B; Exportar Dados &#x200B;**> **Exportação de Dados Brutos]**.
+1. Clique em **[!UICONTROL Manage Data** > ** Exportar Dados **> **Exportação de Dados Brutos]**.
 1. Você verá uma `Export List` de exportações de dados criadas recentemente, se houver alguma. Clique em **[!UICONTROL Add Export]** para criar uma exportação.
 1. A caixa de diálogo `New Raw Data Export` é exibida. Aqui, você pode personalizar a exportação selecionando ou desmarcando colunas e filtros:
 

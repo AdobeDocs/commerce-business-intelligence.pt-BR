@@ -4,9 +4,15 @@ description: Saiba como entender e criar análises básicas.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '3130'
+source-wordcount: 3130
 ht-degree: 0%
 
 ---
@@ -46,7 +52,7 @@ Se alguns desses cálculos não existirem no banco de dados, qualquer usuário a
 
 **Você aceita ordens de convidados?**
 
-*Nesse caso, talvez esta tabela não contenha todos os seus clientes. Entre em contato com a [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para garantir que as análises de seus clientes incluam todos os clientes.*
+*Nesse caso, talvez esta tabela não contenha todos os seus clientes. Entre em contato com a [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para garantir que as análises de seus clientes incluam todos os clientes.*
 
 *Não tem certeza se você aceita pedidos de convidados? Consulte [este tópico](../data-warehouse-mgr/guest-orders.md) para saber mais!*
 
@@ -60,7 +66,7 @@ Nessa tabela, cada linha representa uma ordem. As colunas nessa tabela contêm i
 * **[!UICONTROL Created_at]**: a data em que o pedido foi criado ou feito.
 * **[!UICONTROL Customer_email]**: O endereço de email do cliente que fez o pedido. Esse também pode ser o identificador exclusivo do cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: Uma cópia da coluna com o mesmo nome na tabela `Customers`.
-* **[!UICONTROL Customer's order number]**: o número de ordem sequencial do cliente associado à ordem. Por exemplo, se a linha que você está observando for a primeira ordem de um cliente, essa coluna será &quot;1&quot;; mas, se essa for a 15ª ordem do cliente, essa coluna mostrará &quot;15&quot; para essa ordem. Se esta dimensão não existir na tabela `Customers`, peça à [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para ajudá-lo a criá-la.
+* **[!UICONTROL Customer's order number]**: o número de ordem sequencial do cliente associado à ordem. Por exemplo, se a linha que você está observando for a primeira ordem de um cliente, essa coluna será &quot;1&quot;; mas, se essa for a 15ª ordem do cliente, essa coluna mostrará &quot;15&quot; para essa ordem. Se esta dimensão não existir na tabela `Customers`, peça à [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para ajudá-lo a criá-la.
 * **[!UICONTROL Customer's order number (previous-current)]**: uma concatenação de dois valores na coluna **[!UICONTROL Customer's order number]**. Ele é usado em um relatório de amostra abaixo para exibir o tempo decorrido entre dois pedidos. Por exemplo, o tempo entre a data de primeiro pedido de um cliente e a data de segundo pedido é representado como &quot;1-2&quot; com esse cálculo.
 * **[!UICONTROL Coupon_code]**: mostra quais cupons foram usados em cada pedido.
 * **[!UICONTROL Seconds since previous order]**: o tempo (em segundos) entre os pedidos de um cliente.
@@ -88,7 +94,7 @@ Essa tabela é usada para gerenciar as informações de subscrição, como id de
 
 ## Tabela de gastos de marketing
 
-Ao analisar seus gastos com marketing, você pode incluir [!DNL Facebook], [!DNL Google AdWords] ou outras fontes em suas análises. Se você tiver várias fontes de gastos com marketing, entre em contato com a [Equipe da Managed Services](https://business.adobe.com/br/products/magento/fully-managed-service.html) para obter ajuda sobre como configurar uma tabela consolidada para suas campanhas de marketing.
+Ao analisar seus gastos com marketing, você pode incluir [!DNL Facebook], [!DNL Google AdWords] ou outras fontes em suas análises. Se você tiver várias fontes de gastos com marketing, entre em contato com a [Equipe da Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) para obter ajuda sobre como configurar uma tabela consolidada para suas campanhas de marketing.
 
 **Dimensões**
 

@@ -4,9 +4,15 @@ description: Saiba como se conectar [!DNL MySQL] via túnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/WhcwNz65oubtSKnVGeoHfbEVbPvo1fq-RvpAcP96NEc
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: 615
 ht-degree: 0%
 
 ---
@@ -14,14 +20,14 @@ ht-degree: 0%
 # Conectar [!DNL MySQL] via [!DNL SSH Tunnel]
 
 * [Recuperar a  [!DNL Commerce Intelligence] chave pública](#retrieve)
-* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] ](#allowlist)
 * [Criar um usuário do Linux para  [!DNL Commerce Intelligence]](#linux)
 * [Criar um  [!DNL MySQL] usuário para [!DNL Commerce Intelligence]](#mysql)
 * [Insira as informações de conexão e usuário em  [!DNL Commerce Intelligence]](#finish)
 
 ## IR PARA
 
-* [[!DNL MySQL] via &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] via  [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Para conectar o banco de dados do [!DNL MySQL] ao [!DNL Commerce Intelligence] por meio de um `SSH tunnel`, faça o seguinte:
@@ -120,4 +126,4 @@ Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instala�
 
 ## Relacionados:
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

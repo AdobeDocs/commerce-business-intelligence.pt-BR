@@ -4,9 +4,15 @@ description: Saiba mais sobre alguns métodos diferentes de avaliação do desem
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: 1253
 ht-degree: 0%
 
 ---
@@ -99,7 +105,7 @@ Você está veiculando anúncios específicos de produtos? Em caso afirmativo, v
 >
 >Este exemplo pressupõe que todos os custos de campanha foram usados exclusivamente para gerar compras de produtos específicos. Ao presumir que todo o custo foi gasto na geração de compras, o ROI resultante leva em conta o pior cenário (custo mais alto por compra). Você pode ter certeza de que seu ROI real é superior a esse cálculo. Exemplo: supondo que você gastou US$ 20 em uma campanha que gerou 10 novos usuários e 10 compras, seu custo real por compra é de US$ 1. Sob a suposição de que todo o custo foi para adquirir novos usuários, o custo por compra é de $2.
 
-Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
+Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
 
 * Origem do pedido (se você rastrear apenas a origem de referência no nível do usuário, então ingressar na origem do usuário)
 * Campanha do pedido (se você só rastrear a fonte de referência no nível do usuário e, em seguida, ingressar na campanha do usuário)
@@ -135,6 +141,6 @@ Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe
 * [Rastrear a fonte de referência do usuário no banco de dados](../analysis/google-track-user-acq.md)
 * [Rastrear o dispositivo do usuário, o navegador e os dados do sistema operacional no banco de dados](../analysis/track-usr-dev-browser.md)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../analysis/most-value-source-channel.md)
-* [Conectar sua conta  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Conectar sua conta  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Como funciona a atribuição  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)
 * [Cinco práticas recomendadas para marcação UTM em  [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

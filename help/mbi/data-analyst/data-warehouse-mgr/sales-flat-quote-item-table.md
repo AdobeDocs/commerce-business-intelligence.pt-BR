@@ -4,9 +4,15 @@ description: Saiba como trabalhar com a tabela quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/wLNm1g1L6-0Ded-bZT991KvJi3dVO6zA4i2qftiX2J0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: 646
 ht-degree: 0%
 
 ---
@@ -23,13 +29,13 @@ A tabela `quote_item` (`sales_flat_quote_item` em M1) contém registros em cada 
 
 | **Nome da coluna** | **Descrição** |
 |---|---|
-| `base_price` | Preço de uma unidade individual de um produto no momento em que o item foi adicionado a um carrinho, depois que [regras de preço de catálogo, descontos em camadas e preços especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=pt-BR) são aplicados e antes da aplicação de impostos, remessas ou descontos do carrinho. Isso é representado na moeda base do armazenamento. |
+| `base_price` | Preço de uma unidade individual de um produto no momento em que o item foi adicionado a um carrinho, depois que [regras de preço de catálogo, descontos em camadas e preços especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) são aplicados e antes da aplicação de impostos, remessas ou descontos do carrinho. Isso é representado na moeda base do armazenamento. |
 | `created_at` | Carimbo de data e hora de criação do item do carrinho, armazenado localmente em UTC. Dependendo da sua configuração no [!DNL Commerce Intelligence], esse carimbo de data/hora pode ser convertido em um fuso horário de relatórios no [!DNL Commerce Intelligence] que seja diferente do fuso horário do banco de dados |
 | `item_id` (CP) | Identificador exclusivo da tabela |
 | `name` | Nome do texto do item do pedido |
 | `parent_item_id` | `Foreign key` que relaciona um produto simples ao seu pacote pai ou produto configurável. Associe-se a `quote_item.item_id` para determinar os atributos do produto principal associados ao produto simples. Para itens de carrinho principal (isto é, tipos de produto agrupados ou configuráveis), o `parent_item_id` é `NULL` |
 | `product_id` | `Foreign key` associado à tabela `catalog_product_entity`. Ingressar em `catalog_product_entity.entity_id` para determinar os atributos de produto associados ao item do pedido |
-| `product_type` | Tipo de produto adicionado ao carrinho. Os [tipos de produtos](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=pt-BR#product-types) possíveis incluem: simples, configurável, agrupado, virtual, pacote e baixável |
+| `product_type` | Tipo de produto adicionado ao carrinho. Os [tipos de produtos](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) possíveis incluem: simples, configurável, agrupado, virtual, pacote e baixável |
 | `qty` | Quantidade de unidades incluídas no carrinho para o item de carrinho específico |
 | `quote_id` | `Foreign key` associado à tabela `quote`. Ingressar em `quote.entity_id` para determinar os atributos do carrinho associados ao item do carrinho |
 | `sku` | Identificador exclusivo do item do carrinho |
@@ -43,7 +49,7 @@ A tabela `quote_item` (`sales_flat_quote_item` em M1) contém registros em cada 
 |---|---|
 | `Cart creation date` | Carimbo de data e hora associado à data de criação do carrinho. Calculado ingressando `quote_item.quote_id` em `quote.entity_id` e retornando o carimbo de data/hora `created_at` |
 | `Cart is active? (1/0)` | Campo booleano que retorna &quot;1&quot; se o carrinho foi criado por um cliente e ainda não foi convertido em um pedido. Retorna &quot;0&quot; para carrinhos convertidos ou carrinhos criados pelo administrador. Calculado ao ingressar de `quote_item.quote_id` em `quote.entity_id` e retornar o campo `is_active` |
-| `Cart item total value (qty * base_price)` | Valor total de um item no momento em que ele foi adicionado ao carrinho, depois que [regras de preço de catálogo, descontos em camadas e preços especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=pt-BR) são aplicados e antes da aplicação de impostos, frete ou descontos do carrinho. Calculado pela multiplicação de `qty` por `base_price` |
+| `Cart item total value (qty * base_price)` | Valor total de um item no momento em que ele foi adicionado ao carrinho, depois que [regras de preço de catálogo, descontos em camadas e preços especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) são aplicados e antes da aplicação de impostos, frete ou descontos do carrinho. Calculado pela multiplicação de `qty` por `base_price` |
 | `Seconds since cart creation` | Tempo decorrido entre a data de criação do carrinho e agora. Calculado ao ingressar de `quote_item.quote_id` em `quote.entity_id` e retornar o campo `Seconds since cart creation` |
 | `Store name` | Nome da loja da Commerce associada ao item do pedido. Calculado ao ingressar de `sales_order_item.store_id` em `store.store_id` e retornar o campo `name` |
 
@@ -72,7 +78,7 @@ A tabela `quote_item` (`sales_flat_quote_item` em M1) contém registros em cada 
 
 `quote_item`
 
-* Ingresse em `quote_item` para criar colunas que associem detalhes da SKU pai configurável ou pacote ao produto simples. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para obter assistência na configuração desses cálculos, se estiver criando no gerenciador do Data Warehouse.
+* Ingresse em `quote_item` para criar colunas que associem detalhes da SKU pai configurável ou pacote ao produto simples. [Contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) para obter assistência na configuração desses cálculos, se estiver criando no gerenciador do Data Warehouse.
    * Caminho: `quote_item.parent_item_id` (muitos) => `quote_item.item_id` (um)
 
 `store`
