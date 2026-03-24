@@ -5,10 +5,18 @@ exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 751
@@ -32,7 +40,7 @@ O [!DNL Adobe] recomenda dois métodos para rastrear os dados da fonte de refer�
 
 ### (Opção 1) Rastrear dados de origem de referência de ordem via [!DNL Google Analytics E-Commerce]
 
-Se você usa o [!DNL Google Analytics E-Commerce] para acompanhar seus dados de pedidos e vendas, você pode usar o [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) para sincronizar os dados de origem de referência de cada pedido. Isso permite segmentar receita e pedidos por fonte de referência (por exemplo, `utm_source` ou `utm_medium`). Você também tem uma noção das fontes de aquisição de clientes por meio de [!DNL Commerce Intelligence] dimensões personalizadas, como `User's first order source`.
+Se você usa o [!DNL Google Analytics E-Commerce] para acompanhar seus dados de pedidos e vendas, você pode usar o [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) para sincronizar os dados de origem de referência de cada pedido. Isso permite segmentar receita e pedidos por fonte de referência (por exemplo, `utm_source` ou `utm_medium`). Você também tem uma noção das fontes de aquisição de clientes por meio de [!DNL Commerce Intelligence] dimensões personalizadas, como `User's first order source`.
 
 ### (Opção 2) Salvando os dados da fonte de aquisição [!DNL Google Analytics] em seu banco de dados
 

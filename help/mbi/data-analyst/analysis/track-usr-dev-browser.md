@@ -5,10 +5,17 @@ exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User
 feature: Reports, Dashboards
 TQID: https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 432
@@ -53,6 +60,6 @@ Com essas novas informações, você pode entender melhor como os usuários aces
 * [Rastrear origem da referência de ordem via [!DNL Google Anaytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no banco de dados](../analysis/google-track-user-acq.md)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../analysis/most-value-source-channel.md)
-* [Conectar sua conta  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Conectar sua conta  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Aumente o ROI em suas campanhas publicitárias](../analysis/roi-ad-camp.md)
 * [Como funciona a atribuição  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)
