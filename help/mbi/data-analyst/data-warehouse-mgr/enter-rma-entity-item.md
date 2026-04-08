@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
 source-wordcount: 269
 ht-degree: 0%
@@ -38,14 +38,14 @@ Cada linha na tabela `enterprise_rma_item_entity` (geralmente chamada de `magent
 
 | **Nome da coluna** | **Descrição** |
 |---|---|
-| `entity\_id` | Identificador exclusivo da tabela. Cada `entity\_id` representa um item que foi solicitado para retorno. |
-| `rma\_entity\_id` | Chave estrangeira associada à tabela `enterprise\_rma`. |
+| `entity_id` | Identificador exclusivo da tabela. Cada `entity_id` representa um item que foi solicitado para retorno. |
+| `rma_entity_id` | Chave estrangeira associada à tabela `enterprise_rma`. |
 | `status` | O status da devolução do item. Os valores incluem &quot;recebido&quot;, &quot;pendente&quot;, &quot;autorizado&quot;, entre outros. Os valores neste status podem não corresponder ao valor do status do retorno geral. |
-| `qty\_requested` | A quantidade que o cliente solicita para devolução. |
-| `qty\_approved` | A quantidade aprovada para devolução. |
-| `qty\_returned` | A quantidade devolvida. |
-| `order\_item\_id` | Chave estrangeira associada à tabela `sales\_flat\_order\_item`. |
-| `product\_sku` | O SKU que está sendo retornado. |
+| `qty_requested` | A quantidade que o cliente solicita para devolução. |
+| `qty_approved` | A quantidade aprovada para devolução. |
+| `qty_returned` | A quantidade devolvida. |
+| `order_item_id` | Chave estrangeira associada à tabela `sales_flat_order_item`. |
+| `product_sku` | O SKU que está sendo retornado. |
 
 {style="table-layout:auto"}
 
@@ -53,9 +53,9 @@ Cada linha na tabela `enterprise_rma_item_entity` (geralmente chamada de `magent
 
 | **Nome da coluna** | **Descrição** |
 |---|---|
-| `Return date\_requested` | Esta é a data em que o cliente solicitou a devolução. |
+| `Return date_requested` | Esta é a data em que o cliente solicitou a devolução. |
 | `Item price` | O preço do item. |
-| `Return item's total value (qty\_returned * price)` | Esse é o valor monetário total dos itens retornados. Isso é usado para calcular o valor total de retorno na tabela `enterprise\_rma`. |
+| `Return item's total value (qty_returned * price)` | Esse é o valor monetário total dos itens retornados. Isso é usado para calcular o valor total de retorno na tabela `enterprise_rma`. |
 
 {style="table-layout:auto"}
 
@@ -72,7 +72,7 @@ Cada linha na tabela `enterprise_rma_item_entity` (geralmente chamada de `magent
 
 `enterprise_rma`
 
-* Crie colunas unidas como `Return date\_requested` na tabela `enterprise_rma_item_entity` por meio da seguinte associação:
+* Crie colunas unidas como `Return date_requested` na tabela `enterprise_rma_item_entity` por meio da seguinte associação:
 * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id ` (muitos) => `enterprise_rma.entity_id` (um)
 * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (muitos) => `magento_rma.entity_id` (um)
 

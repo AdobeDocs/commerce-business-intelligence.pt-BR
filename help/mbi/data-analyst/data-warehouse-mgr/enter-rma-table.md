@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +38,11 @@ Cada linha na tabela `enterprise_rma` (geralmente chamada de `magento_rma` no Ad
 
 | **Nome da coluna** | **Descrição** |
 |---|---|
-| `entity\_id` | Identificador exclusivo da tabela. Cada `entity\_id` representa uma solicitação de retorno. |
-| `date\_requested` | A data em que a devolução foi solicitada. |
+| `entity_id` | Identificador exclusivo da tabela. Cada `entity_id` representa uma solicitação de retorno. |
+| `date_requested` | A data em que a devolução foi solicitada. |
 | `status` | O status da devolução. Os valores incluem &quot;recebido&quot;, &quot;pendente&quot;, &quot;autorizado&quot;, entre outros. |
-| `order\_id` | Chave estrangeira associada à tabela `sales\_flat\_order`. |
-| `customer\_id` | Chave estrangeira associada à tabela `customer\_entity`. |
+| `order_id` | Chave estrangeira associada à tabela `sales_flat_order`. |
+| `customer_id` | Chave estrangeira associada à tabela `customer_entity`. |
 
 {style="table-layout:auto"}
 
@@ -50,9 +50,9 @@ Cada linha na tabela `enterprise_rma` (geralmente chamada de `magento_rma` no Ad
 
 | **Nome da coluna** | **Descrição** |
 |---|---|
-| `Order's created\_at` | Esta é a data do pedido original. Isso pode ser usado para obter o tempo entre a ordem e a solicitação de devolução. |
+| `Order's created_at` | Esta é a data do pedido original. Isso pode ser usado para obter o tempo entre a ordem e a solicitação de devolução. |
 | `Customer's order number` | É o número do pedido do cliente associado ao pedido original. |
-| `Seconds between order's created\_at and return's date\_requested` | O número de segundos entre a data do pedido e a solicitação de devolução. |
+| `Seconds between order's created_at and return's date_requested` | O número de segundos entre a data do pedido e a solicitação de devolução. |
 | `Return's total value` | Esse é o valor monetário total retornado. Esta é a soma da quantia de devolução individual de cada item de devolução. |
 
 {style="table-layout:auto"}
@@ -61,7 +61,7 @@ Cada linha na tabela `enterprise_rma` (geralmente chamada de `magento_rma` no Ad
 
 | **Nome da métrica** | **Descrição** | **Construção** |
 |---|---|---|
-| `Number of returns` | O número de devoluções solicitadas. | `Operation` coluna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Coluna: `date requested` |
+| `Number of returns` | O número de devoluções solicitadas. | `Operation` coluna: `entity_id`<br>`Operation`: `Count`<br>`Timestamp` Coluna: `date requested` |
 | `Total returned amount` | O valor monetário total retornado. | `Operation `Coluna: `Return's total value`<br>`Operation`: Soma<br>`Timestamp` Coluna: data solicitada |
 | `Average returned amount` | O valor monetário médio retornado. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
 | `Average time to return` | O tempo médio desde a ordem até a devolução. | `Operation` Coluna: Segundos entre a criação do pedido na data de retorno solicitada<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
