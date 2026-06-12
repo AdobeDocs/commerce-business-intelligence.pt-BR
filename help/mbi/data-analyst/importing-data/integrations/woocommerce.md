@@ -40,5 +40,5 @@ O banco de dados [!DNL WooCommerce] é baseado em [!DNL MySQL]. Você pode conec
 
 ## Relacionados:
 
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
 * [Dimensões de dados recomendadas para segmentação e filtragem](../../../best-practices/segment-filter.md)
