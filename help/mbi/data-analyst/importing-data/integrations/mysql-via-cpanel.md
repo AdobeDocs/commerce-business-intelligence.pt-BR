@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 400
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Insira as seguintes informações nesta página na seção `Database Connection`
 * `Username`: O nome de usuário de [!DNL Commerce Intelligence] [!DNL MySQL]
 * `Password`: A senha para o usuário [!DNL Commerce Intelligence] [!DNL MySQL]
 * `Port`: Porta do MySQL no servidor (`3306` por padrão)
-* `Host`: O endereço público do servidor `MySQL` do [!DNL Commerce Intelligence] se conecta ao. Normalmente, esta é a URL que você usa para fazer logon no `[!DNL cPanel]`.
+* `Host`: O endereço público do servidor [!DNL Commerce Intelligence] do `MySQL` se conecta ao. Normalmente, esta é a URL que você usa para fazer logon no `[!DNL cPanel]`.
 
 Se você estiver usando um [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md), deverá inserir as informações de criptografia. Ajuste o botão `Encrypted` para `Yes` para exibir o formulário.
 
@@ -82,6 +82,11 @@ Se você estiver usando um [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.m
 
 Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instalação.
 
-## Relacionados:
+>[!NOTE]
+>
+>Se você usar um túnel SSH, consulte [Verificação da chave do host SSH](ssh-host-key-verification.md) para registro, atualização, mensagens de erro e solução de problemas.
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+## Relacionados {#related}
+
+* [Verificação da chave do host SSH](ssh-host-key-verification.md)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)

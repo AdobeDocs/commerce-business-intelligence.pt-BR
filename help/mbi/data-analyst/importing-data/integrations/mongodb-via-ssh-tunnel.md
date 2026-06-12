@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -157,8 +157,13 @@ Na seção `SSH Connection`:
 * `Username`: O nome de usuário do Linux [!DNL Commerce Intelligence] (SSH) (deve ser rjmetric)
 * `SSH Port`: a porta SSH no servidor (22 por padrão)
 
-Quando terminar, clique em **[!UICONTROL Save Test]** para concluir a instalação.
+Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instalação.
 
-### Relacionados
+>[!NOTE]
+>
+>Para inscrição, atualização, mensagens de erro e solução de problemas da chave do host SSH, consulte [Verificação da chave do host SSH](ssh-host-key-verification.md).
 
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+## Relacionados {#related}
+
+* [Verificação da chave do host SSH](ssh-host-key-verification.md)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)

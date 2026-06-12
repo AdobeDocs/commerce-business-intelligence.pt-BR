@@ -20,16 +20,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 414
 ht-degree: 0%
 
 ---
 
 # Conectar bancos de dados via VPN
 
-Embora a Adobe recomende que você conecte seus bancos de dados usando um `SSH tunnel`, você também pode usar uma conexão `VPN` criptografada para manter as coisas seguras. Um `VPN` pode ser usado para qualquer uma de suas integrações de banco de dados e, para simplificar, o processo é o mesmo que configurar um `SSH tunnel`:
+Embora a Adobe recomende que você conecte seus bancos de dados usando um `SSH tunnel`, você também pode usar uma conexão `VPN` criptografada para manter as coisas seguras. Para registro, erros e solução de problemas da chave do host SSH em conexões de túnel SSH, consulte [Verificação da chave do host SSH](ssh-host-key-verification.md). Um `VPN` pode ser usado para qualquer uma de suas integrações de banco de dados e, para simplificar, o processo é o mesmo que configurar um `SSH tunnel`:
 
 1. [Criar um usuário do banco de dados  [!DNL Commerce Intelligence] &#x200B;](#database)
 1. [Criar um  [!DNL Commerce Intelligence] usuário VPN](#vpn)

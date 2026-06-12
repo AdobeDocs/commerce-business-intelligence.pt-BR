@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 628
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Há quatro maneiras de obter seus dados no [!DNL Commerce Intelligence]: conecta
 
 [!DNL Commerce Intelligence] dá suporte a bancos de dados NoSQL e baseados em SQL, como [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) e [PostgreSQL](../integrations/postgresql.md).
 
-Embora você possa conectar seu banco de dados diretamente ao [!DNL Commerce Intelligence] usando credenciais de banco de dados, a Adobe recomenda usar um método de criptografia comprovado, como um túnel SSH. Isso garante que seus dados permaneçam seguros à medida que são direcionados para a Data Warehouse.
+Embora você possa conectar seu banco de dados diretamente ao [!DNL Commerce Intelligence] usando credenciais de banco de dados, a Adobe recomenda usar um método de criptografia comprovado, como um túnel SSH. Isso garante que seus dados permaneçam seguros à medida que são direcionados para a Data Warehouse. Para registro, erros e solução de problemas da chave do host SSH, consulte [Verificação da chave do host SSH](../integrations/ssh-host-key-verification.md).
 
 Dependendo do método de conexão e do tipo de banco de dados, talvez seja necessário algum conhecimento técnico para concluir a configuração.
 
@@ -85,7 +85,7 @@ Para saber mais sobre a introdução ao `Import API`, verifique o [site do desen
 Para adicionar uma integração, clique em **[!UICONTROL Manage Data** > **Connections]** e em **[!UICONTROL Add a New Data Source]**. Clique no ícone da integração que deseja adicionar e siga as instruções nos tópicos de ajuda para configurar:
 
 * [Perguntas frequentes sobre integração](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Disponível &#x200B;](../integrations/integrations.md)
+* [Integrações `SaaS` e `database` disponíveis](../integrations/integrations.md)
 * [Consolidação de tabelas](../../../best-practices/consolidating-your-tables.md)
 * [Restrição do acesso ao banco de dados](../../../administrator/account-management/restrict-db-access.md)
 

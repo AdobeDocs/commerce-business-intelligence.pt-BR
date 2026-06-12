@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 761
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Depois de criar o usuário dedicado para [!DNL Commerce Intelligence] no Adminis
 
    ![Adicionar formulário de chave pública com campo de texto de chave e botão Enviar](../assets/paste-public-key.png)
 
-## Fornecer credenciais do [!DNL Commerce Intelligence] do `MySQL` Essentials
+## Fornecer credenciais do `MySQL` do [!DNL Commerce Intelligence] Essentials
 
 1. Atualize seu `.magento/services.yaml`.
 
@@ -122,7 +122,7 @@ Obter as informações de conexão do banco de dados [!DNL Commerce] para [!DNL 
 
 >[!NOTE]
 >
->A Adobe recomenda que você use um túnel [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) para fazer a conexão com o banco de dados. No entanto, se esse método não for uma opção, você ainda poderá vincular [!DNL Commerce Intelligence] ao banco de dados usando um [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
+>A Adobe recomenda que você use um túnel [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) para fazer a conexão com o banco de dados. Para registro, erros e solução de problemas da chave do host SSH, consulte [Verificação da chave do host SSH](../data-analyst/importing-data/integrations/ssh-host-key-verification.md). No entanto, se esse método não for uma opção, você ainda poderá vincular [!DNL Commerce Intelligence] ao banco de dados usando um [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
 
 Insira suas informações de [!DNL Commerce Intelligence] na tela [!UICONTROL Connect your Magento Database].
 
