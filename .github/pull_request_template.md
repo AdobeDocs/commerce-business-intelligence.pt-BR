@@ -1,5 +1,5 @@
 ---
-source-git-commit: 269e0b3e7e61c784157bb56ca5c95b1db270118a
+source-git-commit: 4bb49db092e4b0b95e962df324afaa0cf114fe23
 workflow-type: tm+mt
 source-wordcount: '21'
 ht-degree: 9%
@@ -13,7 +13,7 @@ Esta solicitação de pull (PR) ...
 
 <!-- REQUIRED List the affected pages on experienceleague.adobe.com (URLs). Not necessary for large numbers of files. -->
 
-- ..
+- ...
 
 ## Informações adicionais
 
@@ -21,7 +21,7 @@ Esta solicitação de pull (PR) ...
 
 <!--  OPTIONAL - REMOVE THIS SECTION IF NOT USED. If this pull request references a file in a Magento Open Source or Adobe Commerce codebase repository, add it here. -->
 
-- ..
+- ...
 
 <!--
 If you are fixing a GitHub issue, using the GitHub keyword format (https://help.github.com/en/articles/closing-issues-using-keywords#closing-an-issue-in-a-different-repository) closes the issue when this pull request is merged. Example: `Fixes #1234`.
