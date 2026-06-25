@@ -19,9 +19,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 190
+source-wordcount: 201
 ht-degree: 0%
 
 ---
@@ -43,3 +43,4 @@ Se você precisar apenas dos painéis desse usuário enviados para uma conta de 
 1. Use o endereço de email do usuário excluído para criar um novo usuário [!DNL Commerce Intelligence].
 1. [Notifique o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) após criar o usuário. O suporte transfere os painéis para sua conta.
 1. Depois que o Suporte da Adobe notificar você sobre a transferência, você poderá excluir o usuário novamente.
+
