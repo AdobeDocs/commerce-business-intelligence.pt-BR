@@ -19,7 +19,7 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 88
 ht-degree: 0%
@@ -33,4 +33,5 @@ Para redefinir sua senha, clique em **[!UICONTROL Reset Password]** abaixo do ca
 Além disso, você pode alterar sua senha dentro de [!DNL Commerce Intelligence] usando a página **[!UICONTROL Personal Settings]**.
 
 Se você redefinir sua senha e permanecer bloqueado na sua conta, siga [estas dicas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=pt-BR) para ajudar a identificar o problema.
+
 
