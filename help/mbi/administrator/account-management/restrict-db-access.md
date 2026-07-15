@@ -1,7 +1,6 @@
 ---
 title: Restringindo o Acesso ao Banco de Dados
 description: Saiba como restringir o acesso, limitando o acesso ao servidor que hospeda seu banco de dados.
-exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
@@ -16,12 +15,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
 
 ---
+
 
 # Restringir acesso
 
@@ -32,7 +33,6 @@ Você pode ter adivinhado pelo nome, mas um shell bash restrito é usado para co
 Para restringir o usuário [!DNL Commerce Intelligence Linux], você deve executar duas ações:
 
 1. Altere a variável de ambiente PATH para que seja a string vazia. Isso significa que o usuário não pode acessar executáveis do sistema.
-
 1. Verifique se o shell executado é `bash -r`
 
 Ambos podem ser feitos dentro do arquivo `authorized_keys` no diretório inicial `dir/.ssh` do usuário como parte do comando executado quando o usuário faz logon. É mais ou menos assim:
@@ -44,5 +44,3 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 Quando isso for concluído, o usuário que você criou para [!DNL Commerce Intelligence] não poderá fazer alterações no seu sistema.
-
-

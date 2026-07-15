@@ -1,7 +1,6 @@
 ---
 title: Adicionar um novo usuário do Adobe Commerce Intelligence
 description: Saiba como adicionar um novo usuário  [!DNL Commerce Intelligence]  e como atualizar seu nome de usuário ou senha.
-exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
 TQID: https://experienceleague.adobe.com/-cMJHvHlodd05-Np22qtxxS8lHMi4StXOz1iD83xWkU
@@ -18,12 +17,14 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 245
 ht-degree: 0%
 
 ---
+
 
 # Adicionar um novo usuário [!DNL Adobe Commerce Intelligence]
 
@@ -55,5 +56,3 @@ Se precisar reenviar o convite, na [página de logon](https://dashboard.rjmetric
 >[!IMPORTANT]
 >
 >Cada conta tem um número contratado de licenças ou vagas. Se você atingir seu limite ou quiser saber mais, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
-
-

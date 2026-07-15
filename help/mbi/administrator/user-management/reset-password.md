@@ -1,7 +1,6 @@
 ---
 title: Redefinir senha
 description: Saiba como redefinir a senha de um usuário.
-exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
-source-wordcount: 88
+source-wordcount: 89
 ht-degree: 0%
 
 ---
+
 
 # Redefinir sua senha
 
@@ -32,6 +33,4 @@ Para redefinir sua senha, clique em **[!UICONTROL Reset Password]** abaixo do ca
 
 Além disso, você pode alterar sua senha dentro de [!DNL Commerce Intelligence] usando a página **[!UICONTROL Personal Settings]**.
 
-Se você redefinir sua senha e permanecer bloqueado na sua conta, siga [estas dicas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=pt-BR) para ajudar a identificar o problema.
-
-
+Se você redefinir sua senha e permanecer bloqueado na sua conta, siga [estas dicas](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout) para ajudar a identificar o problema.
