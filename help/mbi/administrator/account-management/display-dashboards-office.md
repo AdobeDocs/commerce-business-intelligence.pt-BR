@@ -18,7 +18,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8dadc431bf2aa7e353c7aeea31db7fef75a011f0
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -37,4 +37,4 @@ Esta é a lista recomendada de itens necessários para a opção:
 1. **Um teclado e mouse USB** para controlar seu dongle.
 1. **Uma extensão de navegador para girar entre várias guias de uma só vez.** Isso permite configurar todos os painéis selecionados exibidos em uma guia exclusiva. A Adobe recomenda a extensão [Guias Revolver](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) se você estiver usando o [!DNL Chrome].
 
-Depois de ter o hardware acima, você pode abrir uma janela do navegador na tela com um painel específico que deseja exibir em cada guia. Por fim, configure seu navegador para girar em cada painel na frequência desejada.
+Depois de ter o hardware necessário, você pode abrir uma janela do navegador na tela com um painel específico que deseja exibir em cada guia. Por fim, configure seu navegador para girar em cada painel na frequência desejada.
