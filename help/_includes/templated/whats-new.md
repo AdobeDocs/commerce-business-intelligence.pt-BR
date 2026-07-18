@@ -23,7 +23,7 @@ Esta seção contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Novo tópico de verificação de chave de host <a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH</a>: documentos que salvam e testam o registro, atualizam chaves de host SSH, comportamento de migração, solução de problemas de erros e quando entrar em contato com o suporte. Os tópicos de integração do túnel SSH agora estão vinculados a este guia.</p>
+      <td><p>Novo tópico de verificação de chave de host <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH</a>: documentos que salvam e testam o registro, atualizam chaves de host SSH, comportamento de migração, solução de problemas de erros e quando entrar em contato com o suporte. Os tópicos de integração do túnel SSH agora estão vinculados a este guia.</p>
 </td>
       <td>
         Feedback
