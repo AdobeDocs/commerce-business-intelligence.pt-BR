@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4557430537492370a52030b60750950db8b245da
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 # Documentação técnica do Adobe Commerce Intelligence
@@ -11,17 +11,17 @@ Agradecemos as contribuições da comunidade e de funcionários da Adobe de fora
 
 ## Código de conduta do Adobe Open Source
 
-Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
+Este projeto adotou o [Código de Conduta do Adobe Open Source](code-of-conduct.md) ou o [ Código de Conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 A forma como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
 ### Pequenas alterações
 
-Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique na área de feedback que aparece na parte inferior do artigo, clique em **Opções de feedback detalhadas** e em **Sugerir uma edição** para ir para o arquivo de origem do Markdown no GitHub. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais informações.
+Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique na área de feedback que aparece na parte inferior do artigo, clique em **Opções de feedback detalhadas** e em **Sugerir uma edição** para ir para o arquivo de origem do Markdown no GitHub. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
 Pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso da Adobe.
 
@@ -37,14 +37,14 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe d
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais detalhes.
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais detalhes.
 
 ## Como usar marcação para formatar seu tópico
 
 Todos os artigos neste repositório usam GitHub flavored markdown. Se não estiver familiarizado com a marcação, consulte:
 
 - [Guia de sintaxe do Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
-- [Folha de características de sintaxe do Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
+- [Folha de características da sintaxe do Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
 
 ## Ganchos de pré-confirmação para otimização de imagem
 
@@ -60,10 +60,11 @@ Após clonar o repositório, execute:
 
 ### O que os ganchos fazem
 
-- Detectar automaticamente arquivos de imagem preparados (PNG, JPG, JPEG, GIF, SVG)
-- Executar `image_optim` para compactar e otimizar imagens
+- Detectar automaticamente arquivos de imagem preparados (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Executar `image_optim` para compactar e otimizar imagens rasterizadas (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Transferir imagens otimizadas automaticamente
-- Garantir que todas as imagens confirmadas estejam corretamente otimizadas
+- Garantir que todas as imagens rasterizadas confirmadas estejam corretamente otimizadas
+- Verificar SVGs preparados em relação a um limite de tamanho e anular a confirmação se um SVG superdimensionado for referenciado de `help/` (caso contrário, apenas avisar)
 
 ### Benefícios
 
@@ -74,7 +75,7 @@ Após clonar o repositório, execute:
 
 Para obter instruções detalhadas de instalação, solução de problemas e configuração, consulte [`.githooks/README.md`](.githooks/README.md).
 
-## Guia de criação da Experience League
+## Guia de criação do Experience League
 
 ### Introdução
 
@@ -92,7 +93,7 @@ Para obter instruções detalhadas de instalação, solução de problemas e con
 
 - [Práticas recomendadas de criação](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
 - [Guia de sintaxe do Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
-- [Folha de características de sintaxe do Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
-- [Trabalhando com tabelas](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
-- [Adicionando links](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
+- [Folha de características da sintaxe do Markdown](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
+- [Trabalho com tabelas](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
+- [Adição de links](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
 - [Movimentação e reestruturação de conteúdo](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
