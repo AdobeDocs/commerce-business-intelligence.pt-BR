@@ -1,30 +1,18 @@
 ---
 title: Tabela de cotações
-description: Saiba como trabalhar com a tabela de cotações.
+description: Revise o esquema da tabela de cotações no Commerce Intelligence, que rastreia cada carrinho de compras. Saiba mais sobre as recomendações da Adobe para gerenciar o tamanho da tabela ao longo do tempo.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/Q-46fusr2IS4ZQDrR8IjHEttueSBpT2-LQBtsejMEC4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -51,7 +39,7 @@ A tabela `quote` (`sales_flat_quote` em M1) contém registros em cada carrinho d
 | `is_active` | Campo booleano que retorna &quot;1&quot; se o carrinho foi criado por um cliente e ainda não foi convertido em um pedido. Retorna &quot;0&quot; para carrinhos convertidos ou carrinhos criados pelo administrador |
 | `items_qty` | Soma da quantidade total de todos os itens incluídos no carrinho |
 | `reserved_order_id` | `Foreign key` associado à tabela `sales_order`. Associe-se a `sales_order.increment_id` para determinar os detalhes do pedido associados a um carrinho convertido. Para carrinhos que não estão associados a uma ordem convertida, o `reserved_order_id` permanece `NULL` |
-| `store_id` | `Foreign key` associado à tabela `store`. Ingressar em `store`.`store_id` para determinar qual exibição de loja do Commerce está associada ao carrinho |
+| `store_id` | `Foreign key` associado à tabela `store`. Ingressar em `store`.`store_id` para determinar qual visualização da Commerce store está associada ao carrinho |
 
 {style="table-layout:auto"}
 
@@ -81,14 +69,14 @@ A tabela `quote` (`sales_flat_quote` em M1) contém registros em cada carrinho d
 `customer_entity`
 
 * Associe-se à tabela `customer_entity` para criar novas colunas no nível do cliente associadas ao cliente que criou o carrinho.
-   * Caminho: `quote.customer_id` (muitos) => `customer_entity.entity_id` (um)
+  * Caminho: `quote.customer_id` (muitos) => `customer_entity.entity_id` (um)
 
 `sales_order`
 
 * Associe-se à tabela `sales_order` para criar colunas que retornam detalhes da ordem associados ao carrinho convertido.
-   * Caminho:`quote.reserved_order_id` (muitos) => `sales_order.increment_id` (um)
+  * Caminho:`quote.reserved_order_id` (muitos) => `sales_order.increment_id` (um)
 
 `store`
 
 * Ingresse na tabela `store` para criar colunas que retornam detalhes relacionados à loja da Commerce associada ao carrinho.
-   * Caminho: `quote.store_id` (muitos) => `store.store_id` (um)
+  * Caminho: `quote.store_id` (muitos) => `store.store_id` (um)

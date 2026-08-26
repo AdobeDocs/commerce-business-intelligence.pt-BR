@@ -5,24 +5,14 @@ exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
 TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1397
+source-wordcount: 1448
 ht-degree: 0%
 
 ---
@@ -33,13 +23,13 @@ ht-degree: 0%
 >
 >Exige [permissões de administrador](../../administrator/user-management/user-management.md) para criar e editar gráficos SQL. `Standard` usuários podem reorganizar esses gráficos em painéis, e `Read-only` usuários têm a mesma experiência que têm com gráficos tradicionais. Além disso, `Read-only` usuários não têm acesso ao texto da consulta.
 
-Veja o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=pt-BR) para saber mais.
+Veja o [vídeo de treinamento](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder) para saber mais.
 
 [!DNL SQL], ou Linguagem de Consulta Estruturada, é uma linguagem de programação usada para se comunicar com bancos de dados. No [!DNL Commerce Intelligence], o [!DNL SQL] é usado para consultar ou recuperar dados da sua Data Warehouse. Examine os relatórios em seu painel - nos bastidores, cada um é alimentado por uma consulta [!DNL SQL].
 
 Você pode usar o [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) para consultar diretamente sua Data Warehouse, visualizar os resultados e transformá-los em um gráfico. Você pode começar a criar um relatório com o [!DNL SQL Report Builder] clicando em **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Veja o [vídeo de treinamento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=pt-BR) para saber mais.
+Veja o [vídeo de treinamento](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder) para saber mais.
 
 O [!DNL SQL Report Builder] permite consultar diretamente a Data Warehouse, visualizar os resultados e transformá-los rapidamente em um gráfico. A melhor parte do uso do [!DNL SQL] para criar relatórios é que você não precisa esperar nos ciclos de atualização para iterar nas colunas que criar. Se os resultados não parecerem corretos, você poderá editar e executar novamente a query rapidamente até que tudo corresponda às suas expectativas.
 
@@ -149,7 +139,7 @@ As colunas calculadas criadas usando [!DNL SQL] não dependem dos ciclos de atua
 
 Na maioria das vezes, as diferenças nos resultados podem ser atribuídas aos ciclos de atualização. Se [!DNL Commerce Intelligence] estiver replicando dados do banco de dados para a Data Warehouse, você poderá ver resultados diferentes mesmo ao usar a mesma consulta.
 
-Problemas de conexão também podem resultar em discrepâncias. Navegue até a página `Connections` clicando em **[!DNL Manage Data** > **Connections]** para fazer o check-out - há um erro para a integração de banco de dados em questão? Em caso afirmativo, talvez seja necessário [reautenticar a integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR) para executar as tarefas novamente.
+Problemas de conexão também podem resultar em discrepâncias. Navegue até a página `Connections` clicando em **[!DNL Manage Data** > **Connections]** para fazer o check-out - há um erro para a integração de banco de dados em questão? Em caso afirmativo, talvez seja necessário [reautenticar a integração](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations) para executar as tarefas novamente.
 
 Se todas as suas integrações forem conectadas com êxito e você não estiver no meio de um ciclo de atualização, talvez haja algo errado.
 

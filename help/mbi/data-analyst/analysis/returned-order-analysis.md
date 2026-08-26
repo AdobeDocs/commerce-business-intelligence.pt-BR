@@ -5,24 +5,15 @@ exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 434
-ht-degree: 0%
+source-wordcount: 601
+ht-degree: 25%
 
 ---
 
@@ -32,7 +23,7 @@ Este tópico demonstra como configurar um painel que fornece uma análise detalh
 
 ![Painel de devoluções detalhado mostrando as taxas de devolução e os motivos](../../assets/detailed-returns-dboard.png)
 
-Antes de começar, você deve ser um cliente do [Adobe Commerce](https://business.adobe.com/br/products/magento/magento-commerce.html) e verificar se sua empresa está usando a tabela `enterprise\_rma` para devoluções.
+Antes de começar, você deve ser um cliente do [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) e verificar se sua empresa está usando a tabela `enterprise\_rma` para devoluções.
 
 Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -61,12 +52,12 @@ Conjuntos de filtros a serem criados
 * Tabela **`enterprise_rma`**
 * Nome do conjunto de filtros: `Returns we count`
 * Lógica do conjunto de filtros:
-   * Espaço reservado - insira sua lógica personalizada aqui
+  * Espaço reservado - insira sua lógica personalizada aqui
 
 * Tabela **`enterprise_rma_item_entity`**
 * Nome do conjunto de filtros: `Returns items we count`
 * Lógica do conjunto de filtros:
-   * Espaço reservado - insira sua lógica personalizada aqui
+  * Espaço reservado - insira sua lógica personalizada aqui
 
 ### Colunas calculadas
 
@@ -76,20 +67,20 @@ Colunas para criar
 * **`Order's created at`**
 * Selecione uma definição: `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Selecione um [!UICONTROL table]: `sales_flat_order`
 * Selecione um [!UICONTROL column]: `created_at`
-   * `enterprise_rma.order_id = sales_flat_order.entity_id`
+  * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's order number`**
 * Selecione uma definição: `Joined Column`
 * Selecione um [!UICONTROL table]: `sales_flat_order`
 * Selecione um [!UICONTROL column]: `Customer's order number`
-   * `enterprise_rma.order_id = sales_flat_order.entity_id`
+  * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Time between order's created_at and date_requested`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
 
@@ -97,14 +88,14 @@ Colunas para criar
 * **`return_date_requested`**
 * Selecione uma definição: `Joined Column`
 * [!UICONTROL Create Path]:
-   * &#x200B;
-     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
-     [!UICONTROL One]: `enterprise_rma.entity_id`
+  * 
+    [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+  * 
+    [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Selecione um [!UICONTROL table]: `enterprise_rma`
 * Selecione um [!UICONTROL column]: `date_requested`
-   * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
+  * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
 * **`Return item total value (qty_returned * price)`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
 
@@ -112,7 +103,7 @@ Colunas para criar
 * **`Order contains a return? (1=yes/0=No)`**
 * Selecione uma definição: `Exists`
 * Selecione um [!UICONTROL table]: `enterprise_rma`
-   * `enterprise_rma.order_id = sales_flat_order.entity_id`
+  * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's previous order number`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
 * **`Customer's previous order contains return? (1=yes/0=no)`** foi criado por um analista como parte do seu tíquete `[RETURNS ANALYSIS]`
@@ -161,25 +152,25 @@ Colunas para criar
 * Métrica `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Order contains a return? (1=yes/0=No) = 1`
-   * `Is in current month? = No`
+  * `Order contains a return? (1=yes/0=No) = 1`
+  * `Is in current month? = No`
 
 * Métrica `B`: `Non-last orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Is customer's last order? (1=yes/0=no) = 0`
-   * `Order contains a return? (1=yes/0=No) = 1`
+  * `Is customer's last order? (1=yes/0=no) = 0`
+  * `Order contains a return? (1=yes/0=No) = 1`
 
 * Fórmula: probabilidade de ordem repetida
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervalo]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Bar`
 
 * **Tempo médio para retornar (o tempo todo)**
@@ -187,9 +178,9 @@ Colunas para criar
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervalo]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Number`
 
 * **Porcentagem de pedidos com retorno**
@@ -199,15 +190,15 @@ Colunas para criar
 * Métrica `B`: `Orders w/ return`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Order contains a return? (1=yes/0=No) = 1`
+  * `Order contains a return? (1=yes/0=No) = 1`
 
 * Fórmula: % de ordens com devolução
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervalo]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
@@ -217,22 +208,22 @@ Colunas para criar
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Line`
 
 * **Clientes que fizeram uma devolução e não compraram novamente**
 * Métrica `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
-   * `Order contains a return? (1=yes/0=No) = 1`
-   * `Is customer's last order? (1=yes/0=no) = 1`
+  * `Order contains a return? (1=yes/0=No) = 1`
+  * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervalo]: `None`
-* &#x200B;
+* 
   [!UICONTROL Agrupar por]: `Customer_email`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Table`
 
 * **Taxa de devolução por item**
@@ -245,16 +236,16 @@ Colunas para criar
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervalo]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* &#x200B;
+* 
   [!UICONTROL Tipo de gráfico]: `Table`
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima.
 
-Se você tiver dúvidas ao criar esta análise ou quiser envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você tiver dúvidas ao criar esta análise ou quiser envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

@@ -5,24 +5,15 @@ exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/AM-l7yCwm00r5uqmqD-z34GN3rubycbTnWeTQ4oHI8k
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +54,9 @@ Considerando as métricas acima, veja um exemplo que envolve produtos para café
 
 | **Nome do produto** | **Probabilidade de ordem repetida** | **Número médio de ordens do tempo de vida** | **Receita vitalícia média** | **Tempo médio até a próxima ordem** |
 |-----|-----|-----|-----|-----|
-| Cervejeira de café de xícara única | 94,98% | 7,92 | $ 549,82 | 57,01 dias |
-| Cápsulas de café | 93,82% | 8,68 | $ 479,98 | 63,48 dias |
-| Grãos de café | 41,92% | 6,07 | $ 99,82 | 27,31 dias |
+| Cervejeira de café de xícara única | 94.98% | 7,92 | $549.82 | 57,01 dias |
+| Cápsulas de café | 93.82% | 8,68 | $479.98 | 63,48 dias |
+| Grãos de café | 41.92% | 6,07 | $99.82 | 27,31 dias |
 
 {style="table-layout:auto"}
 
@@ -97,4 +88,4 @@ Além de analisar o comportamento de recompra dos clientes, você também pode c
 
 Depois de identificar por que o abandono está acontecendo, você pode usar sua análise para criar uma campanha `reactivation`. Usando esses dados, você pode identificar os usuários que se tornaram inativos, quanto tempo passou desde a última visita, qual foi a última compra e assim por diante. Isso permite tomar decisões acionáveis que motivam seus clientes a voltar.
 
-Para obter ajuda com a análise, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Para obter ajuda com a análise, [contate o suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
