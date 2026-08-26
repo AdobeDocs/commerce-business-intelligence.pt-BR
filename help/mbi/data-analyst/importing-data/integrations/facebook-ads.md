@@ -74,7 +74,7 @@ Verifique se você está rastreando campanhas de [!DNL Facebook] em [!DNL Google
 
 ## Relacionados
 
-* [Reautenticação de integrações](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Conectar sua conta  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
 * [Rastrear origem da referência de ordem via [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Rastrear a fonte de referência do usuário no banco de dados](../../analysis/google-track-user-acq.md)

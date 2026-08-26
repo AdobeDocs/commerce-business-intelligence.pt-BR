@@ -63,4 +63,4 @@ Depois de clicar em **[!UICONTROL Connect with Stripe]**, uma página de solicit
 A [[!DNL Stripe] Documentação da API](https://stripe.com/docs/api) pode ser um recurso útil para saber mais sobre como o [!DNL Stripe] é integrado ao [!DNL Commerce Intelligence].
 
 * [Dados  [!DNL Stripe]  esperados](../integrations/stripe-data.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

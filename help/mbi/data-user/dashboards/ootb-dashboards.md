@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >A disponibilidade de alguns painéis depende do seu conjunto de dados.
 
-Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para obter ajuda.
+Em caso de dúvidas ou se você estiver interessado em adicionar um pacote à sua conta, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para obter ajuda.
 
 ## Visão geral executiva
 

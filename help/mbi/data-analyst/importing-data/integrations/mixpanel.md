@@ -80,4 +80,4 @@ Se a conexão for bem-sucedida, um _Sucesso!_ é exibida na parte superior da p�
 ### Relacionados
 
 * [Dados  [!DNL Mixpanel]  esperados](../integrations/mixpanel-data.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

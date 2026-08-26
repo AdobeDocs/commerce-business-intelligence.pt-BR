@@ -89,4 +89,4 @@ Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instala�
 ## Relacionados {#related}
 
 * [Verificação da chave do host SSH](ssh-host-key-verification.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

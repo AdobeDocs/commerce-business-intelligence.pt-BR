@@ -71,4 +71,4 @@ Para concluir esse processo, é necessário abrir duas janelas ou guias do naveg
 ## Relacionados:
 
 * [Dados  [!DNL Zendesk]  esperados](../integrations/exp-zendesk-data.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

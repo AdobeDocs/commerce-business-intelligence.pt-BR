@@ -59,4 +59,4 @@ Além de reavaliar as frequências de reverificação, os métodos de replicaç�
 
 ## Encapsulamento
 
-Se o tempo de atualização ainda parecer lento mesmo após a implementação dessas recomendações, [contate a equipe de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Se o tempo de atualização ainda parecer lento mesmo após a implementação dessas recomendações, [contate a equipe de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

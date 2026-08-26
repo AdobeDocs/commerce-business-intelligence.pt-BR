@@ -51,4 +51,4 @@ Este tópico explora as principais tabelas de dados que você pode importar de [
 ## Relacionados:
 
 * [Conectando [!DNL Stripe]](../integrations/stripe.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

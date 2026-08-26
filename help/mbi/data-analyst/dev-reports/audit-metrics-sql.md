@@ -64,4 +64,4 @@ Você também pode gravar consultas personalizadas e exportar os resultados para
 
 >[!NOTE]
 >
->Se você encontrar uma discrepância depois de auditar seus dados, consulte o tópico de suporte [Contato com o suporte: discrepâncias de dados](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) para obter mais informações sobre o que fazer a seguir.
+>Se você encontrar uma discrepância depois de auditar seus dados, consulte o tópico de suporte [Contato com o suporte: discrepâncias de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) para obter mais informações sobre o que fazer a seguir.

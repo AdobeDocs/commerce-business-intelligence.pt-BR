@@ -55,7 +55,7 @@ Por outro lado, com a integração do [!DNL Google Analytics Live], cada gráfic
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] é uma Integração de `Premium`. [Contate o suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se tiver interesse em adicionar essa integração à sua assinatura.
+>[!DNL Google Analytics Warehoused] é uma Integração de `Premium`. [Contate o suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se tiver interesse em adicionar essa integração à sua assinatura.
 
 1. Vá para a página `Connections` em **[!UICONTROL Admin** > **Integrations]**.
 1. Clique em **[!UICONTROL Add an Integration]**, localizado no lado direito.
@@ -83,7 +83,7 @@ Para identificar a ID de perfil do [!DNL Google Analytics] de um site específic
 
 ## Documentação relacionada
 
-* [Reautenticação de integrações](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Conectando [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Análise da atividade do site e das taxas de conversão do cliente](../../analysis/web-act-cust-conversion.md)
 * [Rastrear dados de aquisição de usuário usando  [!DNL Google Analytics] cookies](../../analysis/google-track-user-acq.md)

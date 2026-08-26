@@ -73,6 +73,6 @@ As seguintes informações são necessárias para se conectar:
 
 1. O conjunto de relatórios selecionado é exibido em uma tabela. Clique em **[!UICONTROL Save]** para confirmar a seleção.
 
-1. Informe à [!DNL Commerce Intelligence] [Equipe de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) que sua integração está autorizada e que eles executam o processo de conexão inicial para você.
+1. Informe à [!DNL Commerce Intelligence] [Equipe de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) que sua integração está autorizada e que eles executam o processo de conexão inicial para você.
 
 Depois que o processo de conexão inicial for executado, sua tabela estará disponível na página do Data Warehouse, na guia `All Tables`. Selecione as colunas que deseja replicar e os dados aparecerão após a próxima atualização completa.
