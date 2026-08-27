@@ -1,6 +1,6 @@
 ---
 title: Conectar o Google Commerce
-description: Saiba mais sobre os seus canais de referência mais importantes.
+description: Conecte os dados de comércio eletrônico do Google à Commerce Intelligence para rastrear seus canais de referência mais valiosos e analisar a receita junto com suas outras fontes de dados.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 305
+source-wordcount: 341
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Para identificar a ID de perfil do [!DNL Google Analytics] de um site específic
 ## Relacionados:
 
 * [Dados  [!DNL Google ECommerce]  esperados](../integrations/google-ecommerce-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
-* [Configurando [!DNL Google ECommerce] rastreamento](https://support.google.com/analytics/answer/1009612?hl=en)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Configurando o rastreamento  [!DNL Google ECommerce] &#x200B;](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Descubra as fontes e os canais de aquisição mais valiosos](../../analysis/most-value-source-channel.md)
 * [Aumente o ROI em suas campanhas publicitárias](../../analysis/roi-ad-camp.md)

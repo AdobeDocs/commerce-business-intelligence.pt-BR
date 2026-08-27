@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -107,4 +107,4 @@ A [!DNL Adobe] recomenda criar uma tabela `consolidated ad spend` para combinar 
 
 Se você não tiver uma tabela consolidada e criar um painel bonito na tabela `adwords`, precisará replicar os relatórios ou criar métricas duplicadas para comparar esses dados aos seus dados do [!DNL Facebook Ads]. Usar uma tabela consolidada permite incorporar facilmente os dados do [!DNL Facebook Ads] aos seus relatórios existentes do [!DNL Adwords]. Também é possível segmentar por plataforma de anúncios.
 
-Se você já tiver sincronizado os campos acima, [contate-nos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para consolidar seu investimento em anúncios.
+Se você já tiver sincronizado os campos acima, [contate-nos](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para consolidar seu investimento em anúncios.

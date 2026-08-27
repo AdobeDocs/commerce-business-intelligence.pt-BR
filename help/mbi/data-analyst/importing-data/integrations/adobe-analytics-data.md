@@ -1,6 +1,6 @@
 ---
 title: Dados  [!DNL Adobe Analytics]  esperados
-description: Saiba mais sobre as etapas para conectar sua instância do RDS.
+description: Revise os campos de dados que o Commerce Intelligence importa do Adobe Analytics usando a API de relatórios do Analytics 2.0 para que você saiba o que esperar em seus relatórios.
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -21,10 +21,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 400
-ht-degree: 0%
+source-wordcount: 443
+ht-degree: 1%
 
 ---
 
@@ -65,6 +65,6 @@ Esta seção descreve as limitações da integração do [!DNL Adobe Analytics] 
 | Limitação | Descrição |
 | --- | --- |
 | `Historical data period` | Assim como em outras integrações de terceiros, a integração do [!DNL Adobe Analytics] extrai uma quantidade limitada de dados históricos e continua a manter os dados atualizados. O período histórico é configurado para 2 semanas. |
-| `Empty component combinations` | Algumas combinações de métricas e dimensões não contêm dados. Se essa combinação for selecionada para replicação, [!DNL Commerce Intelligence] excluirá a coluna da tabela replicada. Para evitar a seleção dessa combinação, primeiro crie um relatório no [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR) para verificar se recebeu os dados esperados. |
+| `Empty component combinations` | Algumas combinações de métricas e dimensões não contêm dados. Se essa combinação for selecionada para replicação, [!DNL Commerce Intelligence] excluirá a coluna da tabela replicada. Para evitar a seleção dessa combinação, primeiro crie um relatório no [[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/home) para verificar se recebeu os dados esperados. |
 | `Re-authorization cadence` | A reautorização da integração do [!DNL Adobe Analytics] é necessária a cada duas semanas. Para reautorizar, vá para a página Editar da integração e clique em **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
 | `One dimension per row` | [!DNL Adobe Analytics] fornece dados de métrica para uma dimensão de cada vez. Se você selecionar várias dimensões durante a configuração, cada linha na tabela [!DNL Commerce Intelligence] conterá um único valor de dimensão e valores nulos para cada outra dimensão. |

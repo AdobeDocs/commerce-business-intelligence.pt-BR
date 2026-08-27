@@ -17,9 +17,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
-source-git-commit: b51e9fceba0c62f4ef3dde340d26cd78641ef3a2
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1130
+source-wordcount: 1131
 ht-degree: 0%
 
 ---
@@ -124,4 +124,4 @@ Inclua o nome da conexão, o horário aproximado da última **[!UICONTROL Save &
 * [Conectar MySQL via túnel SSH](mysql-via-ssh-tunnel.md)
 * [Conectar MongoDB via túnel SSH](mongodb-via-ssh-tunnel.md)
 * [Conectar o PostgreSQL pelo túnel SSH](postgresql.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

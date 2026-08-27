@@ -1,6 +1,6 @@
 ---
 title: Conectando [!DNL MySQL] via túnel SSH
-description: Saiba como se conectar [!DNL MySQL] via túnel SSH.
+description: Conecte com segurança seu banco de dados MySQL ao Commerce Intelligence usando um túnel SSH. Recupere a chave pública, inclua na lista de permissões o endereço IP e configure os usuários.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: 660
 ht-degree: 0%
 
 ---
@@ -140,4 +140,4 @@ Quando terminar, clique em **[!UICONTROL Save & Test]** para concluir a instala�
 ## Relacionados {#related}
 
 * [Verificação da chave do host SSH](ssh-host-key-verification.md)
-* [Reautenticação de integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

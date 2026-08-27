@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Ao especificar um filtro de datas para um painel, esse filtro é aplicado soment
 
 ## Armazenar filtros
 
-Para analisar o desempenho de um armazenamento específico, clique no ícone de armazenamentos no canto superior direito (![Filtro de Armazenamento](../../assets/store-filter.png)). Por padrão, `Store Filter` está definido como `All Stores`, que exibe os dados de todas as [exibições de loja](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=pt-BR) disponíveis no site do Commerce.
+Para analisar o desempenho de um armazenamento específico, clique no ícone de armazenamentos no canto superior direito (![Filtro de Armazenamento](../../assets/store-filter.png)). Por padrão, `Store Filter` está definido como `All Stores`, que exibe os dados de todas as [exibições de loja](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-views) disponíveis no site do Commerce.
 
 >[!NOTE]
 >
->Um filtro de repositório está habilitado ou desabilitado para uma conta [!DNL Commerce Intelligence] inteira. Se um painel contiver relatórios que não são afetados pelo filtro (como relatórios que não são criados em nenhum dado [!DNL Adobe Commerce]), esses relatórios não serão atualizados quando o filtro de armazenamento for aplicado. Você pode [contatar o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) se achar que um relatório deve ser atualizado com base na seleção de armazenamento ou se achar que o filtro de armazenamento da sua conta foi desabilitado por engano.
+>Um filtro de repositório está habilitado ou desabilitado para uma conta [!DNL Commerce Intelligence] inteira. Se um painel contiver relatórios que não são afetados pelo filtro (como relatórios que não são criados em nenhum dado [!DNL Adobe Commerce]), esses relatórios não serão atualizados quando o filtro de armazenamento for aplicado. Você pode [contatar o suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se achar que um relatório deve ser atualizado com base na seleção de armazenamento ou se achar que o filtro de armazenamento da sua conta foi desabilitado por engano.
 
 Quando você seleciona um armazenamento no `Store Filter`, o filtro retém sua seleção ao navegar entre painéis. Manter a seleção permite ver os dados do armazenamento selecionado em todos os lugares até que você selecione `All Stores`.
 

@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1253
+source-wordcount: 1265
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ O [!DNL Adobe Commerce Intelligence] permite que você [combine facilmente dados
 ## Pré-requisitos
 
 * Importe os dados de custo de publicidade:
-   * [Conectar  [!DNL Google AdWords] ao [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): sincroniza seus gastos com [!DNL Adwords] no [!DNL Commerce Intelligence]
-   * [Carregar outros dados de custo de publicidade](../importing-data/connecting-data/import-offline-ad-data.md): isso é recomendado para canais sem um conector direto para [!DNL Commerce Intelligence]
-   * Se você importar dados de custo de várias fontes, poderá [consolidar](../../best-practices/consolidating-your-tables.md) os dados em [!DNL Commerce Intelligence]. Basta [enviar um tíquete de suporte](../../guide-overview.md#Submitting-a-Support-Ticket).
+  * [Conectar  [!DNL Google AdWords] ao [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): sincroniza seus gastos com [!DNL Adwords] no [!DNL Commerce Intelligence]
+  * [Carregar outros dados de custo de publicidade](../importing-data/connecting-data/import-offline-ad-data.md): isso é recomendado para canais sem um conector direto para [!DNL Commerce Intelligence]
+  * Se você importar dados de custo de várias fontes, poderá [consolidar](../../best-practices/consolidating-your-tables.md) os dados em [!DNL Commerce Intelligence]. Basta [enviar um tíquete de suporte](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Rastrear dados do canal de aquisição de usuários](../analysis/google-track-user-acq.md)
 
 ## Campanhas de aquisição de usuário
@@ -115,7 +115,7 @@ Você está veiculando anúncios específicos de produtos? Em caso afirmativo, v
 >
 >Este exemplo pressupõe que todos os custos de campanha foram usados exclusivamente para gerar compras de produtos específicos. Ao presumir que todo o custo foi gasto na geração de compras, o ROI resultante leva em conta o pior cenário (custo mais alto por compra). Você pode ter certeza de que seu ROI real é superior a esse cálculo. Exemplo: supondo que você gastou US$ 20 em uma campanha que gerou 10 novos usuários e 10 compras, seu custo real por compra é de US$ 1. Sob a suposição de que todo o custo foi para adquirir novos usuários, o custo por compra é de $2.
 
-Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
+Antes de começar, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para unir as seguintes dimensões à tabela de itens de linha (`sales\_flat\_order\_item, order\_item`):
 
 * Origem do pedido (se você rastrear apenas a origem de referência no nível do usuário, então ingressar na origem do usuário)
 * Campanha do pedido (se você só rastrear a fonte de referência no nível do usuário e, em seguida, ingressar na campanha do usuário)

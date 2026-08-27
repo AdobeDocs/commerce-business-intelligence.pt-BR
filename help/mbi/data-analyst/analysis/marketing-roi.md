@@ -20,10 +20,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 529
-ht-degree: 0%
+source-wordcount: 691
+ht-degree: 21%
 
 ---
 
@@ -55,77 +55,77 @@ Colunas para criar
 **Arquiteturas originais e novas:**
 
 * Tabela **`sales_flat_order`**
-   * **`Order's GA campaign`**
-      * Selecione uma definição: `Joined Column`
-      * [!UICONTROL Create Path]:
-      * &#x200B;
-        [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * &#x200B;
-        [!UICONTROL One]: `ecommerce####.transaction_id`
+  * **`Order's GA campaign`**
+    * Selecione uma definição: `Joined Column`
+    * [!UICONTROL Create Path]:
+    * &#x200B;
+      [!UICONTROL Many]&#x200B;: `sales_flat_order.increment_id`
+    * &#x200B;
+      [!UICONTROL One]&#x200B;: `ecommerce####.transaction_id`
 
-      * Selecione um [!UICONTROL table]: `ecommerce####`
-      * Selecione um [!UICONTROL column]: `campaign`
-      * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+    * Selecione um [!UICONTROL table]: `ecommerce####`
+    * Selecione um [!UICONTROL column]: `campaign`
+    * [!UICONTROL Path]&#x200B;: `sales_flat_order.increment_id = ecommerce#####.transactionID`
 
-   * **`Order's GA medium`**
-      * Selecione uma definição: Coluna Associada
-      * Selecione um [!UICONTROL table]: `ecommerce####`
-      * Selecione um [!UICONTROL column]: `medium`
-      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce####.transactionId
+  * **`Order's GA medium`**
+    * Selecione uma definição: Coluna Associada
+    * Selecione um [!UICONTROL table]: `ecommerce####`
+    * Selecione um [!UICONTROL column]: `medium`
+    * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce####.transactionId
 
-   * **`Order's GA source`**
-      * Selecione uma definição: Coluna Associada
-      * Selecione um [!UICONTROL table]: `ecommerce####`
-      * Selecione um [!UICONTROL column]: `source`
-      * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce####.transactionId
-^
+  * **`Order's GA source`**
+    * Selecione uma definição: Coluna Associada
+    * Selecione um [!UICONTROL table]: `ecommerce####`
+    * Selecione um [!UICONTROL column]: `source`
+    * [!UICONTROL Path]: sales_flat_order.increment_id = ecommerce####.transactionId
+      ^
 
 * Tabela **`customer_entity`**
 * **`Customer's first order GA campaign`**
-   * Selecione uma definição: `Max`
-   * Selecione um [!UICONTROL table]: `sales_flat_order`
-   * Selecione um [!UICONTROL column]: `Order's GA campaign`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter]:
-      * `Orders we count`
-      * `Customer's order number = 1`
+  * Selecione uma definição: `Max`
+  * Selecione um [!UICONTROL table]: `sales_flat_order`
+  * Selecione um [!UICONTROL column]: `Order's GA campaign`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Filter]:
+    * `Orders we count`
+    * `Customer's order number = 1`
 
 * **`Customer's first order GA source`**
-   * Selecione uma definição: `Max`
-   * Selecione um [!UICONTROL table]: `sales_flat_order`
-   * Selecione um [!UICONTROL column]: `Order's GA source`
-   * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
-   * [!UICONTROL Filter]:
-      * `Orders we count`
-      * `Customer's order number = 1`
+  * Selecione uma definição: `Max`
+  * Selecione um [!UICONTROL table]: `sales_flat_order`
+  * Selecione um [!UICONTROL column]: `Order's GA source`
+  * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
+  * [!UICONTROL Filter]:
+    * `Orders we count`
+    * `Customer's order number = 1`
 
 * **`Customer's first order GA medium`**
-   * Selecione uma definição: `Max`
-   * Selecione um [!UICONTROL table]: `sales_flat_order`
-   * Selecione um [!UICONTROL column]: `Order's GA medium`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter]:
-      * `Orders we count`
-      * `Customer's order number = 1`
+  * Selecione uma definição: `Max`
+  * Selecione um [!UICONTROL table]: `sales_flat_order`
+  * Selecione um [!UICONTROL column]: `Order's GA medium`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Filter]:
+    * `Orders we count`
+    * `Customer's order number = 1`
 
 * Tabela **`sales_flat_order`**
 * **`Customer's first order GA campaign`**
-   * Selecione uma definição: `Joined Column`
-   * Selecione um [!UICONTROL table]: `customer_entity`
-   * Selecione um [!UICONTROL column]: `Customer's first order GA campaign`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * Selecione uma definição: `Joined Column`
+  * Selecione um [!UICONTROL table]: `customer_entity`
+  * Selecione um [!UICONTROL column]: `Customer's first order GA campaign`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
-   * Selecione uma definição: Coluna Associada
-   * Selecione um [!UICONTROL table]: `customer_entity`
-   * Selecione um [!UICONTROL column]: `Customer's first order GA source`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * Selecione uma definição: Coluna Associada
+  * Selecione um [!UICONTROL table]: `customer_entity`
+  * Selecione um [!UICONTROL column]: `Customer's first order GA source`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA medium`**
-   * Selecione uma definição: `Joined Column`
-   * Selecione um [!UICONTROL table]: `customer_entity`
-   * Selecione um [!UICONTROL column]: `Customer's first order GA medium`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * Selecione uma definição: `Joined Column`
+  * Selecione um [!UICONTROL table]: `customer_entity`
+  * Selecione um [!UICONTROL column]: `Customer's first order GA medium`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 ## Métricas
 
@@ -154,149 +154,149 @@ Colunas para criar
 ## Relatórios
 
 * **Anúncio gasto (o tempo todo)**
-   * [!UICONTROL Metric]: Gasto com anúncio
+  * [!UICONTROL Metric]: Gasto com anúncio
 
 * Métrica `A`: Gasto com anúncio
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Intervalo]: `None`
+  [!UICONTROL Intervalo]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **Adicionar aquisições de clientes (todas as vezes)**
-   * [!UICONTROL Metric]: `New customers`
-   * [!UICONTROL Filters]:
-      * `User's first order's source LIKE %google%`
-      * `User's first order's source LIKE %facebook%`
-      * `User's first order's source LIKE %fb%`
-      * `User's first order's medium IN cpc, ppc`
-      * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
+  * [!UICONTROL Metric]&#x200B;: `New customers`
+  * [!UICONTROL Filters]:
+    * `User's first order's source LIKE %google%`
+    * `User's first order's source LIKE %facebook%`
+    * `User's first order's source LIKE %fb%`
+    * `User's first order's medium IN cpc, ppc`
+    * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
 * Métrica `A`: `Ad customer acquisitions`
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Intervalo]: `None`
+  [!UICONTROL Intervalo]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **ROI do anúncio**
-   * [!UICONTROL Metric]: Gasto com anúncio
+  * [!UICONTROL Metric]: Gasto com anúncio
 
-   * [!UICONTROL Metric]: `New customers`
-   * [!UICONTROL Filters]:
-      * `User's first order's source LIKE %google%`
-      * `User's first order's source LIKE %facebook%`
-      * `User's first order's source LIKE %fb%`
-      * `User's first order's medium IN cpc, ppc`
-      * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
+  * [!UICONTROL Metric]&#x200B;: `New customers`
+  * [!UICONTROL Filters]:
+    * `User's first order's source LIKE %google%`
+    * `User's first order's source LIKE %facebook%`
+    * `User's first order's source LIKE %fb%`
+    * `User's first order's medium IN cpc, ppc`
+    * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
-   * [!UICONTROL Metric]: Receita média vitalícia
-   * [!UICONTROL Filters]:
-      * `User's first order's source LIKE %google%`
-      * `User's first order's source LIKE %facebook%`
-      * `User's first order's source LIKE %fb%`
-      * `User's first order's medium IN cpc, ppc`
-      * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
+  * [!UICONTROL Metric]: Receita média vitalícia
+  * [!UICONTROL Filters]:
+    * `User's first order's source LIKE %google%`
+    * `User's first order's source LIKE %facebook%`
+    * `User's first order's source LIKE %fb%`
+    * `User's first order's medium IN cpc, ppc`
+    * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
-   * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
-     [!UICONTROL Format]: `Percentage`
+  * [!UICONTROL Formula]&#x200B;: `((C - (A / B)) / (A / B))`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Percentage`
 
 * Métrica `A`: `Ad Spend (hide)`
 * Métrica `B`: `Ad customer acquisitions (hide)`
 * Métrica `C`: `Average LTV (hide)`
-* [!UICONTROL Formula]: `Ads ROI`
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Formula]&#x200B;: `Ads ROI`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Intervalo]: `None`
+  [!UICONTROL Intervalo]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **Pedidos por meio do GA**
-   * &#x200B;
-     [!UICONTROL Métrica]: `Orders`
+  * &#x200B;
+    [!UICONTROL Métrica]&#x200B;: `Orders`
 
 * Métrica `A`: `Orders`
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By Month`
-* [!UICONTROL Group by]: `Order's medium`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Interval]&#x200B;: `By Month`
+* [!UICONTROL Group by]&#x200B;: `Order's medium`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Area`
+  [!UICONTROL Chart Type]&#x200B;: `Area`
 
 * **ROI do anúncio por campanha**
-   * [!UICONTROL Metric]: `Ad Spend`
+  * [!UICONTROL Metric]&#x200B;: `Ad Spend`
 
-   * [!UICONTROL Metric]:`New customers`
-   * [!UICONTROL Filters]:
-      * `User's first order's source LIKE %google%`
-      * `User's first order's source LIKE %facebook%`
-      * `User's first order's source LIKE %fb%`
-      * `User's first order's medium IN cpc, ppc`
-      * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
+  * [!UICONTROL Metric]&#x200B;:`New customers`
+  * [!UICONTROL Filters]:
+    * `User's first order's source LIKE %google%`
+    * `User's first order's source LIKE %facebook%`
+    * `User's first order's source LIKE %fb%`
+    * `User's first order's medium IN cpc, ppc`
+    * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
-   * [!UICONTROL Metric]: Receita média vitalícia
-   * [!UICONTROL Filters]:
-      * `User's first order's source LIKE %google%`
-      * `User's first order's source LIKE %facebook%`
-      * `User's first order's source LIKE %fb%`
-      * `User's first order's medium IN cpc, ppc`
-      * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
+  * [!UICONTROL Metric]: Receita média vitalícia
+  * [!UICONTROL Filters]:
+    * `User's first order's source LIKE %google%`
+    * `User's first order's source LIKE %facebook%`
+    * `User's first order's source LIKE %fb%`
+    * `User's first order's medium IN cpc, ppc`
+    * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
-   * [!UICONTROL Metric]: Número médio de ordens vitalícias
-   * [!UICONTROL Filters]:
-      * `User's first order's source LIKE %google%`
-      * `User's first order's source LIKE %facebook%`
-      * `User's first order's source LIKE %fb%`
-      * `User's first order's medium IN cpc, ppc`
-      * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
+  * [!UICONTROL Metric]: Número médio de ordens vitalícias
+  * [!UICONTROL Filters]:
+    * `User's first order's source LIKE %google%`
+    * `User's first order's source LIKE %facebook%`
+    * `User's first order's source LIKE %fb%`
+    * `User's first order's medium IN cpc, ppc`
+    * Lógica de filtro: ([`A`] OU [`B`] OU [`C`]) E [`D`]
 
-   * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
-     [!UICONTROL Format]: `Currency`
+  * [!UICONTROL Formula]&#x200B;: `(A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Currency`
 
-   * [!UICONTROL Formula]: `(C - (A / B))`
-   * &#x200B;
-     [!UICONTROL Format]: `Currency`
+  * [!UICONTROL Formula]&#x200B;: `(C - (A / B))`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Currency`
 
-   * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
-     [!UICONTROL Format]: `Percentage`
+  * [!UICONTROL Formula]&#x200B;: `((C - (A / B)) / (A / B))`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Percentage`
 
-   * [!UICONTROL Metric]: `Ad Clicks`
+  * [!UICONTROL Metric]&#x200B;: `Ad Clicks`
 
-   * [!UICONTROL Metric]: `Ad Impressions`
+  * [!UICONTROL Metric]&#x200B;: `Ad Impressions`
 
-   * [!UICONTROL Formula]: `(H / I)`
-   * &#x200B;
-     [!UICONTROL Format]: `Percentage`
+  * [!UICONTROL Formula]&#x200B;: `(H / I)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Percentage`
 
-   * [!UICONTROL Formula]: `(A / H)`
-   * &#x200B;
-     [!UICONTROL Format]: `Currency`
+  * [!UICONTROL Formula]&#x200B;: `(A / H)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Currency`
 
 * Métrica `A`: `Ad Spend` (ocultar)
 * Métrica `B`: `Ad customer acquisitions`
 * Métrica `C`: `Average LTV`
 * Métrica `D`: `Average lifetime # of orders`
 * &#x200B;
-  [!UICONTROL Fórmula]: `CAC`
-* [!UICONTROL Formula]: `Avg return`
-* [!UICONTROL Formula]: `Ads ROI`
+  [!UICONTROL Fórmula]&#x200B;: `CAC`
+* [!UICONTROL Formula]&#x200B;: `Avg return`
+* [!UICONTROL Formula]&#x200B;: `Ads ROI`
 * Métrica `H`: `adClicks`
 * Métrica `I`: `Impressions`
 * &#x200B;
-  [!UICONTROL Fórmula]: `CTR`
+  [!UICONTROL Fórmula]&#x200B;: `CTR`
 * &#x200B;
-  [!UICONTROL Fórmula]: `CPC`
-* [!UICONTROL Time period]: `All time`
+  [!UICONTROL Fórmula]&#x200B;: `CPC`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Intervalo]: `None`
+  [!UICONTROL Intervalo]&#x200B;: `None`
 * &#x200B;
   [!UICONTROL Agrupar por]: `campaign` (Usar a campanha &quot;Primeiro pedido do cliente&quot; para métricas de tabela de gastos sem anúncios)
 * &#x200B;
-  [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]&#x200B;: `Table`
 
-Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Se você tiver dúvidas ao criar esta análise, ou se quiser simplesmente envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ### Relacionados
 

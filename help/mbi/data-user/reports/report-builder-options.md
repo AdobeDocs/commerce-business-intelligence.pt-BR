@@ -1,6 +1,6 @@
 ---
 title: Escolha um Report Builder
-description: Saiba como escolher o Report Builder.
+description: Compare os construtores de relatórios disponíveis no Commerce Intelligence e saiba qual deles se adapta às suas necessidades de relatórios, desde os construtores visuais até as opções baseadas em SQL.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 644
+source-wordcount: 724
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ O [!DNL SQL Report Builder] dá suporte a funções como [`LISTAGG`](https://doc
 * [`MONTHS_BETWEEN`](https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html)
 * [`REPLACE`](https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html)
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
-* Operador [`concatenation`](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
+* [Operador `concatenation`](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
 ### Se quiser fazer alguns testes...
 

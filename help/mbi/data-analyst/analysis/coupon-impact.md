@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1382
-ht-degree: 1%
+source-wordcount: 1422
+ht-degree: 2%
 
 ---
 
@@ -63,8 +63,8 @@ Analise alguns dados de exemplo para métricas de aquisição de cupom versus aq
 
 | **Aquisição de clientes** | **Número de novos clientes** | **Receita média vitalícia** | **Número de pedidos repetidos** | **Número de pedidos repetidos c/ cupom** | **% de pedidos repetidos c/ cupom** |
 |-----|-----|-----|-----|-----|-----|
-| Cupom | 1.206 | $ 356,91 | 2.570 | 1.248 | 48,56% |
-| Sem cupom | 11.561 | $ 498,30 | 20.145 | 3.251 | 16,14% |
+| Cupom | 1.206 | $356.91 | 2.570 | 1.248 | 48.56% |
+| Sem cupom | 11.561 | $498.30 | 20.145 | 3.251 | 16.14% |
 
 {style="table-layout:auto"}
 
@@ -126,9 +126,9 @@ Agora, veja um exemplo envolvendo três cupons diferentes usados para o pedido d
 
 | **Cupom** | **Pedidos pela primeira vez (FTO)** | **Receita bruta de FTO** | **Descontos aplicados a FTO** | **Receita líquida de FTO** | **Valor médio de pedido para FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **Desconto de 25% em $100 ou mais** | 56 | $ 8.531,04 | $ 2.132,76 | $ 6.398,28 | $ 152,34 |
-| **$10 de desconto** | 87 | $ 3.707,07 | $ 426,10 | $ 3.280,97 | $ 42,61 |
-| **20% de desconto** | 145 | $ 10.975,05 | $ 2.195,01 | $ 8.780,04 | $ 75,69 |
+| **Desconto de 25% em $100 ou mais** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **$10 de desconto** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20% de desconto** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style="table-layout:auto"}
 
@@ -154,9 +154,9 @@ Agora que você analisou os próprios pedidos, analise os clientes que usam cupo
 
 | **Cupom de primeira ordem do cliente** | **Número de clientes** | **Número médio de ordens do ciclo de vida** | **Receita média vitalícia** |
 |-----|-----|-----|-----|
-| **Desconto de 25% em $100 ou mais** | 56 | 2,8 | $ 554,54 |
-| **$10 de desconto** | 87 | 1,9 | $ 115,50 |
-| **20% de desconto** | 145 | 1,3 | $ 103,75 |
+| **Desconto de 25% em $100 ou mais** | 56 | 2,8 | $554.54 |
+| **$10 de desconto** | 87 | 1,9 | $115.50 |
+| **20% de desconto** | 145 | 1,3 | $103.75 |
 
 {style="table-layout:auto"}
 
@@ -166,4 +166,4 @@ O maior número de clientes foi adquirido por meio do cupom com &quot;20% de des
 
 ## Encapsulamento {#wrapup}
 
-Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda sobre esses tipos de perguntas, [contate o suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Há uma variedade de análises que você pode criar para entender melhor como seus clientes usam cupons. Já pensou em analisar como seus clientes usam seus cupons ou o tempo que leva para que os cupons sejam usados? E quanto a encontrar a quantia ideal de desconto - que quantia incentiva compradores recorrentes, maior valor médio de pedido e maior receita vitalícia? Para obter ajuda sobre esses tipos de perguntas, [contate o suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

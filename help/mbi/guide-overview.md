@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ Além dos fluxos de trabalho com base em funções acima, este guia também cont
 
 ## Como obter ajuda
 
-Entre em contato com a [equipe de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR) se tiver dúvidas e quiser aproveitar alguns dos seus Serviços Profissionais ou se tiver problemas com sua conta.
+Entre em contato com a [equipe de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se tiver dúvidas e quiser aproveitar alguns dos seus Serviços Profissionais ou se tiver problemas com sua conta.
 
 ### Políticas de serviço
 
-Consulte uma [lista de quais serviços a equipe de suporte ao cliente fornece](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+Consulte uma [lista de quais serviços a equipe de suporte ao cliente fornece](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ### Envio de um tíquete de suporte
 
-Precisa de ajuda para criar uma coluna calculada avançada? Problema de defeito ou de conexão? Se precisar entrar em contato com a equipe de suporte, a Adobe solicita que você use as [diretrizes de tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR). Essas diretrizes descrevem as informações de que a Adobe precisa para resolver o problema.
+Precisa de ajuda para criar uma coluna calculada avançada? Problema de defeito ou de conexão? Se precisar entrar em contato com a equipe de suporte, a Adobe solicita que você use as [diretrizes de tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies). Essas diretrizes descrevem as informações de que a Adobe precisa para resolver o problema.
 
 ## Documentação disponível
 

@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Para adicionar uma integração, clique em **[!UICONTROL Manage Data** > **Conne
 * [Consolidação de tabelas](../../../best-practices/consolidating-your-tables.md)
 * [Restrição do acesso ao banco de dados](../../../administrator/account-management/restrict-db-access.md)
 
-**Não está vendo uma integração desejada?** Algumas integrações devem ser ativadas para que fiquem visíveis em sua conta. Se você estiver procurando algo como [!DNL Facebook], mas ele não está listado, [envie um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=pt-BR).
+**Não está vendo uma integração desejada?** Algumas integrações devem ser ativadas para que fiquem visíveis em sua conta. Se você estiver procurando algo como [!DNL Facebook], mas ele não está listado, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 **Se você vir um status de erro para uma integração**, confira a [seção Solução de problemas](https://support.magento.com/hc/en-us/sections/360003078151) para obter ajuda.
 
 ## Monitorar integridade da atualização (opcional)
 
-Depois de conectar origens, talvez você queira automatizar uma verificação básica de integridade para confirmar se as atualizações completas estão sendo concluídas. Use a [API de Status do Ciclo de Atualização](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) na documentação do desenvolvedor para buscar o ciclo de atualização concluído mais recente para o cliente e exibi-lo em painéis ou alertas internos.
+Depois de conectar origens, talvez você queira automatizar uma verificação básica de integridade para confirmar se as atualizações completas estão sendo concluídas. Use a [API de Status do Ciclo de Atualização](https://developer.adobe.com/commerce/services/reporting/update-cycle/) na documentação do desenvolvedor para buscar o ciclo de atualização concluído mais recente para o cliente e exibi-lo em painéis ou alertas internos.
 

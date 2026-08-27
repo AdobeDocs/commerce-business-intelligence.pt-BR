@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1370
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Use campanhas publicitárias como exemplo. Se você estiver executando campanhas
 ## Restrições e requisitos {#require}
 
 1. **O único formato suportado para os carregamentos de arquivos é `CSV` ou`comma separated values`**. Se estiver trabalhando no Excel, você pode usar a função Salvar como para salvar o arquivo no formato `.csv`.
-1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema. Se você encontrar este erro ao carregar um arquivo, [consulte este artigo de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=pt-BR).
+1. **`CSV`arquivos devem usar`UTF-8 encoding`**. Na maioria das vezes, isso não é um problema.
 1. **Os arquivos não podem ter mais de 100 MB**. Se o arquivo for maior que isso, separe a tabela em partes e salve-as como arquivos individuais. Você pode anexar os dados depois que o arquivo inicial for carregado.
 1. **Todas as tabelas devem ter um`primary key`**. Deve haver pelo menos uma coluna na tabela que possa ser usada como `primary key` ou um identificador exclusivo para cada linha na tabela. Qualquer coluna designada como `primary key` pode *never* ser nula. Um `primary key` pode ser tão simples quanto adicionar uma coluna que forneça um número para cada linha, ou pode ser duas colunas concatenadas para criar uma coluna de valores únicos (por exemplo, `campaign name` e `date`).
 
@@ -120,7 +120,7 @@ Agora que sua planilha está formatada corretamente e é compatível com o [!DNL
 
 1. Clique em **[!UICONTROL Save Table]**.
 
-*Sucesso!A mensagem* aparece na parte superior da tela depois que a tabela é salva.
+Um *Sucesso!* é exibida na parte superior da tela depois que a tabela é salva.
 
 Se você precisar de um visual, observe todo o processo:
 
@@ -152,7 +152,7 @@ Tem novos dados para adicionar a um arquivo que você já carregou? Sem problema
 
 1. Clique em **[!UICONTROL Open]** para iniciar o carregamento.
 
-   Após a conclusão do carregamento, [!DNL Commerce Intelligence] validará a estrutura de dados no arquivo. *Sucesso!A mensagem* aparece na parte superior da tela depois que a tabela é salva.
+   Após a conclusão do carregamento, [!DNL Commerce Intelligence] validará a estrutura de dados no arquivo. Um *Sucesso!* é exibida na parte superior da tela depois que a tabela é salva.
 
 ## Disponibilidade de dados {#availability}
 
@@ -172,4 +172,4 @@ Além disso, o carregamento de arquivo não é a única maneira de obter seus da
 
 ## Recurso de terceiros
 
-* [[!DNL Google Docs] Guia de Formatação de Dados](https://support.google.com/docs/answer/56470?hl=en)
+* [Guia de Formatação de Dados do [!DNL Google Docs]](https://support.google.com/docs/answer/56470?hl=en)

@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 151
+source-wordcount: 163
 ht-degree: 0%
 
 ---
@@ -56,11 +56,11 @@ Depois de clicar em **[!UICONTROL Connect with Stripe]**, uma página de solicit
 
 1. Suas credenciais serão validadas e você será direcionado de volta a [!DNL Commerce Intelligence].
 
-1. Se a conexão for bem-sucedida, uma *Conexão bem-sucedida!* mensagem aparece na parte superior da tela.
+1. Se a conexão for bem-sucedida, uma *Conexão Bem-sucedida!* será exibida na parte superior da tela.
 
 ## Relacionados:
 
 A [[!DNL Stripe] Documentação da API](https://stripe.com/docs/api) pode ser um recurso útil para saber mais sobre como o [!DNL Stripe] é integrado ao [!DNL Commerce Intelligence].
 
 * [Dados  [!DNL Stripe]  esperados](../integrations/stripe-data.md)
-* [Reautenticando integrações](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=pt-BR)
+* [Reautenticação de integrações](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
