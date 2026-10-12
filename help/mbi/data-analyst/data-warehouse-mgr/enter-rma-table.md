@@ -76,7 +76,7 @@ Cada linha na tabela `enterprise_rma` (geralmente chamada de `magento_rma` no Ad
 |---|---|---|
 | `Number of returns` | O número de devoluções solicitadas. | `Operation` coluna: `entity_id`<br>`Operation`: `Count`<br>`Timestamp` Coluna: `date requested` |
 | `Total returned amount` | O valor monetário total retornado. | `Operation `Coluna: `Return's total value`<br>`Operation`: Soma<br>`Timestamp` Coluna: data solicitada |
-| `Average returned amount` | O valor monetário médio retornado. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
+| `Average returned amount` | O valor monetário médio retornado. | `Operation`&#x200B;` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
 | `Average time to return` | O tempo médio desde a ordem até a devolução. | `Operation` Coluna: Segundos entre a criação do pedido na data de retorno solicitada<br>`Operation`: `Average`<br>`Timestamp` Coluna: `date requested` |
 
 {style="table-layout:auto"}

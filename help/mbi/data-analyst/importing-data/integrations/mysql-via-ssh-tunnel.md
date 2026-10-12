@@ -44,7 +44,7 @@ ht-degree: 0%
 # Conectar [!DNL MySQL] via [!DNL SSH Tunnel]
 
 * [Recuperar a  [!DNL Commerce Intelligence] chave pública](#retrieve)
-* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] ](#allowlist)
+* [Permitir acesso ao endereço IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 * [Criar um usuário do Linux para  [!DNL Commerce Intelligence]](#linux)
 * [Criar um  [!DNL MySQL] usuário para [!DNL Commerce Intelligence]](#mysql)
 * [Insira as informações de conexão e usuário em  [!DNL Commerce Intelligence]](#finish)

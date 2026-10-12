@@ -80,48 +80,48 @@ Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos 
 
 * **Receita restante para atingir o destino**
 * Métrica `A`: `Revenue`
-* 
-  [!UICONTROL Métrica]: `Revenue`
+* &#x200B;
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
 
 * Métrica `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [!UICONTROL Fórmula]: `(B-A)`
-* 
-  [!UICONTROL Format]: `Number`
+* [!UICONTROL Formula]&#x200B;: `Revenue left to achieve target`
+* &#x200B;
+  [!UICONTROL Fórmula]&#x200B;: `(B-A)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Number`
 
 * [!UICONTROL Time period]: (Qualquer período de tempo relevante que você desejar)
-* 
-  [!UICONTROL Interval]: `Month`
-* 
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* &#x200B;
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Destinos de receita**
 * Métrica `A`: `Revenue`
-* 
-  [!UICONTROL Métrica]: `Revenue`
+* &#x200B;
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
 
 * Métrica `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
 * Métrica `C`: `Revenue (amount change since previous year)` (ocultar)
-* 
-  [!UICONTROL Métrica]: `Revenue`
-* [!UICONTROL Perspective]: `Amount change vs. Previous year`
+* &#x200B;
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
+* [!UICONTROL Perspective]&#x200B;: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Este mês no ano passado)
-* 
-  [!UICONTROL Fórmula]: `(A-C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* &#x200B;
+  [!UICONTROL Fórmula]&#x200B;: `(A-C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 * Desligar `Multiple Y-Axes`
 * [!UICONTROL Time period]: (Qualquer período relevante que você desejar)*
-* 
-  [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]: `Line Chart`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* [!UICONTROL Chart Type]&#x200B;: `Line Chart`
 
 Depois de concluir os relatórios acima para metas de receita, você pode criar relatórios idênticos para metas sobre pedidos, contas registradas ou quaisquer outros valores incluídos no upload do arquivo de metas.
 

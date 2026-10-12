@@ -148,15 +148,15 @@ Insira suas informações de [!DNL Commerce Intelligence] na tela [!UICONTROL Co
 
 [!UICONTROL Integration Name]: [escolha um nome para a instância [!DNL Commerce Intelligence]]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL Nome de usuário]: `mbi`
+[!UICONTROL Nome de usuário]&#x200B;: `mbi`
 
 [!UICONTROL Password]: [senha de entrada exibida na seção anterior]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]: [deixe em branco se não houver prefixos de tabela]
 
@@ -166,7 +166,7 @@ Insira suas informações de [!DNL Commerce Intelligence] na tela [!UICONTROL Co
 
 **Entradas:**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]: [escolha o fuso horário para o qual deseja exibir seus dados]
 
@@ -182,13 +182,13 @@ A interface do projeto fornece uma cadeia de caracteres de acesso SSH. Esta cade
 
 **Entradas:**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [da etapa anterior]
 
 [!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [da etapa anterior]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## Salve sua integração.
 
