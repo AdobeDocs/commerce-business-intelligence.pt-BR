@@ -4,30 +4,43 @@ description: Saiba como configurar colunas de dados com valores alteráveis.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A
+TQID: 'https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: '571'
 ht-degree: 0%
-
 ---
-
 # Configurando Verificações de Dados
 
 Em uma tabela de banco de dados, pode haver colunas de dados com valores alteráveis. Por exemplo, em uma tabela `orders` pode haver uma coluna chamada `status`. Quando um pedido é inicialmente gravado no banco de dados, a coluna de status pode conter o valor _pendente_. A ordem é replicada no seu [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) com este valor `pending`.
@@ -51,7 +64,7 @@ Ao usar um desses métodos, as colunas alteráveis devem ser sinalizadas para no
 ## Verificar novamente as frequências {#frequency}
 
 **Você sabia?**
-Definir uma nova verificação em uma coluna `primary key` não verifica se há valores alterados na coluna. A tabela é verificada em busca de linhas excluídas e qualquer exclusão é removida do Data Warehouse.
+A definição de uma nova verificação em uma coluna `primary key` não verifica se há valores alterados na coluna. A tabela é verificada em busca de linhas excluídas e qualquer exclusão é removida do Data Warehouse.
 
 Quando uma coluna é sinalizada para nova verificação, você também pode definir com que frequência uma nova verificação ocorre. Se uma determinada coluna não muda com frequência, uma nova verificação menos frequente pode [otimizar o ciclo de atualização](../../best-practices/reduce-update-cycle-time.md).
 
@@ -67,7 +80,7 @@ Como os tempos de atualização estão correlacionados à quantidade de dados qu
 
 ## Gerenciamento de frequências de reverificação {#manage}
 
-As frequências de nova verificação podem ser gerenciadas na Data Warehouse clicando no nome de uma tabela e verificando colunas individuais. O status da sincronização e a frequência de nova verificação (as **Alterações?** coluna) é exibida para cada coluna na tabela.
+As frequências de nova verificação podem ser gerenciadas na Data Warehouse clicando no nome de uma tabela e verificando colunas individuais. O status da sincronização e a frequência de novas verificações (as **Alterações?** coluna) é exibida para cada coluna na tabela.
 
 Para alterar a frequência de reverificação, clique na caixa de seleção ao lado das colunas que deseja alterar. Clique na lista suspensa **[!UICONTROL Set Recheck Frequency]** e defina a frequência desejada.
 

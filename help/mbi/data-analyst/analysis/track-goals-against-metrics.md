@@ -4,27 +4,38 @@ description: Saiba como configurar um painel que ajudará você a controlar suas
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-TQID: https://experienceleague.adobe.com/gT-FJxqVg3X9fuXe-4kWErttYJ6qSMD4eqNvOITNNtQ
+TQID: 'https://experienceleague.adobe.com/gT-FJxqVg3X9fuXe-4kWErttYJ6qSMD4eqNvOITNNtQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 402
-ht-degree: 0%
-
+source-wordcount: '431'
+ht-degree: 6%
 ---
-
 # Rastreamento De Metas Em Relação Às Métricas De Desempenho
 
 A maioria dos clientes gostaria de acompanhar suas **metas comerciais**, mas não percebe que isso é possível em [!DNL Adobe Commerce Intelligence]. Este tópico demonstra como configurar um painel que ajudará você a controlar suas metas de negócios em relação aos dados reais, incluindo receita, novos usuários registrados e pedidos ao longo do tempo. Você também aprenderá a comparar o desempenho ano a ano, tudo em um painel como este:
@@ -70,47 +81,47 @@ Crie uma nova métrica para cada target. Por exemplo, se você fizer upload dos 
 * **Receita restante para atingir o destino**
 * Métrica `A`: `Revenue`
 * &#x200B;
-  [!UICONTROL Métrica]: `Revenue`
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
 
 * Métrica `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]: `Revenue left to achieve target`
+* [!UICONTROL Formula]&#x200B;: `Revenue left to achieve target`
 * &#x200B;
-  [!UICONTROL Fórmula]: `(B-A)`
+  [!UICONTROL Fórmula]&#x200B;: `(B-A)`
 * &#x200B;
-  [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]&#x200B;: `Number`
 
 * [!UICONTROL Time period]: (Qualquer período de tempo relevante que você desejar)
 * &#x200B;
-  [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]&#x200B;: `Month`
 * &#x200B;
-  [!UICONTROL Tipo de gráfico]: `Scalar`
+  [!UICONTROL Tipo de gráfico]&#x200B;: `Scalar`
 
 * **Destinos de receita**
 * Métrica `A`: `Revenue`
 * &#x200B;
-  [!UICONTROL Métrica]: `Revenue`
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
 
 * Métrica `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
 * Métrica `C`: `Revenue (amount change since previous year)` (ocultar)
 * &#x200B;
-  [!UICONTROL Métrica]: `Revenue`
-* [!UICONTROL Perspective]: `Amount change vs. Previous year`
+  [!UICONTROL Métrica]&#x200B;: `Revenue`
+* [!UICONTROL Perspective]&#x200B;: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Este mês no ano passado)
 * &#x200B;
-  [!UICONTROL Fórmula]: `(A-C)`
+  [!UICONTROL Fórmula]&#x200B;: `(A-C)`
 * &#x200B;
-  [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 * Desligar `Multiple Y-Axes`
 * [!UICONTROL Time period]: (Qualquer período relevante que você desejar)*
 * &#x200B;
-  [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]: `Line Chart`
+  [!UICONTROL Interval]&#x200B;: `Month`
+* [!UICONTROL Chart Type]&#x200B;: `Line Chart`
 
 Depois de concluir os relatórios acima para metas de receita, você pode criar relatórios idênticos para metas sobre pedidos, contas registradas ou quaisquer outros valores incluídos no upload do arquivo de metas.
 

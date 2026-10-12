@@ -4,33 +4,51 @@ description: Saiba como acessar registros de todas as contas registradas.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+TQID: 'https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # Tabela customer_entity
 
 A tabela `customer_entity` contém registros de todas as contas registradas. Uma conta é considerada registrada se eles se inscreverem em uma conta, independentemente de concluírem uma compra. Cada linha corresponde a uma conta registrada exclusiva, conforme identificado pelo `entity_id` dessa conta.
@@ -45,7 +63,7 @@ Esta tabela não contém registros de clientes que fazem um pedido por meio do c
 | `email` | Endereço de email associado à conta |
 | `entity_id` (CP) | Identificador exclusivo da tabela e geralmente usado em associações com o `customer_id` em outras tabelas na instância |
 | `group_id` | Chave estrangeira associada à tabela `customer_group`. Ingressar em `customer_group.customer_group_id` para determinar o grupo de clientes associado à conta registrada |
-| `store_id` | Chave estrangeira associada à tabela `store`. Ingressar em `store`.`store_id` para determinar qual exibição de armazenamento do Commerce está associada à conta registrada |
+| `store_id` | Chave estrangeira associada à tabela `store`. Ingressar em `store`.`store_id` para determinar qual visualização da Commerce store está associada à conta registrada |
 
 {style="table-layout:auto"}
 
@@ -54,7 +72,7 @@ Esta tabela não contém registros de clientes que fazem um pedido por meio do c
 | **Nome da coluna** | **Descrição** |
 |---|---|
 | `Customer's first 30 day revenue` | Soma total da receita de todas as ordens feitas por este cliente dentro de 30 dias da data da primeira ordem do cliente. Calculado unindo `customer_entity.entity_id` a `sales_order.customer_id` e somando o campo `base_grand_total` para todos os pedidos em que `sales_order.Seconds between customer's first order date and this order` ≤ 2592000, que é o número de segundos em 30 dias |
-| `Customer's first order date` | Carimbo de data e hora do primeiro pedido feito por esse cliente. Calculado ao juntar `customer_entity.entity_id` a `sales_order.customer_id` e retornar o mínimo de `sales_order`.Valor `created_at` |
+| `Customer's first order date` | Carimbo de data e hora do primeiro pedido feito por esse cliente. Calculado ingressando `customer_entity.entity_id` em `sales_order.customer_id` e retornando o mínimo de `sales_order`.`created_at` value |
 | `Customer's first order's billing region` | Região de faturamento associada ao primeiro pedido do cliente. Calculado ingressando `customer_entity.entity_id` em `sales_order.customer_id` e retornando o `Billing address region`, onde `sales_order.Customer's order number` = 1 |
 | `Customer's first order's coupon_code` | Código do cupom associado ao primeiro pedido do cliente. Calculado ingressando `customer_entity.entity_id` em `sales_order.customer_id` e retornando o `sales_order.coupon_code`, onde `sales_order.Customer's order number` = 1 |
 | `Customer's group code` | Nome do grupo do cliente registrado. Calculado pela associação de `customer_entity.group_id` a `customer_group`.`customer_group_id` e retornando o campo `customer_group_code` |
@@ -84,9 +102,9 @@ Esta tabela não contém registros de clientes que fazem um pedido por meio do c
 `customer_group`
 
 * Ingresse na tabela `customer_group` para criar colunas que retornam o nome do grupo de clientes da conta registrada.
-   * Caminho: `customer_entity.group_id` (muitos) => `customer_group.customer_group_id` (um)
+  * Caminho: `customer_entity.group_id` (muitos) => `customer_group.customer_group_id` (um)
 
 `store`
 
 * Ingresse na tabela `store` para criar colunas que retornam detalhes relacionados ao armazenamento associado à conta registrada.
-   * Caminho: `customer_entity.store_id` (muitos) => `store.store_id` (um)
+  * Caminho: `customer_entity.store_id` (muitos) => `store.store_id` (um)

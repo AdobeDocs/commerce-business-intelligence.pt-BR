@@ -4,29 +4,43 @@ description: Saiba mais sobre a finalidade e os usos da coluna calculada Compara
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/7fCAFSOningY5B-aM8A1w9icX47qjUBsIO47KoRDTDk
+TQID: 'https://experienceleague.adobe.com/7fCAFSOningY5B-aM8A1w9icX47qjUBsIO47KoRDTDk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 413
-ht-degree: 0%
-
+source-wordcount: '424'
+ht-degree: 5%
 ---
-
 # Coluna Calculada de Comparação Sequencial
 
 Este tópico descreve a finalidade e os usos da coluna calculada `Sequential Comparison` disponível na página **[!DNL Manage Data > Data Warehouse]**. Abaixo está uma explicação do que ele faz, seguido por um exemplo e os mecanismos para criá-lo.
@@ -43,11 +57,11 @@ O tipo de coluna `Sequential Comparison`: encontra a diferença entre eventos co
 
 | **`event_id`** | **`owner_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |--- |--- |--- |--- |
-| **`1`** | A | 01-01-2015 00:00:00 | NULL |
-| **`2`** | B | 01-01-2015 00:30:00 | NULL |
-| **`3`** | A | 01-01-2015 02:00:00 | 7200 |
-| **`4`** | A | 01-01-2015 13:00:00 | 126000 |
-| **`5`** | B | 01-01-2015 13:00:00 | 217800 |
+| **`1`** | A | 2015-01-01 00:00:00 | NULL |
+| **`2`** | B | 2015-01-01 00:30:00 | NULL |
+| **`3`** | A | 2015-01-01 02:00:00 | 7200 |
+| **`4`** | A | 2015-01-02 13:00:00 | 126000 |
+| **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
 No exemplo acima, `Seconds since owner's previous event` é a coluna calculada `Sequential Comparison`. Para `owner_id = A`, primeiro identifica uma sequência com base na coluna `timestamp` e, em seguida, subtrai a `timestamp` do evento anterior do carimbo de data e hora do evento atual. Na terceira linha da tabela - a segunda linha para `owner_id A` - o valor de `Seconds since owner's previous event` é o número de segundos entre &#39;2015-01-01 02:00&#39; e &#39;2015-01-01 00:00:00&#39;. Essa diferença é igual a duas horas = 7200 segundos.
 
