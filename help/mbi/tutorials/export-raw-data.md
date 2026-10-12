@@ -1,35 +1,49 @@
 ---
 title: Exportar dados brutos
-description: Saiba como exportar registros do seu  [!DNL Commerce Intelligence] Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel.
+description: Saiba como exportar registros do seu Data Warehouse [!DNL Commerce Intelligence] para obter uma visão mais detalhada do que está acionando seu painel.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-TQID: https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco
+TQID: 'https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 511
+source-wordcount: '512'
 ht-degree: 0%
-
 ---
-
 # Exportar dados brutos
 
-Usando exportações de dados brutos, você pode exportar registros do seu Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudá-lo a [identificar discrepâncias de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
+Usando exportações de dados brutos, você pode exportar registros do seu Data Warehouse para obter uma visão mais detalhada do que está acionando seu painel. Além disso, as exportações de dados brutos podem ajudá-lo a [identificar discrepâncias de dados](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
 
 As exportações de dados brutos fornecem acesso a colunas e dimensões adicionais geradas por meio da desnormalização e da pré-agregação de métricas relevantes. Por exemplo, `User's first order date` é uma dimensão que você pode exportar para cada usuário em [!DNL Commerce Intelligence], embora ela possa não estar disponível no banco de dados.
 
@@ -50,7 +64,7 @@ Há duas maneiras de exportar dados brutos para o [!DNL Commerce Intelligence]:
 
 Para exportar a tabela da guia [!UICONTROL Manage Data], são necessárias [permissões de administrador](../administrator/user-management/user-management.md).
 
-1. Clique em **[!UICONTROL Manage Data** > **&#x200B; Exportar Dados &#x200B;**> **Exportação de Dados Brutos]**.
+1. Clique em **[!UICONTROL Manage Data** > ** Exportar Dados **> **Exportação de Dados Brutos]**.
 1. Você verá uma `Export List` de exportações de dados criadas recentemente, se houver alguma. Clique em **[!UICONTROL Add Export]** para criar uma exportação.
 1. A caixa de diálogo `New Raw Data Export` é exibida. Aqui, você pode personalizar a exportação selecionando ou desmarcando colunas e filtros:
 

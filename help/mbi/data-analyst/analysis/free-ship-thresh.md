@@ -4,27 +4,38 @@ description: Saiba como configurar um painel que rastreie o desempenho do seu li
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
-TQID: https://experienceleague.adobe.com/dh7Ep6xzBaaeO5LAnsUogg0jSCIXMjv-faBsPyGXpcg
+TQID: 'https://experienceleague.adobe.com/dh7Ep6xzBaaeO5LAnsUogg0jSCIXMjv-faBsPyGXpcg'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 507
-ht-degree: 0%
-
+source-wordcount: '610'
+ht-degree: 17%
 ---
-
 # Envio gratuito
 
 >[!NOTE]
@@ -44,25 +55,25 @@ Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-
 Se você estiver na arquitetura original (por exemplo, se não tiver a opção `Data Warehouse Views` no menu `Manage Data`), entre em contato com a equipe de suporte para criar as colunas abaixo. Na nova arquitetura, essas colunas podem ser criadas na página `Manage Data > Data Warehouse`. As instruções detalhadas são fornecidas abaixo.
 
 * Tabela **`sales_flat_order`**
-   * Esse cálculo cria períodos em incrementos relativos aos tamanhos típicos do carrinho. Isso pode variar de incrementos, incluindo, 5, 10, 50, 100
+  * Esse cálculo cria períodos em incrementos relativos aos tamanhos típicos do carrinho. Isso pode variar de incrementos, incluindo, 5, 10, 50, 100
 
 * **`Order subtotal (buckets)`** Arquitetura original: criada por um analista como parte de seu tíquete `[FREE SHIPPING ANALYSIS]`
 * **`Order subtotal (buckets)`** Nova arquitetura:
-   * Como mencionado acima, esse cálculo cria intervalos em incrementos relativos aos tamanhos típicos do carrinho. Se você tiver uma coluna de subtotal nativa como `base_subtotal`, ela poderá ser usada como base para essa nova coluna. Caso contrário, pode ser uma coluna calculada que exclui frete e descontos da receita.
+  * Como mencionado acima, esse cálculo cria intervalos em incrementos relativos aos tamanhos típicos do carrinho. Se você tiver uma coluna de subtotal nativa como `base_subtotal`, ela poderá ser usada como base para essa nova coluna. Caso contrário, pode ser uma coluna calculada que exclui frete e descontos da receita.
 
   >[!NOTE]
   >
   >Os tamanhos do &quot;balde&quot; dependem do que é apropriado para você como cliente. Você pode começar com `average order value` e criar alguns compartimentos menores e maiores que essa quantidade. Ao observar o cálculo abaixo, você vê como copiar facilmente parte da query, editá-la e criar compartimentos adicionais. O exemplo é feito em incrementos de 50.
 
-   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`, ou `calculated column`, `Datatype`: `Integer`
-   * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
-quando `A< 200` e `A <= 250` então `201 - 250`
-quando `A<251` e `A<= 300` então `251 - 300`
-quando `A<301` e `A<= 350` então `301 - 350`
-quando `A<351` e `A<=400` então `351 - 400`
-quando `A<401` e `A<=450` então `401 - 450`
-senão &#39;acima de 450&#39;
-fim
+  * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`, ou `calculated column`, `Datatype`: `Integer`
+  * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
+    quando `A< 200` e `A <= 250` então `201 - 250`
+    quando `A<251` e `A<= 300` então `251 - 300`
+    quando `A<301` e `A<= 350` então `301 - 350`
+    quando `A<351` e `A<=400` então `351 - 400`
+    quando `A<401` e `A<=450` então `401 - 450`
+    senão &#39;acima de 450&#39;
+    fim
 
 
 ## Métricas
@@ -76,17 +87,17 @@ Nenhuma métrica nova!!!
 ## Relatórios
 
 * **Valor médio de pedido com a regra de remessa A**
-   * [!UICONTROL Metric]: `Average order value`
+  * [!UICONTROL Metric]: `Average order value`
 
 * Métrica `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Número de pedidos por compartimentos de subtotal com regra de remessa A**
-   * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]: `Number of orders`
 
   >[!NOTE]
   >
@@ -94,53 +105,53 @@ Nenhuma métrica nova!!!
 
 * Métrica `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * **Porcentagem de pedidos por subtotal com regra de remessa A**
-   * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]: `Number of orders`
 
-   * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-     [!UICONTROL Agrupar por]: `Independent`
-   * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
-     [!UICONTROL Format]: `%`
+  * [!UICONTROL Metric]: `Number of orders`
+  * 
+    [!UICONTROL Agrupar por]: `Independent`
+  * [!UICONTROL Formula]: `(A / B)`
+  * 
+    [!UICONTROL Format]: `%`
 
 * Métrica `A`: `Number of orders by subtotal (hide)`
 * Métrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Percentual de pedidos com subtotal excedendo a regra de remessa A**
-   * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-     [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]: `Number of orders`
+  * 
+    [!UICONTROL Perspective]: `Cumulative`
 
-   * [!UICONTROL Metric]: `Number of orders`
-   * &#x200B;
-     [!UICONTROL Agrupar por]: `Independent`
+  * [!UICONTROL Metric]: `Number of orders`
+  * 
+    [!UICONTROL Agrupar por]: `Independent`
 
-   * [!UICONTROL Formula]: `1- (A / B)`
-   * &#x200B;
-     [!UICONTROL Format]: `%`
+  * [!UICONTROL Formula]: `1- (A / B)`
+  * 
+    [!UICONTROL Format]: `%`
 
 * Métrica `A`: `Number of orders by subtotal`
 * Métrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

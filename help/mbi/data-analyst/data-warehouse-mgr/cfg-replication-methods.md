@@ -4,29 +4,41 @@ description: Saiba como as tabelas são organizadas e como os dados da tabela se
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
+TQID: 'https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1442
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # Configuração de métodos de replicação
 
 `Replication` métodos e [reverificações](../data-warehouse-mgr/cfg-data-rechecks.md) são usados para identificar dados novos ou atualizados nas tabelas do banco de dados. Configurar corretamente é fundamental para garantir a precisão dos dados e os tempos de atualização otimizados. Este tópico aborda os métodos de replicação.
@@ -60,7 +72,7 @@ Quando a atualização é executada, dados novos ou alterados são identificados
 Por exemplo, uma tabela pode ter uma coluna chamada `modified\_at` que indica a última vez que os dados foram alterados. Se a atualização mais recente for executada na terça-feira ao meio-dia, a atualização pesquisará todas as linhas com um valor de `modified\_at` maior que na terça-feira ao meio-dia. Todas as linhas descobertas que foram criadas ou modificadas desde o meio-dia da terça-feira são replicadas para o Data Warehouse.
 
 **Você sabia?**
-Mesmo que seu banco de dados não seja compatível com um método de Replicação `Incremental`, você poderá [fazer alterações no banco de dados](../../best-practices/mod-db-inc-replication.md) que permitiriam o uso de `Modified At` ou `Single Auto Incrementing PK`.
+Mesmo que o banco de dados não dê suporte a um método de Replicação do `Incremental`, você poderá [fazer alterações no banco de dados](../../best-practices/mod-db-inc-replication.md) que permitam o uso do `Modified At` ou do `Single Auto Incrementing PK`.
 
 `Modified At` não é apenas o método de replicação mais ideal, é também o mais rápido. Esse método não apenas produz aumentos perceptíveis de velocidade com grandes conjuntos de dados, como também não requer a configuração de uma opção de reverificação. Outros métodos precisam iterar por meio de uma tabela inteira para identificar alterações, mesmo se um pequeno subconjunto de dados tiver sido alterado. `Modified At` repete somente através desse pequeno subconjunto.
 
@@ -151,6 +163,6 @@ Para finalizar, você juntou essa tabela que compara os vários métodos de repl
 ## Documentação relacionada
 
 * [Noções básicas sobre reverificações de dados](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modificação do banco de dados para oferecer suporte &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [Modificando seu banco de dados para oferecer suporte à Replicação do `Incremental`](../../best-practices/mod-db-inc-replication.md)
 * [Otimização do banco de dados para análise](../../best-practices/opt-db-analysis.md)
 * [Redução dos tempos de atualização](../../best-practices/reduce-update-cycle-time.md)

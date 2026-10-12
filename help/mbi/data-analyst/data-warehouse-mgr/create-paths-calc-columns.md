@@ -4,30 +4,43 @@ description: Saiba como definir um caminho que descreva como a tabela em que voc
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90
+TQID: 'https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1032
+source-wordcount: '1032'
 ht-degree: 0%
-
 ---
-
 # Criar ou Excluir Caminhos para Colunas Calculadas
 
 ## Atualizador das Colunas Calculadas
@@ -37,7 +50,7 @@ Ao [criar colunas calculadas](../data-warehouse-mgr/creating-calculated-columns.
 1. Como as tabelas em seus bancos de dados se relacionam
 1. As chaves primária e estrangeira que definem esta relação
 
-Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Se você souber essas informações, poderá criar facilmente um caminho seguindo as instruções neste tópico. Você pode pedir a um especialista técnico em sua organização ou entrar em contato com a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Atualizadores de relacionamentos de tabela e tipos de chave {#refresher}
 
@@ -96,7 +109,7 @@ Agora, você pode criar o caminho.
 
 * **[!DNL Commerce Intelligence]não pode adivinhar relações de chave primária/estrangeira**. Você não deseja introduzir dados incorretos em sua conta, portanto, a criação de caminhos deve ser feita manualmente.
 
-* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para encontrar a melhor abordagem para suas metas.
+* **Atualmente, caminhos só podem ser especificados entre duas tabelas diferentes**. A lógica que você está tentando recriar envolve mais de duas tabelas? Pode fazer sentido (1) unir as colunas a uma tabela intermediária primeiro, depois à tabela de &quot;destino final&quot; ou (2) consultar a [equipe de Serviços Profissionais](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) para encontrar a melhor abordagem para suas metas.
 
 * **Uma coluna só pode ser a referência de chave estrangeira para UM caminho de cada vez**. Por exemplo, se `order_items.order_id` aponta para `orders.id`, então `order_items.order_id` não pode apontar para mais nada.
 

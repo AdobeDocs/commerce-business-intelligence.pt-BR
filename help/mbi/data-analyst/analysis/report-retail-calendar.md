@@ -1,33 +1,46 @@
 ---
 title: Relatórios sobre um calendário de varejo
-description: Saiba como configurar a estrutura para usar um calendário de varejo 4-5-4 na sua conta  [!DNL Commerce Intelligence] .
+description: Saiba como configurar a estrutura para usar um calendário comercial 4-5-4 na sua conta do [!DNL Commerce Intelligence].
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/fXws4NU5bBiAnWU5F9B7mNPts3d-e5D41zSUCpJDomE
+TQID: 'https://experienceleague.adobe.com/fXws4NU5bBiAnWU5F9B7mNPts3d-e5D41zSUCpJDomE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Reporting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 651
-ht-degree: 0%
-
+source-wordcount: '966'
+ht-degree: 30%
 ---
-
 # Relatórios de um Calendário de varejo
 
 Este tópico demonstra como configurar a estrutura para usar um [4-5-4 calendário de varejo](https://nrf.com/resources/4-5-4-calendar) em sua conta do [!DNL Adobe Commerce Intelligence]. O construtor de relatórios visuais oferece intervalos de tempo, intervalos e configurações independentes incrivelmente flexíveis. No entanto, todas essas configurações funcionam com o calendário mensal tradicional em vigor.
@@ -57,84 +70,84 @@ Você pode [baixar](../../assets/454-calendar.csv) uma versão `.csv` do calend�
 ## Colunas para criar
 
 * tabela **sales\_order**
-   * `INPUT` `created\_at` (aaaa-mm-dd 00:00:00)
-      * [!UICONTROL Column type]: - `Same table > Calculation`
-      * [!UICONTROL Inputs]: - `created\_at`
-      * [!UICONTROL Datatype]: - `Datetime`
-      * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
+  * `INPUT` `created\_at` (aaaa-mm-dd 00:00:00)
+    * [!UICONTROL Column type]: - `Same table > Calculation`
+    * [!UICONTROL Inputs]: - `created\_at`
+    * [!UICONTROL Datatype]: - `Datetime`
+    * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
 * Tabela de carregamento de arquivos do **Calendário de varejo**
-   * **Data atual**
-      * [!UICONTROL Column type]: `Same table > Calculation`
-      * [!UICONTROL Inputs]: `Date Retail`
-      * &#x200B;
-        [!UICONTROL Tipo de dados]: `Datetime`
-      * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
+  * **Data atual**
+    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Inputs]: `Date Retail`
+    * 
+      [!UICONTROL Tipo de dados]: `Datetime`
+    * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
-        >[!NOTE]
-        >
-        >A função `now()` acima é específica do PostgreSQL. Embora a maioria dos data warehouses [!DNL Commerce Intelligence] esteja hospedada no PostgreSQL, alguns podem estar hospedados no Redshift. Se o cálculo acima retornar um erro, talvez seja necessário usar a função Redshift `getdate()` em vez de `now()`.
+      >[!NOTE]
+      >
+      >A função `now()` acima é específica do PostgreSQL. Embora a maioria dos data warehouses [!DNL Commerce Intelligence] esteja hospedada no PostgreSQL, alguns podem estar hospedados no Redshift. Se o cálculo acima retornar um erro, talvez seja necessário usar a função Redshift `getdate()` em vez de `now()`.
 
-   * **Ano de varejo atual** (Deve ser criado pelo analista de suporte)
-      * [!UICONTROL Column type]: E`vent Counter`
-      * [!UICONTROL Local Key]: `Current date`
-      * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * &#x200B;
-        [!UICONTROL Operation]: `Max`
-      * [!UICONTROL Operation value]: `Year Retail`
-   * **Incluído no ano de varejo atual? (Sim/Não)**
-      * [!UICONTROL Column type]: `Same table > Calculation`
-      * [!UICONTROL Inputs]:
-         * `A` - `Year Retail`
-         * `B` - `Current retail year`
-      * &#x200B;
-        [!UICONTROL Tipo de dados]: `String`
-      * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
-   * **Incluído no ano de varejo anterior? (Sim/Não)**
-      * [!UICONTROL Column type]: `Same table > Calculation`
-      * [!UICONTROL Inputs]:
-         * `A` - `Year Retail`
-         * `B` - `Current retail year`
-      * &#x200B;
-        [!UICONTROL Tipo de dados]: String
-      * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
+  * **Ano de varejo atual** (Deve ser criado pelo analista de suporte)
+    * [!UICONTROL Column type]: E`vent Counter`
+    * [!UICONTROL Local Key]: `Current date`
+    * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
+    * 
+      [!UICONTROL Operation]: `Max`
+    * [!UICONTROL Operation value]: `Year Retail`
+  * **Incluído no ano de varejo atual? (Sim/Não)**
+    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Inputs]:
+      * `A` - `Year Retail`
+      * `B` - `Current retail year`
+    * 
+      [!UICONTROL Tipo de dados]: `String`
+    * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
+  * **Incluído no ano de varejo anterior? (Sim/Não)**
+    * [!UICONTROL Column type]: `Same table > Calculation`
+    * [!UICONTROL Inputs]:
+      * `A` - `Year Retail`
+      * `B` - `Current retail year`
+    * 
+      [!UICONTROL Tipo de dados]: String
+    * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 * tabela **sales\_order**
-   * **Criado\_às (ano de varejo)**
-      * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * Caminho -
-         * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]: `Retail Calendar.Date Retail`
-      * Selecione um [!UICONTROL table]: `Retail Calendar`
-      * Selecione um [!UICONTROL column]: `Year Retail`
-   * **Criado\_às (semana de varejo)**
-      * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * Caminho -
-         * [!UICONTROL Many]: sales\_order.\[INPUT\] created\_at (aaaa-mm-dd 00:00:00
-         * [!UICONTROL One]: Calendário de Varejo.Data Varejo
-      * Selecione um [!UICONTROL table]: `Retail Calendar`
-      * Selecione um [!UICONTROL column]: `Week Retail`
-   * **Criado\_às (mês de varejo)**
-      * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * Caminho
-         * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]: `Retail Calendar.Date Retail`
-      * Selecione um [!UICONTROL table]: `Retail Calendar`
-      * Selecione um [!UICONTROL column]: `Month Number Retail`
-   * **Incluir no ano de varejo anterior? (Sim/Não)**
-      * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * Caminho -
-         * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]: Varejo `Calendar.Date Retail`
-      * Selecione um [!UICONTROL table]: `Retail Calendar`
-      * Selecione um [!UICONTROL column]: `Include in previous retail year? (Yes/No)`
-   * **Incluir no ano de varejo atual? (Sim/Não)**
-      * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
-      * Caminho -
-         * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
-         * [!UICONTROL One]: Varejo `Calendar.Date Retail`
-      * Selecione um [!UICONTROL table]: `Retail Calendar`
-      * Selecione um [!UICONTROL column]: `Include in current retail year? (Yes/No)`
+  * **Criado\_às (ano de varejo)**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * Caminho -
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]: `Retail Calendar.Date Retail`
+    * Selecione um [!UICONTROL table]: `Retail Calendar`
+    * Selecione um [!UICONTROL column]: `Year Retail`
+  * **Criado\_às (semana de varejo)**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * Caminho -
+      * [!UICONTROL Many]: sales\_order.\[INPUT\] created\_at (aaaa-mm-dd 00:00:00
+      * [!UICONTROL One]: Calendário de Varejo.Data Varejo
+    * Selecione um [!UICONTROL table]: `Retail Calendar`
+    * Selecione um [!UICONTROL column]: `Week Retail`
+  * **Criado\_às (mês de varejo)**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * Caminho
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]: `Retail Calendar.Date Retail`
+    * Selecione um [!UICONTROL table]: `Retail Calendar`
+    * Selecione um [!UICONTROL column]: `Month Number Retail`
+  * **Incluir no ano de varejo anterior? (Sim/Não)**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * Caminho -
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]: Varejo `Calendar.Date Retail`
+    * Selecione um [!UICONTROL table]: `Retail Calendar`
+    * Selecione um [!UICONTROL column]: `Include in previous retail year? (Yes/No)`
+  * **Incluir no ano de varejo atual? (Sim/Não)**
+    * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
+    * Caminho -
+      * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
+      * [!UICONTROL One]: Varejo `Calendar.Date Retail`
+    * Selecione um [!UICONTROL table]: `Retail Calendar`
+    * Selecione um [!UICONTROL column]: `Include in current retail year? (Yes/No)`
 
 ## Métricas
 
@@ -143,76 +156,76 @@ Observação: nenhuma métrica nova é necessária para essa análise. No entant
 ## Relatórios
 
 * **Pedidos semanais - calendário de varejo (YoY)**
-   * Métrica `A`: `2017`
-      * [!UICONTROL Metric]: Número de ordens
-      * [!UICONTROL Filter]:
-         * Criado\_em (Ano de varejo) = 2017
-   * Métrica `B`: `2016`
-      * [!UICONTROL Metric]: Número de ordens
-      * [!UICONTROL Filter]:
-         * Criado\_em (Ano de varejo) = 2016
-   * Métrica `C`: `2015`
-      * [!UICONTROL Metric]: `Number of orders`
-      * [!UICONTROL Filter]:
-         * `Created\_at (retail Year) = 2015`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL Interval]: `None`
-   * &#x200B;
-     [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
-     [!UICONTROL Chart type]: `Line`
-      * Desligar `multiple Y-axes`
+  * Métrica `A`: `2017`
+    * [!UICONTROL Metric]: Número de ordens
+    * [!UICONTROL Filter]:
+      * Criado\_em (Ano de varejo) = 2017
+  * Métrica `B`: `2016`
+    * [!UICONTROL Metric]: Número de ordens
+    * [!UICONTROL Filter]:
+      * Criado\_em (Ano de varejo) = 2016
+  * Métrica `C`: `2015`
+    * [!UICONTROL Metric]: `Number of orders`
+    * [!UICONTROL Filter]:
+      * `Created\_at (retail Year) = 2015`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL Interval]: `None`
+  * 
+    [!UICONTROL Group by]: `Created\_at` (retail week)
+  * 
+    [!UICONTROL Chart type]: `Line`
+    * Desligar `multiple Y-axes`
 
 * **Visão geral do calendário de varejo (ano de varejo atual por mês)**
-   * Métrica `A`: `Revenue`
-      * &#x200B;
-        [!UICONTROL Métrica]: `Revenue`
-      * [!UICONTROL Filter]:
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * Métrica `B`: `Orders`
-      * [!UICONTROL Metric]: `Number of orders`
-      * [!UICONTROL Filter]:
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * Métrica `C`: `Avg order value`
-      * [!UICONTROL Metric]: `Avg order value`
-      * [!UICONTROL Filter]:
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL Interval]: `None`
-   * &#x200B;
-     [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-     [!UICONTROL Chart type]: `Line`
+  * Métrica `A`: `Revenue`
+    * 
+      [!UICONTROL Métrica]: `Revenue`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * Métrica `B`: `Orders`
+    * [!UICONTROL Metric]: `Number of orders`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * Métrica `C`: `Avg order value`
+    * [!UICONTROL Metric]: `Avg order value`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL Interval]: `None`
+  * 
+    [!UICONTROL Group by]: `Created\_at` (retail month)
+  * 
+    [!UICONTROL Chart type]: `Line`
 
 * **Visão geral do calendário de varejo (ano de varejo anterior por mês)**
-   * Métrica `A`: `Revenue`
-      * &#x200B;
-        [!UICONTROL Métrica]: `Revenue`
-      * [!UICONTROL Filter]:
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * Métrica `B`: `Orders`
-      * [!UICONTROL Metric]: Número de ordens
-      * [!UICONTROL Filter]:
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * Métrica `C`: `Avg order value`
-      * [!UICONTROL Metric]: `Avg order value`
-      * [!UICONTROL Filter]:
-         * &#x200B;
-           [!UICONTROL Include current retail year?]: `Yes`
-   * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-     [!UICONTROL Interval]: `None`
-   * &#x200B;
-     [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-     [!UICONTROL Chart type]: `Line`
+  * Métrica `A`: `Revenue`
+    * 
+      [!UICONTROL Métrica]: `Revenue`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * Métrica `B`: `Orders`
+    * [!UICONTROL Metric]: Número de ordens
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * Métrica `C`: `Avg order value`
+    * [!UICONTROL Metric]: `Avg order value`
+    * [!UICONTROL Filter]:
+      * 
+        [!UICONTROL Include current retail year?]: `Yes`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [!UICONTROL Interval]: `None`
+  * 
+    [!UICONTROL Group by]: `Created\_at` (retail month)
+  * 
+    [!UICONTROL Chart type]: `Line`
 
 ## Próximas etapas
 

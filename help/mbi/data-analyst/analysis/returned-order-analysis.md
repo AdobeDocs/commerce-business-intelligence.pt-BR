@@ -4,35 +4,46 @@ description: Saiba como configurar um painel que forneça uma análise detalhada
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
+TQID: 'https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 601
+source-wordcount: '601'
 ht-degree: 25%
-
 ---
-
 # Ordens Devolvidas
 
 Este tópico demonstra como configurar um painel que fornece uma análise detalhada dos retornos da loja.
 
 ![Painel de devoluções detalhado mostrando as taxas de devolução e os motivos](../../assets/detailed-returns-dboard.png)
 
-Antes de começar, você deve ser um cliente do [Adobe Commerce](https://business.adobe.com/br/products/magento/magento-commerce.html) e verificar se sua empresa está usando a tabela `enterprise\_rma` para devoluções.
+Antes de começar, você deve ser um cliente do [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) e verificar se sua empresa está usando a tabela `enterprise\_rma` para devoluções.
 
 Esta análise contém [colunas calculadas avançadas](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -76,10 +87,10 @@ Colunas para criar
 * **`Order's created at`**
 * Selecione uma definição: `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
-  [!UICONTROL Many]&#x200B;: `enterprise_rma.order_id`
-* &#x200B;
-  [!UICONTROL One]&#x200B;: `sales_flat_order.entity_id`
+* 
+  [!UICONTROL Many]: `enterprise_rma.order_id`
+* 
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Selecione um [!UICONTROL table]: `sales_flat_order`
 * Selecione um [!UICONTROL column]: `created_at`
@@ -97,10 +108,10 @@ Colunas para criar
 * **`return_date_requested`**
 * Selecione uma definição: `Joined Column`
 * [!UICONTROL Create Path]:
-  * &#x200B;
-    [!UICONTROL Many]&#x200B;: `enterprise_rma_item_entity.rma_entity_id`
-  * &#x200B;
-    [!UICONTROL One]&#x200B;: `enterprise_rma.entity_id`
+  * 
+    [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+  * 
+    [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Selecione um [!UICONTROL table]: `enterprise_rma`
 * Selecione um [!UICONTROL column]: `date_requested`
@@ -128,28 +139,28 @@ Colunas para criar
 * Esta métrica executa uma **Contagem**
 * Na coluna **`entity_id`**
 * Encomendado por **`date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 * **Itens retornados**
 * Na tabela **`enterprise_rma_item_entity`**
 * Esta métrica executa uma **Soma**
 * Na coluna **`qty_approved`**
 * Encomendado por **`return date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 * **Valor total do item retornado**
 * Na tabela **`enterprise_rma_item_entity`**
 * Esta métrica executa uma **Soma**
 * Na coluna **`Returned item total value (qty_returned * price)`**
 * Encomendado por **`return date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 * **Tempo médio entre a ordem e o retorno**
 * Na tabela **`enterprise_rma`**
 * Esta métrica executa uma **Média**
 * Na coluna **`Time between order's created_at and date_requested`**
 * Encomendado por **`date_requested`**
-* [!UICONTROL Filter]&#x200B;: `Returns we count`
+* [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
@@ -159,102 +170,102 @@ Colunas para criar
 
 * **Repetir probabilidade de ordem depois de fazer um retorno**
 * Métrica `A`: `Number of orders with returns`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is in current month? = No`
 
 * Métrica `B`: `Non-last orders with returns`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Is customer's last order? (1=yes/0=no) = 0`
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * Fórmula: probabilidade de ordem repetida
-* [!UICONTROL Formula]&#x200B;: `B / A`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percentage`
+* [!UICONTROL Formula]: `B / A`
+* 
+  [!UICONTROL Format]: `Percentage`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalo]&#x200B;: `None`
-* [!UICONTROL Group by]&#x200B;: `Customer's order number`
-* &#x200B;
-  [!UICONTROL Tipo de gráfico]&#x200B;: `Bar`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalo]: `None`
+* [!UICONTROL Group by]: `Customer's order number`
+* 
+  [!UICONTROL Tipo de gráfico]: `Bar`
 
 * **Tempo médio para retornar (o tempo todo)**
 * Métrica `A`: `Avg time between order and return`
-* [!UICONTROL Metric]&#x200B;: `Avg time between order and return`
+* [!UICONTROL Metric]: `Avg time between order and return`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalo]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Tipo de gráfico]&#x200B;: `Number`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalo]: `None`
+* 
+  [!UICONTROL Tipo de gráfico]: `Number`
 
 * **Porcentagem de pedidos com retorno**
 * Métrica `A`: `Number of orders`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 
 * Métrica `B`: `Orders w/ return`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
 
 * Fórmula: % de ordens com devolução
-* [!UICONTROL Formula]&#x200B;: `B / A`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percentage`
+* [!UICONTROL Formula]: `B / A`
+* 
+  [!UICONTROL Format]: `Percentage`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalo]&#x200B;: `None`
-* [!UICONTROL Chart Type]&#x200B;: `Number - % of orders with return`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalo]: `None`
+* [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Receita retornada por mês**
 * Métrica `A`: `Returned item total value`
-* [!UICONTROL Metric]&#x200B;: `Returned item total value`
+* [!UICONTROL Metric]: `Returned item total value`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* [!UICONTROL Interval]&#x200B;: `By month`
-* &#x200B;
-  [!UICONTROL Tipo de gráfico]&#x200B;: `Line`
+* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Interval]: `By month`
+* 
+  [!UICONTROL Tipo de gráfico]: `Line`
 
 * **Clientes que fizeram uma devolução e não compraram novamente**
 * Métrica `A`: `Number of orders with returns`
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
   * `Order contains a return? (1=yes/0=No) = 1`
   * `Is customer's last order? (1=yes/0=no) = 1`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalo]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Agrupar por]&#x200B;: `Customer_email`
-* &#x200B;
-  [!UICONTROL Tipo de gráfico]&#x200B;: `Table`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalo]: `None`
+* 
+  [!UICONTROL Agrupar por]: `Customer_email`
+* 
+  [!UICONTROL Tipo de gráfico]: `Table`
 
 * **Taxa de devolução por item**
 * Métrica `A`: `Returned items` (Ocultar)
 * [!UICONTROL Metric]: Itens retornados
 
 * Métrica `B`: `Items sold` (Ocultar)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]&#x200B;: `Return %`
-* [!UICONTROL Formula]&#x200B;: `B / A`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percentage`
+* [!UICONTROL Formula]: `Return %`
+* [!UICONTROL Formula]: `B / A`
+* 
+  [!UICONTROL Format]: `Percentage`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Intervalo]&#x200B;: `None`
-* [!UICONTROL Group by]&#x200B;: `product_sku AND/OR product_name`
-* &#x200B;
-  [!UICONTROL Tipo de gráfico]&#x200B;: `Table`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Intervalo]: `None`
+* [!UICONTROL Group by]: `product_sku AND/OR product_name`
+* 
+  [!UICONTROL Tipo de gráfico]: `Table`
 
 Após compilar todos os relatórios, você pode organizá-los no painel conforme desejar. O resultado pode se parecer com o painel de amostra acima.
 
-Se você tiver dúvidas ao criar esta análise ou quiser envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Se você tiver dúvidas ao criar esta análise ou quiser envolver a equipe de Serviços Profissionais, [contate o suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

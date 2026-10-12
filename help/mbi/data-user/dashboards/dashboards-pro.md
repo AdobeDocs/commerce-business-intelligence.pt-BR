@@ -4,39 +4,54 @@ description: Saiba mais sobre os painéis prontos para uso para fornecer o insig
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-TQID: https://experienceleague.adobe.com/niQ01gOnBCdufbZDpw0mcck3AWN-2gXR1QyWD8LHLBQ
+TQID: 'https://experienceleague.adobe.com/niQ01gOnBCdufbZDpw0mcck3AWN-2gXR1QyWD8LHLBQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1989
+source-wordcount: '1989'
 ht-degree: 0%
-
 ---
-
 # Painéis de controle prontos para uso
 
 O [!DNL Adobe Commerce Intelligence] inclui painéis prontos para uso para fornecer o insight à sua empresa. Com os painéis, você pode verificar a integridade de métricas essenciais, como a receita vitalícia do usuário, o número de compras repetidas, os principais produtos comprados em um determinado período e muito mais. Esses painéis pré-configurados foram criados para ajudá-lo a tomar decisões de negócios conscientes.
 
 >[!NOTE]
 >
->O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, contate o [suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+>O acesso a esses painéis depende do tipo de conta e do nível de acesso. Se você não vir esses painéis, contate o [suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Disponibilidade do relatório
 
@@ -152,7 +167,7 @@ O painel Pedidos fornece informações sobre o volume transacional de pedidos, o
 
 ## Produtos
 
-O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Seu armazenamento deve estar [configurado para rastrear reembolsos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure) para que esses gráficos sejam preenchidos.
+O painel Produtos mostra o desempenho geral do produto em termos de produtos solicitados, seu Valor Bruto de Mercadoria (GMV) e os principais produtos comprados e reembolsados. Ele pode ajudá-lo a equilibrar compras e devoluções e determinar o sucesso e a popularidade do produto. Seu armazenamento deve estar [configurado para rastrear reembolsos](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure) para que esses gráficos sejam preenchidos.
 
 >[!NOTE]
 >
