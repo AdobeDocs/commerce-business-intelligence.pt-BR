@@ -37,14 +37,12 @@ topic_v2:
     internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-last-update: 2026-08-26
-source-git-commit: 71a0a842742fed73aa749653ec0ef8c2834b7e60
+last-update: 2026-11-09
+source-git-commit: b9bb82c5896429e1669b0020efcb4ce103c581a6
 workflow-type: tm+mt
-source-wordcount: 492
+source-wordcount: '492'
 ht-degree: 2%
-
 ---
-
 # Guia do Usuário do [!DNL Adobe Commerce Intelligence]
 
 >[!NOTE]
@@ -71,23 +69,23 @@ Além dos fluxos de trabalho com base em funções acima, este guia também cont
 
 ## Como obter ajuda
 
-Entre em contato com a [equipe de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se tiver dúvidas e quiser aproveitar alguns dos seus Serviços Profissionais ou se tiver problemas com sua conta.
+Entre em contato com a [equipe de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se tiver dúvidas e quiser aproveitar alguns dos seus Serviços Profissionais ou se tiver problemas com sua conta.
 
 ### Políticas de serviço
 
-Consulte uma [lista de quais serviços a equipe de suporte ao cliente fornece](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Consulte uma [lista de quais serviços a equipe de suporte ao cliente fornece](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ### Envio de um tíquete de suporte
 
-Precisa de ajuda para criar uma coluna calculada avançada? Problema de defeito ou de conexão? Se precisar entrar em contato com a equipe de suporte, a Adobe solicita que você use as [diretrizes de tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies). Essas diretrizes descrevem as informações de que a Adobe precisa para resolver o problema.
+Precisa de ajuda para criar uma coluna calculada avançada? Problema de defeito ou de conexão? Se precisar entrar em contato com a equipe de suporte, a Adobe solicita que você use as [diretrizes de tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies). Essas diretrizes descrevem as informações de que a Adobe precisa para resolver o problema.
 
 ## Documentação disponível
 
 | Recurso de documentação | Descrição |
 |----------------------- | ----------- |
-| [Documentação do comerciante do Adobe Commerce 2.4](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/user-guides/home) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
-| [Serviços para a Documentação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home) | Documentação para dar suporte a uma coleção de serviços que ajudam os comerciantes a integrar os principais componentes de seus negócios à loja. |
-| [Guias Operacionais do Adobe Commerce 2.4](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/operational-guides/home) | Documentação de sistemas sobre os conceitos, processos, ferramentas e práticas recomendadas para desenvolver, implantar e manter projetos implantados em plataformas Adobe Commerce e Magento Open Source. |
+| [Documentação do comerciante do Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
+| [Serviços para a Documentação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | Documentação para dar suporte a uma coleção de serviços que ajudam os comerciantes a integrar os principais componentes de seus negócios à loja. |
+| [Guias Operacionais do Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | Documentação de sistemas sobre os conceitos, processos, ferramentas e práticas recomendadas para desenvolver, implantar e manter projetos implantados em plataformas Adobe Commerce e Magento Open Source. |
 | [Documentação do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
 
 {{$include /help/_includes/templated/whats-new.md}}
